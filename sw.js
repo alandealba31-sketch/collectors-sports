@@ -1,6 +1,6 @@
-const CACHE='collectors-sports-v06b';
+const CACHE='collectors-sports-v06c';
 const IMAGE_CACHE='collectors-sports-images-v1';
-const CORE=['./','./index.html','./styles.css?v=06b','./v05.css?v=06b','./v06.css?v=06b','./catalog.js?v=06b','./catalog-extra.js?v=06b','./catalog-imported.js?v=06b','./catalog-premier.js?v=06b','./catalog-runtime.js?v=06b','./catalog-images.js?v=06b','./catalog-images-official.js?v=06b','./app-v05.js?v=06b','./app-v06-addon.js?v=06b','./manifest.webmanifest?v=06b','./icon.svg?v=06b'];
+const CORE=['./','./index.html','./styles.css?v=06c','./v05.css?v=06c','./v06.css?v=06c','./v06-polish.css?v=06c','./catalog.js?v=06c','./catalog-extra.js?v=06c','./catalog-imported.js?v=06c','./catalog-premier.js?v=06c','./catalog-runtime.js?v=06c','./catalog-images.js?v=06c','./catalog-images-official.js?v=06c','./catalog-images-extra.js?v=06c','./app-v05.js?v=06c','./app-v06-addon.js?v=06c','./app-v06-polish.js?v=06c','./manifest.webmanifest?v=06c','./icon.svg?v=06c'];
 
 self.addEventListener('install',event=>{
   self.skipWaiting();
