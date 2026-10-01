@@ -10,13 +10,14 @@
   <meta name="description" content="Inventario personal de tarjetas deportivas premium." />
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <title>Collectors Sports</title>
-  <link rel="manifest" href="manifest.webmanifest?v=09c" />
-  <link rel="icon" href="icon.svg?v=09c" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css?v=09c" />
+  <link rel="manifest" href="manifest.webmanifest?v=09d" />
+  <link rel="icon" href="icon.svg?v=09d" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css?v=09d" />
   <link rel="stylesheet" href="v05.css?v=09a" />
   <link rel="stylesheet" href="v06.css?v=09a" />
   <link rel="stylesheet" href="v06-polish.css?v=09a" />
   <link rel="stylesheet" href="v07.css?v=09a" />
+  <link rel="stylesheet" href="mobile-background.css?v=09d" />
 </head>
 <body>
   <div id="app"></div>
@@ -46,7 +47,7 @@
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', async () => {
         try {
-          const registration = await navigator.serviceWorker.register('./sw.js?v=09c', { updateViaCache: 'none' });
+          const registration = await navigator.serviceWorker.register('./sw.js?v=09d', { updateViaCache: 'none' });
           await registration.update();
         } catch (error) {
           console.warn('Service worker update failed', error);
