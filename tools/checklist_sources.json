@@ -11,7 +11,7 @@
   },
   {
     "id": "topps-chrome-ufc-2026",
-    "kind": "xls-generic",
+    "kind": "xls-ufc",
     "url": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/FINAL_CheckList_2026_TOPPS_CHROME_UFC_V2.xls?v=1779204573",
     "expected_base_count": 200
   }
