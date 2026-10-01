@@ -1,6 +1,6 @@
-const CACHE='collectors-sports-v08d';
+const CACHE='collectors-sports-v08e';
 const IMAGE_CACHE='collectors-sports-images-v1';
-const CORE=['./','./index.html','./styles.css?v=08d','./v05.css?v=08d','./v06.css?v=08d','./v06-polish.css?v=08d','./v07.css?v=08d','./catalog.js?v=08d','./catalog-extra.js?v=08d','./catalog-imported.js?v=08d','./catalog-premier.js?v=08d','./catalog-owned.js?v=08d','./catalog-owned-batch2.js?v=08d','./catalog-owned-batch3.js?v=08d','./catalog-runtime.js?v=08d','./catalog-images.js?v=08d','./catalog-images-official.js?v=08d','./catalog-images-extra.js?v=08d','./catalog-images-cached.js?v=08d','./market-seed.js?v=08d','./app-v05.js?v=08d','./app-v06-addon.js?v=08d','./app-v06-polish.js?v=08d','./app-v06-fix.js?v=08d','./pricing-engine.js?v=08d','./app-v08-image-guard.js?v=08d','./app-v08-catalog.js?v=08d','./manifest.webmanifest?v=08d','./icon.svg?v=08d'];
+const CORE=['./','./index.html','./styles.css?v=08e','./v05.css?v=08e','./v06.css?v=08e','./v06-polish.css?v=08e','./v07.css?v=08e','./catalog.js?v=08e','./catalog-extra.js?v=08e','./catalog-imported.js?v=08e','./catalog-premier.js?v=08e','./catalog-owned.js?v=08e','./catalog-owned-batch2.js?v=08e','./catalog-owned-batch3.js?v=08e','./catalog-runtime.js?v=08e','./catalog-images.js?v=08e','./catalog-images-official.js?v=08e','./catalog-images-extra.js?v=08e','./catalog-images-teamsets.js?v=08e','./catalog-images-cached.js?v=08e','./market-seed.js?v=08e','./app-v05.js?v=08e','./app-v06-addon.js?v=08e','./app-v06-polish.js?v=08e','./app-v06-fix.js?v=08e','./pricing-engine.js?v=08e','./app-v08-image-guard.js?v=08e','./app-v08-catalog.js?v=08e','./manifest.webmanifest?v=08e','./icon.svg?v=08e'];
 
 self.addEventListener('install',event=>{
   self.skipWaiting();
@@ -24,7 +24,6 @@ self.addEventListener('fetch',event=>{
     }).catch(()=>caches.match(event.request)));
     return;
   }
-
   const visualHost=url.hostname==='images.topps.com' || url.hostname==='hobbyscan-images-prod.s3.us-east-2.amazonaws.com';
   if(visualHost){
     event.respondWith(caches.open(IMAGE_CACHE).then(async cache=>{
@@ -40,6 +39,5 @@ self.addEventListener('fetch',event=>{
     }));
     return;
   }
-
   event.respondWith(fetch(event.request).catch(()=>caches.match(event.request)));
 });
