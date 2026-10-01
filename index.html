@@ -10,39 +10,40 @@
   <meta name="description" content="Inventario personal de tarjetas deportivas premium." />
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <title>Collectors Sports</title>
-  <link rel="manifest" href="manifest.webmanifest?v=08b" />
-  <link rel="icon" href="icon.svg?v=08b" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css?v=08b" />
-  <link rel="stylesheet" href="v05.css?v=08b" />
-  <link rel="stylesheet" href="v06.css?v=08b" />
-  <link rel="stylesheet" href="v06-polish.css?v=08b" />
-  <link rel="stylesheet" href="v07.css?v=08b" />
+  <link rel="manifest" href="manifest.webmanifest?v=08c" />
+  <link rel="icon" href="icon.svg?v=08c" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css?v=08c" />
+  <link rel="stylesheet" href="v05.css?v=08c" />
+  <link rel="stylesheet" href="v06.css?v=08c" />
+  <link rel="stylesheet" href="v06-polish.css?v=08c" />
+  <link rel="stylesheet" href="v07.css?v=08c" />
 </head>
 <body>
   <div id="app"></div>
-  <script src="catalog.js?v=08b"></script>
-  <script src="catalog-extra.js?v=08b"></script>
-  <script src="catalog-imported.js?v=08b"></script>
-  <script src="catalog-premier.js?v=08b"></script>
-  <script src="catalog-owned.js?v=08b"></script>
-  <script src="catalog-runtime.js?v=08b"></script>
-  <script src="catalog-images.js?v=08b"></script>
-  <script src="catalog-images-official.js?v=08b"></script>
-  <script src="catalog-images-extra.js?v=08b"></script>
-  <script src="catalog-images-cached.js?v=08b"></script>
-  <script src="market-seed.js?v=08b"></script>
-  <script src="app-v05.js?v=08b"></script>
-  <script src="app-v06-addon.js?v=08b"></script>
-  <script src="app-v06-polish.js?v=08b"></script>
-  <script src="app-v06-fix.js?v=08b"></script>
-  <script src="pricing-engine.js?v=08b"></script>
-  <script src="app-v08-image-guard.js?v=08b"></script>
-  <script src="app-v08-catalog.js?v=08b"></script>
+  <script src="catalog.js?v=08c"></script>
+  <script src="catalog-extra.js?v=08c"></script>
+  <script src="catalog-imported.js?v=08c"></script>
+  <script src="catalog-premier.js?v=08c"></script>
+  <script src="catalog-owned.js?v=08c"></script>
+  <script src="catalog-owned-batch2.js?v=08c"></script>
+  <script src="catalog-runtime.js?v=08c"></script>
+  <script src="catalog-images.js?v=08c"></script>
+  <script src="catalog-images-official.js?v=08c"></script>
+  <script src="catalog-images-extra.js?v=08c"></script>
+  <script src="catalog-images-cached.js?v=08c"></script>
+  <script src="market-seed.js?v=08c"></script>
+  <script src="app-v05.js?v=08c"></script>
+  <script src="app-v06-addon.js?v=08c"></script>
+  <script src="app-v06-polish.js?v=08c"></script>
+  <script src="app-v06-fix.js?v=08c"></script>
+  <script src="pricing-engine.js?v=08c"></script>
+  <script src="app-v08-image-guard.js?v=08c"></script>
+  <script src="app-v08-catalog.js?v=08c"></script>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', async () => {
         try {
-          const registration = await navigator.serviceWorker.register('./sw.js?v=08b', { updateViaCache: 'none' });
+          const registration = await navigator.serviceWorker.register('./sw.js?v=08c', { updateViaCache: 'none' });
           registration.update();
         } catch (error) {
           console.warn('Service worker update failed', error);
