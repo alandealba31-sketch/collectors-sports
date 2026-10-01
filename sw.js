@@ -1,10 +1,18 @@
-const CACHE='collectors-sports-v09a';
+const CACHE='collectors-sports-v09b';
 const IMAGE_CACHE='collectors-sports-images-v1';
 const CORE=['./','./index.html','./styles.css?v=09a','./v05.css?v=09a','./v06.css?v=09a','./v06-polish.css?v=09a','./v07.css?v=09a','./catalog.js?v=09a','./catalog-extra.js?v=09a','./catalog-imported.js?v=09a','./catalog-premier.js?v=09a','./catalog-owned.js?v=09a','./catalog-owned-batch2.js?v=09a','./catalog-owned-batch3.js?v=09a','./catalog-runtime.js?v=09a','./catalog-images.js?v=09a','./catalog-images-official.js?v=09a','./catalog-images-extra.js?v=09a','./catalog-images-teamsets.js?v=09a','./catalog-images-cached.js?v=09a','./app-v09-data-guard.js?v=09a','./market-seed.js?v=09a','./app-v05.js?v=09a','./app-v06-addon.js?v=09a','./app-v06-polish.js?v=09a','./app-v06-fix.js?v=09a','./pricing-engine.js?v=09a','./app-v08-image-guard.js?v=09a','./app-v08-catalog.js?v=09a','./manifest.webmanifest?v=09a','./icon.svg?v=09a'];
 
+async function safeCachePut(cache,request,response){
+  try{await cache.put(request,response);}catch(error){console.warn('Cache write skipped:',request.url||request,error);}
+}
+
 self.addEventListener('install',event=>{
   self.skipWaiting();
-  event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(CORE)));
+  event.waitUntil(caches.open(CACHE).then(async cache=>{
+    // Keep the app shell mandatory, but do not let one optional stale asset brick a SW update.
+    await cache.add('./index.html');
+    await Promise.allSettled(CORE.filter(url=>url!=='./index.html').map(url=>cache.add(url)));
+  }));
 });
 
 self.addEventListener('activate',event=>{
@@ -19,7 +27,10 @@ self.addEventListener('fetch',event=>{
   const url=new URL(event.request.url);
   if(url.origin===self.location.origin){
     event.respondWith(fetch(event.request).then(response=>{
-      if(response && response.ok){const copy=response.clone();caches.open(CACHE).then(cache=>cache.put(event.request,copy));}
+      if(response && response.ok){
+        const copy=response.clone();
+        event.waitUntil(caches.open(CACHE).then(cache=>safeCachePut(cache,event.request,copy)));
+      }
       return response;
     }).catch(()=>caches.match(event.request)));
     return;
@@ -30,7 +41,7 @@ self.addEventListener('fetch',event=>{
       const cached=await cache.match(event.request);
       try{
         const response=await fetch(event.request);
-        if(response && (response.ok || response.type==='opaque')) cache.put(event.request,response.clone());
+        if(response && (response.ok || response.type==='opaque')) event.waitUntil(safeCachePut(cache,event.request,response.clone()));
         return response;
       }catch(error){
         if(cached) return cached;
