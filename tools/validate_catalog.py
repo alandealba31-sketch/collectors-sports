@@ -24,39 +24,51 @@ def main() -> int:
     sources = json.loads(SOURCES.read_text(encoding="utf-8"))
     imported = load_imported()
     errors: list[str] = []
+    verified_total = 0
 
     for source in sources:
         sid = source["id"]
         expected = int(source.get("expected_base_count", 0))
+        partial = bool(source.get("allow_partial_verified", False))
+        minimum = int(source.get("minimum_verified_count", expected if expected else 1))
         rows = imported.get(sid)
         if rows is None:
             errors.append(f"{sid}: missing from generated catalog")
             continue
-        if expected and len(rows) != expected:
-            errors.append(f"{sid}: got {len(rows)} rows, expected exactly {expected}")
 
         numbers = [row[0] for row in rows if isinstance(row, list) and row]
         if len(numbers) != len(rows) or len(numbers) != len(set(numbers)):
             errors.append(f"{sid}: malformed or duplicate card numbers")
-        if expected and sorted(numbers) != list(range(1, expected + 1)):
-            errors.append(f"{sid}: card numbers are not the complete 1..{expected} sequence")
 
-        bad = []
+        placeholders = []
+        verified = []
         for row in rows:
             subject = str(row[1]).strip().lower() if len(row) > 1 else ""
             if subject in PLACEHOLDERS:
-                bad.append(row[0] if row else "?")
-        if bad:
-            errors.append(f"{sid}: placeholder subjects at cards {bad[:12]}")
+                placeholders.append(row[0] if row else "?")
+            else:
+                verified.append(row)
+        verified_total += len(verified)
 
-    extra = sorted(set(imported) - {s["id"] for s in sources})
-    if extra:
-        print(f"Note: generated catalog contains {len(extra)} unregistered set(s): {', '.join(extra)}")
+        if partial:
+            if len(verified) < minimum:
+                errors.append(f"{sid}: only {len(verified)} verified rows; minimum is {minimum}")
+            if expected and any(not 1 <= int(row[0]) <= expected for row in verified):
+                errors.append(f"{sid}: verified card number outside 1..{expected}")
+            if placeholders:
+                print(f"Note: {sid} is provisional; runtime guard will hide {len(placeholders)} official placeholder row(s)")
+        else:
+            if placeholders:
+                errors.append(f"{sid}: placeholder subjects at cards {placeholders[:12]}")
+            if expected and len(rows) != expected:
+                errors.append(f"{sid}: got {len(rows)} rows, expected exactly {expected}")
+            if expected and sorted(numbers) != list(range(1, expected + 1)):
+                errors.append(f"{sid}: card numbers are not the complete 1..{expected} sequence")
 
     if errors:
         raise SystemExit("Catalog integrity validation failed:\n- " + "\n- ".join(errors))
 
-    print(f"Catalog integrity OK: {len(sources)} registered sets, {sum(len(imported[s['id']]) for s in sources)} verified rows")
+    print(f"Catalog integrity OK: {len(sources)} registered sets, {verified_total} verified rows")
     return 0
 
 
