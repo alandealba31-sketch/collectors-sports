@@ -150,6 +150,39 @@ def parse_f1_pdf(data: bytes) -> list[list]:
     return [rows[n] for n in sorted(rows)]
 
 
+def parse_generic_pdf(data: bytes, expected: int = 0) -> list[list]:
+    """Parse simple official PDFs whose base section is `number + subject`.
+
+    The parser deliberately accepts only unique sequential numeric card numbers and,
+    when expected_base_count is supplied, stops before inserts/autographs can reuse
+    card numbers. This makes it suitable for products such as tennis while failing
+    closed on layouts that need a sport-specific parser.
+    """
+    rows: dict[int, list] = {}
+    for line in pdf_lines(data):
+        m = re.match(r"^(\d{1,4})\s+(.+)$", line)
+        if not m:
+            continue
+        number = int(m.group(1))
+        if number < 1 or (expected and number > expected):
+            continue
+        if number in rows:
+            if expected and len(rows) >= expected:
+                break
+            continue
+        whole = clean_text(m.group(2))
+        rookie = 1 if re.search(r"\((?:RC|Rookie)\)|\bRC\b|\bRookie\b", whole, re.I) else 0
+        subject = re.sub(r"\s*\((?:RC|Rookie)\)\s*$", "", whole, flags=re.I).strip()
+        if subject:
+            rows[number] = [number, subject, "", rookie]
+        if expected and len(rows) == expected:
+            break
+    minimum = int(expected * 0.85) if expected else 1
+    if len(rows) < minimum:
+        raise RuntimeError(f"Generic PDF parser only extracted {len(rows)}/{expected or '?'} base cards")
+    return [rows[n] for n in sorted(rows)]
+
+
 def parse_ufc_xls(data: bytes, expected: int = 200) -> list[list]:
     """Parse Topps UFC's headerless XLS section that starts at BASE CARDS I."""
     book = pd.ExcelFile(io.BytesIO(data), engine="xlrd")
@@ -273,6 +306,8 @@ def build() -> dict[str, list[list]]:
                 rows = parse_mlb_pdf(data)
             elif kind == "pdf-f1":
                 rows = parse_f1_pdf(data)
+            elif kind == "pdf-generic":
+                rows = parse_generic_pdf(data, expected)
             elif kind == "xls-ufc":
                 rows = parse_ufc_xls(data, expected or 200)
             elif kind == "xls-generic":
