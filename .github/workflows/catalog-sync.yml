@@ -7,6 +7,9 @@ on:
       - "tools/**"
       - ".github/workflows/catalog-sync.yml"
   workflow_dispatch:
+  schedule:
+    # Refresh official checklists and verified image galleries every day.
+    - cron: "17 10 * * *"
 
 permissions:
   contents: write
@@ -18,6 +21,7 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -31,10 +35,17 @@ jobs:
         run: python -m pip install --disable-pip-version-check pandas xlrd pypdf pillow
       - name: Build catalog from official checklists and galleries
         run: |
+          set -euo pipefail
           python tools/sync_checklists.py
           python tools/sync_premier.py
           python tools/sync_official_images.py
           python tools/cache_exact_images.py
+      - name: Validate generated JavaScript
+        run: |
+          node --check catalog-imported.js
+          node --check catalog-premier.js
+          node --check catalog-images-official.js
+          node --check catalog-images-cached.js
       - name: Commit generated catalog when changed
         run: |
           if [ -z "$(git status --porcelain -- catalog-imported.js catalog-premier.js catalog-images-official.js catalog-images-cached.js)" ]; then
