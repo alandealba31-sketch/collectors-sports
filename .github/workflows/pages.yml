@@ -35,6 +35,7 @@ jobs:
           node --check market-seed.js
           node --check catalog-owned.js
           node --check catalog-owned-batch2.js
+          node --check catalog-owned-batch3.js
           node --check catalog-images.js
           node --check catalog-images-official.js
           node --check catalog-images-cached.js
@@ -48,12 +49,14 @@ jobs:
           test -f catalog-images-cached.js
           test -f catalog-owned.js
           test -f catalog-owned-batch2.js
+          test -f catalog-owned-batch3.js
           test -f app-v08-image-guard.js
           test -f app-v08-catalog.js
           test -f market-seed.js
           test -f pricing-engine.js
           grep -q 'catalog-owned.js' index.html
           grep -q 'catalog-owned-batch2.js' index.html
+          grep -q 'catalog-owned-batch3.js' index.html
           grep -q 'app-v08-image-guard.js' index.html
           grep -q 'app-v08-catalog.js' index.html
           grep -q 'pricing-engine.js' index.html
