@@ -14,6 +14,12 @@
     "expected_base_count": 300
   },
   {
+    "id": "bowman-chrome-baseball-2026",
+    "kind": "pdf-generic",
+    "url": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2026_Bowman_Chrome_Baseball_Checklist_1.pdf?v=1786458901",
+    "expected_base_count": 100
+  },
+  {
     "id": "topps-chrome-ufc-2026",
     "kind": "xls-ufc",
     "url": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/FINAL_CheckList_2026_TOPPS_CHROME_UFC_V2.xls?v=1779204573",
