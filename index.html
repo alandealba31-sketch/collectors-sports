@@ -8,17 +8,30 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="Collectors Sports" />
   <meta name="description" content="Inventario personal de tarjetas deportivas premium." />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <title>Collectors Sports</title>
-  <link rel="manifest" href="manifest.webmanifest" />
-  <link rel="icon" href="icon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="manifest.webmanifest?v=04e" />
+  <link rel="icon" href="icon.svg?v=04e" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css?v=04e" />
 </head>
 <body>
   <div id="app"></div>
-  <script src="catalog.js"></script>
-  <script src="catalog-extra.js"></script>
-  <script src="catalog-imported.js"></script>
-  <script type="module" src="app.js"></script>
-  <script src="catalog-runtime.js"></script>
+  <script src="catalog.js?v=04e"></script>
+  <script src="catalog-extra.js?v=04e"></script>
+  <script src="catalog-imported.js?v=04e"></script>
+  <script type="module" src="app.js?v=04e"></script>
+  <script src="catalog-runtime.js?v=04e"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', async () => {
+        try {
+          const registration = await navigator.serviceWorker.register('./sw.js?v=04e', { updateViaCache: 'none' });
+          registration.update();
+        } catch (error) {
+          console.warn('Service worker update failed', error);
+        }
+      });
+    }
+  </script>
 </body>
 </html>
