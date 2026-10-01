@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """Build catalog-imported.js from official manufacturer checklists.
 
-The app keeps the source registry in tools/checklist_sources.json. This script
-fetches those files, extracts the base checklist, and emits compact rows:
-[number, subject, team/affiliation, rookie].
+The source registry lives in tools/checklist_sources.json. Each generated base
+card is stored compactly as [number, subject, team/affiliation, rookie].
 """
 from __future__ import annotations
 
 import io
 import json
+import math
 import re
 import sys
 import urllib.request
@@ -43,11 +43,31 @@ F1_TEAMS = sorted([
 ], key=len, reverse=True)
 
 
-def clean_text(value: str) -> str:
-    value = str(value or "")
-    value = value.replace("®", "").replace("™", "")
-    value = value.replace("\u00a0", " ")
+def clean_text(value) -> str:
+    if value is None:
+        return ""
+    try:
+        if pd.isna(value):
+            return ""
+    except Exception:
+        pass
+    value = str(value).replace("®", "").replace("™", "").replace("\u00a0", " ")
     return re.sub(r"\s+", " ", value).strip()
+
+
+def card_number(value) -> int | None:
+    """Accept Excel numeric cells (1, 1.0) as well as textual card numbers."""
+    if value is None or isinstance(value, bool):
+        return None
+    if isinstance(value, int):
+        return value
+    if isinstance(value, float):
+        if not math.isnan(value) and value.is_integer():
+            return int(value)
+        return None
+    text = clean_text(value)
+    m = re.fullmatch(r"(\d{1,4})(?:\.0+)?", text)
+    return int(m.group(1)) if m else None
 
 
 def fetch_bytes(url: str) -> bytes:
@@ -70,9 +90,7 @@ def split_subject_team(rest: str, teams: list[str]) -> tuple[str, str] | None:
     for team in teams:
         idx = clean.find(team)
         if idx >= 0:
-            subject = clean[:idx].strip()
-            if not subject:
-                subject = team
+            subject = clean[:idx].strip() or team
             return subject, team
     return None
 
@@ -90,22 +108,16 @@ def parse_mlb_pdf(data: bytes) -> list[list]:
             break
         if not started:
             continue
-        # Occasionally PDF extraction glues two numbered rows together. The normal
-        # per-line path handles almost all cards; a fallback regex below catches tails.
-        candidates = [line]
         m = re.match(r"^(\d{1,3})\s+(.+)$", line)
         if not m:
             continue
         number = int(m.group(1))
         if not 1 <= number <= 300:
             continue
-        rest = m.group(2)
-        found = split_subject_team(rest, MLB_TEAMS)
+        found = split_subject_team(m.group(2), MLB_TEAMS)
         if found:
             subject, team = found
             rows[number] = [number, subject, team, 0]
-    # We deliberately fail if extraction is materially incomplete so bad data is
-    # never silently published into the collector catalog.
     if len(rows) < 285:
         raise RuntimeError(f"MLB parser only extracted {len(rows)}/300 base cards")
     return [rows[n] for n in sorted(rows)]
@@ -113,9 +125,7 @@ def parse_mlb_pdf(data: bytes) -> list[list]:
 
 def strip_f1_subset(rest: str) -> str:
     marker = " BASE CARDS - "
-    if marker in rest:
-        return rest.split(marker, 1)[0].strip()
-    return rest.strip()
+    return rest.split(marker, 1)[0].strip() if marker in rest else rest.strip()
 
 
 def parse_f1_pdf(data: bytes) -> list[list]:
@@ -140,7 +150,6 @@ def parse_f1_pdf(data: bytes) -> list[list]:
         whole_rest = clean_text(m.group(2))
         rookie = 1 if re.search(r"\bRookie\b", whole_rest, re.I) else 0
         rest = strip_f1_subset(whole_rest)
-        # Remove flags which can trail the team in extraction.
         rest = re.sub(r"\s+(Rookie|1st Logo)\s*$", "", rest, flags=re.I).strip()
         found = split_subject_team(rest, F1_TEAMS)
         if found:
@@ -153,22 +162,46 @@ def parse_f1_pdf(data: bytes) -> list[list]:
     return [rows[n] for n in sorted(rows)]
 
 
+def header_score(cells: list[str]) -> int:
+    score = 0
+    if any(("card" in x and ("number" in x or "#" in x or "no" in x)) or x in {"number", "no."} for x in cells):
+        score += 3
+    if any(any(word in x for word in ("player", "subject", "fighter", "athlete", "name")) for x in cells):
+        score += 2
+    if any(any(word in x for word in ("team", "division", "weight class", "affiliation")) for x in cells):
+        score += 1
+    if any(any(word in x for word in ("set", "subset")) for x in cells):
+        score += 1
+    return score
+
+
 def locate_header(raw: pd.DataFrame) -> int | None:
-    limit = min(25, len(raw))
-    for i in range(limit):
+    best_index = None
+    best_score = 0
+    for i in range(min(100, len(raw))):
         cells = [clean_text(x).lower() for x in raw.iloc[i].tolist()]
-        if any("card number" in x or x in {"card #", "card no", "card no."} for x in cells):
-            return i
-    return None
+        score = header_score(cells)
+        if score > best_score:
+            best_index, best_score = i, score
+    return best_index if best_score >= 4 else None
 
 
-def pick_column(columns, needles):
+def pick_column(columns, needles, reject=()):
     normalized = {c: clean_text(c).lower() for c in columns}
     for needle in needles:
         for original, norm in normalized.items():
-            if needle in norm:
+            if needle in norm and not any(bad in norm for bad in reject):
                 return original
     return None
+
+
+def print_xls_preview(sheet: str, raw: pd.DataFrame) -> None:
+    print(f"  XLS diagnostic sheet={sheet!r} shape={raw.shape}", file=sys.stderr)
+    for i in range(min(12, len(raw))):
+        values = [clean_text(x) for x in raw.iloc[i].tolist()]
+        values = [x for x in values if x][:10]
+        if values:
+            print(f"    row {i}: {values}", file=sys.stderr)
 
 
 def parse_generic_xls(data: bytes, expected: int = 0) -> list[list]:
@@ -178,38 +211,42 @@ def parse_generic_xls(data: bytes, expected: int = 0) -> list[list]:
         raw = pd.read_excel(book, sheet_name=sheet, header=None, dtype=object)
         header = locate_header(raw)
         if header is None:
+            print_xls_preview(sheet, raw)
             continue
         frame = pd.read_excel(book, sheet_name=sheet, header=header, dtype=object)
-        number_col = pick_column(frame.columns, ["card number", "card #", "card no"])
-        name_col = pick_column(frame.columns, ["name", "subject", "fighter"])
+        print(f"  XLS sheet={sheet!r} header={header} columns={[clean_text(c) for c in frame.columns]}", flush=True)
+        number_col = pick_column(frame.columns, ["card number", "card #", "card no", "number", "no."], reject=("set", "subset"))
+        name_col = pick_column(frame.columns, ["fighter name", "player name", "subject", "fighter", "athlete", "name"])
         subset_col = pick_column(frame.columns, ["subset", "set name", "card set"])
-        team_col = pick_column(frame.columns, ["team", "weight class", "division"])
+        team_col = pick_column(frame.columns, ["team", "weight class", "division", "affiliation"])
         rookie_col = pick_column(frame.columns, ["rookie", "rc"])
         if number_col is None or name_col is None:
+            print(f"  Could not identify number/name columns in {sheet!r}", file=sys.stderr)
+            print_xls_preview(sheet, raw)
             continue
-        rows: list[list] = []
+        unique: dict[int, list] = {}
         for _, row in frame.iterrows():
-            number_raw = clean_text(row.get(number_col, ""))
-            if not re.fullmatch(r"\d{1,4}", number_raw):
+            number = card_number(row.get(number_col))
+            if number is None:
                 continue
-            if subset_col is not None:
-                subset = clean_text(row.get(subset_col, "")).lower()
+            if expected and not 1 <= number <= expected:
+                continue
+            if not expected and subset_col is not None:
+                subset = clean_text(row.get(subset_col)).lower()
                 if subset and "base" not in subset:
                     continue
-            number = int(number_raw)
-            subject = clean_text(row.get(name_col, ""))
-            if not subject or subject.lower() == "nan":
+            subject = clean_text(row.get(name_col))
+            if not subject:
                 continue
-            team = clean_text(row.get(team_col, "")) if team_col is not None else ""
-            if team.lower() == "nan": team = ""
-            rookie_value = clean_text(row.get(rookie_col, "")) if rookie_col is not None else ""
-            rookie = 1 if rookie_value.lower() in {"1","true","yes","y","rookie","rc","x"} else 0
-            rows.append([number, subject, team, rookie])
+            team = clean_text(row.get(team_col)) if team_col is not None else ""
+            rookie_value = clean_text(row.get(rookie_col)).lower() if rookie_col is not None else ""
+            rookie = 1 if rookie_value in {"1","true","yes","y","rookie","rc","x"} else 0
+            unique.setdefault(number, [number, subject, team, rookie])
+        rows = [unique[n] for n in sorted(unique)]
         if len(rows) > len(best):
             best = rows
     if expected and len(best) < int(expected * 0.85):
         raise RuntimeError(f"XLS parser only extracted {len(best)}/{expected} expected base cards")
-    best.sort(key=lambda r: int(r[0]))
     return best
 
 
@@ -233,7 +270,6 @@ def build() -> dict[str, list[list]]:
             imported[sid] = rows
             print(f"  -> {len(rows)} base rows", flush=True)
         except Exception as exc:
-            # One upstream format change should not destroy already-good catalog data.
             print(f"WARNING: {sid}: {exc}", file=sys.stderr, flush=True)
     return imported
 
