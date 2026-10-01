@@ -3,6 +3,13 @@
   if (!catalog) return;
   const additions = [
     {
+      id: 'topps-flagship-football-2026', sport: 'NFL', manufacturer: 'Topps', year: '2026',
+      name: 'Topps Flagship Football 2026', shortName: 'Flagship Football 2026',
+      sourceUrl: 'https://www.topps.com/pages/topps-flagship-football',
+      checklistUrl: 'https://cdn.shopify.com/s/files/1/0662/9749/5709/files/CheckList_26TFOB_VERSION5_1.pdf?v=1787977209',
+      coverage: 'collection', baseCount: 400
+    },
+    {
       id: 'topps-chrome-basketball-2025-26', sport: 'NBA', manufacturer: 'Topps', year: '2025/26',
       name: 'Topps Chrome Basketball 2025/26', shortName: 'Chrome Basketball 25/26',
       sourceUrl: 'https://www.topps.com/pages/topps-chrome-basketball', coverage: 'collection', baseCount: 299
