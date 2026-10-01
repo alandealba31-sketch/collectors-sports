@@ -1,6 +1,6 @@
-const CACHE='collectors-sports-v06';
+const CACHE='collectors-sports-v06b';
 const IMAGE_CACHE='collectors-sports-images-v1';
-const CORE=['./','./index.html','./styles.css?v=06','./v05.css?v=06','./v06.css?v=06','./catalog.js?v=06','./catalog-extra.js?v=06','./catalog-imported.js?v=06','./catalog-premier.js?v=06','./catalog-runtime.js?v=06','./catalog-images.js?v=06','./app-v05.js?v=06','./app-v06-addon.js?v=06','./manifest.webmanifest?v=06','./icon.svg?v=06'];
+const CORE=['./','./index.html','./styles.css?v=06b','./v05.css?v=06b','./v06.css?v=06b','./catalog.js?v=06b','./catalog-extra.js?v=06b','./catalog-imported.js?v=06b','./catalog-premier.js?v=06b','./catalog-runtime.js?v=06b','./catalog-images.js?v=06b','./catalog-images-official.js?v=06b','./app-v05.js?v=06b','./app-v06-addon.js?v=06b','./manifest.webmanifest?v=06b','./icon.svg?v=06b'];
 
 self.addEventListener('install',event=>{
   self.skipWaiting();
