@@ -20,5 +20,23 @@
     "kind": "pdf-generic",
     "url": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2025_Topps_Triumphant_Tennis_Checklist.pdf?v=1755610487",
     "expected_base_count": 75
+  },
+  {
+    "id": "topps-chrome-mls-2026",
+    "kind": "pdf-generic",
+    "url": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/CheckList_Subject_to_Change_3ac890e7-2e2f-4550-89d8-59689322cd5c.pdf?v=1789050559",
+    "expected_base_count": 200
+  },
+  {
+    "id": "topps-chrome-premier-league-2026",
+    "kind": "pdf-generic",
+    "url": "https://cdn.shopify.com/s/files/1/0739/2015/1805/files/FINAL_PL_Chrome_Checklist.pdf?v=1770285570",
+    "expected_base_count": 200
+  },
+  {
+    "id": "topps-finest-premier-league-2026",
+    "kind": "pdf-generic",
+    "url": "https://cdn.shopify.com/s/files/1/0739/2015/1805/files/Finest_Premier_League_Checklist.pdf?v=1774359572",
+    "expected_base_count": 300
   }
 ]
