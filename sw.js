@@ -1,5 +1,5 @@
-const CACHE='collectors-sports-v04d';
-const CORE=['./','./index.html','./styles.css','./catalog.js','./catalog-extra.js','./catalog-imported.js','./catalog-runtime.js','./app.js','./manifest.webmanifest','./icon.svg'];
+const CACHE='collectors-sports-v04e';
+const CORE=['./','./index.html','./styles.css?v=04e','./catalog.js?v=04e','./catalog-extra.js?v=04e','./catalog-imported.js?v=04e','./catalog-runtime.js?v=04e','./app.js?v=04e','./manifest.webmanifest?v=04e','./icon.svg?v=04e'];
 
 self.addEventListener('install',event=>{
   self.skipWaiting();
@@ -16,24 +16,19 @@ self.addEventListener('activate',event=>{
 self.addEventListener('fetch',event=>{
   if(event.request.method!=='GET') return;
   const url=new URL(event.request.url);
-  const networkFirst = event.request.mode==='navigate' || url.pathname.endsWith('/catalog-imported.js');
 
-  if(networkFirst){
+  if(url.origin===self.location.origin){
     event.respondWith(
       fetch(event.request).then(response=>{
-        const copy=response.clone();
-        caches.open(CACHE).then(cache=>cache.put(event.request,copy));
+        if(response && response.ok){
+          const copy=response.clone();
+          caches.open(CACHE).then(cache=>cache.put(event.request,copy));
+        }
         return response;
       }).catch(()=>caches.match(event.request))
     );
     return;
   }
 
-  event.respondWith(
-    caches.match(event.request).then(cached=>cached || fetch(event.request).then(response=>{
-      const copy=response.clone();
-      caches.open(CACHE).then(cache=>cache.put(event.request,copy));
-      return response;
-    }))
-  );
+  event.respondWith(fetch(event.request).catch(()=>caches.match(event.request)));
 });
