@@ -7,7 +7,7 @@
   }
 
   function verifiedCardVisual(card) {
-    const visual = catalog.cards?.[cardImageKey(card)] || null;
+    const visual = window.CSVisual.resolve(card.catalogCollectionId, card.cardNumber, card.parallel, card.catalogEntryKey);
     return visual && (visual.kind === 'exact' || visual.kind === 'reference') ? visual : null;
   }
 
@@ -106,3 +106,4 @@
 
   render();
 })();
+

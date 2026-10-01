@@ -20,7 +20,7 @@
         removed += 1;
         continue;
       }
-      const key = String(number).trim().toLowerCase();
+      const key = String(number).trim().toLowerCase() + (row[7] ? '|' + row[7] : '');
       if (seen.has(key)) {
         removed += 1;
         continue;
@@ -36,7 +36,7 @@
     if (collection) {
       collection.checklistCount = clean.length;
       collection.baseCount = clean.every(row => row[5])
-        ? clean.filter(row => row[5] === 'base').length
+        ? clean.filter(row => row[5] === 'base' && (!row[6] || row[6] === 'Base')).length
         : Math.min(collection.baseCount ?? clean.length, clean.length);
       // A filtered source is useful, but must not be presented as complete.
       if (clean.length !== rows.length && ['base-complete', 'full-checklist'].includes(collection.coverage)) {

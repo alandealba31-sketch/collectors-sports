@@ -5,8 +5,8 @@
     return `${collectionId || ''}|${String(cardNumber || '')}`;
   }
 
-  function exactVisual(collectionId, cardNumber) {
-    return IMAGE_CATALOG.cards?.[imageKey(collectionId, cardNumber)] || null;
+  function exactVisual(collectionId, cardNumber, entryKey = '') {
+    return window.CSVisual.resolve(collectionId, cardNumber, '', entryKey);
   }
 
   function collectionVisual(collectionId) {
@@ -15,8 +15,8 @@
     return { front: c.cover, kind: c.kind || 'collection', source: c.source, sourcePage: c.sourcePage, label: c.label };
   }
 
-  function visualFor(collectionId, cardNumber, includeCollectionFallback = true) {
-    return exactVisual(collectionId, cardNumber) || (includeCollectionFallback ? collectionVisual(collectionId) : null);
+  function visualFor(collectionId, cardNumber, includeCollectionFallback = true, entryKey = '') {
+    return exactVisual(collectionId, cardNumber, entryKey) || (includeCollectionFallback ? collectionVisual(collectionId) : null);
   }
 
   function kindLabel(kind) {
@@ -37,9 +37,9 @@
     return 'Es una imagen oficial representativa del producto. No confirma la carta exacta.';
   }
 
-  function visualThumb(visual, collectionId, cardNumber, player) {
-    if (!visual?.front) return '<span class="catalog-thumb catalog-thumb-empty" aria-hidden="true">CS</span>';
-    return `<span class="catalog-thumb ${kindClass(visual.kind)}" role="button" tabindex="0" data-preview-visual="1" data-visual-collection="${esc(collectionId)}" data-visual-number="${esc(cardNumber)}" data-visual-player="${esc(player || '')}" aria-label="Ver imagen de referencia"><img src="${esc(visual.front)}" alt="${esc(player || 'Carta')}" loading="lazy" referrerpolicy="no-referrer"><span class="visual-dot"></span></span>`;
+  function visualThumb(visual, collectionId, cardNumber, player, entryKey = '') {
+    if (!visual?.front && !visual?.back) return '<span class="catalog-thumb catalog-thumb-empty" aria-hidden="true">CS</span>';
+    return `<span class="catalog-thumb ${kindClass(visual.kind)}" role="button" tabindex="0" data-preview-visual="1" data-visual-collection="${esc(collectionId)}" data-visual-number="${esc(cardNumber)}" data-visual-player="${esc(player || '')}" data-entry-key="${esc(entryKey)}" aria-label="Ver imagen de referencia"><img src="${esc(visual.front || visual.back)}" alt="${esc(player || 'Carta')}" loading="lazy" referrerpolicy="no-referrer"><span class="visual-dot"></span></span>`;
   }
 
   const originalLayout = layout;
@@ -60,15 +60,15 @@
   catalogCardRow = function(c, row, index) {
     const [number, player, team, rookie] = row;
     const owned = findOwnedCatalogCard(c.id, row);
-    const visual = exactVisual(c.id, number);
-    return `<button class="catalog-card-row visual-row ${owned ? 'owned' : ''}" ${owned ? `data-card="${esc(owned.id)}"` : `data-use-catalog-card="${esc(c.id)}" data-catalog-card-index="${index}"`}>${visualThumb(visual, c.id, number, player)}<span class="catalog-number">#${esc(number)}</span><span class="catalog-player"><strong>${esc(player)}</strong><em>${esc(team)}</em>${visual ? `<small class="${kindClass(visual.kind)}">${kindLabel(visual.kind)}</small>` : ''}</span>${rookie ? '<span class="badge gold">RC</span>' : ''}${owned ? '<span class="catalog-owned">✓</span>' : '<span class="catalog-plus">＋</span>'}</button>`;
+    const visual = exactVisual(c.id, number, row[7]);
+    return `<button class="catalog-card-row visual-row ${owned ? 'owned' : ''}" ${owned ? `data-card="${esc(owned.id)}"` : `data-use-catalog-card="${esc(c.id)}" data-catalog-card-index="${index}"`}>${visualThumb(visual, c.id, number, player, row[7])}<span class="catalog-number">#${esc(number)}</span><span class="catalog-player"><strong>${esc(player)}</strong><em>${esc(team)}</em>${visual ? `<small class="${kindClass(visual.kind)}">${kindLabel(visual.kind)}</small>` : ''}</span>${rookie ? '<span class="badge gold">RC</span>' : ''}${owned ? '<span class="catalog-owned">✓</span>' : '<span class="catalog-plus">＋</span>'}</button>`;
   };
 
   const originalSeedFromCatalogCard = seedFromCatalogCard;
   seedFromCatalogCard = function(collectionId, index) {
     const seed = originalSeedFromCatalogCard(collectionId, index);
     if (!seed) return seed;
-    const visual = exactVisual(collectionId, seed.cardNumber);
+    const visual = exactVisual(collectionId, seed.cardNumber, seed.catalogEntryKey);
     if (!visual) return seed;
     return {
       ...seed,
@@ -84,7 +84,7 @@
   cardRow = function(card) {
     const visual = card.referenceImageUrl
       ? { front: card.referenceImageUrl, kind: card.referenceImageKind || 'reference' }
-      : exactVisual(card.catalogCollectionId, card.cardNumber);
+      : exactVisual(card.catalogCollectionId, card.cardNumber, card.catalogEntryKey);
     if (!visual?.front) return originalCardRow(card);
     const title = esc(card.player || 'Sin jugador');
     const subtitle = [cardLabel(card), card.cardNumber ? `#${card.cardNumber}` : ''].filter(Boolean).join(' · ');
@@ -111,7 +111,7 @@
         label: candidate.referenceImageLabel || ''
       };
     } else if (candidate.catalogCollectionId && candidate.cardNumber) {
-      visual = visualFor(candidate.catalogCollectionId, candidate.cardNumber, true);
+      visual = visualFor(candidate.catalogCollectionId, candidate.cardNumber, true, candidate.catalogEntryKey);
     } else if (candidate.catalogCollectionId) {
       visual = collectionVisual(candidate.catalogCollectionId);
     }
@@ -155,7 +155,7 @@
           sourcePage: card.referenceImageSourcePage || '',
           label: card.referenceImageLabel || ''
         }
-      : visualFor(card.catalogCollectionId, card.cardNumber, true);
+      : visualFor(card.catalogCollectionId, card.cardNumber, true, card.catalogEntryKey);
     if (!visual?.front) return;
     const slot = document.querySelector('#frontPhotoSlot');
     if (!slot) return;
@@ -180,7 +180,7 @@
     document.querySelector('.visual-modal')?.remove();
     const modal = document.createElement('div');
     modal.className = 'visual-modal';
-    modal.innerHTML = `<div class="visual-modal-backdrop" data-close-visual></div><div class="visual-modal-card"><button class="visual-modal-close" data-close-visual aria-label="Cerrar">×</button><img src="${esc(visual.front)}" alt="${esc(player || 'Carta')}" referrerpolicy="no-referrer"><div class="visual-modal-copy"><span class="badge visual-badge ${kindClass(visual.kind)}">${kindLabel(visual.kind)}</span><h3>${esc(player || visual.label || 'Carta')}</h3><div class="muted">#${esc(number)}</div><p>${visualMessage(visual.kind)}</p>${visual.sourcePage ? `<a class="btn secondary link-btn" href="${esc(visual.sourcePage)}" target="_blank" rel="noopener">Fuente ↗</a>` : ''}</div></div>`;
+    modal.innerHTML = `<div class="visual-modal-backdrop" data-close-visual></div><div class="visual-modal-card"><button class="visual-modal-close" data-close-visual aria-label="Cerrar">×</button><img src="${esc(visual.front || visual.back)}" alt="${esc(player || 'Carta')}" referrerpolicy="no-referrer"><div class="visual-modal-copy"><span class="badge visual-badge ${kindClass(visual.kind)}">${kindLabel(visual.kind)}</span><h3>${esc(player || visual.label || 'Carta')}</h3><div class="muted">#${esc(number)}</div><p>${visualMessage(visual.kind)}</p>${visual.sourcePage ? `<a class="btn secondary link-btn" href="${esc(visual.sourcePage)}" target="_blank" rel="noopener">Fuente ↗</a>` : ''}</div></div>`;
     document.body.appendChild(modal);
     modal.querySelectorAll('[data-close-visual]').forEach(el => el.addEventListener('click', () => modal.remove()));
   }

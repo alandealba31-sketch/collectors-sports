@@ -1,8 +1,10 @@
 (() => {
   const safeUrl = value => /^(https:\/\/|data:image\/(?:jpeg|png|webp);base64,|blob:|\.\/assets\/)/i.test(String(value || '')) ? value : '';
   const escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  function resolve(collectionId, number, variant = '') {
-    const key = `${collectionId}|${String(number ?? '')}`;
+  function resolve(collectionId, number, variant = '', entryKey = '') {
+    const scoped = window.CS_CATALOG?.collections?.find(c => c.id === collectionId)?.entryIdentity;
+    if (scoped && !entryKey) return null;
+    const key = `${collectionId}|${String(number ?? '')}${scoped ? '|' + entryKey : ''}`;
     const entry = window.CS_IMAGE_CATALOG?.cards?.[key];
     const cached = window.CS_IMAGE_CACHE?.[key];
     if (!cached && !['exact','reference'].includes(entry?.kind)) return null;
@@ -20,9 +22,9 @@
     return `<span class="cs-card-thumbnail ${className}">${url ? `<img data-cs-image src="${escape(url)}" alt="${escape(title)}" loading="lazy" decoding="async">` : '<span class="cs-image-placeholder">Sin imagen</span>'}</span>`;
   }
   function searchResult(entry, index) {
-    const visual = resolve(entry.collection.id, entry.number);
+    const visual = resolve(entry.collection.id, entry.number, entry.row?.[6], entry.row?.[7]);
     const kind = entry.subset || (Array.isArray(entry.flags) ? entry.flags.join(' · ') : '') || 'Base';
-    return `<div class="cs-visual-result"><button type="button" class="cs-live-result" data-cs-result="${index}">${thumbnail(visual, entry.player)}<span class="cs-result-copy"><strong>${escape(entry.player)}</strong><span>${escape(kind)} · ${escape(entry.collection.shortName || entry.collection.name)} · #${escape(entry.number)}</span>${entry.team ? `<small>${escape(entry.team)}</small>` : ''}<small class="cs-image-status">${visual ? (visual.kind === 'exact' ? 'Imagen de catálogo' : 'Referencia visual · puede variar el acabado') : 'Imagen pendiente'}</small></span></button>${visual ? `<button type="button" class="cs-image-expand" data-cs-preview data-collection="${escape(entry.collection.id)}" data-number="${escape(entry.number)}" data-player="${escape(entry.player)}" aria-label="Ampliar imagen de ${escape(entry.player)}">Ampliar</button>` : ''}</div>`;
+    return `<div class="cs-visual-result"><button type="button" class="cs-live-result" data-cs-result="${index}">${thumbnail(visual, entry.player)}<span class="cs-result-copy"><strong>${escape(entry.player)}</strong><span>${escape(kind)} · ${escape(entry.collection.shortName || entry.collection.name)} · #${escape(entry.number)}</span>${entry.team ? `<small>${escape(entry.team)}</small>` : ''}<small class="cs-image-status">${visual ? (visual.kind === 'exact' ? 'Imagen de catálogo' : 'Referencia visual · puede variar el acabado') : 'Imagen pendiente'}</small></span></button>${visual ? `<button type="button" class="cs-image-expand" data-cs-preview data-collection="${escape(entry.collection.id)}" data-number="${escape(entry.number)}" data-entry-key="${escape(entry.row?.[7]||'')}" data-player="${escape(entry.player)}" aria-label="Ampliar imagen de ${escape(entry.player)}">Ampliar</button>` : ''}</div>`;
   }
   function preview(visual, title, number, returnFocus) {
     document.querySelector('.cs-card-dialog')?.close();
@@ -50,7 +52,7 @@
     if (!button) return;
     const id = button.dataset.collection || button.dataset.visualCollection;
     const number = button.dataset.number || button.dataset.visualNumber;
-    const visual = resolve(id, number);
+    const visual = resolve(id, number, '', button.dataset.entryKey || '');
     if (!visual) return;
     e.preventDefault(); e.stopImmediatePropagation();
     preview(visual, button.dataset.player || button.dataset.visualPlayer || '', number, button);

@@ -10,55 +10,57 @@
   <meta name="description" content="Inventario personal de tarjetas deportivas premium." />
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <title>Collectors Sports</title>
-  <link rel="manifest" href="manifest.webmanifest?v=10g" />
-  <link rel="icon" href="icon.svg?v=10g" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css?v=10g" />
+  <link rel="manifest" href="manifest.webmanifest?v=10h" />
+  <link rel="icon" href="icon.svg?v=10h" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css?v=10h" />
   <link rel="stylesheet" href="v05.css?v=09a" />
   <link rel="stylesheet" href="v06.css?v=09a" />
   <link rel="stylesheet" href="v06-polish.css?v=09a" />
   <link rel="stylesheet" href="v07.css?v=09a" />
-  <link rel="stylesheet" href="mobile-background.css?v=10g" />
-  <link rel="stylesheet" href="card-visuals.css?v=10g" />
+  <link rel="stylesheet" href="mobile-background.css?v=10h" />
+  <link rel="stylesheet" href="card-visuals.css?v=10h" />
 </head>
 <body>
   <div id="app"></div>
   <script src="catalog.js?v=09a"></script>
   <script src="catalog-extra.js?v=09a"></script>
   <script src="catalog-imported.js?v=09a"></script>
-  <script src="catalog-tennis.js?v=10g"></script>
+  <script src="catalog-tennis.js?v=10h"></script>
   <script src="catalog-premier.js?v=09a"></script>
   <script src="catalog-owned.js?v=09a"></script>
   <script src="catalog-owned-batch2.js?v=09a"></script>
   <script src="catalog-owned-batch3.js?v=09a"></script>
-  <script src="catalog-owned-batch4.js?v=10g"></script>
+  <script src="catalog-owned-batch4.js?v=10h"></script>
+  <script src="catalog-owned-batch5.js?v=10h"></script>
   <script src="catalog-runtime.js?v=09a"></script>
-  <script src="catalog-now.js?v=10g"></script>
-  <script src="catalog-now-extra.js?v=10g"></script>
+  <script src="catalog-now.js?v=10h"></script>
+  <script src="catalog-now-extra.js?v=10h"></script>
   <script src="catalog-images.js?v=09a"></script>
   <script src="catalog-images-official.js?v=09a"></script>
   <script src="catalog-images-extra.js?v=09a"></script>
   <script src="catalog-images-teamsets.js?v=09a"></script>
   <script src="catalog-images-cached.js?v=09a"></script>
-  <script src="catalog-images-tennis.js?v=10g"></script>
-  <script src="catalog-images-owned-batch4.js?v=10g"></script>
-  <script src="card-visuals.js?v=10g"></script>
-  <script src="app-v09-data-guard.js?v=10g"></script>
+  <script src="catalog-images-tennis.js?v=10h"></script>
+  <script src="catalog-images-owned-batch4.js?v=10h"></script>
+  <script src="catalog-images-owned-batch5.js?v=10h"></script>
+  <script src="card-visuals.js?v=10h"></script>
+  <script src="app-v09-data-guard.js?v=10h"></script>
   <script src="market-seed.js?v=09a"></script>
-  <script src="app-v05.js?v=10g"></script>
-  <script src="app-v06-addon.js?v=10g"></script>
+  <script src="app-v05.js?v=10h"></script>
+  <script src="app-v06-addon.js?v=10h"></script>
   <script src="app-v06-polish.js?v=09a"></script>
   <script src="app-v06-fix.js?v=09a"></script>
   <script src="pricing-engine.js?v=09a"></script>
-  <script src="app-v08-image-guard.js?v=09a"></script>
+  <script src="app-v08-image-guard.js?v=10h"></script>
   <script src="app-v08-catalog.js?v=09a"></script>
-  <script src="app-v10-autocomplete.js?v=10g"></script>
-  <script src="app-v10-image-audit.js?v=10g"></script>
-  <script src="inventory-photos.js?v=10g"></script>
+  <script src="app-v10-autocomplete.js?v=10h"></script>
+  <script src="app-v10-image-audit.js?v=10h"></script>
+  <script src="inventory-photos.js?v=10h"></script>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', async () => {
         try {
-          const registration = await navigator.serviceWorker.register('./sw.js?v=10g', { updateViaCache: 'none' });
+          const registration = await navigator.serviceWorker.register('./sw.js?v=10h', { updateViaCache: 'none' });
           await registration.update();
         } catch (error) { console.warn('Service worker update failed', error); }
       });
