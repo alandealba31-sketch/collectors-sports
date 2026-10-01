@@ -1,5 +1,11 @@
 [
   {
+    "id": "topps-flagship-football-2026",
+    "kind": "pdf-generic",
+    "url": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/CheckList_26TFOB_VERSION5_1.pdf?v=1787977209",
+    "expected_base_count": 400
+  },
+  {
     "id": "topps-chrome-f1-2026",
     "kind": "pdf-f1",
     "url": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2026_F1_Chrome_Checklist.pdf?v=1788962968",
