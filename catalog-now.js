@@ -3,58 +3,36 @@
   const catalog = window.CS_CATALOG;
   if (!catalog) return;
   const addCollection = c => { if (!catalog.collections.some(x => x.id === c.id)) catalog.collections.push(c); };
-  const addRows = (id, rows) => {
-    catalog.checklists[id] = catalog.checklists[id] || [];
-    const seen = new Set(catalog.checklists[id].map(r => JSON.stringify(r)));
-    rows.forEach(r => { const k=JSON.stringify(r); if(!seen.has(k)){catalog.checklists[id].push(r);seen.add(k);} });
-  };
-  const standard50 = (number, player, team, extras=[]) => [
-    [number,player,team,0,'Base'],
-    [`${number}-GOLD`,player,team,0,'Gold Foil /50'],
-    [`${number}-ORANGE`,player,team,0,'Orange Foil /25'],
-    [`${number}-BLACK`,player,team,0,'Black Foil /10'],
-    [`${number}-RED`,player,team,0,'Red Foil /5'],
-    [`${number}-FF`,player,team,0,'FoilFractor 1/1'],
-    ...extras
-  ];
+  const addRows = (id, rows) => { catalog.checklists[id]=catalog.checklists[id]||[]; const seen=new Set(catalog.checklists[id].map(r=>JSON.stringify(r))); rows.forEach(r=>{const k=JSON.stringify(r);if(!seen.has(k)){catalog.checklists[id].push(r);seen.add(k);}}); };
+  const standard50=(number,player,team,extras=[])=>[[number,player,team,0,'Base'],[`${number}-GOLD`,player,team,0,'Gold Foil /50'],[`${number}-ORANGE`,player,team,0,'Orange Foil /25'],[`${number}-BLACK`,player,team,0,'Black Foil /10'],[`${number}-RED`,player,team,0,'Red Foil /5'],[`${number}-FF`,player,team,0,'FoilFractor 1/1'],...extras];
+  const meta=(id,inserts=[])=>window.CS_SET_META[id]={parallels:['Gold Foil /50','Orange Foil /25','Black Foil /10','Red Foil /5','FoilFractor 1/1'],inserts,source:'Topps official product pages',verified:'2026-10-01',note:'Partial verified ingestion; cards are added only after individual official verification.'};
 
   addCollection({id:'topps-now-fc-barcelona-2026-27',sport:'Soccer',manufacturer:'Topps',year:'2026/27',name:'FC Barcelona Topps NOW 2026/27',shortName:'Barcelona Topps NOW 26/27',sourceUrl:'https://www.topps.com/products/lamine-yamal-2026-27-fc-barcelona-topps-now%C2%AE-card-2',checklistUrl:'https://www.topps.com/collections/topps-now-archive',coverage:'verified-partial'});
-  addRows('topps-now-fc-barcelona-2026-27', [
-    ['2','Lamine Yamal','FC Barcelona',0,'Base'],['2-GREEN','Lamine Yamal','FC Barcelona',0,'Green Foil /99'],['2-GOLD','Lamine Yamal','FC Barcelona',0,'Gold Foil /50'],['2-ORANGE','Lamine Yamal','FC Barcelona',0,'Orange Foil /25'],['2-BLACK','Lamine Yamal','FC Barcelona',0,'Black Foil /10'],['2-RED','Lamine Yamal','FC Barcelona',0,'Red Foil /5'],['2-FF','Lamine Yamal','FC Barcelona',0,'FoilFractor 1/1'],['2-AUTO','Lamine Yamal','FC Barcelona',['AUTO'],'Autograph 1/1']
-  ]);
+  addRows('topps-now-fc-barcelona-2026-27',[['2','Lamine Yamal','FC Barcelona',0,'Base'],['2-GREEN','Lamine Yamal','FC Barcelona',0,'Green Foil /99'],['2-GOLD','Lamine Yamal','FC Barcelona',0,'Gold Foil /50'],['2-ORANGE','Lamine Yamal','FC Barcelona',0,'Orange Foil /25'],['2-BLACK','Lamine Yamal','FC Barcelona',0,'Black Foil /10'],['2-RED','Lamine Yamal','FC Barcelona',0,'Red Foil /5'],['2-FF','Lamine Yamal','FC Barcelona',0,'FoilFractor 1/1'],['2-AUTO','Lamine Yamal','FC Barcelona',['AUTO'],'Autograph 1/1']]);
 
   addCollection({id:'topps-now-argentina-2026',sport:'Soccer',manufacturer:'Topps',year:'2026',name:'Argentina Topps NOW 2026',shortName:'Argentina Topps NOW 2026',sourceUrl:'https://www.topps.com/products/lionel-messi-2026-argentina-topps-now%C2%AE-card-1',checklistUrl:'https://www.topps.com/collections/topps-now-archive',coverage:'verified-partial'});
-  addRows('topps-now-argentina-2026', [
-    ['1','Lionel Messi','Argentina',0,'Base'],['1-GREEN','Lionel Messi','Argentina',0,'Green Foil /99'],['1-GOLD','Lionel Messi','Argentina',0,'Gold Foil /50'],['1-ORANGE','Lionel Messi','Argentina',0,'Orange Foil /25'],['1-BLACK','Lionel Messi','Argentina',0,'Black Foil /10'],['1-RED','Lionel Messi','Argentina',0,'Red Foil /5'],['1-FF','Lionel Messi','Argentina',0,'FoilFractor 1/1'],['1-AUTO5','Lionel Messi','Argentina',['AUTO'],'Autograph Redemption /5'],['1-AUTO1','Lionel Messi','Argentina',['AUTO'],'Autograph Redemption 1/1']
-  ]);
+  addRows('topps-now-argentina-2026',[['1','Lionel Messi','Argentina',0,'Base'],['1-GREEN','Lionel Messi','Argentina',0,'Green Foil /99'],['1-GOLD','Lionel Messi','Argentina',0,'Gold Foil /50'],['1-ORANGE','Lionel Messi','Argentina',0,'Orange Foil /25'],['1-BLACK','Lionel Messi','Argentina',0,'Black Foil /10'],['1-RED','Lionel Messi','Argentina',0,'Red Foil /5'],['1-FF','Lionel Messi','Argentina',0,'FoilFractor 1/1'],['1-AUTO5','Lionel Messi','Argentina',['AUTO'],'Autograph Redemption /5'],['1-AUTO1','Lionel Messi','Argentina',['AUTO'],'Autograph Redemption 1/1']]);
 
   addCollection({id:'topps-now-mlb-2026',sport:'Baseball',manufacturer:'Topps',year:'2026',name:'MLB Topps NOW 2026',shortName:'MLB Topps NOW 2026',sourceUrl:'https://www.topps.com/collections/mlb-topps-now',checklistUrl:'https://www.topps.com/collections/topps-now-archive',coverage:'verified-partial'});
-  addRows('topps-now-mlb-2026', [
-    ...standard50('37','Shohei Ohtani','Los Angeles Dodgers'),
-    ...standard50('65','Shohei Ohtani / Ichiro','Major League Baseball'),
-    ...standard50('71','Shohei Ohtani','Los Angeles Dodgers'),
-    ...standard50('80','Aaron Judge / Mike Trout','Major League Baseball'),
-    ...standard50('157','Aaron Judge','New York Yankees'),
-    ...standard50('212','Shohei Ohtani','Los Angeles Dodgers'),
-    ...standard50('226','Shohei Ohtani','Los Angeles Dodgers', [['226-SP','Shohei Ohtani','Los Angeles Dodgers',['SP'],'Image Variation Short Print']]),
-    ...standard50('236','Aaron Judge','New York Yankees', [['236-SP','Aaron Judge','New York Yankees',['SP'],'Image Variation Short Print']]),
-    ...standard50('341','Shohei Ohtani','Los Angeles Dodgers')
-  ]);
+  addRows('topps-now-mlb-2026',[...standard50('37','Shohei Ohtani','Los Angeles Dodgers'),...standard50('65','Shohei Ohtani / Ichiro','Major League Baseball'),...standard50('71','Shohei Ohtani','Los Angeles Dodgers'),...standard50('80','Aaron Judge / Mike Trout','Major League Baseball'),...standard50('157','Aaron Judge','New York Yankees'),...standard50('212','Shohei Ohtani','Los Angeles Dodgers'),...standard50('226','Shohei Ohtani','Los Angeles Dodgers',[['226-SP','Shohei Ohtani','Los Angeles Dodgers',['SP'],'Image Variation Short Print']]),...standard50('236','Aaron Judge','New York Yankees',[['236-SP','Aaron Judge','New York Yankees',['SP'],'Image Variation Short Print']]),...standard50('341','Shohei Ohtani','Los Angeles Dodgers')]);
 
   addCollection({id:'topps-now-wbc-2026',sport:'Baseball',manufacturer:'Topps',year:'2026',name:'World Baseball Classic Topps NOW 2026',shortName:'WBC Topps NOW 2026',sourceUrl:'https://www.topps.com/collections/world-baseball-classic-topps-now',checklistUrl:'https://www.topps.com/collections/topps-now-archive',coverage:'verified-partial'});
-  addRows('topps-now-wbc-2026', [
-    ...standard50('W004','Shohei Ohtani','Team Japan'),
-    ...standard50('W008','Aaron Judge','Team USA', [
-      ['W008-REL10','Aaron Judge','Team USA',['RELIC'],'Relic Redemption /10'],
-      ['W008-REL5','Aaron Judge','Team USA',['RELIC'],'Relic Redemption /5'],
-      ['W008-AR1','Aaron Judge','Team USA',['AUTO','RELIC'],'Auto-Relic Redemption 1/1']
-    ]),
-    ...standard50('W036','Aaron Judge','Team USA')
-  ]);
+  addRows('topps-now-wbc-2026',[...standard50('W004','Shohei Ohtani','Team Japan'),...standard50('W008','Aaron Judge','Team USA',[['W008-REL10','Aaron Judge','Team USA',['RELIC'],'Relic Redemption /10'],['W008-REL5','Aaron Judge','Team USA',['RELIC'],'Relic Redemption /5'],['W008-AR1','Aaron Judge','Team USA',['AUTO','RELIC'],'Auto-Relic Redemption 1/1']]),...standard50('W036','Aaron Judge','Team USA')]);
 
-  window.CS_SET_META = window.CS_SET_META || {};
+  addCollection({id:'topps-now-f1-2026',sport:'Formula 1',manufacturer:'Topps',year:'2026',name:'Formula 1 Topps NOW 2026',shortName:'F1 Topps NOW 2026',sourceUrl:'https://www.topps.com/collections/formula-1-topps-now',coverage:'verified-partial'});
+  addRows('topps-now-f1-2026',[...standard50('1','Oracle Red Bull Racing','Oracle Red Bull Racing'),...standard50('18','Kimi Antonelli','Mercedes-AMG Petronas Formula One Team'),...standard50('21','Lewis Hamilton','Scuderia Ferrari'),...standard50('45','George Russell','Mercedes-AMG Petronas Formula One Team'),...standard50('62','George Russell','Mercedes-AMG Petronas Formula One Team',[['62-SP','George Russell','Mercedes-AMG Petronas Formula One Team',['SP'],'Image Variation Short Print'],['62-AUTO1','George Russell','Mercedes-AMG Petronas Formula One Team',['AUTO'],'Autograph 1/1']])]);
+
+  addCollection({id:'topps-now-ufc-2026',sport:'UFC',manufacturer:'Topps',year:'2026',name:'UFC Topps NOW 2026',shortName:'UFC Topps NOW 2026',sourceUrl:'https://www.topps.com/collections/ufc-topps-now',coverage:'verified-partial'});
+  addRows('topps-now-ufc-2026',[...standard50('7','Sean Strickland','UFC',[['7-AUTO10','Sean Strickland','UFC',['AUTO'],'Autograph /10'],['7-AUTO5','Sean Strickland','UFC',['AUTO'],'Autograph /5'],['7-AUTO1','Sean Strickland','UFC',['AUTO'],'Autograph 1/1']]),...standard50('8','Charles Oliveira','UFC'),...standard50('10','Joe Pyfer','UFC',[['10-AUTO5','Joe Pyfer','UFC',['AUTO'],'Autograph /5'],['10-AUTO1','Joe Pyfer','UFC',['AUTO'],'Autograph 1/1']]),...standard50('24','UFC Freedom 250','UFC')]);
+
+  addCollection({id:'topps-now-tennis-2026',sport:'Tennis',manufacturer:'Topps',year:'2026',name:'Tennis Topps NOW 2026',shortName:'Tennis Topps NOW 2026',sourceUrl:'https://www.topps.com/collections/tennis-topps-now',coverage:'verified-partial'});
+  addRows('topps-now-tennis-2026',[...standard50('2','Naomi Osaka','Tennis'),...standard50('17','Mirra Andreeva','Tennis'),...standard50('22','Elena Rybakina','Tennis'),...standard50('27','Carlos Alcaraz','Tennis')]);
+
+  addCollection({id:'topps-now-nfl-2026',sport:'Football',manufacturer:'Topps',year:'2026',name:'NFL Topps NOW 2026',shortName:'NFL Topps NOW 2026',sourceUrl:'https://www.topps.com/collections/football-topps-now',coverage:'verified-partial'});
+  addRows('topps-now-nfl-2026',[...standard50('OS05','Aaron Donald','Los Angeles Rams'),...standard50('TSIM','Ty Simpson','Los Angeles Rams'),...standard50('29','Bijan Robinson','Atlanta Falcons')]);
+
+  window.CS_SET_META=window.CS_SET_META||{};
   window.CS_SET_META['topps-now-fc-barcelona-2026-27']={parallels:['Green Foil /99','Gold Foil /50','Orange Foil /25','Black Foil /10','Red Foil /5','FoilFractor 1/1'],inserts:['Autograph 1/1'],source:'Topps official product page',verified:'2026-10-01'};
   window.CS_SET_META['topps-now-argentina-2026']={parallels:['Green Foil /99','Gold Foil /50','Orange Foil /25','Black Foil /10','Red Foil /5','FoilFractor 1/1'],inserts:['Autograph Redemption /5','Autograph Redemption 1/1'],source:'Topps official product page',verified:'2026-10-01'};
-  window.CS_SET_META['topps-now-mlb-2026']={parallels:['Gold Foil /50','Orange Foil /25','Black Foil /10','Red Foil /5','FoilFractor 1/1'],inserts:['Image Variation Short Print (card-specific)'],source:'Topps official product pages',verified:'2026-10-01',note:'Partial verified ingestion; cards are added only after individual official verification.'};
-  window.CS_SET_META['topps-now-wbc-2026']={parallels:['Gold Foil /50','Orange Foil /25','Black Foil /10','Red Foil /5','FoilFractor 1/1'],inserts:['Relic /10','Relic /5','Auto-Relic 1/1 (card-specific)'],source:'Topps official product pages',verified:'2026-10-01',note:'Partial verified ingestion; cards are added only after individual official verification.'};
+  meta('topps-now-mlb-2026',['Image Variation Short Print (card-specific)']); meta('topps-now-wbc-2026',['Relic /10','Relic /5','Auto-Relic 1/1 (card-specific)']); meta('topps-now-f1-2026',['Image Variation SP','Autograph 1/1 (card-specific)']); meta('topps-now-ufc-2026',['Autographs (card-specific)']); meta('topps-now-tennis-2026'); meta('topps-now-nfl-2026');
 })();
