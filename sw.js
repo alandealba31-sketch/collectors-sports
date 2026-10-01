@@ -1,5 +1,5 @@
-const CACHE='collectors-sports-v04b';
-const CORE=['./','./index.html','./styles.css','./catalog.js','./catalog-extra.js','./catalog-runtime.js','./app.js','./manifest.webmanifest','./icon.svg'];
+const CACHE='collectors-sports-v04c';
+const CORE=['./','./index.html','./styles.css','./catalog.js','./catalog-extra.js','./catalog-imported.js','./catalog-runtime.js','./app.js','./manifest.webmanifest','./icon.svg'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(CORE))));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k))))));
 self.addEventListener('fetch',event=>{
