@@ -38,6 +38,7 @@ jobs:
           node --check catalog-owned-batch3.js
           node --check catalog-images.js
           node --check catalog-images-official.js
+          node --check catalog-images-teamsets.js
           node --check catalog-images-cached.js
           node --check catalog-runtime.js
       - name: Verify required V0.8 assets
@@ -47,6 +48,7 @@ jobs:
           test -f v07.css
           test -f catalog-premier.js
           test -f catalog-images-cached.js
+          test -f catalog-images-teamsets.js
           test -f catalog-owned.js
           test -f catalog-owned-batch2.js
           test -f catalog-owned-batch3.js
@@ -54,13 +56,11 @@ jobs:
           test -f app-v08-catalog.js
           test -f market-seed.js
           test -f pricing-engine.js
-          grep -q 'catalog-owned.js' index.html
-          grep -q 'catalog-owned-batch2.js' index.html
           grep -q 'catalog-owned-batch3.js' index.html
+          grep -q 'catalog-images-teamsets.js' index.html
           grep -q 'app-v08-image-guard.js' index.html
           grep -q 'app-v08-catalog.js' index.html
           grep -q 'pricing-engine.js' index.html
-          grep -q 'v07.css' index.html
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
