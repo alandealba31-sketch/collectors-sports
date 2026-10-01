@@ -48,5 +48,17 @@
     "kind": "pdf-generic",
     "url": "https://cdn.shopify.com/s/files/1/0739/2015/1805/files/Finest_Premier_League_Checklist.pdf?v=1774359572",
     "expected_base_count": 300
+  },
+  {
+    "id": "topps-chrome-basketball-2025-26",
+    "kind": "pdf-generic",
+    "url": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2025-26_Topps_Chrome_Basketball_Checklist.pdf?v=1763392799",
+    "expected_base_count": 299
+  },
+  {
+    "id": "topps-chrome-wwe-2026",
+    "kind": "pdf-generic",
+    "url": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/FINAL_CheckList_26CWWE_ChromeWWE.pdf?v=1775658305",
+    "expected_base_count": 200
   }
 ]
