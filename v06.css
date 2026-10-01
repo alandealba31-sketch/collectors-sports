@@ -1,0 +1,40 @@
+.catalog-item-visual{display:grid;grid-template-columns:74px 1fr;gap:13px;align-items:center;text-align:left}
+.catalog-item-copy{min-width:0;display:block}
+.catalog-cover{width:74px;aspect-ratio:3/4;border-radius:14px;overflow:hidden;background:#09101e;border:1px solid rgba(160,180,230,.18);display:grid;place-items:center}
+.catalog-cover img{width:100%;height:100%;object-fit:cover;display:block}
+.catalog-cover-empty{font-size:1.75rem}
+.visual-badge{border-color:rgba(125,164,255,.38);color:#a8c1ff;background:rgba(76,119,230,.10)}
+.visual-row{grid-template-columns:56px 54px 1fr auto auto;gap:10px;align-items:center}
+.catalog-thumb{width:50px;aspect-ratio:3/4;border-radius:10px;overflow:hidden;background:#0a1020;border:1px solid rgba(160,180,230,.20);display:grid;place-items:center;position:relative;flex:none}
+.catalog-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.catalog-thumb-empty{font-size:.72rem;font-weight:900;color:var(--muted)}
+.catalog-thumb[role=button]{cursor:zoom-in}
+.visual-dot{position:absolute;right:4px;bottom:4px;width:8px;height:8px;border-radius:99px;background:#9db7ff;box-shadow:0 0 0 2px rgba(4,8,16,.8)}
+.catalog-player small{display:block;margin-top:4px;font-size:.68rem;font-style:normal;font-weight:800}
+.catalog-player small.visual-exact{color:#71e4a4}
+.catalog-player small.visual-reference{color:#ffd47a}
+.visual-confirm{display:grid;grid-template-columns:minmax(120px,180px) 1fr;gap:18px;align-items:center;margin-bottom:18px;overflow:hidden}
+.visual-confirm-image{width:100%;aspect-ratio:3/4;border-radius:16px;overflow:hidden;background:#090e19;border:1px solid rgba(160,180,230,.18)}
+.visual-confirm-image img{width:100%;height:100%;object-fit:cover;display:block}
+.visual-confirm-copy h3{margin:8px 0 6px;font-size:1.18rem}
+.visual-confirm-copy p{margin:8px 0 12px;line-height:1.45;color:var(--muted)}
+.visual-confirm-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.visual-exact.visual-confirm{border-color:rgba(70,210,130,.38)}
+.visual-reference.visual-confirm{border-color:rgba(240,181,76,.34)}
+.item-with-thumb{display:grid;grid-template-columns:58px 1fr;gap:12px;align-items:center;text-align:left}
+.inventory-thumb{width:58px;aspect-ratio:3/4;border-radius:10px;overflow:hidden;background:#0a1020;border:1px solid rgba(160,180,230,.18)}
+.inventory-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.inventory-copy{min-width:0}
+.reference-photo-slot{cursor:default}
+.reference-photo-slot .reference-caption{position:absolute;left:10px;right:10px;bottom:10px;z-index:3;min-height:0;padding:7px 9px;border-radius:10px;background:rgba(4,8,16,.78);display:block;color:#d9e3ff;text-align:center;font-size:.72rem;font-weight:800}
+.visual-modal{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;padding:18px}
+.visual-modal-backdrop{position:absolute;inset:0;background:rgba(1,4,10,.86);backdrop-filter:blur(7px)}
+.visual-modal-card{position:relative;z-index:2;width:min(92vw,460px);max-height:92vh;overflow:auto;border:1px solid rgba(160,180,230,.24);border-radius:24px;background:#0b1120;box-shadow:0 30px 80px rgba(0,0,0,.55)}
+.visual-modal-card>img{width:100%;max-height:66vh;object-fit:contain;display:block;background:#050913;border-radius:24px 24px 0 0}
+.visual-modal-copy{padding:18px}
+.visual-modal-copy h3{margin:10px 0 4px}
+.visual-modal-copy p{color:var(--muted);line-height:1.45}
+.visual-modal-close{position:absolute;z-index:3;right:12px;top:12px;width:40px;height:40px;border-radius:999px;border:1px solid rgba(255,255,255,.18);background:rgba(4,8,16,.82);color:white;font-size:1.7rem;line-height:1;display:grid;place-items:center}
+.image-failed{background:linear-gradient(135deg,#11192c,#080d18)}
+.image-load-failed{display:none!important}
+@media(max-width:620px){.catalog-item-visual{grid-template-columns:62px 1fr}.catalog-cover{width:62px}.visual-row{grid-template-columns:48px 46px 1fr auto}.catalog-thumb{width:44px}.visual-row .catalog-plus,.visual-row .catalog-owned{grid-column:4}.visual-confirm{grid-template-columns:110px 1fr;gap:13px}.visual-confirm-copy h3{font-size:1rem}.visual-confirm-copy p{font-size:.84rem}.item-with-thumb{grid-template-columns:50px 1fr}.inventory-thumb{width:50px}}
