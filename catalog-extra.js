@@ -23,6 +23,11 @@
       sourceUrl: 'https://www.topps.com/pages/topps-chrome-formula-1', coverage: 'collection', baseCount: 200
     },
     {
+      id: 'bowman-chrome-baseball-2026', sport: 'MLB', manufacturer: 'Topps', year: '2026',
+      name: 'Bowman Chrome Baseball 2026', shortName: 'Bowman Chrome Baseball 2026',
+      sourceUrl: 'https://www.topps.com/pages/bowman-chrome-baseball', coverage: 'collection', baseCount: 100
+    },
+    {
       id: 'panini-prizm-premier-league-2024-25', sport: 'Soccer', manufacturer: 'Panini', year: '2024/25',
       name: 'Panini Prizm Premier League Soccer 2024/25', shortName: 'Prizm Premier League 24/25',
       sourceUrl: 'https://blog.paniniamerica.net/spin-the-color-wheel-inside-2024-25-panini-prizm-premier-league-soccer/', coverage: 'collection'
