@@ -30,6 +30,7 @@ jobs:
           node --check app-v06-polish.js
           node --check app-v06-fix.js
           node --check app-v08-image-guard.js
+          node --check app-v08-catalog.js
           node --check pricing-engine.js
           node --check market-seed.js
           node --check catalog-owned.js
@@ -46,10 +47,12 @@ jobs:
           test -f catalog-images-cached.js
           test -f catalog-owned.js
           test -f app-v08-image-guard.js
+          test -f app-v08-catalog.js
           test -f market-seed.js
           test -f pricing-engine.js
           grep -q 'catalog-owned.js' index.html
           grep -q 'app-v08-image-guard.js' index.html
+          grep -q 'app-v08-catalog.js' index.html
           grep -q 'pricing-engine.js' index.html
           grep -q 'v07.css' index.html
       - name: Setup Pages
