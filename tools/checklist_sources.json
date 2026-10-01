@@ -1,0 +1,18 @@
+[
+  {
+    "id": "topps-chrome-f1-2026",
+    "kind": "pdf-f1",
+    "url": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2026_F1_Chrome_Checklist.pdf?v=1788962968"
+  },
+  {
+    "id": "topps-chrome-baseball-2026",
+    "kind": "pdf-mlb",
+    "url": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2026_Topps_Chrome_Baseball_Checklist_Final_7.22.pdf?v=1785169183"
+  },
+  {
+    "id": "topps-chrome-ufc-2026",
+    "kind": "xls-generic",
+    "url": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/FINAL_CheckList_2026_TOPPS_CHROME_UFC_V2.xls?v=1779204573",
+    "expected_base_count": 200
+  }
+]
