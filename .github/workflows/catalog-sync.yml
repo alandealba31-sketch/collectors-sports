@@ -29,20 +29,21 @@ jobs:
           python-version: "3.12"
       - name: Install parser dependencies
         run: python -m pip install --disable-pip-version-check pandas xlrd pypdf
-      - name: Build catalog from official checklists
+      - name: Build catalog from official checklists and galleries
         run: |
           python tools/sync_checklists.py
           python tools/sync_premier.py
+          python tools/sync_official_images.py
       - name: Commit generated catalog when changed
         run: |
-          if [ -z "$(git status --porcelain -- catalog-imported.js catalog-premier.js)" ]; then
+          if [ -z "$(git status --porcelain -- catalog-imported.js catalog-premier.js catalog-images-official.js)" ]; then
             echo "Catalog is already current."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add catalog-imported.js catalog-premier.js
-          git commit -m "Sync official card checklists"
+          git add catalog-imported.js catalog-premier.js catalog-images-official.js
+          git commit -m "Sync official card catalog and visual galleries"
           for attempt in 1 2 3; do
             git fetch origin main
             git rebase origin/main
