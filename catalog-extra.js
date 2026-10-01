@@ -33,6 +33,11 @@
       sourceUrl: 'https://www.topps.com/pages/wwe-chrome', coverage: 'collection', baseCount: 200
     },
     {
+      id: 'topps-chrome-tennis-2026', sport: 'Tennis', manufacturer: 'Topps', year: '2026',
+      name: 'Topps Chrome Tennis 2026', shortName: 'Chrome Tennis 2026',
+      sourceUrl: 'https://www.topps.com/pages/topps-chrome-tennis', coverage: 'collection', baseCount: 300
+    },
+    {
       id: 'panini-prizm-premier-league-2024-25', sport: 'Soccer', manufacturer: 'Panini', year: '2024/25',
       name: 'Panini Prizm Premier League Soccer 2024/25', shortName: 'Prizm Premier League 24/25',
       sourceUrl: 'https://blog.paniniamerica.net/spin-the-color-wheel-inside-2024-25-panini-prizm-premier-league-soccer/', coverage: 'collection'
@@ -44,7 +49,7 @@
     },
     {
       id: 'panini-select-serie-a-2024-25', sport: 'Soccer', manufacturer: 'Panini', year: '2024/25',
-      name: 'Panini Select Serie A 2024/25', shortName: 'Select Serie A 24/25',
+      name: 'Panini Select Serie A Soccer 2024/25', shortName: 'Select Serie A 24/25',
       sourceUrl: 'https://www.paniniamerica.net/2024-25-panini-select-serie-a-trading-card-box-hobby.html', coverage: 'collection', baseCount: 250
     },
     {
