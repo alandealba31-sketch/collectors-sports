@@ -40,6 +40,8 @@ jobs:
           python tools/sync_premier.py
           python tools/sync_official_images.py
           python tools/cache_exact_images.py
+      - name: Validate catalog integrity
+        run: python tools/validate_catalog.py
       - name: Validate generated JavaScript
         run: |
           node --check catalog-imported.js
