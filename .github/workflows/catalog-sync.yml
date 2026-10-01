@@ -35,7 +35,7 @@ jobs:
           python tools/sync_premier.py
       - name: Commit generated catalog when changed
         run: |
-          if git diff --quiet -- catalog-imported.js catalog-premier.js; then
+          if [ -z "$(git status --porcelain -- catalog-imported.js catalog-premier.js)" ]; then
             echo "Catalog is already current."
             exit 0
           fi
