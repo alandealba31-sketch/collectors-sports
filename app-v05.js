@@ -1,6 +1,6 @@
 const STORAGE_KEY = 'collectors-sports-v05-cards';
 const LEGACY_KEYS = ['collectors-sports-v04-cards','collectors-sports-v03-cards','collectors-sports-v02-cards'];
-const SPORTS = ['Soccer','MLB','NFL','NBA','UFC','F1'];
+const SPORTS = ['Soccer','MLB','NFL','NBA','UFC','F1','Tennis'];
 const CURRENCIES = ['MXN','USD'];
 const FX_USD_MXN = 18;
 const CATALOG = window.CS_CATALOG || {collections:[],checklists:{}};
@@ -163,7 +163,7 @@ function home(){
     <div class="section-title"><h2>Catálogo oficial</h2><button class="text-btn" data-nav="catalog">Abrir</button></div>
     <section class="card catalog-summary"><div><strong>${CATALOG.collections.length} colecciones precargadas</strong><div class="muted">Fuentes oficiales de fabricantes · ${fullCatalog} checklist base completo por ahora.</div></div><button class="btn small" data-nav="catalog">Explorar</button></section>
     <div class="section-title"><h2>Por deporte</h2><button class="text-btn" data-nav="collection">Ver todo</button></div>
-    <section class="sport-grid">${SPORTS.map(s=>`<button class="sport-card" data-filter-sport="${s}"><span>${sportIcon(s)}</span><strong>${s}</strong><em>${counts[s]} carta${counts[s]===1?'':'s'}</em></button>`).join('')}</section>
+    <section class="sport-grid">${SPORTS.map(s=>`<button class="sport-card" data-filter-sport="${s}"><span>${sportIcon(s)}</span><strong>${sportLabel(s)}</strong><em>${counts[s]} carta${counts[s]===1?'':'s'}</em></button>`).join('')}</section>
     <div class="section-title"><h2>Últimas agregadas</h2></div>
     ${recent.length?`<section class="list">${recent.map(cardRow).join('')}</section>`:`<section class="card empty"><strong>La colección está vacía.</strong><br><br>Aquí solo registraremos las cartas que realmente vale la pena inventariar: Top Loader, One Touch y piezas relevantes.<br><br><button class="btn" data-nav="add">Agregar primera carta</button></section>`}
     <div class="section-title"><h2>Respaldo</h2></div><section class="card backup-card"><div><strong>Protege tu inventario</strong><div class="muted">El respaldo JSON incluye los datos de las cartas. Las fotos permanecen en este dispositivo durante esta fase.</div></div><div class="backup-actions"><button class="btn secondary" id="importBtn">Importar</button><button class="btn" id="exportBtnInline">Exportar</button></div></section>`);
@@ -171,7 +171,7 @@ function home(){
 
 function catalog(){
   const items=filteredCatalog();
-  return layout(`<div class="section-title"><div><h2>Catálogo</h2><div class="muted">Colecciones verificadas con fuentes oficiales.</div></div><span class="muted">${items.length}</span></div><div class="search-row"><input id="catalogSearch" class="search" type="search" autocomplete="off" placeholder="Buscar colección, año o fabricante…" value="${esc(state.catalogQuery)}">${state.catalogQuery?'<button class="btn secondary" id="clearCatalogSearch">✕</button>':''}</div><div class="filters">${['Todos',...SPORTS].map(s=>`<button class="chip ${state.catalogSport===s?'active':''}" data-catalog-sport="${s}">${s}</button>`).join('')}</div><section class="catalog-list">${items.length?items.map(c=>catalogRow(c)).join(''):`<div class="card empty">No hay colecciones con ese filtro.</div>`}</section>`);
+  return layout(`<div class="section-title"><div><h2>Catálogo</h2><div class="muted">Colecciones verificadas con fuentes oficiales.</div></div><span class="muted">${items.length}</span></div><div class="search-row"><input id="catalogSearch" class="search" type="search" autocomplete="off" placeholder="Buscar colección, año o fabricante…" value="${esc(state.catalogQuery)}">${state.catalogQuery?'<button class="btn secondary" id="clearCatalogSearch">✕</button>':''}</div><div class="filters">${['Todos',...SPORTS].map(s=>`<button class="chip ${state.catalogSport===s?'active':''}" data-catalog-sport="${s}">${sportLabel(s)}</button>`).join('')}</div><section class="catalog-list">${items.length?items.map(c=>catalogRow(c)).join(''):`<div class="card empty">No hay colecciones con ese filtro.</div>`}</section>`);
 }
 function catalogRow(c){
   const full=c.coverage==='base-complete'; const owned=ownedCardsForCollection(c.id).length;
@@ -191,9 +191,10 @@ function catalogCardRow(c,row,index){
 
 function collection(){
   const cards=filteredCards(); const filteredValue=cards.reduce((sum,c)=>sum+toMXN(c),0);
-  return layout(`<div class="section-title collection-title"><div><h2>Mi colección</h2><div class="muted">${cards.length} resultado${cards.length===1?'':'s'} · ${money(filteredValue,'MXN')}</div></div><button class="btn small" data-nav="add">＋ Agregar</button></div><div class="search-row"><input id="search" class="search" type="search" autocomplete="off" placeholder="Buscar jugador, equipo, set, paralelo, ubicación…" value="${esc(state.query)}">${state.query?'<button class="btn secondary" id="clearSearch">✕</button>':''}</div><div class="filters">${['Todos',...SPORTS].map(s=>`<button class="chip ${state.sport===s?'active':''}" data-sport="${s}">${s}</button>`).join('')}</div><div class="toolbar"><span class="muted">Ordenar</span><select id="sortSelect" class="sort-select"><option value="newest" ${state.sort==='newest'?'selected':''}>Más recientes</option><option value="value-desc" ${state.sort==='value-desc'?'selected':''}>Mayor valor</option><option value="value-asc" ${state.sort==='value-asc'?'selected':''}>Menor valor</option><option value="player-asc" ${state.sort==='player-asc'?'selected':''}>Jugador A–Z</option><option value="player-desc" ${state.sort==='player-desc'?'selected':''}>Jugador Z–A</option></select></div><section class="list">${cards.length?cards.map(cardRow).join(''):`<div class="card empty">No encontramos cartas con esos filtros.</div>`}</section>`);
+  return layout(`<div class="section-title collection-title"><div><h2>Mi colección</h2><div class="muted">${cards.length} resultado${cards.length===1?'':'s'} · ${money(filteredValue,'MXN')}</div></div><button class="btn small" data-nav="add">＋ Agregar</button></div><div class="search-row"><input id="search" class="search" type="search" autocomplete="off" placeholder="Buscar jugador, equipo, set, paralelo, ubicación…" value="${esc(state.query)}">${state.query?'<button class="btn secondary" id="clearSearch">✕</button>':''}</div><div class="filters">${['Todos',...SPORTS].map(s=>`<button class="chip ${state.sport===s?'active':''}" data-sport="${s}">${sportLabel(s)}</button>`).join('')}</div><div class="toolbar"><span class="muted">Ordenar</span><select id="sortSelect" class="sort-select"><option value="newest" ${state.sort==='newest'?'selected':''}>Más recientes</option><option value="value-desc" ${state.sort==='value-desc'?'selected':''}>Mayor valor</option><option value="value-asc" ${state.sort==='value-asc'?'selected':''}>Menor valor</option><option value="player-asc" ${state.sort==='player-asc'?'selected':''}>Jugador A–Z</option><option value="player-desc" ${state.sort==='player-desc'?'selected':''}>Jugador Z–A</option></select></div><section class="list">${cards.length?cards.map(cardRow).join(''):`<div class="card empty">No encontramos cartas con esos filtros.</div>`}</section>`);
 }
-function sportIcon(s){ return ({Soccer:'⚽',MLB:'⚾',NFL:'🏈',NBA:'🏀',UFC:'🥊',F1:'🏎️'})[s]||'★'; }
+function sportLabel(s){ return s === 'Tennis' ? 'Tenis' : s; }
+function sportIcon(s){ return ({Soccer:'⚽',MLB:'⚾',NFL:'🏈',NBA:'🏀',UFC:'🥊',F1:'🏎️',Tennis:'🎾'})[s]||'★'; }
 function cardRow(card){
   const title=esc(card.player||'Sin jugador'); const subtitle=[cardLabel(card),card.cardNumber?`#${card.cardNumber}`:''].filter(Boolean).join(' · ');
   return `<button class="item" data-card="${esc(card.id)}"><div class="item-head"><div class="item-main"><div class="item-title">${title}</div><div class="muted item-subtitle">${esc(subtitle||card.team||'Sin colección')}</div></div><div class="item-price">${money(card.currentValue,card.currency)}</div></div><div class="badges"><span class="badge green">${esc(card.sport)}</span>${card.parallel?`<span class="badge">${esc(card.parallel)}</span>`:''}${card.serial?`<span class="badge gold">${esc(card.serial)}</span>`:''}${tags(card).map(t=>`<span class="badge">${t}</span>`).join('')}</div>${card.location?`<div class="item-location">⌖ ${esc(card.location)}</div>`:''}</button>`;
@@ -205,12 +206,12 @@ function seedFromCollection(id){
 }
 function seedFromCatalogCard(collectionId,index){
   const c=collectionById(collectionId), row=checklistFor(collectionId)[Number(index)]; if(!c||!row)return seedFromCollection(collectionId);
-  const [cardNumber,player,team,rookie]=row; return {...seedFromCollection(collectionId),cardNumber:String(cardNumber),player,team,rc:Boolean(rookie)};
+  const [cardNumber,player,team,rookie]=row; return {...seedFromCollection(collectionId),cardNumber:String(cardNumber),player,team,rc:Boolean(rookie),...(row[5] ? {auto:row[5]==='autograph',insert:row[5]==='insert'} : {})};
 }
 function add(){return cardForm(null);}
 function edit(){const card=state.cards.find(c=>c.id===state.editId);if(!card){state.view='collection';state.editId=null;return collection();}return cardForm(card);}
 function inputField(name,label,placeholder,required=false,type='text',value='',step=''){return `<div class="field"><label for="${name}">${label}${required?' *':''}</label><input id="${name}" name="${name}" type="${type}" placeholder="${placeholder}" value="${value}" ${step?`step="${step}"`:''} ${required?'required':''}></div>`;}
-function selectField(name,label,placeholder,options,required=false,selected=''){return `<div class="field"><label for="${name}">${label}${required?' *':''}</label><select id="${name}" name="${name}" ${required?'required':''}><option value="">${placeholder}</option>${options.map(o=>`<option value="${esc(o)}" ${String(selected)===String(o)?'selected':''}>${esc(o)}</option>`).join('')}</select></div>`;}
+function selectField(name,label,placeholder,options,required=false,selected=''){return `<div class="field"><label for="${name}">${label}${required?' *':''}</label><select id="${name}" name="${name}" ${required?'required':''}><option value="">${placeholder}</option>${options.map(o=>`<option value="${esc(o)}" ${String(selected)===String(o)?'selected':''}>${esc(sportLabel(o))}</option>`).join('')}</select></div>`;}
 
 function cardForm(card){
   const editing=Boolean(card), seed=editing?card:(state.prefill||{}), v=name=>esc(seed?.[name]??''), checked=name=>seed?.[name]?'checked':'';
@@ -294,3 +295,4 @@ function bind(){
 }
 if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}
 render();
+
