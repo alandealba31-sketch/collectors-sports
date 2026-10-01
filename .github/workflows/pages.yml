@@ -27,15 +27,21 @@ jobs:
         run: |
           node --check app-v05.js
           node --check app-v06-addon.js
+          node --check app-v06-polish.js
+          node --check app-v06-fix.js
           node --check catalog-images.js
           node --check catalog-images-official.js
+          node --check catalog-images-cached.js
           node --check catalog-runtime.js
       - name: Verify required V0.6 assets
         run: |
           test -f v06.css
+          test -f v06-polish.css
           test -f catalog-premier.js
+          test -f catalog-images-cached.js
           grep -q 'app-v06-addon.js' index.html
-          grep -q 'catalog-images.js' index.html
+          grep -q 'app-v06-fix.js' index.html
+          grep -q 'catalog-images-cached.js' index.html
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
