@@ -18,7 +18,7 @@
     generation++;observer?.disconnect();urls.forEach(url=>URL.revokeObjectURL(url));urls.clear();
     previousRender();
     const version=document.querySelector('.topbar .brand .muted');
-    if(version)version.textContent='Colección premium · V0.10f · Imágenes';
+    if(version)version.textContent='Colección premium · V0.10g · Imágenes';
     const token=generation;
     if ('IntersectionObserver' in window) {
       observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){observer.unobserve(entry.target);hydrate(entry.target,token);}}),{rootMargin:'300px'});

@@ -48,13 +48,13 @@
   };
 
   catalogRow = function(c) {
-    const full = c.coverage === 'base-complete';
+    const full = c.coverage === 'base-complete' || c.coverage === 'full-checklist';
     const owned = ownedCardsForCollection(c.id).length;
     const visual = collectionVisual(c.id);
     const image = visual?.front
       ? `<span class="catalog-cover"><img src="${esc(visual.front)}" alt="${esc(c.shortName || c.name)}" loading="lazy" referrerpolicy="no-referrer"></span>`
       : `<span class="catalog-cover catalog-cover-empty">${sportIcon(c.sport)}</span>`;
-    return `<button class="catalog-item catalog-item-visual" data-catalog-id="${esc(c.id)}">${image}<span class="catalog-item-copy"><div class="catalog-item-top"><span class="badge green">${esc(c.sport)}</span><span class="badge ${full ? 'gold' : ''}">${full ? 'Base cargada' : 'Colección cargada'}</span>${visual ? '<span class="badge visual-badge">Visual</span>' : ''}</div><strong>${esc(c.shortName || c.name)}</strong><div class="muted">${esc(c.manufacturer)} · ${esc(c.year)}</div><div class="catalog-stats"><span>${c.baseCount ? `${c.baseCount} cartas base` : 'Checklist en preparación'}</span>${owned ? `<strong>✓ ${owned} registrada${owned === 1 ? '' : 's'}</strong>` : ''}</div></span></button>`;
+    return `<button class="catalog-item catalog-item-visual" data-catalog-id="${esc(c.id)}">${image}<span class="catalog-item-copy"><div class="catalog-item-top"><span class="badge green">${esc(c.sport)}</span><span class="badge ${full ? 'gold' : ''}">${c.coverage === 'full-checklist' ? 'Checklist cargado' : full ? 'Base cargada' : 'Colección cargada'}</span>${visual ? '<span class="badge visual-badge">Visual</span>' : ''}</div><strong>${esc(c.shortName || c.name)}</strong><div class="muted">${esc(c.manufacturer)} · ${esc(c.year)}</div><div class="catalog-stats"><span>${c.baseCount ? `${c.baseCount} cartas base` : (CATALOG.checklists[c.id]?.length ? `${CATALOG.checklists[c.id].length} cartas en checklist` : 'Checklist en preparación')}</span>${owned ? `<strong>✓ ${owned} registrada${owned === 1 ? '' : 's'}</strong>` : ''}</div></span></button>`;
   };
 
   catalogCardRow = function(c, row, index) {
@@ -213,3 +213,4 @@
 
   render();
 })();
+

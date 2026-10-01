@@ -34,9 +34,12 @@
       ? catalog.collections.find(item => item.id === id)
       : null;
     if (collection) {
-      collection.baseCount = clean.length;
+      collection.checklistCount = clean.length;
+      collection.baseCount = clean.every(row => row[5])
+        ? clean.filter(row => row[5] === 'base').length
+        : Math.min(collection.baseCount ?? clean.length, clean.length);
       // A filtered source is useful, but must not be presented as complete.
-      if (clean.length !== rows.length && collection.coverage === 'base-complete') {
+      if (clean.length !== rows.length && ['base-complete', 'full-checklist'].includes(collection.coverage)) {
         collection.coverage = 'base-partial-verified';
       }
     }
@@ -44,3 +47,4 @@
 
   if (removed) console.info(`[Collectors Sports] Removed ${removed} placeholder/duplicate checklist rows.`);
 })();
+

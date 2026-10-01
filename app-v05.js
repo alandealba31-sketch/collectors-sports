@@ -206,7 +206,7 @@ function seedFromCollection(id){
 }
 function seedFromCatalogCard(collectionId,index){
   const c=collectionById(collectionId), row=checklistFor(collectionId)[Number(index)]; if(!c||!row)return seedFromCollection(collectionId);
-  const [cardNumber,player,team,rookie]=row; return {...seedFromCollection(collectionId),cardNumber:String(cardNumber),player,team,rc:Boolean(rookie),...(row[5] ? {auto:row[5]==='autograph',insert:row[5]==='insert'} : {})};
+  const [cardNumber,player,team,rookie]=row; return {...seedFromCollection(collectionId),cardNumber:String(cardNumber),player,team,rc:Boolean(rookie),...(row[5] ? {auto:row[5]==='autograph'||row[5]==='autograph-relic',relic:row[5]==='autograph-relic',insert:row[5]==='insert'} : {})};
 }
 function add(){return cardForm(null);}
 function edit(){const card=state.cards.find(c=>c.id===state.editId);if(!card){state.view='collection';state.editId=null;return collection();}return cardForm(card);}
