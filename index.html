@@ -10,22 +10,23 @@
   <meta name="description" content="Inventario personal de tarjetas deportivas premium." />
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <title>Collectors Sports</title>
-  <link rel="manifest" href="manifest.webmanifest?v=04e" />
-  <link rel="icon" href="icon.svg?v=04e" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css?v=04e" />
+  <link rel="manifest" href="manifest.webmanifest?v=05" />
+  <link rel="icon" href="icon.svg?v=05" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css?v=05" />
+  <link rel="stylesheet" href="v05.css?v=05" />
 </head>
 <body>
   <div id="app"></div>
-  <script src="catalog.js?v=04e"></script>
-  <script src="catalog-extra.js?v=04e"></script>
-  <script src="catalog-imported.js?v=04e"></script>
-  <script type="module" src="app.js?v=04e"></script>
-  <script src="catalog-runtime.js?v=04e"></script>
+  <script src="catalog.js?v=05"></script>
+  <script src="catalog-extra.js?v=05"></script>
+  <script src="catalog-imported.js?v=05"></script>
+  <script src="catalog-runtime.js?v=05"></script>
+  <script type="module" src="app-v05.js?v=05"></script>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', async () => {
         try {
-          const registration = await navigator.serviceWorker.register('./sw.js?v=04e', { updateViaCache: 'none' });
+          const registration = await navigator.serviceWorker.register('./sw.js?v=05', { updateViaCache: 'none' });
           registration.update();
         } catch (error) {
           console.warn('Service worker update failed', error);
