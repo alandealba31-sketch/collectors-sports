@@ -1,6 +1,6 @@
-const CACHE='collectors-sports-v08b';
+const CACHE='collectors-sports-v08c';
 const IMAGE_CACHE='collectors-sports-images-v1';
-const CORE=['./','./index.html','./styles.css?v=08b','./v05.css?v=08b','./v06.css?v=08b','./v06-polish.css?v=08b','./v07.css?v=08b','./catalog.js?v=08b','./catalog-extra.js?v=08b','./catalog-imported.js?v=08b','./catalog-premier.js?v=08b','./catalog-owned.js?v=08b','./catalog-runtime.js?v=08b','./catalog-images.js?v=08b','./catalog-images-official.js?v=08b','./catalog-images-extra.js?v=08b','./catalog-images-cached.js?v=08b','./market-seed.js?v=08b','./app-v05.js?v=08b','./app-v06-addon.js?v=08b','./app-v06-polish.js?v=08b','./app-v06-fix.js?v=08b','./pricing-engine.js?v=08b','./app-v08-image-guard.js?v=08b','./app-v08-catalog.js?v=08b','./manifest.webmanifest?v=08b','./icon.svg?v=08b'];
+const CORE=['./','./index.html','./styles.css?v=08c','./v05.css?v=08c','./v06.css?v=08c','./v06-polish.css?v=08c','./v07.css?v=08c','./catalog.js?v=08c','./catalog-extra.js?v=08c','./catalog-imported.js?v=08c','./catalog-premier.js?v=08c','./catalog-owned.js?v=08c','./catalog-owned-batch2.js?v=08c','./catalog-runtime.js?v=08c','./catalog-images.js?v=08c','./catalog-images-official.js?v=08c','./catalog-images-extra.js?v=08c','./catalog-images-cached.js?v=08c','./market-seed.js?v=08c','./app-v05.js?v=08c','./app-v06-addon.js?v=08c','./app-v06-polish.js?v=08c','./app-v06-fix.js?v=08c','./pricing-engine.js?v=08c','./app-v08-image-guard.js?v=08c','./app-v08-catalog.js?v=08c','./manifest.webmanifest?v=08c','./icon.svg?v=08c'];
 
 self.addEventListener('install',event=>{
   self.skipWaiting();
