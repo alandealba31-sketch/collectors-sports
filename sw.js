@@ -1,5 +1,5 @@
-const CACHE='collectors-sports-v05';
-const CORE=['./','./index.html','./styles.css?v=05','./v05.css?v=05','./catalog.js?v=05','./catalog-extra.js?v=05','./catalog-imported.js?v=05','./catalog-runtime.js?v=05','./app-v05.js?v=05','./manifest.webmanifest?v=05','./icon.svg?v=05'];
+const CACHE='collectors-sports-v05b';
+const CORE=['./','./index.html','./styles.css?v=05b','./v05.css?v=05b','./catalog.js?v=05b','./catalog-extra.js?v=05b','./catalog-imported.js?v=05b','./catalog-premier.js?v=05b','./catalog-runtime.js?v=05b','./app-v05.js?v=05b','./manifest.webmanifest?v=05b','./icon.svg?v=05b'];
 
 self.addEventListener('install',event=>{
   self.skipWaiting();
