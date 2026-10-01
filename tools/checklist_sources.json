@@ -32,6 +32,12 @@
     "expected_base_count": 75
   },
   {
+    "id": "topps-chrome-tennis-2026",
+    "kind": "xls-generic",
+    "url": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/26TCTN_-_2026_Topps_Chrome_Tennis_Checklist_V2.xls?v=1790700549",
+    "expected_base_count": 300
+  },
+  {
     "id": "topps-chrome-mls-2026",
     "kind": "pdf-generic",
     "url": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/CheckList_Subject_to_Change_3ac890e7-2e2f-4550-89d8-59689322cd5c.pdf?v=1789050559",
