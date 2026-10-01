@@ -29,19 +29,24 @@ jobs:
           node --check app-v06-addon.js
           node --check app-v06-polish.js
           node --check app-v06-fix.js
+          node --check pricing-engine.js
+          node --check market-seed.js
           node --check catalog-images.js
           node --check catalog-images-official.js
           node --check catalog-images-cached.js
           node --check catalog-runtime.js
-      - name: Verify required V0.6 assets
+      - name: Verify required V0.7 assets
         run: |
           test -f v06.css
           test -f v06-polish.css
+          test -f v07.css
           test -f catalog-premier.js
           test -f catalog-images-cached.js
-          grep -q 'app-v06-addon.js' index.html
-          grep -q 'app-v06-fix.js' index.html
-          grep -q 'catalog-images-cached.js' index.html
+          test -f market-seed.js
+          test -f pricing-engine.js
+          grep -q 'pricing-engine.js' index.html
+          grep -q 'market-seed.js' index.html
+          grep -q 'v07.css' index.html
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
