@@ -1,6 +1,6 @@
 const STORAGE_KEY = 'collectors-sports-v05-cards';
 const LEGACY_KEYS = ['collectors-sports-v04-cards','collectors-sports-v03-cards','collectors-sports-v02-cards'];
-const SPORTS = ['Soccer','MLB','NFL','NBA','UFC','F1','Tennis'];
+const SPORTS = ['Soccer','MLB','NFL','NBA','UFC','F1','Tennis','WWE'];
 const CURRENCIES = ['MXN','USD'];
 const FX_USD_MXN = 18;
 const CATALOG = window.CS_CATALOG || {collections:[],checklists:{}};
@@ -194,7 +194,7 @@ function collection(){
   return layout(`<div class="section-title collection-title"><div><h2>Mi colección</h2><div class="muted">${cards.length} resultado${cards.length===1?'':'s'} · ${money(filteredValue,'MXN')}</div></div><button class="btn small" data-nav="add">＋ Agregar</button></div><div class="search-row"><input id="search" class="search" type="search" autocomplete="off" placeholder="Buscar jugador, equipo, set, paralelo, ubicación…" value="${esc(state.query)}">${state.query?'<button class="btn secondary" id="clearSearch">✕</button>':''}</div><div class="filters">${['Todos',...SPORTS].map(s=>`<button class="chip ${state.sport===s?'active':''}" data-sport="${s}">${sportLabel(s)}</button>`).join('')}</div><div class="toolbar"><span class="muted">Ordenar</span><select id="sortSelect" class="sort-select"><option value="newest" ${state.sort==='newest'?'selected':''}>Más recientes</option><option value="value-desc" ${state.sort==='value-desc'?'selected':''}>Mayor valor</option><option value="value-asc" ${state.sort==='value-asc'?'selected':''}>Menor valor</option><option value="player-asc" ${state.sort==='player-asc'?'selected':''}>Jugador A–Z</option><option value="player-desc" ${state.sort==='player-desc'?'selected':''}>Jugador Z–A</option></select></div><section class="list">${cards.length?cards.map(cardRow).join(''):`<div class="card empty">No encontramos cartas con esos filtros.</div>`}</section>`);
 }
 function sportLabel(s){ return s === 'Tennis' ? 'Tenis' : s; }
-function sportIcon(s){ return ({Soccer:'⚽',MLB:'⚾',NFL:'🏈',NBA:'🏀',UFC:'🥊',F1:'🏎️',Tennis:'🎾'})[s]||'★'; }
+function sportIcon(s){ return ({Soccer:'⚽',MLB:'⚾',NFL:'🏈',NBA:'🏀',UFC:'🥊',F1:'🏎️',Tennis:'🎾',WWE:'🤼'})[s]||'★'; }
 function cardRow(card){
   const title=esc(card.player||'Sin jugador'); const subtitle=[cardLabel(card),card.cardNumber?`#${card.cardNumber}`:''].filter(Boolean).join(' · ');
   return `<button class="item" data-card="${esc(card.id)}"><div class="item-head"><div class="item-main"><div class="item-title">${title}</div><div class="muted item-subtitle">${esc(subtitle||card.team||'Sin colección')}</div></div><div class="item-price">${money(card.currentValue,card.currency)}</div></div><div class="badges"><span class="badge green">${esc(card.sport)}</span>${card.parallel?`<span class="badge">${esc(card.parallel)}</span>`:''}${card.serial?`<span class="badge gold">${esc(card.serial)}</span>`:''}${tags(card).map(t=>`<span class="badge">${t}</span>`).join('')}</div>${card.location?`<div class="item-location">⌖ ${esc(card.location)}</div>`:''}</button>`;
