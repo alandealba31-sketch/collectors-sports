@@ -49,3 +49,15 @@ Pendiente: reversos de NBA/NFL/WWE/tenis, más imágenes exactas verificables y 
 Auditoría, fuente oficial, hash, recuentos y omisiones: `data/catalog-batch8-audit.json`.
 
 Pendiente: encontrar reversos exactos verificables, sustituir promociones por escaneos exactos cuando exista fuente legítima y continuar otra colección oficial incompleta.
+
+## Versión 10l (2 de octubre, hora de Cancún)
+
+- Topps Chrome UFC 2026 pasó de 200 bases a 880 identidades de carta completas derivadas de 905 filas oficiales: bases, inserts, case hits, autógrafos y UFC Debut Patch Autographs.
+- Las 25 Split Decision conservan a ambos peleadores dentro de una sola identidad de carta.
+- Se añadieron 10 frentes promocionales oficiales de Topps, revisados visualmente y vinculados por colección, código, subset y peleador. Son referencias, no escaneos exactos; 0 reversos nuevos.
+- El PDF oficial de odds se auditó pero sus familias de paralelos no se duplicaron como entradas independientes, porque Topps advierte que no todos los sujetos aparecen en cada paralelo.
+- Inventario personal intacto. Prueba reproducible en `tests/batch9.cjs`.
+
+Auditoría, hashes, recuentos y fuentes: `data/catalog-batch9-audit.json`.
+
+Pendiente: reversos verificables, más imágenes exactas y completar otra colección deportiva desde una fuente oficial.

@@ -1,0 +1,61 @@
+// Run with jsdom installed: NODE_PATH=/path/to/node_modules node tests/batch9.cjs
+const {JSDOM}=require('jsdom');
+const fs=require('fs');
+const path=require('path');
+const vm=require('vm');
+const assert=require('node:assert/strict');
+const root=path.resolve(__dirname,'..');
+const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
+const dom=new JSDOM('<div id="app"></div>',{url:'https://example.com',runScripts:'outside-only',pretendToBeVisual:true});
+const w=dom.window;
+const context=dom.getInternalVMContext();
+w.CSS={escape:value=>value};
+w.scrollTo=()=>{};
+w.HTMLElement.prototype.scrollIntoView=()=>{};
+w.HTMLDialogElement.prototype.showModal=function(){this.open=true};
+w.HTMLDialogElement.prototype.close=function(){this.open=false};
+w.IntersectionObserver=class{observe(){}disconnect(){}unobserve(){}};
+const run=source=>vm.runInContext(source,context);
+for(const match of html.matchAll(/<script src="([^?]+)\?/g)) run(fs.readFileSync(path.join(root,match[1]),'utf8'));
+
+const id='topps-chrome-ufc-2026';
+const rows=w.CS_CATALOG.checklists[id];
+assert.equal(rows.length,880);
+assert.equal(w.CS_CATALOG.collections.find(x=>x.id===id).baseCount,200);
+const count=subset=>rows.filter(row=>row[4]===subset).length;
+assert.equal(count('Base Cards'),200);
+assert.equal(count('All Action'),50);
+assert.equal(count('Split Decision'),25);
+assert.equal(count('Base Cards Autograph Variations'),89);
+assert.equal(count('Vanquisher Ink'),45);
+assert.equal(count('UFC Debut Patch Autographs'),9);
+assert.equal(rows.filter(row=>row[0]==='SP-13'&&row[1]==='Khabib Nurmagomedov / Conor McGregor').length,1);
+assert.equal(new Set(rows.map(row=>`${row[0]}|${row[7]}`)).size,rows.length);
+assert.equal(rows.some(row=>String(row).match(/TBA|placeholder/i)),false);
+assert.deepEqual(new Set(rows.map(row=>row[5])),new Set(['base','insert','autograph','autograph-relic']));
+
+let imageCount=0;
+for(const [key,visual] of Object.entries(w.CS_IMAGE_CATALOG.cards)) {
+  if(visual.source!=='Topps oficial'||!visual.sourcePage?.includes('topps-chrome-ufc')) continue;
+  imageCount++;
+  const [collection,number,...parts]=key.split('|');
+  const entryKey=parts.join('|');
+  assert.equal(collection,id);
+  const matches=rows.filter(row=>String(row[0])===number&&row[7]===entryKey);
+  assert.equal(matches.length,1,key);
+  assert(visual.front.startsWith('https://images.topps.com/'));
+  assert.equal(visual.kind,'reference');
+  assert.equal(w.CSVisual.resolve(id,number,matches[0][6],entryKey).kind,'reference');
+  assert.equal(w.CSVisual.resolve(id,number,matches[0][6],'wrong'),null);
+}
+assert.equal(imageCount,10);
+assert.equal(run('state.cards.length'),0);
+assert.equal(w.localStorage.getItem('collectors-sports-v05-cards'),null);
+const sw=fs.readFileSync(path.join(root,'sw.js'),'utf8');
+assert(sw.includes("url.hostname==='images.topps.com'"));
+const audit=JSON.parse(fs.readFileSync(path.join(root,'data/catalog-batch9-audit.json'),'utf8'));
+assert.equal(audit.collection.catalogEntries,880);
+assert.equal(audit.collection.codedSubjectRows,905);
+assert.equal(audit.inventoryMutation,false);
+console.log('PASS: 880 official Chrome UFC entries, 10 official promotional fronts, inventory unchanged');
+dom.window.close();

@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-10-02",
+  "release": "10l",
+  "collection": {
+    "id": "topps-chrome-ufc-2026",
+    "name": "2026 Topps Chrome UFC",
+    "officialChecklist": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/FINAL_CheckList_2026_TOPPS_CHROME_UFC_V2.xls?v=1779204573",
+    "officialChecklistSha256": "1e31d4cfdefd9b2d97238119754bfc42e4f50003db5030353620e96b6d7a77a4",
+    "officialChecklistBytes": 86016,
+    "officialOdds": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2026_UFC_Chrome_Odds.pdf?v=1779134050",
+    "officialOddsSha256": "31f41eda8fa7c110e4ff2b5a0e9c668187fe5911a4c186ccba9121a409de8994",
+    "officialOddsPages": 5,
+    "codedSubjectRows": 905,
+    "catalogEntries": 880,
+    "baseCount": 200,
+    "groupedSplitDecisionCards": 25,
+    "notes": [
+      "Las 25 Split Decision agrupan dos participantes oficiales bajo una sola identidad de carta.",
+      "Se mantienen los nombres tal como aparecen en el XLS oficial, incluso cuando Topps cambia el orden o la forma del nombre entre subsets.",
+      "Las familias de paralelos del PDF de odds no se expanden como cartas independientes: el documento advierte que un sujeto no está garantizado en cada paralelo.",
+      "No se registraron códigos, sujetos ni variantes que no aparezcan en los documentos oficiales."
+    ]
+  },
+  "images": {
+    "sourcePage": "https://www.topps.com/pages/topps-chrome-ufc",
+    "officialPromotionalFronts": 10,
+    "exactScans": 0,
+    "backs": 0,
+    "loading": "remote on-demand with service-worker image cache",
+    "identityScope": "collection + card number + subset/player entry key"
+  },
+  "inventoryMutation": false
+}
