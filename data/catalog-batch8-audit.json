@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-10-02",
+  "release": "10k",
+  "collection": {
+    "id": "topps-chrome-football-2025",
+    "name": "2025 Topps Chrome Football",
+    "officialChecklist": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2025_Chrome_Football_Checklist_040826.pdf?v=1775678965",
+    "officialChecklistSha256": "590ad763a6695b43db60dd1395a271c47b262f8084a40b2ef3511cd8001b9ae5",
+    "officialChecklistPages": 49,
+    "officialChecklistBytes": 938947,
+    "codedSubjectRows": 2388,
+    "catalogEntries": 2375,
+    "baseCount": 400,
+    "groupedDualAutographs": 13,
+    "omittedUncodedFanaticsAuthenticsRedemptions": 32,
+    "notes": [
+      "Las 13 Dual Autographs agrupan dos participantes oficiales bajo una sola identidad de carta.",
+      "Las 32 Fanatics Authentics Redemptions no tienen código de carta en el PDF y se omiten para no inventar identidades.",
+      "Rookies Team Camo Variation contiene 96 entradas: el PDF no enumera 382, 384, 385 ni 387.",
+      "Tecmo contiene 23 entradas: la numeración oficial omite 5 y 9.",
+      "Hidden Gems aparece como TBA y no se registra hasta que exista una lista oficial codificada.",
+      "No se expandieron paralelos que el checklist no enumera como entradas independientes."
+    ]
+  },
+  "images": {
+    "sourcePage": "https://www.checklistcenter.com/2025-topps-chrome-football-card-checklist/",
+    "reviewedPromotionalFronts": 20,
+    "exactScans": 0,
+    "backs": 0,
+    "loading": "on-demand",
+    "identityScope": "collection + card number + subset/player entry key"
+  },
+  "inventoryMutation": false
+}

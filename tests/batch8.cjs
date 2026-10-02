@@ -1,0 +1,65 @@
+// Run with jsdom installed: NODE_PATH=/path/to/node_modules node tests/batch8.cjs
+const {JSDOM}=require('jsdom');
+const fs=require('fs');
+const path=require('path');
+const vm=require('vm');
+const assert=require('node:assert/strict');
+const root=path.resolve(__dirname,'..');
+const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
+const dom=new JSDOM('<div id="app"></div>',{url:'https://example.com',runScripts:'outside-only',pretendToBeVisual:true});
+const w=dom.window;
+const context=dom.getInternalVMContext();
+w.CSS={escape:value=>value};
+w.scrollTo=()=>{};
+w.HTMLElement.prototype.scrollIntoView=()=>{};
+w.HTMLDialogElement.prototype.showModal=function(){this.open=true};
+w.HTMLDialogElement.prototype.close=function(){this.open=false};
+w.IntersectionObserver=class{observe(){}disconnect(){}unobserve(){}};
+const run=source=>vm.runInContext(source,context);
+for(const match of html.matchAll(/<script src="([^?]+)\?/g)) run(fs.readFileSync(path.join(root,match[1]),'utf8'));
+
+const id='topps-chrome-football-2025';
+const rows=w.CS_CATALOG.checklists[id];
+assert.equal(rows.length,2375);
+assert.equal(w.CS_CATALOG.collections.find(x=>x.id===id).baseCount,400);
+const count=subset=>rows.filter(row=>row[4]===subset).length;
+assert.equal(count('Base Cards'),300);
+assert.equal(count('Rookies'),100);
+assert.equal(count('Rookies Team Camo Variation'),96);
+assert.equal(count('Base Cards Lightboard Logo Variation'),400);
+assert.equal(count('Tecmo'),23);
+assert.equal(count('Dual Autographs'),13);
+assert.equal(count('Rookie Premiere Patch Autographs'),98);
+assert.equal(rows.some(row=>String(row).includes('Prem1ere')),false);
+assert.equal(rows.some(row=>String(row).match(/TBA|placeholder/i)),false);
+assert.equal(rows.filter(row=>row[0]==='DA-AK'&&row[1]==='Josh Allen / Jim Kelly').length,1);
+assert.equal(new Set(rows.map(row=>`${row[0]}|${row[7]}`)).size,rows.length);
+assert.equal(rows.some(row=>String(row[4]).includes('Fanatics Authentics')),false);
+
+let imageCount=0;
+for(const [key,visual] of Object.entries(w.CS_IMAGE_CATALOG.cards)) {
+  if(!visual.front?.includes('owned-batch8/')) continue;
+  imageCount++;
+  const [collection,number,...parts]=key.split('|');
+  const entryKey=parts.join('|');
+  assert.equal(collection,id);
+  const matches=rows.filter(row=>String(row[0])===number&&row[7]===entryKey);
+  assert.equal(matches.length,1,key);
+  assert(fs.existsSync(path.join(root,visual.front)),visual.front);
+  assert.equal(visual.kind,'reference');
+  assert.equal(w.CSVisual.resolve(id,number,matches[0][6],entryKey).kind,'reference');
+  assert.equal(w.CSVisual.resolve(id,number,matches[0][6],'wrong'),null);
+}
+assert.equal(imageCount,20);
+assert.equal(run('state.cards.length'),0);
+assert.equal(w.localStorage.getItem('collectors-sports-v05-cards'),null);
+const sw=fs.readFileSync(path.join(root,'sw.js'),'utf8');
+assert(sw.includes('catalog-owned-batch8.js'));
+assert(sw.includes('catalog-images-owned-batch8.js'));
+assert.equal(sw.includes('assets/cards/owned-batch8/'),false);
+const audit=JSON.parse(fs.readFileSync(path.join(root,'data/catalog-batch8-audit.json'),'utf8'));
+assert.equal(audit.collection.catalogEntries,2375);
+assert.equal(audit.collection.omittedUncodedFanaticsAuthenticsRedemptions,32);
+assert.equal(audit.inventoryMutation,false);
+console.log('PASS: 2,375 official Chrome Football entries, 20 reviewed references, inventory unchanged');
+dom.window.close();

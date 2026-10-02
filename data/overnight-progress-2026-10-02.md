@@ -35,3 +35,17 @@ Siempre leer main y auditorías antes de editar. No iniciar cambios después de 
 - Auditoría: `data/catalog-batch7-image-audit.json`.
 
 Pendiente: reversos de NBA/NFL/WWE/tenis, más imágenes exactas verificables y la siguiente colección oficial vacía.
+
+## Versión 10k (2 de octubre, hora de Cancún)
+
+- Topps Chrome Football 2025 completado con 2,375 identidades de carta derivadas de 2,388 filas codificadas del PDF oficial: 400 base/rookies, inserts, variaciones, autógrafos, reliquias y auto-relics.
+- Las 13 Dual Autographs conservan a sus dos participantes dentro de una sola carta; la identidad extendida evita colisiones entre códigos compartidos.
+- Se agregaron 20 frentes promocionales revisados y vinculados por colección, código, subset y jugador. Son referencias, no escaneos exactos; 0 reversos nuevos.
+- Se omitieron deliberadamente 32 Fanatics Authentics Redemptions sin código, además de Hidden Gems TBA, para no inventar identidades.
+- Rookies Team Camo (96) y Tecmo (23) mantienen los huecos reales del checklist oficial.
+- Los 20 frentes se cargan bajo demanda y no engordan la instalación inicial del service worker.
+- Inventario personal intacto. Prueba reproducible en `tests/batch8.cjs`.
+
+Auditoría, fuente oficial, hash, recuentos y omisiones: `data/catalog-batch8-audit.json`.
+
+Pendiente: encontrar reversos exactos verificables, sustituir promociones por escaneos exactos cuando exista fuente legítima y continuar otra colección oficial incompleta.
