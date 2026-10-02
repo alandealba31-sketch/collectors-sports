@@ -1,0 +1,27 @@
+{
+  "verifiedAt": "2026-10-01",
+  "version": "10j",
+  "referenceFronts": 31,
+  "exactFronts": 0,
+  "backs": 0,
+  "collections": [
+    {
+      "id": "topps-chrome-basketball-2025-26",
+      "referenceFronts": 16,
+      "sourcePage": "https://www.checklistcenter.com/2025-26-topps-chrome-basketball-card-checklist/"
+    },
+    {
+      "id": "topps-resurgence-football-2025",
+      "referenceFronts": 15,
+      "sourcePage": "https://www.checklistcenter.com/2025-topps-resurgence-football-card-checklist/"
+    }
+  ],
+  "review": [
+    "All 31 images were visually inspected for player, product, subset and visible serial or parallel.",
+    "Every image key resolves to exactly one entry in the official Topps checklist imported in version 10i.",
+    "Images are labeled reference because they are manufacturer promotional mock-ups, not exact physical-card scans.",
+    "Where the finish name is not legible or absent from the source title, the label states Promoción or only the visible serial instead of guessing a parallel.",
+    "No reverse images were available from these source pages; backs remain pending.",
+    "Image files are loaded on demand instead of being pre-cached, limiting service-worker installation weight."
+  ]
+}

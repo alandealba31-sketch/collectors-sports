@@ -25,3 +25,13 @@ Auditoría, fuentes oficiales, hashes y recuentos: `data/catalog-batch6-audit.js
 5. Continuar productos vacíos: Chrome NFL 2025, Chrome F1 2025/Sapphire, Chrome Update NBA 2025/26 y productos pendientes de fútbol. Verificar año del producto con la fuente oficial antes de cargar.
 
 Siempre leer main y auditorías antes de editar. No iniciar cambios después de las 07:00 de Cancún del 2 de octubre de 2026.
+
+## Versión 10j (1 de octubre, hora de Cancún)
+
+- 31 frentes promocionales añadidos y revisados: 16 de Chrome Basketball 2025/26 y 15 de Resurgence Football 2025.
+- Cada imagen está vinculada a la identidad completa de la entrada (colección, código, subset y jugador), incluidas las cartas con códigos numéricos repetidos entre base y autógrafo.
+- Los acabados sólo se nombran cuando aparecen en el título de la fuente o la serialización es visible; el resto se conserva como promoción sin inventar paralelo.
+- Las imágenes se cargan bajo demanda para no aumentar el peso de instalación del service worker.
+- Auditoría: `data/catalog-batch7-image-audit.json`.
+
+Pendiente: reversos de NBA/NFL/WWE/tenis, más imágenes exactas verificables y la siguiente colección oficial vacía.
