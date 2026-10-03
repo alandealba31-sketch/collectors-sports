@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "products": [
+    {"collectionId":"topps-chrome-ucc-2025-26","sid":613906,"setName":"2025-26 Topps Chrome UEFA Club Competitions","sport":"Soccer"},
+    {"collectionId":"topps-chrome-ufc-2026","sid":632703,"setName":"2026 Topps Chrome UFC","sport":"UFC"},
+    {"collectionId":"topps-chrome-wwe-2026","sid":608660,"setName":"2026 Topps Chrome WWE","sport":"WWE"},
+    {"collectionId":"topps-chrome-basketball-2025-26","sid":574514,"setName":"2025-26 Topps Chrome Basketball","sport":"NBA"},
+    {"collectionId":"topps-chrome-football-2025","sid":613788,"setName":"2025 Topps Chrome Football","sport":"NFL"},
+    {"collectionId":"topps-chrome-baseball-2026","sid":654047,"setName":"2026 Topps Chrome Baseball","sport":"MLB"},
+    {"collectionId":"panini-pitch-kings-laliga-2025-26","sid":650062,"setName":"2025-26 Panini Pitch Kings","sport":"Soccer"},
+    {"collectionId":"topps-premier-league-2025-26","sid":543724,"setName":"2025-26 Topps Premier League","sport":"Soccer"},
+    {"collectionId":"topps-real-madrid-team-set-2025-26","sid":602126,"setName":"2025-26 Topps Real Madrid Team Set","sport":"Soccer"}
+  ]
+}
