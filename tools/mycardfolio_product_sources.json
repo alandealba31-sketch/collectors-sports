@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "products": [
+    {"collectionId":"topps-chrome-baseball-2026","sport":"Baseball","year":"2026","product":"Topps Chrome Baseball","shortName":"Chrome Baseball 2026","appSport":"MLB"},
+    {"collectionId":"bowman-chrome-baseball-2026","sport":"Baseball","year":"2026","product":"Bowman Chrome","shortName":"Bowman Chrome 2026","appSport":"MLB"},
+    {"collectionId":"topps-holiday-baseball-2025","sport":"Baseball","year":"2025","product":"Topps Holiday","shortName":"Holiday MLB 2025","appSport":"MLB"},
+    {"collectionId":"topps-chrome-football-2025","sport":"Football","year":"2025","product":"Topps Chrome Football","shortName":"Chrome Football 2025","appSport":"NFL"},
+    {"collectionId":"topps-signature-class-football-2025","sport":"Football","year":"2025","product":"Topps Signature Class","shortName":"Signature Class NFL 2025","appSport":"NFL"},
+    {"collectionId":"topps-resurgence-football-2025","sport":"Football","year":"2025","product":"Topps Resurgence","shortName":"Resurgence NFL 2025","appSport":"NFL"},
+    {"collectionId":"topps-chrome-basketball-2025-26","sport":"Basketball","year":"2025","product":"Topps Chrome Basketball","shortName":"Chrome Basketball 25/26","appSport":"NBA"},
+    {"collectionId":"topps-chrome-ufc-2026","sport":"Mixed Martial Arts (Mma)","year":"2026","product":"Topps Chrome UFC","shortName":"Chrome UFC 2026","appSport":"UFC"},
+    {"collectionId":"topps-stadium-club-ufc-2026","sport":"Mixed Martial Arts (Mma)","year":"2026","product":"Stadium Club UFC","shortName":"Stadium Club UFC 2026","appSport":"UFC"},
+    {"collectionId":"topps-chrome-tennis-2026","sport":"Tennis","year":"2026","product":"Topps Chrome Tennis","shortName":"Chrome Tennis 2026","appSport":"Tennis"},
+    {"collectionId":"topps-chrome-ucc-2025-26","sport":"Soccer","year":"2025","product":"Topps Chrome UEFA Club Competitions","shortName":"Chrome UEFA 25/26","appSport":"Soccer"},
+    {"collectionId":"topps-premier-league-2025-26","sport":"Soccer","year":"2025","product":"Topps Premier League","shortName":"Premier League 25/26","appSport":"Soccer"},
+    {"collectionId":"panini-pitch-kings-laliga-2025-26","sport":"Soccer","year":"2025","product":"Panini Pitch Kings","shortName":"Pitch Kings LaLiga 25/26","appSport":"Soccer"},
+    {"collectionId":"topps-real-madrid-team-set-2025-26","sport":"Soccer","year":"2025","product":"Topps Real Madrid Team Set","shortName":"Real Madrid Team Set 25/26","appSport":"Soccer"}
+  ]
+}
