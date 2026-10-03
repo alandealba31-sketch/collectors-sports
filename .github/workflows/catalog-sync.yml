@@ -5,6 +5,8 @@ on:
     branches: ["main"]
     paths:
       - "tools/**"
+      - "sync_mycardfolio_v2.py"
+      - "mycardfolio_product_sources_v2.json"
       - ".github/workflows/catalog-sync.yml"
   workflow_dispatch:
   schedule:
@@ -48,8 +50,8 @@ jobs:
           python tools/sync_official_images.py
           python tools/cache_exact_images.py
 
-      - name: Expand owned products and exact fronts through structured MCP
-        run: python tools/sync_mycardfolio_products.py
+      - name: Expand owned products and exact fronts through strict structured MCP
+        run: python sync_mycardfolio_v2.py
 
       - name: Validate official generated catalog
         run: python tools/validate_catalog.py
@@ -90,7 +92,8 @@ jobs:
           CANDIDATES=(
             catalog-imported.js catalog-premier.js catalog-mycardfolio-expanded.js
             catalog-images-mycardfolio.js catalog-images-official.js catalog-images-cached.js catalog-images-ebay.js
-            data/mycardfolio-sync-report.json data/ebay-image-manifest.json data/ebay-image-report.json assets/cards/ebay
+            data/mycardfolio-sync-state.json data/mycardfolio-sync-report.json
+            data/ebay-image-manifest.json data/ebay-image-report.json assets/cards/ebay
           )
           EXISTING=()
           for p in "${CANDIDATES[@]}"; do
