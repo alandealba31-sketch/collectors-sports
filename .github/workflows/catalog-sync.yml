@@ -1,4 +1,4 @@
-name: Sync official card catalog and exact fronts
+name: Sync card catalog and exact fronts at scale
 
 on:
   push:
@@ -23,7 +23,11 @@ jobs:
     timeout-minutes: 55
     env:
       IMAGE_IMPORT_MAX_NEW: "2500"
-      IMAGE_IMPORT_DELAY: "0.25"
+      IMAGE_IMPORT_DELAY: "0.20"
+      EBAY_IMPORT_MAX_NEW: "1000"
+      EBAY_IMPORT_DELAY: "0.10"
+      EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
+      EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -38,20 +42,27 @@ jobs:
       - name: Install parser dependencies
         run: python -m pip install --disable-pip-version-check pandas xlrd pypdf pillow requests beautifulsoup4
 
-      - name: Build catalog from official checklists and galleries
+      - name: Build catalog from official and structured checklists
         run: |
           set -euo pipefail
           python tools/sync_checklists.py
           python tools/sync_premier.py
+          python tools/sync_tcdb_products.py
           python tools/sync_official_images.py
           python tools/cache_exact_images.py
 
-      - name: Export image identities and import exact fronts in bulk
-        run: |
-          set -euo pipefail
-          node tools/export_catalog_image_targets.mjs
-          python tools/import_bulk_card_images.py
-          rm -f data/image-targets-runtime.json
+      - name: Export every searchable identity
+        run: node tools/export_catalog_image_targets.mjs
+
+      - name: Import TCDB exact fronts in bulk
+        run: python tools/import_tcdb_exact_images_v2.py
+
+      - name: Import eBay exact fronts through official Browse API
+        run: python tools/import_ebay_exact_images.py
+
+      - name: Clean runtime targets
+        if: always()
+        run: rm -f data/image-targets-runtime.json
 
       - name: Validate catalog integrity
         run: python tools/validate_catalog.py
@@ -60,32 +71,34 @@ jobs:
         run: |
           node --check catalog-imported.js
           node --check catalog-premier.js
+          node --check catalog-tcdb-expanded.js
           node --check catalog-images-official.js
           node --check catalog-images-cached.js
           node --check catalog-images-bulk.js
+          node --check catalog-images-ebay.js
           python - <<'PY'
           import json
           from pathlib import Path
-          p=Path('data/bulk-image-report.json')
-          if p.exists():
-              data=json.loads(p.read_text())
-              print('Bulk exact fronts added:', data.get('newExactFrontsThisRun', 0))
-              print('Bulk exact manifest total:', data.get('manifestExactFronts', 0))
-              for collection, stats in data.get('collections', {}).items():
-                  print(collection, stats)
+          for filename in ['data/tcdb-product-sync-report.json','data/bulk-image-report.json','data/ebay-image-report.json']:
+              p=Path(filename)
+              if p.exists():
+                  d=json.loads(p.read_text())
+                  print('\n',filename)
+                  print(json.dumps(d,indent=2)[:10000])
           PY
 
       - name: Commit generated catalog when changed
         run: |
           set -euo pipefail
-          if [ -z "$(git status --porcelain -- catalog-imported.js catalog-premier.js catalog-images-official.js catalog-images-cached.js catalog-images-bulk.js data/bulk-image-manifest.json data/bulk-image-report.json assets/cards/bulk)" ]; then
-            echo "Catalog and exact-front cache are already current."
+          PATHS="catalog-imported.js catalog-premier.js catalog-tcdb-expanded.js catalog-images-official.js catalog-images-cached.js catalog-images-bulk.js catalog-images-ebay.js data/tcdb-product-sync-report.json data/bulk-image-manifest.json data/bulk-image-report.json data/ebay-image-manifest.json data/ebay-image-report.json assets/cards/bulk assets/cards/ebay"
+          if [ -z "$(git status --porcelain -- $PATHS)" ]; then
+            echo "Catalog and exact-front caches are already current."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add catalog-imported.js catalog-premier.js catalog-images-official.js catalog-images-cached.js catalog-images-bulk.js data/bulk-image-manifest.json data/bulk-image-report.json assets/cards/bulk
-          git commit -m "Sync catalog and bulk exact card fronts"
+          git add $PATHS
+          git commit -m "Sync expanded catalog and bulk exact card fronts"
           for attempt in 1 2 3 4; do
             git fetch origin main
             git rebase origin/main
