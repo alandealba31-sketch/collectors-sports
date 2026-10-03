@@ -1,19 +1,42 @@
 {
-  "version": 1,
+  "version": 2,
   "products": [
     {"collectionId":"topps-chrome-baseball-2026","sport":"Baseball","year":"2026","product":"Topps Chrome Baseball","shortName":"Chrome Baseball 2026","appSport":"MLB"},
     {"collectionId":"bowman-chrome-baseball-2026","sport":"Baseball","year":"2026","product":"Bowman Chrome","shortName":"Bowman Chrome 2026","appSport":"MLB"},
     {"collectionId":"topps-holiday-baseball-2025","sport":"Baseball","year":"2025","product":"Topps Holiday","shortName":"Holiday MLB 2025","appSport":"MLB"},
+    {"collectionId":"topps-update-baseball-2026","sport":"Baseball","year":"2026","product":"Topps Update Series","shortName":"Update MLB 2026","appSport":"MLB"},
+    {"collectionId":"topps-chrome-logofractor-baseball-2026","sport":"Baseball","year":"2026","product":"Topps Chrome Logofractor","shortName":"Logofractor MLB 2026","appSport":"MLB"},
+
     {"collectionId":"topps-chrome-football-2025","sport":"Football","year":"2025","product":"Topps Chrome Football","shortName":"Chrome Football 2025","appSport":"NFL"},
     {"collectionId":"topps-signature-class-football-2025","sport":"Football","year":"2025","product":"Topps Signature Class","shortName":"Signature Class NFL 2025","appSport":"NFL"},
     {"collectionId":"topps-resurgence-football-2025","sport":"Football","year":"2025","product":"Topps Resurgence","shortName":"Resurgence NFL 2025","appSport":"NFL"},
+    {"collectionId":"topps-flagship-football-2026","sport":"Football","year":"2026","product":"Topps Flagship Football","shortName":"Flagship NFL 2026","appSport":"NFL"},
+    {"collectionId":"panini-donruss-optic-football-2025","sport":"Football","year":"2025","product":"Panini Donruss Optic Football","shortName":"Optic NFL 2025","appSport":"NFL"},
+
     {"collectionId":"topps-chrome-basketball-2025-26","sport":"Basketball","year":"2025","product":"Topps Chrome Basketball","shortName":"Chrome Basketball 25/26","appSport":"NBA"},
+    {"collectionId":"panini-prizm-basketball-2024-25","sport":"Basketball","year":"2024","product":"Panini Prizm Basketball","shortName":"Prizm NBA 24/25","appSport":"NBA"},
+    {"collectionId":"panini-select-basketball-2024-25","sport":"Basketball","year":"2024","product":"Panini Select Basketball","shortName":"Select NBA 24/25","appSport":"NBA"},
+    {"collectionId":"panini-donruss-optic-basketball-2024-25","sport":"Basketball","year":"2024","product":"Panini Donruss Optic Basketball","shortName":"Optic NBA 24/25","appSport":"NBA"},
+
     {"collectionId":"topps-chrome-ufc-2026","sport":"Mixed Martial Arts (Mma)","year":"2026","product":"Topps Chrome UFC","shortName":"Chrome UFC 2026","appSport":"UFC"},
     {"collectionId":"topps-stadium-club-ufc-2026","sport":"Mixed Martial Arts (Mma)","year":"2026","product":"Stadium Club UFC","shortName":"Stadium Club UFC 2026","appSport":"UFC"},
     {"collectionId":"topps-chrome-tennis-2026","sport":"Tennis","year":"2026","product":"Topps Chrome Tennis","shortName":"Chrome Tennis 2026","appSport":"Tennis"},
+    {"collectionId":"topps-chrome-f1-2026","sport":"Racing","year":"2026","product":"Topps Chrome Formula 1","shortName":"Chrome F1 2026","appSport":"F1"},
+    {"collectionId":"topps-chrome-wwe-2026","sport":"Wrestling","year":"2026","product":"Topps Chrome WWE","shortName":"Chrome WWE 2026","appSport":"WWE"},
+
     {"collectionId":"topps-chrome-ucc-2025-26","sport":"Soccer","year":"2025","product":"Topps Chrome UEFA Club Competitions","shortName":"Chrome UEFA 25/26","appSport":"Soccer"},
+    {"collectionId":"topps-ucc-2025-26","sport":"Soccer","year":"2025","product":"Topps UEFA Club Competitions","shortName":"UEFA Flagship 25/26","appSport":"Soccer"},
+    {"collectionId":"topps-finest-ucc-2025-26","sport":"Soccer","year":"2025","product":"Topps Finest UEFA Club Competitions","shortName":"Finest UEFA 25/26","appSport":"Soccer"},
     {"collectionId":"topps-premier-league-2025-26","sport":"Soccer","year":"2025","product":"Topps Premier League","shortName":"Premier League 25/26","appSport":"Soccer"},
+    {"collectionId":"topps-chrome-premier-league-2026","sport":"Soccer","year":"2025","product":"Topps Chrome Premier League","shortName":"Chrome Premier League 25/26","appSport":"Soccer"},
+    {"collectionId":"topps-chrome-mls-2026","sport":"Soccer","year":"2026","product":"Topps Chrome MLS","shortName":"Chrome MLS 2026","appSport":"Soccer"},
     {"collectionId":"panini-pitch-kings-laliga-2025-26","sport":"Soccer","year":"2025","product":"Panini Pitch Kings","shortName":"Pitch Kings LaLiga 25/26","appSport":"Soccer"},
-    {"collectionId":"topps-real-madrid-team-set-2025-26","sport":"Soccer","year":"2025","product":"Topps Real Madrid Team Set","shortName":"Real Madrid Team Set 25/26","appSport":"Soccer"}
+    {"collectionId":"panini-select-laliga-2024-25","sport":"Soccer","year":"2024","product":"Panini Select LaLiga","shortName":"Select LaLiga 24/25","appSport":"Soccer"},
+    {"collectionId":"panini-prizm-club-world-cup-2025","sport":"Soccer","year":"2025","product":"Panini Prizm FIFA Club World Cup","shortName":"Prizm Club World Cup 2025","appSport":"Soccer"},
+    {"collectionId":"panini-prizm-monopoly-world-cup-2026","sport":"Soccer","year":"2026","product":"Panini Prizm Monopoly FIFA World Cup","shortName":"Prizm Monopoly WC 2026","appSport":"Soccer"},
+    {"collectionId":"topps-real-madrid-team-set-2025-26","sport":"Soccer","year":"2025","product":"Topps Real Madrid Team Set","shortName":"Real Madrid Team Set 25/26","appSport":"Soccer"},
+    {"collectionId":"topps-atletico-team-set-2025-26","sport":"Soccer","year":"2025","product":"Topps Atletico de Madrid Team Set","shortName":"Atlético Team Set 25/26","appSport":"Soccer"},
+    {"collectionId":"topps-benfica-team-set-2025-26","sport":"Soccer","year":"2025","product":"Topps Benfica Team Set","shortName":"Benfica Team Set 25/26","appSport":"Soccer"},
+    {"collectionId":"topps-barcelona-forever-2025-26","sport":"Soccer","year":"2025","product":"Topps FC Barcelona Forever","shortName":"Barcelona Forever 25/26","appSport":"Soccer"}
   ]
 }
