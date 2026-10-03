@@ -6,32 +6,24 @@
     if (scoped && !entryKey) return null;
     const key = `${collectionId}|${String(number ?? '')}${scoped ? '|' + entryKey : ''}`;
     const entry = window.CS_IMAGE_CATALOG?.cards?.[key];
+    if (!(entry?.kind === 'exact' && entry?.exactVerified === true)) return null;
     const cached = window.CS_IMAGE_CACHE?.[key];
-    if (!cached && !['exact','reference'].includes(entry?.kind)) return null;
-    const visual = {...entry, front: safeUrl(cached || entry?.front), back: safeUrl(entry?.back)};
+    const visual = {...entry, front: safeUrl(cached || entry.front)};
     if (!visual.front) return null;
-
-    // Safety rule: metadata alone is not enough. Only visually audited cards count as exact.
-    visual.kind = entry?.kind === 'exact' && entry?.exactVerified === true ? 'exact' : 'reference';
-    if (entry?.kind === 'exact' && entry?.exactVerified !== true) {
-      visual.label = `${visual.label || 'Imagen de catálogo'} · pendiente de verificación visual exacta`;
-    }
-
-    if (variant && !/^base$/i.test(variant) && visual.kind === 'exact' && String(entry?.variant || 'Base').toLowerCase() !== variant.toLowerCase()) {
-      visual.kind = 'reference';
-      visual.label = `${visual.label || 'Imagen de catálogo'} · El paralelo de tu ejemplar puede ser diferente`;
-    }
+    if (variant && !/^base$/i.test(variant) && String(entry.variant || 'Base').toLowerCase() !== String(variant).toLowerCase()) return null;
+    visual.kind = 'exact';
     return visual;
   }
   function thumbnail(visual, title, className = '') {
     const url = safeUrl(visual?.front);
-    return `<span class="cs-card-thumbnail ${className}">${url ? `<img data-cs-image src="${escape(url)}" alt="${escape(title)}" loading="lazy" decoding="async">` : '<span class="cs-image-placeholder">Sin imagen</span>'}</span>`;
+    return `<span class="cs-card-thumbnail ${className}">${url ? `<img data-cs-image src="${escape(url)}" alt="${escape(title)}" loading="lazy" decoding="async">` : '<span class="cs-image-placeholder">CS</span>'}</span>`;
   }
   function searchResult(entry, index) {
     const visual = resolve(entry.collection.id, entry.number, entry.row?.[6], entry.row?.[7]);
-    const kind = entry.subset || (Array.isArray(entry.flags) ? entry.flags.join(' · ') : '') || 'Base';
-    const status = visual ? (visual.kind === 'exact' ? 'Frente exacto verificado' : 'Referencia visual · no cuenta como cobertura') : 'Imagen pendiente';
-    return `<div class="cs-visual-result"><button type="button" class="cs-live-result" data-cs-result="${index}">${thumbnail(visual, entry.player)}<span class="cs-result-copy"><strong>${escape(entry.player)}</strong><span>${escape(kind)} · ${escape(entry.collection.shortName || entry.collection.name)} · #${escape(entry.number)}</span>${entry.team ? `<small>${escape(entry.team)}</small>` : ''}<small class="cs-image-status">${status}</small></span></button>${visual ? `<button type="button" class="cs-image-expand" data-cs-preview data-collection="${escape(entry.collection.id)}" data-number="${escape(entry.number)}" data-entry-key="${escape(entry.row?.[7]||'')}" data-player="${escape(entry.player)}" aria-label="Ampliar imagen de ${escape(entry.player)}">Ampliar</button>` : ''}</div>`;
+    const kind = entry.virtualVariant || entry.subset || (Array.isArray(entry.flags) ? entry.flags.join(' · ') : '') || 'Base';
+    const status = visual ? 'Frente exacto verificado' : 'Imagen exacta pendiente';
+    const displayNumber = entry.displayNumber || entry.number;
+    return `<div class="cs-visual-result"><button type="button" class="cs-live-result" data-cs-result="${index}">${thumbnail(visual, entry.player)}<span class="cs-result-copy"><strong>${escape(entry.player)}</strong><span>${escape(kind)} · ${escape(entry.collection.shortName || entry.collection.name)} · #${escape(displayNumber)}</span>${entry.team ? `<small>${escape(entry.team)}</small>` : ''}<small class="cs-image-status">${status}</small></span></button>${visual ? `<button type="button" class="cs-image-expand" data-cs-preview data-collection="${escape(entry.collection.id)}" data-number="${escape(entry.number)}" data-entry-key="${escape(entry.row?.[7]||'')}" data-player="${escape(entry.player)}" aria-label="Ampliar imagen de ${escape(entry.player)}">Ampliar</button>` : ''}</div>`;
   }
   function preview(visual, title, number, returnFocus) {
     document.querySelector('.cs-card-dialog')?.close();
@@ -39,8 +31,7 @@
     const dialog = document.createElement('dialog');
     dialog.className = 'cs-card-dialog';
     dialog.setAttribute('aria-labelledby','cs-preview-title');
-    const exact = visual.kind === 'exact';
-    dialog.innerHTML = `<div class="cs-dialog-head"><div><h2 id="cs-preview-title">${escape(title)}</h2><div class="muted">#${escape(number)}</div></div><button type="button" class="btn secondary" data-close>✕<span class="sr-only">Cerrar imagen</span></button></div><div class="cs-preview-frame"><img data-cs-image src="${escape(visual.front)}" alt="${escape(title)} — frente"></div><div style="text-align:center"><span class="cs-verified-badge">${exact ? '✓ Frente exacto verificado' : 'Referencia visual'}</span></div><p class="cs-preview-caption">${escape(visual.label || (exact ? 'Frente exacto de catálogo' : 'Referencia visual'))}</p>${!exact ? '<p class="muted tiny" style="text-align:center">Esta imagen sirve como referencia, pero no cuenta en la cobertura exacta hasta completar la verificación visual.</p>' : ''}${/^https:\/\//.test(visual.sourcePage || '') ? `<div style="text-align:center"><a class="catalog-source-detail" href="${escape(visual.sourcePage)}" target="_blank" rel="noopener noreferrer">Fuente: ${escape(visual.source || 'Ver imagen')} ↗</a></div>` : ''}`;
+    dialog.innerHTML = `<div class="cs-dialog-head"><div><h2 id="cs-preview-title">${escape(title)}</h2><div class="muted">#${escape(number)}</div></div><button type="button" class="btn secondary" data-close>✕<span class="sr-only">Cerrar imagen</span></button></div><div class="cs-preview-frame"><img data-cs-image src="${escape(visual.front)}" alt="${escape(title)} — frente"></div><div style="text-align:center"><span class="cs-verified-badge">✓ Frente exacto verificado</span></div><p class="cs-preview-caption">${escape(visual.label || 'Frente exacto de catálogo')}</p>${/^https:\/\//.test(visual.sourcePage || '') ? `<div style="text-align:center"><a class="catalog-source-detail" href="${escape(visual.sourcePage)}" target="_blank" rel="noopener noreferrer">Fuente: ${escape(visual.source || 'Ver imagen')} ↗</a></div>` : ''}`;
     dialog.querySelector('[data-close]').addEventListener('click', () => dialog.close());
     dialog.addEventListener('click', e => { if (e.target === dialog) { const r=dialog.getBoundingClientRect(); if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom) dialog.close(); } });
     dialog.addEventListener('close', () => { dialog.remove(); if(returnFocus?.isConnected) returnFocus.focus(); }, {once:true});
@@ -56,16 +47,12 @@
     e.preventDefault(); e.stopImmediatePropagation();
     preview(visual, button.dataset.player || button.dataset.visualPlayer || '', number, button);
   }, true);
-  document.addEventListener('keydown', e => {
-    const target=e.target.closest('[data-preview-visual]');
-    if (target && (e.key==='Enter'||e.key===' ')) { e.preventDefault(); e.stopImmediatePropagation(); target.click(); }
-  }, true);
   document.addEventListener('error', e => {
     const img=e.target;
     if (!(img instanceof HTMLImageElement) || !img.matches('[data-cs-image]')) return;
     img.hidden=true;
     if (!img.parentElement.querySelector('.cs-image-placeholder')) {
-      const label=document.createElement('span');label.className='cs-image-placeholder';label.textContent='Imagen no disponible';img.parentElement.appendChild(label);
+      const label=document.createElement('span');label.className='cs-image-placeholder';label.textContent='CS';img.parentElement.appendChild(label);
     }
   }, true);
   window.CSVisual = { resolve, thumbnail, searchResult, preview };
