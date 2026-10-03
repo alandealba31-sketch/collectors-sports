@@ -1,76 +1,14 @@
 [
-  {
-    "id": "topps-flagship-football-2026",
-    "kind": "pdf-generic",
-    "url": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/CheckList_26TFOB_VERSION5_1.pdf?v=1787977209",
-    "expected_base_count": 400
-  },
-  {
-    "id": "topps-chrome-f1-2026",
-    "kind": "pdf-f1",
-    "url": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2026_F1_Chrome_Checklist.pdf?v=1788962968",
-    "expected_base_count": 200,
-    "allow_partial_verified": true,
-    "minimum_verified_count": 180
-  },
-  {
-    "id": "topps-chrome-baseball-2026",
-    "kind": "pdf-mlb",
-    "url": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2026_Topps_Chrome_Baseball_Checklist_Final_7.22.pdf?v=1785169183",
-    "expected_base_count": 300
-  },
-  {
-    "id": "bowman-chrome-baseball-2026",
-    "kind": "pdf-generic",
-    "url": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2026_Bowman_Chrome_Baseball_Checklist_1.pdf?v=1786458901",
-    "expected_base_count": 100
-  },
-  {
-    "id": "topps-chrome-ufc-2026",
-    "kind": "xls-ufc",
-    "url": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/FINAL_CheckList_2026_TOPPS_CHROME_UFC_V2.xls?v=1779204573",
-    "expected_base_count": 200
-  },
-  {
-    "id": "topps-triumphant-tennis-2025",
-    "kind": "pdf-generic",
-    "url": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2025_Topps_Triumphant_Tennis_Checklist.pdf?v=1755610487",
-    "expected_base_count": 75
-  },
-  {
-    "id": "topps-chrome-tennis-2026",
-    "kind": "xls-generic",
-    "url": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/26TCTN_-_2026_Topps_Chrome_Tennis_Checklist_V2.xls?v=1790700549",
-    "expected_base_count": 300
-  },
-  {
-    "id": "topps-chrome-mls-2026",
-    "kind": "pdf-generic",
-    "url": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/CheckList_Subject_to_Change_3ac890e7-2e2f-4550-89d8-59689322cd5c.pdf?v=1789050559",
-    "expected_base_count": 200
-  },
-  {
-    "id": "topps-chrome-premier-league-2026",
-    "kind": "pdf-generic",
-    "url": "https://cdn.shopify.com/s/files/1/0739/2015/1805/files/FINAL_PL_Chrome_Checklist.pdf?v=1770285570",
-    "expected_base_count": 200
-  },
-  {
-    "id": "topps-finest-premier-league-2026",
-    "kind": "pdf-generic",
-    "url": "https://cdn.shopify.com/s/files/1/0739/2015/1805/files/Finest_Premier_League_Checklist.pdf?v=1774359572",
-    "expected_base_count": 300
-  },
-  {
-    "id": "topps-chrome-basketball-2025-26",
-    "kind": "pdf-generic",
-    "url": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2025-26_Topps_Chrome_Basketball_Checklist.pdf?v=1763392799",
-    "expected_base_count": 299
-  },
-  {
-    "id": "topps-chrome-wwe-2026",
-    "kind": "pdf-generic",
-    "url": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/FINAL_CheckList_26CWWE_ChromeWWE.pdf?v=1775658305",
-    "expected_base_count": 200
-  }
+  {"id":"topps-flagship-football-2026","kind":"pdf-generic","url":"https://cdn.shopify.com/s/files/1/0662/9749/5709/files/CheckList_26TFOB_VERSION5_1.pdf?v=1787977209","expected_base_count":400},
+  {"id":"topps-chrome-f1-2026","kind":"pdf-f1","url":"https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2026_F1_Chrome_Checklist.pdf?v=1788962968","expected_base_count":200,"allow_partial_verified":true,"minimum_verified_count":180},
+  {"id":"topps-chrome-baseball-2026","kind":"pdf-mlb","url":"https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2026_Topps_Chrome_Baseball_Checklist_Final_7.22.pdf?v=1785169183","expected_base_count":300},
+  {"id":"bowman-chrome-baseball-2026","kind":"pdf-generic","url":"https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2026_Bowman_Chrome_Baseball_Checklist_1.pdf?v=1786458901","expected_base_count":100},
+  {"id":"topps-chrome-ufc-2026","kind":"xls-ufc","url":"https://cdn.shopify.com/s/files/1/0662/9749/5709/files/FINAL_CheckList_2026_TOPPS_CHROME_UFC_V2.xls?v=1779204573","expected_base_count":200},
+  {"id":"topps-triumphant-tennis-2025","kind":"pdf-generic","url":"https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2025_Topps_Triumphant_Tennis_Checklist.pdf?v=1755610487","expected_base_count":75},
+  {"id":"topps-chrome-tennis-2026","kind":"xls-generic","url":"https://cdn.shopify.com/s/files/1/0662/9749/5709/files/26TCTN_-_2026_Topps_Chrome_Tennis_Checklist_V2.xls?v=1790700549","expected_base_count":300,"allow_parser_failure":true},
+  {"id":"topps-chrome-mls-2026","kind":"pdf-generic","url":"https://cdn.shopify.com/s/files/1/0662/9749/5709/files/CheckList_Subject_to_Change_3ac890e7-2e2f-4550-89d8-59689322cd5c.pdf?v=1789050559","expected_base_count":200},
+  {"id":"topps-chrome-premier-league-2026","kind":"pdf-generic","url":"https://cdn.shopify.com/s/files/1/0739/2015/1805/files/FINAL_PL_Chrome_Checklist.pdf?v=1770285570","expected_base_count":200},
+  {"id":"topps-finest-premier-league-2026","kind":"pdf-generic","url":"https://cdn.shopify.com/s/files/1/0739/2015/1805/files/Finest_Premier_League_Checklist.pdf?v=1774359572","expected_base_count":300,"allow_parser_failure":true},
+  {"id":"topps-chrome-basketball-2025-26","kind":"pdf-generic","url":"https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2025-26_Topps_Chrome_Basketball_Checklist.pdf?v=1763392799","expected_base_count":299,"allow_partial_verified":true,"minimum_verified_count":298},
+  {"id":"topps-chrome-wwe-2026","kind":"pdf-generic","url":"https://cdn.shopify.com/s/files/1/0662/9749/5709/files/FINAL_CheckList_26CWWE_ChromeWWE.pdf?v=1775658305","expected_base_count":200}
 ]
