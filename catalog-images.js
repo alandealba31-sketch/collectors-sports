@@ -1,10 +1,17 @@
 window.CS_IMAGE_CATALOG = {
-  version: 2,
-  updatedAt: '2026-09-30',
+  version: 3,
+  updatedAt: '2026-10-03',
   policy: {
-    exact: 'Imagen de la carta exacta del checklist.',
-    reference: 'Referencia visual del mismo sujeto o diseño; puede variar el paralelo, subset o acabado.',
-    collection: 'Imagen representativa oficial de la colección; nunca se usa para identificar una carta específica.'
+    exact: 'Frente de la identidad exacta del checklist. Es la unica imagen que cuenta para cobertura.',
+    reference: 'Referencia visual del mismo sujeto o diseño; puede variar el paralelo, subset o acabado. No cuenta para cobertura.',
+    collection: 'Imagen representativa de la colección; nunca se usa para identificar una carta específica.',
+    back: 'El reverso es opcional y ya no forma parte del objetivo de cobertura.'
+  },
+  sourcePolicy: {
+    rule: 'La fuente puede ser cualquier sitio publico o comercio siempre que la identidad exacta de la carta sea verificada antes de marcarla como exact.',
+    acceptedSources: ['Fabricante','Tienda especializada','eBay','Mercado Libre','Amazon','Red social','Foro','Marketplace','Sitio web publico'],
+    exactMatchRequires: ['coleccion/producto y año','numero o codigo de carta','jugador o sujeto','subset o insert cuando aplique','paralelo/acabado cuando la identidad lo requiera'],
+    note: 'Una foto de vendedor o usuario puede usarse; la procedencia no determina la cobertura. La coincidencia exacta sí.'
   },
   collections: {
     'topps-chrome-ucc-2025-26': {
