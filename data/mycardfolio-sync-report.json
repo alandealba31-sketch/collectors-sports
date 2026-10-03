@@ -1,1026 +1,399 @@
 {
-  "startedAt": "2026-10-03T22:39:45Z",
+  "startedAt": "2026-10-03T22:44:57Z",
   "endpoint": "https://mycardfolio.com/api/mcp",
+  "setsPerProductPerRun": 60,
+  "requestDelaySeconds": 1.25,
   "products": {
     "topps-chrome-baseball-2026": {
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "yearUsed": "2026",
       "productId": "ebay_a881139f4b",
       "productMatched": "Topps Chrome Baseball",
-      "productScore": 34,
-      "sets": 1,
-      "setsProcessed": 1,
-      "rows": 1,
-      "exactFronts": 1,
-      "setStats": [
-        {
-          "setId": "ebay_ee5006bfa0",
-          "set": "Chrome",
-          "declaredCount": "1",
-          "cards": 1
-        }
-      ]
+      "knownSets": 1,
+      "processedSetsTotal": 1,
+      "remainingSets": 0,
+      "rowsAccumulated": 1
     },
     "bowman-chrome-baseball-2026": {
+      "setsFetchedThisRun": 60,
+      "rowsAddedThisRun": 204,
+      "imagesAddedThisRun": 188,
       "yearUsed": "2026",
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
-      "productScore": 31,
-      "sets": 187,
-      "setsProcessed": 180,
-      "rows": 101,
-      "exactFronts": 101,
-      "setStats": [
-        {
-          "setId": "ebay_c120baf3ea",
-          "set": "1st Bowman",
-          "declaredCount": "5",
-          "cards": 5
-        },
-        {
-          "setId": "ebay_ec983850c1",
-          "set": "1st Bowman Auto",
-          "declaredCount": "5",
-          "cards": 5
-        },
-        {
-          "setId": "ebay_285fda5771",
-          "set": "1st Bowman Auto RC",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_58a5f0f9ad",
-          "set": "1st Bowman Chrome Prospect",
-          "declaredCount": "1",
-          "cards": 2
-        },
-        {
-          "setId": "ebay_ae31549f78",
-          "set": "1st Bowman Mojo",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_b2b99cfcfc",
-          "set": "1st Bowman Packfractor Auto",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_e3fc8494c0",
-          "set": "1st Bowman Xfractor",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_fc28b6c45d",
-          "set": "1st Shimmer Refractor",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_37632dcf4a",
-          "set": "1st Xfractor",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_d16cf1921d",
-          "set": "Adrian Gil 1st Bowman Chrome Autograph",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_fb7061f5b6",
-          "set": "Andri Hidalgo Wave /100",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_e672ae2c4a",
-          "set": "Aqua",
-          "declaredCount": "3",
-          "cards": 3
-        },
-        {
-          "setId": "ebay_6db771cf2b",
-          "set": "Aqua Geometric Refractor",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_250c8f88ff",
-          "set": "Aqua Geo Refractor",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_d1ef601482",
-          "set": "Aqua Mojo Refractor",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_6bcd25f678",
-          "set": "Aqua Shimmer",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_705c712f42",
-          "set": "Aqua Wave",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_55b38ca67b",
-          "set": "AUTO",
-          "declaredCount": "1",
-          "cards": 3
-        },
-        {
-          "setId": "ebay_e062339723",
-          "set": "Baseball Prospects",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_fe14b1a4e2",
-          "set": "BCP-152 1st Bowman Mojo Refractor",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_53a49bcd40",
-          "set": "Big Break",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_eea815da0f",
-          "set": "Big Breaks Insert",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_c2933377e8",
-          "set": "Blue",
-          "declaredCount": "2",
-          "cards": 2
-        },
-        {
-          "setId": "ebay_b30d62ccb7",
-          "set": "Blue Geometric Refractor",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_fa24b37367",
-          "set": "Blue Jays Prospects",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_c9491b4f63",
-          "set": "Blue Mojo",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_1b7b91533d",
-          "set": "Blue Refractor",
-          "declaredCount": "3",
-          "cards": 3
-        },
-        {
-          "setId": "ebay_886331e511",
-          "set": "Blue Refractor Reptilian",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_777cac041b",
-          "set": "Blue Reptilian",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_8bbd9aa666",
-          "set": "Blue Reptilian Auto",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_9841483e3c",
-          "set": "Blue Reptilian Refractor",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_61daf70dc7",
-          "set": "Blue Shimmer",
-          "declaredCount": "2",
-          "cards": 2
-        },
-        {
-          "setId": "ebay_d60a1f7c9b",
-          "set": "Blue Wave Refractor",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_05570ebff2",
-          "set": "Bowman",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_f673418754",
-          "set": "Bowman Athletics",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_a3923122bc",
-          "set": "Bowman Blue Auto",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_d22a16f3f4",
-          "set": "Bowman Chrome",
-          "declaredCount": "31",
-          "cards": 31
-        },
-        {
-          "setId": "ebay_5d531f06d9",
-          "set": "Bowman Electric Sluggers",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_f73a234dcd",
-          "set": "Bowman Mini Diamonds",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_f73aa998a1",
-          "set": "Bowman Scouts Top 100",
-          "declaredCount": "2",
-          "cards": 2
-        },
-        {
-          "setId": "ebay_725a0779ff",
-          "set": "Bowman Scouts' Top 100",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_4d29bd1eb6",
-          "set": "Bowman Spotlights",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_afaca744c5",
-          "set": "Bowman Sterling Insert",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_56c6b43c67",
-          "set": "Bowman Sterling Mini Diamond",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_b7860ded89",
-          "set": "Bowman Sterling Refractor",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_498faa0a24",
-          "set": "Bowman Sterling Revelation Chrome",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_8397d73e72",
-          "set": "Bowman Top 100",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_9e26c64220",
-          "set": "Bowman Verified",
-          "declaredCount": "2",
-          "cards": 2
-        },
-        {
-          "setId": "ebay_01e6cd6956",
-          "set": "BTS-7 Bowman Sterling",
-          "declaredCount": "1",
-          "cards": 1
-        },
-        {
-          "setId": "ebay_798d016894",
-          "set": "Chase",
-          "declaredCount": "3",
-          "cards": 3
-        },
-        {
-          "setId": "ebay_495a416ac1",
-          "set": "Chase Burns",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_f89017da40",
-          "set": "Chrome",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_85ef51512f",
-          "set": "Chrome Mojo Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_b91b9ed5a3",
-          "set": "Chrome Prospects",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_06c29e08db",
-          "set": "Chrome Purple Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_5b47b745a8",
-          "set": "Chrome RC",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_45d2b87bcf",
-          "set": "Connelly Early Rookie RC",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_3580ea9f4b",
-          "set": "Electric Sluggers",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_e4e9545a0e",
-          "set": "Electric Sluggers Green Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_e6055fab32",
-          "set": "Fabricio Blanco 1st Bowman Gold Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_5e54970938",
-          "set": "FDI Football",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_1e617c215d",
-          "set": "Football",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_3804d38fe4",
-          "set": "Fuchia Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_006762944d",
-          "set": "Fuchsia Geometric Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_5fafae1827",
-          "set": "Fuchsia Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_9e8441953a",
-          "set": "Fuchsia Wave Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_a14c277e11",
-          "set": "Geometric Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_ebf891ac16",
-          "set": "Gold",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_19666f4fda",
-          "set": "Gold Geometric Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_a31f4565b0",
-          "set": "Gold Geo Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_88bd8727de",
-          "set": "Gold Lava Auto",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_eabfc5f497",
-          "set": "Gold Mojo Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_78838618a3",
-          "set": "Gold Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_2a2eb6fde0",
-          "set": "Greatness Loading",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_a865af7d19",
-          "set": "Green",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_caf233943e",
-          "set": "Green Auto",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_71bd9a92f0",
-          "set": "Green Geometric",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_f426896e99",
-          "set": "Green Geometric Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_2cdf341297",
-          "set": "Green Mojo Auto",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_e847a80a49",
-          "set": "Green Refractor Auto",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_46fd6b475c",
-          "set": "Green Reptilian",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_d55288adda",
-          "set": "Green Reptilian Auto",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_06f04ef3c2",
-          "set": "Green Scale Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_31e31ab257",
-          "set": "Green Shimmer",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_d2cbab64e9",
-          "set": "Green Wave Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_74b273fe0d",
-          "set": "Gregory Pio 1st Bowman X-Fractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_9da7b405b6",
-          "set": "GUM BALL AUTO",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_c257f6e6cf",
-          "set": "Hobby Stars",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_3ef2a8e189",
-          "set": "Hyun Seung Lee 1st Bowman Auto",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_7f97b26a6d",
-          "set": "It Came to the League",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_d0ef6b01c7",
-          "set": "It Came to the League!",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_e78344e5fa",
-          "set": "Jazz",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_3113fb8d17",
-          "set": "Kewan Lacy Ole Miss Talent Tracker",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_d784f90ae4",
-          "set": "Laser Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_1ce0346c29",
-          "set": "Las Vegas Raiders",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_b52a32f62d",
-          "set": "Lazer Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_1fc731cfbe",
-          "set": "Lunch Winfield",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_b115c89839",
-          "set": "Makai Lemon Red Rookie",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_415a7b85be",
-          "set": "Mega Box Mojo",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_716e71fc1e",
-          "set": "Mega Mojo",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_06536d4b68",
-          "set": "Mega Mojo Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_a9766654f9",
-          "set": "MEGA Rookies RC Insert",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_4940d807b2",
-          "set": "Mini-Diamond Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_21ad9b3131",
-          "set": "Mojo 2026 MLB Spring Breakout",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_46947a5c50",
-          "set": "Mojo Blue",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_6b030e587e",
-          "set": "Mojo Bowman Sterling Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_be5d1a0f61",
-          "set": "MOJO REFRACTOR",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_815108eb02",
-          "set": "Mojo Refractor Prospects",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_f5ad9f0843",
-          "set": "Mojo Refractor RC Parallel/Variety",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_dea4a9750c",
-          "set": "National NSCC",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_870d7cfc5a",
-          "set": "National NSCC WWE",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_6acb2a4dd3",
-          "set": "Orange",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_b20e3a63b3",
-          "set": "Orange Mojo",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_de064b796e",
-          "set": "Orange Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_22c4adc6c5",
-          "set": "Parallel",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_afb9fd0678",
-          "set": "Patchwork Insert",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_372945d9b7",
-          "set": "Power Chords",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_098aebbe6e",
-          "set": "Prospect Autographs",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_0f02a9fa22",
-          "set": "Prospect Autos",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_ae790473f5",
-          "set": "Prospect ON CARD Auto",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_de0de9c1d8",
-          "set": "Prospects Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_a2a5bad223",
-          "set": "Pulsar Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_104f3bcc48",
-          "set": "Purple",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_05567da99a",
-          "set": "Purple Auto",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_60ae5749c2",
-          "set": "Purple Disco Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_ae18b10088",
-          "set": "Purple Geometric",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_615c6b6476",
-          "set": "Purple Geometric Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_19e2ae5ef7",
-          "set": "Purple Mojo Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_818b9a5242",
-          "set": "Purple Pulsar",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_1fd1477b44",
-          "set": "Purple Pulsar Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_d20b73448f",
-          "set": "Purple Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_7417978bfa",
-          "set": "Purple Shimmer Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_acfcdb653a",
-          "set": "Red",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_3157e4f7ae",
-          "set": "Red Geometric Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_2056cb1b37",
-          "set": "Red Rookie",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_d00c14de37",
-          "set": "Red Rookie Logo Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_7cd0fe424e",
-          "set": "Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_5f056dbea7",
-          "set": "Refractor Auto",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_7fc0d7d3f6",
-          "set": "Refractor Purple Geometric",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_db50c4f046",
-          "set": "Refractor Red",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_c29af7ef19",
-          "set": "Reptilian",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_eedbcdff41",
-          "set": "Reptilian Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_32b0fb4246",
-          "set": "Rockstar Rookies",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_051badb9be",
-          "set": "Rogers Hornsby Cardinals 1st Bowman Retrofractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_a31071999c",
-          "set": "Rookie of the Year Favorites",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_a78f38223e",
-          "set": "Rookie Stars of the Future",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_da347fc094",
-          "set": "Sapphire Edition",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_9664f893f2",
-          "set": "Sapphire Selections",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_51a69dbe65",
-          "set": "Scouts' Top 100",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_21519d0152",
-          "set": "Shimmer Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_835c0a8170",
-          "set": "Sparkle",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_ac59e736ed",
-          "set": "Speckle Auto",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_23300cf6e8",
-          "set": "Speckle Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_6b037a1a65",
-          "set": "Spring Breakout",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_4c3f0286ec",
-          "set": "Spring Breakout Chrome",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_8adc46d28a",
-          "set": "Spring Breakout Gold Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_ca73516c58",
-          "set": "Spring Breakout Insert",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_baa672bfcb",
-          "set": "Spring Breakout Mojo Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_50c96b44dd",
-          "set": "Spring Breakout SSP Refractor Autograph",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_9f287445db",
-          "set": "Stars of the Future",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_3f0a58a0e6",
-          "set": "Sterling",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_5b797c6d0c",
-          "set": "Sterling Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_3285419040",
-          "set": "Talent Tracker",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_07712a6a12",
-          "set": "Top 100",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_dbe1ef5bee",
-          "set": "Travel Tags Insert",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_087564587d",
-          "set": "True Green Auto",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_8558a46ffb",
-          "set": "True Orange",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_b702eebf61",
-          "set": "True Yellow",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_7ba853e7d6",
-          "set": "U Gen Next",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_77ea72665a",
-          "set": "U Lunch Winfield 1st Bowman Blue Mojo Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_9496f94ad8",
-          "set": "U Mega Prospects",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_541677fc6e",
-          "set": "Under the Radar",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_69034bd504",
-          "set": "University Gen Next",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_ba91256a5b",
-          "set": "University Mega Prospects",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_7cd513f2b1",
-          "set": "U Purple Mojo",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_d1038cf0e9",
-          "set": "Verified",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_20623ed305",
-          "set": "Very Important Prospect Refractor",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_4d83132adc",
-          "set": "Very Important Prospects",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_53e9eec73e",
-          "set": "Vinnie Pasquantino Auto",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        },
-        {
-          "setId": "ebay_1808144b95",
-          "set": "WBC Flag Variation",
-          "error": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
-        }
-      ]
+      "knownSets": 187,
+      "processedSetsTotal": 60,
+      "remainingSets": 127,
+      "rowsAccumulated": 305
     },
     "topps-holiday-baseball-2025": {
-      "fatalError": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
+      "setsFetchedThisRun": 10,
+      "rowsAddedThisRun": 13,
+      "imagesAddedThisRun": 13,
+      "yearUsed": "2025",
+      "productId": "ing_e99f7999fa",
+      "productMatched": "Topps Holiday",
+      "knownSets": 10,
+      "processedSetsTotal": 10,
+      "remainingSets": 0,
+      "rowsAccumulated": 13
+    },
+    "topps-update-baseball-2026": {
+      "setsFetchedThisRun": 2,
+      "rowsAddedThisRun": 4,
+      "imagesAddedThisRun": 4,
+      "yearUsed": "2026",
+      "productId": "ebay_ca07b4d61f",
+      "productMatched": "91 Topps Series 2",
+      "knownSets": 2,
+      "processedSetsTotal": 2,
+      "remainingSets": 0,
+      "rowsAccumulated": 4
+    },
+    "topps-chrome-logofractor-baseball-2026": {
+      "setsFetchedThisRun": 60,
+      "rowsAddedThisRun": 119,
+      "imagesAddedThisRun": 119,
+      "yearUsed": "2026",
+      "productId": "ebay_34a2a395f2",
+      "productMatched": "Topps Chrome",
+      "knownSets": 95,
+      "processedSetsTotal": 60,
+      "remainingSets": 35,
+      "rowsAccumulated": 119
     },
     "topps-chrome-football-2025": {
-      "fatalError": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
+      "setsFetchedThisRun": 39,
+      "rowsAddedThisRun": 91,
+      "imagesAddedThisRun": 91,
+      "yearUsed": "2025",
+      "productId": "ebay_5160e77ba2",
+      "productMatched": "Chrome Football",
+      "knownSets": 39,
+      "processedSetsTotal": 39,
+      "remainingSets": 0,
+      "rowsAccumulated": 91
     },
     "topps-signature-class-football-2025": {
-      "fatalError": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
+      "setsFetchedThisRun": 4,
+      "rowsAddedThisRun": 7,
+      "imagesAddedThisRun": 7,
+      "yearUsed": "2025",
+      "productId": "ebay_b2ae59b447",
+      "productMatched": "Topps Signature Class",
+      "knownSets": 4,
+      "processedSetsTotal": 4,
+      "remainingSets": 0,
+      "rowsAccumulated": 7
     },
     "topps-resurgence-football-2025": {
-      "fatalError": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
+      "setsFetchedThisRun": 3,
+      "rowsAddedThisRun": 3,
+      "imagesAddedThisRun": 3,
+      "yearUsed": "2025",
+      "productId": "ebay_2c7f8bd694",
+      "productMatched": "Topps Resurgence",
+      "knownSets": 3,
+      "processedSetsTotal": 3,
+      "remainingSets": 0,
+      "rowsAccumulated": 3
+    },
+    "topps-flagship-football-2026": {
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
+      "yearUsed": "2026",
+      "productId": "ebay_1a62d87c9a",
+      "productMatched": "Topps Flagship Football",
+      "knownSets": 1,
+      "processedSetsTotal": 1,
+      "remainingSets": 0,
+      "rowsAccumulated": 1
+    },
+    "panini-donruss-optic-football-2025": {
+      "setsFetchedThisRun": 3,
+      "rowsAddedThisRun": 4,
+      "imagesAddedThisRun": 4,
+      "yearUsed": "2025",
+      "productId": "ebay_ef2199934c",
+      "productMatched": "Donruss Optic Football",
+      "knownSets": 3,
+      "processedSetsTotal": 3,
+      "remainingSets": 0,
+      "rowsAccumulated": 4
     },
     "topps-chrome-basketball-2025-26": {
-      "fatalError": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
+      "setsFetchedThisRun": 25,
+      "rowsAddedThisRun": 51,
+      "imagesAddedThisRun": 51,
+      "yearUsed": "2025",
+      "productId": "ebay_2f04bd0c3c",
+      "productMatched": "Chrome Basketball",
+      "knownSets": 25,
+      "processedSetsTotal": 25,
+      "remainingSets": 0,
+      "rowsAccumulated": 51
+    },
+    "panini-prizm-basketball-2024-25": {
+      "setsFetchedThisRun": 8,
+      "rowsAddedThisRun": 9,
+      "imagesAddedThisRun": 9,
+      "yearUsed": "2024",
+      "productId": "ing_4d5e4de46c",
+      "productMatched": "Panini Prizm",
+      "knownSets": 8,
+      "processedSetsTotal": 8,
+      "remainingSets": 0,
+      "rowsAccumulated": 9
+    },
+    "panini-select-basketball-2024-25": {
+      "setsFetchedThisRun": 2,
+      "rowsAddedThisRun": 2,
+      "imagesAddedThisRun": 2,
+      "yearUsed": "2024",
+      "productId": "ebay_d6312077d4",
+      "productMatched": "Panini Select",
+      "knownSets": 2,
+      "processedSetsTotal": 2,
+      "remainingSets": 0,
+      "rowsAccumulated": 2
+    },
+    "panini-donruss-optic-basketball-2024-25": {
+      "setsFetchedThisRun": 12,
+      "rowsAddedThisRun": 16,
+      "imagesAddedThisRun": 16,
+      "yearUsed": "2024",
+      "productId": "ing_1323b96c58",
+      "productMatched": "Panini Donruss Optic",
+      "knownSets": 12,
+      "processedSetsTotal": 12,
+      "remainingSets": 0,
+      "rowsAccumulated": 16
     },
     "topps-chrome-ufc-2026": {
-      "fatalError": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
+      "setsFetchedThisRun": 17,
+      "rowsAddedThisRun": 19,
+      "imagesAddedThisRun": 19,
+      "yearUsed": "2026",
+      "productId": "ebay_384e1bf93b",
+      "productMatched": "Chrome UFC",
+      "knownSets": 17,
+      "processedSetsTotal": 17,
+      "remainingSets": 0,
+      "rowsAccumulated": 19
     },
     "topps-stadium-club-ufc-2026": {
-      "fatalError": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
+      "error": "product-not-found",
+      "yearUsed": "2026"
     },
     "topps-chrome-tennis-2026": {
-      "fatalError": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
+      "error": "product-not-found",
+      "yearUsed": "2026"
+    },
+    "topps-chrome-f1-2026": {
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
+      "yearUsed": "2026",
+      "productId": "ing_e84e918891",
+      "productMatched": "Topps Chrome Formula 1",
+      "knownSets": 1,
+      "processedSetsTotal": 1,
+      "remainingSets": 0,
+      "rowsAccumulated": 1
+    },
+    "topps-chrome-wwe-2026": {
+      "setsFetchedThisRun": 60,
+      "rowsAddedThisRun": 172,
+      "imagesAddedThisRun": 172,
+      "yearUsed": "2026",
+      "productId": "ebay_48e2c60786",
+      "productMatched": "Chrome WWE",
+      "knownSets": 80,
+      "processedSetsTotal": 60,
+      "remainingSets": 20,
+      "rowsAccumulated": 172
     },
     "topps-chrome-ucc-2025-26": {
-      "fatalError": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
+      "setsFetchedThisRun": 38,
+      "rowsAddedThisRun": 111,
+      "imagesAddedThisRun": 111,
+      "yearUsed": "2025",
+      "productId": "ebay_18f196bc83",
+      "productMatched": "Chrome UEFA Club Competitions",
+      "knownSets": 38,
+      "processedSetsTotal": 38,
+      "remainingSets": 0,
+      "rowsAccumulated": 111
+    },
+    "topps-ucc-2025-26": {
+      "setsFetchedThisRun": 3,
+      "rowsAddedThisRun": 23,
+      "imagesAddedThisRun": 23,
+      "yearUsed": "2025",
+      "productId": "ing_e12c36688f",
+      "productMatched": "Topps UEFA Club Competitions",
+      "knownSets": 3,
+      "processedSetsTotal": 3,
+      "remainingSets": 0,
+      "rowsAccumulated": 23
+    },
+    "topps-finest-ucc-2025-26": {
+      "setsFetchedThisRun": 26,
+      "rowsAddedThisRun": 52,
+      "imagesAddedThisRun": 52,
+      "yearUsed": "2025",
+      "productId": "ebay_16615300e8",
+      "productMatched": "Finest Uefa Club Competitions",
+      "knownSets": 26,
+      "processedSetsTotal": 26,
+      "remainingSets": 0,
+      "rowsAccumulated": 52
     },
     "topps-premier-league-2025-26": {
-      "fatalError": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
+      "setsFetchedThisRun": 2,
+      "rowsAddedThisRun": 2,
+      "imagesAddedThisRun": 2,
+      "yearUsed": "2025",
+      "productId": "ing_149fb3878b",
+      "productMatched": "Topps Premier League",
+      "knownSets": 2,
+      "processedSetsTotal": 2,
+      "remainingSets": 0,
+      "rowsAccumulated": 2
+    },
+    "topps-chrome-premier-league-2026": {
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
+      "yearUsed": "2025",
+      "productId": "ing_5cea3a528e",
+      "productMatched": "Topps Chrome Premier League",
+      "knownSets": 1,
+      "processedSetsTotal": 1,
+      "remainingSets": 0,
+      "rowsAccumulated": 1
+    },
+    "topps-chrome-mls-2026": {
+      "setsFetchedThisRun": 60,
+      "rowsAddedThisRun": 119,
+      "imagesAddedThisRun": 119,
+      "yearUsed": "2026",
+      "productId": "ebay_34a2a395f2",
+      "productMatched": "Topps Chrome",
+      "knownSets": 95,
+      "processedSetsTotal": 60,
+      "remainingSets": 35,
+      "rowsAccumulated": 119
     },
     "panini-pitch-kings-laliga-2025-26": {
-      "fatalError": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
+      "setsFetchedThisRun": 8,
+      "rowsAddedThisRun": 13,
+      "imagesAddedThisRun": 13,
+      "yearUsed": "2025",
+      "productId": "ebay_6319193c7f",
+      "productMatched": "Pitch Kings",
+      "knownSets": 8,
+      "processedSetsTotal": 8,
+      "remainingSets": 0,
+      "rowsAccumulated": 13
+    },
+    "panini-select-laliga-2024-25": {
+      "setsFetchedThisRun": 30,
+      "rowsAddedThisRun": 54,
+      "imagesAddedThisRun": 54,
+      "yearUsed": "2024",
+      "productId": "ing_d6312077d4",
+      "productMatched": "Panini Select",
+      "knownSets": 30,
+      "processedSetsTotal": 30,
+      "remainingSets": 0,
+      "rowsAccumulated": 54
+    },
+    "panini-prizm-club-world-cup-2025": {
+      "setsFetchedThisRun": 4,
+      "rowsAddedThisRun": 4,
+      "imagesAddedThisRun": 4,
+      "yearUsed": "2025",
+      "productId": "ing_c6fc7ef8c8",
+      "productMatched": "Panini Prizm Fifa Club World Cup",
+      "knownSets": 4,
+      "processedSetsTotal": 4,
+      "remainingSets": 0,
+      "rowsAccumulated": 4
+    },
+    "panini-prizm-monopoly-world-cup-2026": {
+      "setsFetchedThisRun": 2,
+      "rowsAddedThisRun": 2,
+      "imagesAddedThisRun": 2,
+      "yearUsed": "2026",
+      "productId": "ing_ddacf1a9be",
+      "productMatched": "Panini Prizm Monopoly FIFA World Cup",
+      "knownSets": 2,
+      "processedSetsTotal": 2,
+      "remainingSets": 0,
+      "rowsAccumulated": 2
     },
     "topps-real-madrid-team-set-2025-26": {
-      "fatalError": "MCPError(-32000, 'Rate limit exceeded. Try again in a minute.', None)"
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
+      "yearUsed": "2025",
+      "productId": "ebay_ca2b465a25",
+      "productMatched": "Real Madrid Team Top of the World",
+      "knownSets": 1,
+      "processedSetsTotal": 1,
+      "remainingSets": 0,
+      "rowsAccumulated": 1
+    },
+    "topps-atletico-team-set-2025-26": {
+      "setsFetchedThisRun": 5,
+      "rowsAddedThisRun": 5,
+      "imagesAddedThisRun": 5,
+      "yearUsed": "2025",
+      "productId": "ebay_152113a44e",
+      "productMatched": "Team Set",
+      "knownSets": 5,
+      "processedSetsTotal": 5,
+      "remainingSets": 0,
+      "rowsAccumulated": 5
+    },
+    "topps-benfica-team-set-2025-26": {
+      "setsFetchedThisRun": 5,
+      "rowsAddedThisRun": 5,
+      "imagesAddedThisRun": 5,
+      "yearUsed": "2025",
+      "productId": "ebay_152113a44e",
+      "productMatched": "Team Set",
+      "knownSets": 5,
+      "processedSetsTotal": 5,
+      "remainingSets": 0,
+      "rowsAccumulated": 5
+    },
+    "topps-barcelona-forever-2025-26": {
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
+      "yearUsed": "2025",
+      "productId": "ebay_e54c2e9de0",
+      "productMatched": "Forever FC Barcelona",
+      "knownSets": 1,
+      "processedSetsTotal": 1,
+      "remainingSets": 0,
+      "rowsAccumulated": 1
     }
   },
-  "finishedAt": "2026-10-03T22:40:15Z",
-  "collectionsWritten": 2,
-  "rowsWritten": 102,
-  "exactFrontsWritten": 102
+  "finishedAt": "2026-10-03T22:59:05Z",
+  "collectionsWritten": 31,
+  "rowsWritten": 1211,
+  "exactFrontsWritten": 1195,
+  "runtimeSeconds": 847.8
 }
