@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "collectionId": "topps-chrome-ucc-2025-26",
+      "provider": "tcdb",
+      "sid": 613906,
+      "setName": "2025-26 Topps Chrome UEFA Club Competitions",
+      "allowedSubsets": [""]
+    },
+    {
+      "collectionId": "topps-chrome-basketball-2025-26",
+      "provider": "tcdb",
+      "sid": 574514,
+      "setName": "2025-26 Topps Chrome Basketball",
+      "allowedSubsets": ["Base Cards"]
+    },
+    {
+      "collectionId": "topps-chrome-football-2025",
+      "provider": "tcdb",
+      "sid": 613788,
+      "setName": "2025 Topps Chrome Football",
+      "allowedSubsets": ["Base Cards"]
+    },
+    {
+      "collectionId": "topps-chrome-ufc-2026",
+      "provider": "tcdb",
+      "sid": 632703,
+      "setName": "2026 Topps Chrome UFC",
+      "allowedSubsets": ["Base Cards"]
+    },
+    {
+      "collectionId": "topps-chrome-wwe-2026",
+      "provider": "tcdb",
+      "sid": 608660,
+      "setName": "2026 Topps Chrome WWE",
+      "allowedSubsets": ["Base Cards I", "Base Cards II", "Base Cards"]
+    },
+    {
+      "collectionId": "topps-chrome-baseball-2026",
+      "provider": "tcdb",
+      "sid": 654047,
+      "setName": "2026 Topps Chrome Baseball",
+      "allowedSubsets": [""]
+    }
+  ]
+}
