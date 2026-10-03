@@ -87,14 +87,21 @@ jobs:
       - name: Commit generated catalog when changed
         run: |
           set -euo pipefail
-          PATHS="catalog-imported.js catalog-premier.js catalog-images-official.js catalog-images-cached.js catalog-images-ebay.js data/mycardfolio-mcp-probe.json data/ebay-image-manifest.json data/ebay-image-report.json assets/cards/ebay"
-          if [ -z "$(git status --porcelain -- $PATHS)" ]; then
+          CANDIDATES=(
+            catalog-imported.js catalog-premier.js catalog-images-official.js catalog-images-cached.js catalog-images-ebay.js
+            data/mycardfolio-mcp-probe.json data/ebay-image-manifest.json data/ebay-image-report.json assets/cards/ebay
+          )
+          EXISTING=()
+          for p in "${CANDIDATES[@]}"; do
+            [ -e "$p" ] && EXISTING+=("$p")
+          done
+          if [ ${#EXISTING[@]} -eq 0 ] || [ -z "$(git status --porcelain -- "${EXISTING[@]}")" ]; then
             echo "Catalog and exact-front caches are already current."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add $PATHS
+          git add -- "${EXISTING[@]}"
           git commit -m "Sync official catalog and bulk exact card fronts"
           for attempt in 1 2 3 4; do
             git fetch origin main
