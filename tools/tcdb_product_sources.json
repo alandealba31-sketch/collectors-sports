@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "products": [
     {"collectionId":"topps-chrome-ucc-2025-26","sid":613906,"setName":"2025-26 Topps Chrome UEFA Club Competitions","shortName":"Chrome UEFA 25/26","sport":"Soccer"},
     {"collectionId":"topps-ucc-2025-26","sid":581279,"setName":"2025-26 Topps UEFA Club Competitions","shortName":"UEFA Flagship 25/26","sport":"Soccer"},
@@ -17,7 +17,6 @@
     {"collectionId":"topps-celtic-collector-tin-2025-26","sid":604881,"setName":"2025-26 Topps Celtic FC Collector Tin","shortName":"Celtic Collector Tin 25/26","sport":"Soccer"},
     {"collectionId":"topps-man-utd-collector-tin-2025-26","sid":575303,"setName":"2025-26 Topps Manchester United Collector Tin","shortName":"Man United Collector Tin 25/26","sport":"Soccer"},
     {"collectionId":"topps-man-city-collector-tin-2025-26","sid":595726,"setName":"2025-26 Topps Manchester City Collector Tin","shortName":"Man City Collector Tin 25/26","sport":"Soccer"},
-    {"collectionId":"topps-liverpool-collector-tin-2025-26","sid":572299,"setName":"2025-26 Topps Liverpool Collector Tin","shortName":"Liverpool Collector Tin 25/26","sport":"Soccer"},
 
     {"collectionId":"topps-chrome-football-2025","sid":613788,"setName":"2025 Topps Chrome Football","shortName":"Chrome Football 2025","sport":"NFL"},
     {"collectionId":"topps-signature-class-football-2025","sid":632884,"setName":"2025 Topps Signature Class","shortName":"Signature Class NFL 2025","sport":"NFL"},
