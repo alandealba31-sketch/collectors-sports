@@ -13,16 +13,18 @@
     'topps-chrome-ucc-2025-26|112': {
       front: 'https://hobbyscan-images-prod.s3.us-east-2.amazonaws.com/scans/1782503695301-a7610d5c-197f-4c64-9287-adbc5aca9153.jpg',
       kind: 'exact',
+      exactVerified: true,
       source: 'HobbyScan',
       sourcePage: 'https://www.hobbyscan.com/card/788140',
-      label: 'Kylian Mbappé #112 — Base'
+      label: 'Kylian Mbappé #112 — Base · frente exacto verificado'
     },
     'topps-chrome-ucc-2025-26|136': {
       front: 'https://hobbyscan-images-prod.s3.us-east-2.amazonaws.com/scans/1782049903921-ef04f922-859a-43a6-948b-4803cc202704.jpg',
       kind: 'exact',
+      exactVerified: true,
       source: 'HobbyScan',
       sourcePage: 'https://www.hobbyscan.com/card/779182',
-      label: 'Mohamed Salah #136 — Base Set'
+      label: 'Mohamed Salah #136 — Base · frente exacto verificado'
     }
   });
 })();
