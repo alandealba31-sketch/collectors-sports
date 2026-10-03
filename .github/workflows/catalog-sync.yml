@@ -22,8 +22,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 55
     env:
-      IMAGE_IMPORT_MAX_NEW: "2500"
-      IMAGE_IMPORT_DELAY: "0.20"
       EBAY_IMPORT_MAX_NEW: "1000"
       EBAY_IMPORT_DELAY: "0.10"
       EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
@@ -39,23 +37,26 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install parser dependencies
-        run: python -m pip install --disable-pip-version-check pandas xlrd pypdf pillow requests beautifulsoup4
+      - name: Install parser and MCP dependencies
+        run: python -m pip install --disable-pip-version-check pandas xlrd pypdf pillow requests beautifulsoup4 mcp
 
-      - name: Build catalog from official and structured checklists
+      - name: Build catalog from official manufacturer checklists
         run: |
           set -euo pipefail
           python tools/sync_checklists.py
           python tools/sync_premier.py
-          python tools/sync_tcdb_products.py
           python tools/sync_official_images.py
           python tools/cache_exact_images.py
 
+      - name: Probe public structured catalog MCP
+        continue-on-error: true
+        run: python tools/probe_mycardfolio.py
+
+      - name: Validate official generated catalog
+        run: python tools/validate_catalog.py
+
       - name: Export every searchable identity
         run: node tools/export_catalog_image_targets.mjs
-
-      - name: Import TCDB exact fronts in bulk
-        run: python tools/import_tcdb_exact_images_v2.py
 
       - name: Import eBay exact fronts through official Browse API
         run: python tools/import_ebay_exact_images.py
@@ -63,9 +64,6 @@ jobs:
       - name: Clean runtime targets
         if: always()
         run: rm -f data/image-targets-runtime.json
-
-      - name: Validate catalog integrity
-        run: python tools/validate_catalog.py
 
       - name: Validate generated JavaScript
         run: |
@@ -79,18 +77,17 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
-          for filename in ['data/tcdb-product-sync-report.json','data/bulk-image-report.json','data/ebay-image-report.json']:
+          for filename in ['data/mycardfolio-mcp-probe.json','data/ebay-image-report.json']:
               p=Path(filename)
               if p.exists():
-                  d=json.loads(p.read_text())
-                  print('\n',filename)
-                  print(json.dumps(d,indent=2)[:10000])
+                  print('\n'+filename)
+                  print(json.dumps(json.loads(p.read_text()),indent=2)[:18000])
           PY
 
       - name: Commit generated catalog when changed
         run: |
           set -euo pipefail
-          PATHS="catalog-imported.js catalog-premier.js catalog-tcdb-expanded.js catalog-images-official.js catalog-images-cached.js catalog-images-bulk.js catalog-images-ebay.js data/tcdb-product-sync-report.json data/bulk-image-manifest.json data/bulk-image-report.json data/ebay-image-manifest.json data/ebay-image-report.json assets/cards/bulk assets/cards/ebay"
+          PATHS="catalog-imported.js catalog-premier.js catalog-images-official.js catalog-images-cached.js catalog-images-ebay.js data/mycardfolio-mcp-probe.json data/ebay-image-manifest.json data/ebay-image-report.json assets/cards/ebay"
           if [ -z "$(git status --porcelain -- $PATHS)" ]; then
             echo "Catalog and exact-front caches are already current."
             exit 0
@@ -98,14 +95,13 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add $PATHS
-          git commit -m "Sync expanded catalog and bulk exact card fronts"
+          git commit -m "Sync official catalog and bulk exact card fronts"
           for attempt in 1 2 3 4; do
             git fetch origin main
             git rebase origin/main
             if git push origin HEAD:main; then
               exit 0
             fi
-            echo "Push race detected; retrying ($attempt/4)..."
             git rebase --abort || true
             sleep 3
           done
