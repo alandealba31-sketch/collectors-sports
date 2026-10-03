@@ -2,15 +2,27 @@
   const safeUrl = value => /^(https:\/\/|data:image\/(?:jpeg|png|webp);base64,|blob:|\.\/assets\/)/i.test(String(value || '')) ? value : '';
   const escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   function resolve(collectionId, number, variant = '', entryKey = '') {
-    const scoped = window.CS_CATALOG?.collections?.find(c => c.id === collectionId)?.entryIdentity;
-    if (scoped && !entryKey) return null;
-    const key = `${collectionId}|${String(number ?? '')}${scoped ? '|' + entryKey : ''}`;
-    const entry = window.CS_IMAGE_CATALOG?.cards?.[key];
-    if (!(entry?.kind === 'exact' && entry?.exactVerified === true)) return null;
-    const cached = window.CS_IMAGE_CACHE?.[key];
-    const visual = {...entry, front: safeUrl(cached || entry.front)};
+    const baseKey = `${collectionId}|${String(number ?? '')}`;
+    const scopedKey = entryKey ? `${baseKey}|${entryKey}` : '';
+    const catalog = window.CS_IMAGE_CATALOG?.cards || {};
+    const cache = window.CS_IMAGE_CACHE || {};
+    // Prefer the exact set/variant identity. Fall back to the old unscoped base key
+    // only when it is itself strictly verified; this keeps legacy exact fronts alive
+    // after a collection becomes entry-scoped.
+    let key = scopedKey && catalog[scopedKey] ? scopedKey : baseKey;
+    let entry = catalog[key];
+    if (!(entry?.kind === 'exact' && entry?.exactVerified === true)) {
+      if (key !== baseKey && catalog[baseKey]?.kind === 'exact' && catalog[baseKey]?.exactVerified === true) {
+        key = baseKey; entry = catalog[baseKey];
+      } else return null;
+    }
+    const visual = {...entry, front: safeUrl(cache[key] || entry.front)};
     if (!visual.front) return null;
-    if (variant && !/^base$/i.test(variant) && String(entry.variant || 'Base').toLowerCase() !== String(variant).toLowerCase()) return null;
+    if (variant && !/^base$/i.test(variant)) {
+      const actual=String(entry.variant || 'Base').toLowerCase();
+      const wanted=String(variant).toLowerCase();
+      if (actual !== wanted && key === baseKey) return null;
+    }
     visual.kind = 'exact';
     return visual;
   }
