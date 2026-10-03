@@ -1,10 +1,12 @@
 {
-  "version": 2,
+  "version": 3,
   "products": [
     {"collectionId":"topps-chrome-ucc-2025-26","sid":613906,"setName":"2025-26 Topps Chrome UEFA Club Competitions","shortName":"Chrome UEFA 25/26","sport":"Soccer"},
     {"collectionId":"topps-ucc-2025-26","sid":581279,"setName":"2025-26 Topps UEFA Club Competitions","shortName":"UEFA Flagship 25/26","sport":"Soccer"},
     {"collectionId":"topps-finest-ucc-2025-26","sid":647541,"setName":"2025-26 Topps Finest UEFA Club Competitions","shortName":"Finest UEFA 25/26","sport":"Soccer"},
     {"collectionId":"topps-premier-league-2025-26","sid":543724,"setName":"2025-26 Topps Premier League","shortName":"Premier League 25/26","sport":"Soccer"},
+    {"collectionId":"topps-chrome-premier-league-2026","sid":585451,"setName":"2025-26 Topps Chrome Premier League","shortName":"Chrome Premier League 25/26","sport":"Soccer"},
+    {"collectionId":"topps-finest-premier-league-2026","sid":612043,"setName":"2025-26 Finest Premier League","shortName":"Finest Premier League 25/26","sport":"Soccer"},
     {"collectionId":"panini-pitch-kings-laliga-2025-26","sid":650062,"setName":"2025-26 Panini Pitch Kings","shortName":"Pitch Kings LaLiga 25/26","sport":"Soccer"},
     {"collectionId":"topps-real-madrid-team-set-2025-26","sid":602126,"setName":"2025-26 Topps Real Madrid Team Set","shortName":"Real Madrid Team Set 25/26","sport":"Soccer"},
     {"collectionId":"topps-chelsea-team-set-2025-26","sid":603690,"setName":"2025-26 Topps Chelsea Team Set","shortName":"Chelsea Team Set 25/26","sport":"Soccer"},
@@ -20,10 +22,14 @@
     {"collectionId":"topps-chrome-football-2025","sid":613788,"setName":"2025 Topps Chrome Football","shortName":"Chrome Football 2025","sport":"NFL"},
     {"collectionId":"topps-signature-class-football-2025","sid":632884,"setName":"2025 Topps Signature Class","shortName":"Signature Class NFL 2025","sport":"NFL"},
     {"collectionId":"topps-resurgence-football-2025","sid":658197,"setName":"2025 Topps Resurgence","shortName":"Resurgence NFL 2025","sport":"NFL"},
+    {"collectionId":"topps-flagship-football-2026","sid":665897,"setName":"2026 Topps Flagship Football","shortName":"Flagship NFL 2026","sport":"NFL"},
 
     {"collectionId":"topps-chrome-basketball-2025-26","sid":574514,"setName":"2025-26 Topps Chrome Basketball","shortName":"Chrome Basketball 25/26","sport":"NBA"},
 
     {"collectionId":"topps-chrome-baseball-2026","sid":654047,"setName":"2026 Topps Chrome Baseball","shortName":"Chrome Baseball 2026","sport":"MLB"},
+    {"collectionId":"bowman-chrome-baseball-2026","sid":674092,"setName":"2026 Bowman Chrome","shortName":"Bowman Chrome 2026","sport":"MLB"},
+    {"collectionId":"topps-holiday-baseball-2025","sid":558304,"setName":"2025 Topps Holiday","shortName":"Holiday MLB 2025","sport":"MLB"},
+    {"collectionId":"topps-chrome-logofractor-baseball-2026","sid":679467,"setName":"2026 Topps Chrome Logofractor Edition","shortName":"Logofractor MLB 2026","sport":"MLB"},
 
     {"collectionId":"topps-chrome-ufc-2026","sid":632703,"setName":"2026 Topps Chrome UFC","shortName":"Chrome UFC 2026","sport":"UFC"},
     {"collectionId":"topps-stadium-club-ufc-2026","sid":663912,"setName":"2026 Stadium Club UFC","shortName":"Stadium Club UFC 2026","sport":"UFC"},
