@@ -1,0 +1,6269 @@
+{
+  "endpoint": "https://mycardfolio.com/api/mcp",
+  "startedAt": "2026-10-03T22:35:29Z",
+  "serverInfo": {
+    "name": "mycardfolio",
+    "title": null,
+    "version": "1.0.0",
+    "description": null,
+    "website_url": null,
+    "icons": null
+  },
+  "protocolVersion": "2025-11-25",
+  "tools": [
+    {
+      "name": "search_cards",
+      "description": "Full-text search over the MyCardfolio sports card database. Searches player/subject names, card numbers, products, sets, and card details. Optionally filter by sport and year.",
+      "inputSchema": {
+        "type": "object",
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "properties": {
+          "query": {
+            "type": "string",
+            "minLength": 2,
+            "description": "Search terms, e.g. \"griffey upper deck\""
+          },
+          "sport": {
+            "description": "Sport/category filter, e.g. \"baseball\"",
+            "type": "string"
+          },
+          "year": {
+            "description": "Year filter, e.g. \"1989\"",
+            "type": "string"
+          },
+          "limit": {
+            "description": "Max results (default 20, max 50)",
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 50
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    },
+    {
+      "name": "get_card",
+      "description": "Full detail for a single card by its card_id, plus a few related cards from the same set.",
+      "inputSchema": {
+        "type": "object",
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "properties": {
+          "card_id": {
+            "type": "string",
+            "description": "The card_id of the card"
+          }
+        },
+        "required": [
+          "card_id"
+        ]
+      }
+    },
+    {
+      "name": "get_set_checklist",
+      "description": "Complete checklist of cards in a set by set_id, with set metadata. Output is capped at 500 cards.",
+      "inputSchema": {
+        "type": "object",
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "properties": {
+          "set_id": {
+            "type": "string",
+            "description": "The set_id of the set"
+          }
+        },
+        "required": [
+          "set_id"
+        ]
+      }
+    },
+    {
+      "name": "browse",
+      "description": "Navigate the database hierarchy: no arguments lists sports with card counts; sport lists years; sport + year lists products; product_id lists sets.",
+      "inputSchema": {
+        "type": "object",
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "properties": {
+          "sport": {
+            "description": "Sport/category, e.g. \"baseball\"",
+            "type": "string"
+          },
+          "year": {
+            "description": "Year (requires sport), e.g. \"1989\"",
+            "type": "string"
+          },
+          "product_id": {
+            "description": "Product id to list its sets",
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "name": "find_variants",
+      "description": "Find parallels/variants of a card: cards sharing the same year, product, card number, and subjects but belonging to a different set (e.g. base vs. refractor).",
+      "inputSchema": {
+        "type": "object",
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "properties": {
+          "card_id": {
+            "type": "string",
+            "description": "The card_id of the card"
+          }
+        },
+        "required": [
+          "card_id"
+        ]
+      }
+    },
+    {
+      "name": "identify_card",
+      "description": "Parse a free-text card description or eBay-style listing title (e.g. \"1989 Upper Deck Ken Griffey Jr #1 PSA 10\") and return the best database matches with a confidence note.",
+      "inputSchema": {
+        "type": "object",
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "properties": {
+          "description": {
+            "type": "string",
+            "minLength": 3,
+            "description": "Free-text card description or listing title"
+          }
+        },
+        "required": [
+          "description"
+        ]
+      }
+    },
+    {
+      "name": "card_of_the_day",
+      "description": "MyCardfolio's featured card of the day (changes daily).",
+      "inputSchema": {
+        "type": "object",
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "properties": {}
+      }
+    }
+  ],
+  "browseRoot": {
+    "level": "sports",
+    "sports": [
+      {
+        "category": "Athletics",
+        "count": "6"
+      },
+      {
+        "category": "Australian Football",
+        "count": "2"
+      },
+      {
+        "category": "Baseball",
+        "count": "1625185"
+      },
+      {
+        "category": "Basketball",
+        "count": "411593"
+      },
+      {
+        "category": "Boxing & Martial Arts",
+        "count": "4690"
+      },
+      {
+        "category": "Cricket",
+        "count": "1"
+      },
+      {
+        "category": "Cycling",
+        "count": "3"
+      },
+      {
+        "category": "Diving",
+        "count": "1"
+      },
+      {
+        "category": "Entertainment",
+        "count": "13502"
+      },
+      {
+        "category": "Equestrian",
+        "count": "1"
+      },
+      {
+        "category": "Fencing",
+        "count": "1"
+      },
+      {
+        "category": "Figure Skating",
+        "count": "1"
+      },
+      {
+        "category": "Football",
+        "count": "749148"
+      },
+      {
+        "category": "Golf",
+        "count": "6828"
+      },
+      {
+        "category": "Gymnastics",
+        "count": "2"
+      },
+      {
+        "category": "Hockey",
+        "count": "330023"
+      },
+      {
+        "category": "Horse Racing",
+        "count": "1"
+      },
+      {
+        "category": "Mixed Martial Arts (Mma)",
+        "count": "444"
+      },
+      {
+        "category": "Multi-Sport",
+        "count": "7607"
+      },
+      {
+        "category": "Music",
+        "count": "1"
+      },
+      {
+        "category": "Non-Sport",
+        "count": "4392"
+      },
+      {
+        "category": "Non-Sports",
+        "count": "1"
+      },
+      {
+        "category": "Pokémon Tcg",
+        "count": "4"
+      },
+      {
+        "category": "Racing",
+        "count": "11489"
+      },
+      {
+        "category": "Skiing",
+        "count": "2"
+      },
+      {
+        "category": "Snowboarding",
+        "count": "1"
+      },
+      {
+        "category": "Soccer",
+        "count": "43048"
+      },
+      {
+        "category": "Sports",
+        "count": "4"
+      },
+      {
+        "category": "Sumo",
+        "count": "1"
+      },
+      {
+        "category": "Surfing",
+        "count": "5"
+      },
+      {
+        "category": "Swimming",
+        "count": "779"
+      },
+      {
+        "category": "Table Tennis",
+        "count": "3"
+      },
+      {
+        "category": "Tennis",
+        "count": "1723"
+      },
+      {
+        "category": "Track And Field",
+        "count": "4"
+      },
+      {
+        "category": "Track & Field",
+        "count": "1"
+      },
+      {
+        "category": "Unknown",
+        "count": "4834"
+      },
+      {
+        "category": "Wrestling",
+        "count": "16341"
+      }
+    ]
+  },
+  "baseball2026Products": {
+    "level": "products",
+    "sport": "Baseball",
+    "year": "2026",
+    "products": [
+      {
+        "product": "1973 MLB Leaders",
+        "product_id": "ebay_894bf70676",
+        "count": "1"
+      },
+      {
+        "product": "1991",
+        "product_id": "ebay_8ece4bd950",
+        "count": "1"
+      },
+      {
+        "product": "1991 35th Anniversary",
+        "product_id": "ebay_83bfac65fd",
+        "count": "5"
+      },
+      {
+        "product": "1991 35th Anniversary All-Stars",
+        "product_id": "ebay_595b6d3b63",
+        "count": "1"
+      },
+      {
+        "product": "1991 35th Anniversary Insert",
+        "product_id": "ebay_102eb1f16a",
+        "count": "1"
+      },
+      {
+        "product": "1991 All Star",
+        "product_id": "ebay_d7b426460e",
+        "count": "1"
+      },
+      {
+        "product": "1991 All-Star",
+        "product_id": "ebay_e7259c1760",
+        "count": "1"
+      },
+      {
+        "product": "1991 All-Star Relics",
+        "product_id": "ebay_7f3c79adf4",
+        "count": "1"
+      },
+      {
+        "product": "1991 Carson Williams Rookie",
+        "product_id": "ebay_7209103e99",
+        "count": "1"
+      },
+      {
+        "product": "1991 Chrome Silver Pack",
+        "product_id": "ebay_cddf11a125",
+        "count": "1"
+      },
+      {
+        "product": "1991 Relic",
+        "product_id": "ebay_89e6d60d73",
+        "count": "1"
+      },
+      {
+        "product": "1991 RETRO",
+        "product_id": "ebay_b954c055d7",
+        "count": "1"
+      },
+      {
+        "product": "1991 Topps 35th Anniv. Crackle",
+        "product_id": "ebay_5822713975",
+        "count": "1"
+      },
+      {
+        "product": "1991 Topps 35th Anniversary",
+        "product_id": "ebay_f0124dad50",
+        "count": "1"
+      },
+      {
+        "product": "1991 Topps 35th Anniversary All-Stars",
+        "product_id": "ebay_a4f8c71a9a",
+        "count": "2"
+      },
+      {
+        "product": "1991 Topps All-Star Baseball",
+        "product_id": "ebay_1d9bc5b474",
+        "count": "1"
+      },
+      {
+        "product": "1991 Topps Baseball",
+        "product_id": "ebay_01b43ffb85",
+        "count": "1"
+      },
+      {
+        "product": "1991 Topps Baseball 35th Anniv.",
+        "product_id": "ebay_bb2775a170",
+        "count": "2"
+      },
+      {
+        "product": "1991 Topps Baseball 35th Anniv. Crackle",
+        "product_id": "ebay_bd7446864d",
+        "count": "1"
+      },
+      {
+        "product": "1991 Topps Baseball 35th Anniversary",
+        "product_id": "ebay_9c4fa39958",
+        "count": "5"
+      },
+      {
+        "product": "1991 Topps Baseball 35th Anniversary All-Stars",
+        "product_id": "ebay_021d37ea06",
+        "count": "2"
+      },
+      {
+        "product": "1991 Topps Baseball Relics",
+        "product_id": "ebay_c9f4f71fc3",
+        "count": "1"
+      },
+      {
+        "product": "1DRAFT",
+        "product_id": "ebay_70fbaab1ef",
+        "count": "1"
+      },
+      {
+        "product": "1st",
+        "product_id": "ebay_ff5695afcf",
+        "count": "6"
+      },
+      {
+        "product": "1st Baseball Prospects",
+        "product_id": "ebay_0f6c7771c4",
+        "count": "1"
+      },
+      {
+        "product": "1st Bowman",
+        "product_id": "ebay_71bcf72995",
+        "count": "5"
+      },
+      {
+        "product": "1st Bowman Chrome",
+        "product_id": "ebay_1d518b8731",
+        "count": "15"
+      },
+      {
+        "product": "1st Bowman Chrome Prospects",
+        "product_id": "ebay_ef560f3905",
+        "count": "3"
+      },
+      {
+        "product": "1st Chrome",
+        "product_id": "ebay_f00e7ce502",
+        "count": "3"
+      },
+      {
+        "product": "1st Chrome Auto",
+        "product_id": "ebay_5369ba8817",
+        "count": "1"
+      },
+      {
+        "product": "1st Chrome Prospects",
+        "product_id": "ebay_4752194acc",
+        "count": "1"
+      },
+      {
+        "product": "1st Paper Prospect",
+        "product_id": "ebay_824ff2dc6e",
+        "count": "1"
+      },
+      {
+        "product": "1st Prospects",
+        "product_id": "ebay_f1bd02df6a",
+        "count": "1"
+      },
+      {
+        "product": "1 Topps",
+        "product_id": "ing_0daadef1d0",
+        "count": "1"
+      },
+      {
+        "product": "2025 Greatest Hits",
+        "product_id": "ebay_2b5aab30fc",
+        "count": "1"
+      },
+      {
+        "product": "2026 Donruss",
+        "product_id": "ebay_4df9048911",
+        "count": "1"
+      },
+      {
+        "product": "2026 Series 2",
+        "product_id": "ebay_5d692981f4",
+        "count": "1"
+      },
+      {
+        "product": "2026 Topps",
+        "product_id": "ebay_fd8b05d69a",
+        "count": "3"
+      },
+      {
+        "product": "2026 Topps 35th Anniversary All-Stars",
+        "product_id": "ebay_a2875061bb",
+        "count": "1"
+      },
+      {
+        "product": "2026 Topps Baseball",
+        "product_id": "ebay_c4e6271131",
+        "count": "1"
+      },
+      {
+        "product": "2026 Topps Baseball 35th Anniv",
+        "product_id": "ebay_aef5406bd6",
+        "count": "1"
+      },
+      {
+        "product": "2026 Topps Baseball 35th Anniversary All-Stars",
+        "product_id": "ebay_970301f8e3",
+        "count": "1"
+      },
+      {
+        "product": "250th Anniversary Patriot Edition",
+        "product_id": "ebay_49b821b435",
+        "count": "1"
+      },
+      {
+        "product": "25 Greatest Hits",
+        "product_id": "ebay_889b63a164",
+        "count": "1"
+      },
+      {
+        "product": "75",
+        "product_id": "ebay_5252490136",
+        "count": "1"
+      },
+      {
+        "product": "75 ERA",
+        "product_id": "ebay_a5c2759339",
+        "count": "1"
+      },
+      {
+        "product": "75 Series 2",
+        "product_id": "ebay_f39f2019ee",
+        "count": "7"
+      },
+      {
+        "product": "75 Series One",
+        "product_id": "ebay_c7dc608499",
+        "count": "1"
+      },
+      {
+        "product": "75th Anniversary",
+        "product_id": "ebay_4734ef493c",
+        "count": "1"
+      },
+      {
+        "product": "75 YEARS Baseball Series One",
+        "product_id": "ebay_659843f5ef",
+        "count": "1"
+      },
+      {
+        "product": "75 YEARS OF BASEBALL",
+        "product_id": "ebay_bab1956544",
+        "count": "1"
+      },
+      {
+        "product": "75 Years Of Baseball Series One",
+        "product_id": "ebay_cd08de7fb1",
+        "count": "2"
+      },
+      {
+        "product": "75 Years Series One",
+        "product_id": "ebay_0fdd5d7e21",
+        "count": "5"
+      },
+      {
+        "product": "75 YEARS SILVER PACK",
+        "product_id": "ebay_6ed7951132",
+        "count": "1"
+      },
+      {
+        "product": "8 Bit Ballers",
+        "product_id": "ebay_f28374c85e",
+        "count": "3"
+      },
+      {
+        "product": "8-Bit Ballers",
+        "product_id": "ebay_b351671851",
+        "count": "2"
+      },
+      {
+        "product": "90s Culture Box Set",
+        "product_id": "ebay_c164f7e7d0",
+        "count": "2"
+      },
+      {
+        "product": "90s Decades",
+        "product_id": "ebay_0f6a7ec878",
+        "count": "1"
+      },
+      {
+        "product": "90's Pop Culture",
+        "product_id": "ebay_0d0e0b99aa",
+        "count": "1"
+      },
+      {
+        "product": "90’s Pop Culture",
+        "product_id": "ebay_5ed563f593",
+        "count": "2"
+      },
+      {
+        "product": "90s Pop Culture",
+        "product_id": "ebay_33afc5010d",
+        "count": "2"
+      },
+      {
+        "product": "90s Pop Culture Award Winners",
+        "product_id": "ebay_0f7db3a14c",
+        "count": "1"
+      },
+      {
+        "product": "90s Pop Culture Box Set",
+        "product_id": "ebay_5a829eb1a1",
+        "count": "2"
+      },
+      {
+        "product": "90s Pop Culture Rookies & Prospects",
+        "product_id": "ebay_3dc6c2009b",
+        "count": "2"
+      },
+      {
+        "product": "90s Pop Culture Select",
+        "product_id": "ebay_16e0ca127f",
+        "count": "1"
+      },
+      {
+        "product": "90’s Pop Culture - The Elite Series",
+        "product_id": "ebay_bc48d293b7",
+        "count": "1"
+      },
+      {
+        "product": "91B2-4",
+        "product_id": "ebay_fb364d390b",
+        "count": "1"
+      },
+      {
+        "product": "91 Topps Series 2",
+        "product_id": "ebay_ca07b4d61f",
+        "count": "4"
+      },
+      {
+        "product": "AARON JUDGE",
+        "product_id": "ebay_850bd56636",
+        "count": "1"
+      },
+      {
+        "product": "Aaron Judge Green Laser",
+        "product_id": "ebay_d8f93f2fbe",
+        "count": "1"
+      },
+      {
+        "product": "Adam Frazier Wood Parallel",
+        "product_id": "ebay_47ff9aaa3c",
+        "count": "1"
+      },
+      {
+        "product": "Aiva Arquette 1st Chrome Prospect",
+        "product_id": "ebay_cc4fc3d6ed",
+        "count": "1"
+      },
+      {
+        "product": "Aiva Arquette Power Chords",
+        "product_id": "ebay_f4c5477fa5",
+        "count": "1"
+      },
+      {
+        "product": "Alejandro Carrillo Rookie",
+        "product_id": "ebay_f8bc28dcd4",
+        "count": "1"
+      },
+      {
+        "product": "Alex Bregman Red Sox Team Logo Border SSP",
+        "product_id": "ebay_fa7786b649",
+        "count": "1"
+      },
+      {
+        "product": "All Aces",
+        "product_id": "ebay_e9ae9558a7",
+        "count": "1"
+      },
+      {
+        "product": "All Star",
+        "product_id": "ebay_dda8f99189",
+        "count": "2"
+      },
+      {
+        "product": "All-Star Game",
+        "product_id": "ebay_e33cefd641",
+        "count": "12"
+      },
+      {
+        "product": "All Star Game Foil",
+        "product_id": "ebay_84215318e7",
+        "count": "1"
+      },
+      {
+        "product": "All-Star Game Foil",
+        "product_id": "ebay_d7cb84882a",
+        "count": "1"
+      },
+      {
+        "product": "All-Star Game Gold",
+        "product_id": "ebay_81ad026917",
+        "count": "3"
+      },
+      {
+        "product": "All-Star Game Parallel",
+        "product_id": "ebay_bb632bd0b4",
+        "count": "1"
+      },
+      {
+        "product": "All-Star Game Set",
+        "product_id": "ebay_d817284d04",
+        "count": "1"
+      },
+      {
+        "product": "All-Star Game Used Relic",
+        "product_id": "ebay_508d23d652",
+        "count": "1"
+      },
+      {
+        "product": "All-Stars",
+        "product_id": "ebay_2092affac7",
+        "count": "3"
+      },
+      {
+        "product": "All-Stars Silver Crackle Series 2",
+        "product_id": "ebay_217ee0c5c5",
+        "count": "1"
+      },
+      {
+        "product": "All Topps Team",
+        "product_id": "ebay_cc94fc2cdc",
+        "count": "3"
+      },
+      {
+        "product": "Aloy Elite",
+        "product_id": "ebay_73070815e1",
+        "count": "1"
+      },
+      {
+        "product": "American League Leaders",
+        "product_id": "ebay_0ccdf99a92",
+        "count": "2"
+      },
+      {
+        "product": "Anderson Araujo 1st Chrome Prospect",
+        "product_id": "ebay_042f622893",
+        "count": "1"
+      },
+      {
+        "product": "Andrew Fischer Mojo",
+        "product_id": "ebay_3a780b22f0",
+        "count": "1"
+      },
+      {
+        "product": "Andrew Tess 1st Chrome",
+        "product_id": "ebay_31be4e7216",
+        "count": "1"
+      },
+      {
+        "product": "anime",
+        "product_id": "ebay_bdf6e716f0",
+        "count": "1"
+      },
+      {
+        "product": "Aqua Geometric",
+        "product_id": "ebay_9529af0b05",
+        "count": "1"
+      },
+      {
+        "product": "Aqua Rainbow Foil",
+        "product_id": "ebay_38fcd80093",
+        "count": "1"
+      },
+      {
+        "product": "Athlete Gravity",
+        "product_id": "ebay_5a90a8c4cc",
+        "count": "68"
+      },
+      {
+        "product": "Athlete Gravity Galaxy",
+        "product_id": "ebay_6d41823c77",
+        "count": "4"
+      },
+      {
+        "product": "Athlete Gravity Mojo",
+        "product_id": "ebay_af46db457b",
+        "count": "2"
+      },
+      {
+        "product": "Athlete Gravity Stardust",
+        "product_id": "ebay_130e8e27f2",
+        "count": "1"
+      },
+      {
+        "product": "Atlanta Braves",
+        "product_id": "ebay_d83bbadf8e",
+        "count": "1"
+      },
+      {
+        "product": "Atompunk",
+        "product_id": "ebay_417b2404f5",
+        "count": "1"
+      },
+      {
+        "product": "Augustin Ramirez Break Out",
+        "product_id": "ebay_83135096e9",
+        "count": "1"
+      },
+      {
+        "product": "Austin Riley Atlanta Braves MLB Baseball Trading Card",
+        "product_id": "ebay_ec40d0f811",
+        "count": "1"
+      },
+      {
+        "product": "Austin Riley City Connect Auto Patch",
+        "product_id": "ebay_2cd8d8c7c6",
+        "count": "1"
+      },
+      {
+        "product": "Banana Ball",
+        "product_id": "ebay_027d3ff5ba",
+        "count": "2"
+      },
+      {
+        "product": "Barry Larkin Liberty",
+        "product_id": "ebay_3881f00bf1",
+        "count": "1"
+      },
+      {
+        "product": "Base",
+        "product_id": "ebay_6e101f6825",
+        "count": "3"
+      },
+      {
+        "product": "Baseball",
+        "product_id": "ebay_7bf753d622",
+        "count": "167"
+      },
+      {
+        "product": "Baseball 35th Anniversary",
+        "product_id": "ebay_b5e4b47b95",
+        "count": "13"
+      },
+      {
+        "product": "Baseball 35th Anniversary All-Stars",
+        "product_id": "ebay_9432a39487",
+        "count": "1"
+      },
+      {
+        "product": "Baseball 35th Anniversary Chrome",
+        "product_id": "ebay_bf4369d39e",
+        "count": "1"
+      },
+      {
+        "product": "Baseball 35th Anniversary Crackle Foil",
+        "product_id": "ebay_f869dd3c6a",
+        "count": "1"
+      },
+      {
+        "product": "Baseball All Star Logo",
+        "product_id": "ebay_fbc1838e06",
+        "count": "1"
+      },
+      {
+        "product": "Baseball All-Stars",
+        "product_id": "ebay_98684bdd5b",
+        "count": "1"
+      },
+      {
+        "product": "Baseball All-Stars Relic",
+        "product_id": "ebay_0735cb7e42",
+        "count": "1"
+      },
+      {
+        "product": "Baseball Crackle Foil",
+        "product_id": "ebay_aeae27f8b4",
+        "count": "1"
+      },
+      {
+        "product": "Baseball Finest",
+        "product_id": "ebay_731e13e2f1",
+        "count": "2"
+      },
+      {
+        "product": "Baseball Nation",
+        "product_id": "ebay_96e48b6f47",
+        "count": "4"
+      },
+      {
+        "product": "Baseball Nation Franchise Favorites",
+        "product_id": "ebay_ae4945b9d0",
+        "count": "1"
+      },
+      {
+        "product": "Baseball Noir",
+        "product_id": "ebay_af9d2ca1b3",
+        "count": "1"
+      },
+      {
+        "product": "Baseball Optic",
+        "product_id": "ebay_c703f8f853",
+        "count": "9"
+      },
+      {
+        "product": "Baseball Prospect Jersey Kings",
+        "product_id": "ebay_822388126f",
+        "count": "1"
+      },
+      {
+        "product": "Baseball Prospects",
+        "product_id": "ebay_a5a0b77604",
+        "count": "3"
+      },
+      {
+        "product": "Baseball Relic",
+        "product_id": "ebay_25869eeb5c",
+        "count": "1"
+      },
+      {
+        "product": "Baseball Relics",
+        "product_id": "ebay_97a186fecf",
+        "count": "2"
+      },
+      {
+        "product": "Baseball Series 1",
+        "product_id": "ebay_68427da132",
+        "count": "9"
+      },
+      {
+        "product": "Baseball Series 2",
+        "product_id": "ebay_df604e4aaf",
+        "count": "3"
+      },
+      {
+        "product": "Baseball Series Two",
+        "product_id": "ebay_dccd0c7a0c",
+        "count": "9"
+      },
+      {
+        "product": "Baseball Stars",
+        "product_id": "ebay_25d52627cc",
+        "count": "7"
+      },
+      {
+        "product": "Baseball Stars Auto",
+        "product_id": "ebay_d55277bb88",
+        "count": "1"
+      },
+      {
+        "product": "Baseball Stars Autographs",
+        "product_id": "ebay_7253002da2",
+        "count": "5"
+      },
+      {
+        "product": "Baseball Stars & Stripes",
+        "product_id": "ebay_5c878786d3",
+        "count": "1"
+      },
+      {
+        "product": "BASEBALL Stars & Stripes",
+        "product_id": "ebay_5c878786d3",
+        "count": "1"
+      },
+      {
+        "product": "Base Set",
+        "product_id": "ebay_c97df358cb",
+        "count": "1"
+      },
+      {
+        "product": "Battle Arena Skuba Coliseum",
+        "product_id": "ebay_4c29bdd9ed",
+        "count": "1"
+      },
+      {
+        "product": "BBM",
+        "product_id": "ebay_97422363e0",
+        "count": "1"
+      },
+      {
+        "product": "BCP",
+        "product_id": "ebay_9092e6f980",
+        "count": "28"
+      },
+      {
+        "product": "BCP52",
+        "product_id": "ebay_70fa6a5bfc",
+        "count": "1"
+      },
+      {
+        "product": "Beantown Buds",
+        "product_id": "ebay_75fd64bc74",
+        "count": "2"
+      },
+      {
+        "product": "Bell-Camp",
+        "product_id": "ebay_0474b6a021",
+        "count": "1"
+      },
+      {
+        "product": "Belting Bros",
+        "product_id": "ebay_d74ab36d4a",
+        "count": "1"
+      },
+      {
+        "product": "Ben Lively Gold",
+        "product_id": "ebay_9e387a470f",
+        "count": "1"
+      },
+      {
+        "product": "Ben Rice Finest",
+        "product_id": "ebay_407cdfe0a9",
+        "count": "1"
+      },
+      {
+        "product": "BIG BREAK",
+        "product_id": "ebay_e6743d8ac3",
+        "count": "1"
+      },
+      {
+        "product": "Big League Chew",
+        "product_id": "ebay_7f1b63193a",
+        "count": "2"
+      },
+      {
+        "product": "Big Ticket",
+        "product_id": "ebay_637a3b59d1",
+        "count": "3"
+      },
+      {
+        "product": "Big Ticket Players",
+        "product_id": "ebay_e877f514eb",
+        "count": "30"
+      },
+      {
+        "product": "Black Circles Optic",
+        "product_id": "ebay_df29f62b19",
+        "count": "1"
+      },
+      {
+        "product": "Black Optic Prizm",
+        "product_id": "ebay_5de1d8f0f4",
+        "count": "1"
+      },
+      {
+        "product": "Blaze",
+        "product_id": "ebay_eaf8cc410e",
+        "count": "3"
+      },
+      {
+        "product": "Blue",
+        "product_id": "ebay_232fef81c9",
+        "count": "1"
+      },
+      {
+        "product": "Blue Rainbow Foil",
+        "product_id": "ebay_4c7ac01656",
+        "count": "1"
+      },
+      {
+        "product": "Bo Davidson Scouts",
+        "product_id": "ebay_861c04b1f5",
+        "count": "1"
+      },
+      {
+        "product": "Bo Jackson Battle Arena 1st Edition \"The Griffey Set\"",
+        "product_id": "ing_89211c5bbc",
+        "count": "1"
+      },
+      {
+        "product": "Bomb Squad",
+        "product_id": "ebay_82dc57bab9",
+        "count": "6"
+      },
+      {
+        "product": "Bowman",
+        "product_id": "ebay_ca146e5562",
+        "count": "652"
+      },
+      {
+        "product": "Bowman Baseball",
+        "product_id": "ebay_e168343614",
+        "count": "4"
+      },
+      {
+        "product": "Bowman Blue",
+        "product_id": "ebay_b0c6b68950",
+        "count": "1"
+      },
+      {
+        "product": "Bowman Caden Scarborough 1st Chrome Prospect",
+        "product_id": "ebay_1121451365",
+        "count": "1"
+      },
+      {
+        "product": "Bowman Chrome",
+        "product_id": "ebay_bf1cc1bab9",
+        "count": "323"
+      },
+      {
+        "product": "Bowman Chrome Chase",
+        "product_id": "ebay_97bf554610",
+        "count": "1"
+      },
+      {
+        "product": "Bowman Chrome Jersey Match",
+        "product_id": "ebay_063847fff5",
+        "count": "1"
+      },
+      {
+        "product": "Bowman Chrome Prospect",
+        "product_id": "ebay_12a280d843",
+        "count": "2"
+      },
+      {
+        "product": "Bowman Chrome Prospects",
+        "product_id": "ebay_ca6d7e0a0b",
+        "count": "39"
+      },
+      {
+        "product": "Bowman Chrome Sapphire",
+        "product_id": "ebay_9b20624fc0",
+        "count": "1"
+      },
+      {
+        "product": "Bowman Electric Sluggers",
+        "product_id": "ebay_42ff29befd",
+        "count": "2"
+      },
+      {
+        "product": "Bowman Gold",
+        "product_id": "ebay_19455e3368",
+        "count": "1"
+      },
+      {
+        "product": "Bowman Green Shimmer",
+        "product_id": "ebay_10827cbdd6",
+        "count": "1"
+      },
+      {
+        "product": "Bowman Power Chords",
+        "product_id": "ebay_801e6263a1",
+        "count": "1"
+      },
+      {
+        "product": "Bowman Prospect",
+        "product_id": "ebay_e69e9e6777",
+        "count": "2"
+      },
+      {
+        "product": "Bowman Prospect Auto",
+        "product_id": "ebay_6c2c02d863",
+        "count": "1"
+      },
+      {
+        "product": "Bowman Prospects",
+        "product_id": "ebay_642d24e11d",
+        "count": "3"
+      },
+      {
+        "product": "Bowman Purple",
+        "product_id": "ebay_26e14e147f",
+        "count": "1"
+      },
+      {
+        "product": "Bowman Purple Border",
+        "product_id": "ebay_e49d592db7",
+        "count": "1"
+      },
+      {
+        "product": "Bowman Red",
+        "product_id": "ebay_adffd1d47d",
+        "count": "1"
+      },
+      {
+        "product": "Bowman Refractor",
+        "product_id": "ebay_54c2072022",
+        "count": "1"
+      },
+      {
+        "product": "Bowman Reptilian Chrome",
+        "product_id": "ebay_9f1cfbafbc",
+        "count": "1"
+      },
+      {
+        "product": "Bowman's Best",
+        "product_id": "ing_6f184114ce",
+        "count": "1"
+      },
+      {
+        "product": "Bowman Scouts",
+        "product_id": "ebay_1f0491860e",
+        "count": "16"
+      },
+      {
+        "product": "Bowman Scouts' Top 100",
+        "product_id": "ebay_4c8ca9f7ef",
+        "count": "25"
+      },
+      {
+        "product": "Bowman Spotlights",
+        "product_id": "ebay_549b1ba3f6",
+        "count": "1"
+      },
+      {
+        "product": "Bowman Sterling",
+        "product_id": "ebay_4904a2aa31",
+        "count": "21"
+      },
+      {
+        "product": "Bowman Sterling Chrome",
+        "product_id": "ebay_88152829dd",
+        "count": "3"
+      },
+      {
+        "product": "Bowman Sterling Mojo",
+        "product_id": "ebay_6a58b52465",
+        "count": "4"
+      },
+      {
+        "product": "Bowman Top 100",
+        "product_id": "ebay_a48913f718",
+        "count": "1"
+      },
+      {
+        "product": "BP",
+        "product_id": "ebay_820a060b14",
+        "count": "1"
+      },
+      {
+        "product": "Brady Ebel",
+        "product_id": "ebay_ecad16d3f9",
+        "count": "1"
+      },
+      {
+        "product": "Brady House",
+        "product_id": "ebay_b23b2221ad",
+        "count": "5"
+      },
+      {
+        "product": "Brady House RC",
+        "product_id": "ebay_6a428de4a1",
+        "count": "1"
+      },
+      {
+        "product": "Brady House Washington Nationals",
+        "product_id": "ebay_5d0bcbc470",
+        "count": "1"
+      },
+      {
+        "product": "Brady Singer",
+        "product_id": "ebay_d17678964a",
+        "count": "1"
+      },
+      {
+        "product": "Brendan Summerhill",
+        "product_id": "ebay_4fa4de2c7c",
+        "count": "1"
+      },
+      {
+        "product": "Brenton Doyle",
+        "product_id": "ebay_b47bc3a952",
+        "count": "1"
+      },
+      {
+        "product": "Brett Baty",
+        "product_id": "ebay_5dcecda45c",
+        "count": "1"
+      },
+      {
+        "product": "Brewers Stars of MLB RC",
+        "product_id": "ebay_c3f1a54e4a",
+        "count": "1"
+      },
+      {
+        "product": "Bryan Reynolds Holiday Sun",
+        "product_id": "ebay_a95157f104",
+        "count": "1"
+      },
+      {
+        "product": "Bryce Eldridge Diamanté",
+        "product_id": "ebay_95c1636211",
+        "count": "1"
+      },
+      {
+        "product": "Bryce Eldridge Electric Sluggers",
+        "product_id": "ebay_03ff62b217",
+        "count": "1"
+      },
+      {
+        "product": "Bryce Eldridge Rookie",
+        "product_id": "ebay_2a18151cce",
+        "count": "1"
+      },
+      {
+        "product": "BSA2-CP",
+        "product_id": "ebay_43315bf276",
+        "count": "1"
+      },
+      {
+        "product": "BUBBA CHANDLER",
+        "product_id": "ebay_5cb4777fa7",
+        "count": "1"
+      },
+      {
+        "product": "Bunt Heritage",
+        "product_id": "ebay_edc0f7d8b1",
+        "count": "1"
+      },
+      {
+        "product": "Byron Buxton ‘91 Silver Pack Chrome",
+        "product_id": "ebay_ec876c3383",
+        "count": "1"
+      },
+      {
+        "product": "Cal Raleigh",
+        "product_id": "ebay_a81e07be6b",
+        "count": "1"
+      },
+      {
+        "product": "Cam Cannarella Rated Prospect",
+        "product_id": "ebay_ae373550c3",
+        "count": "1"
+      },
+      {
+        "product": "Cam Sanders Rookie",
+        "product_id": "ebay_8a669d666b",
+        "count": "1"
+      },
+      {
+        "product": "Cam Schlittler Red Rookie Refractor Redemption",
+        "product_id": "ebay_898d5c78ed",
+        "count": "1"
+      },
+      {
+        "product": "Cam Schlittler Under the Radar",
+        "product_id": "ebay_46954d6035",
+        "count": "1"
+      },
+      {
+        "product": "Carson Seymour Gold Giants",
+        "product_id": "ebay_75de5d0c30",
+        "count": "1"
+      },
+      {
+        "product": "Carter Jensen Rated",
+        "product_id": "ebay_924f485b03",
+        "count": "1"
+      },
+      {
+        "product": "Carter Jensen Rookie",
+        "product_id": "ebay_46fea97924",
+        "count": "1"
+      },
+      {
+        "product": "Celebration",
+        "product_id": "ebay_15a26751d6",
+        "count": "5"
+      },
+      {
+        "product": "Celebration 8 Bit Ballers",
+        "product_id": "ebay_5a3504f377",
+        "count": "1"
+      },
+      {
+        "product": "Chad Stevens 1991 Topps 35th Anniversary Auto",
+        "product_id": "ebay_4d43b30ca5",
+        "count": "1"
+      },
+      {
+        "product": "Chase",
+        "product_id": "ebay_dd3205a039",
+        "count": "2"
+      },
+      {
+        "product": "Chase Burns Rookie Mascot",
+        "product_id": "ebay_647bb8b5d2",
+        "count": "1"
+      },
+      {
+        "product": "Chase Meidroth Series Two",
+        "product_id": "ebay_bea59b4340",
+        "count": "1"
+      },
+      {
+        "product": "Chicago White Sox",
+        "product_id": "ebay_df5b210bbb",
+        "count": "1"
+      },
+      {
+        "product": "Choice",
+        "product_id": "ebay_29801e7def",
+        "count": "1"
+      },
+      {
+        "product": "Ch Prism Refractors",
+        "product_id": "ebay_8394c93d5f",
+        "count": "4"
+      },
+      {
+        "product": "Christian Montes De Oca Rookie",
+        "product_id": "ebay_052d4ae3ef",
+        "count": "1"
+      },
+      {
+        "product": "Chrome",
+        "product_id": "ebay_4cab1a5ea1",
+        "count": "2765"
+      },
+      {
+        "product": "CHROME",
+        "product_id": "ebay_4cab1a5ea1",
+        "count": "2"
+      },
+      {
+        "product": "Chrome 75th Anniversary",
+        "product_id": "ebay_5d3baaf207",
+        "count": "4"
+      },
+      {
+        "product": "Chrome Athletics",
+        "product_id": "ebay_4f7a36ff9a",
+        "count": "3"
+      },
+      {
+        "product": "Chrome Auto",
+        "product_id": "ebay_81e4dffbe0",
+        "count": "3"
+      },
+      {
+        "product": "Chrome AUTO",
+        "product_id": "ebay_81e4dffbe0",
+        "count": "1"
+      },
+      {
+        "product": "Chrome Autos",
+        "product_id": "ebay_b425dfdb81",
+        "count": "1"
+      },
+      {
+        "product": "Chrome Base",
+        "product_id": "ebay_4464897a8c",
+        "count": "2"
+      },
+      {
+        "product": "Chrome Baseball",
+        "product_id": "ebay_1b45138d86",
+        "count": "163"
+      },
+      {
+        "product": "Chrome Baseball Perspectives",
+        "product_id": "ebay_13a48a1941",
+        "count": "1"
+      },
+      {
+        "product": "CHROME Baseball Prospects",
+        "product_id": "ebay_54284dc963",
+        "count": "3"
+      },
+      {
+        "product": "Chrome Baseball Rivals",
+        "product_id": "ebay_54c4d30aca",
+        "count": "3"
+      },
+      {
+        "product": "Chrome Baseball Travel Tags",
+        "product_id": "ebay_9df56abe5a",
+        "count": "1"
+      },
+      {
+        "product": "Chrome Big Break",
+        "product_id": "ebay_c6b8487d10",
+        "count": "3"
+      },
+      {
+        "product": "Chrome Big Breaks",
+        "product_id": "ebay_d6a32bd82d",
+        "count": "2"
+      },
+      {
+        "product": "Chrome Big Ticket",
+        "product_id": "ebay_db9bedf7f5",
+        "count": "18"
+      },
+      {
+        "product": "Chrome Big Ticket Players",
+        "product_id": "ebay_f644aeaff4",
+        "count": "7"
+      },
+      {
+        "product": "Chrome BIG TICKET PLAYERS",
+        "product_id": "ebay_f644aeaff4",
+        "count": "1"
+      },
+      {
+        "product": "Chrome Black",
+        "product_id": "ebay_99fe8b53a3",
+        "count": "18"
+      },
+      {
+        "product": "Chrome Black- Mini Diamonds Ref.",
+        "product_id": "ebay_09fd7da08b",
+        "count": "1"
+      },
+      {
+        "product": "Chrome Bowman Auto",
+        "product_id": "ebay_1d60a476c5",
+        "count": "1"
+      },
+      {
+        "product": "Chrome Bowman Rubel",
+        "product_id": "ebay_e3013353bd",
+        "count": "1"
+      },
+      {
+        "product": "Chrome Chase",
+        "product_id": "ebay_dff7ee0933",
+        "count": "8"
+      },
+      {
+        "product": "Chrome Chrome Prospects",
+        "product_id": "ebay_be29fa3c53",
+        "count": "1"
+      },
+      {
+        "product": "Chrome Diamond Auto",
+        "product_id": "ebay_f748877b6d",
+        "count": "1"
+      },
+      {
+        "product": "Chrome Diamond Moments",
+        "product_id": "ebay_ba9f31ff85",
+        "count": "2"
+      },
+      {
+        "product": "Chrome Electric Sluggers",
+        "product_id": "ebay_c38e73e898",
+        "count": "7"
+      },
+      {
+        "product": "Chrome Fanatics Exclusive",
+        "product_id": "ebay_ce41687e4d",
+        "count": "1"
+      },
+      {
+        "product": "Chrome Final Draft",
+        "product_id": "ebay_0570a975a5",
+        "count": "3"
+      },
+      {
+        "product": "Chrome Flagship",
+        "product_id": "ebay_4683a2c5e1",
+        "count": "3"
+      },
+      {
+        "product": "Chrome Flagship Collection",
+        "product_id": "ebay_29a6be63b6",
+        "count": "1"
+      },
+      {
+        "product": "Chrome Flagship Exclusive",
+        "product_id": "ebay_de32a6cbc2",
+        "count": "1"
+      },
+      {
+        "product": "Chrome Future Stars",
+        "product_id": "ebay_87b2166a65",
+        "count": "13"
+      },
+      {
+        "product": "Chrome Geometric",
+        "product_id": "ebay_ff29c19980",
+        "count": "1"
+      },
+      {
+        "product": "Chrome Gold Mojo",
+        "product_id": "ebay_5f44f1c483",
+        "count": "1"
+      },
+      {
+        "product": "Chrome Highlight Reels",
+        "product_id": "ebay_df6bf1b296",
+        "count": "2"
+      },
+      {
+        "product": "Chrome Highlights Reels",
+        "product_id": "ebay_6d07b82d5f",
+        "count": "1"
+      },
+      {
+        "product": "Chrome Hobby Masters",
+        "product_id": "ebay_a1f7b7eee8",
+        "count": "2"
+      },
+      {
+        "product": "Chrome Ink Strokes",
+        "product_id": "ebay_ecfa16b5ad",
+        "count": "1"
+      },
+      {
+        "product": "Chrome Junior",
+        "product_id": "ebay_c0a126f73d",
+        "count": "2"
+      },
+      {
+        "product": "CHROME LASER",
+        "product_id": "ebay_40bb5e611f",
+        "count": "1"
+      },
+      {
+        "product": "Chrome Logofractor Edition",
+        "product_id": "ebay_5eb056579a",
+        "count": "2"
+      },
+      {
+        "product": "Chrome MAX",
+        "product_id": "ebay_35fbb74544",
+        "count": "1"
+      },
+      {
+        "product": "Chrome Mega",
+        "product_id": "ebay_8447e16cc1",
+        "count": "8"
+      },
+      {
+        "product": "Chrome MEGA",
+        "product_id": "ebay_8447e16cc1",
+        "count": "1"
+      },
+      {
+        "product": "Chrome MEGA BOC",
+        "product_id": "ebay_dbd8ac474e",
+        "count": "1"
+      },
+      {
+        "product": "Chrome Mega Box",
+        "product_id": "ebay_bfc9e0322b",
+        "count": "3"
+      },
+      {
+        "product": "Chrome Mega Mojo",
+        "product_id": "ebay_62f8e6375b",
+        "count": "2"
+      },
+      {
+        "product": "Chrome Mini Diamond",
+        "product_id": "ebay_0f1df7b9b3",
+        "count": "1"
+      },
+      {
+        "product": "Chrome Mojo",
+        "product_id": "ebay_abd4431ee7",
+        "count": "12"
+      },
+      {
+        "product": "CHROME MOJO",
+        "product_id": "ebay_abd4431ee7",
+        "count": "1"
+      },
+      {
+        "product": "Chrome National NSCC",
+        "product_id": "ebay_76c4e05ffc",
+        "count": "1"
+      },
+      {
+        "product": "Chrome NSCC",
+        "product_id": "ebay_caa2301375",
+        "count": "3"
+      },
+      {
+        "product": "Chrome Orange Crystalized",
+        "product_id": "ebay_5e168cb279",
+        "count": "1"
+      },
+      {
+        "product": "Chrome Past to Present",
+        "product_id": "ebay_ce31e12e6c",
+        "count": "3"
+      },
+      {
+        "product": "Chrome Patchwork",
+        "product_id": "ebay_2c98ce0a92",
+        "count": "1"
+      },
+      {
+        "product": "Chrome Perspectives",
+        "product_id": "ebay_2da2bc8169",
+        "count": "13"
+      },
+      {
+        "product": "Chrome Platinum",
+        "product_id": "ebay_7c72cf7fc5",
+        "count": "6"
+      },
+      {
+        "product": "Chrome Power Chords",
+        "product_id": "ebay_b321017e9e",
+        "count": "3"
+      },
+      {
+        "product": "Chrome POWER CHORDS",
+        "product_id": "ebay_b321017e9e",
+        "count": "1"
+      },
+      {
+        "product": "Chrome Prism",
+        "product_id": "ebay_704f51a9e6",
+        "count": "1"
+      },
+      {
+        "product": "Chrome Prospect",
+        "product_id": "ebay_7d63c1c915",
+        "count": "19"
+      },
+      {
+        "product": "Chrome Prospect Auto",
+        "product_id": "ebay_6f4978e7df",
+        "count": "1"
+      },
+      {
+        "product": "Chrome Prospect Autographs",
+        "product_id": "ebay_32432dac28",
+        "count": "9"
+      },
+      {
+        "product": "Chrome Prospect Mega Box",
+        "product_id": "ebay_ae41251b9b",
+        "count": "1"
+      },
+      {
+        "product": "Chrome Prospects",
+        "product_id": "ebay_a5fb796a58",
+        "count": "153"
+      },
+      {
+        "product": "Chrome Prospects Mega Box",
+        "product_id": "ebay_3fca549dd4",
+        "count": "1"
+      },
+      {
+        "product": "Chrome RayWave",
+        "product_id": "ebay_e678707090",
+        "count": "2"
+      },
+      {
+        "product": "Chrome RC",
+        "product_id": "ebay_46323cbbd5",
+        "count": "1"
+      },
+      {
+        "product": "Chrome RC Auto",
+        "product_id": "ebay_76595c0e48",
+        "count": "1"
+      },
+      {
+        "product": "Chrome Red Logo Redemption",
+        "product_id": "ebay_61abf01398",
+        "count": "1"
+      },
+      {
+        "product": "Chrome Rivals",
+        "product_id": "ebay_11eed38981",
+        "count": "3"
+      },
+      {
+        "product": "Chrome Rookie Hobby Masters",
+        "product_id": "ebay_750fd6eed8",
+        "count": "1"
+      },
+      {
+        "product": "Chrome Sapphire",
+        "product_id": "ebay_dec8306190",
+        "count": "27"
+      },
+      {
+        "product": "Chrome Sapphire Edition",
+        "product_id": "ebay_46bbe955a3",
+        "count": "36"
+      },
+      {
+        "product": "Chrome Scouts",
+        "product_id": "ebay_e0b4250037",
+        "count": "1"
+      },
+      {
+        "product": "Chrome Series 1",
+        "product_id": "ebay_e1d9e4c0a3",
+        "count": "3"
+      },
+      {
+        "product": "Chrome Series 2",
+        "product_id": "ebay_5d0057c76e",
+        "count": "3"
+      },
+      {
+        "product": "Chrome Shadow Etch",
+        "product_id": "ebay_698f49d568",
+        "count": "1"
+      },
+      {
+        "product": "Chrome SNACK PACK",
+        "product_id": "ebay_03634e8d85",
+        "count": "2"
+      },
+      {
+        "product": "Chrome Spring Breakout",
+        "product_id": "ebay_5b25694125",
+        "count": "2"
+      },
+      {
+        "product": "Chrome Stars of the Future",
+        "product_id": "ebay_645a5b4ac7",
+        "count": "4"
+      },
+      {
+        "product": "Chrome Stars Of The Future",
+        "product_id": "ebay_645a5b4ac7",
+        "count": "1"
+      },
+      {
+        "product": "Chrome Sterling",
+        "product_id": "ebay_d96da24a23",
+        "count": "5"
+      },
+      {
+        "product": "Chrome Sterling Refractor",
+        "product_id": "ebay_e1f6a7b264",
+        "count": "1"
+      },
+      {
+        "product": "Chrome Travel Tags",
+        "product_id": "ebay_03645d2957",
+        "count": "5"
+      },
+      {
+        "product": "Chrome Update",
+        "product_id": "ebay_1f86ffe8f6",
+        "count": "2"
+      },
+      {
+        "product": "Chrome Wave",
+        "product_id": "ebay_d82f1048d1",
+        "count": "2"
+      },
+      {
+        "product": "Chrome Wild Style",
+        "product_id": "ebay_80820d267b",
+        "count": "2"
+      },
+      {
+        "product": "Chrome Wrecking Crew",
+        "product_id": "ebay_53460bc9d3",
+        "count": "15"
+      },
+      {
+        "product": "Chrome X-Factor",
+        "product_id": "ebay_d7323bbe35",
+        "count": "1"
+      },
+      {
+        "product": "Chrome X-Fractor",
+        "product_id": "ebay_356aac520c",
+        "count": "9"
+      },
+      {
+        "product": "Chrome X-FRACTOR",
+        "product_id": "ebay_356aac520c",
+        "count": "3"
+      },
+      {
+        "product": "Chrome X-Fractors",
+        "product_id": "ebay_d1fc78b929",
+        "count": "2"
+      },
+      {
+        "product": "Chro Prism",
+        "product_id": "ebay_baca0b1dce",
+        "count": "1"
+      },
+      {
+        "product": "Chr Prism Refractors",
+        "product_id": "ebay_ad98848919",
+        "count": "1"
+      },
+      {
+        "product": "C.J. Kayfus",
+        "product_id": "ebay_2d7c60ecc6",
+        "count": "1"
+      },
+      {
+        "product": "C.J. Kayfus Silver Crackleboard Foil Board",
+        "product_id": "ebay_83e6cde524",
+        "count": "1"
+      },
+      {
+        "product": "Clear",
+        "product_id": "ebay_0749bc245e",
+        "count": "1"
+      },
+      {
+        "product": "Clearly Rated Prospect",
+        "product_id": "ebay_ecbdabbe60",
+        "count": "3"
+      },
+      {
+        "product": "Clearly Rated Prospects",
+        "product_id": "ebay_7157ccb578",
+        "count": "1"
+      },
+      {
+        "product": "Clubhouse Collection Relics",
+        "product_id": "ebay_b09b8ce990",
+        "count": "1"
+      },
+      {
+        "product": "Cody Laweryson Rookie",
+        "product_id": "ebay_5fd15850d9",
+        "count": "1"
+      },
+      {
+        "product": "Collection Kit",
+        "product_id": "ebay_32186077fa",
+        "count": "1"
+      },
+      {
+        "product": "Collector",
+        "product_id": "ebay_1108d1da02",
+        "count": "1"
+      },
+      {
+        "product": "Collector Kit",
+        "product_id": "ebay_56f9df0a66",
+        "count": "8"
+      },
+      {
+        "product": "Collectors Kit",
+        "product_id": "ebay_5e1f0f8fa1",
+        "count": "1"
+      },
+      {
+        "product": "Collector's Kit Exclusive",
+        "product_id": "ebay_8c1ffe0f9e",
+        "count": "1"
+      },
+      {
+        "product": "Collectors Kit Wave",
+        "product_id": "ebay_b3d9468cd7",
+        "count": "1"
+      },
+      {
+        "product": "Confetti",
+        "product_id": "ebay_f68b8b9442",
+        "count": "7"
+      },
+      {
+        "product": "Connelly",
+        "product_id": "ebay_d47f40d065",
+        "count": "1"
+      },
+      {
+        "product": "Connelly Early",
+        "product_id": "ebay_a56b7a631f",
+        "count": "1"
+      },
+      {
+        "product": "Connelly Early Mega Mojo",
+        "product_id": "ebay_01317c6e81",
+        "count": "1"
+      },
+      {
+        "product": "Corbin Carroll Arizona Diamondbacks",
+        "product_id": "ebay_c58b030484",
+        "count": "1"
+      },
+      {
+        "product": "Corey Seager Pink",
+        "product_id": "ebay_07e517c2ca",
+        "count": "1"
+      },
+      {
+        "product": "COSTCO Flagship",
+        "product_id": "ebay_573f7f4919",
+        "count": "1"
+      },
+      {
+        "product": "Costco Flagship Collection",
+        "product_id": "ebay_833f63888b",
+        "count": "1"
+      },
+      {
+        "product": "Costco Image Exclusive",
+        "product_id": "ebay_51d69088ae",
+        "count": "1"
+      },
+      {
+        "product": "Cover",
+        "product_id": "ing_c8cd4b1388",
+        "count": "1"
+      },
+      {
+        "product": "Cover Athletes",
+        "product_id": "ebay_35939687cf",
+        "count": "1"
+      },
+      {
+        "product": "C Prism",
+        "product_id": "ebay_7bc177bfa2",
+        "count": "1"
+      },
+      {
+        "product": "Crooked Numbers",
+        "product_id": "ebay_a25331dabd",
+        "count": "15"
+      },
+      {
+        "product": "Crunch Time",
+        "product_id": "ebay_e8c98f2d60",
+        "count": "17"
+      },
+      {
+        "product": "Daniel Dickinson 1st",
+        "product_id": "ebay_b657c23e95",
+        "count": "1"
+      },
+      {
+        "product": "Daniel Hernandez 1st Chrome Prospect",
+        "product_id": "ebay_ce31418131",
+        "count": "1"
+      },
+      {
+        "product": "David Davalillo 1st Chrome Prospect",
+        "product_id": "ebay_ae280151c6",
+        "count": "1"
+      },
+      {
+        "product": "David Hagaman Blue Pattern",
+        "product_id": "ebay_d198388252",
+        "count": "1"
+      },
+      {
+        "product": "David Ortiz 1991 Topps Baseball 35th Anniversary",
+        "product_id": "ebay_672f2d405a",
+        "count": "1"
+      },
+      {
+        "product": "Decades",
+        "product_id": "ebay_bd9f13e6e1",
+        "count": "11"
+      },
+      {
+        "product": "Decades '90s",
+        "product_id": "ebay_86baf5f7e7",
+        "count": "1"
+      },
+      {
+        "product": "Decades 90s",
+        "product_id": "ebay_c753064059",
+        "count": "2"
+      },
+      {
+        "product": "Decades 90s Pop Culture",
+        "product_id": "ebay_3d0ff766ac",
+        "count": "3"
+      },
+      {
+        "product": "Denzer",
+        "product_id": "ebay_0203d194b2",
+        "count": "1"
+      },
+      {
+        "product": "Denzer Guzman Sun Foil Holiday Angels",
+        "product_id": "ebay_928fc1f264",
+        "count": "1"
+      },
+      {
+        "product": "Diamante Foil",
+        "product_id": "ebay_a45d6824f0",
+        "count": "18"
+      },
+      {
+        "product": "Diamond Kings",
+        "product_id": "ebay_087af277f5",
+        "count": "1"
+      },
+      {
+        "product": "Diamond Marvels",
+        "product_id": "ebay_f6b8d2dd7d",
+        "count": "17"
+      },
+      {
+        "product": "Dirt Dynamos",
+        "product_id": "ebay_1dd59fcb88",
+        "count": "1"
+      },
+      {
+        "product": "DK Metcalf",
+        "product_id": "ebay_367e5e2819",
+        "count": "1"
+      },
+      {
+        "product": "Dodgers Duo",
+        "product_id": "ebay_d3164d1cf7",
+        "count": "1"
+      },
+      {
+        "product": "Dominic Canzone",
+        "product_id": "ebay_de4bc5d947",
+        "count": "1"
+      },
+      {
+        "product": "Donruss",
+        "product_id": "ebay_3c04cc6901",
+        "count": "241"
+      },
+      {
+        "product": "Donruss Baseball",
+        "product_id": "ebay_30f4cff4b9",
+        "count": "46"
+      },
+      {
+        "product": "Donruss Baseball Unleashed",
+        "product_id": "ebay_e9f96f1016",
+        "count": "1"
+      },
+      {
+        "product": "Donruss Base Set",
+        "product_id": "ebay_c04fc04a66",
+        "count": "1"
+      },
+      {
+        "product": "Donruss Bomb Squad",
+        "product_id": "ebay_496cd01cbf",
+        "count": "2"
+      },
+      {
+        "product": "Donruss Chase",
+        "product_id": "ebay_0182f69155",
+        "count": "1"
+      },
+      {
+        "product": "Donruss Clearly Rated Prospects",
+        "product_id": "ebay_60f1f8ebd0",
+        "count": "1"
+      },
+      {
+        "product": "Donruss Crunch Time",
+        "product_id": "ebay_82c5dce7b4",
+        "count": "2"
+      },
+      {
+        "product": "Donruss Diamond Kings",
+        "product_id": "ebay_bf79922d71",
+        "count": "1"
+      },
+      {
+        "product": "Donruss Diamond Marvels",
+        "product_id": "ebay_942f9532e3",
+        "count": "6"
+      },
+      {
+        "product": "Donruss Elite",
+        "product_id": "ebay_1a9b960593",
+        "count": "49"
+      },
+      {
+        "product": "Donruss ELITE",
+        "product_id": "ebay_1a9b960593",
+        "count": "2"
+      },
+      {
+        "product": "Donruss Elite Baseball",
+        "product_id": "ebay_36708575ee",
+        "count": "4"
+      },
+      {
+        "product": "Donruss Elite Dominators",
+        "product_id": "ebay_439be2539d",
+        "count": "2"
+      },
+      {
+        "product": "Donruss Elite Full Throttle",
+        "product_id": "ebay_046f419e4b",
+        "count": "2"
+      },
+      {
+        "product": "Donruss Elite Prospects",
+        "product_id": "ebay_30bbb4fdea",
+        "count": "2"
+      },
+      {
+        "product": "Donruss Elite Series",
+        "product_id": "ebay_8aed2293e8",
+        "count": "2"
+      },
+      {
+        "product": "Donruss Elite Spellbound",
+        "product_id": "ebay_f9f4394b25",
+        "count": "1"
+      },
+      {
+        "product": "Donruss Jersey Kings",
+        "product_id": "ebay_61eb215548",
+        "count": "1"
+      },
+      {
+        "product": "Donruss Liberty",
+        "product_id": "ebay_13b4a3ab9e",
+        "count": "1"
+      },
+      {
+        "product": "Donruss Next Day Autographs",
+        "product_id": "ebay_58a2f63a00",
+        "count": "1"
+      },
+      {
+        "product": "Donruss Optic",
+        "product_id": "ebay_201ac71ecd",
+        "count": "40"
+      },
+      {
+        "product": "Donruss Optic Pandora Prizm Signatures",
+        "product_id": "ebay_08d240cfa4",
+        "count": "1"
+      },
+      {
+        "product": "Donruss Optic Rated Prospects",
+        "product_id": "ebay_e32a6216d4",
+        "count": "2"
+      },
+      {
+        "product": "Donruss-Optic Rated Prospects",
+        "product_id": "ebay_b3188aedb8",
+        "count": "1"
+      },
+      {
+        "product": "Donruss Prizm",
+        "product_id": "ebay_0f012a8cb4",
+        "count": "1"
+      },
+      {
+        "product": "Donruss Prospect Jersey Kings",
+        "product_id": "ebay_3b413b834a",
+        "count": "2"
+      },
+      {
+        "product": "Donruss Rated Prospect Optic",
+        "product_id": "ebay_259c1c96da",
+        "count": "1"
+      },
+      {
+        "product": "Donruss Rated Prospect Prizm",
+        "product_id": "ebay_ab8d9e6316",
+        "count": "1"
+      },
+      {
+        "product": "Donruss Rated Prospects",
+        "product_id": "ebay_9bc3b98927",
+        "count": "5"
+      },
+      {
+        "product": "Donruss Red & Blue",
+        "product_id": "ebay_66a309c114",
+        "count": "1"
+      },
+      {
+        "product": "Donruss ROBINSON",
+        "product_id": "ebay_88911e045e",
+        "count": "1"
+      },
+      {
+        "product": "Donruss Signature Series",
+        "product_id": "ebay_a7fca38e27",
+        "count": "3"
+      },
+      {
+        "product": "Donruss Slade Caldwell",
+        "product_id": "ebay_49c2d9caf3",
+        "count": "1"
+      },
+      {
+        "product": "Donruss - Unleashed",
+        "product_id": "ebay_e58b9558d7",
+        "count": "2"
+      },
+      {
+        "product": "Donruss Unleashed",
+        "product_id": "ebay_d47594e0f7",
+        "count": "1"
+      },
+      {
+        "product": "Donruss WNBA",
+        "product_id": "ebay_1360300357",
+        "count": "1"
+      },
+      {
+        "product": "Draft Sapphire",
+        "product_id": "ebay_ec9416443a",
+        "count": "1"
+      },
+      {
+        "product": "Drew Sommers Rookie",
+        "product_id": "ebay_e0c28e87da",
+        "count": "1"
+      },
+      {
+        "product": "Dynamic Duals",
+        "product_id": "ebay_7675026507",
+        "count": "10"
+      },
+      {
+        "product": "Early",
+        "product_id": "ebay_414de70449",
+        "count": "1"
+      },
+      {
+        "product": "EDWARD FLORENTINO",
+        "product_id": "ebay_32cf9f02cb",
+        "count": "1"
+      },
+      {
+        "product": "Electric Sluggers",
+        "product_id": "ebay_d712fc3823",
+        "count": "33"
+      },
+      {
+        "product": "Electric Sluggers Mega Box",
+        "product_id": "ebay_924a4c03b0",
+        "count": "1"
+      },
+      {
+        "product": "Electrum",
+        "product_id": "ebay_fec91e611d",
+        "count": "6"
+      },
+      {
+        "product": "Electrum Avenue",
+        "product_id": "ebay_84426e065e",
+        "count": "2"
+      },
+      {
+        "product": "Electrum Intermetallic",
+        "product_id": "ebay_c0b47f7268",
+        "count": "1"
+      },
+      {
+        "product": "Electrum Prismatic",
+        "product_id": "ebay_b15d75dbe2",
+        "count": "1"
+      },
+      {
+        "product": "Elite",
+        "product_id": "ebay_cb911dfa9a",
+        "count": "110"
+      },
+      {
+        "product": "ELITE",
+        "product_id": "ebay_cb911dfa9a",
+        "count": "1"
+      },
+      {
+        "product": "Elite 2026 Prospects",
+        "product_id": "ebay_ba1b088e48",
+        "count": "2"
+      },
+      {
+        "product": "Elite Aspirations",
+        "product_id": "ebay_68a1c81b8a",
+        "count": "1"
+      },
+      {
+        "product": "Elite Baseball",
+        "product_id": "ebay_f5486692e0",
+        "count": "11"
+      },
+      {
+        "product": "Elite Baseball Spellbound",
+        "product_id": "ebay_b97528ae97",
+        "count": "1"
+      },
+      {
+        "product": "Elite Blue Purpler",
+        "product_id": "ebay_6f267632c1",
+        "count": "1"
+      },
+      {
+        "product": "Elite Career Best",
+        "product_id": "ebay_dcdc357a3f",
+        "count": "1"
+      },
+      {
+        "product": "Elite Dominators",
+        "product_id": "ebay_998bc202a5",
+        "count": "2"
+      },
+      {
+        "product": "Elite Extra Edition",
+        "product_id": "ebay_354d98ac1d",
+        "count": "1"
+      },
+      {
+        "product": "Elite Green Circles",
+        "product_id": "ebay_29a56bf074",
+        "count": "1"
+      },
+      {
+        "product": "Elite Green Disco",
+        "product_id": "ebay_4b8b902b7e",
+        "count": "4"
+      },
+      {
+        "product": "Elite Green Stars",
+        "product_id": "ebay_b12bb115a4",
+        "count": "2"
+      },
+      {
+        "product": "Elite Passing The Torch",
+        "product_id": "ebay_be1e9c8c08",
+        "count": "1"
+      },
+      {
+        "product": "Elite Prospect",
+        "product_id": "ebay_5946ffe6e1",
+        "count": "1"
+      },
+      {
+        "product": "Elite Prospects",
+        "product_id": "ebay_144d06694f",
+        "count": "3"
+      },
+      {
+        "product": "Elite Prospect Yearbook",
+        "product_id": "ebay_52bd5a3aa3",
+        "count": "1"
+      },
+      {
+        "product": "Elite Razzle Dazzle",
+        "product_id": "ebay_99172c7914",
+        "count": "2"
+      },
+      {
+        "product": "Elite Series",
+        "product_id": "ebay_b7bfb266eb",
+        "count": "8"
+      },
+      {
+        "product": "Elite Spellbound",
+        "product_id": "ebay_1c4bcacc7f",
+        "count": "8"
+      },
+      {
+        "product": "Eli Willets Base Chrome",
+        "product_id": "ebay_1a9cd59102",
+        "count": "1"
+      },
+      {
+        "product": "Emanate Attributes",
+        "product_id": "ebay_3827ea3d9c",
+        "count": "1"
+      },
+      {
+        "product": "Emanate Under Wraps",
+        "product_id": "ebay_2bce669c72",
+        "count": "1"
+      },
+      {
+        "product": "EMEKA EGBUKA",
+        "product_id": "ebay_520a3d566f",
+        "count": "1"
+      },
+      {
+        "product": "Enyervert Perez 1st Chrome",
+        "product_id": "ebay_9f3c582207",
+        "count": "1"
+      },
+      {
+        "product": "EPOCH",
+        "product_id": "ebay_b4c948e941",
+        "count": "1"
+      },
+      {
+        "product": "ETHAN DORCHIES",
+        "product_id": "ebay_29c329ad7c",
+        "count": "1"
+      },
+      {
+        "product": "Fanatics Exclusive",
+        "product_id": "ebay_253f82b4be",
+        "count": "1"
+      },
+      {
+        "product": "Fanatics Fest",
+        "product_id": "ebay_27aa9a6e87",
+        "count": "2"
+      },
+      {
+        "product": "Fanatics Fest NYC Exclusive",
+        "product_id": "ebay_223fc24144",
+        "count": "1"
+      },
+      {
+        "product": "FERNANDO TATIS JR 91CB-12 Rainbow REFRACTOR",
+        "product_id": "ebay_69436fd220",
+        "count": "1"
+      },
+      {
+        "product": "Final Draft",
+        "product_id": "ebay_4336890885",
+        "count": "1"
+      },
+      {
+        "product": "Finest",
+        "product_id": "ebay_2ccbffa627",
+        "count": "839"
+      },
+      {
+        "product": "Finest Arrivals",
+        "product_id": "ebay_9ee368b05c",
+        "count": "16"
+      },
+      {
+        "product": "Finest Auto",
+        "product_id": "ebay_ccd89fff5a",
+        "count": "1"
+      },
+      {
+        "product": "Finest Autograph",
+        "product_id": "ebay_bbf9084182",
+        "count": "1"
+      },
+      {
+        "product": "Finest Autographs",
+        "product_id": "ebay_4424e7ddf7",
+        "count": "2"
+      },
+      {
+        "product": "Finest Base",
+        "product_id": "ebay_d59095b58d",
+        "count": "1"
+      },
+      {
+        "product": "Finest Baseball",
+        "product_id": "ebay_d887a32942",
+        "count": "3"
+      },
+      {
+        "product": "Finest Chrome",
+        "product_id": "ebay_ab58401bc5",
+        "count": "1"
+      },
+      {
+        "product": "Finest Finest Forces",
+        "product_id": "ebay_28a3702b89",
+        "count": "1"
+      },
+      {
+        "product": "Finest Finest Timelines",
+        "product_id": "ebay_3c17166930",
+        "count": "1"
+      },
+      {
+        "product": "Finest Forces",
+        "product_id": "ebay_d6b95c2195",
+        "count": "1"
+      },
+      {
+        "product": "Finest Gold Mini-Diamond",
+        "product_id": "ebay_4110b54515",
+        "count": "1"
+      },
+      {
+        "product": "Finest Gustographs",
+        "product_id": "ebay_9c13fd0184",
+        "count": "1"
+      },
+      {
+        "product": "Finest Mega Auto",
+        "product_id": "ebay_cc03c37828",
+        "count": "1"
+      },
+      {
+        "product": "Finest Mega Mini-Diamond",
+        "product_id": "ebay_0bb9a329f4",
+        "count": "1"
+      },
+      {
+        "product": "Finest Mini",
+        "product_id": "ebay_7574c86d3b",
+        "count": "1"
+      },
+      {
+        "product": "Finest Mini Diamond",
+        "product_id": "ebay_8af16cbde2",
+        "count": "2"
+      },
+      {
+        "product": "Finest Mini-Diamond",
+        "product_id": "ebay_0537fc39ba",
+        "count": "2"
+      },
+      {
+        "product": "Finest MLB Timelines",
+        "product_id": "ebay_267aa3ce66",
+        "count": "1"
+      },
+      {
+        "product": "Finest MLB Worlds Finest",
+        "product_id": "ebay_7c7ffb2cd3",
+        "count": "1"
+      },
+      {
+        "product": "Finest Moments",
+        "product_id": "ebay_e136a7aebc",
+        "count": "2"
+      },
+      {
+        "product": "Finest Pink",
+        "product_id": "ebay_2f463e6968",
+        "count": "1"
+      },
+      {
+        "product": "Finest Team Finest",
+        "product_id": "ebay_64cac43bdb",
+        "count": "6"
+      },
+      {
+        "product": "Finest Timelines",
+        "product_id": "ebay_61e65595d7",
+        "count": "5"
+      },
+      {
+        "product": "Finest World's Finest",
+        "product_id": "ebay_f8799fa988",
+        "count": "3"
+      },
+      {
+        "product": "Finest X-Fractor",
+        "product_id": "ebay_2d051907be",
+        "count": "5"
+      },
+      {
+        "product": "Fireworks",
+        "product_id": "ebay_1a913974c4",
+        "count": "1"
+      },
+      {
+        "product": "First Pitch",
+        "product_id": "ebay_1ec3ceaac1",
+        "count": "3"
+      },
+      {
+        "product": "Flagship",
+        "product_id": "ebay_a9debcebd6",
+        "count": "24"
+      },
+      {
+        "product": "Flagship",
+        "product_id": "ing_a9debcebd6",
+        "count": "2"
+      },
+      {
+        "product": "Flagship Chrome",
+        "product_id": "ebay_c7625825d8",
+        "count": "3"
+      },
+      {
+        "product": "Flagship Collection",
+        "product_id": "ebay_c3c57d5de8",
+        "count": "19"
+      },
+      {
+        "product": "Flagship Collection Chrome",
+        "product_id": "ebay_fca5e08e4f",
+        "count": "1"
+      },
+      {
+        "product": "Flagship Collection Oversized Box Toppers",
+        "product_id": "ebay_b0950ef0ea",
+        "count": "1"
+      },
+      {
+        "product": "Flagship Collection Series 2",
+        "product_id": "ebay_6a2c1f31b7",
+        "count": "1"
+      },
+      {
+        "product": "Flagship Football",
+        "product_id": "ebay_5bc1db7a29",
+        "count": "1"
+      },
+      {
+        "product": "Flagship HR",
+        "product_id": "ebay_ebfb82ed33",
+        "count": "1"
+      },
+      {
+        "product": "Flagship Real One Autographs",
+        "product_id": "ebay_40d921da3c",
+        "count": "1"
+      },
+      {
+        "product": "Flagship Series 2",
+        "product_id": "ebay_175fb63c39",
+        "count": "20"
+      },
+      {
+        "product": "Franklin Arias Under the Radar",
+        "product_id": "ebay_4de84310fc",
+        "count": "1"
+      },
+      {
+        "product": "Fuchsia",
+        "product_id": "ebay_840c6b0fb9",
+        "count": "1"
+      },
+      {
+        "product": "Fukuoka SoftBank Hawks",
+        "product_id": "ebay_c8c5f8c707",
+        "count": "1"
+      },
+      {
+        "product": "Full Throttle",
+        "product_id": "ebay_22c811f771",
+        "count": "1"
+      },
+      {
+        "product": "Future Stars",
+        "product_id": "ebay_97768b27fb",
+        "count": "2"
+      },
+      {
+        "product": "Gabriel Rodriguez Chrome Wave Refractor",
+        "product_id": "ebay_4d99787845",
+        "count": "1"
+      },
+      {
+        "product": "Gage Jump",
+        "product_id": "ebay_75eebb98f5",
+        "count": "2"
+      },
+      {
+        "product": "GAGE JUMP",
+        "product_id": "ebay_75eebb98f5",
+        "count": "1"
+      },
+      {
+        "product": "Gage Stanifer 1st Chrome",
+        "product_id": "ebay_098ff37499",
+        "count": "1"
+      },
+      {
+        "product": "Gameday Drip",
+        "product_id": "ebay_9b18021a9c",
+        "count": "2"
+      },
+      {
+        "product": "Game Day Drip",
+        "product_id": "ebay_5b3d68e538",
+        "count": "1"
+      },
+      {
+        "product": "Garrett Crochet",
+        "product_id": "ebay_36b3beb464",
+        "count": "1"
+      },
+      {
+        "product": "GARRETT WILSON",
+        "product_id": "ebay_cd7d7ab6be",
+        "count": "1"
+      },
+      {
+        "product": "George Brett Optic Silver Shock Prizm",
+        "product_id": "ebay_d7765b0c1a",
+        "count": "1"
+      },
+      {
+        "product": "George Lombard Jr.",
+        "product_id": "ebay_ddb8ada082",
+        "count": "1"
+      },
+      {
+        "product": "GEORGE LOMBARD JR Chrome Burgundy Mojo Refractor",
+        "product_id": "ebay_ce09478232",
+        "count": "1"
+      },
+      {
+        "product": "George Lombard Jr. Prospects",
+        "product_id": "ebay_1b5813c58a",
+        "count": "1"
+      },
+      {
+        "product": "George Springer /250 Purple Score",
+        "product_id": "ebay_485b1715f9",
+        "count": "1"
+      },
+      {
+        "product": "Gleyber Torres 75th Anniversary",
+        "product_id": "ebay_f86462c7e1",
+        "count": "1"
+      },
+      {
+        "product": "Global Reach",
+        "product_id": "ebay_ccb776958d",
+        "count": "1"
+      },
+      {
+        "product": "Glory",
+        "product_id": "ebay_9b39b441c4",
+        "count": "1"
+      },
+      {
+        "product": "Glove Work",
+        "product_id": "ebay_3610efbe9e",
+        "count": "36"
+      },
+      {
+        "product": "Gold",
+        "product_id": "ebay_6fa1711fa0",
+        "count": "6"
+      },
+      {
+        "product": "Gold/50",
+        "product_id": "ing_80f1d31b34",
+        "count": "1"
+      },
+      {
+        "product": "Gold Border",
+        "product_id": "ebay_47b16c8bb5",
+        "count": "1"
+      },
+      {
+        "product": "Gold Border Pattern Parallel",
+        "product_id": "ebay_a528868785",
+        "count": "1"
+      },
+      {
+        "product": "Gold Diamante Foil",
+        "product_id": "ebay_ee69229bb5",
+        "count": "1"
+      },
+      {
+        "product": "Golden Grading",
+        "product_id": "ebay_c647238c3f",
+        "count": "1"
+      },
+      {
+        "product": "Golden Mirror Variations",
+        "product_id": "ebay_99003874bb",
+        "count": "1"
+      },
+      {
+        "product": "Gold Foil RC",
+        "product_id": "ebay_b28dc501be",
+        "count": "1"
+      },
+      {
+        "product": "Gold Parallel",
+        "product_id": "ebay_3eabc40576",
+        "count": "4"
+      },
+      {
+        "product": "Goodwin Champions",
+        "product_id": "ebay_5af2aafdc8",
+        "count": "4"
+      },
+      {
+        "product": "Gravity",
+        "product_id": "ebay_8af503dc9c",
+        "count": "10"
+      },
+      {
+        "product": "Gravity Athlete",
+        "product_id": "ebay_782495b02d",
+        "count": "1"
+      },
+      {
+        "product": "Gravity Baseball",
+        "product_id": "ebay_a152e159ea",
+        "count": "1"
+      },
+      {
+        "product": "Grayson Rodriguez Holo Foil",
+        "product_id": "ebay_cbd20a795e",
+        "count": "1"
+      },
+      {
+        "product": "Greatest Hits",
+        "product_id": "ebay_b8ae001931",
+        "count": "8"
+      },
+      {
+        "product": "Green",
+        "product_id": "ebay_e646144939",
+        "count": "1"
+      },
+      {
+        "product": "Green Diamante Foil",
+        "product_id": "ebay_d74e444837",
+        "count": "1"
+      },
+      {
+        "product": "Green Geometric Ref",
+        "product_id": "ebay_b76a1707f0",
+        "count": "1"
+      },
+      {
+        "product": "Green Grass Chrome",
+        "product_id": "ebay_a385ebf326",
+        "count": "1"
+      },
+      {
+        "product": "Green Leaf Holiday",
+        "product_id": "ebay_f5173cffbc",
+        "count": "1"
+      },
+      {
+        "product": "Guardians City Connect",
+        "product_id": "ebay_72a99f85a8",
+        "count": "1"
+      },
+      {
+        "product": "Gunnar Henderson Big Ticket Players",
+        "product_id": "ebay_69a83904c3",
+        "count": "1"
+      },
+      {
+        "product": "Hagen Smith /299 Gold Foil Rated Prospect",
+        "product_id": "ebay_cc385338fe",
+        "count": "1"
+      },
+      {
+        "product": "Harry Ford Baseball Stars",
+        "product_id": "ebay_23a1d2f81c",
+        "count": "1"
+      },
+      {
+        "product": "Harry Ford Rookie",
+        "product_id": "ebay_36f7cde28e",
+        "count": "1"
+      },
+      {
+        "product": "Heavy Lumber",
+        "product_id": "ebay_4354560266",
+        "count": "1"
+      },
+      {
+        "product": "Henry Lalane BCP-104",
+        "product_id": "ebay_2985d0f30d",
+        "count": "1"
+      },
+      {
+        "product": "Heritage",
+        "product_id": "ebay_68980cd315",
+        "count": "308"
+      },
+      {
+        "product": "Heritage",
+        "product_id": "ing_68980cd315",
+        "count": "1"
+      },
+      {
+        "product": "Heritage Alternate",
+        "product_id": "ebay_0beec92260",
+        "count": "2"
+      },
+      {
+        "product": "Heritage Baseball",
+        "product_id": "ebay_09e8a258a8",
+        "count": "3"
+      },
+      {
+        "product": "Heritage Chrome",
+        "product_id": "ebay_7305012517",
+        "count": "61"
+      },
+      {
+        "product": "Heritage Clubhouse Collection",
+        "product_id": "ebay_ad6d368599",
+        "count": "1"
+      },
+      {
+        "product": "Heritage - Clubhouse Collection Relics",
+        "product_id": "ebay_aa63c519cc",
+        "count": "5"
+      },
+      {
+        "product": "Heritage Clubhouse Collection Relics",
+        "product_id": "ebay_0eadcc4fc9",
+        "count": "1"
+      },
+      {
+        "product": "Heritage Dark Gray",
+        "product_id": "ebay_b978e176d4",
+        "count": "1"
+      },
+      {
+        "product": "Heritage Dark Gray Border",
+        "product_id": "ebay_d793631268",
+        "count": "4"
+      },
+      {
+        "product": "Heritage Deckle Edge",
+        "product_id": "ebay_732569de08",
+        "count": "3"
+      },
+      {
+        "product": "Heritage Deckle Edge",
+        "product_id": "ing_732569de08",
+        "count": "3"
+      },
+      {
+        "product": "Heritage Junior",
+        "product_id": "ebay_6bbb7670ce",
+        "count": "2"
+      },
+      {
+        "product": "Heritage League Leaders",
+        "product_id": "ebay_e35ada3c1b",
+        "count": "1"
+      },
+      {
+        "product": "Heritage Raw Power",
+        "product_id": "ebay_8c2f9ddf35",
+        "count": "2"
+      },
+      {
+        "product": "Heritage Real One Autographs",
+        "product_id": "ebay_a193184c5f",
+        "count": "1"
+      },
+      {
+        "product": "Heritage Record Breakers",
+        "product_id": "ebay_f287615e3c",
+        "count": "3"
+      },
+      {
+        "product": "Heritage Red",
+        "product_id": "ebay_d871339238",
+        "count": "1"
+      },
+      {
+        "product": "Heritage Red Border",
+        "product_id": "ebay_385f664b07",
+        "count": "2"
+      },
+      {
+        "product": "Heritage Relic",
+        "product_id": "ebay_104d44ad92",
+        "count": "1"
+      },
+      {
+        "product": "Heritage The Enterprise",
+        "product_id": "ebay_3a6d9d5186",
+        "count": "3"
+      },
+      {
+        "product": "Heritage Turn Back the Clock",
+        "product_id": "ebay_4415f90654",
+        "count": "1"
+      },
+      {
+        "product": "Holiday",
+        "product_id": "ebay_2965099213",
+        "count": "16"
+      },
+      {
+        "product": "Holiday Orange Sun Foil",
+        "product_id": "ebay_3d147f0763",
+        "count": "1"
+      },
+      {
+        "product": "Holo Foil",
+        "product_id": "ebay_ba70567c7e",
+        "count": "1"
+      },
+      {
+        "product": "Holo Foil",
+        "product_id": "ing_ba70567c7e",
+        "count": "1"
+      },
+      {
+        "product": "HOLO Liberty",
+        "product_id": "ebay_132c908bb5",
+        "count": "1"
+      },
+      {
+        "product": "Holo Purple",
+        "product_id": "ebay_48722b13d0",
+        "count": "1"
+      },
+      {
+        "product": "Hunter Barco Rookie",
+        "product_id": "ebay_a5a6d4d139",
+        "count": "1"
+      },
+      {
+        "product": "Ian Seymour",
+        "product_id": "ebay_8cf8130c0d",
+        "count": "1"
+      },
+      {
+        "product": "IMAGE VARIATION Chrome",
+        "product_id": "ebay_78acf5ba47",
+        "count": "1"
+      },
+      {
+        "product": "Immaculate",
+        "product_id": "ebay_cfce84691e",
+        "count": "6"
+      },
+      {
+        "product": "Immaculate Collection",
+        "product_id": "ebay_1cd9b24715",
+        "count": "6"
+      },
+      {
+        "product": "Immaculate Collection Signatures",
+        "product_id": "ebay_e65ec4abb6",
+        "count": "1"
+      },
+      {
+        "product": "Immaculate Draft Selection",
+        "product_id": "ebay_fbc882f81a",
+        "count": "1"
+      },
+      {
+        "product": "Immaculate Lumber",
+        "product_id": "ebay_ac124de55e",
+        "count": "1"
+      },
+      {
+        "product": "In-Person",
+        "product_id": "ebay_05f56934be",
+        "count": "1"
+      },
+      {
+        "product": "Insert",
+        "product_id": "ebay_bdcee44a08",
+        "count": "1"
+      },
+      {
+        "product": "Instant Impressions",
+        "product_id": "ebay_4e6c687533",
+        "count": "1"
+      },
+      {
+        "product": "In The Name",
+        "product_id": "ebay_6702cf4f92",
+        "count": "1"
+      },
+      {
+        "product": "In The Sun",
+        "product_id": "ebay_6987008bf2",
+        "count": "1"
+      },
+      {
+        "product": "Intl Mexico",
+        "product_id": "ebay_8d2ef94ba0",
+        "count": "1"
+      },
+      {
+        "product": "It Came to the League",
+        "product_id": "ebay_f55f372f14",
+        "count": "2"
+      },
+      {
+        "product": "Jac Caglianone",
+        "product_id": "ebay_a3a1083e29",
+        "count": "1"
+      },
+      {
+        "product": "Jac Caglianone Ken Griffey Profiles",
+        "product_id": "ebay_f82182cc8b",
+        "count": "1"
+      },
+      {
+        "product": "Jace Jung",
+        "product_id": "ebay_06a6a62aaf",
+        "count": "1"
+      },
+      {
+        "product": "Jackson Chourio Team Color Border Variation",
+        "product_id": "ebay_689d94349e",
+        "count": "1"
+      },
+      {
+        "product": "Jack Winkler RC Gold Foil",
+        "product_id": "ebay_c974376c02",
+        "count": "1"
+      },
+      {
+        "product": "Jacob Misiorowski Chrome Mojo Refractors",
+        "product_id": "ebay_004291fbdc",
+        "count": "1"
+      },
+      {
+        "product": "Jacob Misiorowski #MF-20 RC Mojo Mega Futures Insert SSP Brewers",
+        "product_id": "ebay_5b3a57bea3",
+        "count": "1"
+      },
+      {
+        "product": "Jacob Misiorowski Rookie Card",
+        "product_id": "ebay_1fdb85ffde",
+        "count": "1"
+      },
+      {
+        "product": "James Quinn-Irons",
+        "product_id": "ebay_bec008dfcb",
+        "count": "1"
+      },
+      {
+        "product": "Japan Koi",
+        "product_id": "ebay_08ece4c45e",
+        "count": "1"
+      },
+      {
+        "product": "Japans Finest",
+        "product_id": "ebay_8d71ca784f",
+        "count": "1"
+      },
+      {
+        "product": "Jazz Chisholm Jr. Holiday Sun",
+        "product_id": "ebay_fe080ec7cf",
+        "count": "1"
+      },
+      {
+        "product": "Jean Carlos Sio 1st Chrome Prospect",
+        "product_id": "ebay_59dc5a36f6",
+        "count": "1"
+      },
+      {
+        "product": "Jean Carlos Sio Prospects",
+        "product_id": "ebay_2888acdc84",
+        "count": "1"
+      },
+      {
+        "product": "Jersey Fusion",
+        "product_id": "ebay_babd376606",
+        "count": "1"
+      },
+      {
+        "product": "Jersey Kings",
+        "product_id": "ebay_22fc4858ea",
+        "count": "7"
+      },
+      {
+        "product": "Jersey Patch",
+        "product_id": "ebay_fcd00b18ee",
+        "count": "1"
+      },
+      {
+        "product": "Jhostynxon Garcia Base",
+        "product_id": "ebay_e04f0cf7c3",
+        "count": "1"
+      },
+      {
+        "product": "Jhostynxon Garcia Chrome Mojo",
+        "product_id": "ebay_6066533c88",
+        "count": "1"
+      },
+      {
+        "product": "Jhostynxon Garcia Rookie Red RC Logo",
+        "product_id": "ebay_9894ca8872",
+        "count": "1"
+      },
+      {
+        "product": "Jimothy The Raccoon Baseball",
+        "product_id": "ebay_7a4803479a",
+        "count": "1"
+      },
+      {
+        "product": "JJ Wetherholt Chrome Prospects",
+        "product_id": "ebay_fda806afde",
+        "count": "1"
+      },
+      {
+        "product": "JoJo Parker Chrome Prospects",
+        "product_id": "ebay_56d1b2260c",
+        "count": "1"
+      },
+      {
+        "product": "Jordan Beck",
+        "product_id": "ebay_9edee76fac",
+        "count": "1"
+      },
+      {
+        "product": "JOSH ALLEN",
+        "product_id": "ebay_d7906adf77",
+        "count": "1"
+      },
+      {
+        "product": "Josh Knoth Prospects",
+        "product_id": "ebay_dce6f1fd68",
+        "count": "1"
+      },
+      {
+        "product": "Josh Simpson Rookie",
+        "product_id": "ebay_60e01dc0bb",
+        "count": "1"
+      },
+      {
+        "product": "J.T. Ginn",
+        "product_id": "ebay_9b0eabca18",
+        "count": "1"
+      },
+      {
+        "product": "J.T. REALMUTO",
+        "product_id": "ebay_390cf55adc",
+        "count": "1"
+      },
+      {
+        "product": "Juan Burgos",
+        "product_id": "ebay_650ce0e5cf",
+        "count": "1"
+      },
+      {
+        "product": "Junior",
+        "product_id": "ebay_1e5efb43cd",
+        "count": "1"
+      },
+      {
+        "product": "Junior Caminero Diamante Foil",
+        "product_id": "ebay_8f75ecc1dd",
+        "count": "1"
+      },
+      {
+        "product": "Justin Gonzales Chrome Prospects",
+        "product_id": "ebay_309f503314",
+        "count": "1"
+      },
+      {
+        "product": "Keaton Anthony 1st Chrome Prospect",
+        "product_id": "ebay_a314420026",
+        "count": "1"
+      },
+      {
+        "product": "Kevin McGonigle Chrome Mojo Refractor",
+        "product_id": "ebay_f251d0cf8b",
+        "count": "1"
+      },
+      {
+        "product": "Kevin McGonigle Orange Prismatic",
+        "product_id": "ebay_8561d89392",
+        "count": "1"
+      },
+      {
+        "product": "Keyner Martinez",
+        "product_id": "ebay_c07c74df69",
+        "count": "1"
+      },
+      {
+        "product": "King Tuck",
+        "product_id": "ebay_385143e875",
+        "count": "1"
+      },
+      {
+        "product": "Kiseki",
+        "product_id": "ebay_a6aa269600",
+        "count": "23"
+      },
+      {
+        "product": "Kiseki Memorabilia",
+        "product_id": "ebay_d8eaa76672",
+        "count": "5"
+      },
+      {
+        "product": "Konner Griffin",
+        "product_id": "ebay_d37a1a7439",
+        "count": "1"
+      },
+      {
+        "product": "KYSON WITHERSPOON Pre-Production Proof",
+        "product_id": "ebay_75db36dd1f",
+        "count": "1"
+      },
+      {
+        "product": "Laser",
+        "product_id": "ebay_542e53181d",
+        "count": "3"
+      },
+      {
+        "product": "Leaf",
+        "product_id": "ing_3c8e42b636",
+        "count": "1"
+      },
+      {
+        "product": "Leaf Metal Draft",
+        "product_id": "ebay_94efd5def8",
+        "count": "1"
+      },
+      {
+        "product": "Leaf Vivid",
+        "product_id": "ebay_a93183ebae",
+        "count": "1"
+      },
+      {
+        "product": "League Leaders",
+        "product_id": "ebay_77bcc31950",
+        "count": "1"
+      },
+      {
+        "product": "Liberty",
+        "product_id": "ebay_0e4590f4e0",
+        "count": "17"
+      },
+      {
+        "product": "Liberty Angels",
+        "product_id": "ebay_b74ed2f1d4",
+        "count": "1"
+      },
+      {
+        "product": "Liberty Brewers",
+        "product_id": "ebay_ce824828cc",
+        "count": "2"
+      },
+      {
+        "product": "Liberty Diamondbacks",
+        "product_id": "ebay_63abc23828",
+        "count": "2"
+      },
+      {
+        "product": "Liberty Emoji",
+        "product_id": "ebay_8ed65dbedd",
+        "count": "1"
+      },
+      {
+        "product": "Liberty Mariners",
+        "product_id": "ebay_351ccb7ae2",
+        "count": "1"
+      },
+      {
+        "product": "Liberty Orioles",
+        "product_id": "ebay_0996445978",
+        "count": "1"
+      },
+      {
+        "product": "Liberty Rays",
+        "product_id": "ebay_3492cd9b24",
+        "count": "1"
+      },
+      {
+        "product": "Liberty Tigers",
+        "product_id": "ebay_5a39369064",
+        "count": "1"
+      },
+      {
+        "product": "Liberty Yankees",
+        "product_id": "ebay_e5d76c8c29",
+        "count": "1"
+      },
+      {
+        "product": "Living Set",
+        "product_id": "ebay_3bdb390f98",
+        "count": "1"
+      },
+      {
+        "product": "Logofractor Edition",
+        "product_id": "ebay_e4d9002744",
+        "count": "1"
+      },
+      {
+        "product": "Luis Arraez Relic & Auto",
+        "product_id": "ebay_3bbbdbd873",
+        "count": "1"
+      },
+      {
+        "product": "Luis Curvelo Rookie",
+        "product_id": "ebay_3df135dca3",
+        "count": "1"
+      },
+      {
+        "product": "Luis Morales Gold",
+        "product_id": "ebay_2490f04b45",
+        "count": "1"
+      },
+      {
+        "product": "Luis Severino",
+        "product_id": "ebay_70be4f1f21",
+        "count": "1"
+      },
+      {
+        "product": "Lumin",
+        "product_id": "ebay_96273aa443",
+        "count": "1"
+      },
+      {
+        "product": "Major League Baseball",
+        "product_id": "ebay_daa4c350f4",
+        "count": "1"
+      },
+      {
+        "product": "Major League Material",
+        "product_id": "ebay_2e1518e50d",
+        "count": "2"
+      },
+      {
+        "product": "Major League Material Relic",
+        "product_id": "ebay_52cd75c2b0",
+        "count": "2"
+      },
+      {
+        "product": "Major League Materials",
+        "product_id": "ebay_6aef355f16",
+        "count": "2"
+      },
+      {
+        "product": "Mannie Fresh First Pitch",
+        "product_id": "ebay_efcc492f75",
+        "count": "1"
+      },
+      {
+        "product": "Manny Ramirez Golden Mirror Legend Image Variation",
+        "product_id": "ebay_c4b1c8ed3d",
+        "count": "1"
+      },
+      {
+        "product": "Marconi German",
+        "product_id": "ebay_cb0608cd2d",
+        "count": "1"
+      },
+      {
+        "product": "Marcus Semien 75th Anniversary",
+        "product_id": "ebay_52f2a00043",
+        "count": "1"
+      },
+      {
+        "product": "Masataka Yoshida",
+        "product_id": "ebay_27fe9feab6",
+        "count": "1"
+      },
+      {
+        "product": "Matt Klein Chrome",
+        "product_id": "ebay_5c0706f1d3",
+        "count": "1"
+      },
+      {
+        "product": "Mega",
+        "product_id": "ebay_3f9bb7914c",
+        "count": "5"
+      },
+      {
+        "product": "Mega Box",
+        "product_id": "ebay_e22bb9064f",
+        "count": "15"
+      },
+      {
+        "product": "MegaBox",
+        "product_id": "ebay_66b492ff1d",
+        "count": "1"
+      },
+      {
+        "product": "Mega Chrome",
+        "product_id": "ebay_832904b3c1",
+        "count": "3"
+      },
+      {
+        "product": "Mega Chrome Mojo",
+        "product_id": "ebay_cd7f94d3fa",
+        "count": "1"
+      },
+      {
+        "product": "Mega Dauri Fernandez",
+        "product_id": "ebay_26c40d23c0",
+        "count": "1"
+      },
+      {
+        "product": "Mega Futures",
+        "product_id": "ebay_59dfbd898a",
+        "count": "2"
+      },
+      {
+        "product": "Mega Mojo",
+        "product_id": "ebay_e8bc63b17e",
+        "count": "1"
+      },
+      {
+        "product": "MEM",
+        "product_id": "ebay_d43913ed10",
+        "count": "1"
+      },
+      {
+        "product": "Metal",
+        "product_id": "ebay_a950794859",
+        "count": "20"
+      },
+      {
+        "product": "Metal 1/1 Pre Production Proof",
+        "product_id": "ebay_69b595f20e",
+        "count": "2"
+      },
+      {
+        "product": "Metal 1989 Pro Set Mini",
+        "product_id": "ebay_d31eadd8c6",
+        "count": "1"
+      },
+      {
+        "product": "Metal Armed & Dangerous",
+        "product_id": "ebay_caa0ffa0ae",
+        "count": "1"
+      },
+      {
+        "product": "Metal Baseball",
+        "product_id": "ebay_79a87b833e",
+        "count": "3"
+      },
+      {
+        "product": "Metal Cardinals",
+        "product_id": "ebay_c7639d6259",
+        "count": "1"
+      },
+      {
+        "product": "Metal Draft",
+        "product_id": "ebay_76ac4d1ffd",
+        "count": "11"
+      },
+      {
+        "product": "Metal Draft Edition",
+        "product_id": "ebay_7dd09ee354",
+        "count": "1"
+      },
+      {
+        "product": "Metal Draft Edition Pure Prospects",
+        "product_id": "ebay_9718c7c06d",
+        "count": "1"
+      },
+      {
+        "product": "Metal EXPLODE ONTO THE SCENE",
+        "product_id": "ebay_3d6fc0ede5",
+        "count": "1"
+      },
+      {
+        "product": "Metal Hit",
+        "product_id": "ebay_01582100c2",
+        "count": "1"
+      },
+      {
+        "product": "Metal Independence Day",
+        "product_id": "ebay_da89c6f1d0",
+        "count": "5"
+      },
+      {
+        "product": "Metal Independence Day Gold Crystals",
+        "product_id": "ebay_71dec0cb4b",
+        "count": "1"
+      },
+      {
+        "product": "Metal Jackson Flora",
+        "product_id": "ebay_c200b0562e",
+        "count": "1"
+      },
+      {
+        "product": "Metal - Ken Griffey Jr Hit Kings",
+        "product_id": "ebay_77342d0791",
+        "count": "1"
+      },
+      {
+        "product": "Metal Next in Line",
+        "product_id": "ebay_d580b7de3e",
+        "count": "1"
+      },
+      {
+        "product": "Metal Stainless",
+        "product_id": "ebay_da6cde7f1a",
+        "count": "2"
+      },
+      {
+        "product": "Metal Steele",
+        "product_id": "ebay_f4ed5aacaa",
+        "count": "1"
+      },
+      {
+        "product": "Metal Talent",
+        "product_id": "ebay_0b17e8f2c0",
+        "count": "3"
+      },
+      {
+        "product": "Metal Vintage",
+        "product_id": "ebay_329367aeb2",
+        "count": "1"
+      },
+      {
+        "product": "Metal X",
+        "product_id": "ebay_e7ace13bea",
+        "count": "1"
+      },
+      {
+        "product": "Miguel Cabrera 1991 Chrome Silver Pack Mojo Refractor",
+        "product_id": "ebay_8761e45be3",
+        "count": "1"
+      },
+      {
+        "product": "Mike Trout Electric Sluggers",
+        "product_id": "ebay_0d9368862c",
+        "count": "1"
+      },
+      {
+        "product": "MLB",
+        "product_id": "ebay_0e8f751c0b",
+        "count": "4"
+      },
+      {
+        "product": "MLB Series 1",
+        "product_id": "ebay_5330901934",
+        "count": "1"
+      },
+      {
+        "product": "MLB Series 2",
+        "product_id": "ebay_1d8ff48639",
+        "count": "3"
+      },
+      {
+        "product": "MLB Topps Chrome",
+        "product_id": "ebay_03f128f0b5",
+        "count": "2"
+      },
+      {
+        "product": "MLB Topps NOW",
+        "product_id": "ebay_b08f24a4d3",
+        "count": "1"
+      },
+      {
+        "product": "Mojo",
+        "product_id": "ebay_cccecc14b2",
+        "count": "3"
+      },
+      {
+        "product": "Mookie Betts Blue",
+        "product_id": "ebay_595643e9a7",
+        "count": "1"
+      },
+      {
+        "product": "Munetaka Murakami",
+        "product_id": "ebay_38a083b076",
+        "count": "1"
+      },
+      {
+        "product": "Munetaka Murakami RC",
+        "product_id": "ebay_f424160aee",
+        "count": "1"
+      },
+      {
+        "product": "Munetaka Murakami RC Rainbow Foil",
+        "product_id": "ebay_f19f14c39f",
+        "count": "1"
+      },
+      {
+        "product": "Munetaka Murakami RC Rookie",
+        "product_id": "ebay_1045db1b02",
+        "count": "1"
+      },
+      {
+        "product": "Munetaka Murakami RC Titans of the Game",
+        "product_id": "ebay_9ae5d1ebfc",
+        "count": "1"
+      },
+      {
+        "product": "National",
+        "product_id": "ebay_9a830e2d58",
+        "count": "5"
+      },
+      {
+        "product": "National Convention NSCC",
+        "product_id": "ebay_d1b312926d",
+        "count": "1"
+      },
+      {
+        "product": "National League Leaders",
+        "product_id": "ebay_fdfb7cbd42",
+        "count": "2"
+      },
+      {
+        "product": "National NSCC Chrome",
+        "product_id": "ebay_4771db91a7",
+        "count": "1"
+      },
+      {
+        "product": "NBA Hoops 2026",
+        "product_id": "ebay_8cbff912b1",
+        "count": "1"
+      },
+      {
+        "product": "New York Yankees",
+        "product_id": "ebay_2ff7557eaf",
+        "count": "1"
+      },
+      {
+        "product": "Next Day Autographs",
+        "product_id": "ebay_529784291c",
+        "count": "2"
+      },
+      {
+        "product": "Nick Kurtz Chrome Mojo Electric Sluggers",
+        "product_id": "ebay_751f9b070a",
+        "count": "1"
+      },
+      {
+        "product": "Nick Kurtz Power Chords",
+        "product_id": "ebay_c2e2cb918e",
+        "count": "1"
+      },
+      {
+        "product": "NL Home Run Leaders",
+        "product_id": "ebay_8cec27a6aa",
+        "count": "1"
+      },
+      {
+        "product": "Nolan Ryan Arts & Graphs",
+        "product_id": "ebay_40b1a53278",
+        "count": "2"
+      },
+      {
+        "product": "Nolan Ryan Home Field Advantage",
+        "product_id": "ebay_1d040428ee",
+        "count": "1"
+      },
+      {
+        "product": "Now",
+        "product_id": "ebay_14edd5b886",
+        "count": "43"
+      },
+      {
+        "product": "NOW",
+        "product_id": "ebay_14edd5b886",
+        "count": "22"
+      },
+      {
+        "product": "NOW®",
+        "product_id": "ebay_7b31a289b0",
+        "count": "2"
+      },
+      {
+        "product": "Now All Star Game",
+        "product_id": "ebay_3a2ccf6fb9",
+        "count": "2"
+      },
+      {
+        "product": "Now All-Star Game",
+        "product_id": "ebay_ce25b90a4f",
+        "count": "1"
+      },
+      {
+        "product": "NOW All Star Game",
+        "product_id": "ebay_3a2ccf6fb9",
+        "count": "1"
+      },
+      {
+        "product": "Now Baseball",
+        "product_id": "ebay_5fa69b1f3f",
+        "count": "2"
+      },
+      {
+        "product": "Now MLB",
+        "product_id": "ebay_01a1f8b5ab",
+        "count": "4"
+      },
+      {
+        "product": "Now Road to Opening Day",
+        "product_id": "ebay_8b69c09e1d",
+        "count": "43"
+      },
+      {
+        "product": "Now Road To Opening Day",
+        "product_id": "ebay_8b69c09e1d",
+        "count": "2"
+      },
+      {
+        "product": "NPB Baseball",
+        "product_id": "ebay_06760ce19a",
+        "count": "1"
+      },
+      {
+        "product": "NSCC",
+        "product_id": "ebay_738dca2ff2",
+        "count": "1"
+      },
+      {
+        "product": "ONE PIECE OP17",
+        "product_id": "ebay_0c3ea7f62e",
+        "count": "1"
+      },
+      {
+        "product": "Onit Athlete",
+        "product_id": "ebay_b2dd6a7d46",
+        "count": "1"
+      },
+      {
+        "product": "Onit Georgia Tech Baseball Signatures Auto",
+        "product_id": "ebay_0b661b133e",
+        "count": "2"
+      },
+      {
+        "product": "Onit Gravity",
+        "product_id": "ebay_e1a93728ba",
+        "count": "1"
+      },
+      {
+        "product": "Onyx",
+        "product_id": "ebay_30de031481",
+        "count": "1"
+      },
+      {
+        "product": "Opening Day",
+        "product_id": "ebay_073ee0e663",
+        "count": "3"
+      },
+      {
+        "product": "OPITC",
+        "product_id": "ebay_5e93dcb8ec",
+        "count": "1"
+      },
+      {
+        "product": "Optic",
+        "product_id": "ebay_c21d33e327",
+        "count": "52"
+      },
+      {
+        "product": "Optic Athletics",
+        "product_id": "ebay_6272746d51",
+        "count": "1"
+      },
+      {
+        "product": "Optic Black Circles",
+        "product_id": "ebay_b292bc1259",
+        "count": "1"
+      },
+      {
+        "product": "Optic Black Pandora",
+        "product_id": "ebay_785ab9c91b",
+        "count": "1"
+      },
+      {
+        "product": "Optic Black Velocity",
+        "product_id": "ebay_b9299a17ff",
+        "count": "1"
+      },
+      {
+        "product": "Optic Black Velocity Prizm",
+        "product_id": "ebay_a65c746bbf",
+        "count": "1"
+      },
+      {
+        "product": "Optic Blue Velocity",
+        "product_id": "ebay_2bc4c43260",
+        "count": "14"
+      },
+      {
+        "product": "Optic Blue Velocity Prizm",
+        "product_id": "ebay_6d738318b9",
+        "count": "1"
+      },
+      {
+        "product": "Optic Circles",
+        "product_id": "ebay_3c9567fd1e",
+        "count": "8"
+      },
+      {
+        "product": "Optic Electricity",
+        "product_id": "ebay_f2bca2f645",
+        "count": "1"
+      },
+      {
+        "product": "Optic Green Velocity",
+        "product_id": "ebay_d815589c2f",
+        "count": "1"
+      },
+      {
+        "product": "Optic Holo",
+        "product_id": "ebay_e4912167e4",
+        "count": "4"
+      },
+      {
+        "product": "Optichrome",
+        "product_id": "ing_3a6ca92ff8",
+        "count": "1"
+      },
+      {
+        "product": "Optic Orange Velocity",
+        "product_id": "ebay_f7f638cca9",
+        "count": "4"
+      },
+      {
+        "product": "Optic Rated Prospect",
+        "product_id": "ebay_85753595ba",
+        "count": "2"
+      },
+      {
+        "product": "Optic Rated Prospects",
+        "product_id": "ebay_abb62400dd",
+        "count": "2"
+      },
+      {
+        "product": "Optic Royals",
+        "product_id": "ebay_1729d49a59",
+        "count": "1"
+      },
+      {
+        "product": "Optic Shock",
+        "product_id": "ebay_148514f31d",
+        "count": "2"
+      },
+      {
+        "product": "Orange Foil",
+        "product_id": "ebay_f2b187ad30",
+        "count": "1"
+      },
+      {
+        "product": "Orange Pattern",
+        "product_id": "ebay_930c6d0d33",
+        "count": "1"
+      },
+      {
+        "product": "Orange Shimmer",
+        "product_id": "ebay_cf530315d3",
+        "count": "1"
+      },
+      {
+        "product": "Oversized",
+        "product_id": "ebay_d7a2d51892",
+        "count": "1"
+      },
+      {
+        "product": "Owen Caissie Rookie Logo Pattern Border",
+        "product_id": "ebay_3fee3fca13",
+        "count": "1"
+      },
+      {
+        "product": "OZZIE SMITH Pre-Production Proof",
+        "product_id": "ebay_c3201b54f7",
+        "count": "1"
+      },
+      {
+        "product": "Panini Donruss",
+        "product_id": "ebay_ba5579e0f4",
+        "count": "1"
+      },
+      {
+        "product": "Panini Prizm Baseball",
+        "product_id": "ebay_ed6f9f172d",
+        "count": "2"
+      },
+      {
+        "product": "Paper",
+        "product_id": "ebay_6202b7e9ff",
+        "count": "2"
+      },
+      {
+        "product": "Paper Prospect",
+        "product_id": "ebay_354bff4606",
+        "count": "1"
+      },
+      {
+        "product": "Paper Prospect Retail",
+        "product_id": "ebay_9272dfec0f",
+        "count": "1"
+      },
+      {
+        "product": "Paper Prospect Retail Autographs",
+        "product_id": "ebay_9706cdaeca",
+        "count": "1"
+      },
+      {
+        "product": "Paper Prospects",
+        "product_id": "ebay_318b6fa890",
+        "count": "1"
+      },
+      {
+        "product": "Paper RC",
+        "product_id": "ebay_2ed7e783d8",
+        "count": "1"
+      },
+      {
+        "product": "Patriot Edition",
+        "product_id": "ebay_c3f74d2b46",
+        "count": "1"
+      },
+      {
+        "product": "Paul Goldschmidt",
+        "product_id": "ebay_8cd35e6ec8",
+        "count": "1"
+      },
+      {
+        "product": "Paul Skenes Rockets",
+        "product_id": "ebay_f2d26ef344",
+        "count": "1"
+      },
+      {
+        "product": "Payton Tolle Boston Red Sox 1991 Relic Rookie",
+        "product_id": "ebay_9fb2285237",
+        "count": "1"
+      },
+      {
+        "product": "Payton Tolle Optic",
+        "product_id": "ebay_115a56bbfd",
+        "count": "1"
+      },
+      {
+        "product": "Payton Tolle Optic Circles",
+        "product_id": "ebay_c18deac789",
+        "count": "1"
+      },
+      {
+        "product": "Perennial All Stars",
+        "product_id": "ebay_94a2f6b36d",
+        "count": "3"
+      },
+      {
+        "product": "Perspective",
+        "product_id": "ebay_fe8286d633",
+        "count": "1"
+      },
+      {
+        "product": "Perspectives",
+        "product_id": "ebay_6fa28ea1fa",
+        "count": "1"
+      },
+      {
+        "product": "Pete Crow-Armstrong #91AS-46 Pink Crackle Foil All-Star Cubs",
+        "product_id": "ebay_e44531c69d",
+        "count": "1"
+      },
+      {
+        "product": "Pie Traynor",
+        "product_id": "ebay_82d300097f",
+        "count": "1"
+      },
+      {
+        "product": "Pie Traynor Optic Circles",
+        "product_id": "ebay_d927c56ca8",
+        "count": "1"
+      },
+      {
+        "product": "Platinum Series 2",
+        "product_id": "ebay_b28b47d257",
+        "count": "1"
+      },
+      {
+        "product": "Player Edition Jersey Fusion",
+        "product_id": "ebay_7a93ac54b2",
+        "count": "1"
+      },
+      {
+        "product": "Pop Century",
+        "product_id": "ebay_7c1e778b55",
+        "count": "1"
+      },
+      {
+        "product": "Power Chords",
+        "product_id": "ebay_a2bdaecbe3",
+        "count": "7"
+      },
+      {
+        "product": "Premier League",
+        "product_id": "ebay_97821cda88",
+        "count": "1"
+      },
+      {
+        "product": "Presidential Collection",
+        "product_id": "ebay_170cd2e04e",
+        "count": "1"
+      },
+      {
+        "product": "Prism",
+        "product_id": "ebay_f4c196459c",
+        "count": "38"
+      },
+      {
+        "product": "Prism Baseball",
+        "product_id": "ebay_ce45b5547b",
+        "count": "1"
+      },
+      {
+        "product": "Prism Refractors",
+        "product_id": "ebay_5afe2b7c43",
+        "count": "7"
+      },
+      {
+        "product": "Pristine",
+        "product_id": "ebay_3e1c027ff8",
+        "count": "123"
+      },
+      {
+        "product": "Pristine Brady House",
+        "product_id": "ebay_72f59c8f04",
+        "count": "1"
+      },
+      {
+        "product": "Pristine Chase",
+        "product_id": "ebay_612f213eea",
+        "count": "1"
+      },
+      {
+        "product": "Pristine Green",
+        "product_id": "ebay_6518afb519",
+        "count": "1"
+      },
+      {
+        "product": "Pristine Italics",
+        "product_id": "ebay_d0991a1b3b",
+        "count": "1"
+      },
+      {
+        "product": "Pristine Paint The Corners",
+        "product_id": "ebay_9ed1bf6b94",
+        "count": "29"
+      },
+      {
+        "product": "Pristine Pristine Pieces",
+        "product_id": "ebay_86e20685f4",
+        "count": "1"
+      },
+      {
+        "product": "Pristine Wilderness",
+        "product_id": "ebay_1d4027f87b",
+        "count": "6"
+      },
+      {
+        "product": "Pristine Wilderness Insert",
+        "product_id": "ebay_048d8b190b",
+        "count": "1"
+      },
+      {
+        "product": "Prize",
+        "product_id": "ebay_9b530b879e",
+        "count": "1"
+      },
+      {
+        "product": "Prizm",
+        "product_id": "ebay_f6d73ded41",
+        "count": "174"
+      },
+      {
+        "product": "Prizm Baseball",
+        "product_id": "ebay_4540c170de",
+        "count": "19"
+      },
+      {
+        "product": "Prizm Fireworks",
+        "product_id": "ebay_cfaafc0938",
+        "count": "1"
+      },
+      {
+        "product": "Prizm Purple",
+        "product_id": "ebay_ca61357fc4",
+        "count": "1"
+      },
+      {
+        "product": "Prizm Red",
+        "product_id": "ebay_4b54b92ff3",
+        "count": "1"
+      },
+      {
+        "product": "Prizm Ruby Red Wave",
+        "product_id": "ebay_ad17662521",
+        "count": "1"
+      },
+      {
+        "product": "Prizm Silver",
+        "product_id": "ebay_f0e5ab6d51",
+        "count": "1"
+      },
+      {
+        "product": "Prizm Throwback",
+        "product_id": "ebay_95889c1347",
+        "count": "1"
+      },
+      {
+        "product": "Profiles",
+        "product_id": "ebay_e9af34c42c",
+        "count": "5"
+      },
+      {
+        "product": "Profiles by Ken Griffey Jr.",
+        "product_id": "ebay_e259237d0c",
+        "count": "1"
+      },
+      {
+        "product": "Pro Set",
+        "product_id": "ebay_b3ea5c9748",
+        "count": "9"
+      },
+      {
+        "product": "Pro Set Metal",
+        "product_id": "ebay_7c44e754de",
+        "count": "3"
+      },
+      {
+        "product": "Pro Set Prospects",
+        "product_id": "ebay_7bef425d11",
+        "count": "1"
+      },
+      {
+        "product": "Prospect Jersey Kings",
+        "product_id": "ebay_3358abf93f",
+        "count": "3"
+      },
+      {
+        "product": "Prospects",
+        "product_id": "ebay_6681192eba",
+        "count": "35"
+      },
+      {
+        "product": "PROSPECTS",
+        "product_id": "ebay_6681192eba",
+        "count": "1"
+      },
+      {
+        "product": "Prospects Anime",
+        "product_id": "ebay_7b2c6d5238",
+        "count": "1"
+      },
+      {
+        "product": "Prospects Paper",
+        "product_id": "ebay_94f74f9924",
+        "count": "1"
+      },
+      {
+        "product": "Pulse Lumin",
+        "product_id": "ebay_11bf5d7c4d",
+        "count": "1"
+      },
+      {
+        "product": "Purple",
+        "product_id": "ebay_93d775ce70",
+        "count": "1"
+      },
+      {
+        "product": "Purple Halo",
+        "product_id": "ebay_a36e3c33a3",
+        "count": "1"
+      },
+      {
+        "product": "Purple Lazer",
+        "product_id": "ebay_565a8ec3a8",
+        "count": "1"
+      },
+      {
+        "product": "Rainbow Foil",
+        "product_id": "ebay_913c686542",
+        "count": "6"
+      },
+      {
+        "product": "Rated Prospect",
+        "product_id": "ebay_fd8ab3582d",
+        "count": "6"
+      },
+      {
+        "product": "Rated Prospects",
+        "product_id": "ebay_c01af711db",
+        "count": "1"
+      },
+      {
+        "product": "Rated Prospects Optic",
+        "product_id": "ebay_d1b33b4614",
+        "count": "1"
+      },
+      {
+        "product": "Rated Prospect & Unleashed",
+        "product_id": "ebay_facd8b1484",
+        "count": "1"
+      },
+      {
+        "product": "Rated Rookie",
+        "product_id": "ebay_b88f0fb0dc",
+        "count": "2"
+      },
+      {
+        "product": "Rated Rookie Orange Velocity Prizm",
+        "product_id": "ebay_67e1e18e0a",
+        "count": "1"
+      },
+      {
+        "product": "Raywave",
+        "product_id": "ebay_0f437d567d",
+        "count": "1"
+      },
+      {
+        "product": "Ray Wave",
+        "product_id": "ebay_ed8c0e0ea4",
+        "count": "1"
+      },
+      {
+        "product": "RC",
+        "product_id": "ebay_437f302213",
+        "count": "2"
+      },
+      {
+        "product": "Ready and Action",
+        "product_id": "ebay_5e999366cf",
+        "count": "1"
+      },
+      {
+        "product": "Real One",
+        "product_id": "ebay_ca9cb11e01",
+        "count": "2"
+      },
+      {
+        "product": "Red",
+        "product_id": "ebay_b577ac90bd",
+        "count": "1"
+      },
+      {
+        "product": "Red & Green Laser",
+        "product_id": "ebay_e243a3e458",
+        "count": "1"
+      },
+      {
+        "product": "Refractors",
+        "product_id": "ebay_2c9c01bdfe",
+        "count": "2"
+      },
+      {
+        "product": "Relic Card",
+        "product_id": "ebay_9a996bfb6e",
+        "count": "1"
+      },
+      {
+        "product": "Resurgence",
+        "product_id": "ebay_b2edde1461",
+        "count": "5"
+      },
+      {
+        "product": "Rip Night",
+        "product_id": "ebay_4ddbcf05d0",
+        "count": "2"
+      },
+      {
+        "product": "Rip Night Exclusive",
+        "product_id": "ebay_e419b70dbd",
+        "count": "1"
+      },
+      {
+        "product": "Risen Sons",
+        "product_id": "ebay_87413f4aaf",
+        "count": "3"
+      },
+      {
+        "product": "Rocket Foil",
+        "product_id": "ebay_9d96bd3738",
+        "count": "1"
+      },
+      {
+        "product": "Rockets",
+        "product_id": "ebay_83f606bbff",
+        "count": "7"
+      },
+      {
+        "product": "Rockets Nationals",
+        "product_id": "ebay_d97e92d04e",
+        "count": "1"
+      },
+      {
+        "product": "Rockets RC",
+        "product_id": "ebay_c87fa228b6",
+        "count": "1"
+      },
+      {
+        "product": "Roman Anthony Bowman Sterling",
+        "product_id": "ebay_b2578df114",
+        "count": "1"
+      },
+      {
+        "product": "Roman Anthony Chrome",
+        "product_id": "ebay_53cbb42130",
+        "count": "1"
+      },
+      {
+        "product": "Roman Anthony Electric Sluggers Chrome",
+        "product_id": "ebay_1cee9fe21d",
+        "count": "1"
+      },
+      {
+        "product": "Roman Anthony Gold Trophy RC",
+        "product_id": "ebay_8757fee3f3",
+        "count": "1"
+      },
+      {
+        "product": "Roman Anthony Holiday Green Leaf",
+        "product_id": "ebay_292175328f",
+        "count": "1"
+      },
+      {
+        "product": "Roman Anthony RC Rookie",
+        "product_id": "ebay_b1ba7f84ae",
+        "count": "1"
+      },
+      {
+        "product": "Rookie",
+        "product_id": "ebay_e31fd88854",
+        "count": "1"
+      },
+      {
+        "product": "Rookie Card",
+        "product_id": "ebay_55e8d3e3fb",
+        "count": "4"
+      },
+      {
+        "product": "Rookie Edition",
+        "product_id": "ebay_a773e818eb",
+        "count": "1"
+      },
+      {
+        "product": "Ryan Waldschmidt Chrome Prospect",
+        "product_id": "ebay_a4fd5f55e2",
+        "count": "1"
+      },
+      {
+        "product": "S2",
+        "product_id": "ebay_15ea4f18ce",
+        "count": "3"
+      },
+      {
+        "product": "S2 Major League Material",
+        "product_id": "ebay_239837ccc9",
+        "count": "1"
+      },
+      {
+        "product": "Sal Stewart Rookie",
+        "product_id": "ebay_ccfa85cf36",
+        "count": "1"
+      },
+      {
+        "product": "Sal Stewart Vintage Stock",
+        "product_id": "ebay_1303e45d7c",
+        "count": "1"
+      },
+      {
+        "product": "Samuel Basallo 1991 35th Anniversary Chrome",
+        "product_id": "ebay_22282d8dd0",
+        "count": "1"
+      },
+      {
+        "product": "Samuel Basallo Baltimore Orioles Rookie Refractor",
+        "product_id": "ebay_df211f0013",
+        "count": "1"
+      },
+      {
+        "product": "Sandglitter",
+        "product_id": "ebay_4301f10a12",
+        "count": "14"
+      },
+      {
+        "product": "Sandglitter Foil",
+        "product_id": "ebay_6933905d2d",
+        "count": "1"
+      },
+      {
+        "product": "Sapphire",
+        "product_id": "ebay_2e1e4c5fb6",
+        "count": "4"
+      },
+      {
+        "product": "Sapphire Edition",
+        "product_id": "ebay_cbaa3ec7bc",
+        "count": "2"
+      },
+      {
+        "product": "Sato Teruaki",
+        "product_id": "ebay_9de3f3c51d",
+        "count": "1"
+      },
+      {
+        "product": "Sato Terumi",
+        "product_id": "ebay_a6e7587478",
+        "count": "2"
+      },
+      {
+        "product": "Savannah Bananas",
+        "product_id": "ebay_ff41f0e0d7",
+        "count": "2"
+      },
+      {
+        "product": "Sawyer Strosnider",
+        "product_id": "ebay_c12e813898",
+        "count": "1"
+      },
+      {
+        "product": "Scouts",
+        "product_id": "ebay_53dfb2fb26",
+        "count": "1"
+      },
+      {
+        "product": "Scouts Top 100",
+        "product_id": "ebay_bb9a17f3b9",
+        "count": "2"
+      },
+      {
+        "product": "Scouts' Top 100",
+        "product_id": "ebay_f16b664de3",
+        "count": "5"
+      },
+      {
+        "product": "Season in the Sun",
+        "product_id": "ebay_2528c4289f",
+        "count": "2"
+      },
+      {
+        "product": "Seasons In The Sun",
+        "product_id": "ebay_9d4840b5c3",
+        "count": "2"
+      },
+      {
+        "product": "Seaver King AUTOGRAPH",
+        "product_id": "ebay_71238136ee",
+        "count": "1"
+      },
+      {
+        "product": "Seibu Lions",
+        "product_id": "ebay_3eee74a6fd",
+        "count": "1"
+      },
+      {
+        "product": "Seiya Suzuki Team Border",
+        "product_id": "ebay_62becbd3a7",
+        "count": "1"
+      },
+      {
+        "product": "Select",
+        "product_id": "ebay_ed3c418ecd",
+        "count": "1"
+      },
+      {
+        "product": "Series",
+        "product_id": "ebay_70b91c3d7b",
+        "count": "1"
+      },
+      {
+        "product": "Series 1",
+        "product_id": "ebay_b726b2d40e",
+        "count": "556"
+      },
+      {
+        "product": "Series 1",
+        "product_id": "ing_b726b2d40e",
+        "count": "1"
+      },
+      {
+        "product": "Series-1",
+        "product_id": "ebay_eef6a17be6",
+        "count": "1"
+      },
+      {
+        "product": "Series1",
+        "product_id": "ebay_624199078d",
+        "count": "1"
+      },
+      {
+        "product": "Series 1/2",
+        "product_id": "ebay_49b84d26f9",
+        "count": "1"
+      },
+      {
+        "product": "Series 1 2025 Greatest Hits",
+        "product_id": "ebay_cdf202d767",
+        "count": "14"
+      },
+      {
+        "product": "Series 1 75th",
+        "product_id": "ebay_0ad6d7f8b1",
+        "count": "1"
+      },
+      {
+        "product": "Series 1 - 8-Bit Ballers",
+        "product_id": "ebay_88bbf5b60e",
+        "count": "1"
+      },
+      {
+        "product": "Series 1 Base",
+        "product_id": "ebay_962b7b736c",
+        "count": "3"
+      },
+      {
+        "product": "Series 1 Baseball",
+        "product_id": "ebay_27f144804d",
+        "count": "12"
+      },
+      {
+        "product": "Series 1 Baseball Base Set",
+        "product_id": "ebay_a6c36deaeb",
+        "count": "2"
+      },
+      {
+        "product": "Series 1 Baseball Stars",
+        "product_id": "ebay_0a60e82f0d",
+        "count": "1"
+      },
+      {
+        "product": "Series 1 Baseball Stars Autographs",
+        "product_id": "ebay_becad545da",
+        "count": "1"
+      },
+      {
+        "product": "Series 1 Base Set",
+        "product_id": "ebay_ed626c3b5e",
+        "count": "1"
+      },
+      {
+        "product": "Series 1 Big Ticket",
+        "product_id": "ebay_52fa6244de",
+        "count": "2"
+      },
+      {
+        "product": "Series 1 Big Ticket Players",
+        "product_id": "ebay_7c1cb9ebb4",
+        "count": "6"
+      },
+      {
+        "product": "Series 1 - Big Ticket Players",
+        "product_id": "ebay_4186b40929",
+        "count": "7"
+      },
+      {
+        "product": "Series 1 Camo",
+        "product_id": "ebay_be3a9788f4",
+        "count": "1"
+      },
+      {
+        "product": "Series 1 Celebration",
+        "product_id": "ebay_a45b30bfbe",
+        "count": "4"
+      },
+      {
+        "product": "Series 1 Celebration Confetti",
+        "product_id": "ebay_33e69799ea",
+        "count": "1"
+      },
+      {
+        "product": "Series 1 City Connect Swatch Collection",
+        "product_id": "ebay_4406157245",
+        "count": "1"
+      },
+      {
+        "product": "Series 1 Companion Cards",
+        "product_id": "ebay_6af97d7c22",
+        "count": "1"
+      },
+      {
+        "product": "Series 1 Confetti- New-Age Athletics",
+        "product_id": "ebay_59846ff14d",
+        "count": "1"
+      },
+      {
+        "product": "Series 1 Costco Flagship Collection",
+        "product_id": "ebay_660182e3f6",
+        "count": "1"
+      },
+      {
+        "product": "Series 1 - Costco Flagship Collection",
+        "product_id": "ebay_ccf40d3e6b",
+        "count": "1"
+      },
+      {
+        "product": "Series 1 Diamante Foil",
+        "product_id": "ebay_1794acb582",
+        "count": "5"
+      },
+      {
+        "product": "Series 1 Easter Tin",
+        "product_id": "ebay_a0a6ca87eb",
+        "count": "5"
+      },
+      {
+        "product": "Series 1 First Pitch",
+        "product_id": "ebay_01f78926e2",
+        "count": "1"
+      },
+      {
+        "product": "Series 1 Flagship Oversized",
+        "product_id": "ebay_b35c3cba16",
+        "count": "1"
+      },
+      {
+        "product": "Series 1 Future Stars",
+        "product_id": "ebay_8df855b426",
+        "count": "7"
+      },
+      {
+        "product": "Series 1 Future Stars Canvas",
+        "product_id": "ebay_7b02d2df12",
+        "count": "1"
+      },
+      {
+        "product": "Series 1 Gameday Drip",
+        "product_id": "ebay_5d641feb20",
+        "count": "4"
+      },
+      {
+        "product": "Series 1 Greatest Hits",
+        "product_id": "ebay_6f471dbba0",
+        "count": "3"
+      },
+      {
+        "product": "Series 1 Home Field Advantage",
+        "product_id": "ebay_46c1883a72",
+        "count": "1"
+      },
+      {
+        "product": "Series 1 It Takes Two",
+        "product_id": "ebay_064d3e0d45",
+        "count": "1"
+      },
+      {
+        "product": "Series 1 Japan",
+        "product_id": "ebay_9773f60ba6",
+        "count": "1"
+      },
+      {
+        "product": "Series 1 Japan Edition",
+        "product_id": "ebay_3b76596d0a",
+        "count": "2"
+      },
+      {
+        "product": "Series 1 Perennial All-Stars",
+        "product_id": "ebay_8c079d6c4b",
+        "count": "2"
+      },
+      {
+        "product": "Series 1 Profiles",
+        "product_id": "ebay_97b5bd95bb",
+        "count": "1"
+      },
+      {
+        "product": "Series 1 Silver Pack",
+        "product_id": "ebay_4f533fa81a",
+        "count": "1"
+      },
+      {
+        "product": "Series 1 Spring Training",
+        "product_id": "ebay_91d4c6f2de",
+        "count": "1"
+      },
+      {
+        "product": "Series 1 Stars of MLB",
+        "product_id": "ebay_5700960676",
+        "count": "9"
+      },
+      {
+        "product": "Series 1 Stars Of The MLB",
+        "product_id": "ebay_079ac5e9b3",
+        "count": "1"
+      },
+      {
+        "product": "Series 1 Style & Smiles",
+        "product_id": "ebay_75bb70a183",
+        "count": "1"
+      },
+      {
+        "product": "Series 1 Titans of the Game",
+        "product_id": "ebay_0c6f810450",
+        "count": "6"
+      },
+      {
+        "product": "Series 1 Titans Of The Game",
+        "product_id": "ebay_0c6f810450",
+        "count": "2"
+      },
+      {
+        "product": "Series 1 Titans of the Game Insert",
+        "product_id": "ebay_049ec5e73e",
+        "count": "1"
+      },
+      {
+        "product": "Series 1 Topps Profiles",
+        "product_id": "ebay_c7fcbbd07c",
+        "count": "1"
+      },
+      {
+        "product": "Series 2",
+        "product_id": "ebay_cfb884b851",
+        "count": "737"
+      },
+      {
+        "product": "Series 2 75th Anniversary",
+        "product_id": "ebay_981ffba916",
+        "count": "1"
+      },
+      {
+        "product": "Series 2 All-Star",
+        "product_id": "ebay_133d4e3e65",
+        "count": "2"
+      },
+      {
+        "product": "Series 2 All Star Game",
+        "product_id": "ebay_0a311eb16e",
+        "count": "2"
+      },
+      {
+        "product": "Series 2 All-Star Game",
+        "product_id": "ebay_cc6343e3fa",
+        "count": "1"
+      },
+      {
+        "product": "Series 2 All-Star Insert",
+        "product_id": "ebay_d2745ac5d5",
+        "count": "1"
+      },
+      {
+        "product": "Series 2 ASG",
+        "product_id": "ebay_1d4ad2f48f",
+        "count": "2"
+      },
+      {
+        "product": "Series 2 Auto",
+        "product_id": "ebay_59171ecc4a",
+        "count": "1"
+      },
+      {
+        "product": "Series 2 Base",
+        "product_id": "ebay_8cece207f4",
+        "count": "5"
+      },
+      {
+        "product": "Series 2 Baseball",
+        "product_id": "ebay_96918ac2f5",
+        "count": "20"
+      },
+      {
+        "product": "Series 2 Baseball Stars",
+        "product_id": "ebay_a3a81f4b3c",
+        "count": "2"
+      },
+      {
+        "product": "Series 2 Base Set",
+        "product_id": "ebay_f26303290d",
+        "count": "1"
+      },
+      {
+        "product": "Series 2 Black Sandglitter",
+        "product_id": "ebay_c1c780e8cb",
+        "count": "1"
+      },
+      {
+        "product": "Series 2 Canvas",
+        "product_id": "ebay_9fa3ed0ccf",
+        "count": "1"
+      },
+      {
+        "product": "Series 2 City Connect",
+        "product_id": "ebay_05832fe087",
+        "count": "1"
+      },
+      {
+        "product": "Series 2 Collection",
+        "product_id": "ebay_78f1396d21",
+        "count": "1"
+      },
+      {
+        "product": "Series 2 Crooked Numbers",
+        "product_id": "ebay_d1bfdacb47",
+        "count": "2"
+      },
+      {
+        "product": "Series 2 Diamante",
+        "product_id": "ebay_50ca6c37ab",
+        "count": "1"
+      },
+      {
+        "product": "Series 2 First Pitch",
+        "product_id": "ebay_5e1233d919",
+        "count": "1"
+      },
+      {
+        "product": "Series 2 Flagship",
+        "product_id": "ebay_3563bef06f",
+        "count": "7"
+      },
+      {
+        "product": "Series 2 Flagship Chrome",
+        "product_id": "ebay_5c1cc59836",
+        "count": "1"
+      },
+      {
+        "product": "Series 2 Flagship Collection",
+        "product_id": "ebay_d668ffa87e",
+        "count": "6"
+      },
+      {
+        "product": "Series 2 - Flagship Collection",
+        "product_id": "ebay_78cd680998",
+        "count": "3"
+      },
+      {
+        "product": "Series 2 Future Stars",
+        "product_id": "ebay_c9d7793769",
+        "count": "2"
+      },
+      {
+        "product": "Series 2 Future Stars Insert Parallels",
+        "product_id": "ebay_81681f9038",
+        "count": "1"
+      },
+      {
+        "product": "Series 2 Glove Work",
+        "product_id": "ebay_d244def102",
+        "count": "2"
+      },
+      {
+        "product": "Series 2 Highlight Reels",
+        "product_id": "ebay_c4b7d45c65",
+        "count": "1"
+      },
+      {
+        "product": "Series 2 - Highlight Reels",
+        "product_id": "ebay_3696ce485c",
+        "count": "1"
+      },
+      {
+        "product": "Series 2 Holiday Foil",
+        "product_id": "ebay_40ebb08369",
+        "count": "1"
+      },
+      {
+        "product": "Series 2 Holiday Sun",
+        "product_id": "ebay_eff7089e7a",
+        "count": "1"
+      },
+      {
+        "product": "Series 2 Logo Relic",
+        "product_id": "ebay_cf699489ac",
+        "count": "1"
+      },
+      {
+        "product": "Series 2 Major League Material",
+        "product_id": "ebay_8ca6a2169c",
+        "count": "2"
+      },
+      {
+        "product": "Series 2 MLB",
+        "product_id": "ebay_f76a93391d",
+        "count": "1"
+      },
+      {
+        "product": "Series 2 MLB Leaders",
+        "product_id": "ebay_f9a1bab66b",
+        "count": "2"
+      },
+      {
+        "product": "Series 2 Oversized",
+        "product_id": "ebay_bc724b588f",
+        "count": "1"
+      },
+      {
+        "product": "Series 2 Purple \"Shimmer\"",
+        "product_id": "ebay_89755d6b61",
+        "count": "1"
+      },
+      {
+        "product": "Series 2 Rainbow Foil",
+        "product_id": "ebay_d7b71db2be",
+        "count": "1"
+      },
+      {
+        "product": "Series 2 Retro Insert",
+        "product_id": "ebay_f366e9d739",
+        "count": "1"
+      },
+      {
+        "product": "Series 2 Risen Sons",
+        "product_id": "ebay_3e6ff33dda",
+        "count": "1"
+      },
+      {
+        "product": "Series 2 - Rounding the Bases Relics",
+        "product_id": "ebay_f05fbff80c",
+        "count": "1"
+      },
+      {
+        "product": "Series 2 Silver",
+        "product_id": "ebay_2d087a24f9",
+        "count": "1"
+      },
+      {
+        "product": "Series 2 Silver Holo Foil",
+        "product_id": "ebay_6c63ec32c1",
+        "count": "2"
+      },
+      {
+        "product": "Series 2 Silver Pack",
+        "product_id": "ebay_2c7e58e552",
+        "count": "3"
+      },
+      {
+        "product": "Series 2 Stars of MLB",
+        "product_id": "ebay_02bc603eea",
+        "count": "16"
+      },
+      {
+        "product": "Series 2 Stars Of MLB",
+        "product_id": "ebay_02bc603eea",
+        "count": "3"
+      },
+      {
+        "product": "Series 2 - Stars of MLB",
+        "product_id": "ebay_ded05cdc20",
+        "count": "1"
+      },
+      {
+        "product": "Series 2 Titans of the Game",
+        "product_id": "ebay_9372dc5e27",
+        "count": "10"
+      },
+      {
+        "product": "Series 2 Titans Of The Game",
+        "product_id": "ebay_9372dc5e27",
+        "count": "1"
+      },
+      {
+        "product": "Series 3",
+        "product_id": "ebay_83776cca19",
+        "count": "1"
+      },
+      {
+        "product": "Series 75th",
+        "product_id": "ebay_3f65743eea",
+        "count": "1"
+      },
+      {
+        "product": "Series one",
+        "product_id": "ebay_435482e8fd",
+        "count": "1"
+      },
+      {
+        "product": "Series One",
+        "product_id": "ebay_435482e8fd",
+        "count": "25"
+      },
+      {
+        "product": "Series One Holofoil",
+        "product_id": "ebay_a2656624d2",
+        "count": "1"
+      },
+      {
+        "product": "Series Two",
+        "product_id": "ebay_70413b12e3",
+        "count": "28"
+      },
+      {
+        "product": "Series Two First Pitch",
+        "product_id": "ebay_e2c6d60777",
+        "count": "1"
+      },
+      {
+        "product": "Series World Series Auto",
+        "product_id": "ebay_dd8fb8549f",
+        "count": "1"
+      },
+      {
+        "product": "Seth Lugo",
+        "product_id": "ebay_3db2ba0b1f",
+        "count": "1"
+      },
+      {
+        "product": "SHOHEI OHTANI",
+        "product_id": "ebay_dd7ec10b40",
+        "count": "1"
+      },
+      {
+        "product": "Shohei Ohtani #1 Titans Of The Game",
+        "product_id": "ebay_6d5031ba2f",
+        "count": "1"
+      },
+      {
+        "product": "Shohei Ohtani All-Star",
+        "product_id": "ebay_df815602e6",
+        "count": "1"
+      },
+      {
+        "product": "Shohei Ohtani Flagship",
+        "product_id": "ebay_ac87b20616",
+        "count": "1"
+      },
+      {
+        "product": "Shohei Ohtani Power Chords",
+        "product_id": "ebay_7e7bfd463f",
+        "count": "1"
+      },
+      {
+        "product": "Shohei Ohtani Series 1",
+        "product_id": "ebay_96f7618b22",
+        "count": "1"
+      },
+      {
+        "product": "Shohei Ohtani Stars of MLB",
+        "product_id": "ebay_4421a0c16f",
+        "count": "1"
+      },
+      {
+        "product": "Shohei Ohtani Titans of the Game",
+        "product_id": "ebay_c2b72a8df9",
+        "count": "2"
+      },
+      {
+        "product": "Signature Series",
+        "product_id": "ebay_87333c5dc9",
+        "count": "11"
+      },
+      {
+        "product": "Signature Souvenir",
+        "product_id": "ebay_fa4cb73f14",
+        "count": "1"
+      },
+      {
+        "product": "Silver",
+        "product_id": "ebay_35ef369252",
+        "count": "1"
+      },
+      {
+        "product": "Silver Crackle Foil",
+        "product_id": "ebay_3c493c6cc5",
+        "count": "2"
+      },
+      {
+        "product": "SILVER CRACKLE FOIL",
+        "product_id": "ebay_3c493c6cc5",
+        "count": "1"
+      },
+      {
+        "product": "Silver Diamante Foil",
+        "product_id": "ebay_40f1f5b545",
+        "count": "1"
+      },
+      {
+        "product": "Silver Pack",
+        "product_id": "ebay_32d416fe01",
+        "count": "3"
+      },
+      {
+        "product": "Sky Blue Border",
+        "product_id": "ebay_604a1a44f3",
+        "count": "1"
+      },
+      {
+        "product": "Slim Gem America",
+        "product_id": "ebay_b5a3fe19d3",
+        "count": "1"
+      },
+      {
+        "product": "SN",
+        "product_id": "ebay_70271c316a",
+        "count": "2"
+      },
+      {
+        "product": "Special Release",
+        "product_id": "ebay_f744cb3789",
+        "count": "1"
+      },
+      {
+        "product": "Speckle Auto",
+        "product_id": "ebay_adeb4c2c55",
+        "count": "1"
+      },
+      {
+        "product": "Spencer Steer 1991 Auto",
+        "product_id": "ebay_17c4f24d1c",
+        "count": "1"
+      },
+      {
+        "product": "Splat Starry Break",
+        "product_id": "ebay_012af57a7a",
+        "count": "1"
+      },
+      {
+        "product": "Splat Summer Baseball",
+        "product_id": "ebay_7041802c97",
+        "count": "1"
+      },
+      {
+        "product": "Splat Summer Spash",
+        "product_id": "ebay_d90f9a562a",
+        "count": "1"
+      },
+      {
+        "product": "Sports Heroes",
+        "product_id": "ebay_18e688dc03",
+        "count": "1"
+      },
+      {
+        "product": "Sports Illustrated for Kids",
+        "product_id": "ebay_829ec147ee",
+        "count": "1"
+      },
+      {
+        "product": "Spring Training",
+        "product_id": "ebay_d3f93f127a",
+        "count": "7"
+      },
+      {
+        "product": "Stars",
+        "product_id": "ebay_e76be56c5f",
+        "count": "1"
+      },
+      {
+        "product": "Stars and Stripes",
+        "product_id": "ebay_d3aa9ad321",
+        "count": "17"
+      },
+      {
+        "product": "Stars And Stripes",
+        "product_id": "ebay_d3aa9ad321",
+        "count": "1"
+      },
+      {
+        "product": "Stars and Stripes Prizm",
+        "product_id": "ebay_323e8dbd41",
+        "count": "1"
+      },
+      {
+        "product": "Stars MLB",
+        "product_id": "ebay_55b872274d",
+        "count": "2"
+      },
+      {
+        "product": "Stars of MLB",
+        "product_id": "ebay_98505d264e",
+        "count": "79"
+      },
+      {
+        "product": "Stars Of MLB",
+        "product_id": "ebay_98505d264e",
+        "count": "2"
+      },
+      {
+        "product": "Stars of the MLB",
+        "product_id": "ebay_8314460263",
+        "count": "3"
+      },
+      {
+        "product": "Stars & Stripes",
+        "product_id": "ebay_f2fc558011",
+        "count": "8"
+      },
+      {
+        "product": "Stars & Stripes Prizm",
+        "product_id": "ebay_93323752cc",
+        "count": "47"
+      },
+      {
+        "product": "Stars - Stripes Prizm",
+        "product_id": "ebay_e881b99b83",
+        "count": "7"
+      },
+      {
+        "product": "Stars & Stripes Prizm Fireworks",
+        "product_id": "ebay_8cb60671ab",
+        "count": "1"
+      },
+      {
+        "product": "Stars & Stripes USA",
+        "product_id": "ebay_df0c186de1",
+        "count": "1"
+      },
+      {
+        "product": "Stars & Stripes USA Materials",
+        "product_id": "ebay_114070cf81",
+        "count": "1"
+      },
+      {
+        "product": "Stars Titans",
+        "product_id": "ebay_3ca15b1df3",
+        "count": "1"
+      },
+      {
+        "product": "Status Explosion",
+        "product_id": "ebay_7c12ced608",
+        "count": "1"
+      },
+      {
+        "product": "Sterling",
+        "product_id": "ebay_56c8bcb076",
+        "count": "7"
+      },
+      {
+        "product": "Sterling Chrome",
+        "product_id": "ebay_99a933a45b",
+        "count": "2"
+      },
+      {
+        "product": "Sterling Mega Box",
+        "product_id": "ebay_38e3f0dd55",
+        "count": "2"
+      },
+      {
+        "product": "Swinging for the Stars",
+        "product_id": "ebay_9698ac7316",
+        "count": "1"
+      },
+      {
+        "product": "Tate Southisene Auto",
+        "product_id": "ebay_5f9159f9a1",
+        "count": "1"
+      },
+      {
+        "product": "TCU Baseball Black Series",
+        "product_id": "ebay_cf8c1ab6f0",
+        "count": "1"
+      },
+      {
+        "product": "Team Color Border",
+        "product_id": "ebay_4f105d8b6f",
+        "count": "1"
+      },
+      {
+        "product": "Team Color Border Variation",
+        "product_id": "ebay_b245724313",
+        "count": "1"
+      },
+      {
+        "product": "Team Finest",
+        "product_id": "ebay_1ba2f2de59",
+        "count": "4"
+      },
+      {
+        "product": "Team Logo Parallel",
+        "product_id": "ebay_6ffd7cec53",
+        "count": "1"
+      },
+      {
+        "product": "The National",
+        "product_id": "ebay_23bebfde20",
+        "count": "2"
+      },
+      {
+        "product": "The National NSCC",
+        "product_id": "ebay_df3fa8a7d7",
+        "count": "4"
+      },
+      {
+        "product": "The Summer of Glove",
+        "product_id": "ebay_f78516b3dc",
+        "count": "1"
+      },
+      {
+        "product": "Throwback Signatures",
+        "product_id": "ebay_c6f233c342",
+        "count": "2"
+      },
+      {
+        "product": "Tie-Dye Geometric",
+        "product_id": "ebay_caedf56e39",
+        "count": "1"
+      },
+      {
+        "product": "Tier 1",
+        "product_id": "ebay_e84402c4c8",
+        "count": "2"
+      },
+      {
+        "product": "Tier 1 Break Out",
+        "product_id": "ebay_3e62b9df12",
+        "count": "1"
+      },
+      {
+        "product": "Tier One",
+        "product_id": "ebay_b5da832c3e",
+        "count": "89"
+      },
+      {
+        "product": "TIER ONE",
+        "product_id": "ebay_b5da832c3e",
+        "count": "1"
+      },
+      {
+        "product": "Tier One Auto",
+        "product_id": "ebay_1e2b23bfea",
+        "count": "1"
+      },
+      {
+        "product": "Tier One Baseball",
+        "product_id": "ebay_5e19e80059",
+        "count": "1"
+      },
+      {
+        "product": "Tier One Base Set",
+        "product_id": "ebay_eec556cd2e",
+        "count": "1"
+      },
+      {
+        "product": "Tier One Break Out",
+        "product_id": "ebay_0c4850fe41",
+        "count": "3"
+      },
+      {
+        "product": "Tier One Connoisseurs",
+        "product_id": "ebay_22a759b211",
+        "count": "1"
+      },
+      {
+        "product": "Tier One Legend Relic",
+        "product_id": "ebay_01ad9a9216",
+        "count": "1"
+      },
+      {
+        "product": "Tier One Operators",
+        "product_id": "ebay_bb9526d947",
+        "count": "1"
+      },
+      {
+        "product": "Tier One Prime Performers",
+        "product_id": "ebay_09a5a628d7",
+        "count": "1"
+      },
+      {
+        "product": "Tier One Relic",
+        "product_id": "ebay_b94d0ca2bb",
+        "count": "6"
+      },
+      {
+        "product": "Tier One Talent",
+        "product_id": "ebay_49ed168f60",
+        "count": "2"
+      },
+      {
+        "product": "Timber Rattlers SGA",
+        "product_id": "ebay_82b51d9a07",
+        "count": "1"
+      },
+      {
+        "product": "Titans Game",
+        "product_id": "ebay_a0e0bf5fe2",
+        "count": "1"
+      },
+      {
+        "product": "Titans of the Game",
+        "product_id": "ebay_bf5f78cc8d",
+        "count": "68"
+      },
+      {
+        "product": "Titans Of The Game",
+        "product_id": "ebay_bf5f78cc8d",
+        "count": "3"
+      },
+      {
+        "product": "Tommy White Rated Prospects",
+        "product_id": "ebay_a6d0cd0547",
+        "count": "1"
+      },
+      {
+        "product": "Tony Gwynn Crooked Numbers",
+        "product_id": "ebay_0ae1c3c029",
+        "count": "1"
+      },
+      {
+        "product": "Tony Gwynn Platinum",
+        "product_id": "ebay_55601092a5",
+        "count": "1"
+      },
+      {
+        "product": "Tony Perez Optic Circles",
+        "product_id": "ebay_3bd8f7e5ce",
+        "count": "1"
+      },
+      {
+        "product": "Top 100",
+        "product_id": "ebay_1953242b0c",
+        "count": "2"
+      },
+      {
+        "product": "Topps",
+        "product_id": "ebay_666294998d",
+        "count": "394"
+      },
+      {
+        "product": "Topps",
+        "product_id": "ing_666294998d",
+        "count": "252"
+      },
+      {
+        "product": "Topps",
+        "product_id": "ing_7bf753d622",
+        "count": "1"
+      },
+      {
+        "product": "Topps 35th Anniv.",
+        "product_id": "ebay_ba1f7f706d",
+        "count": "1"
+      },
+      {
+        "product": "Topps 35th Anniversary",
+        "product_id": "ebay_00b6453867",
+        "count": "2"
+      },
+      {
+        "product": "Topps 35th Anniversary All-Stars",
+        "product_id": "ebay_4cbc32d242",
+        "count": "5"
+      },
+      {
+        "product": "Topps 75",
+        "product_id": "ebay_5822dbd4ae",
+        "count": "1"
+      },
+      {
+        "product": "Topps 75th Anniversary",
+        "product_id": "ing_20b22dee21",
+        "count": "1"
+      },
+      {
+        "product": "Topps '91",
+        "product_id": "ebay_57f1901737",
+        "count": "1"
+      },
+      {
+        "product": "Topps Baseball",
+        "product_id": "ebay_5f8fbdccc4",
+        "count": "5"
+      },
+      {
+        "product": "Topps Baseball 35th Anniversary Chrome",
+        "product_id": "ebay_946d2661a1",
+        "count": "1"
+      },
+      {
+        "product": "Topps Baseball Anniversary",
+        "product_id": "ebay_d2f940de74",
+        "count": "1"
+      },
+      {
+        "product": "Topps Baseball Series 1",
+        "product_id": "ing_68427da132",
+        "count": "1"
+      },
+      {
+        "product": "Topps Bowman Chrome",
+        "product_id": "ebay_2b722f765d",
+        "count": "1"
+      },
+      {
+        "product": "Topps Chrome",
+        "product_id": "ebay_34a2a395f2",
+        "count": "74"
+      },
+      {
+        "product": "Topps Chrome Baseball",
+        "product_id": "ebay_a881139f4b",
+        "count": "1"
+      },
+      {
+        "product": "Topps Chrome Big Ticket",
+        "product_id": "ebay_5d09c599e9",
+        "count": "1"
+      },
+      {
+        "product": "Topps Chrome Future Stars",
+        "product_id": "ebay_cd8e3163a9",
+        "count": "1"
+      },
+      {
+        "product": "Topps Chrome Highlight Reel",
+        "product_id": "ebay_7ed70cd6a1",
+        "count": "1"
+      },
+      {
+        "product": "Topps Chrome Perspectives",
+        "product_id": "ebay_eff6b3d5cc",
+        "count": "2"
+      },
+      {
+        "product": "Topps Chrome Sports Collectors",
+        "product_id": "ebay_bc4d6bc073",
+        "count": "1"
+      },
+      {
+        "product": "Topps Chrome Swinging For The Stars",
+        "product_id": "ebay_66eee24aae",
+        "count": "1"
+      },
+      {
+        "product": "Topps Collector Kit",
+        "product_id": "ebay_36337842f0",
+        "count": "1"
+      },
+      {
+        "product": "Topps Finest",
+        "product_id": "ebay_9d898bce91",
+        "count": "15"
+      },
+      {
+        "product": "Topps Heritage",
+        "product_id": "ebay_7699eb85ff",
+        "count": "2"
+      },
+      {
+        "product": "Topps Heritage",
+        "product_id": "ing_7699eb85ff",
+        "count": "40"
+      },
+      {
+        "product": "TOPPS LIVING",
+        "product_id": "ing_2776354ea6",
+        "count": "1"
+      },
+      {
+        "product": "Topps Now",
+        "product_id": "ebay_87fe0a00b6",
+        "count": "7"
+      },
+      {
+        "product": "Topps NOW",
+        "product_id": "ebay_87fe0a00b6",
+        "count": "1"
+      },
+      {
+        "product": "Topps Pristine",
+        "product_id": "ebay_961d758fc8",
+        "count": "1"
+      },
+      {
+        "product": "Topps Pristine Plated & Polished",
+        "product_id": "ebay_90e9e52fed",
+        "count": "1"
+      },
+      {
+        "product": "Topps Profiles",
+        "product_id": "ebay_1d2c34e0a8",
+        "count": "3"
+      },
+      {
+        "product": "Topps Rookie",
+        "product_id": "ebay_8090a7f79b",
+        "count": "1"
+      },
+      {
+        "product": "topps series 1",
+        "product_id": "ing_3b523a528f",
+        "count": "1"
+      },
+      {
+        "product": "topps Series 1",
+        "product_id": "ing_b726b2d40e",
+        "count": "1"
+      },
+      {
+        "product": "Topps Series 1",
+        "product_id": "ebay_3b523a528f",
+        "count": "3"
+      },
+      {
+        "product": "Topps Series 1",
+        "product_id": "ing_27f144804d",
+        "count": "1"
+      },
+      {
+        "product": "Topps Series 1",
+        "product_id": "ing_3b523a528f",
+        "count": "30"
+      },
+      {
+        "product": "Topps Series 1",
+        "product_id": "ing_b726b2d40e",
+        "count": "34"
+      },
+      {
+        "product": "Topps Series 1 1991 35th Anniversary",
+        "product_id": "ing_8b9e2146a2",
+        "count": "1"
+      },
+      {
+        "product": "Topps Series 1 Baseball Flagship",
+        "product_id": "ing_9477cd2bc7",
+        "count": "1"
+      },
+      {
+        "product": "Topps Series 1 Big Ticket Player",
+        "product_id": "ing_b2a70118b5",
+        "count": "1"
+      },
+      {
+        "product": "Topps Series 1 Big Ticket Players",
+        "product_id": "ebay_fa9ed5dc06",
+        "count": "3"
+      },
+      {
+        "product": "Topps Series 1 Corbin Carroll Diamondbacks Big Ticket Players",
+        "product_id": "ebay_e3372f04c2",
+        "count": "1"
+      },
+      {
+        "product": "Topps Series 1 Crackle Foil",
+        "product_id": "ing_141d9ab74f",
+        "count": "1"
+      },
+      {
+        "product": "Topps Series 1 Easter Holiday Green",
+        "product_id": "ing_8d3382f45f",
+        "count": "1"
+      },
+      {
+        "product": "Topps Series 1 Silver Pack Mojo",
+        "product_id": "ing_05bde31593",
+        "count": "1"
+      },
+      {
+        "product": "Topps Series 1 Titans of the Game",
+        "product_id": "ing_0c6f810450",
+        "count": "1"
+      },
+      {
+        "product": "Topps Series 2",
+        "product_id": "ebay_d1f244a4b8",
+        "count": "15"
+      },
+      {
+        "product": "Topps Series One",
+        "product_id": "ing_435482e8fd",
+        "count": "3"
+      },
+      {
+        "product": "Topps Series One",
+        "product_id": "ing_6e3bacfb7a",
+        "count": "2"
+      },
+      {
+        "product": "Topps Stadium Club",
+        "product_id": "ing_439eade880",
+        "count": "1"
+      },
+      {
+        "product": "Topps Stadium Club",
+        "product_id": "ing_c199bb86af",
+        "count": "1"
+      },
+      {
+        "product": "Topps Tribute",
+        "product_id": "ebay_f1bc3edbf0",
+        "count": "1"
+      },
+      {
+        "product": "Tops Pristine",
+        "product_id": "ebay_26be5251da",
+        "count": "1"
+      },
+      {
+        "product": "T Prism",
+        "product_id": "ebay_7b6c73e764",
+        "count": "2"
+      },
+      {
+        "product": "TREASURE",
+        "product_id": "ebay_03912ec459",
+        "count": "1"
+      },
+      {
+        "product": "Trey Yesavage Rookie",
+        "product_id": "ebay_c83d1beb35",
+        "count": "2"
+      },
+      {
+        "product": "Tribute",
+        "product_id": "ebay_8e3c9120f1",
+        "count": "76"
+      },
+      {
+        "product": "TRIBUTE",
+        "product_id": "ebay_8e3c9120f1",
+        "count": "1"
+      },
+      {
+        "product": "Tribute Baseball",
+        "product_id": "ebay_0701c9b5bb",
+        "count": "1"
+      },
+      {
+        "product": "Tribute Pillars Of The Game",
+        "product_id": "ebay_283ea0a56f",
+        "count": "1"
+      },
+      {
+        "product": "Tribute Stamp Of Approval Relics",
+        "product_id": "ebay_965946f023",
+        "count": "1"
+      },
+      {
+        "product": "Truitt Madonna",
+        "product_id": "ebay_a6a414afa9",
+        "count": "2"
+      },
+      {
+        "product": "TRUITT MADONNA",
+        "product_id": "ebay_a6a414afa9",
+        "count": "1"
+      },
+      {
+        "product": "Truitt Madonna Chrome Prospects",
+        "product_id": "ebay_56d5a99630",
+        "count": "1"
+      },
+      {
+        "product": "Under the Radar",
+        "product_id": "ebay_503ec5020f",
+        "count": "11"
+      },
+      {
+        "product": "Under The Radar",
+        "product_id": "ebay_503ec5020f",
+        "count": "2"
+      },
+      {
+        "product": "Unleashed",
+        "product_id": "ebay_5129747c7d",
+        "count": "7"
+      },
+      {
+        "product": "USA 250th Anniversary Pride",
+        "product_id": "ebay_8f792a1761",
+        "count": "1"
+      },
+      {
+        "product": "USA Baseball Stars and Stripes",
+        "product_id": "ebay_f3592d8689",
+        "count": "1"
+      },
+      {
+        "product": "USA Baseball Stars & Stripes",
+        "product_id": "ebay_94d169d1cf",
+        "count": "3"
+      },
+      {
+        "product": "USA Baseball Stars & Stripes Color Blast",
+        "product_id": "ebay_28e0bac5e8",
+        "count": "1"
+      },
+      {
+        "product": "USA Stars and Striples",
+        "product_id": "ebay_7500828259",
+        "count": "1"
+      },
+      {
+        "product": "USA Stars & Stripes",
+        "product_id": "ebay_0e73b2bcae",
+        "count": "1"
+      },
+      {
+        "product": "Velocity Athletics",
+        "product_id": "ebay_79c9b6be59",
+        "count": "1"
+      },
+      {
+        "product": "Vintage",
+        "product_id": "ebay_6824b8d8af",
+        "count": "1"
+      },
+      {
+        "product": "Vintage - Autographs",
+        "product_id": "ebay_d78f44ab5d",
+        "count": "1"
+      },
+      {
+        "product": "Vivid",
+        "product_id": "ebay_cd1bf22d82",
+        "count": "8"
+      },
+      {
+        "product": "Vivid Baseball",
+        "product_id": "ebay_c92a4e980b",
+        "count": "2"
+      },
+      {
+        "product": "Vivid Brady Ebel Draft Board",
+        "product_id": "ebay_a0fc1f3b87",
+        "count": "1"
+      },
+      {
+        "product": "Vivid Draft Board",
+        "product_id": "ebay_cd2c1fdbb8",
+        "count": "1"
+      },
+      {
+        "product": "Vivid Teal Mojo",
+        "product_id": "ebay_92793b55ec",
+        "count": "1"
+      },
+      {
+        "product": "Vladimir Guerrero Jr. Major League Jersey Auto",
+        "product_id": "ing_dd58c7a3e6",
+        "count": "1"
+      },
+      {
+        "product": "Walk This Way",
+        "product_id": "ebay_1a73f86404",
+        "count": "1"
+      },
+      {
+        "product": "Warming",
+        "product_id": "ebay_8480770e8d",
+        "count": "1"
+      },
+      {
+        "product": "WBC",
+        "product_id": "ebay_3bf20a7e16",
+        "count": "1"
+      },
+      {
+        "product": "Wei-En Lin 1st Chrome Prospect",
+        "product_id": "ebay_14abf93b5d",
+        "count": "1"
+      },
+      {
+        "product": "Wei-En Lin 1st Prospect RC",
+        "product_id": "ebay_440d6e5148",
+        "count": "1"
+      },
+      {
+        "product": "White Sox",
+        "product_id": "ebay_f94c27fbab",
+        "count": "1"
+      },
+      {
+        "product": "Wild Card",
+        "product_id": "ebay_f65b790596",
+        "count": "3"
+      },
+      {
+        "product": "Wild Card 2026 Fantasy Baseball",
+        "product_id": "ebay_21bc889f2b",
+        "count": "1"
+      },
+      {
+        "product": "Wild Card America",
+        "product_id": "ebay_ff1be5ec5f",
+        "count": "1"
+      },
+      {
+        "product": "Wild Card Atompunk",
+        "product_id": "ebay_c5ca60b84b",
+        "count": "1"
+      },
+      {
+        "product": "Wild Card Fantasy Baseball",
+        "product_id": "ebay_5df35d170f",
+        "count": "3"
+      },
+      {
+        "product": "Wild Card Haunted Hits",
+        "product_id": "ebay_26cdd360da",
+        "count": "1"
+      },
+      {
+        "product": "Wild Card Matte Metal",
+        "product_id": "ebay_6b6685806c",
+        "count": "2"
+      },
+      {
+        "product": "Wild Card Matte Metal Graffiti",
+        "product_id": "ebay_4ca63ed5fa",
+        "count": "1"
+      },
+      {
+        "product": "Wild Card Splat Bomb",
+        "product_id": "ebay_6a8ec1e2b9",
+        "count": "1"
+      },
+      {
+        "product": "William Contreras Orange Crackle",
+        "product_id": "ebay_f82accbc28",
+        "count": "1"
+      },
+      {
+        "product": "Willson Contreras Pink Holo Foil",
+        "product_id": "ebay_0ab945ddbc",
+        "count": "1"
+      },
+      {
+        "product": "WNBA",
+        "product_id": "ebay_ca2783c7b9",
+        "count": "1"
+      },
+      {
+        "product": "Women of Sport",
+        "product_id": "ebay_2a8222914f",
+        "count": "1"
+      },
+      {
+        "product": "Won-Bin Cho Signature Series",
+        "product_id": "ebay_6d22d82ab6",
+        "count": "1"
+      },
+      {
+        "product": "World of Sports Prospective Talent",
+        "product_id": "ebay_9eb62e1490",
+        "count": "2"
+      },
+      {
+        "product": "World's Finest",
+        "product_id": "ebay_606d534b6b",
+        "count": "1"
+      },
+      {
+        "product": "World’s Finest Japan",
+        "product_id": "ebay_28a5ab01b9",
+        "count": "1"
+      },
+      {
+        "product": "Xander Bogaerts CHROME",
+        "product_id": "ebay_212391a0b6",
+        "count": "1"
+      },
+      {
+        "product": "Yandel First Pitch",
+        "product_id": "ebay_be4eb5094d",
+        "count": "1"
+      },
+      {
+        "product": "Yellow Foil",
+        "product_id": "ebay_c71748ec40",
+        "count": "1"
+      },
+      {
+        "product": "Yellow Rainbow",
+        "product_id": "ebay_0385cd9545",
+        "count": "1"
+      },
+      {
+        "product": "Yellow Rainbow Foil",
+        "product_id": "ebay_38b5b2b2b4",
+        "count": "1"
+      },
+      {
+        "product": "Yovanny Rodriguez Chrome Mojo Refractor Auto",
+        "product_id": "ebay_a3225687a1",
+        "count": "2"
+      },
+      {
+        "product": "Yuki Matsumoto Fukuoka Softbank Hawks",
+        "product_id": "ebay_366078fd5f",
+        "count": "1"
+      },
+      {
+        "product": "Zach Cole Rookie",
+        "product_id": "ebay_1a3408ed33",
+        "count": "1"
+      }
+    ]
+  },
+  "chosenProduct": {
+    "match": {
+      "product": "Topps Chrome Baseball",
+      "product_id": "ebay_a881139f4b",
+      "count": "1"
+    },
+    "score": 7
+  },
+  "chosenProductSets": {
+    "level": "sets",
+    "product_id": "ebay_a881139f4b",
+    "sets": [
+      {
+        "set_name": "Chrome",
+        "set_id": "ebay_ee5006bfa0",
+        "count": "1"
+      }
+    ]
+  },
+  "chosenSet": {
+    "set_name": "Chrome",
+    "set_id": "ebay_ee5006bfa0",
+    "count": "1"
+  },
+  "chosenSetChecklist": {
+    "set": {
+      "set_id": "ebay_ee5006bfa0",
+      "set_name": "Chrome",
+      "product": "Topps Chrome Baseball",
+      "sport": "Baseball",
+      "year": "2026",
+      "url": "https://mycardfolio.com/sports/baseball/2026/topps-chrome-baseball-ebay_a881139f4b/chrome-ebay_ee5006bfa0"
+    },
+    "total_cards": 1,
+    "cards": [
+      {
+        "card_id": "ebay_924dfb959d9e",
+        "sport": "Baseball",
+        "year": "2026",
+        "product": "Topps Chrome Baseball",
+        "set": "Chrome",
+        "card_number": "126",
+        "subjects": [
+          {
+            "subject_name": "Drew Gilbert",
+            "team_name": "San Francisco Giants"
+          }
+        ],
+        "card_details": "Rookie Card",
+        "url": "https://mycardfolio.com/sports/baseball/2026/topps-chrome-baseball-ebay_a881139f4b/chrome-ebay_ee5006bfa0/126-drew-gilbert-ebay_924dfb959d9e",
+        "image_url": "https://media.mycardfolio.com/detail/ebay_924dfb959d9e.jpg"
+      }
+    ]
+  },
+  "chosenSetCardCountDetected": 1,
+  "chosenSetFirstCards": [
+    {
+      "card_id": "ebay_924dfb959d9e",
+      "sport": "Baseball",
+      "year": "2026",
+      "product": "Topps Chrome Baseball",
+      "set": "Chrome",
+      "card_number": "126",
+      "subjects": [
+        {
+          "subject_name": "Drew Gilbert",
+          "team_name": "San Francisco Giants"
+        }
+      ],
+      "card_details": "Rookie Card",
+      "url": "https://mycardfolio.com/sports/baseball/2026/topps-chrome-baseball-ebay_a881139f4b/chrome-ebay_ee5006bfa0/126-drew-gilbert-ebay_924dfb959d9e",
+      "image_url": "https://media.mycardfolio.com/detail/ebay_924dfb959d9e.jpg"
+    }
+  ],
+  "searchSample": {
+    "query": "2026 Topps Chrome Baseball",
+    "count": 3,
+    "results": [
+      {
+        "card_id": "ebay_e435fe4e23cb",
+        "sport": "Baseball",
+        "year": "2026",
+        "product": "Topps Chrome",
+        "set": "Baseball Chrome",
+        "card_number": "91C2-41",
+        "subjects": [
+          {
+            "subject_name": "Jazz Chisholm Jr.",
+            "team_name": ""
+          }
+        ],
+        "card_details": "RC, SP",
+        "url": "https://mycardfolio.com/sports/baseball/2026/topps-chrome-ebay_34a2a395f2/baseball-chrome-ebay_15b0603db1/91c2-41-jazz-chisholm-jr-ebay_e435fe4e23cb",
+        "image_url": "https://media.mycardfolio.com/detail/ebay_e435fe4e23cb.jpg"
+      },
+      {
+        "card_id": "ebay_924dfb959d9e",
+        "sport": "Baseball",
+        "year": "2026",
+        "product": "Topps Chrome Baseball",
+        "set": "Chrome",
+        "card_number": "126",
+        "subjects": [
+          {
+            "subject_name": "Drew Gilbert",
+            "team_name": "San Francisco Giants"
+          }
+        ],
+        "card_details": "Rookie Card",
+        "url": "https://mycardfolio.com/sports/baseball/2026/topps-chrome-baseball-ebay_a881139f4b/chrome-ebay_ee5006bfa0/126-drew-gilbert-ebay_924dfb959d9e",
+        "image_url": "https://media.mycardfolio.com/detail/ebay_924dfb959d9e.jpg"
+      },
+      {
+        "card_id": "ebay_f4d686fbd547",
+        "sport": "Baseball",
+        "year": "2026",
+        "product": "Topps Chrome",
+        "set": "1991 Topps Baseball",
+        "card_number": "91CB-2",
+        "subjects": [
+          {
+            "subject_name": "Aaron Judge",
+            "team_name": "Yankees"
+          }
+        ],
+        "card_details": "RC, SP",
+        "url": "https://mycardfolio.com/sports/baseball/2026/topps-chrome-ebay_34a2a395f2/1991-topps-baseball-ebay_d2ce0e4693/91cb-2-aaron-judge-ebay_f4d686fbd547",
+        "image_url": "https://media.mycardfolio.com/detail/ebay_f4d686fbd547.jpg"
+      }
+    ]
+  },
+  "finishedAt": "2026-10-03T22:35:40Z"
+}
