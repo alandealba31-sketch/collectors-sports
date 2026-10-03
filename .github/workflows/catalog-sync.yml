@@ -1,4 +1,4 @@
-name: Sync official card checklists
+name: Sync official card catalog and exact fronts
 
 on:
   push:
@@ -8,7 +8,6 @@ on:
       - ".github/workflows/catalog-sync.yml"
   workflow_dispatch:
   schedule:
-    # Refresh official checklists and verified image galleries every day.
     - cron: "17 10 * * *"
 
 permissions:
@@ -16,23 +15,29 @@ permissions:
 
 concurrency:
   group: "catalog-sync"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 55
+    env:
+      IMAGE_IMPORT_MAX_NEW: "2500"
+      IMAGE_IMPORT_DELAY: "0.25"
     steps:
       - name: Checkout
         uses: actions/checkout@v6
         with:
           fetch-depth: 0
+
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
           python-version: "3.12"
+
       - name: Install parser dependencies
-        run: python -m pip install --disable-pip-version-check pandas xlrd pypdf pillow
+        run: python -m pip install --disable-pip-version-check pandas xlrd pypdf pillow requests beautifulsoup4
+
       - name: Build catalog from official checklists and galleries
         run: |
           set -euo pipefail
@@ -40,31 +45,55 @@ jobs:
           python tools/sync_premier.py
           python tools/sync_official_images.py
           python tools/cache_exact_images.py
+
+      - name: Export image identities and import exact fronts in bulk
+        run: |
+          set -euo pipefail
+          node tools/export_catalog_image_targets.mjs
+          python tools/import_bulk_card_images.py
+          rm -f data/image-targets-runtime.json
+
       - name: Validate catalog integrity
         run: python tools/validate_catalog.py
+
       - name: Validate generated JavaScript
         run: |
           node --check catalog-imported.js
           node --check catalog-premier.js
           node --check catalog-images-official.js
           node --check catalog-images-cached.js
+          node --check catalog-images-bulk.js
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('data/bulk-image-report.json')
+          if p.exists():
+              data=json.loads(p.read_text())
+              print('Bulk exact fronts added:', data.get('newExactFrontsThisRun', 0))
+              print('Bulk exact manifest total:', data.get('manifestExactFronts', 0))
+              for collection, stats in data.get('collections', {}).items():
+                  print(collection, stats)
+          PY
+
       - name: Commit generated catalog when changed
         run: |
-          if [ -z "$(git status --porcelain -- catalog-imported.js catalog-premier.js catalog-images-official.js catalog-images-cached.js)" ]; then
-            echo "Catalog is already current."
+          set -euo pipefail
+          if [ -z "$(git status --porcelain -- catalog-imported.js catalog-premier.js catalog-images-official.js catalog-images-cached.js catalog-images-bulk.js data/bulk-image-manifest.json data/bulk-image-report.json assets/cards/bulk)" ]; then
+            echo "Catalog and exact-front cache are already current."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add catalog-imported.js catalog-premier.js catalog-images-official.js catalog-images-cached.js
-          git commit -m "Sync official card catalog and visual galleries"
-          for attempt in 1 2 3; do
+          git add catalog-imported.js catalog-premier.js catalog-images-official.js catalog-images-cached.js catalog-images-bulk.js data/bulk-image-manifest.json data/bulk-image-report.json assets/cards/bulk
+          git commit -m "Sync catalog and bulk exact card fronts"
+          for attempt in 1 2 3 4; do
             git fetch origin main
             git rebase origin/main
             if git push origin HEAD:main; then
               exit 0
             fi
-            echo "Push race detected; retrying ($attempt/3)..."
-            sleep 2
+            echo "Push race detected; retrying ($attempt/4)..."
+            git rebase --abort || true
+            sleep 3
           done
           exit 1
