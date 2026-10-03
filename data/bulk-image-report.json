@@ -1,0 +1,19 @@
+{
+  "provider": "ISO Card Archive",
+  "startedAt": "2026-10-03T15:30:04Z",
+  "maxNew": 2500,
+  "collections": {
+    "topps-chrome-ucc-2025-26": {
+      "eligible": 200,
+      "alreadyExactBulk": 0,
+      "newExact": 0,
+      "notFound": 0,
+      "rejected": 0,
+      "errors": 0
+    }
+  },
+  "manifestExactFronts": 0,
+  "newExactFrontsThisRun": 0,
+  "finishedAt": "2026-10-03T15:30:04Z",
+  "archiveAvailable": false
+}
