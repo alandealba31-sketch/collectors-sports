@@ -1,11 +1,12 @@
-const CACHE='collectors-sports-v10s';
-const IMAGE_CACHE='collectors-sports-images-v2';
+const CACHE='collectors-sports-v11a';
+const IMAGE_CACHE='collectors-sports-images-v3';
 const CORE=[
-  './','./index.html','./styles.css?v=10s','./mobile-background.css?v=10s','./card-visuals.css?v=10s',
-  './catalog.js?v=09a','./catalog-extra.js?v=09a','./catalog-imported.js?v=09a','./catalog-tennis.js?v=10s','./catalog-premier.js?v=09a',
-  './catalog-owned.js?v=09a','./catalog-owned-batch2.js?v=09a','./catalog-owned-batch3.js?v=09a','./catalog-owned-batch4.js?v=10s','./catalog-owned-batch5.js?v=10s','./catalog-owned-batch6.js?v=10s','./catalog-owned-batch8.js?v=10s','./catalog-owned-batch9.js?v=10s',
-  './catalog-runtime.js?v=09a','./catalog-now.js?v=10s','./catalog-now-extra.js?v=10s','./catalog-images.js?v=10s','./catalog-images-official.js?v=09a','./catalog-images-extra.js?v=10s','./catalog-images-teamsets.js?v=09a','./catalog-images-cached.js?v=09a','./catalog-images-tennis.js?v=10s','./catalog-images-owned-batch4.js?v=10s','./catalog-images-owned-batch5.js?v=10s','./catalog-images-owned-batch6.js?v=10s','./catalog-images-owned-batch7.js?v=10s','./catalog-images-owned-batch8.js?v=10s','./catalog-images-owned-batch9.js?v=10s','./catalog-images-web-batch1.js?v=10s','./catalog-images-web-batch2.js?v=10s','./catalog-images-web-batch3.js?v=10s','./catalog-images-bulk.js?v=10s',
-  './card-visuals.js?v=10s','./app-v09-data-guard.js?v=10s','./market-seed.js?v=09a','./app-v05.js?v=10s','./app-v06-addon.js?v=10s','./app-v06-polish.js?v=09a','./app-v06-fix.js?v=09a','./pricing-engine.js?v=09a','./app-v08-image-guard.js?v=10s','./app-v08-catalog.js?v=09a','./app-v10-autocomplete.js?v=10s','./app-v10-image-audit.js?v=10s','./inventory-photos.js?v=10s','./manifest.webmanifest?v=10s','./icon.svg?v=10s'
+  './','./index.html','./styles.css?v=11a','./mobile-background.css?v=11a','./card-visuals.css?v=11a',
+  './catalog.js?v=09a','./catalog-extra.js?v=09a','./catalog-imported.js?v=09a','./catalog-tennis.js?v=11a','./catalog-premier.js?v=09a',
+  './catalog-owned.js?v=09a','./catalog-owned-batch2.js?v=09a','./catalog-owned-batch3.js?v=09a','./catalog-owned-batch4.js?v=11a','./catalog-owned-batch5.js?v=11a','./catalog-owned-batch6.js?v=11a','./catalog-owned-batch8.js?v=11a','./catalog-owned-batch9.js?v=11a',
+  './catalog-runtime.js?v=09a','./catalog-now.js?v=11a','./catalog-now-extra.js?v=11a','./catalog-v11-fixes.js?v=11a',
+  './catalog-images.js?v=11a','./catalog-images-official.js?v=09a','./catalog-images-extra.js?v=11a','./catalog-images-teamsets.js?v=09a','./catalog-images-cached.js?v=09a','./catalog-images-tennis.js?v=11a','./catalog-images-owned-batch4.js?v=11a','./catalog-images-owned-batch5.js?v=11a','./catalog-images-owned-batch6.js?v=11a','./catalog-images-owned-batch7.js?v=11a','./catalog-images-owned-batch8.js?v=11a','./catalog-images-owned-batch9.js?v=11a','./catalog-images-web-batch1.js?v=11a','./catalog-images-web-batch2.js?v=11a','./catalog-images-web-batch3.js?v=11a','./catalog-images-bulk.js?v=11a',
+  './card-visuals.js?v=11a','./app-v09-data-guard.js?v=11a','./market-seed.js?v=09a','./app-v05.js?v=11a','./app-v06-addon.js?v=11a','./app-v06-polish.js?v=09a','./app-v06-fix.js?v=09a','./pricing-engine.js?v=09a','./app-v08-image-guard.js?v=11a','./app-v08-catalog.js?v=09a','./app-v10-autocomplete.js?v=11a','./app-v10-image-audit.js?v=11a','./inventory-photos.js?v=11a','./manifest.webmanifest?v=11a','./icon.svg?v=11a'
 ];
 async function safeCachePut(cache,request,response){try{await cache.put(request,response);}catch(error){console.warn('Cache write skipped:',request.url||request,error);}}
 self.addEventListener('install',event=>{self.skipWaiting();event.waitUntil(caches.open(CACHE).then(async cache=>{await cache.add('./index.html');await Promise.allSettled(CORE.filter(url=>url!=='./index.html').map(url=>cache.add(url)));}));});
