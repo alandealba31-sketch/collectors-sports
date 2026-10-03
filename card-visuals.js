@@ -10,7 +10,13 @@
     if (!cached && !['exact','reference'].includes(entry?.kind)) return null;
     const visual = {...entry, front: safeUrl(cached || entry?.front), back: safeUrl(entry?.back)};
     if (!visual.front) return null;
-    visual.kind = entry?.kind || 'exact';
+
+    // Safety rule: metadata alone is not enough. Only visually audited cards count as exact.
+    visual.kind = entry?.kind === 'exact' && entry?.exactVerified === true ? 'exact' : 'reference';
+    if (entry?.kind === 'exact' && entry?.exactVerified !== true) {
+      visual.label = `${visual.label || 'Imagen de catálogo'} · pendiente de verificación visual exacta`;
+    }
+
     if (variant && !/^base$/i.test(variant) && visual.kind === 'exact' && String(entry?.variant || 'Base').toLowerCase() !== variant.toLowerCase()) {
       visual.kind = 'reference';
       visual.label = `${visual.label || 'Imagen de catálogo'} · El paralelo de tu ejemplar puede ser diferente`;
@@ -34,7 +40,7 @@
     dialog.className = 'cs-card-dialog';
     dialog.setAttribute('aria-labelledby','cs-preview-title');
     const exact = visual.kind === 'exact';
-    dialog.innerHTML = `<div class="cs-dialog-head"><div><h2 id="cs-preview-title">${escape(title)}</h2><div class="muted">#${escape(number)}</div></div><button type="button" class="btn secondary" data-close>✕<span class="sr-only">Cerrar imagen</span></button></div><div class="cs-preview-frame"><img data-cs-image src="${escape(visual.front)}" alt="${escape(title)} — frente"></div><div style="text-align:center"><span class="cs-verified-badge">${exact ? '✓ Frente exacto verificado' : 'Referencia visual'}</span></div><p class="cs-preview-caption">${escape(visual.label || (exact ? 'Frente exacto de catálogo' : 'Referencia visual'))}</p>${!exact ? '<p class="muted tiny" style="text-align:center">Esta imagen sirve como referencia, pero no cuenta en la cobertura exacta porque el paralelo, subset o acabado puede variar.</p>' : ''}${/^https:\/\//.test(visual.sourcePage || '') ? `<div style="text-align:center"><a class="catalog-source-detail" href="${escape(visual.sourcePage)}" target="_blank" rel="noopener noreferrer">Fuente: ${escape(visual.source || 'Ver imagen')} ↗</a></div>` : ''}`;
+    dialog.innerHTML = `<div class="cs-dialog-head"><div><h2 id="cs-preview-title">${escape(title)}</h2><div class="muted">#${escape(number)}</div></div><button type="button" class="btn secondary" data-close>✕<span class="sr-only">Cerrar imagen</span></button></div><div class="cs-preview-frame"><img data-cs-image src="${escape(visual.front)}" alt="${escape(title)} — frente"></div><div style="text-align:center"><span class="cs-verified-badge">${exact ? '✓ Frente exacto verificado' : 'Referencia visual'}</span></div><p class="cs-preview-caption">${escape(visual.label || (exact ? 'Frente exacto de catálogo' : 'Referencia visual'))}</p>${!exact ? '<p class="muted tiny" style="text-align:center">Esta imagen sirve como referencia, pero no cuenta en la cobertura exacta hasta completar la verificación visual.</p>' : ''}${/^https:\/\//.test(visual.sourcePage || '') ? `<div style="text-align:center"><a class="catalog-source-detail" href="${escape(visual.sourcePage)}" target="_blank" rel="noopener noreferrer">Fuente: ${escape(visual.source || 'Ver imagen')} ↗</a></div>` : ''}`;
     dialog.querySelector('[data-close]').addEventListener('click', () => dialog.close());
     dialog.addEventListener('click', e => { if (e.target === dialog) { const r=dialog.getBoundingClientRect(); if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom) dialog.close(); } });
     dialog.addEventListener('close', () => { dialog.remove(); if(returnFocus?.isConnected) returnFocus.focus(); }, {once:true});
