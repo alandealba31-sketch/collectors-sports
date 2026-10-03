@@ -1,6 +1,6 @@
 {
   "runner": "sync_mycardfolio_v2.py",
-  "startedAt": "2026-10-03T23:29:38Z",
+  "startedAt": "2026-10-03T23:38:26Z",
   "endpoint": "https://mycardfolio.com/api/mcp",
   "setsPerProductPerRun": 150,
   "requestDelaySeconds": 1.05,
@@ -76,9 +76,9 @@
       "rowsAccumulated": 1
     },
     "bowman-chrome-baseball-2026": {
-      "setsFetchedThisRun": 37,
-      "rowsAddedThisRun": 21,
-      "imagesAddedThisRun": 21,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -216,9 +216,9 @@
       "rowsAccumulated": 13
     },
     "topps-update-baseball-2026": {
-      "setsFetchedThisRun": 73,
-      "rowsAddedThisRun": 177,
-      "imagesAddedThisRun": 177,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -277,20 +277,14 @@
           "productId": "ing_3b523a528f"
         }
       ],
-      "purgedRowsAfterProductChange": 5,
-      "purgedImagesAfterProductChange": 5,
-      "yearUsed": "2026",
-      "productId": "ebay_1f86ffe8f6",
-      "productMatched": "Chrome Update",
-      "knownSets": 73,
-      "processedSetsTotal": 73,
-      "remainingSets": 0,
-      "rowsAccumulated": 177
+      "purgedUnverifiedRows": 177,
+      "purgedUnverifiedImages": 177,
+      "error": "strict-product-not-found"
     },
     "topps-chrome-logofractor-baseball-2026": {
-      "setsFetchedThisRun": 2,
-      "rowsAddedThisRun": 2,
-      "imagesAddedThisRun": 2,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -349,8 +343,6 @@
           "productId": "ebay_03f128f0b5"
         }
       ],
-      "purgedRowsAfterProductChange": 120,
-      "purgedImagesAfterProductChange": 120,
       "yearUsed": "2026",
       "productId": "ebay_5eb056579a",
       "productMatched": "Chrome Logofractor Edition",
@@ -1307,9 +1299,9 @@
       "rowsAccumulated": 1
     },
     "topps-chrome-wwe-2026": {
-      "setsFetchedThisRun": 80,
-      "rowsAddedThisRun": 192,
-      "imagesAddedThisRun": 192,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -1368,8 +1360,6 @@
           "productId": "ebay_d769561c0c"
         }
       ],
-      "purgedRowsAfterProductChange": 175,
-      "purgedImagesAfterProductChange": 175,
       "yearUsed": "2026",
       "productId": "ebay_48e2c60786",
       "productMatched": "Chrome WWE",
@@ -1519,9 +1509,9 @@
       "rowsAccumulated": 23
     },
     "topps-finest-ucc-2025-26": {
-      "setsFetchedThisRun": 26,
-      "rowsAddedThisRun": 52,
-      "imagesAddedThisRun": 52,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2025",
@@ -1580,8 +1570,6 @@
           "productId": "ebay_6ae99a6ae0"
         }
       ],
-      "purgedRowsAfterProductChange": 53,
-      "purgedImagesAfterProductChange": 53,
       "yearUsed": "2025",
       "productId": "ebay_16615300e8",
       "productMatched": "Finest Uefa Club Competitions",
@@ -1661,9 +1649,9 @@
       "rowsAccumulated": 2
     },
     "topps-premier-league-2026-27": {
-      "setsFetchedThisRun": 33,
-      "rowsAddedThisRun": 43,
-      "imagesAddedThisRun": 43,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -1722,8 +1710,6 @@
           "productId": "ebay_fdd512e7ce"
         }
       ],
-      "purgedRowsAfterProductChange": 2,
-      "purgedImagesAfterProductChange": 2,
       "yearUsed": "2026",
       "productId": "ebay_97821cda88",
       "productMatched": "Premier League",
@@ -1803,9 +1789,9 @@
       "rowsAccumulated": 1
     },
     "topps-chrome-mls-2026": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -1864,8 +1850,6 @@
           "productId": "ing_ecbd8773e5"
         }
       ],
-      "purgedRowsAfterProductChange": 121,
-      "purgedImagesAfterProductChange": 121,
       "yearUsed": "2026",
       "productId": "ebay_3a58063125",
       "productMatched": "MLS Chrome",
@@ -2219,9 +2203,9 @@
       "error": "strict-product-not-found"
     },
     "topps-real-madrid-team-set-2025-26": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2025",
@@ -2280,8 +2264,6 @@
           "productId": "ebay_0192ebf654"
         }
       ],
-      "purgedRowsAfterProductChange": 4,
-      "purgedImagesAfterProductChange": 4,
       "yearUsed": "2025",
       "productId": "ebay_ca2b465a25",
       "productMatched": "Real Madrid Team Top of the World",
@@ -3589,9 +3571,9 @@
       "error": "strict-product-not-found"
     }
   },
-  "finishedAt": "2026-10-03T23:36:41Z",
-  "collectionsWritten": 38,
-  "rowsWritten": 1417,
-  "exactFrontsWritten": 1401,
-  "runtimeSeconds": 423.2
+  "finishedAt": "2026-10-03T23:40:41Z",
+  "collectionsWritten": 37,
+  "rowsWritten": 1240,
+  "exactFrontsWritten": 1224,
+  "runtimeSeconds": 135.8
 }
