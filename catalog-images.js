@@ -1,17 +1,17 @@
 window.CS_IMAGE_CATALOG = {
-  version: 3,
+  version: 4,
   updatedAt: '2026-10-03',
   policy: {
-    exact: 'Frente de la identidad exacta del checklist. Es la unica imagen que cuenta para cobertura.',
+    exact: 'Frente de la identidad exacta del checklist, verificado visualmente. Es la unica imagen que cuenta para cobertura.',
     reference: 'Referencia visual del mismo sujeto o diseño; puede variar el paralelo, subset o acabado. No cuenta para cobertura.',
     collection: 'Imagen representativa de la colección; nunca se usa para identificar una carta específica.',
     back: 'El reverso es opcional y ya no forma parte del objetivo de cobertura.'
   },
   sourcePolicy: {
-    rule: 'La fuente puede ser cualquier sitio publico o comercio siempre que la identidad exacta de la carta sea verificada antes de marcarla como exact.',
+    rule: 'La fuente puede ser cualquier sitio publico o comercio, pero una coincidencia de texto o metadata no basta: la imagen debe verificarse visualmente antes de marcarse como exacta.',
     acceptedSources: ['Fabricante','Tienda especializada','eBay','Mercado Libre','Amazon','Red social','Foro','Marketplace','Sitio web publico'],
-    exactMatchRequires: ['coleccion/producto y año','numero o codigo de carta','jugador o sujeto','subset o insert cuando aplique','paralelo/acabado cuando la identidad lo requiera'],
-    note: 'Una foto de vendedor o usuario puede usarse; la procedencia no determina la cobertura. La coincidencia exacta sí.'
+    exactMatchRequires: ['coleccion/producto y año','numero o codigo de carta','jugador o sujeto','subset o insert cuando aplique','paralelo/acabado cuando la identidad lo requiera','verificacion visual del frente'],
+    note: 'Una foto de vendedor o usuario puede usarse; la procedencia no determina la cobertura. La coincidencia exacta y la verificacion visual sí.'
   },
   collections: {
     'topps-chrome-ucc-2025-26': {
@@ -47,9 +47,10 @@ window.CS_IMAGE_CATALOG = {
     'topps-chrome-ucc-2025-26|10': {
       front: 'https://hobbyscan-images-prod.s3.us-east-2.amazonaws.com/scans/1783729743593-fc4ad5a7-6905-4f16-b251-4a005cd14e4a.jpg',
       kind: 'exact',
+      exactVerified: true,
       source: 'HobbyScan',
       sourcePage: 'https://www.hobbyscan.com/card/809291',
-      label: 'Lamine Yamal #10 — Base'
+      label: 'Lamine Yamal #10 — Base · frente exacto verificado'
     },
     'topps-chrome-baseball-2026|236': {
       front: 'https://images.topps.com/v3/assets/bltc7206971cb4b2bfc/bltd78856a19967c61c/6a2aecd21c149a53f7a4581a/26TCBB_1215_FR_GreenRefractorParallel.jpg',
