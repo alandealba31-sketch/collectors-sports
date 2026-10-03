@@ -1,6 +1,6 @@
 {
   "endpoint": "https://mycardfolio.com/api/mcp",
-  "startedAt": "2026-10-03T22:36:53Z",
+  "startedAt": "2026-10-03T22:37:45Z",
   "serverInfo": {
     "name": "mycardfolio",
     "title": null,
@@ -6265,5 +6265,5 @@
       }
     ]
   },
-  "finishedAt": "2026-10-03T22:37:06Z"
+  "finishedAt": "2026-10-03T22:37:54Z"
 }
