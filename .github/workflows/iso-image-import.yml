@@ -1,0 +1,86 @@
+name: Import ISO exact card fronts
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "tools/import_iso_exact_images.py"
+      - "tools/export_catalog_image_targets.mjs"
+      - "tools/bulk_image_sources.json"
+      - ".github/workflows/iso-image-import.yml"
+  workflow_dispatch:
+  schedule:
+    - cron: "23 12 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "iso-image-import"
+  cancel-in-progress: true
+
+jobs:
+  import-images:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    env:
+      IMAGE_IMPORT_MAX_NEW: "2500"
+      ISO_IMAGE_IMPORT_DELAY: "0.55"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: python -m pip install --disable-pip-version-check requests
+
+      - name: Export loaded catalog identities
+        run: node tools/export_catalog_image_targets.mjs
+
+      - name: Import exact fronts from ISO public API
+        run: python tools/import_iso_exact_images.py
+
+      - name: Validate generated image catalog
+        run: |
+          rm -f data/image-targets-runtime.json
+          node --check catalog-images-bulk.js
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('data/bulk-image-report.json')
+          data=json.loads(p.read_text()) if p.exists() else {}
+          print('Provider:', data.get('provider'))
+          print('Archive available:', data.get('archiveAvailable'))
+          print('New exact fronts:', data.get('newExactFrontsThisRun', 0))
+          print('Bulk manifest total:', data.get('manifestExactFronts', 0))
+          for collection, stats in data.get('collections', {}).items():
+              print(collection, stats)
+          PY
+
+      - name: Commit exact fronts when changed
+        run: |
+          set -euo pipefail
+          if [ -z "$(git status --porcelain -- catalog-images-bulk.js data/bulk-image-manifest.json data/bulk-image-report.json)" ]; then
+            echo "No new exact fronts found in this run."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalog-images-bulk.js data/bulk-image-manifest.json data/bulk-image-report.json
+          git commit -m "Import ISO exact card fronts"
+          for attempt in 1 2 3 4; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            git rebase --abort || true
+            sleep 3
+          done
+          exit 1
