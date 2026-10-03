@@ -6,6 +6,7 @@ on:
     paths:
       - "tools/**"
       - "sync_mycardfolio_v2.py"
+      - "sync_mycardfolio_v3.py"
       - "mycardfolio_product_sources_v2.json"
       - ".github/workflows/catalog-sync.yml"
   workflow_dispatch:
@@ -50,8 +51,8 @@ jobs:
           python tools/sync_official_images.py
           python tools/cache_exact_images.py
 
-      - name: Expand owned products and exact fronts through strict structured MCP
-        run: python sync_mycardfolio_v2.py
+      - name: Expand owned products and exact fronts through exact-year structured MCP
+        run: python sync_mycardfolio_v3.py
 
       - name: Validate official generated catalog
         run: python tools/validate_catalog.py
