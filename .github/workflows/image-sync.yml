@@ -41,7 +41,6 @@ jobs:
         run: python tools/repair_mycardfolio_images.py
       - name: Audit image and owned-collection coverage
         run: |
-          python tools/update_catalog_summary.py
           node tools/audit_loaded_catalog.mjs
           node tools/audit_owned_collection_gaps.mjs
           python - <<'PY'
