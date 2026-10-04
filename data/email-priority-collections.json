@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "updatedAt": "2026-10-04",
   "policy": "Collections confirmed by purchase, delivery, or active order emails are processed before general catalog backlog for checklist expansion and exact-front acquisition.",
   "collections": [
@@ -11,9 +11,9 @@
     {"collectionId":"panini-real-madrid-tribute-2023-24","reason":"Goalinn order delivered Oct 1","priority":6},
     {"collectionId":"panini-atletico-madrid-2025-26","reason":"Goalinn order delivered Oct 1","priority":7},
     {"collectionId":"panini-real-madrid-2025-26","reason":"Goalinn order delivered Oct 1","priority":8},
-    {"collectionId":"panini-international-mexico-2026","reason":"Mercado Libre purchase delivered Sep 28","priority":9},
-    {"collectionId":"panini-international-france-2026","reason":"eBay purchase/payment thread active through Sep 29","priority":10},
-    {"collectionId":"panini-international-england-2026","reason":"eBay shipment delivered in late September","priority":11},
+    {"collectionId":"panini-intl-mexico-2026","reason":"Mercado Libre purchase delivered Sep 28","priority":9},
+    {"collectionId":"panini-intl-france-2026","reason":"eBay purchase/payment thread active through Sep 29","priority":10},
+    {"collectionId":"panini-intl-england-2026","reason":"eBay shipment delivered in late September","priority":11},
     {"collectionId":"topps-now-mlb-2026","reason":"Multiple recent direct Topps NOW purchases including cards 730, 734, 737, 738, 739, 740 and 748","priority":12},
     {"collectionId":"topps-now-nfl-2026","reason":"Multiple recent direct Topps NOW purchases including cards 31, 32 and 36","priority":13},
     {"collectionId":"topps-now-tennis-2026","reason":"Recent direct Topps NOW purchases of Carlos Alcaraz cards 26 and 27","priority":14},
