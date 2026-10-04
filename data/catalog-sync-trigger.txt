@@ -1,1 +1,1 @@
-2026-10-04T00:56:00-05:00 priority collections + verified exact fronts sync
+2026-10-04T01:02:00-05:00 expanded priority collections + verified exact fronts sync
