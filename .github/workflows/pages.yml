@@ -38,6 +38,7 @@ jobs:
           node --check market-seed.js
           node --check catalog-owned.js
           node --check catalog-intl-expanded.js
+          node --check catalog-teamsets-expanded.js
           node --check catalog-owned-batch2.js
           node --check catalog-owned-batch3.js
           node --check catalog-mycardfolio-expanded.js
@@ -55,6 +56,7 @@ jobs:
           test -f v07.css
           test -f catalog-premier.js
           test -f catalog-intl-expanded.js
+          test -f catalog-teamsets-expanded.js
           test -f catalog-images-cached.js
           test -f catalog-images-teamsets.js
           test -f catalog-owned.js
@@ -65,6 +67,7 @@ jobs:
           test -f market-seed.js
           test -f pricing-engine.js
           grep -q 'catalog-intl-expanded.js' index.html
+          grep -q 'catalog-teamsets-expanded.js' index.html
           grep -q 'catalog-mycardfolio-expanded.js' index.html
           grep -q 'catalog-images-mycardfolio.js' index.html
           grep -q 'app-v11-home-search.js' index.html
