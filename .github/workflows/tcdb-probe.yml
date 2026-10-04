@@ -1,0 +1,49 @@
+name: Probe TCDB checklist response
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "data/tcdb-probe-trigger.txt"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "tcdb-probe"
+  cancel-in-progress: true
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Install probe dependencies
+        run: python -m pip install --disable-pip-version-check requests beautifulsoup4
+      - name: Probe TCDB checklist page
+        run: python tools/probe_tcdb_page.py
+      - name: Show sanitized probe
+        run: cat data/tcdb-probe.json
+      - name: Commit probe report
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/tcdb-probe.json
+          if git diff --cached --quiet; then
+            echo "Probe report unchanged."
+            exit 0
+          fi
+          git commit -m "Record TCDB checklist probe"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
