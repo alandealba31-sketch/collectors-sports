@@ -1,6 +1,6 @@
 {
   "runner": "sync_mycardfolio_v2.py",
-  "startedAt": "2026-10-04T14:14:37Z",
+  "startedAt": "2026-10-04T14:23:32Z",
   "endpoint": "https://mycardfolio.com/api/mcp",
   "setsPerProductPerRun": 150,
   "requestDelaySeconds": 1.05,
@@ -6375,9 +6375,9 @@
       "error": "strict-product-not-found"
     }
   },
-  "finishedAt": "2026-10-04T14:17:35Z",
+  "finishedAt": "2026-10-04T14:26:33Z",
   "collectionsWritten": 58,
   "rowsWritten": 1836,
   "exactFrontsWritten": 1820,
-  "runtimeSeconds": 177.6
+  "runtimeSeconds": 180.9
 }
