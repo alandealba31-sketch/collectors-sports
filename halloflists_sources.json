@@ -1,77 +1,32 @@
 {
-  "version": 2,
+  "version": 3,
   "products": [
-    {
-      "collectionId": "topps-stadium-club-ufc-2026",
-      "url": "https://www.halloflists.com/products/2026-topps-stadium-club-ufc",
-      "sport": "UFC",
-      "manufacturer": "Topps",
-      "year": "2026",
-      "name": "2026 Topps Stadium Club UFC",
-      "shortName": "Stadium Club UFC 2026"
-    },
-    {
-      "collectionId": "topps-flagship-football-2026",
-      "url": "https://www.halloflists.com/products/2026-topps-flagship-football",
-      "sport": "NFL",
-      "manufacturer": "Topps",
-      "year": "2026",
-      "name": "2026 Topps Flagship Football",
-      "shortName": "Flagship NFL 2026"
-    },
-    {
-      "collectionId": "topps-finest-ucc-2025-26",
-      "url": "https://www.halloflists.com/products/2025-26-topps-finest-uefa-club-competitions",
-      "sport": "Soccer",
-      "manufacturer": "Topps",
-      "year": "2025/26",
-      "name": "2025-26 Topps Finest UEFA Club Competitions",
-      "shortName": "Finest UEFA 25/26"
-    },
-    {
-      "collectionId": "topps-chrome-tennis-2026",
-      "url": "https://www.halloflists.com/products/2026-topps-chrome-tennis",
-      "sport": "Tennis",
-      "manufacturer": "Topps",
-      "year": "2026",
-      "name": "2026 Topps Chrome Tennis",
-      "shortName": "Chrome Tennis 2026"
-    },
-    {
-      "collectionId": "topps-chrome-ufc-2026",
-      "url": "https://www.halloflists.com/products/2026-topps-chrome-ufc",
-      "sport": "UFC",
-      "manufacturer": "Topps",
-      "year": "2026",
-      "name": "2026 Topps Chrome UFC",
-      "shortName": "Chrome UFC 2026"
-    },
-    {
-      "collectionId": "topps-resurgence-football-2025",
-      "url": "https://www.halloflists.com/products/2025-topps-resurgence-football",
-      "sport": "NFL",
-      "manufacturer": "Topps",
-      "year": "2025",
-      "name": "2025 Topps Resurgence Football",
-      "shortName": "Resurgence NFL 2025"
-    },
-    {
-      "collectionId": "bowman-chrome-baseball-2026",
-      "url": "https://www.halloflists.com/products/2026-bowman-chrome-baseball",
-      "sport": "MLB",
-      "manufacturer": "Topps",
-      "year": "2026",
-      "name": "2026 Bowman Chrome Baseball",
-      "shortName": "Bowman Chrome 2026"
-    },
-    {
-      "collectionId": "topps-holiday-baseball-2025",
-      "url": "https://www.halloflists.com/products/2025-topps-holiday-baseball",
-      "sport": "MLB",
-      "manufacturer": "Topps",
-      "year": "2025",
-      "name": "2025 Topps Holiday Baseball",
-      "shortName": "Holiday MLB 2025"
-    }
+    {"collectionId":"topps-stadium-club-ufc-2026","url":"https://www.halloflists.com/products/2026-topps-stadium-club-ufc","sport":"UFC","manufacturer":"Topps","year":"2026","name":"2026 Topps Stadium Club UFC","shortName":"Stadium Club UFC 2026"},
+    {"collectionId":"topps-chrome-ufc-2026","url":"https://www.halloflists.com/products/2026-topps-chrome-ufc","sport":"UFC","manufacturer":"Topps","year":"2026","name":"2026 Topps Chrome UFC","shortName":"Chrome UFC 2026"},
+    {"collectionId":"topps-chrome-tennis-2026","url":"https://www.halloflists.com/products/2026-topps-chrome-tennis","sport":"Tennis","manufacturer":"Topps","year":"2026","name":"2026 Topps Chrome Tennis","shortName":"Chrome Tennis 2026"},
+
+    {"collectionId":"topps-flagship-football-2026","url":"https://www.halloflists.com/products/2026-topps-flagship-football","sport":"NFL","manufacturer":"Topps","year":"2026","name":"2026 Topps Flagship Football","shortName":"Flagship NFL 2026"},
+    {"collectionId":"topps-resurgence-football-2025","url":"https://www.halloflists.com/products/2025-topps-resurgence-football","sport":"NFL","manufacturer":"Topps","year":"2025","name":"2025 Topps Resurgence Football","shortName":"Resurgence NFL 2025"},
+    {"collectionId":"topps-chrome-football-2025","url":"https://www.halloflists.com/products/2025-topps-chrome-football","sport":"NFL","manufacturer":"Topps","year":"2025","name":"2025 Topps Chrome Football","shortName":"Chrome NFL 2025"},
+    {"collectionId":"topps-signature-class-football-2025","url":"https://www.halloflists.com/products/2025-topps-signature-class-football","sport":"NFL","manufacturer":"Topps","year":"2025","name":"2025 Topps Signature Class Football","shortName":"Signature Class NFL 2025"},
+
+    {"collectionId":"topps-chrome-baseball-2026","url":"https://www.halloflists.com/products/2026-topps-chrome-baseball","sport":"MLB","manufacturer":"Topps","year":"2026","name":"2026 Topps Chrome Baseball","shortName":"Chrome Baseball 2026"},
+    {"collectionId":"bowman-chrome-baseball-2026","url":"https://www.halloflists.com/products/2026-bowman-chrome-baseball","sport":"MLB","manufacturer":"Topps","year":"2026","name":"2026 Bowman Chrome Baseball","shortName":"Bowman Chrome 2026"},
+    {"collectionId":"topps-holiday-baseball-2025","url":"https://www.halloflists.com/products/2025-topps-holiday-baseball","sport":"MLB","manufacturer":"Topps","year":"2025","name":"2025 Topps Holiday Baseball","shortName":"Holiday MLB 2025"},
+    {"collectionId":"topps-update-baseball-2026","url":"https://www.halloflists.com/products/2026-topps-update-series-baseball","sport":"MLB","manufacturer":"Topps","year":"2026","name":"2026 Topps Update Series Baseball","shortName":"Update MLB 2026"},
+    {"collectionId":"topps-chrome-logofractor-baseball-2026","url":"https://www.halloflists.com/products/2026-topps-chrome-baseball-logofractor-edition","sport":"MLB","manufacturer":"Topps","year":"2026","name":"2026 Topps Chrome Baseball Logofractor Edition","shortName":"Logofractor MLB 2026"},
+
+    {"collectionId":"topps-chrome-basketball-2025-26","url":"https://www.halloflists.com/products/2025-26-topps-chrome-basketball","sport":"NBA","manufacturer":"Topps","year":"2025/26","name":"2025-26 Topps Chrome Basketball","shortName":"Chrome Basketball 25/26"},
+    {"collectionId":"topps-signature-class-basketball-2025-26","url":"https://www.halloflists.com/products/2025-26-topps-signature-class-basketball","sport":"NBA","manufacturer":"Topps","year":"2025/26","name":"2025-26 Topps Signature Class Basketball","shortName":"Signature Class NBA 25/26"},
+
+    {"collectionId":"topps-chrome-f1-2026","url":"https://www.halloflists.com/products/2026-topps-chrome-formula-1-racing","sport":"F1","manufacturer":"Topps","year":"2026","name":"2026 Topps Chrome Formula 1 Racing","shortName":"Chrome F1 2026"},
+    {"collectionId":"topps-chrome-wwe-2026","url":"https://www.halloflists.com/products/2026-topps-chrome-wwe","sport":"WWE","manufacturer":"Topps","year":"2026","name":"2026 Topps Chrome WWE","shortName":"Chrome WWE 2026"},
+
+    {"collectionId":"topps-finest-ucc-2025-26","url":"https://www.halloflists.com/products/2025-26-topps-finest-uefa-club-competitions","sport":"Soccer","manufacturer":"Topps","year":"2025/26","name":"2025-26 Topps Finest UEFA Club Competitions","shortName":"Finest UEFA 25/26"},
+    {"collectionId":"topps-chrome-ucc-2025-26","url":"https://www.halloflists.com/products/topps-chrome-uefa-club-competitions-2025-26","sport":"Soccer","manufacturer":"Topps","year":"2025/26","name":"Topps Chrome UEFA Club Competitions 2025-26","shortName":"Chrome UEFA 25/26"},
+    {"collectionId":"topps-ucc-2025-26","url":"https://www.halloflists.com/products/2025-26-topps-uefa-club-competitions","sport":"Soccer","manufacturer":"Topps","year":"2025/26","name":"2025-26 Topps UEFA Club Competitions","shortName":"UEFA Flagship 25/26"},
+    {"collectionId":"topps-premier-league-2025-26","url":"https://www.halloflists.com/products/2025-26-topps-premier-league","sport":"Soccer","manufacturer":"Topps","year":"2025/26","name":"2025-26 Topps Premier League","shortName":"Premier League 25/26"},
+    {"collectionId":"topps-chrome-premier-league-2026","url":"https://www.halloflists.com/products/2025-26-topps-chrome-premier-league","sport":"Soccer","manufacturer":"Topps","year":"2025/26","name":"2025-26 Topps Chrome Premier League","shortName":"Chrome Premier League 25/26"},
+    {"collectionId":"topps-chrome-mls-2026","url":"https://www.halloflists.com/products/topps-chrome-major-league-soccer-2026","sport":"Soccer","manufacturer":"Topps","year":"2026","name":"Topps Chrome Major League Soccer 2026","shortName":"Chrome MLS 2026"}
   ]
 }
