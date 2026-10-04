@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "sources": [
     {"collectionId":"topps-now-mlb-2026","url":"https://www.halloflists.com/topps-now/2026","sport":"MLB","year":"2026","license":"MLB","name":"MLB Topps NOW 2026","shortName":"MLB Topps NOW 2026"},
     {"collectionId":"topps-now-ufc-2026","url":"https://www.halloflists.com/topps-now/catalog/ufc","sport":"UFC","year":"2026","license":"UFC","name":"UFC Topps NOW 2026","shortName":"UFC Topps NOW 2026"},
@@ -7,6 +7,10 @@
     {"collectionId":"topps-now-wwe-2026","url":"https://www.halloflists.com/topps-now/catalog/wwe","sport":"WWE","year":"2026","license":"WWE","name":"WWE Topps NOW 2026","shortName":"WWE Topps NOW 2026"},
     {"collectionId":"topps-now-tennis-2026","url":"https://www.halloflists.com/topps-now/catalog/tennis/2026","sport":"Tennis","year":"2026","license":"Tennis","name":"Tennis Topps NOW 2026","shortName":"Tennis Topps NOW 2026"},
     {"collectionId":"topps-now-f1-2026","url":"https://www.halloflists.com/topps-now/catalog/formula-1/2026","sport":"F1","year":"2026","license":"Formula 1","name":"Formula 1 Topps NOW 2026","shortName":"F1 Topps NOW 2026"},
-    {"collectionId":"topps-now-nba-2026-27","url":"https://www.halloflists.com/topps-now/catalog/nba/2026-27","sport":"NBA","year":"2026/27","license":"NBA","name":"NBA Topps NOW 2026/27","shortName":"NBA Topps NOW 26/27"}
+    {"collectionId":"topps-now-nba-2026-27","url":"https://www.halloflists.com/topps-now/catalog/nba/2026-27","sport":"NBA","year":"2026/27","license":"NBA","name":"NBA Topps NOW 2026/27","shortName":"NBA Topps NOW 26/27"},
+    {"collectionId":"topps-now-mls-2026","url":"https://www.halloflists.com/topps-now/catalog/mls","sport":"Soccer","year":"2026","license":"MLS","name":"MLS Topps NOW 2026","shortName":"MLS Topps NOW 2026"},
+    {"collectionId":"topps-now-fc-barcelona-2026-27","url":"https://www.halloflists.com/topps-now/catalog/fc-barcelona","sport":"Soccer","year":"2026/27","license":"FC Barcelona","name":"FC Barcelona Topps NOW 2026/27","shortName":"Barcelona Topps NOW 26/27"},
+    {"collectionId":"topps-now-ucl-2026-27","url":"https://www.halloflists.com/topps-now/catalog/uefa-champions-league","sport":"Soccer","year":"2026/27","license":"UEFA Champions League","name":"UEFA Champions League Topps NOW 2026/27","shortName":"UCL Topps NOW 26/27"},
+    {"collectionId":"topps-now-argentina-2026","url":"https://www.halloflists.com/topps-now/catalog/argentina-afa","sport":"Soccer","year":"2026","license":"Argentina (AFA)","name":"Argentina Topps NOW 2026","shortName":"Argentina Topps NOW 2026"}
   ]
 }
