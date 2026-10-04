@@ -13,7 +13,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: "catalog-sync"
+  group: "collectors-data-sync"
   cancel-in-progress: false
 
 jobs:
@@ -68,7 +68,14 @@ jobs:
           run_optional "Owned priority sources" python tools/sync_owned_priority_sources.py
       - name: Expand products and exact fronts through exact-year structured MCP
         run: |
-          python sync_mycardfolio_v3.py || echo "::warning::MyCardfolio sync failed; continuing with last valid generated data."
+          python sync_mycardfolio_v4.py || echo "::warning::MyCardfolio sync failed; continuing with last valid generated data."
+      - name: Repair missing structured fronts from known card IDs
+        env:
+          MCF_DETAIL_IMAGE_MAX: "240"
+          MCF_DETAIL_IMAGE_DELAY: "1.05"
+          MCF_DETAIL_IMAGE_MAX_SECONDS: "1000"
+        run: |
+          python tools/repair_mycardfolio_images.py || echo "::warning::MyCardfolio detail-image repair failed; continuing with existing exact fronts."
       - name: Validate official generated catalog
         run: python tools/validate_catalog.py
       - name: Export every searchable identity
@@ -102,10 +109,11 @@ jobs:
           node --check catalog-images-cached.js
           node --check catalog-images-bulk.js
           node --check catalog-images-ebay.js
+          python -m py_compile tools/repair_mycardfolio_images.py
           python - <<'PY'
           import json
           from pathlib import Path
-          for filename in ['data/catalog-summary.json','data/owned-collection-gap-report.json','data/halloflists-sync-report.json','data/halloflists-now-sync-report.json','data/checklistinsider-sync-report.json','data/fc-tins-sync-report.json','data/owned-priority-sync-report.json','data/mycardfolio-sync-report.json','data/tcdb-image-report.json','data/bulk-image-report.json','data/ebay-image-report.json']:
+          for filename in ['data/catalog-summary.json','data/owned-collection-gap-report.json','data/halloflists-sync-report.json','data/halloflists-now-sync-report.json','data/checklistinsider-sync-report.json','data/fc-tins-sync-report.json','data/owned-priority-sync-report.json','data/mycardfolio-sync-report.json','data/mycardfolio-detail-image-report.json','data/tcdb-image-report.json','data/bulk-image-report.json','data/ebay-image-report.json']:
               p=Path(filename)
               if p.exists():
                   print('\n'+filename)
@@ -118,15 +126,17 @@ jobs:
             catalog-imported.js catalog-premier.js catalog-halloflists-expanded.js catalog-now-halloflists.js catalog-checklistinsider-expanded.js catalog-fc-tins-expanded.js catalog-owned-priority-expanded.js catalog-mycardfolio-expanded.js
             catalog-images-mycardfolio.js catalog-images-official.js catalog-images-cached.js catalog-images-bulk.js catalog-images-ebay.js
             data/catalog-summary.json data/owned-collection-gap-report.json data/halloflists-sync-report.json data/halloflists-now-sync-report.json data/checklistinsider-sync-report.json data/fc-tins-sync-report.json data/owned-priority-sync-report.json data/mycardfolio-sync-state.json data/mycardfolio-sync-report.json
+            data/mycardfolio-detail-image-state.json data/mycardfolio-detail-image-report.json
             data/bulk-image-manifest.json data/tcdb-image-report.json data/bulk-image-report.json assets/cards/bulk
             data/ebay-image-manifest.json data/ebay-image-report.json assets/cards/ebay
           )
           EXISTING=()
           for p in "${CANDIDATES[@]}"; do [ -e "$p" ] && EXISTING+=("$p"); done
-          if [ ${#EXISTING[@]} -eq 0 ] || [ -z "$(git status --porcelain -- "${EXISTING[@]}")" ]; then echo "Catalog and exact-front caches are already current."; exit 0; fi
+          if [ ${#EXISTING[@]} -eq 0 ]; then echo "No catalog outputs exist."; exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -- "${EXISTING[@]}"
+          if git diff --cached --quiet; then echo "Catalog and exact-front caches are already current."; exit 0; fi
           git commit -m "Sync structured catalog, parallels and exact card fronts"
           for attempt in 1 2 3 4; do
             git fetch origin main
