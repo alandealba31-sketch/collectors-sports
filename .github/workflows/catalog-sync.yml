@@ -4,15 +4,7 @@ on:
   push:
     branches: ["main"]
     paths:
-      - "tools/**"
-      - "sync_mycardfolio_v2.py"
-      - "sync_mycardfolio_v3.py"
-      - "mycardfolio_product_sources_v2.json"
-      - "mycardfolio_extra_products_v1.json"
-      - "halloflists_sources.json"
-      - "halloflists_now_sources.json"
-      - "checklistinsider_sources.json"
-      - ".github/workflows/catalog-sync.yml"
+      - "data/catalog-sync-trigger.txt"
   workflow_dispatch:
   schedule:
     - cron: "17 10 * * *"
