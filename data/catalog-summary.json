@@ -1,0 +1,429 @@
+{
+  "generatedAt": "2026-10-04T05:20:14.903Z",
+  "scriptFilesEvaluated": 52,
+  "scriptFailures": [
+    {
+      "file": "catalog-runtime.js",
+      "error": "document is not defined"
+    }
+  ],
+  "collectionsWithChecklist": 69,
+  "collectionRecords": 82,
+  "searchableIdentities": 22249,
+  "bySport": {
+    "NFL": 6215,
+    "Soccer": 4922,
+    "NBA": 4668,
+    "MLB": 3170,
+    "WWE": 1323,
+    "UFC": 948,
+    "Tennis": 769,
+    "F1": 234
+  },
+  "verifiedExactFrontRecords": 1445,
+  "approximateUniqueExactFrontIdentities": 1445,
+  "searchableIdentitiesWithExactFront": 1848,
+  "exactFrontCoveragePct": 8.31,
+  "topCollections": [
+    {
+      "id": "topps-chrome-football-2025",
+      "name": "Chrome Football 2025",
+      "sport": "NFL",
+      "rows": 2463,
+      "identities": 2463,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "bowman-chrome-baseball-2026",
+      "name": "Bowman Chrome 2026",
+      "sport": "MLB",
+      "rows": 1651,
+      "identities": 1651,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-signature-class-football-2025",
+      "name": "Signature Class NFL 2025",
+      "sport": "NFL",
+      "rows": 1496,
+      "identities": 1496,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-chrome-basketball-2025-26",
+      "name": "Chrome Basketball 25/26",
+      "sport": "NBA",
+      "rows": 1351,
+      "identities": 1351,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-chrome-wwe-2026",
+      "name": "Chrome WWE 2026",
+      "sport": "WWE",
+      "rows": 1302,
+      "identities": 1302,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "panini-select-basketball-2024-25",
+      "name": "Select NBA 24/25",
+      "sport": "NBA",
+      "rows": 1169,
+      "identities": 1169,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "panini-donruss-optic-basketball-2024-25",
+      "name": "Optic NBA 24/25",
+      "sport": "NBA",
+      "rows": 1092,
+      "identities": 1092,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "panini-donruss-optic-football-2025",
+      "name": "Optic NFL 2025",
+      "sport": "NFL",
+      "rows": 1064,
+      "identities": 1064,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "panini-prizm-basketball-2024-25",
+      "name": "Prizm NBA 24/25",
+      "sport": "NBA",
+      "rows": 1035,
+      "identities": 1035,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-holiday-baseball-2025",
+      "name": "Holiday MLB 2025",
+      "sport": "MLB",
+      "rows": 991,
+      "identities": 991,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-chrome-ufc-2026",
+      "name": "Chrome UFC 2026",
+      "sport": "UFC",
+      "rows": 898,
+      "identities": 898,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-resurgence-football-2025",
+      "name": "Resurgence NFL 2025",
+      "sport": "NFL",
+      "rows": 752,
+      "identities": 752,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-chrome-tennis-2026",
+      "name": "Chrome Tennis 2026",
+      "sport": "Tennis",
+      "rows": 745,
+      "identities": 745,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "panini-prizm-club-world-cup-2025",
+      "name": "Prizm Club World Cup 2025",
+      "sport": "Soccer",
+      "rows": 602,
+      "identities": 601,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "panini-select-la-liga-2024-25",
+      "name": "Select LaLiga 24/25",
+      "sport": "Soccer",
+      "rows": 490,
+      "identities": 490,
+      "coverage": "base-complete-expanded"
+    },
+    {
+      "id": "panini-select-road-to-world-cup-2025-26",
+      "name": "Select Road to World Cup 25/26",
+      "sport": "Soccer",
+      "rows": 466,
+      "identities": 466,
+      "coverage": "base-complete-expanded"
+    },
+    {
+      "id": "topps-flagship-football-2026",
+      "name": "Flagship NFL 2026",
+      "sport": "NFL",
+      "rows": 401,
+      "identities": 401,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-premier-league-2025-26",
+      "name": "Premier League 25/26",
+      "sport": "Soccer",
+      "rows": 362,
+      "identities": 362,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-chrome-baseball-2026",
+      "name": "Chrome Baseball 2026",
+      "sport": "MLB",
+      "rows": 309,
+      "identities": 309,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-chrome-ucc-2025-26",
+      "name": "Chrome UEFA 25/26",
+      "sport": "Soccer",
+      "rows": 311,
+      "identities": 303,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "panini-pitch-kings-laliga-2025-26",
+      "name": "Pitch Kings LaLiga 25/26",
+      "sport": "Soccer",
+      "rows": 228,
+      "identities": 224,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-chrome-f1-2026",
+      "name": "Chrome F1 2026",
+      "sport": "F1",
+      "rows": 201,
+      "identities": 201,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-chrome-mls-2026",
+      "name": "Chrome MLS 2026",
+      "sport": "Soccer",
+      "rows": 201,
+      "identities": 201,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-chrome-premier-league-2026",
+      "name": "Chrome Premier League 25/26",
+      "sport": "Soccer",
+      "rows": 201,
+      "identities": 201,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-now-mlb-2026",
+      "name": "MLB Topps NOW 2026",
+      "sport": "MLB",
+      "rows": 175,
+      "identities": 175,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "panini-intl-germany-2026",
+      "name": "Panini INTL Germany 2026",
+      "sport": "Soccer",
+      "rows": 167,
+      "identities": 167,
+      "coverage": "base-complete"
+    },
+    {
+      "id": "panini-intl-france-2026",
+      "name": "Panini INTL France 2026",
+      "sport": "Soccer",
+      "rows": 144,
+      "identities": 144,
+      "coverage": "base-complete"
+    },
+    {
+      "id": "panini-prizm-monopoly-world-cup-2026",
+      "name": "Prizm Monopoly WC 2026",
+      "sport": "Soccer",
+      "rows": 143,
+      "identities": 143,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "panini-intl-england-2026",
+      "name": "Panini INTL England 2026",
+      "sport": "Soccer",
+      "rows": 140,
+      "identities": 140,
+      "coverage": "base-complete"
+    },
+    {
+      "id": "topps-barcelona-forever-2025-26",
+      "name": "Barcelona Forever 25/26",
+      "sport": "Soccer",
+      "rows": 138,
+      "identities": 138,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-now-soccer-2026",
+      "name": "Soccer Topps NOW 2026",
+      "sport": "Soccer",
+      "rows": 127,
+      "identities": 127,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-real-madrid-team-set-2025-26",
+      "name": "Real Madrid Team Set 25/26",
+      "sport": "Soccer",
+      "rows": 123,
+      "identities": 123,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-benfica-team-set-2025-26",
+      "name": "Benfica Team Set 25/26",
+      "sport": "Soccer",
+      "rows": 121,
+      "identities": 121,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-chelsea-team-set-2025-26",
+      "name": "Chelsea Team Set 25/26",
+      "sport": "Soccer",
+      "rows": 119,
+      "identities": 119,
+      "coverage": "full-checklist-expanded"
+    },
+    {
+      "id": "panini-intl-mexico-2026",
+      "name": "Panini INTL México 2026",
+      "sport": "Soccer",
+      "rows": 104,
+      "identities": 104,
+      "coverage": "base-complete"
+    },
+    {
+      "id": "topps-liverpool-collector-tin-2025-26",
+      "name": "Liverpool Collector Tin 25/26",
+      "sport": "Soccer",
+      "rows": 59,
+      "identities": 59,
+      "coverage": "full-checklist"
+    },
+    {
+      "id": "topps-barcelona-collector-tin-2025-26",
+      "name": "Barcelona Tin 25/26",
+      "sport": "Soccer",
+      "rows": 58,
+      "identities": 58,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-juventus-collector-tin-2025-26",
+      "name": "Juventus Collector Tin 25/26",
+      "sport": "Soccer",
+      "rows": 57,
+      "identities": 57,
+      "coverage": "full-checklist"
+    },
+    {
+      "id": "topps-real-madrid-collector-tin-2025-26",
+      "name": "Real Madrid Tin 25/26",
+      "sport": "Soccer",
+      "rows": 57,
+      "identities": 57,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-bayern-collector-tin-2025-26",
+      "name": "Bayern Collector Tin 25/26",
+      "sport": "Soccer",
+      "rows": 56,
+      "identities": 56,
+      "coverage": "full-checklist"
+    },
+    {
+      "id": "topps-man-utd-collector-tin-2025-26",
+      "name": "Man United Collector Tin 25/26",
+      "sport": "Soccer",
+      "rows": 56,
+      "identities": 56,
+      "coverage": "full-checklist"
+    },
+    {
+      "id": "topps-celtic-collector-tin-2025-26",
+      "name": "Celtic Collector Tin 25/26",
+      "sport": "Soccer",
+      "rows": 55,
+      "identities": 55,
+      "coverage": "full-checklist"
+    },
+    {
+      "id": "panini-select-laliga-2024-25",
+      "name": "Select LaLiga 24/25",
+      "sport": "Soccer",
+      "rows": 54,
+      "identities": 54,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-finest-ucc-2025-26",
+      "name": "Finest UEFA 25/26",
+      "sport": "Soccer",
+      "rows": 52,
+      "identities": 52,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-chelsea-collector-tin-2026-27",
+      "name": "Chelsea Collector Tin 26/27",
+      "sport": "Soccer",
+      "rows": 49,
+      "identities": 49,
+      "coverage": "full-checklist"
+    },
+    {
+      "id": "topps-man-city-collector-tin-2026-27",
+      "name": "Man City Collector Tin 26/27",
+      "sport": "Soccer",
+      "rows": 49,
+      "identities": 49,
+      "coverage": "full-checklist"
+    },
+    {
+      "id": "topps-man-utd-collector-tin-2026-27",
+      "name": "Man United Collector Tin 26/27",
+      "sport": "Soccer",
+      "rows": 49,
+      "identities": 49,
+      "coverage": "full-checklist"
+    },
+    {
+      "id": "topps-now-ufc-2026",
+      "name": "UFC Topps NOW 2026",
+      "sport": "UFC",
+      "rows": 49,
+      "identities": 49,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-premier-league-2026-27",
+      "name": "Premier League 26/27",
+      "sport": "Soccer",
+      "rows": 43,
+      "identities": 43,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-now-nfl-2026",
+      "name": "NFL Topps NOW 2026",
+      "sport": "NFL",
+      "rows": 39,
+      "identities": 39,
+      "coverage": "expanded-structured"
+    }
+  ]
+}

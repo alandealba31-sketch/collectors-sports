@@ -1,6 +1,6 @@
 {
   "runner": "sync_mycardfolio_v2.py",
-  "startedAt": "2026-10-04T04:39:40Z",
+  "startedAt": "2026-10-04T05:17:37Z",
   "endpoint": "https://mycardfolio.com/api/mcp",
   "setsPerProductPerRun": 150,
   "requestDelaySeconds": 1.05,
@@ -4829,10 +4829,80 @@
       ],
       "error": "strict-product-not-found"
     },
-    "topps-signature-class-basketball-2025-26": {
+    "topps-finest-baseball-2026": {
       "setsFetchedThisRun": 3,
       "rowsAddedThisRun": 3,
       "imagesAddedThisRun": 3,
+      "candidateProducts": [
+        {
+          "year": "2026",
+          "label": "Finest Baseball",
+          "score": 12,
+          "strict": true,
+          "productId": "ebay_d887a32942"
+        },
+        {
+          "year": "2026",
+          "label": "Topps Finest",
+          "score": 12,
+          "strict": true,
+          "productId": "ebay_9d898bce91"
+        },
+        {
+          "year": "2026",
+          "label": "2026 Topps",
+          "score": 10,
+          "strict": false,
+          "productId": "ebay_fd8b05d69a"
+        },
+        {
+          "year": "2026",
+          "label": "2026 Topps Baseball",
+          "score": 7,
+          "strict": false,
+          "productId": "ebay_c4e6271131"
+        },
+        {
+          "year": "2026",
+          "label": "2026 Topps Baseball 35th Anniv",
+          "score": 7,
+          "strict": false,
+          "productId": "ebay_aef5406bd6"
+        },
+        {
+          "year": "2026",
+          "label": "2026 Topps Baseball 35th Anniversary All-Stars",
+          "score": 7,
+          "strict": false,
+          "productId": "ebay_970301f8e3"
+        },
+        {
+          "year": "2026",
+          "label": "Baseball",
+          "score": 7,
+          "strict": false,
+          "productId": "ebay_7bf753d622"
+        },
+        {
+          "year": "2026",
+          "label": "Finest",
+          "score": 7,
+          "strict": true,
+          "productId": "ebay_2ccbffa627"
+        }
+      ],
+      "yearUsed": "2026",
+      "productId": "ebay_d887a32942",
+      "productMatched": "Finest Baseball",
+      "knownSets": 3,
+      "processedSetsTotal": 3,
+      "remainingSets": 0,
+      "rowsAccumulated": 3
+    },
+    "topps-signature-class-basketball-2025-26": {
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2025",
@@ -4898,11 +4968,273 @@
       "processedSetsTotal": 3,
       "remainingSets": 0,
       "rowsAccumulated": 3
+    },
+    "topps-now-mls-2026": {
+      "setsFetchedThisRun": 3,
+      "rowsAddedThisRun": 3,
+      "imagesAddedThisRun": 3,
+      "candidateProducts": [
+        {
+          "year": "2026",
+          "label": "Now",
+          "score": 5,
+          "strict": false,
+          "productId": "ebay_14edd5b886"
+        },
+        {
+          "year": "2026",
+          "label": "NOW®",
+          "score": 5,
+          "strict": false,
+          "productId": "ebay_7b31a289b0"
+        },
+        {
+          "year": "2026",
+          "label": "Topps",
+          "score": 5,
+          "strict": false,
+          "productId": "ing_666294998d"
+        },
+        {
+          "year": "2026",
+          "label": "2025-2026 Topps Chrome",
+          "score": 2,
+          "strict": false,
+          "productId": "ing_acea0f1d9c"
+        },
+        {
+          "year": "2026",
+          "label": "2026 Topps Chrome Premier League",
+          "score": 2,
+          "strict": false,
+          "productId": "ebay_d48a402fbe"
+        },
+        {
+          "year": "2026",
+          "label": "Now MLS",
+          "score": 2,
+          "strict": true,
+          "productId": "ebay_17c5242794"
+        },
+        {
+          "year": "2026",
+          "label": "2026 FIFA World Cup",
+          "score": -3,
+          "strict": false,
+          "productId": "ebay_80d1d3b7cb"
+        },
+        {
+          "year": "2026",
+          "label": "2026 FIFA World Cup Disco Prizm",
+          "score": -3,
+          "strict": false,
+          "productId": "ebay_103ad735c4"
+        }
+      ],
+      "yearUsed": "2026",
+      "productId": "ebay_17c5242794",
+      "productMatched": "Now MLS",
+      "knownSets": 3,
+      "processedSetsTotal": 3,
+      "remainingSets": 0,
+      "rowsAccumulated": 3
+    },
+    "topps-now-fc-barcelona-2026-27": {
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
+      "candidateProducts": [
+        {
+          "year": "2026",
+          "label": "Now",
+          "score": 3,
+          "strict": false,
+          "productId": "ebay_14edd5b886"
+        },
+        {
+          "year": "2026",
+          "label": "NOW®",
+          "score": 3,
+          "strict": false,
+          "productId": "ebay_7b31a289b0"
+        },
+        {
+          "year": "2026",
+          "label": "Topps",
+          "score": 3,
+          "strict": false,
+          "productId": "ing_666294998d"
+        },
+        {
+          "year": "2026",
+          "label": "Premier League 26/27",
+          "score": 0,
+          "strict": false,
+          "productId": "ebay_378416ebcf"
+        },
+        {
+          "year": "2026",
+          "label": "2025-2026 Topps Chrome",
+          "score": -2,
+          "strict": false,
+          "productId": "ing_acea0f1d9c"
+        },
+        {
+          "year": "2026",
+          "label": "2026 Topps Chrome Premier League",
+          "score": -2,
+          "strict": false,
+          "productId": "ebay_d48a402fbe"
+        },
+        {
+          "year": "2026",
+          "label": "25/26 Select Road To World Cup Mexico",
+          "score": -5,
+          "strict": false,
+          "productId": "ebay_bc6a999c80"
+        },
+        {
+          "year": "2026",
+          "label": "Adrenalyn XL FIFA World Cup '26",
+          "score": -5,
+          "strict": false,
+          "productId": "ebay_f4693ba392"
+        }
+      ],
+      "error": "strict-product-not-found"
+    },
+    "topps-now-ucl-2026-27": {
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
+      "candidateProducts": [
+        {
+          "year": "2026",
+          "label": "UEFA Champions League",
+          "score": 9,
+          "strict": false,
+          "productId": "ebay_b646c93e67"
+        },
+        {
+          "year": "2026",
+          "label": "Now",
+          "score": 3,
+          "strict": false,
+          "productId": "ebay_14edd5b886"
+        },
+        {
+          "year": "2026",
+          "label": "NOW®",
+          "score": 3,
+          "strict": false,
+          "productId": "ebay_7b31a289b0"
+        },
+        {
+          "year": "2026",
+          "label": "Topps",
+          "score": 3,
+          "strict": false,
+          "productId": "ing_666294998d"
+        },
+        {
+          "year": "2026",
+          "label": "2026 Topps Chrome Premier League",
+          "score": 1,
+          "strict": false,
+          "productId": "ebay_d48a402fbe"
+        },
+        {
+          "year": "2026",
+          "label": "Chrome UEFA Champions League",
+          "score": 1,
+          "strict": false,
+          "productId": "ebay_3ab7899bd8"
+        },
+        {
+          "year": "2026",
+          "label": "Finest UEFA Champions League",
+          "score": 1,
+          "strict": false,
+          "productId": "ebay_efe8c2b62f"
+        },
+        {
+          "year": "2026",
+          "label": "UEFA Champions League 24/25",
+          "score": 1,
+          "strict": false,
+          "productId": "ebay_a1e9cf719f"
+        }
+      ],
+      "error": "strict-product-not-found"
+    },
+    "topps-now-argentina-2026": {
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
+      "candidateProducts": [
+        {
+          "year": "2026",
+          "label": "Now",
+          "score": 5,
+          "strict": false,
+          "productId": "ebay_14edd5b886"
+        },
+        {
+          "year": "2026",
+          "label": "NOW®",
+          "score": 5,
+          "strict": false,
+          "productId": "ebay_7b31a289b0"
+        },
+        {
+          "year": "2026",
+          "label": "Topps",
+          "score": 5,
+          "strict": false,
+          "productId": "ing_666294998d"
+        },
+        {
+          "year": "2026",
+          "label": "2025-2026 Topps Chrome",
+          "score": 2,
+          "strict": false,
+          "productId": "ing_acea0f1d9c"
+        },
+        {
+          "year": "2026",
+          "label": "2026 Topps Chrome Premier League",
+          "score": 2,
+          "strict": false,
+          "productId": "ebay_d48a402fbe"
+        },
+        {
+          "year": "2026",
+          "label": "2026 FIFA World Cup",
+          "score": -3,
+          "strict": false,
+          "productId": "ebay_80d1d3b7cb"
+        },
+        {
+          "year": "2026",
+          "label": "2026 FIFA World Cup Disco Prizm",
+          "score": -3,
+          "strict": false,
+          "productId": "ebay_103ad735c4"
+        },
+        {
+          "year": "2026",
+          "label": "2026 FIFA World Cup Stickers",
+          "score": -3,
+          "strict": false,
+          "productId": "ebay_b5c30d011b"
+        }
+      ],
+      "error": "strict-product-not-found"
     }
   },
-  "finishedAt": "2026-10-04T04:42:04Z",
-  "collectionsWritten": 50,
-  "rowsWritten": 1451,
-  "exactFrontsWritten": 1435,
-  "runtimeSeconds": 143.6
+  "finishedAt": "2026-10-04T05:20:13Z",
+  "collectionsWritten": 52,
+  "rowsWritten": 1457,
+  "exactFrontsWritten": 1441,
+  "runtimeSeconds": 156.7
 }

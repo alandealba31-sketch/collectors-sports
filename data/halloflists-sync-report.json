@@ -99,6 +99,13 @@
       "error": "no checklist rows parsed"
     },
     {
+      "collectionId": "topps-finest-baseball-2026",
+      "url": "https://www.halloflists.com/products/2026-topps-finest-baseball",
+      "rows": 0,
+      "status": "error",
+      "error": "no checklist rows parsed"
+    },
+    {
       "collectionId": "topps-chrome-basketball-2025-26",
       "url": "https://www.halloflists.com/products/2025-26-topps-chrome-basketball",
       "rows": 0,
@@ -170,6 +177,6 @@
     }
   ],
   "successfulProducts": 2,
-  "failedProducts": 20,
+  "failedProducts": 21,
   "totalRows": 15
 }

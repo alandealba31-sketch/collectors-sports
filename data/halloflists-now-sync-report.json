@@ -1,0 +1,72 @@
+{
+  "products": [
+    {
+      "collectionId": "topps-now-mlb-2026",
+      "rows": 0,
+      "wbcRows": 0,
+      "pageDeclared": 1178,
+      "status": "ok"
+    },
+    {
+      "collectionId": "topps-now-ufc-2026",
+      "rows": 0,
+      "status": "error",
+      "error": "no 2026 archive rows parsed"
+    },
+    {
+      "collectionId": "topps-now-nfl-2026",
+      "rows": 0,
+      "status": "error",
+      "error": "no 2026 archive rows parsed"
+    },
+    {
+      "collectionId": "topps-now-wwe-2026",
+      "rows": 0,
+      "status": "error",
+      "error": "no 2026 archive rows parsed"
+    },
+    {
+      "collectionId": "topps-now-tennis-2026",
+      "rows": 0,
+      "status": "error",
+      "error": "no 2026 archive rows parsed"
+    },
+    {
+      "collectionId": "topps-now-f1-2026",
+      "rows": 0,
+      "status": "error",
+      "error": "no 2026 archive rows parsed"
+    },
+    {
+      "collectionId": "topps-now-nba-2026-27",
+      "rows": 0,
+      "status": "error",
+      "error": "no 2026 archive rows parsed"
+    },
+    {
+      "collectionId": "topps-now-mls-2026",
+      "rows": 0,
+      "status": "error",
+      "error": "no 2026 archive rows parsed"
+    },
+    {
+      "collectionId": "topps-now-fc-barcelona-2026-27",
+      "rows": 0,
+      "status": "error",
+      "error": "no 2026 archive rows parsed"
+    },
+    {
+      "collectionId": "topps-now-ucl-2026-27",
+      "rows": 0,
+      "status": "error",
+      "error": "no 2026 archive rows parsed"
+    },
+    {
+      "collectionId": "topps-now-argentina-2026",
+      "rows": 0,
+      "status": "error",
+      "error": "no 2026 archive rows parsed"
+    }
+  ],
+  "totalRows": 0
+}

@@ -1204,6 +1204,37 @@
       "productMatched": "Signature Class Basketball",
       "yearUsed": "2025",
       "knownSets": 3
+    },
+    "topps-finest-baseball-2026": {
+      "processedSets": [
+        "ebay_0b873834f5",
+        "ebay_6be6a0c5a6",
+        "ebay_ece257023f"
+      ],
+      "productId": "ebay_d887a32942",
+      "productMatched": "Finest Baseball",
+      "yearUsed": "2026",
+      "knownSets": 3
+    },
+    "topps-now-mls-2026": {
+      "processedSets": [
+        "ebay_802a294425",
+        "ebay_8825a805b4",
+        "ebay_e0d01efc08"
+      ],
+      "productId": "ebay_17c5242794",
+      "productMatched": "Now MLS",
+      "yearUsed": "2026",
+      "knownSets": 3
+    },
+    "topps-now-fc-barcelona-2026-27": {
+      "processedSets": []
+    },
+    "topps-now-ucl-2026-27": {
+      "processedSets": []
+    },
+    "topps-now-argentina-2026": {
+      "processedSets": []
     }
   }
 }

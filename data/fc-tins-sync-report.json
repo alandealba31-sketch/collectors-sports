@@ -1,0 +1,8 @@
+{
+  "source": "https://www.halloflists.com/products/2026-27-topps-fc-collector-tin",
+  "status": "skipped",
+  "totalRows": 0,
+  "collections": [],
+  "preservedExistingCatalog": true,
+  "reason": "source layout changed; expected 147 cards, parsed 0"
+}
