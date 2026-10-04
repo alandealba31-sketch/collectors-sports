@@ -1235,6 +1235,27 @@
     },
     "topps-now-argentina-2026": {
       "processedSets": []
+    },
+    "topps-holiday-football-2026": {
+      "processedSets": []
+    },
+    "topps-holiday-baseball-2026": {
+      "processedSets": []
+    },
+    "panini-real-madrid-tribute-2023-24": {
+      "processedSets": []
+    },
+    "panini-atletico-madrid-2025-26": {
+      "processedSets": []
+    },
+    "panini-real-madrid-2025-26": {
+      "processedSets": [
+        "ebay_80551bab4d"
+      ],
+      "productId": "ebay_8e7c2ed7c9",
+      "productMatched": "Real Madrid Collectors Tin",
+      "yearUsed": "2025",
+      "knownSets": 1
     }
   }
 }

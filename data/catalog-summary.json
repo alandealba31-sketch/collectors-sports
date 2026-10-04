@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T05:20:14.903Z",
+  "generatedAt": "2026-10-04T05:25:20.623Z",
   "scriptFilesEvaluated": 52,
   "scriptFailures": [
     {
@@ -7,23 +7,23 @@
       "error": "document is not defined"
     }
   ],
-  "collectionsWithChecklist": 69,
-  "collectionRecords": 82,
-  "searchableIdentities": 22249,
+  "collectionsWithChecklist": 70,
+  "collectionRecords": 83,
+  "searchableIdentities": 17921,
   "bySport": {
-    "NFL": 6215,
-    "Soccer": 4922,
-    "NBA": 4668,
+    "NFL": 5155,
+    "Soccer": 4923,
     "MLB": 3170,
+    "NBA": 1399,
     "WWE": 1323,
     "UFC": 948,
     "Tennis": 769,
     "F1": 234
   },
-  "verifiedExactFrontRecords": 1445,
-  "approximateUniqueExactFrontIdentities": 1445,
-  "searchableIdentitiesWithExactFront": 1848,
-  "exactFrontCoveragePct": 8.31,
+  "verifiedExactFrontRecords": 1446,
+  "approximateUniqueExactFrontIdentities": 1446,
+  "searchableIdentitiesWithExactFront": 1843,
+  "exactFrontCoveragePct": 10.28,
   "topCollections": [
     {
       "id": "topps-chrome-football-2025",
@@ -63,38 +63,6 @@
       "sport": "WWE",
       "rows": 1302,
       "identities": 1302,
-      "coverage": "expanded-structured"
-    },
-    {
-      "id": "panini-select-basketball-2024-25",
-      "name": "Select NBA 24/25",
-      "sport": "NBA",
-      "rows": 1169,
-      "identities": 1169,
-      "coverage": "expanded-structured"
-    },
-    {
-      "id": "panini-donruss-optic-basketball-2024-25",
-      "name": "Optic NBA 24/25",
-      "sport": "NBA",
-      "rows": 1092,
-      "identities": 1092,
-      "coverage": "expanded-structured"
-    },
-    {
-      "id": "panini-donruss-optic-football-2025",
-      "name": "Optic NFL 2025",
-      "sport": "NFL",
-      "rows": 1064,
-      "identities": 1064,
-      "coverage": "expanded-structured"
-    },
-    {
-      "id": "panini-prizm-basketball-2024-25",
-      "name": "Prizm NBA 24/25",
-      "sport": "NBA",
-      "rows": 1035,
-      "identities": 1035,
       "coverage": "expanded-structured"
     },
     {
@@ -423,6 +391,38 @@
       "sport": "NFL",
       "rows": 39,
       "identities": 39,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-now-wbc-2026",
+      "name": "WBC Topps NOW 2026",
+      "sport": "MLB",
+      "rows": 36,
+      "identities": 36,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-now-f1-2026",
+      "name": "Formula 1 Topps NOW 2026",
+      "sport": "F1",
+      "rows": 33,
+      "identities": 33,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-now-tennis-2026",
+      "name": "Tennis Topps NOW 2026",
+      "sport": "Tennis",
+      "rows": 25,
+      "identities": 24,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-ucc-2025-26",
+      "name": "UEFA Flagship 25/26",
+      "sport": "Soccer",
+      "rows": 23,
+      "identities": 23,
       "coverage": "expanded-structured"
     }
   ]
