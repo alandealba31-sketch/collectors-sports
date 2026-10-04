@@ -65,6 +65,7 @@ jobs:
           run_optional "Hall of Lists NOW" python tools/sync_halloflists_now.py
           run_optional "ChecklistInsider" python tools/sync_checklistinsider.py
           run_optional "FC Collector Tins" python tools/sync_fc_collector_tins.py
+          run_optional "Owned priority sources" python tools/sync_owned_priority_sources.py
       - name: Expand products and exact fronts through exact-year structured MCP
         run: |
           python sync_mycardfolio_v3.py || echo "::warning::MyCardfolio sync failed; continuing with last valid generated data."
@@ -92,6 +93,7 @@ jobs:
           node --check catalog-now-halloflists.js
           node --check catalog-checklistinsider-expanded.js
           node --check catalog-fc-tins-expanded.js
+          node --check catalog-owned-priority-expanded.js
           node --check catalog-mycardfolio-expanded.js
           node --check catalog-images-mycardfolio.js
           node --check catalog-images-official.js
@@ -101,7 +103,7 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
-          for filename in ['data/catalog-summary.json','data/halloflists-sync-report.json','data/halloflists-now-sync-report.json','data/checklistinsider-sync-report.json','data/fc-tins-sync-report.json','data/mycardfolio-sync-report.json','data/bulk-image-report.json','data/ebay-image-report.json']:
+          for filename in ['data/catalog-summary.json','data/halloflists-sync-report.json','data/halloflists-now-sync-report.json','data/checklistinsider-sync-report.json','data/fc-tins-sync-report.json','data/owned-priority-sync-report.json','data/mycardfolio-sync-report.json','data/bulk-image-report.json','data/ebay-image-report.json']:
               p=Path(filename)
               if p.exists():
                   print('\n'+filename)
@@ -111,9 +113,9 @@ jobs:
         run: |
           set -euo pipefail
           CANDIDATES=(
-            catalog-imported.js catalog-premier.js catalog-halloflists-expanded.js catalog-now-halloflists.js catalog-checklistinsider-expanded.js catalog-fc-tins-expanded.js catalog-mycardfolio-expanded.js
+            catalog-imported.js catalog-premier.js catalog-halloflists-expanded.js catalog-now-halloflists.js catalog-checklistinsider-expanded.js catalog-fc-tins-expanded.js catalog-owned-priority-expanded.js catalog-mycardfolio-expanded.js
             catalog-images-mycardfolio.js catalog-images-official.js catalog-images-cached.js catalog-images-bulk.js catalog-images-ebay.js
-            data/catalog-summary.json data/halloflists-sync-report.json data/halloflists-now-sync-report.json data/checklistinsider-sync-report.json data/fc-tins-sync-report.json data/mycardfolio-sync-state.json data/mycardfolio-sync-report.json
+            data/catalog-summary.json data/halloflists-sync-report.json data/halloflists-now-sync-report.json data/checklistinsider-sync-report.json data/fc-tins-sync-report.json data/owned-priority-sync-report.json data/mycardfolio-sync-state.json data/mycardfolio-sync-report.json
             data/bulk-image-manifest.json data/bulk-image-report.json assets/cards/bulk
             data/ebay-image-manifest.json data/ebay-image-report.json assets/cards/ebay
           )
