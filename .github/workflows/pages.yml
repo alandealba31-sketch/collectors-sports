@@ -40,6 +40,7 @@ jobs:
           node --check catalog-intl-expanded.js
           node --check catalog-teamsets-expanded.js
           node --check catalog-select-laliga-expanded.js
+          node --check catalog-select-laliga-inserts.js
           node --check catalog-prizm-cwc-expanded.js
           node --check catalog-owned-batch2.js
           node --check catalog-owned-batch3.js
@@ -60,6 +61,7 @@ jobs:
           test -f catalog-intl-expanded.js
           test -f catalog-teamsets-expanded.js
           test -f catalog-select-laliga-expanded.js
+          test -f catalog-select-laliga-inserts.js
           test -f catalog-prizm-cwc-expanded.js
           test -f catalog-images-cached.js
           test -f catalog-images-teamsets.js
@@ -73,6 +75,7 @@ jobs:
           grep -q 'catalog-intl-expanded.js' index.html
           grep -q 'catalog-teamsets-expanded.js' index.html
           grep -q 'catalog-select-laliga-expanded.js' index.html
+          grep -q 'catalog-select-laliga-inserts.js' index.html
           grep -q 'catalog-prizm-cwc-expanded.js' index.html
           grep -q 'catalog-mycardfolio-expanded.js' index.html
           grep -q 'catalog-images-mycardfolio.js' index.html
