@@ -36,6 +36,7 @@ REQUEST_DELAY = 1.05
 RATE_LIMIT_WAIT = 70
 MAX_RATE_RETRIES = 8
 MAX_RUNTIME = 46 * 60
+FORCE_PURGE_COLLECTION_IDS: set[str] = set()
 
 PARALLEL_WORDS = re.compile(
     r"\b(refractor|prizm|parallel|foil|gold|orange|red|black|green|blue|aqua|purple|pink|teal|yellow|silver|bronze|sepia|negative|frozen|superfractor|sapphire|atomic|mojo|lava|wave|raywave|x-fractor|geometric|ruby|burgundy|amber|violet|jade|obsidian|artist proof)\b",
@@ -361,12 +362,20 @@ async def main_async() -> None:
     images = extract_generated(IMAGES_OUT, r"Object\.assign\(r\.cards,(\{.*\})\);")
     state = load_json(STATE, {"version": 2, "products": {}})
     state["version"] = 2
+    forced_purge_report = {}
+    for cid in sorted(FORCE_PURGE_COLLECTION_IDS):
+        ps = state["products"].setdefault(cid, {"processedSets": []})
+        removed_rows, removed_images = purge_collection(cid, catalog, images, ps)
+        if removed_rows or removed_images:
+            forced_purge_report[cid] = {"rows": removed_rows, "images": removed_images}
+            print(f"[{cid}] forced legacy purge: -{removed_rows} rows, -{removed_images} fronts", flush=True)
     report = {
         "runner": "sync_mycardfolio_v2.py",
         "startedAt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         "endpoint": URL,
         "setsPerProductPerRun": SETS_PER_PRODUCT_PER_RUN,
         "requestDelaySeconds": REQUEST_DELAY,
+        "forcedLegacyPurges": forced_purge_report,
         "products": {},
     }
     years_cache: dict[str, list[str]] = {}
