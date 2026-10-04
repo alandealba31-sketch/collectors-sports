@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "products": [
     {"collectionId":"topps-chrome-ucc-2025-26","sid":613906,"setName":"2025-26 Topps Chrome UEFA Club Competitions","shortName":"Chrome UEFA 25/26","sport":"Soccer"},
     {"collectionId":"topps-ucc-2025-26","sid":581279,"setName":"2025-26 Topps UEFA Club Competitions","shortName":"UEFA Flagship 25/26","sport":"Soccer"},
@@ -7,7 +7,12 @@
     {"collectionId":"topps-premier-league-2025-26","sid":543724,"setName":"2025-26 Topps Premier League","shortName":"Premier League 25/26","sport":"Soccer"},
     {"collectionId":"topps-chrome-premier-league-2026","sid":585451,"setName":"2025-26 Topps Chrome Premier League","shortName":"Chrome Premier League 25/26","sport":"Soccer"},
     {"collectionId":"topps-finest-premier-league-2026","sid":612043,"setName":"2025-26 Finest Premier League","shortName":"Finest Premier League 25/26","sport":"Soccer"},
+    {"collectionId":"topps-chrome-mls-2026","sid":675437,"setName":"2026 Topps Chrome MLS","shortName":"Chrome MLS 2026","sport":"Soccer"},
     {"collectionId":"panini-pitch-kings-laliga-2025-26","sid":650062,"setName":"2025-26 Panini Pitch Kings","shortName":"Pitch Kings LaLiga 25/26","sport":"Soccer"},
+    {"collectionId":"panini-select-road-to-world-cup-2025-26","sid":599897,"setName":"2025-26 Panini Select Road to FIFA World Cup","shortName":"Select Road to World Cup 25/26","sport":"Soccer"},
+    {"collectionId":"panini-prizm-club-world-cup-2025","sid":520138,"setName":"2025 Panini Prizm FIFA Club World Cup","shortName":"Prizm Club World Cup 2025","sport":"Soccer"},
+    {"collectionId":"panini-prizm-monopoly-world-cup-2026","sid":598914,"setName":"2026 Panini Prizm Monopoly FIFA World Cup","shortName":"Prizm Monopoly WC 2026","sport":"Soccer"},
+    {"collectionId":"panini-intl-france-2026","sid":674679,"setName":"2026 Panini INTL France","shortName":"Panini INTL France 2026","sport":"Soccer"},
     {"collectionId":"topps-real-madrid-team-set-2025-26","sid":602126,"setName":"2025-26 Topps Real Madrid Team Set","shortName":"Real Madrid Team Set 25/26","sport":"Soccer"},
     {"collectionId":"topps-chelsea-team-set-2025-26","sid":603690,"setName":"2025-26 Topps Chelsea Team Set","shortName":"Chelsea Team Set 25/26","sport":"Soccer"},
     {"collectionId":"topps-real-madrid-collector-tin-2025-26","sid":572300,"setName":"2025-26 Topps Real Madrid Collector Tin","shortName":"Real Madrid Collector Tin 25/26","sport":"Soccer"},
@@ -33,6 +38,7 @@
     {"collectionId":"topps-chrome-ufc-2026","sid":632703,"setName":"2026 Topps Chrome UFC","shortName":"Chrome UFC 2026","sport":"UFC"},
     {"collectionId":"topps-stadium-club-ufc-2026","sid":663912,"setName":"2026 Stadium Club UFC","shortName":"Stadium Club UFC 2026","sport":"UFC"},
 
+    {"collectionId":"topps-chrome-tennis-2026","sid":587629,"setName":"2025 Topps Chrome Tennis","shortName":"Chrome Tennis 2026","sport":"Tennis"},
     {"collectionId":"topps-chrome-wwe-2026","sid":608660,"setName":"2026 Topps Chrome WWE","shortName":"Chrome WWE 2026","sport":"WWE"}
   ]
 }
