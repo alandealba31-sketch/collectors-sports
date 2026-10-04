@@ -68,6 +68,16 @@ def read_products(path: Path, key='products') -> list[dict]:
     except Exception: return []
 
 
+def priority_rank(root: Path) -> dict[str,int]:
+    path=root/'data'/'email-priority-collections.json'
+    try:
+        raw=json.loads(path.read_text(encoding='utf-8')) if path.exists() else {}
+        items=raw.get('collections') or []
+        return {str(item.get('collectionId')): int(item.get('priority', index+1)) for index,item in enumerate(items) if item.get('collectionId')}
+    except Exception:
+        return {}
+
+
 def build_merged_config() -> Path:
     root=Path(__file__).resolve().parent
     base=read_products(root/'mycardfolio_product_sources_v2.json')
@@ -81,8 +91,13 @@ def build_merged_config() -> Path:
         item=normalize_product(dict(raw)); cid=item.get('collectionId')
         if not cid or cid in seen: continue
         seen.add(cid); products.append(item)
+    ranks=priority_rank(root)
+    if ranks:
+        products.sort(key=lambda item: ranks.get(item.get('collectionId',''), 1000000))
+        prioritized=[item.get('collectionId') for item in products if item.get('collectionId') in ranks]
+        print('Email-priority checklist queue:', ', '.join(prioritized), flush=True)
     merged_path.parent.mkdir(parents=True,exist_ok=True)
-    merged_path.write_text(json.dumps({'version':5,'products':products},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    merged_path.write_text(json.dumps({'version':6,'emailPriorityApplied':bool(ranks),'products':products},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     return merged_path
 
 
