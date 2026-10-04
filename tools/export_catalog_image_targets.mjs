@@ -23,10 +23,25 @@ const tcdbConfig = fs.existsSync('tools/tcdb_product_sources.json') ? JSON.parse
 for (const p of tcdbConfig.products||[]) if (!configured.has(p.collectionId)) configured.set(p.collectionId,{...p,provider:'ebay'});
 const mcfConfig = fs.existsSync('tools/mycardfolio_product_sources.json') ? JSON.parse(fs.readFileSync('tools/mycardfolio_product_sources.json','utf8')) : {products:[]};
 for (const p of mcfConfig.products||[]) if (!configured.has(p.collectionId)) configured.set(p.collectionId,{collectionId:p.collectionId,setName:p.product,provider:'ebay'});
+
+let priority = [];
+if (fs.existsSync('data/email-priority-collections.json')) {
+  try {
+    const raw = JSON.parse(fs.readFileSync('data/email-priority-collections.json','utf8'));
+    priority = (raw.collections||[]).slice().sort((a,b)=>(a.priority||999999)-(b.priority||999999)).map(x=>x.collectionId).filter(Boolean);
+  } catch (error) { console.warn(`Priority file ignored: ${error.message}`); }
+}
+const rank = new Map(priority.map((id,index)=>[id,index]));
+const orderedConfigured = [...configured.entries()].sort((a,b)=>{
+  const ar = rank.has(a[0]) ? rank.get(a[0]) : 1000000;
+  const br = rank.has(b[0]) ? rank.get(b[0]) : 1000000;
+  return ar-br;
+});
+
 const targets={};
-for (const [collectionId,source] of configured.entries()) {
+for (const [collectionId,source] of orderedConfigured) {
   const rows=catalog.checklists?.[collectionId]||[];
-  targets[collectionId]={source,rows:rows.map(row=>({
+  targets[collectionId]={source,priority:rank.has(collectionId)?rank.get(collectionId)+1:null,rows:rows.map(row=>({
     number:String(row?.[0]??''),player:String(row?.[1]??''),team:String(row?.[2]??''),
     subset:String(row?.[4]??''),variant:String(row?.[6]??'Base'),entryKey:String(row?.[7]??''),sourceSid:String(row?.[8]??'')
   })).filter(row=>row.number&&row.player)};
@@ -34,4 +49,6 @@ for (const [collectionId,source] of configured.entries()) {
 fs.mkdirSync('data',{recursive:true});
 fs.writeFileSync('data/image-targets-runtime.json',JSON.stringify(targets,null,2));
 const total=Object.values(targets).reduce((sum,t)=>sum+t.rows.length,0);
+const prioritized=Object.entries(targets).filter(([,v])=>v.priority!=null).map(([id,v])=>`${v.priority}:${id}`);
 console.log(`Exported ${total} catalog identities across ${Object.keys(targets).length} bulk-image targets.`);
+if (prioritized.length) console.log(`Email-priority exact-front queue: ${prioritized.join(', ')}`);
