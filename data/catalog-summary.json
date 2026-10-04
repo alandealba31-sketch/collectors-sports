@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T06:33:30.242Z",
+  "generatedAt": "2026-10-04T13:36:31.091Z",
   "scriptFilesEvaluated": 54,
   "scriptFailures": [
     {
@@ -7,23 +7,23 @@
       "error": "document is not defined"
     }
   ],
-  "collectionsWithChecklist": 78,
+  "collectionsWithChecklist": 76,
   "collectionRecords": 91,
-  "searchableIdentities": 22776,
+  "searchableIdentities": 22707,
   "bySport": {
     "NFL": 6236,
-    "Soccer": 5189,
+    "Soccer": 5187,
     "NBA": 4669,
     "MLB": 3330,
     "WWE": 1323,
-    "UFC": 948,
-    "Tennis": 846,
+    "UFC": 947,
+    "Tennis": 780,
     "F1": 235
   },
-  "verifiedExactFrontRecords": 1907,
-  "approximateUniqueExactFrontIdentities": 1906,
-  "searchableIdentitiesWithExactFront": 2310,
-  "exactFrontCoveragePct": 10.14,
+  "verifiedExactFrontRecords": 1838,
+  "approximateUniqueExactFrontIdentities": 1837,
+  "searchableIdentitiesWithExactFront": 2241,
+  "exactFrontCoveragePct": 9.87,
   "topCollections": [
     {
       "id": "topps-chrome-football-2025",
@@ -123,11 +123,11 @@
     },
     {
       "id": "topps-chrome-tennis-2026",
-      "name": "Chrome Tennis 2026",
+      "name": "Chrome Tennis 2026 · Tenis",
       "sport": "Tennis",
-      "rows": 745,
-      "identities": 745,
-      "coverage": "expanded-structured"
+      "rows": 679,
+      "identities": 679,
+      "coverage": "base-complete"
     },
     {
       "id": "panini-prizm-club-world-cup-2025",

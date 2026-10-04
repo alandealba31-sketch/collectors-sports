@@ -1,7 +1,7 @@
 {
   "provider": "TCDB expanded exact-front resolver",
-  "startedAt": "2026-10-04T06:21:37Z",
-  "maxNew": 5000,
+  "startedAt": "2026-10-04T13:36:29Z",
+  "maxNew": 4000,
   "collections": {
     "topps-chrome-mls-2026": {
       "sourceSets": 1,
@@ -289,11 +289,11 @@
       "newExact": 0,
       "sets": {
         "587629": {
-          "catalogRows": 745,
-          "eligibleBaseRows": 745,
+          "catalogRows": 679,
+          "eligibleBaseRows": 679,
           "alreadyExact": 0,
           "newExact": 0,
-          "noCardPage": 745,
+          "noCardPage": 679,
           "identityRejected": 0,
           "noAllowedFront": 0,
           "imageRejected": 0,
@@ -634,21 +634,9 @@
       }
     },
     "topps-stadium-club-ufc-2026": {
-      "sourceSets": 1,
+      "sourceSets": 0,
       "newExact": 0,
-      "sets": {
-        "663912": {
-          "catalogRows": 1,
-          "eligibleBaseRows": 1,
-          "alreadyExact": 0,
-          "newExact": 0,
-          "noCardPage": 1,
-          "identityRejected": 0,
-          "noAllowedFront": 0,
-          "imageRejected": 0,
-          "errors": 0
-        }
-      }
+      "sets": {}
     },
     "topps-update-baseball-2026": {
       "sourceSets": 0,
@@ -876,7 +864,7 @@
       "sets": {}
     }
   },
-  "finishedAt": "2026-10-04T06:21:37Z",
+  "finishedAt": "2026-10-04T13:36:29Z",
   "manifestExactFronts": 0,
   "newExactFrontsThisRun": 0
 }

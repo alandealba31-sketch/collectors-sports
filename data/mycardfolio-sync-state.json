@@ -443,32 +443,12 @@
       "knownSets": 17
     },
     "topps-stadium-club-ufc-2026": {
-      "processedSets": [
-        "ebay_3db7528a0c"
-      ],
-      "productId": "ebay_d11e0a8a72",
-      "productMatched": "Stadium Club UFC",
-      "yearUsed": "2025",
-      "knownSets": 1
+      "processedSets": [],
+      "productMatched": "Stadium Club UFC"
     },
     "topps-chrome-tennis-2026": {
-      "processedSets": [
-        "ebay_17bdb9bcb5",
-        "ebay_2ec688aaec",
-        "ebay_3733387fbf",
-        "ebay_603724a4c1",
-        "ebay_6db5c3efa9",
-        "ebay_846e04b5f2",
-        "ebay_97d52f502e",
-        "ebay_9bd67f06ad",
-        "ebay_ad44321c8b",
-        "ebay_cada325f9b",
-        "ebay_dab073cdbf"
-      ],
-      "productId": "ebay_b200aa26f8",
-      "productMatched": "Chrome Tennis",
-      "yearUsed": "2025",
-      "knownSets": 11
+      "processedSets": [],
+      "productMatched": "Chrome Tennis"
     },
     "topps-chrome-f1-2026": {
       "processedSets": [
@@ -889,13 +869,8 @@
       "processedSets": []
     },
     "topps-psg-collector-tin-2026-27": {
-      "processedSets": [
-        "ebay_87bd7299d7"
-      ],
-      "productId": "ebay_1884397054",
-      "productMatched": "Paris Saint-Germain",
-      "yearUsed": "2025",
-      "knownSets": 1
+      "processedSets": [],
+      "productMatched": "Paris Saint-Germain"
     },
     "topps-brazil-collector-tin-2026-27": {
       "processedSets": []
