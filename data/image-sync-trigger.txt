@@ -1,1 +1,1 @@
-2026-10-04 controlled validation: exact-front repair path fix
+2026-10-04 controlled validation: audit fix after exact-front repair
