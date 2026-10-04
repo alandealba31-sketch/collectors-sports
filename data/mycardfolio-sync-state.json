@@ -1179,6 +1179,20 @@
     },
     "topps-man-city-collector-tin-2026-27": {
       "processedSets": []
+    },
+    "panini-select-road-to-world-cup-2025-26": {
+      "processedSets": [
+        "ebay_4eb9ab5006",
+        "ebay_58eede370b",
+        "ebay_90791a84b7",
+        "ebay_a88a33f7bd",
+        "ebay_aa0d1bd8f4",
+        "ebay_e9919053c2"
+      ],
+      "productId": "ebay_6c15412d98",
+      "productMatched": "Select Road to World Cup",
+      "yearUsed": "2025",
+      "knownSets": 6
     }
   }
 }

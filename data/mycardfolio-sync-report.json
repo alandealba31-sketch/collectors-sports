@@ -1,6 +1,6 @@
 {
   "runner": "sync_mycardfolio_v2.py",
-  "startedAt": "2026-10-04T03:22:16Z",
+  "startedAt": "2026-10-04T03:35:40Z",
   "endpoint": "https://mycardfolio.com/api/mcp",
   "setsPerProductPerRun": 150,
   "requestDelaySeconds": 1.05,
@@ -2669,17 +2669,38 @@
       "remainingSets": 0,
       "rowsAccumulated": 2
     },
-    "panini-prizm-road-to-world-cup-2025-26": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+    "panini-select-road-to-world-cup-2025-26": {
+      "setsFetchedThisRun": 6,
+      "rowsAddedThisRun": 6,
+      "imagesAddedThisRun": 6,
       "candidateProducts": [
+        {
+          "year": "2025",
+          "label": "Select Road to World Cup",
+          "score": 53,
+          "strict": true,
+          "productId": "ebay_6c15412d98"
+        },
+        {
+          "year": "2025",
+          "label": "Select Road to Fifa World Cup",
+          "score": 24,
+          "strict": true,
+          "productId": "ebay_5ad4ccdaf8"
+        },
         {
           "year": "2025",
           "label": "Road to Fifa World Cup",
           "score": 19,
           "strict": false,
           "productId": "ebay_fc60ab8a6b"
+        },
+        {
+          "year": "2025",
+          "label": "Select Road To FIFA World C",
+          "score": 19,
+          "strict": false,
+          "productId": "ebay_6a0f1a10c8"
         },
         {
           "year": "2025",
@@ -2690,48 +2711,33 @@
         },
         {
           "year": "2025",
-          "label": "Donruss Road to Fifa World Cup",
-          "score": 11,
-          "strict": false,
-          "productId": "ebay_b29a71f046"
+          "label": "Select Road to FIFA World Cup 2026",
+          "score": 16,
+          "strict": true,
+          "productId": "ebay_be6409edc4"
         },
         {
           "year": "2025",
-          "label": "Donruss Road to FIFA World Cup 26",
-          "score": 11,
-          "strict": false,
-          "productId": "ebay_f5fe7aa1b9"
+          "label": "Select Road to FIFA World Cup 26",
+          "score": 16,
+          "strict": true,
+          "productId": "ebay_c405cb3b03"
         },
         {
           "year": "2025",
-          "label": "Donruss Road to FIFA World Cup Kaboom!",
-          "score": 11,
-          "strict": false,
-          "productId": "ebay_551f5545af"
-        },
-        {
-          "year": "2025",
-          "label": "Noir FIFA Road To World Cup",
-          "score": 11,
-          "strict": false,
-          "productId": "ebay_3abc7c69db"
-        },
-        {
-          "year": "2025",
-          "label": "Noir Road to FIFA World Cup",
-          "score": 11,
-          "strict": false,
-          "productId": "ebay_695aecc546"
-        },
-        {
-          "year": "2025",
-          "label": "Noir Road to FIFA World Cup 26",
-          "score": 11,
-          "strict": false,
-          "productId": "ebay_da2c4cd806"
+          "label": "Select Road to FIFA World Cup Select Future",
+          "score": 16,
+          "strict": true,
+          "productId": "ebay_d5f4efff12"
         }
       ],
-      "error": "strict-product-not-found"
+      "yearUsed": "2025",
+      "productId": "ebay_6c15412d98",
+      "productMatched": "Select Road to World Cup",
+      "knownSets": 6,
+      "processedSetsTotal": 6,
+      "remainingSets": 0,
+      "rowsAccumulated": 6
     },
     "topps-now-soccer-2026": {
       "setsFetchedThisRun": 0,
@@ -4824,9 +4830,9 @@
       "error": "strict-product-not-found"
     }
   },
-  "finishedAt": "2026-10-04T03:24:20Z",
-  "collectionsWritten": 48,
-  "rowsWritten": 1442,
-  "exactFrontsWritten": 1426,
-  "runtimeSeconds": 124.4
+  "finishedAt": "2026-10-04T03:37:58Z",
+  "collectionsWritten": 49,
+  "rowsWritten": 1448,
+  "exactFrontsWritten": 1432,
+  "runtimeSeconds": 137.7
 }
