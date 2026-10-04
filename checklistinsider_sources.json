@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "products": [
+    {
+      "collectionId": "panini-prizm-basketball-2024-25",
+      "url": "https://www.checklistinsider.com/2024-25-panini-prizm-basketball",
+      "sport": "NBA",
+      "manufacturer": "Panini",
+      "year": "2024/25",
+      "name": "2024-25 Panini Prizm Basketball",
+      "shortName": "Prizm NBA 24/25"
+    },
+    {
+      "collectionId": "panini-select-basketball-2024-25",
+      "url": "https://www.checklistinsider.com/2024-25-panini-select-basketball",
+      "sport": "NBA",
+      "manufacturer": "Panini",
+      "year": "2024/25",
+      "name": "2024-25 Panini Select Basketball",
+      "shortName": "Select NBA 24/25"
+    },
+    {
+      "collectionId": "panini-donruss-optic-basketball-2024-25",
+      "url": "https://www.checklistinsider.com/2024-25-donruss-optic-basketball",
+      "sport": "NBA",
+      "manufacturer": "Panini",
+      "year": "2024/25",
+      "name": "2024-25 Donruss Optic Basketball",
+      "shortName": "Optic NBA 24/25"
+    },
+    {
+      "collectionId": "panini-donruss-optic-football-2025",
+      "url": "https://www.checklistinsider.com/2025-donruss-optic-football",
+      "sport": "NFL",
+      "manufacturer": "Panini",
+      "year": "2025",
+      "name": "2025 Donruss Optic Football",
+      "shortName": "Optic NFL 2025"
+    }
+  ]
+}
