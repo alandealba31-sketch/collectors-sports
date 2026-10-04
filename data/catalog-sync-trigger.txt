@@ -1,1 +1,1 @@
-2026-10-04T01:15:00-05:00 expanded owned collection and image sync
+2026-10-04T01:24:00-05:00 tcdb-heavy exact-front priority sync
