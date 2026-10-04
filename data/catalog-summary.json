@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-10-04T05:32:48.153Z",
-  "scriptFilesEvaluated": 52,
+  "generatedAt": "2026-10-04T05:40:09.640Z",
+  "scriptFilesEvaluated": 53,
   "scriptFailures": [
     {
       "file": "catalog-runtime.js",
       "error": "document is not defined"
     }
   ],
-  "collectionsWithChecklist": 69,
-  "collectionRecords": 82,
-  "searchableIdentities": 22255,
+  "collectionsWithChecklist": 68,
+  "collectionRecords": 81,
+  "searchableIdentities": 22253,
   "bySport": {
     "NFL": 6217,
-    "Soccer": 4922,
+    "Soccer": 4920,
     "NBA": 4668,
     "MLB": 3172,
     "WWE": 1323,
@@ -20,10 +20,10 @@
     "Tennis": 770,
     "F1": 235
   },
-  "verifiedExactFrontRecords": 1446,
-  "approximateUniqueExactFrontIdentities": 1446,
-  "searchableIdentitiesWithExactFront": 1849,
-  "exactFrontCoveragePct": 8.31,
+  "verifiedExactFrontRecords": 1458,
+  "approximateUniqueExactFrontIdentities": 1458,
+  "searchableIdentitiesWithExactFront": 1861,
+  "exactFrontCoveragePct": 8.36,
   "topCollections": [
     {
       "id": "topps-chrome-football-2025",
@@ -277,9 +277,9 @@
       "id": "topps-real-madrid-team-set-2025-26",
       "name": "Real Madrid Team Set 25/26",
       "sport": "Soccer",
-      "rows": 123,
-      "identities": 123,
-      "coverage": "expanded-structured"
+      "rows": 122,
+      "identities": 122,
+      "coverage": "full-core-checklist"
     },
     {
       "id": "topps-benfica-team-set-2025-26",

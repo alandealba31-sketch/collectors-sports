@@ -813,13 +813,8 @@
       "knownSets": 1
     },
     "topps-real-madrid-team-set-2025-26": {
-      "processedSets": [
-        "ebay_5c68f0ccc5"
-      ],
-      "productMatched": "Real Madrid Team Top of the World",
-      "productId": "ebay_ca2b465a25",
-      "yearUsed": "2025",
-      "knownSets": 1
+      "processedSets": [],
+      "productMatched": "Real Madrid Team Top of the World"
     },
     "topps-atletico-team-set-2025-26": {
       "processedSets": []
@@ -1244,13 +1239,8 @@
       "processedSets": []
     },
     "panini-real-madrid-2025-26": {
-      "processedSets": [
-        "ebay_80551bab4d"
-      ],
-      "productId": "ebay_8e7c2ed7c9",
-      "productMatched": "Real Madrid Collectors Tin",
-      "yearUsed": "2025",
-      "knownSets": 1
+      "processedSets": [],
+      "productMatched": "Real Madrid Collectors Tin"
     },
     "panini-intl-mexico-2026": {
       "processedSets": [
