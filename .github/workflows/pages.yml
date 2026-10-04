@@ -39,6 +39,8 @@ jobs:
           node --check catalog-owned.js
           node --check catalog-intl-expanded.js
           node --check catalog-teamsets-expanded.js
+          node --check catalog-select-laliga-expanded.js
+          node --check catalog-prizm-cwc-expanded.js
           node --check catalog-owned-batch2.js
           node --check catalog-owned-batch3.js
           node --check catalog-mycardfolio-expanded.js
@@ -57,6 +59,8 @@ jobs:
           test -f catalog-premier.js
           test -f catalog-intl-expanded.js
           test -f catalog-teamsets-expanded.js
+          test -f catalog-select-laliga-expanded.js
+          test -f catalog-prizm-cwc-expanded.js
           test -f catalog-images-cached.js
           test -f catalog-images-teamsets.js
           test -f catalog-owned.js
@@ -68,6 +72,8 @@ jobs:
           test -f pricing-engine.js
           grep -q 'catalog-intl-expanded.js' index.html
           grep -q 'catalog-teamsets-expanded.js' index.html
+          grep -q 'catalog-select-laliga-expanded.js' index.html
+          grep -q 'catalog-prizm-cwc-expanded.js' index.html
           grep -q 'catalog-mycardfolio-expanded.js' index.html
           grep -q 'catalog-images-mycardfolio.js' index.html
           grep -q 'app-v11-home-search.js' index.html
