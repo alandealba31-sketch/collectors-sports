@@ -7,6 +7,7 @@ import sync_mycardfolio_v2 as sync
 
 CANONICAL_IDS = {
     'panini-select-laliga-2024-25': 'panini-select-la-liga-2024-25',
+    'panini-prizm-road-to-world-cup-2025-26': 'panini-select-road-to-world-cup-2025-26',
     'topps-manchester-city-collector-tin-2026-27': 'topps-man-city-collector-tin-2026-27',
     'topps-manchester-united-collector-tin-2025-26': 'topps-man-utd-collector-tin-2025-26',
     'topps-manchester-united-collector-tin-2026-27': 'topps-man-utd-collector-tin-2026-27',
@@ -39,6 +40,22 @@ def strict_product_family(label: str, cfg: dict) -> bool:
     return True
 
 
+def normalize_product(item: dict) -> dict:
+    """Correct historical aliases before any structured lookup happens."""
+    original = item.get('collectionId')
+    item['collectionId'] = CANONICAL_IDS.get(original, original)
+    if original == 'panini-prizm-road-to-world-cup-2025-26':
+        item.update({
+            'product': 'Panini Select Road to FIFA World Cup',
+            'shortName': 'Select Road to World Cup 25/26',
+            'aliases': ['Select Road to World Cup', 'Panini Select Road to FIFA World Cup'],
+            'required': ['select', 'road', 'world', 'cup'],
+            'forbidden': ['prizm', 'donruss', 'noir', 'national treasures'],
+            'resetOnMismatch': True,
+        })
+    return item
+
+
 def build_merged_config() -> Path:
     root = Path(__file__).resolve().parent
     base_path = root / 'mycardfolio_product_sources_v2.json'
@@ -49,16 +66,14 @@ def build_merged_config() -> Path:
     products = []
     seen = set()
     for raw in [*(base.get('products') or []), *(extras.get('products') or [])]:
-        item = dict(raw)
-        original = item.get('collectionId')
-        item['collectionId'] = CANONICAL_IDS.get(original, original)
+        item = normalize_product(dict(raw))
         cid = item.get('collectionId')
         if not cid or cid in seen:
             continue
         seen.add(cid)
         products.append(item)
     merged_path.parent.mkdir(parents=True, exist_ok=True)
-    merged_path.write_text(json.dumps({'version': 2, 'products': products}, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    merged_path.write_text(json.dumps({'version': 3, 'products': products}, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     return merged_path
 
 
