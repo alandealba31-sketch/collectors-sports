@@ -105,7 +105,7 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
-          for filename in ['data/catalog-summary.json','data/owned-collection-gap-report.json','data/halloflists-sync-report.json','data/halloflists-now-sync-report.json','data/checklistinsider-sync-report.json','data/fc-tins-sync-report.json','data/owned-priority-sync-report.json','data/mycardfolio-sync-report.json','data/bulk-image-report.json','data/ebay-image-report.json']:
+          for filename in ['data/catalog-summary.json','data/owned-collection-gap-report.json','data/halloflists-sync-report.json','data/halloflists-now-sync-report.json','data/checklistinsider-sync-report.json','data/fc-tins-sync-report.json','data/owned-priority-sync-report.json','data/mycardfolio-sync-report.json','data/tcdb-image-report.json','data/bulk-image-report.json','data/ebay-image-report.json']:
               p=Path(filename)
               if p.exists():
                   print('\n'+filename)
@@ -118,7 +118,7 @@ jobs:
             catalog-imported.js catalog-premier.js catalog-halloflists-expanded.js catalog-now-halloflists.js catalog-checklistinsider-expanded.js catalog-fc-tins-expanded.js catalog-owned-priority-expanded.js catalog-mycardfolio-expanded.js
             catalog-images-mycardfolio.js catalog-images-official.js catalog-images-cached.js catalog-images-bulk.js catalog-images-ebay.js
             data/catalog-summary.json data/owned-collection-gap-report.json data/halloflists-sync-report.json data/halloflists-now-sync-report.json data/checklistinsider-sync-report.json data/fc-tins-sync-report.json data/owned-priority-sync-report.json data/mycardfolio-sync-state.json data/mycardfolio-sync-report.json
-            data/bulk-image-manifest.json data/bulk-image-report.json assets/cards/bulk
+            data/bulk-image-manifest.json data/tcdb-image-report.json data/bulk-image-report.json assets/cards/bulk
             data/ebay-image-manifest.json data/ebay-image-report.json assets/cards/ebay
           )
           EXISTING=()
