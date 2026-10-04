@@ -1,1 +1,1 @@
-2026-10-04 owned purchases/openings: fill exact fronts from TCDB ISO official and eBay
+2026-10-04 controlled TCDB test: row-aware card links for owned exact fronts
