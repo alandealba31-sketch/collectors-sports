@@ -86,20 +86,19 @@ def parse_product(cfg: dict) -> tuple[dict, list[list], dict]:
             break
 
     start = text_index_heading or soup.body
+    if start is None:
+        raise RuntimeError('page has no parseable body')
+
     rows: list[list] = []
     subset_counts: dict[str, int] = {}
     seen: set[tuple[str, str, str]] = set()
     current_subset = ''
-    node = start
 
     for element in start.find_all_next(['h3', 'li']):
         if element.name == 'h3':
             raw = norm(element.get_text(' ', strip=True))
             m = re.match(r'^(.*?)\s*\((\d[\d,]*)\)\s*$', raw)
-            if m:
-                current_subset = norm(m.group(1))
-            else:
-                current_subset = raw
+            current_subset = norm(m.group(1)) if m else raw
             continue
         if element.name != 'li' or not current_subset:
             continue
@@ -116,6 +115,9 @@ def parse_product(cfg: dict) -> tuple[dict, list[list], dict]:
                f"hol:{cfg['collectionId']}:{re.sub(r'[^a-z0-9]+','-',current_subset.lower()).strip('-')}:{number}"]
         rows.append(row)
         subset_counts[current_subset] = subset_counts.get(current_subset, 0) + 1
+
+    if not rows:
+        raise RuntimeError('no checklist rows parsed')
 
     collection = {
         'id': cfg['collectionId'],
@@ -134,6 +136,7 @@ def parse_product(cfg: dict) -> tuple[dict, list[list], dict]:
         'url': cfg['url'],
         'rows': len(rows),
         'subsets': subset_counts,
+        'status': 'ok',
     }
     return collection, rows, report
 
@@ -146,15 +149,30 @@ def render(payload: dict) -> str:
 def main() -> None:
     cfg = json.loads(CONFIG.read_text(encoding='utf-8'))
     payload: dict[str, dict] = {}
-    reports = []
+    reports: list[dict] = []
     for product in cfg.get('products', []):
-        collection, rows, report = parse_product(product)
-        payload[collection['id']] = {'collection': collection, 'rows': rows}
-        reports.append(report)
-        print(f"{collection['id']}: {len(rows)} rows", flush=True)
+        try:
+            collection, rows, report = parse_product(product)
+            payload[collection['id']] = {'collection': collection, 'rows': rows}
+            reports.append(report)
+            print(f"{collection['id']}: {len(rows)} rows", flush=True)
+        except Exception as exc:
+            reports.append({
+                'collectionId': product.get('collectionId'),
+                'url': product.get('url'),
+                'rows': 0,
+                'status': 'error',
+                'error': str(exc),
+            })
+            print(f"{product.get('collectionId')}: skipped ({exc})", flush=True)
     OUT.write_text(render(payload), encoding='utf-8')
     REPORT.parent.mkdir(parents=True, exist_ok=True)
-    REPORT.write_text(json.dumps({'products': reports, 'totalRows': sum(r['rows'] for r in reports)}, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    REPORT.write_text(json.dumps({
+        'products': reports,
+        'successfulProducts': sum(1 for r in reports if r.get('status') == 'ok'),
+        'failedProducts': sum(1 for r in reports if r.get('status') != 'ok'),
+        'totalRows': sum(int(r.get('rows') or 0) for r in reports),
+    }, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 
 
 if __name__ == '__main__':
