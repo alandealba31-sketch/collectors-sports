@@ -1,6 +1,6 @@
 {
   "runner": "sync_mycardfolio_v2.py",
-  "startedAt": "2026-10-04T03:12:33Z",
+  "startedAt": "2026-10-04T03:22:16Z",
   "endpoint": "https://mycardfolio.com/api/mcp",
   "setsPerProductPerRun": 150,
   "requestDelaySeconds": 1.05,
@@ -420,9 +420,9 @@
       "rowsAccumulated": 3
     },
     "topps-now-mlb-2026": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -490,9 +490,9 @@
       "rowsAccumulated": 1
     },
     "topps-now-wbc-2026": {
-      "setsFetchedThisRun": 12,
-      "rowsAddedThisRun": 15,
-      "imagesAddedThisRun": 15,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -910,9 +910,9 @@
       "rowsAccumulated": 4
     },
     "topps-now-nfl-2026": {
-      "setsFetchedThisRun": 12,
-      "rowsAddedThisRun": 15,
-      "imagesAddedThisRun": 15,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -1260,9 +1260,9 @@
       "rowsAccumulated": 16
     },
     "topps-now-nba-2026-27": {
-      "setsFetchedThisRun": 12,
-      "rowsAddedThisRun": 15,
-      "imagesAddedThisRun": 15,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -1464,9 +1464,9 @@
       "error": "strict-product-not-found"
     },
     "topps-now-ufc-2026": {
-      "setsFetchedThisRun": 6,
-      "rowsAddedThisRun": 6,
-      "imagesAddedThisRun": 6,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -1577,9 +1577,9 @@
       "error": "strict-product-not-found"
     },
     "topps-now-tennis-2026": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -1696,9 +1696,9 @@
       "rowsAccumulated": 1
     },
     "topps-now-f1-2026": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -1836,9 +1836,9 @@
       "rowsAccumulated": 192
     },
     "topps-now-wwe-2026": {
-      "setsFetchedThisRun": 9,
-      "rowsAddedThisRun": 18,
-      "imagesAddedThisRun": 18,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -2465,7 +2465,7 @@
       "remainingSets": 0,
       "rowsAccumulated": 13
     },
-    "panini-select-laliga-2024-25": {
+    "panini-select-la-liga-2024-25": {
       "setsFetchedThisRun": 0,
       "rowsAddedThisRun": 0,
       "imagesAddedThisRun": 0,
@@ -2734,9 +2734,9 @@
       "error": "strict-product-not-found"
     },
     "topps-now-soccer-2026": {
-      "setsFetchedThisRun": 94,
-      "rowsAddedThisRun": 127,
-      "imagesAddedThisRun": 127,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -3659,7 +3659,7 @@
       ],
       "error": "strict-product-not-found"
     },
-    "topps-manchester-united-collector-tin-2025-26": {
+    "topps-man-utd-collector-tin-2025-26": {
       "setsFetchedThisRun": 0,
       "rowsAddedThisRun": 0,
       "imagesAddedThisRun": 0,
@@ -3851,7 +3851,7 @@
       ],
       "error": "strict-product-not-found"
     },
-    "topps-manchester-united-collector-tin-2026-27": {
+    "topps-man-utd-collector-tin-2026-27": {
       "setsFetchedThisRun": 0,
       "rowsAddedThisRun": 0,
       "imagesAddedThisRun": 0,
@@ -3915,7 +3915,7 @@
       ],
       "error": "strict-product-not-found"
     },
-    "topps-manchester-city-collector-tin-2026-27": {
+    "topps-man-city-collector-tin-2026-27": {
       "setsFetchedThisRun": 0,
       "rowsAddedThisRun": 0,
       "imagesAddedThisRun": 0,
@@ -4364,9 +4364,9 @@
       "error": "strict-product-not-found"
     },
     "panini-international-mexico-2026": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -4434,9 +4434,9 @@
       "rowsAccumulated": 1
     },
     "topps-arsenal-team-set-2025-26": {
-      "setsFetchedThisRun": 2,
-      "rowsAddedThisRun": 2,
-      "imagesAddedThisRun": 2,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2025",
@@ -4824,9 +4824,9 @@
       "error": "strict-product-not-found"
     }
   },
-  "finishedAt": "2026-10-04T03:17:42Z",
+  "finishedAt": "2026-10-04T03:24:20Z",
   "collectionsWritten": 48,
   "rowsWritten": 1442,
   "exactFrontsWritten": 1426,
-  "runtimeSeconds": 309.1
+  "runtimeSeconds": 124.4
 }
