@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T06:21:38.650Z",
+  "generatedAt": "2026-10-04T06:33:30.526Z",
   "source": "data/user-collection-priority.json",
   "collections": [
     {
@@ -21,38 +21,6 @@
     {
       "collectionId": "",
       "name": "Panini Prizm FIFA World Cup",
-      "season": "2026",
-      "ownedRows": 5,
-      "catalogPresent": false,
-      "checklistRows": 0,
-      "uniqueIdentities": 0,
-      "baseIdentities": 0,
-      "numberedIdentities": 0,
-      "autographIdentities": 0,
-      "relicIdentities": 0,
-      "exactFrontIdentities": 0,
-      "exactFrontCoveragePct": 0,
-      "status": "missing-collection"
-    },
-    {
-      "collectionId": "topps-argentina-collector-tin-2026",
-      "name": "Topps Argentina Collector Tin",
-      "season": "2026",
-      "ownedRows": 5,
-      "catalogPresent": false,
-      "checklistRows": 0,
-      "uniqueIdentities": 0,
-      "baseIdentities": 0,
-      "numberedIdentities": 0,
-      "autographIdentities": 0,
-      "relicIdentities": 0,
-      "exactFrontIdentities": 0,
-      "exactFrontCoveragePct": 0,
-      "status": "missing-collection"
-    },
-    {
-      "collectionId": "topps-argentina-team-set-2026",
-      "name": "Topps Argentina Team Set",
       "season": "2026",
       "ownedRows": 5,
       "catalogPresent": false,
@@ -451,6 +419,38 @@
       "status": "covered"
     },
     {
+      "collectionId": "topps-argentina-collector-tin-2026",
+      "name": "Topps Argentina Collector Tin",
+      "season": "2026",
+      "ownedRows": 5,
+      "catalogPresent": true,
+      "checklistRows": 257,
+      "uniqueIdentities": 256,
+      "baseIdentities": 62,
+      "numberedIdentities": 0,
+      "autographIdentities": 1,
+      "relicIdentities": 8,
+      "exactFrontIdentities": 256,
+      "exactFrontCoveragePct": 100,
+      "status": "covered"
+    },
+    {
+      "collectionId": "topps-argentina-team-set-2026",
+      "name": "Topps Argentina Team Set",
+      "season": "2026",
+      "ownedRows": 5,
+      "catalogPresent": true,
+      "checklistRows": 1,
+      "uniqueIdentities": 1,
+      "baseIdentities": 0,
+      "numberedIdentities": 0,
+      "autographIdentities": 1,
+      "relicIdentities": 0,
+      "exactFrontIdentities": 1,
+      "exactFrontCoveragePct": 100,
+      "status": "covered"
+    },
+    {
       "collectionId": "panini-prizm-conmebol-copa-america-2024",
       "name": "Panini Prizm CONMEBOL Copa America",
       "season": "2024",
@@ -485,9 +485,9 @@
   ],
   "totals": {
     "ownedPriorityCollections": 30,
-    "missingCollections": 11,
+    "missingCollections": 9,
     "missingChecklists": 0,
-    "uniqueIdentities": 3141,
-    "exactFrontIdentities": 240
+    "uniqueIdentities": 3398,
+    "exactFrontIdentities": 497
   }
 }

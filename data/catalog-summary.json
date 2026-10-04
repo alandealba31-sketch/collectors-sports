@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T06:21:38.392Z",
+  "generatedAt": "2026-10-04T06:33:30.242Z",
   "scriptFilesEvaluated": 54,
   "scriptFailures": [
     {
@@ -7,23 +7,23 @@
       "error": "document is not defined"
     }
   ],
-  "collectionsWithChecklist": 72,
-  "collectionRecords": 85,
-  "searchableIdentities": 22264,
+  "collectionsWithChecklist": 78,
+  "collectionRecords": 91,
+  "searchableIdentities": 22776,
   "bySport": {
-    "NFL": 6217,
-    "Soccer": 4930,
+    "NFL": 6236,
+    "Soccer": 5189,
     "NBA": 4669,
-    "MLB": 3172,
+    "MLB": 3330,
     "WWE": 1323,
     "UFC": 948,
-    "Tennis": 770,
+    "Tennis": 846,
     "F1": 235
   },
-  "verifiedExactFrontRecords": 1469,
-  "approximateUniqueExactFrontIdentities": 1469,
-  "searchableIdentitiesWithExactFront": 1872,
-  "exactFrontCoveragePct": 8.41,
+  "verifiedExactFrontRecords": 1907,
+  "approximateUniqueExactFrontIdentities": 1906,
+  "searchableIdentitiesWithExactFront": 2310,
+  "exactFrontCoveragePct": 10.14,
   "topCollections": [
     {
       "id": "topps-chrome-football-2025",
@@ -186,6 +186,14 @@
       "coverage": "expanded-structured"
     },
     {
+      "id": "topps-argentina-collector-tin-2026",
+      "name": "Argentina Collector Tin 2026",
+      "sport": "Soccer",
+      "rows": 257,
+      "identities": 256,
+      "coverage": "expanded-structured"
+    },
+    {
       "id": "panini-pitch-kings-laliga-2025-26",
       "name": "Pitch Kings LaLiga 25/26",
       "sport": "Soccer",
@@ -232,6 +240,14 @@
       "rows": 167,
       "identities": 167,
       "coverage": "base-complete"
+    },
+    {
+      "id": "topps-chrome-college-baseball-2026",
+      "name": "Chrome College Baseball 2026",
+      "sport": "MLB",
+      "rows": 157,
+      "identities": 157,
+      "coverage": "expanded-structured"
     },
     {
       "id": "panini-intl-france-2026",
@@ -301,8 +317,16 @@
       "id": "panini-intl-mexico-2026",
       "name": "Panini INTL Mexico 2026",
       "sport": "Soccer",
-      "rows": 105,
-      "identities": 104,
+      "rows": 107,
+      "identities": 106,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-triumphant-tennis-2025",
+      "name": "Triumphant Tennis 2025",
+      "sport": "Tennis",
+      "rows": 76,
+      "identities": 76,
       "coverage": "expanded-structured"
     },
     {
@@ -400,30 +424,6 @@
       "rows": 49,
       "identities": 49,
       "coverage": "full-checklist"
-    },
-    {
-      "id": "topps-now-ufc-2026",
-      "name": "UFC Topps NOW 2026",
-      "sport": "UFC",
-      "rows": 49,
-      "identities": 49,
-      "coverage": "expanded-structured"
-    },
-    {
-      "id": "topps-premier-league-2026-27",
-      "name": "Premier League 26/27",
-      "sport": "Soccer",
-      "rows": 43,
-      "identities": 43,
-      "coverage": "expanded-structured"
-    },
-    {
-      "id": "topps-now-nfl-2026",
-      "name": "NFL Topps NOW 2026",
-      "sport": "NFL",
-      "rows": 41,
-      "identities": 41,
-      "coverage": "expanded-structured"
     }
   ]
 }
