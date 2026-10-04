@@ -22,6 +22,7 @@ const readJson = (path, fallback={}) => {
   try { return fs.existsSync(path) ? JSON.parse(fs.readFileSync(path,'utf8')) : fallback; }
   catch (error) { console.warn(`Ignoring ${path}: ${error.message}`); return fallback; }
 };
+const norm = value => String(value||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 const configured = new Map();
 const addSource = source => {
   const collectionId = source?.collectionId;
@@ -38,10 +39,43 @@ for (const p of readJson('halloflists_sources.json',{products:[]}).products||[])
 for (const p of readJson('checklistinsider_sources.json',{products:[]}).products||[]) addSource({collectionId:p.collectionId,setName:p.product||p.name||p.shortName,provider:'ebay'});
 for (const p of readJson('halloflists_now_sources.json',{sources:[]}).sources||[]) addSource({collectionId:p.collectionId,setName:p.product||p.name||p.shortName,provider:'ebay'});
 
-let priority = [];
-const priorityRaw = readJson('data/email-priority-collections.json',{collections:[]});
-priority = (priorityRaw.collections||[]).slice().sort((a,b)=>(a.priority||999999)-(b.priority||999999)).map(x=>x.collectionId).filter(Boolean);
+const catalogByName = new Map();
+for (const c of catalog.collections||[]) {
+  for (const label of [c.name,c.shortName]) {
+    const key=norm(label);
+    if (key && !catalogByName.has(key)) catalogByName.set(key,c.id);
+  }
+}
+
+const ownedRaw = readJson('data/user-collection-priority.json',{collections:[]});
+const ownedIds=[];
+for (const item of ownedRaw.collections||[]) {
+  let id=item.collectionId;
+  if (!id) id=catalogByName.get(norm(item.name));
+  if (!id) {
+    const wanted=norm(item.name);
+    const candidates=(catalog.collections||[]).filter(c=>{
+      const labels=[norm(c.name),norm(c.shortName)].filter(Boolean);
+      return labels.some(label=>label===wanted || label.includes(wanted) || wanted.includes(label));
+    });
+    if (candidates.length===1) id=candidates[0].id;
+  }
+  if (!id) {
+    console.warn(`Owned collection not mapped yet: ${item.name} (${item.season||''})`);
+    continue;
+  }
+  if (!ownedIds.includes(id)) ownedIds.push(id);
+  if (!configured.has(id)) {
+    const c=(catalog.collections||[]).find(x=>x.id===id);
+    addSource({collectionId:id,setName:c?.name||c?.shortName||item.name,provider:'ebay',ownedPriority:true});
+  }
+}
+
+const emailRaw = readJson('data/email-priority-collections.json',{collections:[]});
+const emailIds=(emailRaw.collections||[]).slice().sort((a,b)=>(a.priority||999999)-(b.priority||999999)).map(x=>x.collectionId).filter(Boolean);
+const priority=[...ownedIds,...emailIds.filter(id=>!ownedIds.includes(id))];
 const rank = new Map(priority.map((id,index)=>[id,index]));
+const ownedSet=new Set(ownedIds);
 const orderedConfigured = [...configured.entries()].sort((a,b)=>{
   const ar = rank.has(a[0]) ? rank.get(a[0]) : 1000000;
   const br = rank.has(b[0]) ? rank.get(b[0]) : 1000000;
@@ -51,7 +85,7 @@ const orderedConfigured = [...configured.entries()].sort((a,b)=>{
 const targets={};
 for (const [collectionId,source] of orderedConfigured) {
   const rows=catalog.checklists?.[collectionId]||[];
-  targets[collectionId]={source,priority:rank.has(collectionId)?rank.get(collectionId)+1:null,rows:rows.map(row=>({
+  targets[collectionId]={source,priority:rank.has(collectionId)?rank.get(collectionId)+1:null,ownedPriority:ownedSet.has(collectionId),rows:rows.map(row=>({
     number:String(row?.[0]??''),player:String(row?.[1]??''),team:String(row?.[2]??''),
     subset:String(row?.[4]??''),variant:String(row?.[6]??'Base'),entryKey:String(row?.[7]??''),sourceSid:String(row?.[8]??'')
   })).filter(row=>row.number&&row.player)};
@@ -59,6 +93,6 @@ for (const [collectionId,source] of orderedConfigured) {
 fs.mkdirSync('data',{recursive:true});
 fs.writeFileSync('data/image-targets-runtime.json',JSON.stringify(targets,null,2));
 const total=Object.values(targets).reduce((sum,t)=>sum+t.rows.length,0);
-const prioritized=Object.entries(targets).filter(([,v])=>v.priority!=null).map(([id,v])=>`${v.priority}:${id}(${v.rows.length})`);
+const prioritized=Object.entries(targets).filter(([,v])=>v.priority!=null).map(([id,v])=>`${v.priority}:${id}(${v.rows.length})${v.ownedPriority?'[OWNED]':''}`);
 console.log(`Exported ${total} catalog identities across ${Object.keys(targets).length} bulk-image targets.`);
-if (prioritized.length) console.log(`Email-priority exact-front queue: ${prioritized.join(', ')}`);
+if (prioritized.length) console.log(`Priority exact-front queue: ${prioritized.join(', ')}`);
