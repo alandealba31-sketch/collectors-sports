@@ -17,20 +17,30 @@ for (const file of files) {
   catch (error) { console.warn(`Skipping ${file}: ${error.message}`); }
 }
 const catalog = globalThis.window.CS_CATALOG || {collections:[],checklists:{}};
-const config = JSON.parse(fs.readFileSync('tools/bulk_image_sources.json','utf8'));
-const configured = new Map((config.sources||[]).map(s=>[s.collectionId,s]));
-const tcdbConfig = fs.existsSync('tools/tcdb_product_sources.json') ? JSON.parse(fs.readFileSync('tools/tcdb_product_sources.json','utf8')) : {products:[]};
-for (const p of tcdbConfig.products||[]) if (!configured.has(p.collectionId)) configured.set(p.collectionId,{...p,provider:'ebay'});
-const mcfConfig = fs.existsSync('tools/mycardfolio_product_sources.json') ? JSON.parse(fs.readFileSync('tools/mycardfolio_product_sources.json','utf8')) : {products:[]};
-for (const p of mcfConfig.products||[]) if (!configured.has(p.collectionId)) configured.set(p.collectionId,{collectionId:p.collectionId,setName:p.product,provider:'ebay'});
+
+const readJson = (path, fallback={}) => {
+  try { return fs.existsSync(path) ? JSON.parse(fs.readFileSync(path,'utf8')) : fallback; }
+  catch (error) { console.warn(`Ignoring ${path}: ${error.message}`); return fallback; }
+};
+const configured = new Map();
+const addSource = source => {
+  const collectionId = source?.collectionId;
+  if (!collectionId || configured.has(collectionId)) return;
+  configured.set(collectionId, source);
+};
+
+for (const source of readJson('tools/bulk_image_sources.json',{sources:[]}).sources||[]) addSource(source);
+for (const p of readJson('tools/tcdb_product_sources.json',{products:[]}).products||[]) addSource({...p,provider:'ebay',setName:p.setName||p.product});
+for (const p of readJson('tools/mycardfolio_product_sources.json',{products:[]}).products||[]) addSource({collectionId:p.collectionId,setName:p.product,provider:'ebay'});
+for (const p of readJson('mycardfolio_product_sources_v2.json',{products:[]}).products||[]) addSource({collectionId:p.collectionId,setName:p.product,provider:'ebay'});
+for (const p of readJson('mycardfolio_extra_products_v1.json',{products:[]}).products||[]) addSource({collectionId:p.collectionId,setName:p.product,provider:'ebay'});
+for (const p of readJson('halloflists_sources.json',{products:[]}).products||[]) addSource({collectionId:p.collectionId,setName:p.product||p.name||p.shortName,provider:'ebay'});
+for (const p of readJson('checklistinsider_sources.json',{products:[]}).products||[]) addSource({collectionId:p.collectionId,setName:p.product||p.name||p.shortName,provider:'ebay'});
+for (const p of readJson('halloflists_now_sources.json',{sources:[]}).sources||[]) addSource({collectionId:p.collectionId,setName:p.product||p.name||p.shortName,provider:'ebay'});
 
 let priority = [];
-if (fs.existsSync('data/email-priority-collections.json')) {
-  try {
-    const raw = JSON.parse(fs.readFileSync('data/email-priority-collections.json','utf8'));
-    priority = (raw.collections||[]).slice().sort((a,b)=>(a.priority||999999)-(b.priority||999999)).map(x=>x.collectionId).filter(Boolean);
-  } catch (error) { console.warn(`Priority file ignored: ${error.message}`); }
-}
+const priorityRaw = readJson('data/email-priority-collections.json',{collections:[]});
+priority = (priorityRaw.collections||[]).slice().sort((a,b)=>(a.priority||999999)-(b.priority||999999)).map(x=>x.collectionId).filter(Boolean);
 const rank = new Map(priority.map((id,index)=>[id,index]));
 const orderedConfigured = [...configured.entries()].sort((a,b)=>{
   const ar = rank.has(a[0]) ? rank.get(a[0]) : 1000000;
@@ -49,6 +59,6 @@ for (const [collectionId,source] of orderedConfigured) {
 fs.mkdirSync('data',{recursive:true});
 fs.writeFileSync('data/image-targets-runtime.json',JSON.stringify(targets,null,2));
 const total=Object.values(targets).reduce((sum,t)=>sum+t.rows.length,0);
-const prioritized=Object.entries(targets).filter(([,v])=>v.priority!=null).map(([id,v])=>`${v.priority}:${id}`);
+const prioritized=Object.entries(targets).filter(([,v])=>v.priority!=null).map(([id,v])=>`${v.priority}:${id}(${v.rows.length})`);
 console.log(`Exported ${total} catalog identities across ${Object.keys(targets).length} bulk-image targets.`);
 if (prioritized.length) console.log(`Email-priority exact-front queue: ${prioritized.join(', ')}`);
