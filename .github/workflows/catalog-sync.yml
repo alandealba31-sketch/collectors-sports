@@ -21,6 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 70
     env:
+      PYTHONPATH: "."
       IMAGE_IMPORT_MAX_NEW: "4000"
       IMAGE_IMPORT_DELAY: "0.18"
       ISO_IMAGE_IMPORT_DELAY: "0.40"
