@@ -47,6 +47,7 @@ jobs:
           node --check catalog-prizm-monopoly-wc-expanded.js
           node --check catalog-select-road-wc-expanded.js
           node --check catalog-select-road-wc-inserts.js
+          node --check catalog-halloflists-expanded.js
           node --check catalog-owned-batch2.js
           node --check catalog-owned-batch3.js
           node --check catalog-mycardfolio-expanded.js
@@ -72,6 +73,7 @@ jobs:
           test -f catalog-prizm-monopoly-wc-expanded.js
           test -f catalog-select-road-wc-expanded.js
           test -f catalog-select-road-wc-inserts.js
+          test -f catalog-halloflists-expanded.js
           test -f app-v11-catalog-normalize.js
           test -f catalog-images-cached.js
           test -f catalog-images-teamsets.js
@@ -91,6 +93,7 @@ jobs:
           grep -q 'catalog-prizm-monopoly-wc-expanded.js' index.html
           grep -q 'catalog-select-road-wc-expanded.js' index.html
           grep -q 'catalog-select-road-wc-inserts.js' index.html
+          grep -q 'catalog-halloflists-expanded.js' index.html
           grep -q 'app-v11-catalog-normalize.js' index.html
           grep -q 'catalog-mycardfolio-expanded.js' index.html
           grep -q 'catalog-images-mycardfolio.js' index.html
