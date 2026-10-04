@@ -8,6 +8,7 @@ on:
       - "sync_mycardfolio_v2.py"
       - "sync_mycardfolio_v3.py"
       - "mycardfolio_product_sources_v2.json"
+      - "mycardfolio_extra_products_v1.json"
       - ".github/workflows/catalog-sync.yml"
   workflow_dispatch:
   schedule:
@@ -51,7 +52,7 @@ jobs:
           python tools/sync_official_images.py
           python tools/cache_exact_images.py
 
-      - name: Expand owned products and exact fronts through exact-year structured MCP
+      - name: Expand products and exact fronts through exact-year structured MCP
         run: python sync_mycardfolio_v3.py
 
       - name: Validate official generated catalog
@@ -65,7 +66,7 @@ jobs:
 
       - name: Clean runtime targets
         if: always()
-        run: rm -f data/image-targets-runtime.json
+        run: rm -f data/image-targets-runtime.json data/mycardfolio-runtime-products.json
 
       - name: Validate generated JavaScript
         run: |
