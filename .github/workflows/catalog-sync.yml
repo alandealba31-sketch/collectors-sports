@@ -11,6 +11,7 @@ on:
       - "mycardfolio_extra_products_v1.json"
       - "halloflists_sources.json"
       - "halloflists_now_sources.json"
+      - "checklistinsider_sources.json"
       - ".github/workflows/catalog-sync.yml"
   workflow_dispatch:
   schedule:
@@ -58,6 +59,7 @@ jobs:
         run: |
           python tools/sync_halloflists.py
           python tools/sync_halloflists_now.py
+          python tools/sync_checklistinsider.py
 
       - name: Expand products and exact fronts through exact-year structured MCP
         run: python sync_mycardfolio_v3.py
@@ -81,6 +83,7 @@ jobs:
           node --check catalog-premier.js
           node --check catalog-halloflists-expanded.js
           node --check catalog-now-halloflists.js
+          node --check catalog-checklistinsider-expanded.js
           node --check catalog-mycardfolio-expanded.js
           node --check catalog-images-mycardfolio.js
           node --check catalog-images-official.js
@@ -90,7 +93,7 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
-          for filename in ['data/halloflists-sync-report.json','data/halloflists-now-sync-report.json','data/mycardfolio-sync-report.json','data/ebay-image-report.json']:
+          for filename in ['data/halloflists-sync-report.json','data/halloflists-now-sync-report.json','data/checklistinsider-sync-report.json','data/mycardfolio-sync-report.json','data/ebay-image-report.json']:
               p=Path(filename)
               if p.exists():
                   print('\n'+filename)
@@ -101,9 +104,9 @@ jobs:
         run: |
           set -euo pipefail
           CANDIDATES=(
-            catalog-imported.js catalog-premier.js catalog-halloflists-expanded.js catalog-now-halloflists.js catalog-mycardfolio-expanded.js
+            catalog-imported.js catalog-premier.js catalog-halloflists-expanded.js catalog-now-halloflists.js catalog-checklistinsider-expanded.js catalog-mycardfolio-expanded.js
             catalog-images-mycardfolio.js catalog-images-official.js catalog-images-cached.js catalog-images-ebay.js
-            data/halloflists-sync-report.json data/halloflists-now-sync-report.json data/mycardfolio-sync-state.json data/mycardfolio-sync-report.json
+            data/halloflists-sync-report.json data/halloflists-now-sync-report.json data/checklistinsider-sync-report.json data/mycardfolio-sync-state.json data/mycardfolio-sync-report.json
             data/ebay-image-manifest.json data/ebay-image-report.json assets/cards/ebay
           )
           EXISTING=()
