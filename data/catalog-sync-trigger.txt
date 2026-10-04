@@ -1,1 +1,1 @@
-2026-10-04T01:02:00-05:00 expanded priority collections + verified exact fronts sync
+2026-10-04T01:04:00-05:00 owned Excel collection priority sync
