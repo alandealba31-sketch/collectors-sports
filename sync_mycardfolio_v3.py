@@ -22,6 +22,8 @@ LEGACY_STRUCTURED_IDS = {
     'panini-international-france-2026',
     'panini-international-germany-2026',
     'panini-international-mexico-2026',
+    'panini-real-madrid-2025-26',
+    'topps-real-madrid-team-set-2025-26',
 }
 
 SPORT_MAP = {
@@ -38,17 +40,34 @@ def exact_years(desired: str, available: list[str]) -> list[str]:
 _base_product_match = sync.product_is_strict_match
 
 
+def token_root(token: str) -> str:
+    token = token.strip()
+    if len(token) > 4 and token.endswith('s'):
+        return token[:-1]
+    return token
+
+
+def phrase_matches(text: str, phrase: str) -> bool:
+    if phrase in text:
+        return True
+    text_roots={token_root(t) for t in text.split()}
+    phrase_roots=[token_root(t) for t in phrase.split()]
+    return bool(phrase_roots) and all(root in text_roots for root in phrase_roots)
+
+
 def strict_product_family(label: str, cfg: dict) -> bool:
     if not _base_product_match(label, cfg): return False
     text=sync.norm(label); tokens=set(text.split())
     forbidden=[sync.norm(x) for x in cfg.get('forbidden',[]) if sync.norm(x)]
     for value in forbidden:
-        if value in text or all(token in tokens for token in value.split()): return False
+        if phrase_matches(text,value): return False
     collection_id=cfg.get('collectionId','')
     if collection_id.startswith('panini-') and 'topps' in tokens: return False
     if collection_id.startswith('topps-') and 'panini' in tokens: return False
     if collection_id=='topps-update-baseball-2026' and 'chrome' in tokens: return False
-    if 'team-set' in collection_id and any(x in text for x in ('collector tin','collector tins')): return False
+    if 'team-set' in collection_id:
+        if any(phrase_matches(text,x) for x in ('collector tin','collectors tin')): return False
+        if 'top of the world' in text: return False
     if 'collector-tin' in collection_id and 'team set' in text: return False
     return True
 
@@ -69,7 +88,7 @@ def derive_image_product(raw: dict) -> dict:
     required=tokens[:5]
     cid=CANONICAL_IDS.get(raw.get('collectionId',''), raw.get('collectionId',''))
     forbidden=[]
-    if 'team-set' in cid: forbidden=['collector tin']
+    if 'team-set' in cid: forbidden=['collector tin','collectors tin','top of the world']
     elif 'collector-tin' in cid: forbidden=['team set']
     if cid=='topps-update-baseball-2026': forbidden.append('chrome')
     return {'collectionId':cid,'sport':sport,'year':year,'displayYear':raw.get('year'),'product':product,'shortName':raw.get('shortName') or product,'aliases':[x for x in [name,raw.get('shortName')] if x],'required':required,'forbidden':forbidden}
@@ -109,7 +128,7 @@ def build_merged_config() -> Path:
         prioritized=[item.get('collectionId') for item in products if item.get('collectionId') in ranks]
         print('Email-priority checklist queue:', ', '.join(prioritized), flush=True)
     merged_path.parent.mkdir(parents=True,exist_ok=True)
-    merged_path.write_text(json.dumps({'version':7,'emailPriorityApplied':bool(ranks),'products':products},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    merged_path.write_text(json.dumps({'version':8,'emailPriorityApplied':bool(ranks),'products':products},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     return merged_path
 
 
