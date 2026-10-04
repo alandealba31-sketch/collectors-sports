@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "products": [
     {"collectionId":"topps-stadium-club-ufc-2026","url":"https://www.halloflists.com/products/2026-topps-stadium-club-ufc","sport":"UFC","manufacturer":"Topps","year":"2026","name":"2026 Topps Stadium Club UFC","shortName":"Stadium Club UFC 2026"},
     {"collectionId":"topps-chrome-ufc-2026","url":"https://www.halloflists.com/products/2026-topps-chrome-ufc","sport":"UFC","manufacturer":"Topps","year":"2026","name":"2026 Topps Chrome UFC","shortName":"Chrome UFC 2026"},
@@ -15,6 +15,7 @@
     {"collectionId":"topps-holiday-baseball-2025","url":"https://www.halloflists.com/products/2025-topps-holiday-baseball","sport":"MLB","manufacturer":"Topps","year":"2025","name":"2025 Topps Holiday Baseball","shortName":"Holiday MLB 2025"},
     {"collectionId":"topps-update-baseball-2026","url":"https://www.halloflists.com/products/2026-topps-update-series-baseball","sport":"MLB","manufacturer":"Topps","year":"2026","name":"2026 Topps Update Series Baseball","shortName":"Update MLB 2026"},
     {"collectionId":"topps-chrome-logofractor-baseball-2026","url":"https://www.halloflists.com/products/2026-topps-chrome-baseball-logofractor-edition","sport":"MLB","manufacturer":"Topps","year":"2026","name":"2026 Topps Chrome Baseball Logofractor Edition","shortName":"Logofractor MLB 2026"},
+    {"collectionId":"topps-finest-baseball-2026","url":"https://www.halloflists.com/products/2026-topps-finest-baseball","sport":"MLB","manufacturer":"Topps","year":"2026","name":"2026 Topps Finest Baseball","shortName":"Finest Baseball 2026"},
 
     {"collectionId":"topps-chrome-basketball-2025-26","url":"https://www.halloflists.com/products/2025-26-topps-chrome-basketball","sport":"NBA","manufacturer":"Topps","year":"2025/26","name":"2025-26 Topps Chrome Basketball","shortName":"Chrome Basketball 25/26"},
     {"collectionId":"topps-signature-class-basketball-2025-26","url":"https://www.halloflists.com/products/2025-26-topps-signature-class-basketball","sport":"NBA","manufacturer":"Topps","year":"2025/26","name":"2025-26 Topps Signature Class Basketball","shortName":"Signature Class NBA 25/26"},
