@@ -3,6 +3,15 @@ name: Deploy static site to Pages
 on:
   push:
     branches: ["main"]
+    paths:
+      - "index.html"
+      - "sw.js"
+      - "*.js"
+      - "*.css"
+      - "*.webmanifest"
+      - "*.svg"
+      - "assets/**"
+      - ".github/workflows/pages.yml"
   workflow_dispatch:
 
 permissions:
