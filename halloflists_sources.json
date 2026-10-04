@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "products": [
     {
       "collectionId": "topps-stadium-club-ufc-2026",
@@ -27,6 +27,51 @@
       "year": "2025/26",
       "name": "2025-26 Topps Finest UEFA Club Competitions",
       "shortName": "Finest UEFA 25/26"
+    },
+    {
+      "collectionId": "topps-chrome-tennis-2026",
+      "url": "https://www.halloflists.com/products/2026-topps-chrome-tennis",
+      "sport": "Tennis",
+      "manufacturer": "Topps",
+      "year": "2026",
+      "name": "2026 Topps Chrome Tennis",
+      "shortName": "Chrome Tennis 2026"
+    },
+    {
+      "collectionId": "topps-chrome-ufc-2026",
+      "url": "https://www.halloflists.com/products/2026-topps-chrome-ufc",
+      "sport": "UFC",
+      "manufacturer": "Topps",
+      "year": "2026",
+      "name": "2026 Topps Chrome UFC",
+      "shortName": "Chrome UFC 2026"
+    },
+    {
+      "collectionId": "topps-resurgence-football-2025",
+      "url": "https://www.halloflists.com/products/2025-topps-resurgence-football",
+      "sport": "NFL",
+      "manufacturer": "Topps",
+      "year": "2025",
+      "name": "2025 Topps Resurgence Football",
+      "shortName": "Resurgence NFL 2025"
+    },
+    {
+      "collectionId": "bowman-chrome-baseball-2026",
+      "url": "https://www.halloflists.com/products/2026-bowman-chrome-baseball",
+      "sport": "MLB",
+      "manufacturer": "Topps",
+      "year": "2026",
+      "name": "2026 Bowman Chrome Baseball",
+      "shortName": "Bowman Chrome 2026"
+    },
+    {
+      "collectionId": "topps-holiday-baseball-2025",
+      "url": "https://www.halloflists.com/products/2025-topps-holiday-baseball",
+      "sport": "MLB",
+      "manufacturer": "Topps",
+      "year": "2025",
+      "name": "2025 Topps Holiday Baseball",
+      "shortName": "Holiday MLB 2025"
     }
   ]
 }
