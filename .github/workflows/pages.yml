@@ -34,6 +34,7 @@ jobs:
           node --check app-v10-autocomplete.js
           node --check app-v11-home-search.js
           node --check app-v11-now-ui.js
+          node --check app-v11-catalog-normalize.js
           node --check pricing-engine.js
           node --check market-seed.js
           node --check catalog-owned.js
@@ -43,6 +44,8 @@ jobs:
           node --check catalog-select-laliga-inserts.js
           node --check catalog-prizm-cwc-expanded.js
           node --check catalog-prizm-cwc-inserts.js
+          node --check catalog-prizm-monopoly-wc-expanded.js
+          node --check catalog-select-road-wc-expanded.js
           node --check catalog-owned-batch2.js
           node --check catalog-owned-batch3.js
           node --check catalog-mycardfolio-expanded.js
@@ -65,6 +68,9 @@ jobs:
           test -f catalog-select-laliga-inserts.js
           test -f catalog-prizm-cwc-expanded.js
           test -f catalog-prizm-cwc-inserts.js
+          test -f catalog-prizm-monopoly-wc-expanded.js
+          test -f catalog-select-road-wc-expanded.js
+          test -f app-v11-catalog-normalize.js
           test -f catalog-images-cached.js
           test -f catalog-images-teamsets.js
           test -f catalog-owned.js
@@ -80,6 +86,9 @@ jobs:
           grep -q 'catalog-select-laliga-inserts.js' index.html
           grep -q 'catalog-prizm-cwc-expanded.js' index.html
           grep -q 'catalog-prizm-cwc-inserts.js' index.html
+          grep -q 'catalog-prizm-monopoly-wc-expanded.js' index.html
+          grep -q 'catalog-select-road-wc-expanded.js' index.html
+          grep -q 'app-v11-catalog-normalize.js' index.html
           grep -q 'catalog-mycardfolio-expanded.js' index.html
           grep -q 'catalog-images-mycardfolio.js' index.html
           grep -q 'app-v11-home-search.js' index.html
