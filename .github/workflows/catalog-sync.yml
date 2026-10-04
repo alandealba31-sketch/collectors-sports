@@ -38,15 +38,12 @@ jobs:
         uses: actions/checkout@v6
         with:
           fetch-depth: 0
-
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-
       - name: Install parser and MCP dependencies
         run: python -m pip install --disable-pip-version-check pandas xlrd pypdf pillow requests beautifulsoup4 mcp
-
       - name: Build catalog from official manufacturer checklists
         run: |
           set -euo pipefail
@@ -54,29 +51,23 @@ jobs:
           python tools/sync_premier.py
           python tools/sync_official_images.py
           python tools/cache_exact_images.py
-
       - name: Import large published checklist pages
         run: |
           python tools/sync_halloflists.py
           python tools/sync_halloflists_now.py
           python tools/sync_checklistinsider.py
-
+          python tools/sync_fc_collector_tins.py
       - name: Expand products and exact fronts through exact-year structured MCP
         run: python sync_mycardfolio_v3.py
-
       - name: Validate official generated catalog
         run: python tools/validate_catalog.py
-
       - name: Export every searchable identity
         run: node tools/export_catalog_image_targets.mjs
-
       - name: Fill remaining exact fronts through eBay Browse API
         run: python tools/import_ebay_exact_images.py
-
       - name: Clean runtime targets
         if: always()
         run: rm -f data/image-targets-runtime.json data/mycardfolio-runtime-products.json
-
       - name: Validate generated JavaScript
         run: |
           node --check catalog-imported.js
@@ -84,6 +75,7 @@ jobs:
           node --check catalog-halloflists-expanded.js
           node --check catalog-now-halloflists.js
           node --check catalog-checklistinsider-expanded.js
+          node --check catalog-fc-tins-expanded.js
           node --check catalog-mycardfolio-expanded.js
           node --check catalog-images-mycardfolio.js
           node --check catalog-images-official.js
@@ -93,30 +85,24 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
-          for filename in ['data/halloflists-sync-report.json','data/halloflists-now-sync-report.json','data/checklistinsider-sync-report.json','data/mycardfolio-sync-report.json','data/ebay-image-report.json']:
+          for filename in ['data/halloflists-sync-report.json','data/halloflists-now-sync-report.json','data/checklistinsider-sync-report.json','data/fc-tins-sync-report.json','data/mycardfolio-sync-report.json','data/ebay-image-report.json']:
               p=Path(filename)
               if p.exists():
                   print('\n'+filename)
                   print(json.dumps(json.loads(p.read_text()),indent=2)[:24000])
           PY
-
       - name: Commit generated catalog when changed
         run: |
           set -euo pipefail
           CANDIDATES=(
-            catalog-imported.js catalog-premier.js catalog-halloflists-expanded.js catalog-now-halloflists.js catalog-checklistinsider-expanded.js catalog-mycardfolio-expanded.js
+            catalog-imported.js catalog-premier.js catalog-halloflists-expanded.js catalog-now-halloflists.js catalog-checklistinsider-expanded.js catalog-fc-tins-expanded.js catalog-mycardfolio-expanded.js
             catalog-images-mycardfolio.js catalog-images-official.js catalog-images-cached.js catalog-images-ebay.js
-            data/halloflists-sync-report.json data/halloflists-now-sync-report.json data/checklistinsider-sync-report.json data/mycardfolio-sync-state.json data/mycardfolio-sync-report.json
+            data/halloflists-sync-report.json data/halloflists-now-sync-report.json data/checklistinsider-sync-report.json data/fc-tins-sync-report.json data/mycardfolio-sync-state.json data/mycardfolio-sync-report.json
             data/ebay-image-manifest.json data/ebay-image-report.json assets/cards/ebay
           )
           EXISTING=()
-          for p in "${CANDIDATES[@]}"; do
-            [ -e "$p" ] && EXISTING+=("$p")
-          done
-          if [ ${#EXISTING[@]} -eq 0 ] || [ -z "$(git status --porcelain -- "${EXISTING[@]}")" ]; then
-            echo "Catalog and exact-front caches are already current."
-            exit 0
-          fi
+          for p in "${CANDIDATES[@]}"; do [ -e "$p" ] && EXISTING+=("$p"); done
+          if [ ${#EXISTING[@]} -eq 0 ] || [ -z "$(git status --porcelain -- "${EXISTING[@]}")" ]; then echo "Catalog and exact-front caches are already current."; exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -- "${EXISTING[@]}"
@@ -124,9 +110,7 @@ jobs:
           for attempt in 1 2 3 4; do
             git fetch origin main
             git rebase origin/main
-            if git push origin HEAD:main; then
-              exit 0
-            fi
+            if git push origin HEAD:main; then exit 0; fi
             git rebase --abort || true
             sleep 3
           done
