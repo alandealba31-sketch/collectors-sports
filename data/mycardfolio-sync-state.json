@@ -1193,6 +1193,17 @@
       "productMatched": "Select Road to World Cup",
       "yearUsed": "2025",
       "knownSets": 6
+    },
+    "topps-signature-class-basketball-2025-26": {
+      "processedSets": [
+        "ebay_787cd5a84c",
+        "ebay_7a33befa08",
+        "ebay_af32872254"
+      ],
+      "productId": "ebay_71b5b3592f",
+      "productMatched": "Signature Class Basketball",
+      "yearUsed": "2025",
+      "knownSets": 3
     }
   }
 }

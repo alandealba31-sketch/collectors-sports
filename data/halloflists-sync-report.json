@@ -1,0 +1,175 @@
+{
+  "products": [
+    {
+      "collectionId": "topps-stadium-club-ufc-2026",
+      "url": "https://www.halloflists.com/products/2026-topps-stadium-club-ufc",
+      "rows": 0,
+      "status": "error",
+      "error": "no checklist rows parsed"
+    },
+    {
+      "collectionId": "topps-chrome-ufc-2026",
+      "url": "https://www.halloflists.com/products/2026-topps-chrome-ufc",
+      "rows": 0,
+      "status": "error",
+      "error": "no checklist rows parsed"
+    },
+    {
+      "collectionId": "topps-chrome-tennis-2026",
+      "url": "https://www.halloflists.com/products/2026-topps-chrome-tennis",
+      "rows": 0,
+      "status": "error",
+      "error": "no checklist rows parsed"
+    },
+    {
+      "collectionId": "topps-flagship-football-2026",
+      "url": "https://www.halloflists.com/products/2026-topps-flagship-football",
+      "rows": 0,
+      "status": "error",
+      "error": "no checklist rows parsed"
+    },
+    {
+      "collectionId": "topps-resurgence-football-2025",
+      "url": "https://www.halloflists.com/products/2025-topps-resurgence-football",
+      "rows": 0,
+      "status": "error",
+      "error": "no checklist rows parsed"
+    },
+    {
+      "collectionId": "topps-chrome-football-2025",
+      "url": "https://www.halloflists.com/products/2025-topps-chrome-football",
+      "rows": 0,
+      "status": "error",
+      "error": "no checklist rows parsed"
+    },
+    {
+      "collectionId": "topps-signature-class-football-2025",
+      "url": "https://www.halloflists.com/products/2025-topps-signature-class-football",
+      "rows": 0,
+      "status": "error",
+      "error": "no checklist rows parsed"
+    },
+    {
+      "collectionId": "topps-chrome-baseball-2026",
+      "url": "https://www.halloflists.com/products/2026-topps-chrome-baseball",
+      "rows": 8,
+      "expectedRows": null,
+      "complete": true,
+      "subsets": {
+        "Hobby Box": 1,
+        "Jumbo Box": 1,
+        "Breaker's Delight Box": 1,
+        "Value Box": 1,
+        "Good to know": 4
+      },
+      "status": "ok"
+    },
+    {
+      "collectionId": "bowman-chrome-baseball-2026",
+      "url": "https://www.halloflists.com/products/2026-bowman-chrome-baseball",
+      "rows": 7,
+      "expectedRows": null,
+      "complete": true,
+      "subsets": {
+        "Hobby Box": 1,
+        "Breaker's Delight Box": 1,
+        "Good to know": 5
+      },
+      "status": "ok"
+    },
+    {
+      "collectionId": "topps-holiday-baseball-2025",
+      "url": "https://www.halloflists.com/products/2025-topps-holiday-baseball",
+      "rows": 0,
+      "status": "error",
+      "error": "no checklist rows parsed"
+    },
+    {
+      "collectionId": "topps-update-baseball-2026",
+      "url": "https://www.halloflists.com/products/2026-topps-update-series-baseball",
+      "rows": 0,
+      "status": "error",
+      "error": "no checklist rows parsed"
+    },
+    {
+      "collectionId": "topps-chrome-logofractor-baseball-2026",
+      "url": "https://www.halloflists.com/products/2026-topps-chrome-baseball-logofractor-edition",
+      "rows": 0,
+      "status": "error",
+      "error": "no checklist rows parsed"
+    },
+    {
+      "collectionId": "topps-chrome-basketball-2025-26",
+      "url": "https://www.halloflists.com/products/2025-26-topps-chrome-basketball",
+      "rows": 0,
+      "status": "error",
+      "error": "no checklist rows parsed"
+    },
+    {
+      "collectionId": "topps-signature-class-basketball-2025-26",
+      "url": "https://www.halloflists.com/products/2025-26-topps-signature-class-basketball",
+      "rows": 0,
+      "status": "error",
+      "error": "no checklist rows parsed"
+    },
+    {
+      "collectionId": "topps-chrome-f1-2026",
+      "url": "https://www.halloflists.com/products/2026-topps-chrome-formula-1-racing",
+      "rows": 0,
+      "status": "error",
+      "error": "no checklist rows parsed"
+    },
+    {
+      "collectionId": "topps-chrome-wwe-2026",
+      "url": "https://www.halloflists.com/products/2026-topps-chrome-wwe",
+      "rows": 0,
+      "status": "error",
+      "error": "no checklist rows parsed"
+    },
+    {
+      "collectionId": "topps-finest-ucc-2025-26",
+      "url": "https://www.halloflists.com/products/2025-26-topps-finest-uefa-club-competitions",
+      "rows": 0,
+      "status": "error",
+      "error": "no checklist rows parsed"
+    },
+    {
+      "collectionId": "topps-chrome-ucc-2025-26",
+      "url": "https://www.halloflists.com/products/topps-chrome-uefa-club-competitions-2025-26",
+      "rows": 0,
+      "status": "error",
+      "error": "no checklist rows parsed"
+    },
+    {
+      "collectionId": "topps-ucc-2025-26",
+      "url": "https://www.halloflists.com/products/2025-26-topps-uefa-club-competitions",
+      "rows": 0,
+      "status": "error",
+      "error": "404 Client Error: Not Found for url: https://www.halloflists.com/products/2025-26-topps-uefa-club-competitions"
+    },
+    {
+      "collectionId": "topps-premier-league-2025-26",
+      "url": "https://www.halloflists.com/products/2025-26-topps-premier-league",
+      "rows": 0,
+      "status": "error",
+      "error": "no checklist rows parsed"
+    },
+    {
+      "collectionId": "topps-chrome-premier-league-2026",
+      "url": "https://www.halloflists.com/products/2025-26-topps-chrome-premier-league",
+      "rows": 0,
+      "status": "error",
+      "error": "no checklist rows parsed"
+    },
+    {
+      "collectionId": "topps-chrome-mls-2026",
+      "url": "https://www.halloflists.com/products/topps-chrome-major-league-soccer-2026",
+      "rows": 0,
+      "status": "error",
+      "error": "no checklist rows parsed"
+    }
+  ],
+  "successfulProducts": 2,
+  "failedProducts": 20,
+  "totalRows": 15
+}

@@ -1,6 +1,6 @@
 {
   "runner": "sync_mycardfolio_v2.py",
-  "startedAt": "2026-10-04T03:35:40Z",
+  "startedAt": "2026-10-04T04:39:40Z",
   "endpoint": "https://mycardfolio.com/api/mcp",
   "setsPerProductPerRun": 150,
   "requestDelaySeconds": 1.05,
@@ -2670,9 +2670,9 @@
       "rowsAccumulated": 2
     },
     "panini-select-road-to-world-cup-2025-26": {
-      "setsFetchedThisRun": 6,
-      "rowsAddedThisRun": 6,
-      "imagesAddedThisRun": 6,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2025",
@@ -4828,11 +4828,81 @@
         }
       ],
       "error": "strict-product-not-found"
+    },
+    "topps-signature-class-basketball-2025-26": {
+      "setsFetchedThisRun": 3,
+      "rowsAddedThisRun": 3,
+      "imagesAddedThisRun": 3,
+      "candidateProducts": [
+        {
+          "year": "2025",
+          "label": "Signature Class Basketball",
+          "score": 15,
+          "strict": true,
+          "productId": "ebay_71b5b3592f"
+        },
+        {
+          "year": "2025",
+          "label": "Signature Class NBA",
+          "score": 13,
+          "strict": true,
+          "productId": "ebay_8203ef6295"
+        },
+        {
+          "year": "2025",
+          "label": "2025-26 Topps",
+          "score": 11,
+          "strict": false,
+          "productId": "ebay_b17af5e9b2"
+        },
+        {
+          "year": "2025",
+          "label": "2025/26 Topps",
+          "score": 11,
+          "strict": false,
+          "productId": "ing_65de92f1dd"
+        },
+        {
+          "year": "2025",
+          "label": "Signature Class",
+          "score": 10,
+          "strict": true,
+          "productId": "ebay_67b43684fe"
+        },
+        {
+          "year": "2025",
+          "label": "2025-26 Topps Basketball",
+          "score": 8,
+          "strict": false,
+          "productId": "ebay_5f5a210ca2"
+        },
+        {
+          "year": "2025",
+          "label": "25-26",
+          "score": 8,
+          "strict": false,
+          "productId": "ebay_7578b79958"
+        },
+        {
+          "year": "2025",
+          "label": "2025-26",
+          "score": 6,
+          "strict": false,
+          "productId": "ebay_51d4055485"
+        }
+      ],
+      "yearUsed": "2025",
+      "productId": "ebay_71b5b3592f",
+      "productMatched": "Signature Class Basketball",
+      "knownSets": 3,
+      "processedSetsTotal": 3,
+      "remainingSets": 0,
+      "rowsAccumulated": 3
     }
   },
-  "finishedAt": "2026-10-04T03:37:58Z",
-  "collectionsWritten": 49,
-  "rowsWritten": 1448,
-  "exactFrontsWritten": 1432,
-  "runtimeSeconds": 137.7
+  "finishedAt": "2026-10-04T04:42:04Z",
+  "collectionsWritten": 50,
+  "rowsWritten": 1451,
+  "exactFrontsWritten": 1435,
+  "runtimeSeconds": 143.6
 }
