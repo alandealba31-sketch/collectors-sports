@@ -100,25 +100,38 @@ def read_products(path: Path, key='products') -> list[dict]:
 
 
 def priority_rank(root: Path) -> dict[str,int]:
-    path=root/'data'/'email-priority-collections.json'
+    ordered=[]
     try:
-        raw=json.loads(path.read_text(encoding='utf-8')) if path.exists() else {}
-        items=raw.get('collections') or []
-        return {CANONICAL_IDS.get(str(item.get('collectionId')),str(item.get('collectionId'))): int(item.get('priority', index+1)) for index,item in enumerate(items) if item.get('collectionId')}
+        owned_path=root/'data'/'user-collection-priority.json'
+        owned=json.loads(owned_path.read_text(encoding='utf-8')) if owned_path.exists() else {}
+        for item in owned.get('collections') or []:
+            cid=CANONICAL_IDS.get(str(item.get('collectionId') or ''),str(item.get('collectionId') or ''))
+            if cid and cid not in ordered: ordered.append(cid)
     except Exception:
-        return {}
+        pass
+    try:
+        email_path=root/'data'/'email-priority-collections.json'
+        email=json.loads(email_path.read_text(encoding='utf-8')) if email_path.exists() else {}
+        items=sorted(email.get('collections') or [],key=lambda item:int(item.get('priority') or 999999))
+        for item in items:
+            cid=CANONICAL_IDS.get(str(item.get('collectionId') or ''),str(item.get('collectionId') or ''))
+            if cid and cid not in ordered: ordered.append(cid)
+    except Exception:
+        pass
+    return {cid:index+1 for index,cid in enumerate(ordered)}
 
 
 def build_merged_config() -> Path:
     root=Path(__file__).resolve().parent
     base=read_products(root/'mycardfolio_product_sources_v2.json')
+    expanded=read_products(root/'tools'/'mycardfolio_product_sources.json')
     extras=read_products(root/'mycardfolio_extra_products_v1.json')
     hall=[derive_image_product(x) for x in read_products(root/'halloflists_sources.json')]
     ci=[derive_image_product(x) for x in read_products(root/'checklistinsider_sources.json')]
     now=[derive_image_product(x) for x in read_products(root/'halloflists_now_sources.json',key='sources')]
     merged_path=root/'data'/'mycardfolio-runtime-products.json'
     products=[]; seen=set()
-    for raw in [*base,*extras,*hall,*ci,*now]:
+    for raw in [*base,*expanded,*extras,*hall,*ci,*now]:
         item=normalize_product(dict(raw)); cid=item.get('collectionId')
         if not cid or cid in seen: continue
         seen.add(cid); products.append(item)
@@ -126,9 +139,9 @@ def build_merged_config() -> Path:
     if ranks:
         products.sort(key=lambda item: ranks.get(item.get('collectionId',''), 1000000))
         prioritized=[item.get('collectionId') for item in products if item.get('collectionId') in ranks]
-        print('Email-priority checklist queue:', ', '.join(prioritized), flush=True)
+        print('Owned/email-priority structured queue:', ', '.join(prioritized), flush=True)
     merged_path.parent.mkdir(parents=True,exist_ok=True)
-    merged_path.write_text(json.dumps({'version':8,'emailPriorityApplied':bool(ranks),'products':products},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    merged_path.write_text(json.dumps({'version':9,'ownedPriorityApplied':bool(ranks),'products':products},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     return merged_path
 
 
