@@ -61,4 +61,26 @@
     const c=catalog.collections.find(x=>x.id===id);
     if(c){c.sport=sport;c.family='Topps NOW';}
   }
+
+  // Recent purchases confirmed by order emails. Add the purchased Base identity even if
+  // the public-source synchronizer has not reached the card yet. Parallel identities are
+  // intentionally NOT inferred here; those still require source verification.
+  addRows('topps-now-mlb-2026',[
+    ['734','TJ Rumfield','',0,'Base','now-email-confirmed'],
+    ['738','Cam Schlittler','',0,'Base','now-email-confirmed'],
+    ['739','Ben Rice','',0,'Base','now-email-confirmed'],
+    ['740','George Lombard Jr.','',0,'Base','now-email-confirmed'],
+    ['748','Ethan Salas','',0,'Base','now-email-confirmed']
+  ]);
+  addRows('topps-now-nfl-2026',[
+    ['31','Jahmyr Gibbs','',0,'Base','now-email-confirmed'],
+    ['32','Aaron Rodgers / Ben Roethlisberger','',0,'Base','now-email-confirmed'],
+    ['36','Matthew Stafford','',0,'Base','now-email-confirmed']
+  ]);
+  addRows('topps-now-tennis-2026',[
+    ['26','Carlos Alcaraz','Tennis',0,'Base','now-email-confirmed']
+  ]);
+  addRows('topps-now-f1-2026',[
+    ['63','Max Verstappen','',0,'Base','now-email-confirmed']
+  ]);
 })();
