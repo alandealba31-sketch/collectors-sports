@@ -1,1 +1,1 @@
-2026-10-04T10:47-05:00 isolated TCDB checklist probe for Chrome Tennis 2026
+2026-10-04T10:50-05:00 probe TCDB canonical URL variants for sid 587629
