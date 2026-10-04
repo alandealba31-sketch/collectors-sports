@@ -51,20 +51,35 @@ jobs:
           python tools/sync_premier.py
           python tools/sync_official_images.py
           python tools/cache_exact_images.py
-      - name: Import large published checklist pages
+      - name: Import large published checklist pages without blocking the pipeline
         run: |
-          python tools/sync_halloflists.py
-          python tools/sync_halloflists_now.py
-          python tools/sync_checklistinsider.py
-          python tools/sync_fc_collector_tins.py
+          set +e
+          run_optional() {
+            label="$1"
+            shift
+            echo "::group::$label"
+            "$@"
+            code=$?
+            if [ $code -ne 0 ]; then
+              echo "::warning::$label failed with exit code $code; preserving other catalog work and continuing."
+            fi
+            echo "::endgroup::"
+            return 0
+          }
+          run_optional "Hall of Lists" python tools/sync_halloflists.py
+          run_optional "Hall of Lists NOW" python tools/sync_halloflists_now.py
+          run_optional "ChecklistInsider" python tools/sync_checklistinsider.py
+          run_optional "FC Collector Tins" python tools/sync_fc_collector_tins.py
       - name: Expand products and exact fronts through exact-year structured MCP
-        run: python sync_mycardfolio_v3.py
+        run: |
+          python sync_mycardfolio_v3.py || echo "::warning::MyCardfolio sync failed; continuing with last valid generated data."
       - name: Validate official generated catalog
         run: python tools/validate_catalog.py
       - name: Export every searchable identity
         run: node tools/export_catalog_image_targets.mjs
       - name: Fill remaining exact fronts through eBay Browse API
-        run: python tools/import_ebay_exact_images.py
+        run: |
+          python tools/import_ebay_exact_images.py || echo "::warning::eBay exact-image import failed; continuing with existing exact fronts."
       - name: Audit loaded catalog and exact-front coverage
         run: node tools/audit_loaded_catalog.mjs
       - name: Clean runtime targets
