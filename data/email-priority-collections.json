@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-04",
+  "policy": "Collections confirmed by purchase, delivery, or active order emails are processed before general catalog backlog for checklist expansion and exact-front acquisition.",
+  "collections": [
+    {"collectionId":"topps-chrome-tennis-2026","reason":"Topps Hobby Box delivered Oct 1; opened collection needs complete checklist and exact fronts","priority":1},
+    {"collectionId":"topps-brazil-collector-tin-2026-27","reason":"Distrito Max order DM347264 confirmed Oct 2","priority":2},
+    {"collectionId":"topps-real-madrid-team-set-2025-26","reason":"Recent eBay purchase confirmed by post-purchase email Oct 3","priority":3},
+    {"collectionId":"topps-holiday-football-2026","reason":"Two Mega Boxes ordered direct from Topps Sep 28","priority":4},
+    {"collectionId":"topps-holiday-baseball-2026","reason":"Two Mega Boxes ordered direct from Topps Sep 21","priority":5},
+    {"collectionId":"panini-real-madrid-tribute-2023-24","reason":"Goalinn order delivered Oct 1","priority":6},
+    {"collectionId":"panini-atletico-madrid-2025-26","reason":"Goalinn order delivered Oct 1","priority":7},
+    {"collectionId":"panini-real-madrid-2025-26","reason":"Goalinn order delivered Oct 1","priority":8},
+    {"collectionId":"panini-international-mexico-2026","reason":"Mercado Libre purchase delivered Sep 28","priority":9},
+    {"collectionId":"panini-international-france-2026","reason":"eBay purchase/payment thread active through Sep 29","priority":10},
+    {"collectionId":"panini-international-england-2026","reason":"eBay shipment delivered in late September","priority":11},
+    {"collectionId":"topps-now-mlb-2026","reason":"Multiple recent direct Topps NOW purchases including cards 730, 734, 737, 738, 739, 740 and 748","priority":12},
+    {"collectionId":"topps-now-nfl-2026","reason":"Multiple recent direct Topps NOW purchases including cards 31, 32 and 36","priority":13},
+    {"collectionId":"topps-now-tennis-2026","reason":"Recent direct Topps NOW purchases of Carlos Alcaraz cards 26 and 27","priority":14},
+    {"collectionId":"topps-now-f1-2026","reason":"Recent direct Topps NOW purchases of George Russell 62 and Max Verstappen 63","priority":15}
+  ]
+}
