@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "products": [
+    {
+      "collectionId": "topps-stadium-club-ufc-2026",
+      "url": "https://www.halloflists.com/products/2026-topps-stadium-club-ufc",
+      "sport": "UFC",
+      "manufacturer": "Topps",
+      "year": "2026",
+      "name": "2026 Topps Stadium Club UFC",
+      "shortName": "Stadium Club UFC 2026"
+    },
+    {
+      "collectionId": "topps-flagship-football-2026",
+      "url": "https://www.halloflists.com/products/2026-topps-flagship-football",
+      "sport": "NFL",
+      "manufacturer": "Topps",
+      "year": "2026",
+      "name": "2026 Topps Flagship Football",
+      "shortName": "Flagship NFL 2026"
+    },
+    {
+      "collectionId": "topps-finest-ucc-2025-26",
+      "url": "https://www.halloflists.com/products/2025-26-topps-finest-uefa-club-competitions",
+      "sport": "Soccer",
+      "manufacturer": "Topps",
+      "year": "2025/26",
+      "name": "2025-26 Topps Finest UEFA Club Competitions",
+      "shortName": "Finest UEFA 25/26"
+    }
+  ]
+}
