@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "products": [
+    {"collectionId":"panini-international-england-2026","sport":"Soccer","year":"2026","product":"Panini International England","shortName":"Panini INTL England 2026","appSport":"Soccer","aliases":["Panini INTL England","International England","England INTL"],"required":["england"],"forbidden":["stickers"]},
+    {"collectionId":"panini-international-france-2026","sport":"Soccer","year":"2026","product":"Panini International France","shortName":"Panini INTL France 2026","appSport":"Soccer","aliases":["Panini INTL France","International France","France INTL"],"required":["france"],"forbidden":["stickers"]},
+    {"collectionId":"panini-international-germany-2026","sport":"Soccer","year":"2026","product":"Panini International Germany","shortName":"Panini INTL Germany 2026","appSport":"Soccer","aliases":["Panini INTL Germany","International Germany","Germany INTL"],"required":["germany"],"forbidden":["stickers"]},
+    {"collectionId":"panini-international-mexico-2026","sport":"Soccer","year":"2026","product":"Panini International Mexico","shortName":"Panini INTL Mexico 2026","appSport":"Soccer","aliases":["Panini INTL Mexico","International Mexico","Mexico INTL"],"required":["mexico"],"forbidden":["stickers"]},
+
+    {"collectionId":"topps-arsenal-team-set-2025-26","sport":"Soccer","year":"2025","product":"Topps Arsenal Team Set","shortName":"Arsenal Team Set 25/26","appSport":"Soccer","required":["arsenal","team"],"forbidden":["collector tin","chrome"]},
+    {"collectionId":"topps-arsenal-team-set-2026-27","sport":"Soccer","year":"2026","product":"Topps Arsenal Team Set","shortName":"Arsenal Team Set 26/27","appSport":"Soccer","required":["arsenal","team"],"forbidden":["collector tin","chrome"]},
+    {"collectionId":"topps-barcelona-team-set-2026-27","sport":"Soccer","year":"2026","product":"Topps FC Barcelona Team Set","shortName":"Barcelona Team Set 26/27","appSport":"Soccer","aliases":["Topps Barcelona Team Set"],"required":["barcelona","team"],"forbidden":["collector tin","forever","chrome"]},
+    {"collectionId":"topps-psg-team-set-2026-27","sport":"Soccer","year":"2026","product":"Topps Paris Saint-Germain Team Set","shortName":"PSG Team Set 26/27","appSport":"Soccer","aliases":["Topps PSG Team Set","Paris Saint Germain Team Set"],"required":["paris","team"],"forbidden":["collector tin","chrome"]},
+    {"collectionId":"topps-manchester-city-team-set-2026-27","sport":"Soccer","year":"2026","product":"Topps Manchester City Team Set","shortName":"Man City Team Set 26/27","appSport":"Soccer","required":["manchester","city","team"],"forbidden":["collector tin","chrome"]},
+    {"collectionId":"topps-benfica-team-set-2026-27","sport":"Soccer","year":"2026","product":"Topps Benfica Team Set","shortName":"Benfica Team Set 26/27","appSport":"Soccer","aliases":["Topps SL Benfica Team Set"],"required":["benfica","team"],"forbidden":["collector tin","chrome"]}
+  ]
+}
