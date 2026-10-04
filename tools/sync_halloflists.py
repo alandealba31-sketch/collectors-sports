@@ -80,9 +80,14 @@ def parse_product(cfg: dict) -> tuple[dict, list[list], dict]:
     soup = BeautifulSoup(response.text, 'html.parser')
 
     text_index_heading = None
+    expected_rows = 0
     for tag in soup.find_all(['h2', 'h3', 'p']):
-        if 'checklist — text index' in norm(tag.get_text(' ', strip=True)).lower():
+        label = norm(tag.get_text(' ', strip=True))
+        if 'checklist — text index' in label.lower():
             text_index_heading = tag
+            m = re.search(r'\(([\d,]+)\s+cards\)', label, re.I)
+            if m:
+                expected_rows = int(m.group(1).replace(',', ''))
             break
 
     start = text_index_heading or soup.body
@@ -94,7 +99,13 @@ def parse_product(cfg: dict) -> tuple[dict, list[list], dict]:
     seen: set[tuple[str, str, str]] = set()
     current_subset = ''
 
-    for element in start.find_all_next(['h3', 'li']):
+    for element in start.find_all_next(['h2', 'h3', 'li', 'footer']):
+        if element.name == 'footer':
+            break
+        if element.name == 'h2' and element is not start and rows:
+            heading = norm(element.get_text(' ', strip=True)).lower()
+            if any(x in heading for x in ('checklists by category', 'browse', 'site', 'related')):
+                break
         if element.name == 'h3':
             raw = norm(element.get_text(' ', strip=True))
             m = re.match(r'^(.*?)\s*\((\d[\d,]*)\)\s*$', raw)
@@ -115,9 +126,13 @@ def parse_product(cfg: dict) -> tuple[dict, list[list], dict]:
                f"hol:{cfg['collectionId']}:{re.sub(r'[^a-z0-9]+','-',current_subset.lower()).strip('-')}:{number}"]
         rows.append(row)
         subset_counts[current_subset] = subset_counts.get(current_subset, 0) + 1
+        if expected_rows and len(rows) >= expected_rows:
+            break
 
     if not rows:
         raise RuntimeError('no checklist rows parsed')
+    if expected_rows and len(rows) != expected_rows:
+        raise RuntimeError(f'parsed {len(rows)} rows but page declares {expected_rows}')
 
     collection = {
         'id': cfg['collectionId'],
@@ -135,6 +150,8 @@ def parse_product(cfg: dict) -> tuple[dict, list[list], dict]:
         'collectionId': cfg['collectionId'],
         'url': cfg['url'],
         'rows': len(rows),
+        'expectedRows': expected_rows or None,
+        'complete': not expected_rows or len(rows) == expected_rows,
         'subsets': subset_counts,
         'status': 'ok',
     }
