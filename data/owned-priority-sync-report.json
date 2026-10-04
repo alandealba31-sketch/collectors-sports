@@ -1,0 +1,29 @@
+{
+  "products": [
+    {
+      "collectionId": "panini-obsidian-soccer-2025-26",
+      "rows": 0,
+      "status": "error",
+      "error": "only 0 rows parsed from expected source size 200"
+    },
+    {
+      "collectionId": "topps-argentina-team-set-2026",
+      "rows": 0,
+      "status": "error",
+      "error": "only 7 rows parsed from expected source size 126"
+    },
+    {
+      "collectionId": "topps-argentina-collector-tin-2026",
+      "rows": 0,
+      "status": "error",
+      "error": "403 Client Error: Forbidden for url: https://es.topps.com/pages/topps-argentina-2026-collector-tin"
+    },
+    {
+      "collectionId": "panini-prizm-copa-america-2024",
+      "rows": 0,
+      "status": "error",
+      "error": "only 0 rows parsed from expected source size 200"
+    }
+  ],
+  "totalRows": 0
+}

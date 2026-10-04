@@ -1259,6 +1259,58 @@
     },
     "panini-intl-germany-2026": {
       "processedSets": []
+    },
+    "panini-obsidian-soccer-2025-26": {
+      "processedSets": [
+        "ebay_06d41990c4",
+        "ebay_59d796ffdf",
+        "ebay_651e0474dd",
+        "ebay_c45eda1064"
+      ],
+      "productId": "ebay_859390ad3c",
+      "productMatched": "Obsidian Soccer",
+      "yearUsed": "2025",
+      "knownSets": 4
+    },
+    "panini-prizm-fifa-soccer-2025-26": {
+      "processedSets": [
+        "ebay_0162cf1fdc",
+        "ebay_090ecb6c08",
+        "ebay_2f76f202f4",
+        "ebay_69f1a54e0b",
+        "ebay_ac56e7bc73"
+      ],
+      "productId": "ebay_baafefb144",
+      "productMatched": "Prizm FIFA Soccer",
+      "yearUsed": "2025",
+      "knownSets": 5
+    },
+    "panini-prizm-conmebol-copa-america-2024": {
+      "processedSets": [
+        "ing_3d64de16d3"
+      ],
+      "productId": "ing_9f32719fee",
+      "productMatched": "Panini Prizm CONMEBOL Copa America",
+      "yearUsed": "2024",
+      "knownSets": 1
+    },
+    "topps-stadium-club-baseball-2026": {
+      "processedSets": []
+    },
+    "topps-chrome-college-baseball-2026": {
+      "processedSets": []
+    },
+    "panini-obsidian-football-2025": {
+      "processedSets": []
+    },
+    "topps-signature-class-basketball-2026": {
+      "processedSets": [
+        "ebay_7e26e1dfbb"
+      ],
+      "productId": "ebay_de312d8a29",
+      "productMatched": "Signature Class Basketball",
+      "yearUsed": "2026",
+      "knownSets": 1
     }
   }
 }

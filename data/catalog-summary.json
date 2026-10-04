@@ -1,29 +1,29 @@
 {
-  "generatedAt": "2026-10-04T05:40:09.640Z",
-  "scriptFilesEvaluated": 53,
+  "generatedAt": "2026-10-04T06:15:18.667Z",
+  "scriptFilesEvaluated": 54,
   "scriptFailures": [
     {
       "file": "catalog-runtime.js",
       "error": "document is not defined"
     }
   ],
-  "collectionsWithChecklist": 68,
-  "collectionRecords": 81,
-  "searchableIdentities": 22253,
+  "collectionsWithChecklist": 72,
+  "collectionRecords": 85,
+  "searchableIdentities": 22264,
   "bySport": {
     "NFL": 6217,
-    "Soccer": 4920,
-    "NBA": 4668,
+    "Soccer": 4930,
+    "NBA": 4669,
     "MLB": 3172,
     "WWE": 1323,
     "UFC": 948,
     "Tennis": 770,
     "F1": 235
   },
-  "verifiedExactFrontRecords": 1458,
-  "approximateUniqueExactFrontIdentities": 1458,
-  "searchableIdentitiesWithExactFront": 1861,
-  "exactFrontCoveragePct": 8.36,
+  "verifiedExactFrontRecords": 1469,
+  "approximateUniqueExactFrontIdentities": 1469,
+  "searchableIdentitiesWithExactFront": 1872,
+  "exactFrontCoveragePct": 8.41,
   "topCollections": [
     {
       "id": "topps-chrome-football-2025",
