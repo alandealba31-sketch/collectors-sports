@@ -1,9 +1,15 @@
 {
   "runner": "sync_mycardfolio_v2.py",
-  "startedAt": "2026-10-04T05:22:51Z",
+  "startedAt": "2026-10-04T05:30:02Z",
   "endpoint": "https://mycardfolio.com/api/mcp",
   "setsPerProductPerRun": 150,
   "requestDelaySeconds": 1.05,
+  "forcedLegacyPurges": {
+    "panini-international-mexico-2026": {
+      "rows": 1,
+      "images": 1
+    }
+  },
   "products": {
     "topps-chrome-tennis-2026": {
       "setsFetchedThisRun": 0,
@@ -439,9 +445,9 @@
       "error": "strict-product-not-found"
     },
     "panini-real-madrid-2025-26": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2025",
@@ -468,7 +474,7 @@
           "year": "2025",
           "label": "Real Madrid Team Top of the World",
           "score": 2,
-          "strict": true,
+          "strict": false,
           "productId": "ebay_ca2b465a25"
         },
         {
@@ -508,10 +514,10 @@
       "remainingSets": 0,
       "rowsAccumulated": 1
     },
-    "panini-international-mexico-2026": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+    "panini-intl-mexico-2026": {
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
         {
           "year": "2026",
@@ -578,7 +584,7 @@
       "remainingSets": 0,
       "rowsAccumulated": 1
     },
-    "panini-international-france-2026": {
+    "panini-intl-france-2026": {
       "setsFetchedThisRun": 0,
       "rowsAddedThisRun": 0,
       "imagesAddedThisRun": 0,
@@ -642,7 +648,7 @@
       ],
       "error": "strict-product-not-found"
     },
-    "panini-international-england-2026": {
+    "panini-intl-england-2026": {
       "setsFetchedThisRun": 0,
       "rowsAddedThisRun": 0,
       "imagesAddedThisRun": 0,
@@ -4701,7 +4707,7 @@
       ],
       "error": "strict-product-not-found"
     },
-    "panini-international-germany-2026": {
+    "panini-intl-germany-2026": {
       "setsFetchedThisRun": 0,
       "rowsAddedThisRun": 0,
       "imagesAddedThisRun": 0,
@@ -5558,9 +5564,9 @@
       "error": "strict-product-not-found"
     }
   },
-  "finishedAt": "2026-10-04T05:25:19Z",
+  "finishedAt": "2026-10-04T05:32:47Z",
   "collectionsWritten": 53,
   "rowsWritten": 1458,
   "exactFrontsWritten": 1442,
-  "runtimeSeconds": 147.2
+  "runtimeSeconds": 164.8
 }

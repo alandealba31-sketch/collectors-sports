@@ -1135,13 +1135,8 @@
       "processedSets": []
     },
     "panini-international-mexico-2026": {
-      "processedSets": [
-        "ebay_21f8c62ce8"
-      ],
-      "productId": "ebay_e2cc3aa295",
-      "productMatched": "International Mexico",
-      "yearUsed": "2026",
-      "knownSets": 1
+      "processedSets": [],
+      "productMatched": "International Mexico"
     },
     "topps-arsenal-team-set-2025-26": {
       "processedSets": [
@@ -1256,6 +1251,24 @@
       "productMatched": "Real Madrid Collectors Tin",
       "yearUsed": "2025",
       "knownSets": 1
+    },
+    "panini-intl-mexico-2026": {
+      "processedSets": [
+        "ebay_21f8c62ce8"
+      ],
+      "productId": "ebay_e2cc3aa295",
+      "productMatched": "International Mexico",
+      "yearUsed": "2026",
+      "knownSets": 1
+    },
+    "panini-intl-france-2026": {
+      "processedSets": []
+    },
+    "panini-intl-england-2026": {
+      "processedSets": []
+    },
+    "panini-intl-germany-2026": {
+      "processedSets": []
     }
   }
 }
