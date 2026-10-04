@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "products": [
     {"collectionId":"topps-chrome-baseball-2026","sport":"Baseball","year":"2026","product":"Topps Chrome Baseball","shortName":"Chrome Baseball 2026","appSport":"MLB"},
     {"collectionId":"bowman-chrome-baseball-2026","sport":"Baseball","year":"2026","product":"Bowman Chrome","shortName":"Bowman Chrome 2026","appSport":"MLB"},
@@ -28,15 +28,33 @@
     {"collectionId":"topps-ucc-2025-26","sport":"Soccer","year":"2025","product":"Topps UEFA Club Competitions","shortName":"UEFA Flagship 25/26","appSport":"Soccer"},
     {"collectionId":"topps-finest-ucc-2025-26","sport":"Soccer","year":"2025","product":"Topps Finest UEFA Club Competitions","shortName":"Finest UEFA 25/26","appSport":"Soccer"},
     {"collectionId":"topps-premier-league-2025-26","sport":"Soccer","year":"2025","product":"Topps Premier League","shortName":"Premier League 25/26","appSport":"Soccer"},
+    {"collectionId":"topps-premier-league-2026-27","sport":"Soccer","year":"2026","product":"Topps Premier League","shortName":"Premier League 26/27","appSport":"Soccer"},
     {"collectionId":"topps-chrome-premier-league-2026","sport":"Soccer","year":"2025","product":"Topps Chrome Premier League","shortName":"Chrome Premier League 25/26","appSport":"Soccer"},
     {"collectionId":"topps-chrome-mls-2026","sport":"Soccer","year":"2026","product":"Topps Chrome MLS","shortName":"Chrome MLS 2026","appSport":"Soccer"},
     {"collectionId":"panini-pitch-kings-laliga-2025-26","sport":"Soccer","year":"2025","product":"Panini Pitch Kings","shortName":"Pitch Kings LaLiga 25/26","appSport":"Soccer"},
     {"collectionId":"panini-select-laliga-2024-25","sport":"Soccer","year":"2024","product":"Panini Select LaLiga","shortName":"Select LaLiga 24/25","appSport":"Soccer"},
+    {"collectionId":"panini-select-road-to-world-cup-2025-26","sport":"Soccer","year":"2025","product":"Panini Select Road to FIFA World Cup","shortName":"Select Road to World Cup 25/26","appSport":"Soccer"},
     {"collectionId":"panini-prizm-club-world-cup-2025","sport":"Soccer","year":"2025","product":"Panini Prizm FIFA Club World Cup","shortName":"Prizm Club World Cup 2025","appSport":"Soccer"},
     {"collectionId":"panini-prizm-monopoly-world-cup-2026","sport":"Soccer","year":"2026","product":"Panini Prizm Monopoly FIFA World Cup","shortName":"Prizm Monopoly WC 2026","appSport":"Soccer"},
+    {"collectionId":"panini-intl-england-2026","sport":"Soccer","year":"2026","product":"Panini INTL England","shortName":"Panini INTL England 2026","appSport":"Soccer"},
+    {"collectionId":"panini-intl-france-2026","sport":"Soccer","year":"2026","product":"Panini INTL France","shortName":"Panini INTL France 2026","appSport":"Soccer"},
+    {"collectionId":"panini-intl-germany-2026","sport":"Soccer","year":"2026","product":"Panini INTL Germany","shortName":"Panini INTL Germany 2026","appSport":"Soccer"},
+    {"collectionId":"panini-intl-mexico-2026","sport":"Soccer","year":"2026","product":"Panini INTL Mexico","shortName":"Panini INTL Mexico 2026","appSport":"Soccer"},
+
     {"collectionId":"topps-real-madrid-team-set-2025-26","sport":"Soccer","year":"2025","product":"Topps Real Madrid Team Set","shortName":"Real Madrid Team Set 25/26","appSport":"Soccer"},
     {"collectionId":"topps-atletico-team-set-2025-26","sport":"Soccer","year":"2025","product":"Topps Atletico de Madrid Team Set","shortName":"Atlético Team Set 25/26","appSport":"Soccer"},
     {"collectionId":"topps-benfica-team-set-2025-26","sport":"Soccer","year":"2025","product":"Topps Benfica Team Set","shortName":"Benfica Team Set 25/26","appSport":"Soccer"},
-    {"collectionId":"topps-barcelona-forever-2025-26","sport":"Soccer","year":"2025","product":"Topps FC Barcelona Forever","shortName":"Barcelona Forever 25/26","appSport":"Soccer"}
+    {"collectionId":"topps-barcelona-forever-2025-26","sport":"Soccer","year":"2025","product":"Topps FC Barcelona Forever","shortName":"Barcelona Forever 25/26","appSport":"Soccer"},
+
+    {"collectionId":"topps-liverpool-collector-tin-2025-26","sport":"Soccer","year":"2025","product":"Topps Liverpool FC Collector Tin","shortName":"Liverpool Collector Tin 25/26","appSport":"Soccer"},
+    {"collectionId":"topps-barcelona-collector-tin-2025-26","sport":"Soccer","year":"2025","product":"Topps FC Barcelona Collector Tin","shortName":"Barcelona Tin 25/26","appSport":"Soccer"},
+    {"collectionId":"topps-juventus-collector-tin-2025-26","sport":"Soccer","year":"2025","product":"Topps Juventus Collector Tin","shortName":"Juventus Collector Tin 25/26","appSport":"Soccer"},
+    {"collectionId":"topps-real-madrid-collector-tin-2025-26","sport":"Soccer","year":"2025","product":"Topps Real Madrid Collector Tin","shortName":"Real Madrid Tin 25/26","appSport":"Soccer"},
+    {"collectionId":"topps-bayern-collector-tin-2025-26","sport":"Soccer","year":"2025","product":"Topps Bayern Munich Collector Tin","shortName":"Bayern Collector Tin 25/26","appSport":"Soccer"},
+    {"collectionId":"topps-man-utd-collector-tin-2025-26","sport":"Soccer","year":"2025","product":"Topps Manchester United Collector Tin","shortName":"Man United Collector Tin 25/26","appSport":"Soccer"},
+    {"collectionId":"topps-celtic-collector-tin-2025-26","sport":"Soccer","year":"2025","product":"Topps Celtic Collector Tin","shortName":"Celtic Collector Tin 25/26","appSport":"Soccer"},
+    {"collectionId":"topps-chelsea-collector-tin-2026-27","sport":"Soccer","year":"2026","product":"Topps Chelsea Collector Tin","shortName":"Chelsea Collector Tin 26/27","appSport":"Soccer"},
+    {"collectionId":"topps-man-city-collector-tin-2026-27","sport":"Soccer","year":"2026","product":"Topps Manchester City Collector Tin","shortName":"Man City Collector Tin 26/27","appSport":"Soccer"},
+    {"collectionId":"topps-man-utd-collector-tin-2026-27","sport":"Soccer","year":"2026","product":"Topps Manchester United Collector Tin","shortName":"Man United Collector Tin 26/27","appSport":"Soccer"}
   ]
 }
