@@ -19,12 +19,12 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 55
+    timeout-minutes: 70
     env:
-      IMAGE_IMPORT_MAX_NEW: "2500"
-      IMAGE_IMPORT_DELAY: "0.20"
-      ISO_IMAGE_IMPORT_DELAY: "0.45"
-      EBAY_IMPORT_MAX_NEW: "1000"
+      IMAGE_IMPORT_MAX_NEW: "4000"
+      IMAGE_IMPORT_DELAY: "0.18"
+      ISO_IMAGE_IMPORT_DELAY: "0.40"
+      EBAY_IMPORT_MAX_NEW: "1500"
       EBAY_IMPORT_DELAY: "0.10"
       EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
       EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
