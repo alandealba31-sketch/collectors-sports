@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "products": [
+    {
+      "collectionId": "panini-obsidian-soccer-2025-26",
+      "url": "https://www.beckett.com/news/2025-26-panini-obsidian-soccer-cards/",
+      "sport": "Soccer",
+      "manufacturer": "Panini",
+      "year": "2025/26",
+      "name": "2025-26 Panini Obsidian Soccer",
+      "shortName": "Obsidian Soccer 25/26",
+      "expectedBaseCount": 200,
+      "provider": "beckett"
+    },
+    {
+      "collectionId": "topps-argentina-team-set-2026",
+      "url": "https://degreegrading.com/checklists/2026-topps-argentina-team-set-soccer/",
+      "sport": "Soccer",
+      "manufacturer": "Topps",
+      "year": "2026",
+      "name": "2026 Topps Argentina Team Set",
+      "shortName": "Argentina Team Set 2026",
+      "expectedTotalCount": 126,
+      "provider": "degree"
+    },
+    {
+      "collectionId": "topps-argentina-collector-tin-2026",
+      "url": "https://es.topps.com/pages/topps-argentina-2026-collector-tin",
+      "sport": "Soccer",
+      "manufacturer": "Topps",
+      "year": "2026",
+      "name": "2026 Topps Argentina Collector Tin",
+      "shortName": "Argentina Collector Tin 2026",
+      "expectedBaseCount": 35,
+      "provider": "topps"
+    },
+    {
+      "collectionId": "panini-prizm-copa-america-2024",
+      "url": "https://www.beckett.com/news/2023-24-panini-prizm-copa-america-soccer-cards/",
+      "sport": "Soccer",
+      "manufacturer": "Panini",
+      "year": "2024",
+      "name": "2024 Panini Prizm Copa America",
+      "shortName": "Prizm Copa America 2024",
+      "expectedBaseCount": 200,
+      "provider": "beckett"
+    }
+  ]
+}
