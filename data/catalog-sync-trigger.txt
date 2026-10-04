@@ -1,1 +1,1 @@
-2026-10-04T01:24:00-05:00 tcdb-heavy exact-front priority sync
+2026-10-04 sunday double shift: full owned catalog and exact-front sync
