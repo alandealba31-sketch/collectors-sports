@@ -1,51 +1,370 @@
 {
-  "generatedAt": "2026-10-04T15:51:26Z",
+  "generatedAt": "2026-10-04T15:52:51Z",
   "sid": "587629",
-  "requestedUrl": "https://www.tcdb.com/Checklist.cfm/sid/587629?PageIndex=1",
-  "userAgent": "CollectorsSportsCatalog/1.0 (+https://github.com/alandealba31-sketch/collectors-sports)",
   "robotsStatus": 200,
-  "robotsAllowed": true,
-  "httpStatus": 200,
-  "finalUrl": "https://www.tcdb.com/DefaultError404.html",
-  "contentType": "text/html",
-  "htmlLength": 1690,
-  "title": "Trading Card Database",
-  "challengeMarkers": [],
-  "anchorCount": 1,
-  "anchorBuckets": {
-    "viewCard": {
-      "count": 0,
-      "samples": []
-    },
-    "card": {
-      "count": 0,
-      "samples": []
-    },
-    "checklist": {
-      "count": 0,
-      "samples": []
-    },
-    "sid": {
-      "count": 0,
-      "samples": []
-    },
-    "profile": {
-      "count": 0,
-      "samples": []
-    }
-  },
-  "anchorSamples": [
+  "candidates": [
     {
-      "text": "Return to Homepage",
-      "href": "/"
+      "requestedUrl": "https://www.tcdb.com/Checklist.cfm/sid/587629?PageIndex=1",
+      "robotsAllowed": true,
+      "httpStatus": 200,
+      "finalUrl": "https://www.tcdb.com/DefaultError404.html",
+      "contentType": "text/html",
+      "htmlLength": 1690,
+      "title": "Trading Card Database",
+      "challengeMarkers": [],
+      "anchorCount": 1,
+      "cardishLinks": [],
+      "tableRows": []
+    },
+    {
+      "requestedUrl": "https://www.tcdb.com/Checklist.cfm/sid/587629/",
+      "robotsAllowed": true,
+      "httpStatus": 200,
+      "finalUrl": "https://www.tcdb.com/DefaultError404.html",
+      "contentType": "text/html",
+      "htmlLength": 1690,
+      "title": "Trading Card Database",
+      "challengeMarkers": [],
+      "anchorCount": 1,
+      "cardishLinks": [],
+      "tableRows": []
+    },
+    {
+      "requestedUrl": "https://www.tcdb.com/Checklist.cfm/sid/587629/2026-Topps-Chrome-Tennis",
+      "robotsAllowed": true,
+      "httpStatus": 200,
+      "finalUrl": "https://www.tcdb.com/DefaultError404.html",
+      "contentType": "text/html",
+      "htmlLength": 1690,
+      "title": "Trading Card Database",
+      "challengeMarkers": [],
+      "anchorCount": 1,
+      "cardishLinks": [],
+      "tableRows": []
+    },
+    {
+      "requestedUrl": "https://www.tcdb.com/Checklist.cfm/sid/587629/2026-Topps-Chrome-Tennis?PageIndex=1",
+      "robotsAllowed": true,
+      "httpStatus": 200,
+      "finalUrl": "https://www.tcdb.com/DefaultError404.html",
+      "contentType": "text/html",
+      "htmlLength": 1690,
+      "title": "Trading Card Database",
+      "challengeMarkers": [],
+      "anchorCount": 1,
+      "cardishLinks": [],
+      "tableRows": []
+    },
+    {
+      "requestedUrl": "https://www.tcdb.com/ViewSet.cfm/sid/587629",
+      "robotsAllowed": true,
+      "httpStatus": 200,
+      "finalUrl": "https://www.tcdb.com/ViewSet.cfm/sid/587629",
+      "contentType": "text/html;charset=UTF-8",
+      "htmlLength": 68442,
+      "title": "2025 Topps Chrome Tennis - Trading Card Database",
+      "challengeMarkers": [],
+      "anchorCount": 218,
+      "cardishLinks": [
+        {
+          "text": "Rate this set...",
+          "href": "/RateSet.cfm/sid/587629/2025-Topps-Chrome"
+        },
+        {
+          "text": "Checklist",
+          "href": "/Checklist.cfm/sid/587629/2025-Topps-Chrome"
+        },
+        {
+          "text": "Errors / Variations",
+          "href": "/Errors.cfm/sid/587629/2025-Topps-Chrome"
+        },
+        {
+          "text": "Hall of Famers",
+          "href": "/SetHOF.cfm/sid/587629/2025-Topps-Chrome"
+        },
+        {
+          "text": "Rookies",
+          "href": "/Rookies.cfm/sid/587629/2025-Topps-Chrome"
+        },
+        {
+          "text": "Inserts & Related Sets",
+          "href": "/Inserts.cfm/sid/587629/2025-Topps-Chrome"
+        },
+        {
+          "text": "Comments",
+          "href": "/UserComments.cfm/sid/587629/2025-Topps-Chrome"
+        },
+        {
+          "text": "Packaging",
+          "href": "/Packaging.cfm/sid/587629/2025-Topps-Chrome"
+        },
+        {
+          "text": "Pricing",
+          "href": "/Prices.cfm/sid/587629/2025-Topps-Chrome"
+        },
+        {
+          "text": "Sell Sheets / Ads",
+          "href": "/SellSheets.cfm/sid/587629/2025-Topps-Chrome"
+        },
+        {
+          "text": "Trivia",
+          "href": "/Trivia.cfm/sid/587629/2025-Topps-Chrome"
+        },
+        {
+          "text": "Videos",
+          "href": "/Videos.cfm/sid/587629/2025-Topps-Chrome"
+        },
+        {
+          "text": "External Links",
+          "href": "/ExternalLinks.cfm/sid/587629/2025-Topps-Chrome"
+        },
+        {
+          "text": "Contributors",
+          "href": "/Contributors.cfm/sid/587629/2025-Topps-Chrome"
+        },
+        {
+          "text": "Glossary",
+          "href": "/GlossaryS.cfm/sid/587629/2025-Topps-Chrome"
+        },
+        {
+          "text": "Gallery",
+          "href": "/Gallery.cfm/sid/587629/2025-Topps-Chrome"
+        },
+        {
+          "text": "Card Rankings",
+          "href": "/CardRankingsSet.cfm/sid/587629/2025-Topps-Chrome"
+        },
+        {
+          "text": "Collection Summary",
+          "href": "/CollectionSummary.cfm/sid/587629"
+        },
+        {
+          "text": "",
+          "href": "/ViewCard.cfm/sid/587629/cid/33389610/2025-Topps-Chrome-1-Carlos-Alcaraz"
+        },
+        {
+          "text": "",
+          "href": "/ViewCard.cfm/sid/587629/cid/33389610/2025-Topps-Chrome-1-Carlos-Alcaraz"
+        },
+        {
+          "text": "1",
+          "href": "/ViewCard.cfm/sid/587629/cid/33389610/2025-Topps-Chrome-1-Carlos-Alcaraz"
+        },
+        {
+          "text": "",
+          "href": "/ViewCard.cfm/sid/587629/cid/33389611/2025-Topps-Chrome-2-Jessica-Pegula"
+        },
+        {
+          "text": "",
+          "href": "/ViewCard.cfm/sid/587629/cid/33389611/2025-Topps-Chrome-2-Jessica-Pegula"
+        },
+        {
+          "text": "2",
+          "href": "/ViewCard.cfm/sid/587629/cid/33389611/2025-Topps-Chrome-2-Jessica-Pegula"
+        },
+        {
+          "text": "",
+          "href": "/ViewCard.cfm/sid/587629/cid/33389612/2025-Topps-Chrome-3-Daniil-Medvedev"
+        },
+        {
+          "text": "",
+          "href": "/ViewCard.cfm/sid/587629/cid/33389612/2025-Topps-Chrome-3-Daniil-Medvedev"
+        },
+        {
+          "text": "3",
+          "href": "/ViewCard.cfm/sid/587629/cid/33389612/2025-Topps-Chrome-3-Daniil-Medvedev"
+        },
+        {
+          "text": "",
+          "href": "/ViewCard.cfm/sid/587629/cid/33389613/2025-Topps-Chrome-4-Elena-Rybakina"
+        },
+        {
+          "text": "",
+          "href": "/ViewCard.cfm/sid/587629/cid/33389613/2025-Topps-Chrome-4-Elena-Rybakina"
+        },
+        {
+          "text": "4",
+          "href": "/ViewCard.cfm/sid/587629/cid/33389613/2025-Topps-Chrome-4-Elena-Rybakina"
+        }
+      ],
+      "tableRows": [
+        {
+          "text": "",
+          "links": [
+            "/"
+          ]
+        },
+        {
+          "text": "Baseball | Basketball | Boxing | Cricket | Football | Gaming | Golf | Hockey | Misc Sports | MMA | Multi-Sport | Non-Sport | Racing | Soccer | Tennis | Wrestling | Search | Advanced",
+          "links": [
+            "/AdvancedSearch.cfm"
+          ]
+        },
+        {
+          "text": "1 | Carlos Alcaraz",
+          "links": [
+            "/ViewCard.cfm/sid/587629/cid/33389610/2025-Topps-Chrome-1-Carlos-Alcaraz",
+            "/ViewCard.cfm/sid/587629/cid/33389610/2025-Topps-Chrome-1-Carlos-Alcaraz",
+            "/ViewCard.cfm/sid/587629/cid/33389610/2025-Topps-Chrome-1-Carlos-Alcaraz",
+            "/Person.cfm/pid/362691/Carlos-Alcaraz"
+          ]
+        },
+        {
+          "text": "2 | Jessica Pegula",
+          "links": [
+            "/ViewCard.cfm/sid/587629/cid/33389611/2025-Topps-Chrome-2-Jessica-Pegula",
+            "/ViewCard.cfm/sid/587629/cid/33389611/2025-Topps-Chrome-2-Jessica-Pegula",
+            "/ViewCard.cfm/sid/587629/cid/33389611/2025-Topps-Chrome-2-Jessica-Pegula",
+            "/Person.cfm/pid/394156/Jessica-Pegula"
+          ]
+        },
+        {
+          "text": "3 | Daniil Medvedev",
+          "links": [
+            "/ViewCard.cfm/sid/587629/cid/33389612/2025-Topps-Chrome-3-Daniil-Medvedev",
+            "/ViewCard.cfm/sid/587629/cid/33389612/2025-Topps-Chrome-3-Daniil-Medvedev",
+            "/ViewCard.cfm/sid/587629/cid/33389612/2025-Topps-Chrome-3-Daniil-Medvedev",
+            "/Person.cfm/pid/233773/Daniil-Medvedev"
+          ]
+        },
+        {
+          "text": "4 | Elena Rybakina",
+          "links": [
+            "/ViewCard.cfm/sid/587629/cid/33389613/2025-Topps-Chrome-4-Elena-Rybakina",
+            "/ViewCard.cfm/sid/587629/cid/33389613/2025-Topps-Chrome-4-Elena-Rybakina",
+            "/ViewCard.cfm/sid/587629/cid/33389613/2025-Topps-Chrome-4-Elena-Rybakina",
+            "/Person.cfm/pid/439054/Elena-Rybakina"
+          ]
+        },
+        {
+          "text": "5 | Taylor Fritz",
+          "links": [
+            "/ViewCard.cfm/sid/587629/cid/33389614/2025-Topps-Chrome-5-Taylor-Fritz",
+            "/ViewCard.cfm/sid/587629/cid/33389614/2025-Topps-Chrome-5-Taylor-Fritz",
+            "/ViewCard.cfm/sid/587629/cid/33389614/2025-Topps-Chrome-5-Taylor-Fritz",
+            "/Person.cfm/pid/172999/Taylor-Fritz"
+          ]
+        },
+        {
+          "text": "6 | Jasmine Paolini",
+          "links": [
+            "/ViewCard.cfm/sid/587629/cid/33389615/2025-Topps-Chrome-6-Jasmine-Paolini",
+            "/ViewCard.cfm/sid/587629/cid/33389615/2025-Topps-Chrome-6-Jasmine-Paolini",
+            "/ViewCard.cfm/sid/587629/cid/33389615/2025-Topps-Chrome-6-Jasmine-Paolini",
+            "/Person.cfm/pid/450894/Jasmine-Paolini"
+          ]
+        },
+        {
+          "text": "7 | Andrey Rublev",
+          "links": [
+            "/ViewCard.cfm/sid/587629/cid/33389616/2025-Topps-Chrome-7-Andrey-Rublev",
+            "/ViewCard.cfm/sid/587629/cid/33389616/2025-Topps-Chrome-7-Andrey-Rublev",
+            "/ViewCard.cfm/sid/587629/cid/33389616/2025-Topps-Chrome-7-Andrey-Rublev",
+            "/Person.cfm/pid/439060/Andrey-Rublev"
+          ]
+        },
+        {
+          "text": "8 | Qinwen Zheng",
+          "links": [
+            "/ViewCard.cfm/sid/587629/cid/33389617/2025-Topps-Chrome-8-Qinwen-Zheng",
+            "/ViewCard.cfm/sid/587629/cid/33389617/2025-Topps-Chrome-8-Qinwen-Zheng",
+            "/ViewCard.cfm/sid/587629/cid/33389617/2025-Topps-Chrome-8-Qinwen-Zheng",
+            "/Person.cfm/pid/450829/Qinwen-Zheng"
+          ]
+        },
+        {
+          "text": "9 | Casper Ruud",
+          "links": [
+            "/ViewCard.cfm/sid/587629/cid/33389618/2025-Topps-Chrome-9-Casper-Ruud",
+            "/ViewCard.cfm/sid/587629/cid/33389618/2025-Topps-Chrome-9-Casper-Ruud",
+            "/ViewCard.cfm/sid/587629/cid/33389618/2025-Topps-Chrome-9-Casper-Ruud",
+            "/Person.cfm/pid/439066/Casper-Ruud"
+          ]
+        },
+        {
+          "text": "10 | Emma Navarro",
+          "links": [
+            "/ViewCard.cfm/sid/587629/cid/33389619/2025-Topps-Chrome-10-Emma-Navarro",
+            "/ViewCard.cfm/sid/587629/cid/33389619/2025-Topps-Chrome-10-Emma-Navarro",
+            "/ViewCard.cfm/sid/587629/cid/33389619/2025-Topps-Chrome-10-Emma-Navarro",
+            "/Person.cfm/pid/450893/Emma-Navarro"
+          ]
+        },
+        {
+          "text": "Inserts and Related Sets",
+          "links": []
+        },
+        {
+          "text": "",
+          "links": [
+            "/Checklist.cfm/sid/593314/2025-Topps-Chrome-Aces",
+            "/Checklist.cfm/sid/593262/2025-Topps-Chrome-Aces-Autographs",
+            "/Checklist.cfm/sid/614729/2025-Topps-Chrome-Aces-Autographs-Black-Refractor",
+            "/Checklist.cfm/sid/593267/2025-Topps-Chrome-Aces-Autographs-Gold-Refractor",
+            "/Checklist.cfm/sid/593268/2025-Topps-Chrome-Aces-Autographs-Orange-Refractor",
+            "/Checklist.cfm/sid/593270/2025-Topps-Chrome-Aces-Autographs-Red-Refractor"
+          ]
+        },
+        {
+          "text": "Aces | Aces Autographs | Aces Autographs Black Refractor | Aces Autographs Gold Refractor | Aces Autographs Orange Refractor | Aces Autographs Red Refractor | Aces Autographs Refractor | Aces Autographs Superfractor",
+          "links": [
+            "/Checklist.cfm/sid/593314/2025-Topps-Chrome-Aces",
+            "/Checklist.cfm/sid/593262/2025-Topps-Chrome-Aces-Autographs",
+            "/Checklist.cfm/sid/614729/2025-Topps-Chrome-Aces-Autographs-Black-Refractor",
+            "/Checklist.cfm/sid/593267/2025-Topps-Chrome-Aces-Autographs-Gold-Refractor",
+            "/Checklist.cfm/sid/593268/2025-Topps-Chrome-Aces-Autographs-Orange-Refractor",
+            "/Checklist.cfm/sid/593270/2025-Topps-Chrome-Aces-Autographs-Red-Refractor"
+          ]
+        },
+        {
+          "text": "Trivia | Add",
+          "links": [
+            "/AddTrivia.cfm/sid/587629"
+          ]
+        },
+        {
+          "text": "User Comments | Add",
+          "links": [
+            "/AddComment.cfm/sid/587629"
+          ]
+        },
+        {
+          "text": "Videos | Add",
+          "links": [
+            "/AddVideo.cfm/sid/587629"
+          ]
+        },
+        {
+          "text": "Forum | Add",
+          "links": [
+            "/Forum.cfm/Page/S/ID/587629/?MODE=CREATE"
+          ]
+        },
+        {
+          "text": "#296 | - | Luciano Darderi | RC | #201 | - | Tamara Zidansek | vs.",
+          "links": [
+            "/ViewCard.cfm/sid/587629/cid/33389905/2025-Topps-Chrome-296-Luciano-Darderi",
+            "/Person.cfm/pid/505172/Luciano-Darderi",
+            "/ViewCard.cfm/sid/587629/cid/33389810/2025-Topps-Chrome-201-Tamara-Zidansek",
+            "/Person.cfm/pid/450900/Tamara-Zidansek"
+          ]
+        }
+      ]
+    },
+    {
+      "requestedUrl": "https://www.tcdb.com/ViewCollection.cfm/sid/587629",
+      "robotsAllowed": true,
+      "httpStatus": 403,
+      "finalUrl": "https://www.tcdb.com/Login.cfm",
+      "contentType": "text/html; charset=UTF-8",
+      "htmlLength": 5665,
+      "title": "Just a moment...",
+      "challengeMarkers": [
+        "just a moment"
+      ],
+      "anchorCount": 0,
+      "cardishLinks": [],
+      "tableRows": []
     }
-  ],
-  "tableRowSamples": [],
-  "topClasses": [
-    [
-      "box",
-      1
-    ]
-  ],
-  "idSamples": []
+  ]
 }
