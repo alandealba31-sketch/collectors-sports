@@ -1,6 +1,6 @@
 {
   "runner": "sync_mycardfolio_v2.py",
-  "startedAt": "2026-10-03T23:38:26Z",
+  "startedAt": "2026-10-04T03:12:33Z",
   "endpoint": "https://mycardfolio.com/api/mcp",
   "setsPerProductPerRun": 150,
   "requestDelaySeconds": 1.05,
@@ -277,8 +277,6 @@
           "productId": "ing_3b523a528f"
         }
       ],
-      "purgedUnverifiedRows": 177,
-      "purgedUnverifiedImages": 177,
       "error": "strict-product-not-found"
     },
     "topps-chrome-logofractor-baseball-2026": {
@@ -420,6 +418,146 @@
       "processedSetsTotal": 3,
       "remainingSets": 0,
       "rowsAccumulated": 3
+    },
+    "topps-now-mlb-2026": {
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
+      "candidateProducts": [
+        {
+          "year": "2026",
+          "label": "MLB Topps NOW",
+          "score": 47,
+          "strict": true,
+          "productId": "ebay_b08f24a4d3"
+        },
+        {
+          "year": "2026",
+          "label": "Topps Now",
+          "score": 44,
+          "strict": true,
+          "productId": "ebay_87fe0a00b6"
+        },
+        {
+          "year": "2026",
+          "label": "Now Baseball",
+          "score": 12,
+          "strict": true,
+          "productId": "ebay_5fa69b1f3f"
+        },
+        {
+          "year": "2026",
+          "label": "Now",
+          "score": 9,
+          "strict": true,
+          "productId": "ebay_14edd5b886"
+        },
+        {
+          "year": "2026",
+          "label": "NOW®",
+          "score": 9,
+          "strict": true,
+          "productId": "ebay_7b31a289b0"
+        },
+        {
+          "year": "2026",
+          "label": "Topps",
+          "score": 9,
+          "strict": false,
+          "productId": "ebay_666294998d"
+        },
+        {
+          "year": "2026",
+          "label": "Topps",
+          "score": 9,
+          "strict": false,
+          "productId": "ing_666294998d"
+        },
+        {
+          "year": "2026",
+          "label": "Topps",
+          "score": 9,
+          "strict": false,
+          "productId": "ing_7bf753d622"
+        }
+      ],
+      "yearUsed": "2026",
+      "productId": "ebay_b08f24a4d3",
+      "productMatched": "MLB Topps NOW",
+      "knownSets": 1,
+      "processedSetsTotal": 1,
+      "remainingSets": 0,
+      "rowsAccumulated": 1
+    },
+    "topps-now-wbc-2026": {
+      "setsFetchedThisRun": 12,
+      "rowsAddedThisRun": 15,
+      "imagesAddedThisRun": 15,
+      "candidateProducts": [
+        {
+          "year": "2026",
+          "label": "Topps Now",
+          "score": 12,
+          "strict": true,
+          "productId": "ebay_87fe0a00b6"
+        },
+        {
+          "year": "2026",
+          "label": "Now",
+          "score": 7,
+          "strict": true,
+          "productId": "ebay_14edd5b886"
+        },
+        {
+          "year": "2026",
+          "label": "NOW®",
+          "score": 7,
+          "strict": true,
+          "productId": "ebay_7b31a289b0"
+        },
+        {
+          "year": "2026",
+          "label": "Topps",
+          "score": 7,
+          "strict": false,
+          "productId": "ebay_666294998d"
+        },
+        {
+          "year": "2026",
+          "label": "Topps",
+          "score": 7,
+          "strict": false,
+          "productId": "ing_666294998d"
+        },
+        {
+          "year": "2026",
+          "label": "Topps",
+          "score": 7,
+          "strict": false,
+          "productId": "ing_7bf753d622"
+        },
+        {
+          "year": "2026",
+          "label": "WBC",
+          "score": 7,
+          "strict": false,
+          "productId": "ebay_3bf20a7e16"
+        },
+        {
+          "year": "2026",
+          "label": "MLB Topps NOW",
+          "score": 4,
+          "strict": true,
+          "productId": "ebay_b08f24a4d3"
+        }
+      ],
+      "yearUsed": "2026",
+      "productId": "ebay_87fe0a00b6",
+      "productMatched": "Topps Now",
+      "knownSets": 12,
+      "processedSetsTotal": 12,
+      "remainingSets": 0,
+      "rowsAccumulated": 15
     },
     "topps-chrome-football-2025": {
       "setsFetchedThisRun": 0,
@@ -771,6 +909,76 @@
       "remainingSets": 0,
       "rowsAccumulated": 4
     },
+    "topps-now-nfl-2026": {
+      "setsFetchedThisRun": 12,
+      "rowsAddedThisRun": 15,
+      "imagesAddedThisRun": 15,
+      "candidateProducts": [
+        {
+          "year": "2026",
+          "label": "Topps Now",
+          "score": 44,
+          "strict": true,
+          "productId": "ebay_87fe0a00b6"
+        },
+        {
+          "year": "2026",
+          "label": "Now",
+          "score": 9,
+          "strict": true,
+          "productId": "ebay_14edd5b886"
+        },
+        {
+          "year": "2026",
+          "label": "NOW®",
+          "score": 9,
+          "strict": true,
+          "productId": "ebay_7b31a289b0"
+        },
+        {
+          "year": "2026",
+          "label": "Topps",
+          "score": 9,
+          "strict": false,
+          "productId": "ebay_666294998d"
+        },
+        {
+          "year": "2026",
+          "label": "Topps",
+          "score": 9,
+          "strict": false,
+          "productId": "ing_666294998d"
+        },
+        {
+          "year": "2026",
+          "label": "Football",
+          "score": 7,
+          "strict": false,
+          "productId": "ebay_40e6ce661a"
+        },
+        {
+          "year": "2026",
+          "label": "NFL",
+          "score": 7,
+          "strict": false,
+          "productId": "ebay_de2c3044fc"
+        },
+        {
+          "year": "2026",
+          "label": "1991 Topps Football",
+          "score": 4,
+          "strict": false,
+          "productId": "ebay_da326ace04"
+        }
+      ],
+      "yearUsed": "2026",
+      "productId": "ebay_87fe0a00b6",
+      "productMatched": "Topps Now",
+      "knownSets": 12,
+      "processedSetsTotal": 12,
+      "remainingSets": 0,
+      "rowsAccumulated": 15
+    },
     "topps-chrome-basketball-2025-26": {
       "setsFetchedThisRun": 0,
       "rowsAddedThisRun": 0,
@@ -1051,6 +1259,76 @@
       "remainingSets": 0,
       "rowsAccumulated": 16
     },
+    "topps-now-nba-2026-27": {
+      "setsFetchedThisRun": 12,
+      "rowsAddedThisRun": 15,
+      "imagesAddedThisRun": 15,
+      "candidateProducts": [
+        {
+          "year": "2026",
+          "label": "Topps Now",
+          "score": 44,
+          "strict": true,
+          "productId": "ebay_87fe0a00b6"
+        },
+        {
+          "year": "2026",
+          "label": "Topps Now Rising Stars",
+          "score": 14,
+          "strict": true,
+          "productId": "ebay_fddce4e617"
+        },
+        {
+          "year": "2026",
+          "label": "Now",
+          "score": 9,
+          "strict": true,
+          "productId": "ebay_14edd5b886"
+        },
+        {
+          "year": "2026",
+          "label": "Topps",
+          "score": 9,
+          "strict": false,
+          "productId": "ing_666294998d"
+        },
+        {
+          "year": "2026",
+          "label": "Basketball",
+          "score": 7,
+          "strict": false,
+          "productId": "ebay_eb2e972e06"
+        },
+        {
+          "year": "2026",
+          "label": "NBA",
+          "score": 7,
+          "strict": false,
+          "productId": "ebay_1248236c3f"
+        },
+        {
+          "year": "2026",
+          "label": "NBA Topps Chrome",
+          "score": 4,
+          "strict": false,
+          "productId": "ebay_b8f92e4df4"
+        },
+        {
+          "year": "2026",
+          "label": "Now NBA",
+          "score": 4,
+          "strict": true,
+          "productId": "ebay_9d36360db3"
+        }
+      ],
+      "yearUsed": "2026",
+      "productId": "ebay_87fe0a00b6",
+      "productMatched": "Topps Now",
+      "knownSets": 12,
+      "processedSetsTotal": 12,
+      "remainingSets": 0,
+      "rowsAccumulated": 15
+    },
     "topps-chrome-ufc-2026": {
       "setsFetchedThisRun": 0,
       "rowsAddedThisRun": 0,
@@ -1185,6 +1463,76 @@
       ],
       "error": "strict-product-not-found"
     },
+    "topps-now-ufc-2026": {
+      "setsFetchedThisRun": 6,
+      "rowsAddedThisRun": 6,
+      "imagesAddedThisRun": 6,
+      "candidateProducts": [
+        {
+          "year": "2026",
+          "label": "Now UFC",
+          "score": 12,
+          "strict": true,
+          "productId": "ebay_d06300b96d"
+        },
+        {
+          "year": "2026",
+          "label": "NOW",
+          "score": 9,
+          "strict": true,
+          "productId": "ebay_14edd5b886"
+        },
+        {
+          "year": "2026",
+          "label": "Topps Chrome",
+          "score": 1,
+          "strict": false,
+          "productId": "ebay_34a2a395f2"
+        },
+        {
+          "year": "2026",
+          "label": "Chrome UFC",
+          "score": -1,
+          "strict": false,
+          "productId": "ebay_384e1bf93b"
+        },
+        {
+          "year": "2026",
+          "label": "Chrome UFC In Your Face Insert",
+          "score": -1,
+          "strict": false,
+          "productId": "ebay_406d6808f8"
+        },
+        {
+          "year": "2026",
+          "label": "Chrome UFC Sapphire",
+          "score": -1,
+          "strict": false,
+          "productId": "ebay_b8fab8617b"
+        },
+        {
+          "year": "2026",
+          "label": "Knockout UFC",
+          "score": -1,
+          "strict": false,
+          "productId": "ebay_f5e41d0ed4"
+        },
+        {
+          "year": "2026",
+          "label": "Knockout UFC MMA Final Face Off",
+          "score": -1,
+          "strict": false,
+          "productId": "ebay_02b97b0349"
+        }
+      ],
+      "yearUsed": "2026",
+      "productId": "ebay_d06300b96d",
+      "productMatched": "Now UFC",
+      "knownSets": 6,
+      "processedSetsTotal": 6,
+      "remainingSets": 0,
+      "rowsAccumulated": 6
+    },
     "topps-chrome-tennis-2026": {
       "setsFetchedThisRun": 0,
       "rowsAddedThisRun": 0,
@@ -1227,6 +1575,55 @@
         }
       ],
       "error": "strict-product-not-found"
+    },
+    "topps-now-tennis-2026": {
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
+      "candidateProducts": [
+        {
+          "year": "2026",
+          "label": "NOW® Tennis",
+          "score": 12,
+          "strict": true,
+          "productId": "ebay_f48a9764ef"
+        },
+        {
+          "year": "2026",
+          "label": "Graphite Tennis",
+          "score": -1,
+          "strict": false,
+          "productId": "ebay_e5d7a4d0a4"
+        },
+        {
+          "year": "2026",
+          "label": "Goodwin Champions",
+          "score": -4,
+          "strict": false,
+          "productId": "ebay_5af2aafdc8"
+        },
+        {
+          "year": "2026",
+          "label": "Graphite",
+          "score": -4,
+          "strict": false,
+          "productId": "ebay_1f6c46b861"
+        },
+        {
+          "year": "2026",
+          "label": "Instant",
+          "score": -4,
+          "strict": false,
+          "productId": "ebay_937ded387c"
+        }
+      ],
+      "yearUsed": "2026",
+      "productId": "ebay_f48a9764ef",
+      "productMatched": "NOW® Tennis",
+      "knownSets": 1,
+      "processedSetsTotal": 1,
+      "remainingSets": 0,
+      "rowsAccumulated": 1
     },
     "topps-chrome-f1-2026": {
       "setsFetchedThisRun": 0,
@@ -1293,6 +1690,76 @@
       "yearUsed": "2026",
       "productId": "ing_e84e918891",
       "productMatched": "Topps Chrome Formula 1",
+      "knownSets": 1,
+      "processedSetsTotal": 1,
+      "remainingSets": 0,
+      "rowsAccumulated": 1
+    },
+    "topps-now-f1-2026": {
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
+      "candidateProducts": [
+        {
+          "year": "2026",
+          "label": "NOW Formula 1",
+          "score": 15,
+          "strict": true,
+          "productId": "ebay_bd7553ff4c"
+        },
+        {
+          "year": "2026",
+          "label": "Topps Chrome Formula 1",
+          "score": 7,
+          "strict": false,
+          "productId": "ing_e84e918891"
+        },
+        {
+          "year": "2026",
+          "label": "F1 Turbo Attax",
+          "score": -1,
+          "strict": false,
+          "productId": "ebay_18c0365167"
+        },
+        {
+          "year": "2026",
+          "label": "Art of Sport",
+          "score": -4,
+          "strict": false,
+          "productId": "ebay_2552c96d64"
+        },
+        {
+          "year": "2026",
+          "label": "Auto Trackside Action",
+          "score": -4,
+          "strict": false,
+          "productId": "ebay_e3e003252a"
+        },
+        {
+          "year": "2026",
+          "label": "Center Stage Signatures",
+          "score": -4,
+          "strict": false,
+          "productId": "ebay_e327b59ad4"
+        },
+        {
+          "year": "2026",
+          "label": "Donruss",
+          "score": -4,
+          "strict": false,
+          "productId": "ebay_3c04cc6901"
+        },
+        {
+          "year": "2026",
+          "label": "Donruss Nascar",
+          "score": -4,
+          "strict": false,
+          "productId": "ebay_77e2945154"
+        }
+      ],
+      "yearUsed": "2026",
+      "productId": "ebay_bd7553ff4c",
+      "productMatched": "NOW Formula 1",
       "knownSets": 1,
       "processedSetsTotal": 1,
       "remainingSets": 0,
@@ -1367,6 +1834,76 @@
       "processedSetsTotal": 80,
       "remainingSets": 0,
       "rowsAccumulated": 192
+    },
+    "topps-now-wwe-2026": {
+      "setsFetchedThisRun": 9,
+      "rowsAddedThisRun": 18,
+      "imagesAddedThisRun": 18,
+      "candidateProducts": [
+        {
+          "year": "2026",
+          "label": "Now WWE",
+          "score": 12,
+          "strict": true,
+          "productId": "ebay_b9c76cb234"
+        },
+        {
+          "year": "2026",
+          "label": "Now",
+          "score": 9,
+          "strict": true,
+          "productId": "ebay_14edd5b886"
+        },
+        {
+          "year": "2026",
+          "label": "Now WWE Night of Champions",
+          "score": 4,
+          "strict": true,
+          "productId": "ebay_3ff22b6275"
+        },
+        {
+          "year": "2026",
+          "label": "Now WWE Wrestlemania Las Vegas",
+          "score": 4,
+          "strict": true,
+          "productId": "ebay_ee2a956929"
+        },
+        {
+          "year": "2026",
+          "label": "Topps Universe WWE",
+          "score": 4,
+          "strict": false,
+          "productId": "ing_4c0cf4f5ab"
+        },
+        {
+          "year": "2026",
+          "label": "WWE Topps Chrome",
+          "score": 4,
+          "strict": false,
+          "productId": "ebay_de33245394"
+        },
+        {
+          "year": "2026",
+          "label": "Topps Chrome",
+          "score": 1,
+          "strict": false,
+          "productId": "ebay_34a2a395f2"
+        },
+        {
+          "year": "2026",
+          "label": "Chrome WWE",
+          "score": -1,
+          "strict": false,
+          "productId": "ebay_48e2c60786"
+        }
+      ],
+      "yearUsed": "2026",
+      "productId": "ebay_b9c76cb234",
+      "productMatched": "Now WWE",
+      "knownSets": 9,
+      "processedSetsTotal": 9,
+      "remainingSets": 0,
+      "rowsAccumulated": 18
     },
     "topps-chrome-ucc-2025-26": {
       "setsFetchedThisRun": 0,
@@ -1482,21 +2019,21 @@
           "year": "2025",
           "label": "Chrome UEFA Club Competitions",
           "score": 7,
-          "strict": true,
+          "strict": false,
           "productId": "ebay_18f196bc83"
         },
         {
           "year": "2025",
           "label": "Chrome UEFA Club Competitions Legends",
           "score": 7,
-          "strict": true,
+          "strict": false,
           "productId": "ebay_c7f118a10f"
         },
         {
           "year": "2025",
           "label": "Chrome UEFA Club Competitions Power Players",
           "score": 7,
-          "strict": true,
+          "strict": false,
           "productId": "ebay_f3ff61189c"
         }
       ],
@@ -1608,14 +2145,14 @@
           "year": "2025",
           "label": "Topps Chrome Premier League",
           "score": 9,
-          "strict": true,
+          "strict": false,
           "productId": "ing_5cea3a528e"
         },
         {
           "year": "2025",
           "label": "Topps Chrome Premier League",
           "score": 9,
-          "strict": true,
+          "strict": false,
           "productId": "ing_c438dbe40e"
         },
         {
@@ -1664,7 +2201,7 @@
           "year": "2026",
           "label": "2026 Topps Chrome Premier League",
           "score": 9,
-          "strict": true,
+          "strict": false,
           "productId": "ebay_d48a402fbe"
         },
         {
@@ -1678,14 +2215,14 @@
           "year": "2026",
           "label": "Topps Chrome Premier League",
           "score": 9,
-          "strict": true,
+          "strict": false,
           "productId": "ing_ecbd8773e5"
         },
         {
           "year": "2026",
           "label": "TOPPS CHROME PREMIER LEAGUE AQUA WAVE",
           "score": 9,
-          "strict": true,
+          "strict": false,
           "productId": "ing_841c380fa8"
         },
         {
@@ -1699,14 +2236,14 @@
           "year": "2026",
           "label": "Chrome Premier League",
           "score": 4,
-          "strict": true,
+          "strict": false,
           "productId": "ebay_ecbd8773e5"
         },
         {
           "year": "2026",
           "label": "Chrome Premier League EPL",
           "score": 4,
-          "strict": true,
+          "strict": false,
           "productId": "ebay_fdd512e7ce"
         }
       ],
@@ -1937,7 +2474,7 @@
           "year": "2024",
           "label": "Panini Select",
           "score": 12,
-          "strict": true,
+          "strict": false,
           "productId": "ing_d6312077d4"
         },
         {
@@ -1951,35 +2488,35 @@
           "year": "2024",
           "label": "Select",
           "score": 7,
-          "strict": true,
+          "strict": false,
           "productId": "ebay_4a8670f4a3"
         },
         {
           "year": "2024",
           "label": "Panini Select Fifa",
           "score": 4,
-          "strict": true,
+          "strict": false,
           "productId": "ing_296da35e2a"
         },
         {
           "year": "2024",
           "label": "Panini Select Premier League",
           "score": 4,
-          "strict": true,
+          "strict": false,
           "productId": "ing_92c283053a"
         },
         {
           "year": "2024",
           "label": "Panini Select Serie A",
           "score": 4,
-          "strict": true,
+          "strict": false,
           "productId": "ing_0b67367fae"
         },
         {
           "year": "2024",
           "label": "EPL Select Premier",
           "score": -1,
-          "strict": true,
+          "strict": false,
           "productId": "ebay_1cb885763a"
         },
         {
@@ -1990,13 +2527,7 @@
           "productId": "ebay_e062558755"
         }
       ],
-      "yearUsed": "2024",
-      "productId": "ing_d6312077d4",
-      "productMatched": "Panini Select",
-      "knownSets": 30,
-      "processedSetsTotal": 30,
-      "remainingSets": 0,
-      "rowsAccumulated": 54
+      "error": "strict-product-not-found"
     },
     "panini-prizm-club-world-cup-2025": {
       "setsFetchedThisRun": 0,
@@ -2201,6 +2732,76 @@
         }
       ],
       "error": "strict-product-not-found"
+    },
+    "topps-now-soccer-2026": {
+      "setsFetchedThisRun": 94,
+      "rowsAddedThisRun": 127,
+      "imagesAddedThisRun": 127,
+      "candidateProducts": [
+        {
+          "year": "2026",
+          "label": "Now",
+          "score": 9,
+          "strict": true,
+          "productId": "ebay_14edd5b886"
+        },
+        {
+          "year": "2026",
+          "label": "NOW®",
+          "score": 9,
+          "strict": true,
+          "productId": "ebay_7b31a289b0"
+        },
+        {
+          "year": "2026",
+          "label": "Topps",
+          "score": 9,
+          "strict": false,
+          "productId": "ing_666294998d"
+        },
+        {
+          "year": "2026",
+          "label": "Soccer",
+          "score": 7,
+          "strict": false,
+          "productId": "ebay_122fd7c496"
+        },
+        {
+          "year": "2026",
+          "label": "UEFA",
+          "score": 7,
+          "strict": false,
+          "productId": "ebay_35f629f4ce"
+        },
+        {
+          "year": "2026",
+          "label": "2025-2026 Topps Chrome",
+          "score": 1,
+          "strict": false,
+          "productId": "ing_acea0f1d9c"
+        },
+        {
+          "year": "2026",
+          "label": "2026 Topps Chrome Premier League",
+          "score": 1,
+          "strict": false,
+          "productId": "ebay_d48a402fbe"
+        },
+        {
+          "year": "2026",
+          "label": "Now MLS",
+          "score": 1,
+          "strict": true,
+          "productId": "ebay_17c5242794"
+        }
+      ],
+      "yearUsed": "2026",
+      "productId": "ebay_14edd5b886",
+      "productMatched": "Now",
+      "knownSets": 94,
+      "processedSetsTotal": 94,
+      "remainingSets": 0,
+      "rowsAccumulated": 127
     },
     "topps-real-madrid-team-set-2025-26": {
       "setsFetchedThisRun": 0,
@@ -2896,7 +3497,7 @@
           "year": "2025",
           "label": "Manchester City Team Set",
           "score": 0,
-          "strict": true,
+          "strict": false,
           "productId": "ebay_0192ebf654"
         },
         {
@@ -3569,11 +4170,663 @@
         }
       ],
       "error": "strict-product-not-found"
+    },
+    "panini-international-england-2026": {
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
+      "candidateProducts": [
+        {
+          "year": "2026",
+          "label": "National",
+          "score": 4,
+          "strict": false,
+          "productId": "ebay_9a830e2d58"
+        },
+        {
+          "year": "2026",
+          "label": "FIFA World Cup International Ink",
+          "score": 1,
+          "strict": false,
+          "productId": "ebay_5171e16996"
+        },
+        {
+          "year": "2026",
+          "label": "International Limitless",
+          "score": 1,
+          "strict": false,
+          "productId": "ebay_a9d267ad99"
+        },
+        {
+          "year": "2026",
+          "label": "International Mexico",
+          "score": 1,
+          "strict": false,
+          "productId": "ebay_e2cc3aa295"
+        },
+        {
+          "year": "2026",
+          "label": "International Mexico Limitless",
+          "score": 1,
+          "strict": false,
+          "productId": "ebay_58f030b3d3"
+        },
+        {
+          "year": "2026",
+          "label": "INTL FIFA World Cup Mexico Team Set",
+          "score": 1,
+          "strict": false,
+          "productId": "ebay_075f7d9616"
+        },
+        {
+          "year": "2026",
+          "label": "Intl Mexico",
+          "score": 1,
+          "strict": false,
+          "productId": "ebay_8d2ef94ba0"
+        },
+        {
+          "year": "2026",
+          "label": "Mexico International FIFA World Cup",
+          "score": 1,
+          "strict": false,
+          "productId": "ebay_8820d9158d"
+        }
+      ],
+      "error": "strict-product-not-found"
+    },
+    "panini-international-france-2026": {
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
+      "candidateProducts": [
+        {
+          "year": "2026",
+          "label": "National",
+          "score": 4,
+          "strict": false,
+          "productId": "ebay_9a830e2d58"
+        },
+        {
+          "year": "2026",
+          "label": "FIFA World Cup International Ink",
+          "score": 1,
+          "strict": false,
+          "productId": "ebay_5171e16996"
+        },
+        {
+          "year": "2026",
+          "label": "International Limitless",
+          "score": 1,
+          "strict": false,
+          "productId": "ebay_a9d267ad99"
+        },
+        {
+          "year": "2026",
+          "label": "International Mexico",
+          "score": 1,
+          "strict": false,
+          "productId": "ebay_e2cc3aa295"
+        },
+        {
+          "year": "2026",
+          "label": "International Mexico Limitless",
+          "score": 1,
+          "strict": false,
+          "productId": "ebay_58f030b3d3"
+        },
+        {
+          "year": "2026",
+          "label": "INTL FIFA World Cup Mexico Team Set",
+          "score": 1,
+          "strict": false,
+          "productId": "ebay_075f7d9616"
+        },
+        {
+          "year": "2026",
+          "label": "Intl Mexico",
+          "score": 1,
+          "strict": false,
+          "productId": "ebay_8d2ef94ba0"
+        },
+        {
+          "year": "2026",
+          "label": "Mexico International FIFA World Cup",
+          "score": 1,
+          "strict": false,
+          "productId": "ebay_8820d9158d"
+        }
+      ],
+      "error": "strict-product-not-found"
+    },
+    "panini-international-germany-2026": {
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
+      "candidateProducts": [
+        {
+          "year": "2026",
+          "label": "National",
+          "score": 4,
+          "strict": false,
+          "productId": "ebay_9a830e2d58"
+        },
+        {
+          "year": "2026",
+          "label": "FIFA World Cup International Ink",
+          "score": 1,
+          "strict": false,
+          "productId": "ebay_5171e16996"
+        },
+        {
+          "year": "2026",
+          "label": "International Limitless",
+          "score": 1,
+          "strict": false,
+          "productId": "ebay_a9d267ad99"
+        },
+        {
+          "year": "2026",
+          "label": "International Mexico",
+          "score": 1,
+          "strict": false,
+          "productId": "ebay_e2cc3aa295"
+        },
+        {
+          "year": "2026",
+          "label": "International Mexico Limitless",
+          "score": 1,
+          "strict": false,
+          "productId": "ebay_58f030b3d3"
+        },
+        {
+          "year": "2026",
+          "label": "INTL FIFA World Cup Mexico Team Set",
+          "score": 1,
+          "strict": false,
+          "productId": "ebay_075f7d9616"
+        },
+        {
+          "year": "2026",
+          "label": "Intl Mexico",
+          "score": 1,
+          "strict": false,
+          "productId": "ebay_8d2ef94ba0"
+        },
+        {
+          "year": "2026",
+          "label": "Mexico International FIFA World Cup",
+          "score": 1,
+          "strict": false,
+          "productId": "ebay_8820d9158d"
+        }
+      ],
+      "error": "strict-product-not-found"
+    },
+    "panini-international-mexico-2026": {
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
+      "candidateProducts": [
+        {
+          "year": "2026",
+          "label": "International Mexico",
+          "score": 44,
+          "strict": true,
+          "productId": "ebay_e2cc3aa295"
+        },
+        {
+          "year": "2026",
+          "label": "International Mexico Limitless",
+          "score": 14,
+          "strict": true,
+          "productId": "ebay_58f030b3d3"
+        },
+        {
+          "year": "2026",
+          "label": "Intl Mexico",
+          "score": 12,
+          "strict": true,
+          "productId": "ebay_8d2ef94ba0"
+        },
+        {
+          "year": "2026",
+          "label": "INTL FIFA World Cup Mexico Team Set",
+          "score": 6,
+          "strict": true,
+          "productId": "ebay_075f7d9616"
+        },
+        {
+          "year": "2026",
+          "label": "Mexico International FIFA World Cup",
+          "score": 6,
+          "strict": true,
+          "productId": "ebay_8820d9158d"
+        },
+        {
+          "year": "2026",
+          "label": "Mexico International Soccer",
+          "score": 6,
+          "strict": true,
+          "productId": "ebay_3e8f0a9d36"
+        },
+        {
+          "year": "2026",
+          "label": "National",
+          "score": 4,
+          "strict": false,
+          "productId": "ebay_9a830e2d58"
+        },
+        {
+          "year": "2026",
+          "label": "25/26 Select Road To World Cup Mexico",
+          "score": 1,
+          "strict": true,
+          "productId": "ebay_bc6a999c80"
+        }
+      ],
+      "yearUsed": "2026",
+      "productId": "ebay_e2cc3aa295",
+      "productMatched": "International Mexico",
+      "knownSets": 1,
+      "processedSetsTotal": 1,
+      "remainingSets": 0,
+      "rowsAccumulated": 1
+    },
+    "topps-arsenal-team-set-2025-26": {
+      "setsFetchedThisRun": 2,
+      "rowsAddedThisRun": 2,
+      "imagesAddedThisRun": 2,
+      "candidateProducts": [
+        {
+          "year": "2025",
+          "label": "Arsenal Team Set",
+          "score": 15,
+          "strict": true,
+          "productId": "ebay_94288b6fe8"
+        },
+        {
+          "year": "2025",
+          "label": "Team Set",
+          "score": 10,
+          "strict": false,
+          "productId": "ebay_152113a44e"
+        },
+        {
+          "year": "2025",
+          "label": "Topps",
+          "score": 5,
+          "strict": false,
+          "productId": "ebay_8a0314fdb0"
+        },
+        {
+          "year": "2025",
+          "label": "Topps",
+          "score": 5,
+          "strict": false,
+          "productId": "ing_8a0314fdb0"
+        },
+        {
+          "year": "2025",
+          "label": "FC Barcelona Team Set",
+          "score": 2,
+          "strict": false,
+          "productId": "ebay_69654157c2"
+        },
+        {
+          "year": "2025",
+          "label": "FC Barcelona Team Set Pitch Pursuits",
+          "score": 2,
+          "strict": false,
+          "productId": "ebay_5e7373fecf"
+        },
+        {
+          "year": "2025",
+          "label": "Manchester City Team Set",
+          "score": 2,
+          "strict": false,
+          "productId": "ebay_0192ebf654"
+        },
+        {
+          "year": "2025",
+          "label": "Man United Team Set",
+          "score": 2,
+          "strict": false,
+          "productId": "ebay_3d0dbc15dd"
+        }
+      ],
+      "yearUsed": "2025",
+      "productId": "ebay_94288b6fe8",
+      "productMatched": "Arsenal Team Set",
+      "knownSets": 2,
+      "processedSetsTotal": 2,
+      "remainingSets": 0,
+      "rowsAccumulated": 2
+    },
+    "topps-arsenal-team-set-2026-27": {
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
+      "candidateProducts": [
+        {
+          "year": "2026",
+          "label": "Team Set",
+          "score": 10,
+          "strict": false,
+          "productId": "ebay_36df0c75dc"
+        },
+        {
+          "year": "2026",
+          "label": "Topps",
+          "score": 5,
+          "strict": false,
+          "productId": "ing_666294998d"
+        },
+        {
+          "year": "2026",
+          "label": "INTL FIFA World Cup Mexico Team Set",
+          "score": 2,
+          "strict": false,
+          "productId": "ebay_075f7d9616"
+        },
+        {
+          "year": "2026",
+          "label": "2025-2026 Topps Chrome",
+          "score": -3,
+          "strict": false,
+          "productId": "ing_acea0f1d9c"
+        },
+        {
+          "year": "2026",
+          "label": "2026 Topps Chrome Premier League",
+          "score": -3,
+          "strict": false,
+          "productId": "ebay_d48a402fbe"
+        },
+        {
+          "year": "2026",
+          "label": "Acrylic Charm Set",
+          "score": -3,
+          "strict": false,
+          "productId": "ebay_2d600b50a0"
+        },
+        {
+          "year": "2026",
+          "label": "Arsenal Red",
+          "score": -3,
+          "strict": false,
+          "productId": "ebay_807c91621e"
+        },
+        {
+          "year": "2026",
+          "label": "FIFA World Cup 2026 Base Set",
+          "score": -3,
+          "strict": false,
+          "productId": "ebay_2640b36830"
+        }
+      ],
+      "error": "strict-product-not-found"
+    },
+    "topps-barcelona-team-set-2026-27": {
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
+      "candidateProducts": [
+        {
+          "year": "2026",
+          "label": "Team Set",
+          "score": 10,
+          "strict": false,
+          "productId": "ebay_36df0c75dc"
+        },
+        {
+          "year": "2026",
+          "label": "Topps",
+          "score": 5,
+          "strict": false,
+          "productId": "ing_666294998d"
+        },
+        {
+          "year": "2026",
+          "label": "INTL FIFA World Cup Mexico Team Set",
+          "score": 2,
+          "strict": false,
+          "productId": "ebay_075f7d9616"
+        },
+        {
+          "year": "2026",
+          "label": "2025-2026 Topps Chrome",
+          "score": -3,
+          "strict": false,
+          "productId": "ing_acea0f1d9c"
+        },
+        {
+          "year": "2026",
+          "label": "2026 Topps Chrome Premier League",
+          "score": -3,
+          "strict": false,
+          "productId": "ebay_d48a402fbe"
+        },
+        {
+          "year": "2026",
+          "label": "Acrylic Charm Set",
+          "score": -3,
+          "strict": false,
+          "productId": "ebay_2d600b50a0"
+        },
+        {
+          "year": "2026",
+          "label": "FIFA World Cup 2026 Base Set",
+          "score": -3,
+          "strict": false,
+          "productId": "ebay_2640b36830"
+        },
+        {
+          "year": "2026",
+          "label": "FIFA World Cup TEAM",
+          "score": -3,
+          "strict": false,
+          "productId": "ebay_a3585893f0"
+        }
+      ],
+      "error": "strict-product-not-found"
+    },
+    "topps-psg-team-set-2026-27": {
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
+      "candidateProducts": [
+        {
+          "year": "2026",
+          "label": "Team Set",
+          "score": 10,
+          "strict": false,
+          "productId": "ebay_36df0c75dc"
+        },
+        {
+          "year": "2026",
+          "label": "Topps",
+          "score": 5,
+          "strict": false,
+          "productId": "ing_666294998d"
+        },
+        {
+          "year": "2026",
+          "label": "INTL FIFA World Cup Mexico Team Set",
+          "score": 2,
+          "strict": false,
+          "productId": "ebay_075f7d9616"
+        },
+        {
+          "year": "2026",
+          "label": "2025-2026 Topps Chrome",
+          "score": -3,
+          "strict": false,
+          "productId": "ing_acea0f1d9c"
+        },
+        {
+          "year": "2026",
+          "label": "2026 Topps Chrome Premier League",
+          "score": -3,
+          "strict": false,
+          "productId": "ebay_d48a402fbe"
+        },
+        {
+          "year": "2026",
+          "label": "Acrylic Charm Set",
+          "score": -3,
+          "strict": false,
+          "productId": "ebay_2d600b50a0"
+        },
+        {
+          "year": "2026",
+          "label": "FIFA World Cup 2026 Base Set",
+          "score": -3,
+          "strict": false,
+          "productId": "ebay_2640b36830"
+        },
+        {
+          "year": "2026",
+          "label": "FIFA World Cup TEAM",
+          "score": -3,
+          "strict": false,
+          "productId": "ebay_a3585893f0"
+        }
+      ],
+      "error": "strict-product-not-found"
+    },
+    "topps-manchester-city-team-set-2026-27": {
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
+      "candidateProducts": [
+        {
+          "year": "2026",
+          "label": "Team Set",
+          "score": 8,
+          "strict": false,
+          "productId": "ebay_36df0c75dc"
+        },
+        {
+          "year": "2026",
+          "label": "Topps",
+          "score": 3,
+          "strict": false,
+          "productId": "ing_666294998d"
+        },
+        {
+          "year": "2026",
+          "label": "INTL FIFA World Cup Mexico Team Set",
+          "score": 0,
+          "strict": false,
+          "productId": "ebay_075f7d9616"
+        },
+        {
+          "year": "2026",
+          "label": "2025-2026 Topps Chrome",
+          "score": -5,
+          "strict": false,
+          "productId": "ing_acea0f1d9c"
+        },
+        {
+          "year": "2026",
+          "label": "2026 Topps Chrome Premier League",
+          "score": -5,
+          "strict": false,
+          "productId": "ebay_d48a402fbe"
+        },
+        {
+          "year": "2026",
+          "label": "Acrylic Charm Set",
+          "score": -5,
+          "strict": false,
+          "productId": "ebay_2d600b50a0"
+        },
+        {
+          "year": "2026",
+          "label": "FIFA World Cup 2026 Base Set",
+          "score": -5,
+          "strict": false,
+          "productId": "ebay_2640b36830"
+        },
+        {
+          "year": "2026",
+          "label": "FIFA World Cup TEAM",
+          "score": -5,
+          "strict": false,
+          "productId": "ebay_a3585893f0"
+        }
+      ],
+      "error": "strict-product-not-found"
+    },
+    "topps-benfica-team-set-2026-27": {
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
+      "candidateProducts": [
+        {
+          "year": "2026",
+          "label": "Team Set",
+          "score": 10,
+          "strict": false,
+          "productId": "ebay_36df0c75dc"
+        },
+        {
+          "year": "2026",
+          "label": "Topps",
+          "score": 5,
+          "strict": false,
+          "productId": "ing_666294998d"
+        },
+        {
+          "year": "2026",
+          "label": "INTL FIFA World Cup Mexico Team Set",
+          "score": 2,
+          "strict": false,
+          "productId": "ebay_075f7d9616"
+        },
+        {
+          "year": "2026",
+          "label": "2025-2026 Topps Chrome",
+          "score": -3,
+          "strict": false,
+          "productId": "ing_acea0f1d9c"
+        },
+        {
+          "year": "2026",
+          "label": "2026 Topps Chrome Premier League",
+          "score": -3,
+          "strict": false,
+          "productId": "ebay_d48a402fbe"
+        },
+        {
+          "year": "2026",
+          "label": "Acrylic Charm Set",
+          "score": -3,
+          "strict": false,
+          "productId": "ebay_2d600b50a0"
+        },
+        {
+          "year": "2026",
+          "label": "FIFA World Cup 2026 Base Set",
+          "score": -3,
+          "strict": false,
+          "productId": "ebay_2640b36830"
+        },
+        {
+          "year": "2026",
+          "label": "FIFA World Cup TEAM",
+          "score": -3,
+          "strict": false,
+          "productId": "ebay_a3585893f0"
+        }
+      ],
+      "error": "strict-product-not-found"
     }
   },
-  "finishedAt": "2026-10-03T23:40:41Z",
-  "collectionsWritten": 37,
-  "rowsWritten": 1240,
-  "exactFrontsWritten": 1224,
-  "runtimeSeconds": 135.8
+  "finishedAt": "2026-10-04T03:17:42Z",
+  "collectionsWritten": 48,
+  "rowsWritten": 1442,
+  "exactFrontsWritten": 1426,
+  "runtimeSeconds": 309.1
 }

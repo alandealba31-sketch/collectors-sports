@@ -904,6 +904,269 @@
     },
     "topps-brazil-collector-tin-2026-27": {
       "processedSets": []
+    },
+    "topps-now-mlb-2026": {
+      "processedSets": [
+        "ebay_6502916e34"
+      ],
+      "productId": "ebay_b08f24a4d3",
+      "productMatched": "MLB Topps NOW",
+      "yearUsed": "2026",
+      "knownSets": 1
+    },
+    "topps-now-wbc-2026": {
+      "processedSets": [
+        "ebay_0cb197a12e",
+        "ebay_3f873ce335",
+        "ebay_48a7f21b4e",
+        "ebay_493d9500c1",
+        "ebay_62116a599b",
+        "ebay_9a8eab612e",
+        "ebay_b0a5e2d5bf",
+        "ebay_b588d8dd24",
+        "ebay_b7ff542dc0",
+        "ebay_cfa16ece37",
+        "ebay_f4c4ec07bc",
+        "ebay_fc76e85f2b"
+      ],
+      "productId": "ebay_87fe0a00b6",
+      "productMatched": "Topps Now",
+      "yearUsed": "2026",
+      "knownSets": 12
+    },
+    "topps-now-nfl-2026": {
+      "processedSets": [
+        "ebay_0cb197a12e",
+        "ebay_3f873ce335",
+        "ebay_48a7f21b4e",
+        "ebay_493d9500c1",
+        "ebay_62116a599b",
+        "ebay_9a8eab612e",
+        "ebay_b0a5e2d5bf",
+        "ebay_b588d8dd24",
+        "ebay_b7ff542dc0",
+        "ebay_cfa16ece37",
+        "ebay_f4c4ec07bc",
+        "ebay_fc76e85f2b"
+      ],
+      "productId": "ebay_87fe0a00b6",
+      "productMatched": "Topps Now",
+      "yearUsed": "2026",
+      "knownSets": 12
+    },
+    "topps-now-nba-2026-27": {
+      "processedSets": [
+        "ebay_0cb197a12e",
+        "ebay_3f873ce335",
+        "ebay_48a7f21b4e",
+        "ebay_493d9500c1",
+        "ebay_62116a599b",
+        "ebay_9a8eab612e",
+        "ebay_b0a5e2d5bf",
+        "ebay_b588d8dd24",
+        "ebay_b7ff542dc0",
+        "ebay_cfa16ece37",
+        "ebay_f4c4ec07bc",
+        "ebay_fc76e85f2b"
+      ],
+      "productId": "ebay_87fe0a00b6",
+      "productMatched": "Topps Now",
+      "yearUsed": "2026",
+      "knownSets": 12
+    },
+    "topps-now-ufc-2026": {
+      "processedSets": [
+        "ebay_193b5dd847",
+        "ebay_3f4a51fbe4",
+        "ebay_77b3f5ae2d",
+        "ebay_8c9724e7f6",
+        "ebay_b840388dd3",
+        "ebay_ca33e30070"
+      ],
+      "productId": "ebay_d06300b96d",
+      "productMatched": "Now UFC",
+      "yearUsed": "2026",
+      "knownSets": 6
+    },
+    "topps-now-tennis-2026": {
+      "processedSets": [
+        "ebay_4a827139aa"
+      ],
+      "productId": "ebay_f48a9764ef",
+      "productMatched": "NOW® Tennis",
+      "yearUsed": "2026",
+      "knownSets": 1
+    },
+    "topps-now-f1-2026": {
+      "processedSets": [
+        "ebay_feb9452fe4"
+      ],
+      "productId": "ebay_bd7553ff4c",
+      "productMatched": "NOW Formula 1",
+      "yearUsed": "2026",
+      "knownSets": 1
+    },
+    "topps-now-wwe-2026": {
+      "processedSets": [
+        "ebay_0ae6a5e924",
+        "ebay_2d7522656a",
+        "ebay_35e7c6fe44",
+        "ebay_3a82f043cd",
+        "ebay_51570d740b",
+        "ebay_72c1c58088",
+        "ebay_8889f05726",
+        "ebay_b576f22346",
+        "ebay_e986d16cb7"
+      ],
+      "productId": "ebay_b9c76cb234",
+      "productMatched": "Now WWE",
+      "yearUsed": "2026",
+      "knownSets": 9
+    },
+    "topps-now-soccer-2026": {
+      "processedSets": [
+        "ebay_08082be024",
+        "ebay_083fdf25d7",
+        "ebay_08f876a4d6",
+        "ebay_0939538bec",
+        "ebay_09b85b26de",
+        "ebay_0b092f3a07",
+        "ebay_0faada2026",
+        "ebay_11acbd633d",
+        "ebay_154493e86f",
+        "ebay_17d8358ff2",
+        "ebay_19eabd0ecc",
+        "ebay_2060170cac",
+        "ebay_2134d7fd62",
+        "ebay_290f7de104",
+        "ebay_296a5a5a3a",
+        "ebay_2ca0501057",
+        "ebay_2f5cc56104",
+        "ebay_30cebe61cb",
+        "ebay_31883b7899",
+        "ebay_3388007891",
+        "ebay_39b43afce8",
+        "ebay_3a19a22f7b",
+        "ebay_3aa4f9b0df",
+        "ebay_43eb42d7d4",
+        "ebay_45f9736dd4",
+        "ebay_460d60cd22",
+        "ebay_495eff974b",
+        "ebay_4a4b36a6a0",
+        "ebay_4db879bd9b",
+        "ebay_500de3ab83",
+        "ebay_500e66a738",
+        "ebay_54ba337202",
+        "ebay_5520ab8694",
+        "ebay_5647759789",
+        "ebay_59a2e64d14",
+        "ebay_5b8f7c1a65",
+        "ebay_5e1e5a0c65",
+        "ebay_5e1ecbcd76",
+        "ebay_5fcc70b10b",
+        "ebay_6086c17b15",
+        "ebay_6141a7fd1f",
+        "ebay_63a1771fdb",
+        "ebay_6940f8e091",
+        "ebay_696f123a86",
+        "ebay_6999c44cbd",
+        "ebay_6e3944932b",
+        "ebay_70d0329ed2",
+        "ebay_77722cf3ed",
+        "ebay_7827ea6493",
+        "ebay_79ec0ad661",
+        "ebay_7a0d7f3c77",
+        "ebay_7c2ce12fac",
+        "ebay_7d3c6d1d42",
+        "ebay_808b25582b",
+        "ebay_80e10f968d",
+        "ebay_822ab60854",
+        "ebay_8307227971",
+        "ebay_8f93692e68",
+        "ebay_90d6e4a6bf",
+        "ebay_911756bde4",
+        "ebay_9659b4c507",
+        "ebay_9dc7859706",
+        "ebay_a0bea19a72",
+        "ebay_a5c41b7103",
+        "ebay_a84a2019a8",
+        "ebay_a958ccbd3f",
+        "ebay_a9b0669eb6",
+        "ebay_b0e059023b",
+        "ebay_baa2b5c905",
+        "ebay_bce2be7dbb",
+        "ebay_be8d62bb6b",
+        "ebay_c048c01b01",
+        "ebay_c6aecf7d57",
+        "ebay_c8c1f28352",
+        "ebay_cdc682fd32",
+        "ebay_d2bff8fa13",
+        "ebay_d3634b2746",
+        "ebay_d9295c34b6",
+        "ebay_dc0ec394b4",
+        "ebay_dedc787d43",
+        "ebay_e397cc0ded",
+        "ebay_e84d722ef8",
+        "ebay_e882a93201",
+        "ebay_e8899457f4",
+        "ebay_ea0474235a",
+        "ebay_eb6c473f97",
+        "ebay_ec56b09d29",
+        "ebay_ef54958cab",
+        "ebay_f10b3df200",
+        "ebay_f879216020",
+        "ebay_f8be2ffd0a",
+        "ebay_f9a64b0118",
+        "ebay_f9fd5f9013",
+        "ebay_feedebdd83"
+      ],
+      "productId": "ebay_14edd5b886",
+      "productMatched": "Now",
+      "yearUsed": "2026",
+      "knownSets": 94
+    },
+    "panini-international-england-2026": {
+      "processedSets": []
+    },
+    "panini-international-france-2026": {
+      "processedSets": []
+    },
+    "panini-international-germany-2026": {
+      "processedSets": []
+    },
+    "panini-international-mexico-2026": {
+      "processedSets": [
+        "ebay_21f8c62ce8"
+      ],
+      "productId": "ebay_e2cc3aa295",
+      "productMatched": "International Mexico",
+      "yearUsed": "2026",
+      "knownSets": 1
+    },
+    "topps-arsenal-team-set-2025-26": {
+      "processedSets": [
+        "ebay_4360fb0110",
+        "ebay_e03c6d3104"
+      ],
+      "productId": "ebay_94288b6fe8",
+      "productMatched": "Arsenal Team Set",
+      "yearUsed": "2025",
+      "knownSets": 2
+    },
+    "topps-arsenal-team-set-2026-27": {
+      "processedSets": []
+    },
+    "topps-barcelona-team-set-2026-27": {
+      "processedSets": []
+    },
+    "topps-psg-team-set-2026-27": {
+      "processedSets": []
+    },
+    "topps-manchester-city-team-set-2026-27": {
+      "processedSets": []
+    },
+    "topps-benfica-team-set-2026-27": {
+      "processedSets": []
     }
   }
 }
