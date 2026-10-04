@@ -17,6 +17,7 @@ TARGETS=ROOT/'data'/'image-targets-runtime.json'
 MANIFEST=ROOT/'data'/'bulk-image-manifest.json'
 REPORT=ROOT/'data'/'tcdb-image-report.json'
 MAX_NEW=int(os.getenv('IMAGE_IMPORT_MAX_NEW','2500'))
+MAX_ROWS=int(os.getenv('TCDB_IMPORT_MAX_ROWS','500'))
 
 
 def load(path,default):
@@ -24,14 +25,81 @@ def load(path,default):
     except Exception:return default
 
 
+def tcdb_card_links(source,desired_numbers):
+    """Map TCDB ViewCard links to card numbers even when the anchor text is the player.
+
+    TCDB checklist rows frequently place the card number in a sibling table cell and
+    use the player name as the ViewCard anchor. The legacy resolver expected the link
+    text itself to be the number, which made every row look like it had no card page.
+    """
+    sid=source['sid']
+    links={number:[] for number in desired_numbers}
+    lookup={str(number).strip().lstrip('#').upper():number for number in desired_numbers}
+    seen_hrefs=set()
+    empty_pages=0
+    for page in range(1,15):
+        url=f'https://www.tcdb.com/Checklist.cfm/sid/{sid}?PageIndex={page}'
+        try:
+            html=legacy.get(url)
+        except Exception as exc:
+            print(f'  ! checklist page {page}: {exc}')
+            break
+        soup=legacy.BeautifulSoup(html,'html.parser')
+        found_this_page=0
+        for a in soup.find_all('a',href=True):
+            href=a.get('href','')
+            if 'ViewCard.cfm' not in href or f'/sid/{sid}/' not in href:
+                continue
+            number=''
+            direct=a.get_text(' ',strip=True).strip().lstrip('#').upper()
+            if direct in lookup:
+                number=lookup[direct]
+            if not number:
+                row=a.find_parent('tr')
+                if row:
+                    for cell in row.find_all(['td','th']):
+                        text=cell.get_text(' ',strip=True).replace('#',' ')
+                        clean=text.strip().upper()
+                        if clean in lookup:
+                            number=lookup[clean]
+                            break
+                        for token in legacy.re.split(r'\s+',text):
+                            token=token.strip('()[]{}.,:;').upper()
+                            if token in lookup:
+                                number=lookup[token]
+                                break
+                        if number:
+                            break
+            if not number:
+                continue
+            full=legacy.urllib.parse.urljoin('https://www.tcdb.com/',href)
+            if full in seen_hrefs:
+                continue
+            seen_hrefs.add(full)
+            links[number].append(full)
+            found_this_page+=1
+        if found_this_page==0:
+            empty_pages+=1
+            if page>1 and empty_pages>=2:
+                break
+        else:
+            empty_pages=0
+    return links
+
+
+# Use the row-aware resolver without changing the stable legacy importer.
+legacy.tcdb_card_links=tcdb_card_links
+
+
 def main():
     targets=load(TARGETS,{})
     manifest=load(MANIFEST,{})
     before=len(manifest)
     remaining=MAX_NEW
-    report={'provider':'TCDB expanded exact-front resolver','startedAt':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),'maxNew':MAX_NEW,'collections':{}}
+    remaining_rows=MAX_ROWS
+    report={'provider':'TCDB expanded exact-front resolver','startedAt':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),'maxNew':MAX_NEW,'maxRowsConsidered':MAX_ROWS,'collections':{}}
     for cid,payload in targets.items():
-        if remaining<=0:break
+        if remaining<=0 or remaining_rows<=0:break
         groups=defaultdict(list)
         source=payload.get('source') or {}
         root_sid=source.get('sid')
@@ -40,7 +108,9 @@ def main():
             if sid:groups[sid].append(row)
         cstats={'sourceSets':len(groups),'newExact':0,'sets':{}}
         for sid,rows in groups.items():
-            if remaining<=0:break
+            if remaining<=0 or remaining_rows<=0:break
+            rows=rows[:remaining_rows]
+            remaining_rows-=len(rows)
             set_name=next((r.get('tcdbSetName') for r in rows if r.get('tcdbSetName')),None) or source.get('setName') or cid
             p={'source':{'provider':'tcdb','sid':int(sid),'setName':set_name,'allowedSubsets':[]},'rows':rows}
             try:
@@ -68,8 +138,9 @@ def main():
     report['finishedAt']=time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime())
     report['manifestExactFronts']=len(manifest)
     report['newExactFrontsThisRun']=len(manifest)-before
+    report['rowsConsidered']=MAX_ROWS-remaining_rows
     REPORT.parent.mkdir(parents=True,exist_ok=True)
     REPORT.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    print(f"TCDB expanded exact fronts: +{report['newExactFrontsThisRun']} / {len(manifest)} total")
+    print(f"TCDB expanded exact fronts: +{report['newExactFrontsThisRun']} / {len(manifest)} total from {report['rowsConsidered']} rows")
 
 if __name__=='__main__':main()
