@@ -50,6 +50,7 @@ jobs:
           node --check catalog-halloflists-expanded.js
           node --check catalog-now-halloflists.js
           node --check catalog-checklistinsider-expanded.js
+          node --check catalog-fc-tins-expanded.js
           node --check catalog-owned-batch2.js
           node --check catalog-owned-batch3.js
           node --check catalog-mycardfolio-expanded.js
@@ -63,10 +64,11 @@ jobs:
           node --check card-visuals.js
       - name: Verify required app assets
         run: |
-          for f in v06.css v06-polish.css v07.css catalog-premier.js catalog-intl-expanded.js catalog-teamsets-expanded.js catalog-select-laliga-expanded.js catalog-select-laliga-inserts.js catalog-prizm-cwc-expanded.js catalog-prizm-cwc-inserts.js catalog-prizm-monopoly-wc-expanded.js catalog-select-road-wc-expanded.js catalog-select-road-wc-inserts.js catalog-halloflists-expanded.js catalog-now-halloflists.js catalog-checklistinsider-expanded.js app-v11-catalog-normalize.js catalog-images-cached.js catalog-images-teamsets.js catalog-owned.js catalog-owned-batch2.js catalog-owned-batch3.js app-v08-image-guard.js app-v08-catalog.js market-seed.js pricing-engine.js; do test -f "$f"; done
+          for f in v06.css v06-polish.css v07.css catalog-premier.js catalog-intl-expanded.js catalog-teamsets-expanded.js catalog-select-laliga-expanded.js catalog-select-laliga-inserts.js catalog-prizm-cwc-expanded.js catalog-prizm-cwc-inserts.js catalog-prizm-monopoly-wc-expanded.js catalog-select-road-wc-expanded.js catalog-select-road-wc-inserts.js catalog-halloflists-expanded.js catalog-now-halloflists.js catalog-checklistinsider-expanded.js catalog-fc-tins-expanded.js app-v11-catalog-normalize.js catalog-images-cached.js catalog-images-teamsets.js catalog-owned.js catalog-owned-batch2.js catalog-owned-batch3.js app-v08-image-guard.js app-v08-catalog.js market-seed.js pricing-engine.js; do test -f "$f"; done
           grep -q 'catalog-halloflists-expanded.js' index.html
           grep -q 'catalog-now-halloflists.js' index.html
           grep -q 'catalog-checklistinsider-expanded.js' index.html
+          grep -q 'catalog-fc-tins-expanded.js' index.html
           grep -q 'catalog-mycardfolio-expanded.js' index.html
           grep -q 'catalog-images-mycardfolio.js' index.html
           grep -q 'app-v11-home-search.js' index.html
