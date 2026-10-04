@@ -1,6 +1,7 @@
 {
-  "updatedAt": "2026-09-30",
+  "updatedAt": "2026-10-04",
   "scope": "Sports-card products the user has bought, ordered, opened, or explicitly asked to include in Collectors Sports. Pokemon excluded.",
+  "priorityPolicy": "Products confirmed by recent purchase/delivery emails are processed first for checklist completion and exact-front coverage.",
   "priorities": [
     {"sport":"Soccer","product":"Topps Chrome UEFA Club Competitions 2025/26","status":"catalog-loaded","checklist":"base-loaded"},
     {"sport":"Soccer","product":"Topps Premier League 2025/26","status":"catalog-loaded","checklist":"base-loaded"},
@@ -10,7 +11,8 @@
     {"sport":"Soccer","product":"Topps Atletico de Madrid Team Set 2025/26","status":"owned","checklist":"todo"},
     {"sport":"Soccer","product":"Topps Chelsea Team Set 2025/26","status":"owned","checklist":"todo"},
     {"sport":"Soccer","product":"Topps SL Benfica Team Set 2025/26","status":"owned","checklist":"todo"},
-    {"sport":"Soccer","product":"Topps FC Barcelona Forever 2025/26","status":"owned","checklist":"todo"},
+    {"sport":"Soccer","product":"Topps Real Madrid Team Set 2025/26","status":"owned","checklist":"source-configured","priority":"email-confirmed"},
+    {"sport":"Soccer","product":"Topps FC Barcelona Forever 2025/26","status":"owned","checklist":"full-loaded"},
     {"sport":"Soccer","product":"Topps FC Barcelona Collector Tin 2025/26","status":"owned","checklist":"full-loaded"},
     {"sport":"Soccer","product":"Topps Real Madrid Collector Tin 2025/26","status":"owned","checklist":"todo"},
     {"sport":"Soccer","product":"Topps Liverpool Collector Tin 2025/26","status":"owned","checklist":"source-known"},
@@ -25,19 +27,25 @@
     {"sport":"Soccer","product":"Topps Manchester City Collector Tin 2026/27","status":"owned","checklist":"full-loaded"},
     {"sport":"Soccer","product":"Topps Inter Collector Tin 2026/27","status":"owned","checklist":"todo"},
     {"sport":"Soccer","product":"Topps Paris Saint-Germain Collector Tin 2026/27","status":"owned","checklist":"todo"},
-    {"sport":"Soccer","product":"2026 Panini INTL England","status":"owned","checklist":"base-loaded"},
-    {"sport":"Soccer","product":"2026 Panini INTL France","status":"include","checklist":"base-loaded"},
+    {"sport":"Soccer","product":"Topps Brazil Collector Tin 2026/27","status":"ordered-preorder","checklist":"source-configured","priority":"email-confirmed"},
+    {"sport":"Soccer","product":"2026 Panini INTL England","status":"owned","checklist":"base-loaded","priority":"email-confirmed"},
+    {"sport":"Soccer","product":"2026 Panini INTL France","status":"owned","checklist":"base-loaded","priority":"email-confirmed"},
     {"sport":"Soccer","product":"2026 Panini INTL Germany","status":"include","checklist":"base-loaded"},
-    {"sport":"Soccer","product":"2026 Panini INTL Mexico","status":"include","checklist":"base-loaded"},
+    {"sport":"Soccer","product":"2026 Panini INTL Mexico","status":"owned","checklist":"base-loaded","priority":"email-confirmed"},
+    {"sport":"Soccer","product":"Panini Real Madrid Tribute 2023/24","status":"owned-delivered","checklist":"source-configured","priority":"email-confirmed"},
+    {"sport":"Soccer","product":"Panini Club Atletico de Madrid 2025/26","status":"owned-delivered","checklist":"source-configured","priority":"email-confirmed"},
+    {"sport":"Soccer","product":"Panini Club Real Madrid 2025/26","status":"owned-delivered","checklist":"source-configured","priority":"email-confirmed"},
     {"sport":"Soccer","product":"Panini Prizm Monopoly FIFA World Cup 2026","status":"owned","checklist":"todo"},
     {"sport":"Soccer","product":"Panini Prizm FIFA / Road to World Cup 2025/26","status":"owned","checklist":"todo"},
     {"sport":"Soccer","product":"Panini Select LaLiga 2024/25","status":"owned","checklist":"todo"},
     {"sport":"Soccer","product":"Panini Prizm FIFA Club World Cup 2025","status":"owned","checklist":"todo"},
 
-    {"sport":"NFL","product":"Topps Resurgence Football 2025","status":"owned","checklist":"todo"},
-    {"sport":"NFL","product":"Topps Signature Class Football 2025","status":"owned","checklist":"todo"},
-    {"sport":"NFL","product":"Topps Chrome Football 2025","status":"owned","checklist":"todo"},
+    {"sport":"NFL","product":"Topps Resurgence Football 2025","status":"owned","checklist":"full-loaded"},
+    {"sport":"NFL","product":"Topps Signature Class Football 2025","status":"owned","checklist":"full-loaded"},
+    {"sport":"NFL","product":"Topps Chrome Football 2025","status":"owned","checklist":"full-loaded"},
     {"sport":"NFL","product":"Topps Flagship Football 2026 Mega","status":"owned","checklist":"todo"},
+    {"sport":"NFL","product":"Topps Holiday Football 2026 Mega","status":"ordered","checklist":"source-configured","priority":"email-confirmed"},
+    {"sport":"NFL","product":"Topps NOW Football 2026","status":"owned-cards","checklist":"verified-partial","priority":"email-confirmed"},
     {"sport":"NFL","product":"Panini Donruss Optic Football 2025","status":"owned","checklist":"todo"},
     {"sport":"NFL","product":"Panini Obsidian Football","status":"owned","checklist":"year-needs-confirmation"},
 
@@ -49,19 +57,23 @@
     {"sport":"MLB","product":"Topps Flagship / Series Baseball 2025 Jumbo","status":"owned","checklist":"exact-series-needs-verification"},
     {"sport":"MLB","product":"Topps Finest Baseball 2025/2026 Mega","status":"owned","checklist":"year-needs-confirmation"},
     {"sport":"MLB","product":"Topps Chrome Baseball 2026","status":"owned","checklist":"base-loaded"},
-    {"sport":"MLB","product":"Topps Holiday Baseball 2025 Mega / Tin","status":"owned","checklist":"todo"},
+    {"sport":"MLB","product":"Topps Holiday Baseball 2025 Mega / Tin","status":"owned","checklist":"full-loaded"},
+    {"sport":"MLB","product":"Topps Holiday Baseball 2026 Mega","status":"ordered","checklist":"source-configured","priority":"email-confirmed"},
     {"sport":"MLB","product":"Topps Update Series Baseball 2026 Jumbo","status":"owned","checklist":"todo"},
-    {"sport":"MLB","product":"Bowman Chrome Baseball 2026","status":"owned","checklist":"todo"},
+    {"sport":"MLB","product":"Bowman Chrome Baseball 2026","status":"owned","checklist":"full-loaded"},
     {"sport":"MLB","product":"Topps Logofractor Baseball 2026","status":"owned","checklist":"todo"},
     {"sport":"MLB","product":"Topps Stadium Club Chrome Baseball","status":"owned","checklist":"year-needs-confirmation"},
     {"sport":"MLB","product":"Topps Archives Snapshots Baseball 2021","status":"owned","checklist":"todo"},
+    {"sport":"MLB","product":"MLB Topps NOW 2026","status":"owned-cards","checklist":"verified-partial","priority":"email-confirmed"},
 
-    {"sport":"UFC","product":"Topps Chrome UFC 2026","status":"owned","checklist":"base-loaded"},
+    {"sport":"UFC","product":"Topps Chrome UFC 2026","status":"owned","checklist":"full-loaded"},
     {"sport":"UFC","product":"Topps Stadium Club UFC 2026 Mega","status":"owned","checklist":"todo"},
 
     {"sport":"F1","product":"Topps Chrome Formula 1 2026 Mega","status":"owned","checklist":"base-loaded"},
     {"sport":"F1","product":"Topps Chrome Formula 1 2026 Value","status":"owned","checklist":"same-set-base-loaded"},
+    {"sport":"F1","product":"Formula 1 Topps NOW 2026","status":"owned-cards","checklist":"verified-partial","priority":"email-confirmed"},
 
-    {"sport":"Tennis","product":"Topps Chrome Tennis 2026","status":"ordered","checklist":"todo"}
+    {"sport":"Tennis","product":"Topps Chrome Tennis 2026","status":"owned-delivered-opened","checklist":"full-loaded","priority":"email-confirmed"},
+    {"sport":"Tennis","product":"Tennis Topps NOW 2026","status":"owned-cards","checklist":"verified-partial","priority":"email-confirmed"}
   ]
 }
