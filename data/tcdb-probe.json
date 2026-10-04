@@ -1,0 +1,51 @@
+{
+  "generatedAt": "2026-10-04T15:51:26Z",
+  "sid": "587629",
+  "requestedUrl": "https://www.tcdb.com/Checklist.cfm/sid/587629?PageIndex=1",
+  "userAgent": "CollectorsSportsCatalog/1.0 (+https://github.com/alandealba31-sketch/collectors-sports)",
+  "robotsStatus": 200,
+  "robotsAllowed": true,
+  "httpStatus": 200,
+  "finalUrl": "https://www.tcdb.com/DefaultError404.html",
+  "contentType": "text/html",
+  "htmlLength": 1690,
+  "title": "Trading Card Database",
+  "challengeMarkers": [],
+  "anchorCount": 1,
+  "anchorBuckets": {
+    "viewCard": {
+      "count": 0,
+      "samples": []
+    },
+    "card": {
+      "count": 0,
+      "samples": []
+    },
+    "checklist": {
+      "count": 0,
+      "samples": []
+    },
+    "sid": {
+      "count": 0,
+      "samples": []
+    },
+    "profile": {
+      "count": 0,
+      "samples": []
+    }
+  },
+  "anchorSamples": [
+    {
+      "text": "Return to Homepage",
+      "href": "/"
+    }
+  ],
+  "tableRowSamples": [],
+  "topClasses": [
+    [
+      "box",
+      1
+    ]
+  ],
+  "idSamples": []
+}
