@@ -1,6 +1,6 @@
 {
   "runner": "sync_mycardfolio_v2.py",
-  "startedAt": "2026-10-04T16:49:34Z",
+  "startedAt": "2026-10-05T10:33:45Z",
   "endpoint": "https://mycardfolio.com/api/mcp",
   "setsPerProductPerRun": 150,
   "requestDelaySeconds": 1.05,
@@ -2916,9 +2916,9 @@
       "rowsAccumulated": 1
     },
     "bowman-chrome-baseball-2026": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 9,
+      "rowsAddedThisRun": 9,
+      "imagesAddedThisRun": 9,
       "candidateProducts": [
         {
           "year": "2026",
@@ -2980,10 +2980,10 @@
       "yearUsed": "2026",
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
-      "knownSets": 187,
-      "processedSetsTotal": 187,
+      "knownSets": 196,
+      "processedSetsTotal": 196,
       "remainingSets": 0,
-      "rowsAccumulated": 440
+      "rowsAccumulated": 449
     },
     "topps-finest-baseball-2026": {
       "setsFetchedThisRun": 0,
@@ -6375,9 +6375,9 @@
       "error": "strict-product-not-found"
     }
   },
-  "finishedAt": "2026-10-04T16:53:02Z",
+  "finishedAt": "2026-10-05T10:36:24Z",
   "collectionsWritten": 58,
-  "rowsWritten": 1836,
-  "exactFrontsWritten": 1820,
-  "runtimeSeconds": 207.8
+  "rowsWritten": 1845,
+  "exactFrontsWritten": 1829,
+  "runtimeSeconds": 159.2
 }
