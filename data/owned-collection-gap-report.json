@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T10:36:27.332Z",
+  "generatedAt": "2026-10-06T10:35:54.720Z",
   "source": "data/user-collection-priority.json",
   "collections": [
     {
@@ -728,14 +728,14 @@
       "season": "2025",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 1496,
-      "uniqueIdentities": 1496,
+      "checklistRows": 1497,
+      "uniqueIdentities": 1497,
       "baseIdentities": 1040,
       "numberedIdentities": 0,
-      "autographIdentities": 506,
+      "autographIdentities": 507,
       "relicIdentities": 0,
-      "exactFrontIdentities": 18,
-      "exactFrontCoveragePct": 1.2,
+      "exactFrontIdentities": 21,
+      "exactFrontCoveragePct": 1.4,
       "status": "needs-images"
     },
     {
@@ -787,22 +787,6 @@
       "status": "needs-images"
     },
     {
-      "collectionId": "panini-select-road-to-world-cup-2025-26",
-      "name": "Panini Select Road to FIFA World Cup",
-      "season": "2025-26",
-      "ownedRows": 1,
-      "catalogPresent": true,
-      "checklistRows": 466,
-      "uniqueIdentities": 466,
-      "baseIdentities": 0,
-      "numberedIdentities": 0,
-      "autographIdentities": 10,
-      "relicIdentities": 10,
-      "exactFrontIdentities": 9,
-      "exactFrontCoveragePct": 1.93,
-      "status": "needs-images"
-    },
-    {
       "collectionId": "topps-holiday-baseball-2025",
       "name": "Topps Holiday Baseball",
       "season": "2025",
@@ -816,6 +800,22 @@
       "relicIdentities": 289,
       "exactFrontIdentities": 21,
       "exactFrontCoveragePct": 2.12,
+      "status": "needs-images"
+    },
+    {
+      "collectionId": "panini-select-road-to-world-cup-2025-26",
+      "name": "Panini Select Road to FIFA World Cup",
+      "season": "2025-26",
+      "ownedRows": 1,
+      "catalogPresent": true,
+      "checklistRows": 466,
+      "uniqueIdentities": 466,
+      "baseIdentities": 0,
+      "numberedIdentities": 0,
+      "autographIdentities": 10,
+      "relicIdentities": 10,
+      "exactFrontIdentities": 10,
+      "exactFrontCoveragePct": 2.15,
       "status": "needs-images"
     },
     {
@@ -904,14 +904,14 @@
       "season": "2025",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 2463,
-      "uniqueIdentities": 2463,
+      "checklistRows": 2464,
+      "uniqueIdentities": 2464,
       "baseIdentities": 405,
       "numberedIdentities": 0,
       "autographIdentities": 502,
       "relicIdentities": 180,
-      "exactFrontIdentities": 149,
-      "exactFrontCoveragePct": 6.05,
+      "exactFrontIdentities": 150,
+      "exactFrontCoveragePct": 6.09,
       "status": "needs-images"
     },
     {
@@ -968,14 +968,14 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 1660,
-      "uniqueIdentities": 1660,
+      "checklistRows": 1675,
+      "uniqueIdentities": 1675,
       "baseIdentities": 709,
       "numberedIdentities": 1,
-      "autographIdentities": 539,
+      "autographIdentities": 543,
       "relicIdentities": 36,
-      "exactFrontIdentities": 548,
-      "exactFrontCoveragePct": 33.01,
+      "exactFrontIdentities": 564,
+      "exactFrontCoveragePct": 33.67,
       "status": "needs-images"
     },
     {
@@ -1160,13 +1160,13 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 157,
-      "uniqueIdentities": 157,
+      "checklistRows": 161,
+      "uniqueIdentities": 161,
       "baseIdentities": 21,
       "numberedIdentities": 1,
       "autographIdentities": 7,
       "relicIdentities": 0,
-      "exactFrontIdentities": 157,
+      "exactFrontIdentities": 161,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     },
@@ -1224,13 +1224,13 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 127,
-      "uniqueIdentities": 127,
+      "checklistRows": 128,
+      "uniqueIdentities": 128,
       "baseIdentities": 6,
       "numberedIdentities": 4,
       "autographIdentities": 2,
       "relicIdentities": 1,
-      "exactFrontIdentities": 127,
+      "exactFrontIdentities": 128,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     }
@@ -1239,7 +1239,7 @@
     "ownedPriorityCollections": 77,
     "missingCollections": 15,
     "missingChecklists": 6,
-    "uniqueIdentities": 19133,
-    "exactFrontIdentities": 1662
+    "uniqueIdentities": 19155,
+    "exactFrontIdentities": 1688
   }
 }

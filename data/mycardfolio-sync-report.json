@@ -1,6 +1,6 @@
 {
   "runner": "sync_mycardfolio_v2.py",
-  "startedAt": "2026-10-05T10:33:45Z",
+  "startedAt": "2026-10-06T10:32:27Z",
   "endpoint": "https://mycardfolio.com/api/mcp",
   "setsPerProductPerRun": 150,
   "requestDelaySeconds": 1.05,
@@ -470,9 +470,9 @@
       "rowsAccumulated": 5
     },
     "panini-select-road-to-world-cup-2025-26": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
         {
           "year": "2025",
@@ -534,10 +534,10 @@
       "yearUsed": "2025",
       "productId": "ebay_6c15412d98",
       "productMatched": "Select Road to World Cup",
-      "knownSets": 6,
-      "processedSetsTotal": 6,
+      "knownSets": 7,
+      "processedSetsTotal": 7,
       "remainingSets": 0,
-      "rowsAccumulated": 6
+      "rowsAccumulated": 7
     },
     "panini-select-la-liga-2024-25": {
       "setsFetchedThisRun": 0,
@@ -2916,9 +2916,9 @@
       "rowsAccumulated": 1
     },
     "bowman-chrome-baseball-2026": {
-      "setsFetchedThisRun": 9,
-      "rowsAddedThisRun": 9,
-      "imagesAddedThisRun": 9,
+      "setsFetchedThisRun": 15,
+      "rowsAddedThisRun": 15,
+      "imagesAddedThisRun": 15,
       "candidateProducts": [
         {
           "year": "2026",
@@ -2980,10 +2980,10 @@
       "yearUsed": "2026",
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
-      "knownSets": 196,
-      "processedSetsTotal": 196,
+      "knownSets": 211,
+      "processedSetsTotal": 211,
       "remainingSets": 0,
-      "rowsAccumulated": 449
+      "rowsAccumulated": 464
     },
     "topps-finest-baseball-2026": {
       "setsFetchedThisRun": 0,
@@ -3126,9 +3126,9 @@
       "rowsAccumulated": 1
     },
     "topps-chrome-college-baseball-2026": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 4,
+      "rowsAddedThisRun": 4,
+      "imagesAddedThisRun": 4,
       "candidateProducts": [
         {
           "year": "2026",
@@ -3190,10 +3190,10 @@
       "yearUsed": "2026",
       "productId": "ebay_34a2a395f2",
       "productMatched": "Topps Chrome",
-      "knownSets": 95,
-      "processedSetsTotal": 95,
+      "knownSets": 99,
+      "processedSetsTotal": 99,
       "remainingSets": 0,
-      "rowsAccumulated": 157
+      "rowsAccumulated": 161
     },
     "topps-holiday-baseball-2025": {
       "setsFetchedThisRun": 0,
@@ -3371,6 +3371,13 @@
         },
         {
           "year": "2026",
+          "label": "Series 1 Topps Logo",
+          "score": 4,
+          "strict": false,
+          "productId": "ebay_1108cff41e"
+        },
+        {
+          "year": "2026",
           "label": "Series 1 Topps Profiles",
           "score": 4,
           "strict": false,
@@ -3382,13 +3389,6 @@
           "score": 4,
           "strict": false,
           "productId": "ing_68427da132"
-        },
-        {
-          "year": "2026",
-          "label": "topps series 1",
-          "score": 4,
-          "strict": false,
-          "productId": "ing_3b523a528f"
         }
       ],
       "error": "strict-product-not-found"
@@ -3411,6 +3411,13 @@
           "score": 11,
           "strict": true,
           "productId": "ebay_5eb056579a"
+        },
+        {
+          "year": "2026",
+          "label": "Chrome Logofractor Future Stars",
+          "score": 11,
+          "strict": true,
+          "productId": "ebay_0ae71caf9d"
         },
         {
           "year": "2026",
@@ -3446,13 +3453,6 @@
           "score": 7,
           "strict": false,
           "productId": "ebay_4cab1a5ea1"
-        },
-        {
-          "year": "2026",
-          "label": "MLB Topps Chrome",
-          "score": 4,
-          "strict": false,
-          "productId": "ebay_03f128f0b5"
         }
       ],
       "yearUsed": "2026",
@@ -3464,9 +3464,9 @@
       "rowsAccumulated": 2
     },
     "topps-chrome-football-2025": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
         {
           "year": "2025",
@@ -3528,15 +3528,15 @@
       "yearUsed": "2025",
       "productId": "ebay_5160e77ba2",
       "productMatched": "Chrome Football",
-      "knownSets": 39,
-      "processedSetsTotal": 39,
+      "knownSets": 40,
+      "processedSetsTotal": 40,
       "remainingSets": 0,
-      "rowsAccumulated": 91
+      "rowsAccumulated": 92
     },
     "topps-signature-class-football-2025": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
         {
           "year": "2025",
@@ -3598,10 +3598,10 @@
       "yearUsed": "2025",
       "productId": "ebay_b2ae59b447",
       "productMatched": "Topps Signature Class",
-      "knownSets": 4,
-      "processedSetsTotal": 4,
+      "knownSets": 5,
+      "processedSetsTotal": 5,
       "remainingSets": 0,
-      "rowsAccumulated": 7
+      "rowsAccumulated": 8
     },
     "topps-resurgence-football-2025": {
       "setsFetchedThisRun": 0,
@@ -3855,6 +3855,13 @@
         },
         {
           "year": "2025",
+          "label": "Panini Select Football",
+          "score": 4,
+          "strict": true,
+          "productId": "ebay_1c57d4e746"
+        },
+        {
+          "year": "2025",
           "label": "1955 Bowman Football",
           "score": -1,
           "strict": true,
@@ -3866,13 +3873,6 @@
           "score": -1,
           "strict": true,
           "productId": "ing_1b07ec9f91"
-        },
-        {
-          "year": "2025",
-          "label": "2025 Panini Select",
-          "score": -1,
-          "strict": true,
-          "productId": "ing_41b9126d35"
         }
       ],
       "yearUsed": "2025",
@@ -4621,9 +4621,9 @@
       "rowsAccumulated": 1
     },
     "topps-now-soccer-2026": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
         {
           "year": "2026",
@@ -4685,10 +4685,10 @@
       "yearUsed": "2026",
       "productId": "ebay_14edd5b886",
       "productMatched": "Now",
-      "knownSets": 94,
-      "processedSetsTotal": 94,
+      "knownSets": 95,
+      "processedSetsTotal": 95,
       "remainingSets": 0,
-      "rowsAccumulated": 127
+      "rowsAccumulated": 128
     },
     "topps-archives-snapshots-baseball-2021": {
       "setsFetchedThisRun": 0,
@@ -4761,10 +4761,17 @@
       "rowsAccumulated": 3
     },
     "topps-now-wbc-2026": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
+        {
+          "year": "2026",
+          "label": "Now World Baseball Classic",
+          "score": 18,
+          "strict": true,
+          "productId": "ebay_97dfdda8dc"
+        },
         {
           "year": "2026",
           "label": "Topps Now",
@@ -4813,22 +4820,17 @@
           "score": 7,
           "strict": false,
           "productId": "ebay_3bf20a7e16"
-        },
-        {
-          "year": "2026",
-          "label": "MLB Topps NOW",
-          "score": 4,
-          "strict": true,
-          "productId": "ebay_b08f24a4d3"
         }
       ],
+      "purgedRowsAfterProductChange": 15,
+      "purgedImagesAfterProductChange": 15,
       "yearUsed": "2026",
-      "productId": "ebay_87fe0a00b6",
-      "productMatched": "Topps Now",
-      "knownSets": 12,
-      "processedSetsTotal": 12,
+      "productId": "ebay_97dfdda8dc",
+      "productMatched": "Now World Baseball Classic",
+      "knownSets": 1,
+      "processedSetsTotal": 1,
       "remainingSets": 0,
-      "rowsAccumulated": 15
+      "rowsAccumulated": 1
     },
     "topps-chrome-basketball-2025-26": {
       "setsFetchedThisRun": 0,
@@ -6375,9 +6377,9 @@
       "error": "strict-product-not-found"
     }
   },
-  "finishedAt": "2026-10-05T10:36:24Z",
+  "finishedAt": "2026-10-06T10:35:51Z",
   "collectionsWritten": 58,
-  "rowsWritten": 1845,
-  "exactFrontsWritten": 1829,
-  "runtimeSeconds": 159.2
+  "rowsWritten": 1854,
+  "exactFrontsWritten": 1838,
+  "runtimeSeconds": 204.2
 }

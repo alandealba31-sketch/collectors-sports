@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T10:36:26.987Z",
+  "generatedAt": "2026-10-06T10:35:54.369Z",
   "scriptFilesEvaluated": 54,
   "scriptFailures": [
     {
@@ -9,44 +9,44 @@
   ],
   "collectionsWithChecklist": 76,
   "collectionRecords": 91,
-  "searchableIdentities": 22716,
+  "searchableIdentities": 22724,
   "bySport": {
-    "NFL": 6236,
-    "Soccer": 5187,
+    "NFL": 6238,
+    "Soccer": 5188,
     "NBA": 4669,
-    "MLB": 3339,
+    "MLB": 3344,
     "WWE": 1323,
     "UFC": 947,
     "Tennis": 780,
     "F1": 235
   },
-  "verifiedExactFrontRecords": 1847,
-  "approximateUniqueExactFrontIdentities": 1846,
-  "searchableIdentitiesWithExactFront": 2250,
-  "exactFrontCoveragePct": 9.9,
+  "verifiedExactFrontRecords": 1856,
+  "approximateUniqueExactFrontIdentities": 1855,
+  "searchableIdentitiesWithExactFront": 2262,
+  "exactFrontCoveragePct": 9.95,
   "topCollections": [
     {
       "id": "topps-chrome-football-2025",
       "name": "Chrome Football 2025",
       "sport": "NFL",
-      "rows": 2463,
-      "identities": 2463,
+      "rows": 2464,
+      "identities": 2464,
       "coverage": "expanded-structured"
     },
     {
       "id": "bowman-chrome-baseball-2026",
       "name": "Bowman Chrome 2026",
       "sport": "MLB",
-      "rows": 1660,
-      "identities": 1660,
+      "rows": 1675,
+      "identities": 1675,
       "coverage": "expanded-structured"
     },
     {
       "id": "topps-signature-class-football-2025",
       "name": "Signature Class NFL 2025",
       "sport": "NFL",
-      "rows": 1496,
-      "identities": 1496,
+      "rows": 1497,
+      "identities": 1497,
       "coverage": "expanded-structured"
     },
     {
@@ -245,8 +245,8 @@
       "id": "topps-chrome-college-baseball-2026",
       "name": "Chrome College Baseball 2026",
       "sport": "MLB",
-      "rows": 157,
-      "identities": 157,
+      "rows": 161,
+      "identities": 161,
       "coverage": "expanded-structured"
     },
     {
@@ -285,8 +285,8 @@
       "id": "topps-now-soccer-2026",
       "name": "Soccer Topps NOW 2026",
       "sport": "Soccer",
-      "rows": 127,
-      "identities": 127,
+      "rows": 128,
+      "identities": 128,
       "coverage": "expanded-structured"
     },
     {
