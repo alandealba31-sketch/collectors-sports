@@ -3,9 +3,8 @@
     {
       "collectionId": "topps-now-mlb-2026",
       "rows": 0,
-      "wbcRows": 0,
-      "pageDeclared": 1185,
-      "status": "ok"
+      "status": "error",
+      "error": "404 Client Error: Not Found for url: https://www.halloflists.com/topps-now/2026"
     },
     {
       "collectionId": "topps-now-ufc-2026",

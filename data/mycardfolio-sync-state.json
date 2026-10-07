@@ -14,6 +14,7 @@
       "processedSets": [
         "ebay_006762944d",
         "ebay_01e6cd6956",
+        "ebay_038ed2f94b",
         "ebay_051badb9be",
         "ebay_05567da99a",
         "ebay_05570ebff2",
@@ -46,6 +47,7 @@
         "ebay_22c4adc6c5",
         "ebay_23300cf6e8",
         "ebay_250c8f88ff",
+        "ebay_2807840207",
         "ebay_285fda5771",
         "ebay_2a178ba37c",
         "ebay_2a2eb6fde0",
@@ -62,6 +64,8 @@
         "ebay_37632dcf4a",
         "ebay_3804d38fe4",
         "ebay_3b30deff0b",
+        "ebay_3b56b36da5",
+        "ebay_3e39c4cec2",
         "ebay_3ef2a8e189",
         "ebay_3f0a58a0e6",
         "ebay_415a7b85be",
@@ -84,6 +88,7 @@
         "ebay_54eebd1e71",
         "ebay_55b38ca67b",
         "ebay_56c6b43c67",
+        "ebay_5732265a4c",
         "ebay_58a5f0f9ad",
         "ebay_5b27e47b26",
         "ebay_5b47b745a8",
@@ -103,8 +108,10 @@
         "ebay_6b030e587e",
         "ebay_6b037a1a65",
         "ebay_6bcd25f678",
+        "ebay_6cdc631a91",
         "ebay_6db771cf2b",
         "ebay_705c712f42",
+        "ebay_706087976a",
         "ebay_716e71fc1e",
         "ebay_71bd9a92f0",
         "ebay_725a0779ff",
@@ -115,6 +122,7 @@
         "ebay_78529b6ea4",
         "ebay_78838618a3",
         "ebay_798d016894",
+        "ebay_7a85b76250",
         "ebay_7ba853e7d6",
         "ebay_7cd0fe424e",
         "ebay_7cd513f2b1",
@@ -131,8 +139,10 @@
         "ebay_870d7cfc5a",
         "ebay_886331e511",
         "ebay_88bd8727de",
+        "ebay_8958536dc2",
         "ebay_8adc46d28a",
         "ebay_8bbd9aa666",
+        "ebay_8e44e1cfb8",
         "ebay_913652dade",
         "ebay_9496f94ad8",
         "ebay_9664f893f2",
@@ -170,12 +180,14 @@
         "ebay_ba91256a5b",
         "ebay_baa672bfcb",
         "ebay_bc639ad97b",
+        "ebay_bc9b2f8c94",
         "ebay_be5d1a0f61",
         "ebay_c120baf3ea",
         "ebay_c257f6e6cf",
         "ebay_c2933377e8",
         "ebay_c29af7ef19",
         "ebay_c9491b4f63",
+        "ebay_ca4d1d7eda",
         "ebay_ca73516c58",
         "ebay_caf233943e",
         "ebay_cea263abe1",
@@ -208,6 +220,7 @@
         "ebay_eabfc5f497",
         "ebay_ebf891ac16",
         "ebay_ec983850c1",
+        "ebay_edc1d307c8",
         "ebay_ede40d0fe6",
         "ebay_eea815da0f",
         "ebay_eedbcdff41",
@@ -227,7 +240,7 @@
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
       "yearUsed": "2026",
-      "knownSets": 211
+      "knownSets": 224
     },
     "topps-holiday-baseball-2025": {
       "processedSets": [
@@ -487,91 +500,12 @@
     },
     "topps-chrome-wwe-2026": {
       "processedSets": [
-        "ebay_01c5d7c4a3",
-        "ebay_027222fa2a",
-        "ebay_03ec8f5550",
-        "ebay_048666f356",
-        "ebay_0739922e4e",
-        "ebay_08137d4061",
-        "ebay_185628b7c3",
-        "ebay_1997e53a1b",
-        "ebay_1a3787dce6",
-        "ebay_1a663eede3",
-        "ebay_1d97ed7f58",
-        "ebay_2413ec6097",
-        "ebay_25cef0be63",
-        "ebay_26c82a54be",
-        "ebay_30400b3d19",
-        "ebay_362f416edd",
-        "ebay_38380e43f4",
-        "ebay_3f136ba945",
-        "ebay_42dfd7cbea",
-        "ebay_42f1928575",
-        "ebay_47347cb940",
-        "ebay_484cc7ed1f",
-        "ebay_490995e68e",
-        "ebay_4ee4cfb6bc",
-        "ebay_4f0dbb9f1e",
-        "ebay_54a31dc15f",
-        "ebay_5500b9bfa9",
-        "ebay_65698d8c8e",
-        "ebay_6b1e5eceae",
-        "ebay_6dc619fcf5",
-        "ebay_705bb76098",
-        "ebay_7de85302ba",
-        "ebay_82c0d46766",
-        "ebay_837bb9336f",
-        "ebay_8897c4a811",
-        "ebay_8fd1e30399",
-        "ebay_8fe55099d0",
-        "ebay_922148dc03",
-        "ebay_92a0489fae",
-        "ebay_9583ff8935",
-        "ebay_964841070c",
-        "ebay_978ea164ad",
-        "ebay_98deb58d82",
-        "ebay_9a3502fb9f",
-        "ebay_9de93104bf",
-        "ebay_9ef34fa7ae",
-        "ebay_9fc80f9eb9",
-        "ebay_a0afaa7d37",
-        "ebay_a615ce35a5",
-        "ebay_a8cf229a17",
-        "ebay_a8d8d75e15",
-        "ebay_aafc6b0577",
-        "ebay_acbdb6e319",
-        "ebay_adb5dc5797",
-        "ebay_afd4751c73",
-        "ebay_b284130497",
-        "ebay_b7721fcbd1",
-        "ebay_b9f01be106",
-        "ebay_ba423dd04b",
-        "ebay_bf0004f39f",
-        "ebay_bf6740d3c8",
-        "ebay_c34a32e11c",
-        "ebay_c51a164bc7",
-        "ebay_c805577c63",
-        "ebay_c81578d091",
-        "ebay_da1087b2fa",
-        "ebay_da8270abd5",
-        "ebay_db61105ed7",
-        "ebay_dc4aa7e823",
-        "ebay_e01b5ea64b",
-        "ebay_e2fd77b918",
-        "ebay_e5e1897b55",
-        "ebay_e889b2c748",
-        "ebay_eaf17a1018",
-        "ebay_ee0826616a",
-        "ebay_f022823dea",
-        "ebay_f069866306",
-        "ebay_f51e4c3029",
-        "ebay_f80f51a910",
-        "ebay_fd20901f08"
+        "ebay_59cbbf1786"
       ],
-      "productMatched": "Chrome WWE",
-      "productId": "ebay_48e2c60786",
+      "productMatched": "Topps Chrome WWE NXT Autographs",
+      "productId": "ebay_f258e2bb48",
       "yearUsed": "2026",
-      "knownSets": 80
+      "knownSets": 1
     },
     "topps-chrome-ucc-2025-26": {
       "processedSets": [
@@ -641,6 +575,7 @@
         "ebay_23e5af5195",
         "ebay_38c84eb738",
         "ebay_4e9aaaad97",
+        "ebay_67137a796a",
         "ebay_69ffcdaf3a",
         "ebay_6a8e552bf6",
         "ebay_6df870c28f",
@@ -662,7 +597,7 @@
       "productMatched": "Finest Uefa Club Competitions",
       "productId": "ebay_16615300e8",
       "yearUsed": "2025",
-      "knownSets": 26
+      "knownSets": 27
     },
     "topps-premier-league-2025-26": {
       "processedSets": [
@@ -676,17 +611,27 @@
     },
     "topps-premier-league-2026-27": {
       "processedSets": [
+        "ebay_0055773353",
         "ebay_0787692b36",
         "ebay_0e6c64bd33",
+        "ebay_0f52242b5a",
+        "ebay_12a5e4fe1d",
+        "ebay_1b233d8ef8",
         "ebay_23888956c2",
         "ebay_2c08bb6288",
+        "ebay_2dbafc8827",
         "ebay_3606d1bf75",
         "ebay_3c4ccbe9ca",
         "ebay_3cf7fd1eb0",
         "ebay_422929fc6b",
         "ebay_42cd34d1b9",
+        "ebay_4825f9b8a6",
+        "ebay_4919508e7a",
         "ebay_538643ad24",
+        "ebay_5445476496",
         "ebay_58c04cb4cb",
+        "ebay_5d977f1789",
+        "ebay_5eb1d2a14e",
         "ebay_6172f66282",
         "ebay_6535bbc892",
         "ebay_69c685f0b9",
@@ -697,12 +642,15 @@
         "ebay_827ce6612e",
         "ebay_84e8998bb0",
         "ebay_9468a29656",
+        "ebay_9c857cb6ab",
+        "ebay_a7c90b38a6",
         "ebay_b051c10b3e",
         "ebay_b75e614a27",
         "ebay_bec09c39a9",
         "ebay_c007ba64db",
         "ebay_c61c606d38",
         "ebay_cb834b547b",
+        "ebay_db44173c4d",
         "ebay_e03ef9e4e8",
         "ebay_e5c790e704",
         "ebay_e7587d95f3",
@@ -713,7 +661,7 @@
       "productMatched": "Premier League",
       "productId": "ebay_97821cda88",
       "yearUsed": "2026",
-      "knownSets": 33
+      "knownSets": 46
     },
     "topps-chrome-premier-league-2026": {
       "processedSets": [
@@ -994,6 +942,7 @@
     "topps-now-wwe-2026": {
       "processedSets": [
         "ebay_0ae6a5e924",
+        "ebay_0e3a2ad2f5",
         "ebay_2d7522656a",
         "ebay_35e7c6fe44",
         "ebay_3a82f043cd",
@@ -1006,10 +955,11 @@
       "productId": "ebay_b9c76cb234",
       "productMatched": "Now WWE",
       "yearUsed": "2026",
-      "knownSets": 9
+      "knownSets": 10
     },
     "topps-now-soccer-2026": {
       "processedSets": [
+        "ebay_00485206eb",
         "ebay_08082be024",
         "ebay_083fdf25d7",
         "ebay_08f876a4d6",
@@ -1078,6 +1028,7 @@
         "ebay_a958ccbd3f",
         "ebay_a9b0669eb6",
         "ebay_b0e059023b",
+        "ebay_b96f9319e5",
         "ebay_baa2b5c905",
         "ebay_bce2be7dbb",
         "ebay_be8d62bb6b",
@@ -1092,6 +1043,7 @@
         "ebay_dc0ec394b4",
         "ebay_dedc787d43",
         "ebay_e397cc0ded",
+        "ebay_e4f5d65887",
         "ebay_e84d722ef8",
         "ebay_e882a93201",
         "ebay_e8899457f4",
@@ -1109,7 +1061,7 @@
       "productId": "ebay_14edd5b886",
       "productMatched": "Now",
       "yearUsed": "2026",
-      "knownSets": 95
+      "knownSets": 98
     },
     "panini-international-england-2026": {
       "processedSets": []
@@ -1159,12 +1111,19 @@
       "processedSets": []
     },
     "topps-man-city-collector-tin-2026-27": {
-      "processedSets": []
+      "processedSets": [
+        "ebay_6c4473c334"
+      ],
+      "productId": "ebay_f3ed48a232",
+      "productMatched": "FC Manchester City Collector Gold Vault",
+      "yearUsed": "2026",
+      "knownSets": 1
     },
     "panini-select-road-to-world-cup-2025-26": {
       "processedSets": [
         "ebay_4eb9ab5006",
         "ebay_58eede370b",
+        "ebay_6bc7c05d03",
         "ebay_90791a84b7",
         "ebay_a88a33f7bd",
         "ebay_aa0d1bd8f4",
@@ -1174,7 +1133,7 @@
       "productId": "ebay_6c15412d98",
       "productMatched": "Select Road to World Cup",
       "yearUsed": "2025",
-      "knownSets": 7
+      "knownSets": 8
     },
     "topps-signature-class-basketball-2025-26": {
       "processedSets": [
@@ -1202,12 +1161,13 @@
       "processedSets": [
         "ebay_802a294425",
         "ebay_8825a805b4",
+        "ebay_ac56d123f6",
         "ebay_e0d01efc08"
       ],
       "productId": "ebay_17c5242794",
       "productMatched": "Now MLS",
       "yearUsed": "2026",
-      "knownSets": 3
+      "knownSets": 4
     },
     "topps-now-fc-barcelona-2026-27": {
       "processedSets": []
@@ -1415,12 +1375,13 @@
         "ebay_ae9637f04c",
         "ebay_d1cf1303bf",
         "ebay_eff79d7a3d",
-        "ebay_f0cf4924ca"
+        "ebay_f0cf4924ca",
+        "ebay_f59acbb8fe"
       ],
       "productId": "ebay_67fa4127be",
       "productMatched": "Football",
       "yearUsed": "2025",
-      "knownSets": 16
+      "knownSets": 17
     },
     "topps-signature-class-basketball-2026": {
       "processedSets": [

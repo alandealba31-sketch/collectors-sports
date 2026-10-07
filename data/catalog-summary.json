@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T10:35:54.369Z",
+  "generatedAt": "2026-10-07T10:37:02.025Z",
   "scriptFilesEvaluated": 54,
   "scriptFailures": [
     {
@@ -9,21 +9,21 @@
   ],
   "collectionsWithChecklist": 76,
   "collectionRecords": 91,
-  "searchableIdentities": 22724,
+  "searchableIdentities": 22572,
   "bySport": {
-    "NFL": 6238,
-    "Soccer": 5188,
+    "NFL": 6241,
+    "Soccer": 5209,
     "NBA": 4669,
-    "MLB": 3344,
-    "WWE": 1323,
+    "MLB": 3357,
+    "WWE": 1134,
     "UFC": 947,
     "Tennis": 780,
     "F1": 235
   },
-  "verifiedExactFrontRecords": 1856,
-  "approximateUniqueExactFrontIdentities": 1855,
-  "searchableIdentitiesWithExactFront": 2262,
-  "exactFrontCoveragePct": 9.95,
+  "verifiedExactFrontRecords": 1704,
+  "approximateUniqueExactFrontIdentities": 1703,
+  "searchableIdentitiesWithExactFront": 1991,
+  "exactFrontCoveragePct": 8.82,
   "topCollections": [
     {
       "id": "topps-chrome-football-2025",
@@ -37,8 +37,8 @@
       "id": "bowman-chrome-baseball-2026",
       "name": "Bowman Chrome 2026",
       "sport": "MLB",
-      "rows": 1675,
-      "identities": 1675,
+      "rows": 1688,
+      "identities": 1688,
       "coverage": "expanded-structured"
     },
     {
@@ -58,19 +58,19 @@
       "coverage": "expanded-structured"
     },
     {
-      "id": "topps-chrome-wwe-2026",
-      "name": "Chrome WWE 2026",
-      "sport": "WWE",
-      "rows": 1302,
-      "identities": 1302,
-      "coverage": "expanded-structured"
-    },
-    {
       "id": "panini-select-basketball-2024-25",
       "name": "Select NBA 24/25",
       "sport": "NBA",
       "rows": 1169,
       "identities": 1169,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-chrome-wwe-2026",
+      "name": "Chrome WWE 2026",
+      "sport": "WWE",
+      "rows": 1111,
+      "identities": 1111,
       "coverage": "expanded-structured"
     },
     {
@@ -149,8 +149,8 @@
       "id": "panini-select-road-to-world-cup-2025-26",
       "name": "Select Road to World Cup 25/26",
       "sport": "Soccer",
-      "rows": 466,
-      "identities": 466,
+      "rows": 467,
+      "identities": 467,
       "coverage": "base-complete-expanded"
     },
     {
@@ -285,8 +285,8 @@
       "id": "topps-now-soccer-2026",
       "name": "Soccer Topps NOW 2026",
       "sport": "Soccer",
-      "rows": 128,
-      "identities": 128,
+      "rows": 131,
+      "identities": 131,
       "coverage": "expanded-structured"
     },
     {
@@ -354,6 +354,14 @@
       "coverage": "full-checklist"
     },
     {
+      "id": "topps-premier-league-2026-27",
+      "name": "Premier League 26/27",
+      "sport": "Soccer",
+      "rows": 57,
+      "identities": 57,
+      "coverage": "expanded-structured"
+    },
+    {
       "id": "topps-real-madrid-collector-tin-2025-26",
       "name": "Real Madrid Tin 25/26",
       "sport": "Soccer",
@@ -397,29 +405,21 @@
       "id": "topps-finest-ucc-2025-26",
       "name": "Finest UEFA 25/26",
       "sport": "Soccer",
-      "rows": 52,
-      "identities": 52,
+      "rows": 53,
+      "identities": 53,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-man-city-collector-tin-2026-27",
+      "name": "Man City Tin 26/27",
+      "sport": "Soccer",
+      "rows": 50,
+      "identities": 50,
       "coverage": "expanded-structured"
     },
     {
       "id": "topps-chelsea-collector-tin-2026-27",
       "name": "Chelsea Collector Tin 26/27",
-      "sport": "Soccer",
-      "rows": 49,
-      "identities": 49,
-      "coverage": "full-checklist"
-    },
-    {
-      "id": "topps-man-city-collector-tin-2026-27",
-      "name": "Man City Collector Tin 26/27",
-      "sport": "Soccer",
-      "rows": 49,
-      "identities": 49,
-      "coverage": "full-checklist"
-    },
-    {
-      "id": "topps-man-utd-collector-tin-2026-27",
-      "name": "Man United Collector Tin 26/27",
       "sport": "Soccer",
       "rows": 49,
       "identities": 49,
