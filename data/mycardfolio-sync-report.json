@@ -1,6 +1,6 @@
 {
   "runner": "sync_mycardfolio_v2.py",
-  "startedAt": "2026-10-07T10:32:53Z",
+  "startedAt": "2026-10-08T10:34:40Z",
   "endpoint": "https://mycardfolio.com/api/mcp",
   "setsPerProductPerRun": 150,
   "requestDelaySeconds": 1.05,
@@ -470,9 +470,9 @@
       "rowsAccumulated": 5
     },
     "panini-select-road-to-world-cup-2025-26": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2025",
@@ -2060,9 +2060,9 @@
       "error": "strict-product-not-found"
     },
     "topps-man-city-collector-tin-2026-27": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -2782,9 +2782,9 @@
       "rowsAccumulated": 2
     },
     "topps-premier-league-2026-27": {
-      "setsFetchedThisRun": 13,
-      "rowsAddedThisRun": 14,
-      "imagesAddedThisRun": 14,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -2986,10 +2986,10 @@
       "yearUsed": "2026",
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
-      "knownSets": 224,
-      "processedSetsTotal": 224,
+      "knownSets": 237,
+      "processedSetsTotal": 237,
       "remainingSets": 0,
-      "rowsAccumulated": 477
+      "rowsAccumulated": 490
     },
     "topps-finest-baseball-2026": {
       "setsFetchedThisRun": 0,
@@ -3518,17 +3518,17 @@
         },
         {
           "year": "2025",
+          "label": "Bowman Chrome Football",
+          "score": 4,
+          "strict": true,
+          "productId": "ebay_6ce91bdca7"
+        },
+        {
+          "year": "2025",
           "label": "Chrome Football Fortune",
           "score": 4,
           "strict": true,
           "productId": "ebay_5cb836cc2c"
-        },
-        {
-          "year": "2025",
-          "label": "Chrome Football X-Fractor",
-          "score": 4,
-          "strict": true,
-          "productId": "ebay_71403241a1"
         }
       ],
       "yearUsed": "2025",
@@ -3820,9 +3820,9 @@
       "rowsAccumulated": 4
     },
     "panini-obsidian-football-2025": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 3,
-      "imagesAddedThisRun": 3,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2025",
@@ -4627,9 +4627,9 @@
       "rowsAccumulated": 1
     },
     "topps-now-soccer-2026": {
-      "setsFetchedThisRun": 3,
-      "rowsAddedThisRun": 3,
-      "imagesAddedThisRun": 3,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
         {
           "year": "2026",
@@ -4691,10 +4691,10 @@
       "yearUsed": "2026",
       "productId": "ebay_14edd5b886",
       "productMatched": "Now",
-      "knownSets": 98,
-      "processedSetsTotal": 98,
+      "knownSets": 99,
+      "processedSetsTotal": 99,
       "remainingSets": 0,
-      "rowsAccumulated": 131
+      "rowsAccumulated": 132
     },
     "topps-archives-snapshots-baseball-2021": {
       "setsFetchedThisRun": 0,
@@ -5117,9 +5117,9 @@
       "rowsAccumulated": 1
     },
     "topps-chrome-wwe-2026": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -5178,8 +5178,6 @@
           "productId": "ebay_3766285637"
         }
       ],
-      "purgedRowsAfterProductChange": 192,
-      "purgedImagesAfterProductChange": 192,
       "yearUsed": "2026",
       "productId": "ebay_f258e2bb48",
       "productMatched": "Topps Chrome WWE NXT Autographs",
@@ -5189,9 +5187,9 @@
       "rowsAccumulated": 1
     },
     "topps-now-wwe-2026": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 2,
-      "imagesAddedThisRun": 2,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -5329,9 +5327,9 @@
       "rowsAccumulated": 23
     },
     "topps-finest-ucc-2025-26": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2025",
@@ -6121,9 +6119,9 @@
       "rowsAccumulated": 3
     },
     "topps-now-mls-2026": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -6383,9 +6381,9 @@
       "error": "strict-product-not-found"
     }
   },
-  "finishedAt": "2026-10-07T10:36:59Z",
+  "finishedAt": "2026-10-08T10:37:51Z",
   "collectionsWritten": 59,
-  "rowsWritten": 1702,
-  "exactFrontsWritten": 1686,
-  "runtimeSeconds": 245.8
+  "rowsWritten": 1716,
+  "exactFrontsWritten": 1700,
+  "runtimeSeconds": 191.1
 }

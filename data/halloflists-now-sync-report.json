@@ -3,8 +3,9 @@
     {
       "collectionId": "topps-now-mlb-2026",
       "rows": 0,
-      "status": "error",
-      "error": "404 Client Error: Not Found for url: https://www.halloflists.com/topps-now/2026"
+      "wbcRows": 0,
+      "pageDeclared": 1185,
+      "status": "ok"
     },
     {
       "collectionId": "topps-now-ufc-2026",
@@ -16,7 +17,7 @@
       "collectionId": "topps-now-nfl-2026",
       "rows": 0,
       "status": "error",
-      "error": "500 Server Error: Internal Server Error for url: https://www.halloflists.com/topps-now/catalog/nfl"
+      "error": "no 2026 archive rows parsed"
     },
     {
       "collectionId": "topps-now-wwe-2026",
@@ -52,7 +53,7 @@
       "collectionId": "topps-now-fc-barcelona-2026-27",
       "rows": 0,
       "status": "error",
-      "error": "500 Server Error: Internal Server Error for url: https://www.halloflists.com/topps-now/catalog/fc-barcelona"
+      "error": "no 2026 archive rows parsed"
     },
     {
       "collectionId": "topps-now-ucl-2026-27",
