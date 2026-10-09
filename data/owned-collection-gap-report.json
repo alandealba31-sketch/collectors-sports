@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T10:37:55.059Z",
+  "generatedAt": "2026-10-09T10:37:34.614Z",
   "source": "data/user-collection-priority.json",
   "collections": [
     {
@@ -515,22 +515,6 @@
       "status": "needs-images"
     },
     {
-      "collectionId": "topps-update-baseball-2026",
-      "name": "Topps Update Series Baseball",
-      "season": "2026",
-      "ownedRows": 0,
-      "catalogPresent": true,
-      "checklistRows": 0,
-      "uniqueIdentities": 0,
-      "baseIdentities": 0,
-      "numberedIdentities": 0,
-      "autographIdentities": 0,
-      "relicIdentities": 0,
-      "exactFrontIdentities": 0,
-      "exactFrontCoveragePct": 0,
-      "status": "missing-checklist"
-    },
-    {
       "collectionId": "topps-stadium-club-ufc-2026",
       "name": "Topps Stadium Club UFC",
       "season": "2026",
@@ -968,14 +952,14 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 1701,
-      "uniqueIdentities": 1701,
+      "checklistRows": 1705,
+      "uniqueIdentities": 1705,
       "baseIdentities": 709,
-      "numberedIdentities": 1,
+      "numberedIdentities": 2,
       "autographIdentities": 544,
       "relicIdentities": 36,
-      "exactFrontIdentities": 592,
-      "exactFrontCoveragePct": 34.8,
+      "exactFrontIdentities": 596,
+      "exactFrontCoveragePct": 34.96,
       "status": "needs-images"
     },
     {
@@ -1171,6 +1155,22 @@
       "status": "covered"
     },
     {
+      "collectionId": "topps-update-baseball-2026",
+      "name": "Topps Update Series Baseball",
+      "season": "2026",
+      "ownedRows": 0,
+      "catalogPresent": true,
+      "checklistRows": 1,
+      "uniqueIdentities": 1,
+      "baseIdentities": 0,
+      "numberedIdentities": 0,
+      "autographIdentities": 0,
+      "relicIdentities": 0,
+      "exactFrontIdentities": 1,
+      "exactFrontCoveragePct": 100,
+      "status": "covered"
+    },
+    {
       "collectionId": "topps-chrome-logofractor-baseball-2026",
       "name": "Topps Chrome Logofractor Baseball",
       "season": "2026",
@@ -1224,13 +1224,13 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 132,
-      "uniqueIdentities": 132,
+      "checklistRows": 134,
+      "uniqueIdentities": 134,
       "baseIdentities": 6,
       "numberedIdentities": 5,
       "autographIdentities": 2,
       "relicIdentities": 1,
-      "exactFrontIdentities": 132,
+      "exactFrontIdentities": 134,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     }
@@ -1238,8 +1238,8 @@
   "totals": {
     "ownedPriorityCollections": 77,
     "missingCollections": 15,
-    "missingChecklists": 6,
-    "uniqueIdentities": 19204,
-    "exactFrontIdentities": 1739
+    "missingChecklists": 5,
+    "uniqueIdentities": 19211,
+    "exactFrontIdentities": 1746
   }
 }

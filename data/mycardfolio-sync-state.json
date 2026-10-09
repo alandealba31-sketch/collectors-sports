@@ -115,11 +115,13 @@
         "ebay_6bcd25f678",
         "ebay_6cdc631a91",
         "ebay_6db771cf2b",
+        "ebay_6ea3526cb7",
         "ebay_705c712f42",
         "ebay_706087976a",
         "ebay_70e38351f2",
         "ebay_716e71fc1e",
         "ebay_71bd9a92f0",
+        "ebay_721e7b869b",
         "ebay_725a0779ff",
         "ebay_7417978bfa",
         "ebay_74b273fe0d",
@@ -130,6 +132,7 @@
         "ebay_78838618a3",
         "ebay_798d016894",
         "ebay_7a85b76250",
+        "ebay_7b77c6a155",
         "ebay_7ba853e7d6",
         "ebay_7cd0fe424e",
         "ebay_7cd513f2b1",
@@ -230,6 +233,7 @@
         "ebay_e902040d2d",
         "ebay_eabfc5f497",
         "ebay_ebf891ac16",
+        "ebay_ec952e2b6f",
         "ebay_ec983850c1",
         "ebay_edc1d307c8",
         "ebay_ede40d0fe6",
@@ -253,7 +257,7 @@
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
       "yearUsed": "2026",
-      "knownSets": 237
+      "knownSets": 241
     },
     "topps-holiday-baseball-2025": {
       "processedSets": [
@@ -274,8 +278,13 @@
       "knownSets": 10
     },
     "topps-update-baseball-2026": {
-      "processedSets": [],
-      "productMatched": "Chrome Update"
+      "processedSets": [
+        "ebay_cf92678546"
+      ],
+      "productMatched": "Topps Update",
+      "productId": "ebay_89b97038f2",
+      "yearUsed": "2026",
+      "knownSets": 1
     },
     "topps-chrome-logofractor-baseball-2026": {
       "processedSets": [
@@ -983,6 +992,7 @@
         "ebay_11acbd633d",
         "ebay_154493e86f",
         "ebay_17d8358ff2",
+        "ebay_19b1e19705",
         "ebay_19eabd0ecc",
         "ebay_2060170cac",
         "ebay_2134d7fd62",
@@ -1046,6 +1056,7 @@
         "ebay_bce2be7dbb",
         "ebay_be8d62bb6b",
         "ebay_c048c01b01",
+        "ebay_c50df287d5",
         "ebay_c6aecf7d57",
         "ebay_c8c1f28352",
         "ebay_ccafff0599",
@@ -1075,7 +1086,7 @@
       "productId": "ebay_14edd5b886",
       "productMatched": "Now",
       "yearUsed": "2026",
-      "knownSets": 99
+      "knownSets": 101
     },
     "panini-international-england-2026": {
       "processedSets": []

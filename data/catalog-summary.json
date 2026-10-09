@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T10:37:54.718Z",
+  "generatedAt": "2026-10-09T10:37:34.303Z",
   "scriptFilesEvaluated": 54,
   "scriptFailures": [
     {
@@ -7,23 +7,23 @@
       "error": "document is not defined"
     }
   ],
-  "collectionsWithChecklist": 76,
+  "collectionsWithChecklist": 77,
   "collectionRecords": 91,
-  "searchableIdentities": 22586,
+  "searchableIdentities": 22593,
   "bySport": {
     "NFL": 6241,
-    "Soccer": 5210,
+    "Soccer": 5212,
     "NBA": 4669,
-    "MLB": 3370,
+    "MLB": 3375,
     "WWE": 1134,
     "UFC": 947,
     "Tennis": 780,
     "F1": 235
   },
-  "verifiedExactFrontRecords": 1718,
-  "approximateUniqueExactFrontIdentities": 1717,
-  "searchableIdentitiesWithExactFront": 2005,
-  "exactFrontCoveragePct": 8.88,
+  "verifiedExactFrontRecords": 1725,
+  "approximateUniqueExactFrontIdentities": 1724,
+  "searchableIdentitiesWithExactFront": 2012,
+  "exactFrontCoveragePct": 8.91,
   "topCollections": [
     {
       "id": "topps-chrome-football-2025",
@@ -37,8 +37,8 @@
       "id": "bowman-chrome-baseball-2026",
       "name": "Bowman Chrome 2026",
       "sport": "MLB",
-      "rows": 1701,
-      "identities": 1701,
+      "rows": 1705,
+      "identities": 1705,
       "coverage": "expanded-structured"
     },
     {
@@ -285,8 +285,8 @@
       "id": "topps-now-soccer-2026",
       "name": "Soccer Topps NOW 2026",
       "sport": "Soccer",
-      "rows": 132,
-      "identities": 132,
+      "rows": 134,
+      "identities": 134,
       "coverage": "expanded-structured"
     },
     {

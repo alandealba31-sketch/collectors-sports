@@ -1,6 +1,6 @@
 {
   "provider": "TCDB expanded exact-front resolver",
-  "startedAt": "2026-10-08T10:37:53Z",
+  "startedAt": "2026-10-09T10:37:33Z",
   "maxNew": 4000,
   "maxRowsConsidered": 500,
   "collections": {
@@ -22,7 +22,7 @@
       }
     }
   },
-  "finishedAt": "2026-10-08T10:37:53Z",
+  "finishedAt": "2026-10-09T10:37:33Z",
   "manifestExactFronts": 0,
   "newExactFrontsThisRun": 0,
   "rowsConsidered": 500
