@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T10:37:34.303Z",
+  "generatedAt": "2026-10-10T10:33:34.653Z",
   "scriptFilesEvaluated": 54,
   "scriptFailures": [
     {
@@ -9,36 +9,36 @@
   ],
   "collectionsWithChecklist": 77,
   "collectionRecords": 91,
-  "searchableIdentities": 22593,
+  "searchableIdentities": 22625,
   "bySport": {
-    "NFL": 6241,
-    "Soccer": 5212,
+    "NFL": 6244,
+    "Soccer": 5225,
     "NBA": 4669,
-    "MLB": 3375,
+    "MLB": 3391,
     "WWE": 1134,
     "UFC": 947,
     "Tennis": 780,
     "F1": 235
   },
-  "verifiedExactFrontRecords": 1725,
-  "approximateUniqueExactFrontIdentities": 1724,
-  "searchableIdentitiesWithExactFront": 2012,
-  "exactFrontCoveragePct": 8.91,
+  "verifiedExactFrontRecords": 1757,
+  "approximateUniqueExactFrontIdentities": 1756,
+  "searchableIdentitiesWithExactFront": 2045,
+  "exactFrontCoveragePct": 9.04,
   "topCollections": [
     {
       "id": "topps-chrome-football-2025",
       "name": "Chrome Football 2025",
       "sport": "NFL",
-      "rows": 2464,
-      "identities": 2464,
+      "rows": 2465,
+      "identities": 2465,
       "coverage": "expanded-structured"
     },
     {
       "id": "bowman-chrome-baseball-2026",
       "name": "Bowman Chrome 2026",
       "sport": "MLB",
-      "rows": 1705,
-      "identities": 1705,
+      "rows": 1719,
+      "identities": 1719,
       "coverage": "expanded-structured"
     },
     {
@@ -202,17 +202,17 @@
       "coverage": "expanded-structured"
     },
     {
-      "id": "topps-chrome-f1-2026",
-      "name": "Chrome F1 2026",
-      "sport": "F1",
-      "rows": 201,
-      "identities": 201,
-      "coverage": "expanded-structured"
-    },
-    {
       "id": "topps-chrome-mls-2026",
       "name": "Chrome MLS 2026",
       "sport": "Soccer",
+      "rows": 202,
+      "identities": 202,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-chrome-f1-2026",
+      "name": "Chrome F1 2026",
+      "sport": "F1",
       "rows": 201,
       "identities": 201,
       "coverage": "expanded-structured"
@@ -245,8 +245,8 @@
       "id": "topps-chrome-college-baseball-2026",
       "name": "Chrome College Baseball 2026",
       "sport": "MLB",
-      "rows": 161,
-      "identities": 161,
+      "rows": 163,
+      "identities": 163,
       "coverage": "expanded-structured"
     },
     {
@@ -285,8 +285,8 @@
       "id": "topps-now-soccer-2026",
       "name": "Soccer Topps NOW 2026",
       "sport": "Soccer",
-      "rows": 134,
-      "identities": 134,
+      "rows": 138,
+      "identities": 138,
       "coverage": "expanded-structured"
     },
     {
@@ -330,6 +330,14 @@
       "coverage": "expanded-structured"
     },
     {
+      "id": "topps-premier-league-2026-27",
+      "name": "Premier League 26/27",
+      "sport": "Soccer",
+      "rows": 62,
+      "identities": 62,
+      "coverage": "expanded-structured"
+    },
+    {
       "id": "topps-liverpool-collector-tin-2025-26",
       "name": "Liverpool Collector Tin 25/26",
       "sport": "Soccer",
@@ -352,14 +360,6 @@
       "rows": 57,
       "identities": 57,
       "coverage": "full-checklist"
-    },
-    {
-      "id": "topps-premier-league-2026-27",
-      "name": "Premier League 26/27",
-      "sport": "Soccer",
-      "rows": 57,
-      "identities": 57,
-      "coverage": "expanded-structured"
     },
     {
       "id": "topps-real-madrid-collector-tin-2025-26",

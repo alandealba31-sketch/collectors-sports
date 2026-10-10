@@ -1,6 +1,6 @@
 {
   "runner": "sync_mycardfolio_v2.py",
-  "startedAt": "2026-10-09T10:33:59Z",
+  "startedAt": "2026-10-10T10:29:58Z",
   "endpoint": "https://mycardfolio.com/api/mcp",
   "setsPerProductPerRun": 150,
   "requestDelaySeconds": 1.05,
@@ -50,10 +50,31 @@
       "error": "strict-product-not-found"
     },
     "topps-chrome-mls-2026": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 2,
+      "rowsAddedThisRun": 2,
+      "imagesAddedThisRun": 2,
       "candidateProducts": [
+        {
+          "year": "2026",
+          "label": "Chrome MLS",
+          "score": 44,
+          "strict": true,
+          "productId": "ebay_3553355cdc"
+        },
+        {
+          "year": "2026",
+          "label": "Chrome MLS Patriotic Passion",
+          "score": 14,
+          "strict": true,
+          "productId": "ebay_d3b246d281"
+        },
+        {
+          "year": "2026",
+          "label": "Chrome MLS Wonderkids",
+          "score": 14,
+          "strict": true,
+          "productId": "ebay_7c96785977"
+        },
         {
           "year": "2026",
           "label": "Topps Chrome",
@@ -77,47 +98,28 @@
         },
         {
           "year": "2026",
+          "label": "MLS",
+          "score": 9,
+          "strict": false,
+          "productId": "ebay_05b21fdb24"
+        },
+        {
+          "year": "2026",
           "label": "Topps",
           "score": 7,
           "strict": false,
           "productId": "ing_666294998d"
-        },
-        {
-          "year": "2026",
-          "label": "MLS Chrome",
-          "score": 6,
-          "strict": true,
-          "productId": "ebay_3a58063125"
-        },
-        {
-          "year": "2026",
-          "label": "2025-2026 Topps Chrome",
-          "score": 4,
-          "strict": false,
-          "productId": "ing_acea0f1d9c"
-        },
-        {
-          "year": "2026",
-          "label": "2026 Topps Chrome Premier League",
-          "score": 4,
-          "strict": false,
-          "productId": "ebay_d48a402fbe"
-        },
-        {
-          "year": "2026",
-          "label": "Topps Chrome Premier League",
-          "score": 4,
-          "strict": false,
-          "productId": "ing_ecbd8773e5"
         }
       ],
+      "purgedRowsAfterProductChange": 1,
+      "purgedImagesAfterProductChange": 1,
       "yearUsed": "2026",
-      "productId": "ebay_3a58063125",
-      "productMatched": "MLS Chrome",
-      "knownSets": 1,
-      "processedSetsTotal": 1,
+      "productId": "ebay_3553355cdc",
+      "productMatched": "Chrome MLS",
+      "knownSets": 2,
+      "processedSetsTotal": 2,
       "remainingSets": 0,
-      "rowsAccumulated": 1
+      "rowsAccumulated": 2
     },
     "topps-chrome-ucc-2025-26": {
       "setsFetchedThisRun": 0,
@@ -260,9 +262,9 @@
       "rowsAccumulated": 2
     },
     "panini-obsidian-soccer-2025-26": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
         {
           "year": "2025",
@@ -324,10 +326,10 @@
       "yearUsed": "2025",
       "productId": "ebay_859390ad3c",
       "productMatched": "Obsidian Soccer",
-      "knownSets": 4,
-      "processedSetsTotal": 4,
+      "knownSets": 5,
+      "processedSetsTotal": 5,
       "remainingSets": 0,
-      "rowsAccumulated": 4
+      "rowsAccumulated": 5
     },
     "panini-pitch-kings-laliga-2025-26": {
       "setsFetchedThisRun": 0,
@@ -400,9 +402,9 @@
       "rowsAccumulated": 13
     },
     "panini-prizm-fifa-soccer-2025-26": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 2,
+      "rowsAddedThisRun": 2,
+      "imagesAddedThisRun": 2,
       "candidateProducts": [
         {
           "year": "2025",
@@ -464,10 +466,10 @@
       "yearUsed": "2025",
       "productId": "ebay_baafefb144",
       "productMatched": "Prizm FIFA Soccer",
-      "knownSets": 5,
-      "processedSetsTotal": 5,
+      "knownSets": 7,
+      "processedSetsTotal": 7,
       "remainingSets": 0,
-      "rowsAccumulated": 5
+      "rowsAccumulated": 7
     },
     "panini-select-road-to-world-cup-2025-26": {
       "setsFetchedThisRun": 0,
@@ -497,6 +499,13 @@
         },
         {
           "year": "2025",
+          "label": "Select Road to Fifa World",
+          "score": 19,
+          "strict": false,
+          "productId": "ebay_2eff0a4a43"
+        },
+        {
+          "year": "2025",
           "label": "Select Road To FIFA World C",
           "score": 19,
           "strict": false,
@@ -522,13 +531,6 @@
           "score": 16,
           "strict": true,
           "productId": "ebay_c405cb3b03"
-        },
-        {
-          "year": "2025",
-          "label": "Select Road to FIFA World Cup Select Future",
-          "score": 16,
-          "strict": true,
-          "productId": "ebay_d5f4efff12"
         }
       ],
       "yearUsed": "2025",
@@ -1724,17 +1726,17 @@
         },
         {
           "year": "2025",
+          "label": "Liverpool FC",
+          "score": -3,
+          "strict": true,
+          "productId": "ebay_17b0b51ecb"
+        },
+        {
+          "year": "2025",
           "label": "Liverpool World Greats",
           "score": -3,
           "strict": true,
           "productId": "ebay_be3952e577"
-        },
-        {
-          "year": "2025",
-          "label": "Real Madrid Collectors Tin",
-          "score": -3,
-          "strict": false,
-          "productId": "ebay_8e7c2ed7c9"
         }
       ],
       "error": "strict-product-not-found"
@@ -2782,9 +2784,9 @@
       "rowsAccumulated": 2
     },
     "topps-premier-league-2026-27": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 5,
+      "rowsAddedThisRun": 5,
+      "imagesAddedThisRun": 5,
       "candidateProducts": [
         {
           "year": "2026",
@@ -2846,10 +2848,10 @@
       "yearUsed": "2026",
       "productId": "ebay_97821cda88",
       "productMatched": "Premier League",
-      "knownSets": 46,
-      "processedSetsTotal": 46,
+      "knownSets": 51,
+      "processedSetsTotal": 51,
       "remainingSets": 0,
-      "rowsAccumulated": 57
+      "rowsAccumulated": 62
     },
     "topps-chrome-baseball-2026": {
       "setsFetchedThisRun": 0,
@@ -2922,9 +2924,9 @@
       "rowsAccumulated": 1
     },
     "bowman-chrome-baseball-2026": {
-      "setsFetchedThisRun": 4,
-      "rowsAddedThisRun": 4,
-      "imagesAddedThisRun": 4,
+      "setsFetchedThisRun": 13,
+      "rowsAddedThisRun": 14,
+      "imagesAddedThisRun": 14,
       "candidateProducts": [
         {
           "year": "2026",
@@ -2986,10 +2988,10 @@
       "yearUsed": "2026",
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
-      "knownSets": 241,
-      "processedSetsTotal": 241,
+      "knownSets": 254,
+      "processedSetsTotal": 254,
       "remainingSets": 0,
-      "rowsAccumulated": 494
+      "rowsAccumulated": 508
     },
     "topps-finest-baseball-2026": {
       "setsFetchedThisRun": 0,
@@ -3132,9 +3134,9 @@
       "rowsAccumulated": 1
     },
     "topps-chrome-college-baseball-2026": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 2,
+      "rowsAddedThisRun": 2,
+      "imagesAddedThisRun": 2,
       "candidateProducts": [
         {
           "year": "2026",
@@ -3196,10 +3198,10 @@
       "yearUsed": "2026",
       "productId": "ebay_34a2a395f2",
       "productMatched": "Topps Chrome",
-      "knownSets": 99,
-      "processedSetsTotal": 99,
+      "knownSets": 101,
+      "processedSetsTotal": 101,
       "remainingSets": 0,
-      "rowsAccumulated": 161
+      "rowsAccumulated": 163
     },
     "topps-holiday-baseball-2025": {
       "setsFetchedThisRun": 0,
@@ -3336,9 +3338,9 @@
       "error": "strict-product-not-found"
     },
     "topps-update-baseball-2026": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -3476,9 +3478,9 @@
       "rowsAccumulated": 2
     },
     "topps-chrome-football-2025": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
         {
           "year": "2025",
@@ -3540,10 +3542,10 @@
       "yearUsed": "2025",
       "productId": "ebay_5160e77ba2",
       "productMatched": "Chrome Football",
-      "knownSets": 40,
-      "processedSetsTotal": 40,
+      "knownSets": 41,
+      "processedSetsTotal": 41,
       "remainingSets": 0,
-      "rowsAccumulated": 92
+      "rowsAccumulated": 93
     },
     "topps-signature-class-football-2025": {
       "setsFetchedThisRun": 0,
@@ -3826,9 +3828,9 @@
       "rowsAccumulated": 4
     },
     "panini-obsidian-football-2025": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 2,
+      "rowsAddedThisRun": 2,
+      "imagesAddedThisRun": 2,
       "candidateProducts": [
         {
           "year": "2025",
@@ -3890,10 +3892,10 @@
       "yearUsed": "2025",
       "productId": "ebay_67fa4127be",
       "productMatched": "Football",
-      "knownSets": 17,
-      "processedSetsTotal": 17,
+      "knownSets": 19,
+      "processedSetsTotal": 19,
       "remainingSets": 0,
-      "rowsAccumulated": 22
+      "rowsAccumulated": 24
     },
     "topps-holiday-football-2026": {
       "setsFetchedThisRun": 0,
@@ -4633,9 +4635,9 @@
       "rowsAccumulated": 1
     },
     "topps-now-soccer-2026": {
-      "setsFetchedThisRun": 2,
-      "rowsAddedThisRun": 2,
-      "imagesAddedThisRun": 2,
+      "setsFetchedThisRun": 3,
+      "rowsAddedThisRun": 4,
+      "imagesAddedThisRun": 4,
       "candidateProducts": [
         {
           "year": "2026",
@@ -4697,10 +4699,10 @@
       "yearUsed": "2026",
       "productId": "ebay_14edd5b886",
       "productMatched": "Now",
-      "knownSets": 101,
-      "processedSetsTotal": 101,
+      "knownSets": 104,
+      "processedSetsTotal": 104,
       "remainingSets": 0,
-      "rowsAccumulated": 134
+      "rowsAccumulated": 138
     },
     "topps-archives-snapshots-baseball-2021": {
       "setsFetchedThisRun": 0,
@@ -5528,10 +5530,10 @@
         },
         {
           "year": "2025",
-          "label": "Big City Strikers",
+          "label": "Big City Green",
           "score": -5,
           "strict": false,
-          "productId": "ebay_9d394742cc"
+          "productId": "ebay_56dd203856"
         }
       ],
       "error": "strict-product-not-found"
@@ -6131,6 +6133,13 @@
       "candidateProducts": [
         {
           "year": "2026",
+          "label": "MLS",
+          "score": 5,
+          "strict": false,
+          "productId": "ebay_05b21fdb24"
+        },
+        {
+          "year": "2026",
           "label": "Now",
           "score": 5,
           "strict": false,
@@ -6177,13 +6186,6 @@
           "score": -3,
           "strict": false,
           "productId": "ebay_80d1d3b7cb"
-        },
-        {
-          "year": "2026",
-          "label": "2026 FIFA World Cup Disco Prizm",
-          "score": -3,
-          "strict": false,
-          "productId": "ebay_103ad735c4"
         }
       ],
       "yearUsed": "2026",
@@ -6387,9 +6389,9 @@
       "error": "strict-product-not-found"
     }
   },
-  "finishedAt": "2026-10-09T10:37:31Z",
+  "finishedAt": "2026-10-10T10:33:31Z",
   "collectionsWritten": 60,
-  "rowsWritten": 1723,
-  "exactFrontsWritten": 1707,
-  "runtimeSeconds": 212.6
+  "rowsWritten": 1755,
+  "exactFrontsWritten": 1739,
+  "runtimeSeconds": 213.2
 }
