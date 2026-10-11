@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T10:33:34.952Z",
+  "generatedAt": "2026-10-11T10:34:01.252Z",
   "source": "data/user-collection-priority.json",
   "collections": [
     {
@@ -531,22 +531,6 @@
       "status": "missing-checklist"
     },
     {
-      "collectionId": "panini-select-basketball-2024-25",
-      "name": "Panini Select Basketball",
-      "season": "2024-25",
-      "ownedRows": 0,
-      "catalogPresent": true,
-      "checklistRows": 1169,
-      "uniqueIdentities": 1169,
-      "baseIdentities": 0,
-      "numberedIdentities": 304,
-      "autographIdentities": 408,
-      "relicIdentities": 187,
-      "exactFrontIdentities": 2,
-      "exactFrontCoveragePct": 0.17,
-      "status": "needs-images"
-    },
-    {
       "collectionId": "topps-flagship-football-2026",
       "name": "Topps Flagship Football",
       "season": "2026",
@@ -560,22 +544,6 @@
       "relicIdentities": 1,
       "exactFrontIdentities": 1,
       "exactFrontCoveragePct": 0.25,
-      "status": "needs-images"
-    },
-    {
-      "collectionId": "panini-donruss-optic-football-2025",
-      "name": "Panini Donruss Optic Football",
-      "season": "2025",
-      "ownedRows": 0,
-      "catalogPresent": true,
-      "checklistRows": 1064,
-      "uniqueIdentities": 1064,
-      "baseIdentities": 200,
-      "numberedIdentities": 234,
-      "autographIdentities": 292,
-      "relicIdentities": 166,
-      "exactFrontIdentities": 4,
-      "exactFrontCoveragePct": 0.38,
       "status": "needs-images"
     },
     {
@@ -675,22 +643,6 @@
       "status": "needs-images"
     },
     {
-      "collectionId": "panini-prizm-basketball-2024-25",
-      "name": "Panini Prizm Basketball",
-      "season": "2024-25",
-      "ownedRows": 0,
-      "catalogPresent": true,
-      "checklistRows": 1035,
-      "uniqueIdentities": 1035,
-      "baseIdentities": 300,
-      "numberedIdentities": 3,
-      "autographIdentities": 298,
-      "relicIdentities": 0,
-      "exactFrontIdentities": 11,
-      "exactFrontCoveragePct": 1.06,
-      "status": "needs-images"
-    },
-    {
       "collectionId": "topps-signature-class-football-2025",
       "name": "Topps Signature Class Football",
       "season": "2025",
@@ -736,22 +688,6 @@
       "relicIdentities": 0,
       "exactFrontIdentities": 1,
       "exactFrontCoveragePct": 1.75,
-      "status": "needs-images"
-    },
-    {
-      "collectionId": "panini-donruss-optic-basketball-2024-25",
-      "name": "Panini Donruss Optic Basketball",
-      "season": "2024-25",
-      "ownedRows": 0,
-      "catalogPresent": true,
-      "checklistRows": 1092,
-      "uniqueIdentities": 1092,
-      "baseIdentities": 254,
-      "numberedIdentities": 196,
-      "autographIdentities": 389,
-      "relicIdentities": 1,
-      "exactFrontIdentities": 20,
-      "exactFrontCoveragePct": 1.83,
       "status": "needs-images"
     },
     {
@@ -952,14 +888,14 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 1719,
-      "uniqueIdentities": 1719,
+      "checklistRows": 1727,
+      "uniqueIdentities": 1727,
       "baseIdentities": 709,
       "numberedIdentities": 2,
-      "autographIdentities": 546,
+      "autographIdentities": 547,
       "relicIdentities": 36,
-      "exactFrontIdentities": 611,
-      "exactFrontCoveragePct": 35.54,
+      "exactFrontIdentities": 619,
+      "exactFrontCoveragePct": 35.84,
       "status": "needs-images"
     },
     {
@@ -1187,6 +1123,22 @@
       "status": "covered"
     },
     {
+      "collectionId": "panini-donruss-optic-football-2025",
+      "name": "Panini Donruss Optic Football",
+      "season": "2025",
+      "ownedRows": 0,
+      "catalogPresent": true,
+      "checklistRows": 4,
+      "uniqueIdentities": 4,
+      "baseIdentities": 0,
+      "numberedIdentities": 0,
+      "autographIdentities": 0,
+      "relicIdentities": 0,
+      "exactFrontIdentities": 4,
+      "exactFrontCoveragePct": 100,
+      "status": "covered"
+    },
+    {
       "collectionId": "panini-obsidian-football-2025",
       "name": "Panini Obsidian Football",
       "season": "2025",
@@ -1199,6 +1151,54 @@
       "autographIdentities": 1,
       "relicIdentities": 0,
       "exactFrontIdentities": 24,
+      "exactFrontCoveragePct": 100,
+      "status": "covered"
+    },
+    {
+      "collectionId": "panini-prizm-basketball-2024-25",
+      "name": "Panini Prizm Basketball",
+      "season": "2024-25",
+      "ownedRows": 0,
+      "catalogPresent": true,
+      "checklistRows": 9,
+      "uniqueIdentities": 9,
+      "baseIdentities": 2,
+      "numberedIdentities": 0,
+      "autographIdentities": 0,
+      "relicIdentities": 0,
+      "exactFrontIdentities": 9,
+      "exactFrontCoveragePct": 100,
+      "status": "covered"
+    },
+    {
+      "collectionId": "panini-select-basketball-2024-25",
+      "name": "Panini Select Basketball",
+      "season": "2024-25",
+      "ownedRows": 0,
+      "catalogPresent": true,
+      "checklistRows": 2,
+      "uniqueIdentities": 2,
+      "baseIdentities": 0,
+      "numberedIdentities": 0,
+      "autographIdentities": 0,
+      "relicIdentities": 0,
+      "exactFrontIdentities": 2,
+      "exactFrontCoveragePct": 100,
+      "status": "covered"
+    },
+    {
+      "collectionId": "panini-donruss-optic-basketball-2024-25",
+      "name": "Panini Donruss Optic Basketball",
+      "season": "2024-25",
+      "ownedRows": 0,
+      "catalogPresent": true,
+      "checklistRows": 16,
+      "uniqueIdentities": 16,
+      "baseIdentities": 4,
+      "numberedIdentities": 0,
+      "autographIdentities": 0,
+      "relicIdentities": 1,
+      "exactFrontIdentities": 16,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     },
@@ -1239,7 +1239,7 @@
     "ownedPriorityCollections": 77,
     "missingCollections": 15,
     "missingChecklists": 5,
-    "uniqueIdentities": 19243,
-    "exactFrontIdentities": 1779
+    "uniqueIdentities": 14922,
+    "exactFrontIdentities": 1781
   }
 }

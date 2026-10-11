@@ -1,6 +1,6 @@
 {
   "runner": "sync_mycardfolio_v2.py",
-  "startedAt": "2026-10-10T10:29:58Z",
+  "startedAt": "2026-10-11T10:30:51Z",
   "endpoint": "https://mycardfolio.com/api/mcp",
   "setsPerProductPerRun": 150,
   "requestDelaySeconds": 1.05,
@@ -50,9 +50,9 @@
       "error": "strict-product-not-found"
     },
     "topps-chrome-mls-2026": {
-      "setsFetchedThisRun": 2,
-      "rowsAddedThisRun": 2,
-      "imagesAddedThisRun": 2,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -111,8 +111,6 @@
           "productId": "ing_666294998d"
         }
       ],
-      "purgedRowsAfterProductChange": 1,
-      "purgedImagesAfterProductChange": 1,
       "yearUsed": "2026",
       "productId": "ebay_3553355cdc",
       "productMatched": "Chrome MLS",
@@ -262,9 +260,9 @@
       "rowsAccumulated": 2
     },
     "panini-obsidian-soccer-2025-26": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2025",
@@ -402,9 +400,9 @@
       "rowsAccumulated": 13
     },
     "panini-prizm-fifa-soccer-2025-26": {
-      "setsFetchedThisRun": 2,
-      "rowsAddedThisRun": 2,
-      "imagesAddedThisRun": 2,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2025",
@@ -2784,9 +2782,9 @@
       "rowsAccumulated": 2
     },
     "topps-premier-league-2026-27": {
-      "setsFetchedThisRun": 5,
-      "rowsAddedThisRun": 5,
-      "imagesAddedThisRun": 5,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -2924,9 +2922,9 @@
       "rowsAccumulated": 1
     },
     "bowman-chrome-baseball-2026": {
-      "setsFetchedThisRun": 13,
-      "rowsAddedThisRun": 14,
-      "imagesAddedThisRun": 14,
+      "setsFetchedThisRun": 8,
+      "rowsAddedThisRun": 8,
+      "imagesAddedThisRun": 8,
       "candidateProducts": [
         {
           "year": "2026",
@@ -2979,19 +2977,19 @@
         },
         {
           "year": "2026",
-          "label": "Bowman Chrome Sapphire",
+          "label": "Bowman Chrome Rookies Mega Box",
           "score": 14,
           "strict": true,
-          "productId": "ebay_9b20624fc0"
+          "productId": "ebay_33f46e8905"
         }
       ],
       "yearUsed": "2026",
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
-      "knownSets": 254,
-      "processedSetsTotal": 254,
+      "knownSets": 262,
+      "processedSetsTotal": 262,
       "remainingSets": 0,
-      "rowsAccumulated": 508
+      "rowsAccumulated": 516
     },
     "topps-finest-baseball-2026": {
       "setsFetchedThisRun": 0,
@@ -3134,9 +3132,9 @@
       "rowsAccumulated": 1
     },
     "topps-chrome-college-baseball-2026": {
-      "setsFetchedThisRun": 2,
-      "rowsAddedThisRun": 2,
-      "imagesAddedThisRun": 2,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -3478,9 +3476,9 @@
       "rowsAccumulated": 2
     },
     "topps-chrome-football-2025": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2025",
@@ -3828,9 +3826,9 @@
       "rowsAccumulated": 4
     },
     "panini-obsidian-football-2025": {
-      "setsFetchedThisRun": 2,
-      "rowsAddedThisRun": 2,
-      "imagesAddedThisRun": 2,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2025",
@@ -4635,9 +4633,9 @@
       "rowsAccumulated": 1
     },
     "topps-now-soccer-2026": {
-      "setsFetchedThisRun": 3,
-      "rowsAddedThisRun": 4,
-      "imagesAddedThisRun": 4,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -6389,9 +6387,9 @@
       "error": "strict-product-not-found"
     }
   },
-  "finishedAt": "2026-10-10T10:33:31Z",
+  "finishedAt": "2026-10-11T10:33:58Z",
   "collectionsWritten": 60,
-  "rowsWritten": 1755,
-  "exactFrontsWritten": 1739,
-  "runtimeSeconds": 213.2
+  "rowsWritten": 1763,
+  "exactFrontsWritten": 1747,
+  "runtimeSeconds": 187.5
 }
