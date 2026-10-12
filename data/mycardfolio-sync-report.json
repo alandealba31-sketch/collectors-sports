@@ -1,6 +1,6 @@
 {
   "runner": "sync_mycardfolio_v2.py",
-  "startedAt": "2026-10-11T10:30:51Z",
+  "startedAt": "2026-10-12T10:36:08Z",
   "endpoint": "https://mycardfolio.com/api/mcp",
   "setsPerProductPerRun": 150,
   "requestDelaySeconds": 1.05,
@@ -2922,9 +2922,9 @@
       "rowsAccumulated": 1
     },
     "bowman-chrome-baseball-2026": {
-      "setsFetchedThisRun": 8,
-      "rowsAddedThisRun": 8,
-      "imagesAddedThisRun": 8,
+      "setsFetchedThisRun": 24,
+      "rowsAddedThisRun": 24,
+      "imagesAddedThisRun": 24,
       "candidateProducts": [
         {
           "year": "2026",
@@ -2986,10 +2986,10 @@
       "yearUsed": "2026",
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
-      "knownSets": 262,
-      "processedSetsTotal": 262,
+      "knownSets": 286,
+      "processedSetsTotal": 286,
       "remainingSets": 0,
-      "rowsAccumulated": 516
+      "rowsAccumulated": 540
     },
     "topps-finest-baseball-2026": {
       "setsFetchedThisRun": 0,
@@ -3132,9 +3132,9 @@
       "rowsAccumulated": 1
     },
     "topps-chrome-college-baseball-2026": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 5,
+      "rowsAddedThisRun": 5,
+      "imagesAddedThisRun": 5,
       "candidateProducts": [
         {
           "year": "2026",
@@ -3196,10 +3196,10 @@
       "yearUsed": "2026",
       "productId": "ebay_34a2a395f2",
       "productMatched": "Topps Chrome",
-      "knownSets": 101,
-      "processedSetsTotal": 101,
+      "knownSets": 106,
+      "processedSetsTotal": 106,
       "remainingSets": 0,
-      "rowsAccumulated": 163
+      "rowsAccumulated": 168
     },
     "topps-holiday-baseball-2025": {
       "setsFetchedThisRun": 0,
@@ -3292,6 +3292,13 @@
         },
         {
           "year": "2026",
+          "label": "2026 Topps Baseball 35th All-Stars",
+          "score": 7,
+          "strict": false,
+          "productId": "ebay_c949bdf7c7"
+        },
+        {
+          "year": "2026",
           "label": "2026 Topps Baseball 35th Anniv",
           "score": 7,
           "strict": false,
@@ -3324,13 +3331,6 @@
           "score": 7,
           "strict": false,
           "productId": "ebay_666294998d"
-        },
-        {
-          "year": "2026",
-          "label": "Topps",
-          "score": 7,
-          "strict": false,
-          "productId": "ing_666294998d"
         }
       ],
       "error": "strict-product-not-found"
@@ -3756,9 +3756,9 @@
       "rowsAccumulated": 1
     },
     "panini-donruss-optic-football-2025": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
         {
           "year": "2025",
@@ -3820,10 +3820,10 @@
       "yearUsed": "2025",
       "productId": "ebay_ef2199934c",
       "productMatched": "Donruss Optic Football",
-      "knownSets": 3,
-      "processedSetsTotal": 3,
+      "knownSets": 4,
+      "processedSetsTotal": 4,
       "remainingSets": 0,
-      "rowsAccumulated": 4
+      "rowsAccumulated": 5
     },
     "panini-obsidian-football-2025": {
       "setsFetchedThisRun": 0,
@@ -4444,9 +4444,9 @@
       "rowsAccumulated": 1
     },
     "topps-now-nfl-2026": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
         {
           "year": "2026",
@@ -4508,10 +4508,10 @@
       "yearUsed": "2026",
       "productId": "ebay_87fe0a00b6",
       "productMatched": "Topps Now",
-      "knownSets": 12,
-      "processedSetsTotal": 12,
+      "knownSets": 13,
+      "processedSetsTotal": 13,
       "remainingSets": 0,
-      "rowsAccumulated": 15
+      "rowsAccumulated": 16
     },
     "topps-now-tennis-2026": {
       "setsFetchedThisRun": 0,
@@ -4913,9 +4913,9 @@
       "rowsAccumulated": 51
     },
     "topps-now-nba-2026-27": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
         {
           "year": "2026",
@@ -4977,10 +4977,10 @@
       "yearUsed": "2026",
       "productId": "ebay_87fe0a00b6",
       "productMatched": "Topps Now",
-      "knownSets": 12,
-      "processedSetsTotal": 12,
+      "knownSets": 13,
+      "processedSetsTotal": 13,
       "remainingSets": 0,
-      "rowsAccumulated": 15
+      "rowsAccumulated": 16
     },
     "topps-now-ufc-2026": {
       "setsFetchedThisRun": 0,
@@ -5712,6 +5712,13 @@
         },
         {
           "year": "2026",
+          "label": "2026 Topps Baseball 35th All-Stars",
+          "score": 5,
+          "strict": false,
+          "productId": "ebay_c949bdf7c7"
+        },
+        {
+          "year": "2026",
           "label": "2026 Topps Baseball 35th Anniv",
           "score": 5,
           "strict": false,
@@ -5723,13 +5730,6 @@
           "score": 5,
           "strict": false,
           "productId": "ebay_970301f8e3"
-        },
-        {
-          "year": "2026",
-          "label": "Baseball",
-          "score": 5,
-          "strict": false,
-          "productId": "ebay_7bf753d622"
         }
       ],
       "error": "strict-product-not-found"
@@ -6387,9 +6387,9 @@
       "error": "strict-product-not-found"
     }
   },
-  "finishedAt": "2026-10-11T10:33:58Z",
+  "finishedAt": "2026-10-12T10:39:54Z",
   "collectionsWritten": 60,
-  "rowsWritten": 1763,
-  "exactFrontsWritten": 1747,
-  "runtimeSeconds": 187.5
+  "rowsWritten": 1795,
+  "exactFrontsWritten": 1779,
+  "runtimeSeconds": 226.1
 }
