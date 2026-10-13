@@ -12,8 +12,10 @@
     },
     "bowman-chrome-baseball-2026": {
       "processedSets": [
+        "ebay_0028870018",
         "ebay_006762944d",
         "ebay_01e6cd6956",
+        "ebay_01e7cd3e81",
         "ebay_038ed2f94b",
         "ebay_03f829b3a5",
         "ebay_051badb9be",
@@ -35,6 +37,8 @@
         "ebay_0ecf2c83bd",
         "ebay_0f02a9fa22",
         "ebay_104f3bcc48",
+        "ebay_11721cbc18",
+        "ebay_12cf3e6e93",
         "ebay_13b242476a",
         "ebay_16db77fb30",
         "ebay_1808144b95",
@@ -64,6 +68,7 @@
         "ebay_2c6de6fa4c",
         "ebay_2cdf341297",
         "ebay_2d0b51ac27",
+        "ebay_2e1704b4ac",
         "ebay_309244e372",
         "ebay_3113fb8d17",
         "ebay_3157e4f7ae",
@@ -85,6 +90,7 @@
         "ebay_415a7b85be",
         "ebay_41d82bf532",
         "ebay_42918e30e7",
+        "ebay_45c178be01",
         "ebay_45d2b87bcf",
         "ebay_46947a5c50",
         "ebay_46fd6b475c",
@@ -135,6 +141,7 @@
         "ebay_6db771cf2b",
         "ebay_6e51fabdb9",
         "ebay_6ea3526cb7",
+        "ebay_6ef70fab6f",
         "ebay_705c712f42",
         "ebay_706087976a",
         "ebay_70e38351f2",
@@ -151,6 +158,7 @@
         "ebay_78838618a3",
         "ebay_798d016894",
         "ebay_7a85b76250",
+        "ebay_7b3d529857",
         "ebay_7b77c6a155",
         "ebay_7ba853e7d6",
         "ebay_7cd0fe424e",
@@ -197,6 +205,7 @@
         "ebay_a31f4565b0",
         "ebay_a3683115c6",
         "ebay_a3923122bc",
+        "ebay_a3a2b6912e",
         "ebay_a3baad963f",
         "ebay_a78f38223e",
         "ebay_a865af7d19",
@@ -238,6 +247,7 @@
         "ebay_ca73516c58",
         "ebay_caf233943e",
         "ebay_cc2d8a1322",
+        "ebay_ce83044e71",
         "ebay_cea263abe1",
         "ebay_cfcc6cb8c4",
         "ebay_d00c14de37",
@@ -275,6 +285,7 @@
         "ebay_ebf891ac16",
         "ebay_ec952e2b6f",
         "ebay_ec983850c1",
+        "ebay_ed956e3692",
         "ebay_edc1d307c8",
         "ebay_ede40d0fe6",
         "ebay_eea815da0f",
@@ -302,7 +313,7 @@
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
       "yearUsed": "2026",
-      "knownSets": 286
+      "knownSets": 297
     },
     "topps-holiday-baseball-2025": {
       "processedSets": [
@@ -469,6 +480,7 @@
         "ebay_a1710173f9",
         "ebay_b073c33d05",
         "ebay_d205c76eda",
+        "ebay_d4a29b617f",
         "ebay_d9ef027fa8",
         "ebay_e14bf0df4b",
         "ebay_ec4efba366",
@@ -477,7 +489,7 @@
       "productId": "ebay_2f04bd0c3c",
       "productMatched": "Chrome Basketball",
       "yearUsed": "2025",
-      "knownSets": 25
+      "knownSets": 26
     },
     "panini-prizm-basketball-2024-25": {
       "processedSets": [
@@ -1135,6 +1147,7 @@
         "ebay_ec56b09d29",
         "ebay_ef54958cab",
         "ebay_f10b3df200",
+        "ebay_f5f483aaee",
         "ebay_f879216020",
         "ebay_f8be2ffd0a",
         "ebay_f9a64b0118",
@@ -1144,7 +1157,7 @@
       "productId": "ebay_14edd5b886",
       "productMatched": "Now",
       "yearUsed": "2026",
-      "knownSets": 104
+      "knownSets": 105
     },
     "panini-international-england-2026": {
       "processedSets": []
@@ -1393,6 +1406,7 @@
         "ebay_7c4598517f",
         "ebay_7f7245403b",
         "ebay_81362a36a0",
+        "ebay_834f994177",
         "ebay_85a47b0f5f",
         "ebay_85f45d662e",
         "ebay_86e10d8c58",
@@ -1421,6 +1435,7 @@
         "ebay_c96271b3de",
         "ebay_c9e20a1c0a",
         "ebay_cb22a70862",
+        "ebay_cb2a859992",
         "ebay_cbc815eb47",
         "ebay_cc5b853af2",
         "ebay_cf1ee12f17",
@@ -1438,6 +1453,7 @@
         "ebay_e457d9535b",
         "ebay_e5e55b7df9",
         "ebay_ecfe02551a",
+        "ebay_f0996aad22",
         "ebay_f0b0aee878",
         "ebay_f13e7cfe86",
         "ebay_f33a147fc1",
@@ -1449,7 +1465,7 @@
       "productId": "ebay_34a2a395f2",
       "productMatched": "Topps Chrome",
       "yearUsed": "2026",
-      "knownSets": 106
+      "knownSets": 109
     },
     "panini-obsidian-football-2025": {
       "processedSets": [

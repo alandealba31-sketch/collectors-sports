@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T10:39:56.380Z",
+  "generatedAt": "2026-10-13T10:39:37.377Z",
   "scriptFilesEvaluated": 54,
   "scriptFailures": [
     {
@@ -9,21 +9,21 @@
   ],
   "collectionsWithChecklist": 77,
   "collectionRecords": 91,
-  "searchableIdentities": 22664,
+  "searchableIdentities": 22682,
   "bySport": {
     "NFL": 6245,
-    "Soccer": 5225,
-    "NBA": 4670,
-    "MLB": 3428,
+    "Soccer": 5226,
+    "NBA": 4671,
+    "MLB": 3444,
     "WWE": 1134,
     "UFC": 947,
     "Tennis": 780,
     "F1": 235
   },
-  "verifiedExactFrontRecords": 1797,
-  "approximateUniqueExactFrontIdentities": 1796,
-  "searchableIdentitiesWithExactFront": 2089,
-  "exactFrontCoveragePct": 9.22,
+  "verifiedExactFrontRecords": 1815,
+  "approximateUniqueExactFrontIdentities": 1814,
+  "searchableIdentitiesWithExactFront": 2108,
+  "exactFrontCoveragePct": 9.29,
   "topCollections": [
     {
       "id": "topps-chrome-football-2025",
@@ -37,8 +37,8 @@
       "id": "bowman-chrome-baseball-2026",
       "name": "Bowman Chrome 2026",
       "sport": "MLB",
-      "rows": 1751,
-      "identities": 1751,
+      "rows": 1764,
+      "identities": 1764,
       "coverage": "expanded-structured"
     },
     {
@@ -53,8 +53,8 @@
       "id": "topps-chrome-basketball-2025-26",
       "name": "Chrome Basketball 25/26",
       "sport": "NBA",
-      "rows": 1351,
-      "identities": 1351,
+      "rows": 1352,
+      "identities": 1352,
       "coverage": "expanded-structured"
     },
     {
@@ -237,8 +237,8 @@
       "id": "topps-chrome-college-baseball-2026",
       "name": "Chrome College Baseball 2026",
       "sport": "MLB",
-      "rows": 168,
-      "identities": 168,
+      "rows": 171,
+      "identities": 171,
       "coverage": "expanded-structured"
     },
     {
@@ -274,16 +274,16 @@
       "coverage": "base-complete"
     },
     {
-      "id": "topps-barcelona-forever-2025-26",
-      "name": "Barcelona Forever 25/26",
+      "id": "topps-now-soccer-2026",
+      "name": "Soccer Topps NOW 2026",
       "sport": "Soccer",
-      "rows": 138,
-      "identities": 138,
+      "rows": 139,
+      "identities": 139,
       "coverage": "expanded-structured"
     },
     {
-      "id": "topps-now-soccer-2026",
-      "name": "Soccer Topps NOW 2026",
+      "id": "topps-barcelona-forever-2025-26",
+      "name": "Barcelona Forever 25/26",
       "sport": "Soccer",
       "rows": 138,
       "identities": 138,

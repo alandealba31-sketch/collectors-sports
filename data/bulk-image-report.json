@@ -1,6 +1,6 @@
 {
   "provider": "ISO Card Archive",
-  "startedAt": "2026-10-12T10:39:55Z",
+  "startedAt": "2026-10-13T10:39:36Z",
   "maxNew": 4000,
   "collections": {
     "topps-chrome-tennis-2026": {
@@ -14,6 +14,6 @@
   },
   "manifestExactFronts": 0,
   "newExactFrontsThisRun": 0,
-  "finishedAt": "2026-10-12T10:39:55Z",
+  "finishedAt": "2026-10-13T10:39:36Z",
   "archiveAvailable": false
 }
