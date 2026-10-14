@@ -56,6 +56,7 @@
         "ebay_20623ed305",
         "ebay_21519d0152",
         "ebay_21ad9b3131",
+        "ebay_2208a74546",
         "ebay_227f4d10b2",
         "ebay_22c4adc6c5",
         "ebay_23300cf6e8",
@@ -65,6 +66,7 @@
         "ebay_285fda5771",
         "ebay_2a178ba37c",
         "ebay_2a2eb6fde0",
+        "ebay_2ab3a22158",
         "ebay_2c6de6fa4c",
         "ebay_2cdf341297",
         "ebay_2d0b51ac27",
@@ -313,7 +315,7 @@
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
       "yearUsed": "2026",
-      "knownSets": 297
+      "knownSets": 299
     },
     "topps-holiday-baseball-2025": {
       "processedSets": [
@@ -459,37 +461,12 @@
     },
     "topps-chrome-basketball-2025-26": {
       "processedSets": [
-        "ebay_0c24f49fd5",
-        "ebay_0c750bc87f",
-        "ebay_0f32636965",
-        "ebay_0f8f20026b",
-        "ebay_16b4c74dcb",
-        "ebay_1b9beeb25b",
-        "ebay_2bdcc012bf",
-        "ebay_34f41647fd",
-        "ebay_3967356cf9",
-        "ebay_47c32beedf",
-        "ebay_620f20d8f5",
-        "ebay_6664d572f2",
-        "ebay_7b47122401",
-        "ebay_7c91f2f073",
-        "ebay_95ad9b2641",
-        "ebay_98ece0eb5a",
-        "ebay_9a19505eba",
-        "ebay_9d8f973194",
-        "ebay_a1710173f9",
-        "ebay_b073c33d05",
-        "ebay_d205c76eda",
-        "ebay_d4a29b617f",
-        "ebay_d9ef027fa8",
-        "ebay_e14bf0df4b",
-        "ebay_ec4efba366",
-        "ebay_f0f45f6c28"
+        "ebay_84430f5400"
       ],
-      "productId": "ebay_2f04bd0c3c",
-      "productMatched": "Chrome Basketball",
+      "productMatched": "Will Riley 1980-81 Topps Chrome Basketball",
+      "productId": "ebay_969506669f",
       "yearUsed": "2025",
-      "knownSets": 26
+      "knownSets": 1
     },
     "panini-prizm-basketball-2024-25": {
       "processedSets": [
@@ -1471,6 +1448,7 @@
       "processedSets": [
         "ebay_0c23d3bc4a",
         "ebay_2968d1dd01",
+        "ebay_3f8107c868",
         "ebay_60849ce343",
         "ebay_694ca0c0b2",
         "ebay_6a25663707",
@@ -1492,7 +1470,7 @@
       "productId": "ebay_67fa4127be",
       "productMatched": "Football",
       "yearUsed": "2025",
-      "knownSets": 19
+      "knownSets": 20
     },
     "topps-signature-class-basketball-2026": {
       "processedSets": [
