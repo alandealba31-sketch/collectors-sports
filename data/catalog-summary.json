@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T10:49:54.753Z",
+  "generatedAt": "2026-10-15T10:51:00.935Z",
   "scriptFilesEvaluated": 54,
   "scriptFailures": [
     {
@@ -9,36 +9,36 @@
   ],
   "collectionsWithChecklist": 77,
   "collectionRecords": 91,
-  "searchableIdentities": 22634,
+  "searchableIdentities": 22669,
   "bySport": {
-    "NFL": 6246,
-    "Soccer": 5226,
+    "NFL": 6249,
+    "Soccer": 5231,
     "NBA": 4620,
-    "MLB": 3446,
+    "MLB": 3473,
     "WWE": 1134,
     "UFC": 947,
     "Tennis": 780,
     "F1": 235
   },
-  "verifiedExactFrontRecords": 1767,
-  "approximateUniqueExactFrontIdentities": 1766,
-  "searchableIdentitiesWithExactFront": 2035,
-  "exactFrontCoveragePct": 8.99,
+  "verifiedExactFrontRecords": 1802,
+  "approximateUniqueExactFrontIdentities": 1801,
+  "searchableIdentitiesWithExactFront": 2073,
+  "exactFrontCoveragePct": 9.14,
   "topCollections": [
     {
       "id": "topps-chrome-football-2025",
       "name": "Chrome Football 2025",
       "sport": "NFL",
-      "rows": 2465,
-      "identities": 2465,
+      "rows": 2466,
+      "identities": 2466,
       "coverage": "expanded-structured"
     },
     {
       "id": "bowman-chrome-baseball-2026",
       "name": "Bowman Chrome 2026",
       "sport": "MLB",
-      "rows": 1766,
-      "identities": 1766,
+      "rows": 1792,
+      "identities": 1792,
       "coverage": "expanded-structured"
     },
     {
@@ -237,8 +237,8 @@
       "id": "topps-chrome-college-baseball-2026",
       "name": "Chrome College Baseball 2026",
       "sport": "MLB",
-      "rows": 171,
-      "identities": 171,
+      "rows": 172,
+      "identities": 172,
       "coverage": "expanded-structured"
     },
     {
@@ -258,6 +258,14 @@
       "coverage": "base-complete"
     },
     {
+      "id": "topps-now-soccer-2026",
+      "name": "Soccer Topps NOW 2026",
+      "sport": "Soccer",
+      "rows": 144,
+      "identities": 144,
+      "coverage": "expanded-structured"
+    },
+    {
       "id": "panini-prizm-monopoly-world-cup-2026",
       "name": "Prizm Monopoly WC 2026",
       "sport": "Soccer",
@@ -272,14 +280,6 @@
       "rows": 140,
       "identities": 140,
       "coverage": "base-complete"
-    },
-    {
-      "id": "topps-now-soccer-2026",
-      "name": "Soccer Topps NOW 2026",
-      "sport": "Soccer",
-      "rows": 139,
-      "identities": 139,
-      "coverage": "expanded-structured"
     },
     {
       "id": "topps-barcelona-forever-2025-26",
