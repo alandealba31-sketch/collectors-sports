@@ -4,7 +4,7 @@
       "collectionId": "panini-obsidian-soccer-2025-26",
       "rows": 0,
       "status": "error",
-      "error": "only 0 rows parsed from expected source size 200"
+      "error": "403 Client Error: Forbidden for url: https://beckett.com/news/2025-26-panini-obsidian-soccer-cards/"
     },
     {
       "collectionId": "topps-argentina-team-set-2026",
@@ -22,7 +22,7 @@
       "collectionId": "panini-prizm-copa-america-2024",
       "rows": 0,
       "status": "error",
-      "error": "only 0 rows parsed from expected source size 200"
+      "error": "403 Client Error: Forbidden for url: https://beckett.com/news/2023-24-panini-prizm-copa-america-soccer-cards/"
     }
   ],
   "totalRows": 0
