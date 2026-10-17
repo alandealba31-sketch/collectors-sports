@@ -1,6 +1,6 @@
 {
   "runner": "sync_mycardfolio_v2.py",
-  "startedAt": "2026-10-16T10:46:05Z",
+  "startedAt": "2026-10-17T10:41:46Z",
   "endpoint": "https://mycardfolio.com/api/mcp",
   "setsPerProductPerRun": 150,
   "requestDelaySeconds": 1.05,
@@ -2922,9 +2922,9 @@
       "rowsAccumulated": 1
     },
     "bowman-chrome-baseball-2026": {
-      "setsFetchedThisRun": 6,
-      "rowsAddedThisRun": 6,
-      "imagesAddedThisRun": 6,
+      "setsFetchedThisRun": 3,
+      "rowsAddedThisRun": 3,
+      "imagesAddedThisRun": 3,
       "candidateProducts": [
         {
           "year": "2026",
@@ -2986,10 +2986,10 @@
       "yearUsed": "2026",
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
-      "knownSets": 328,
-      "processedSetsTotal": 328,
+      "knownSets": 331,
+      "processedSetsTotal": 331,
       "remainingSets": 0,
-      "rowsAccumulated": 587
+      "rowsAccumulated": 590
     },
     "topps-finest-baseball-2026": {
       "setsFetchedThisRun": 0,
@@ -3132,9 +3132,9 @@
       "rowsAccumulated": 1
     },
     "topps-chrome-college-baseball-2026": {
-      "setsFetchedThisRun": 2,
-      "rowsAddedThisRun": 2,
-      "imagesAddedThisRun": 2,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -3370,6 +3370,13 @@
         },
         {
           "year": "2026",
+          "label": "2026 Update Series Happy B-Day!",
+          "score": 14,
+          "strict": true,
+          "productId": "ebay_7cf9779efe"
+        },
+        {
+          "year": "2026",
           "label": "Baseball Update Series",
           "score": 14,
           "strict": true,
@@ -3388,13 +3395,6 @@
           "score": 14,
           "strict": true,
           "productId": "ebay_c420e26275"
-        },
-        {
-          "year": "2026",
-          "label": "Series",
-          "score": 9,
-          "strict": false,
-          "productId": "ebay_70b91c3d7b"
         }
       ],
       "yearUsed": "2026",
@@ -6387,9 +6387,9 @@
       "error": "strict-product-not-found"
     }
   },
-  "finishedAt": "2026-10-16T10:49:32Z",
+  "finishedAt": "2026-10-17T10:45:05Z",
   "collectionsWritten": 60,
-  "rowsWritten": 1808,
-  "exactFrontsWritten": 1792,
-  "runtimeSeconds": 207.1
+  "rowsWritten": 1811,
+  "exactFrontsWritten": 1795,
+  "runtimeSeconds": 198.2
 }
