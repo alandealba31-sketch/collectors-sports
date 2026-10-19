@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T10:46:22.532Z",
+  "generatedAt": "2026-10-19T10:49:41.409Z",
   "source": "data/user-collection-priority.json",
   "collections": [
     {
@@ -888,14 +888,14 @@
       "season": "2025",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 2466,
-      "uniqueIdentities": 2466,
+      "checklistRows": 2467,
+      "uniqueIdentities": 2467,
       "baseIdentities": 405,
       "numberedIdentities": 0,
       "autographIdentities": 502,
       "relicIdentities": 180,
-      "exactFrontIdentities": 152,
-      "exactFrontCoveragePct": 6.16,
+      "exactFrontIdentities": 154,
+      "exactFrontCoveragePct": 6.24,
       "status": "needs-images"
     },
     {
@@ -952,14 +952,14 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 1803,
-      "uniqueIdentities": 1803,
+      "checklistRows": 1809,
+      "uniqueIdentities": 1809,
       "baseIdentities": 709,
       "numberedIdentities": 2,
       "autographIdentities": 565,
       "relicIdentities": 37,
-      "exactFrontIdentities": 705,
-      "exactFrontCoveragePct": 39.1,
+      "exactFrontIdentities": 711,
+      "exactFrontCoveragePct": 39.3,
       "status": "needs-images"
     },
     {
@@ -1144,13 +1144,13 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 174,
-      "uniqueIdentities": 174,
+      "checklistRows": 175,
+      "uniqueIdentities": 175,
       "baseIdentities": 21,
       "numberedIdentities": 1,
       "autographIdentities": 7,
       "relicIdentities": 0,
-      "exactFrontIdentities": 174,
+      "exactFrontIdentities": 175,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     },
@@ -1192,13 +1192,13 @@
       "season": "2025",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 27,
-      "uniqueIdentities": 27,
+      "checklistRows": 28,
+      "uniqueIdentities": 28,
       "baseIdentities": 5,
       "numberedIdentities": 0,
       "autographIdentities": 3,
       "relicIdentities": 0,
-      "exactFrontIdentities": 27,
+      "exactFrontIdentities": 28,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     },
@@ -1239,7 +1239,7 @@
     "ownedPriorityCollections": 77,
     "missingCollections": 15,
     "missingChecklists": 5,
-    "uniqueIdentities": 19349,
-    "exactFrontIdentities": 1896
+    "uniqueIdentities": 19358,
+    "exactFrontIdentities": 1906
   }
 }
