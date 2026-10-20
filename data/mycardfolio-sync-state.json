@@ -473,12 +473,13 @@
       "processedSets": [
         "ebay_3498a99dd2",
         "ebay_cb17b10717",
-        "ebay_cda5822c6c"
+        "ebay_cda5822c6c",
+        "ebay_edaca80723"
       ],
       "productId": "ebay_2c7f8bd694",
       "productMatched": "Topps Resurgence",
       "yearUsed": "2025",
-      "knownSets": 3
+      "knownSets": 4
     },
     "topps-flagship-football-2026": {
       "processedSets": [
@@ -1462,6 +1463,7 @@
         "ebay_cb2a859992",
         "ebay_cb8d2e7c93",
         "ebay_cbc815eb47",
+        "ebay_cbe7292c1d",
         "ebay_cc5b853af2",
         "ebay_cf1ee12f17",
         "ebay_d0d4ca87ec",
@@ -1491,7 +1493,7 @@
       "productId": "ebay_34a2a395f2",
       "productMatched": "Topps Chrome",
       "yearUsed": "2026",
-      "knownSets": 113
+      "knownSets": 114
     },
     "panini-obsidian-football-2025": {
       "processedSets": [

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T10:49:41.127Z",
+  "generatedAt": "2026-10-20T10:49:03.581Z",
   "scriptFilesEvaluated": 54,
   "scriptFailures": [
     {
@@ -9,21 +9,21 @@
   ],
   "collectionsWithChecklist": 77,
   "collectionRecords": 91,
-  "searchableIdentities": 22691,
+  "searchableIdentities": 22693,
   "bySport": {
-    "NFL": 6251,
+    "NFL": 6252,
     "Soccer": 5231,
     "NBA": 4620,
-    "MLB": 3493,
+    "MLB": 3494,
     "WWE": 1134,
     "UFC": 947,
     "Tennis": 780,
     "F1": 235
   },
-  "verifiedExactFrontRecords": 1824,
-  "approximateUniqueExactFrontIdentities": 1823,
-  "searchableIdentitiesWithExactFront": 2097,
-  "exactFrontCoveragePct": 9.24,
+  "verifiedExactFrontRecords": 1826,
+  "approximateUniqueExactFrontIdentities": 1825,
+  "searchableIdentitiesWithExactFront": 2101,
+  "exactFrontCoveragePct": 9.26,
   "topCollections": [
     {
       "id": "topps-chrome-football-2025",
@@ -117,8 +117,8 @@
       "id": "topps-resurgence-football-2025",
       "name": "Resurgence NFL 2025",
       "sport": "NFL",
-      "rows": 752,
-      "identities": 752,
+      "rows": 753,
+      "identities": 753,
       "coverage": "expanded-structured"
     },
     {
@@ -237,8 +237,8 @@
       "id": "topps-chrome-college-baseball-2026",
       "name": "Chrome College Baseball 2026",
       "sport": "MLB",
-      "rows": 175,
-      "identities": 175,
+      "rows": 176,
+      "identities": 176,
       "coverage": "expanded-structured"
     },
     {

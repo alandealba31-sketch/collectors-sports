@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T10:49:41.409Z",
+  "generatedAt": "2026-10-20T10:49:03.933Z",
   "source": "data/user-collection-priority.json",
   "collections": [
     {
@@ -627,22 +627,6 @@
       "status": "needs-images"
     },
     {
-      "collectionId": "topps-resurgence-football-2025",
-      "name": "Topps Resurgence Football",
-      "season": "2025",
-      "ownedRows": 0,
-      "catalogPresent": true,
-      "checklistRows": 752,
-      "uniqueIdentities": 752,
-      "baseIdentities": 749,
-      "numberedIdentities": 0,
-      "autographIdentities": 272,
-      "relicIdentities": 100,
-      "exactFrontIdentities": 7,
-      "exactFrontCoveragePct": 0.93,
-      "status": "needs-images"
-    },
-    {
       "collectionId": "topps-chrome-mls-2026",
       "name": "Topps Chrome MLS",
       "season": "2026",
@@ -688,6 +672,22 @@
       "relicIdentities": 0,
       "exactFrontIdentities": 11,
       "exactFrontCoveragePct": 1.06,
+      "status": "needs-images"
+    },
+    {
+      "collectionId": "topps-resurgence-football-2025",
+      "name": "Topps Resurgence Football",
+      "season": "2025",
+      "ownedRows": 0,
+      "catalogPresent": true,
+      "checklistRows": 753,
+      "uniqueIdentities": 753,
+      "baseIdentities": 749,
+      "numberedIdentities": 0,
+      "autographIdentities": 272,
+      "relicIdentities": 100,
+      "exactFrontIdentities": 10,
+      "exactFrontCoveragePct": 1.33,
       "status": "needs-images"
     },
     {
@@ -1144,13 +1144,13 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 175,
-      "uniqueIdentities": 175,
+      "checklistRows": 176,
+      "uniqueIdentities": 176,
       "baseIdentities": 21,
       "numberedIdentities": 1,
       "autographIdentities": 7,
       "relicIdentities": 0,
-      "exactFrontIdentities": 175,
+      "exactFrontIdentities": 176,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     },
@@ -1239,7 +1239,7 @@
     "ownedPriorityCollections": 77,
     "missingCollections": 15,
     "missingChecklists": 5,
-    "uniqueIdentities": 19358,
-    "exactFrontIdentities": 1906
+    "uniqueIdentities": 19360,
+    "exactFrontIdentities": 1910
   }
 }
