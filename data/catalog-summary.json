@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T10:49:03.581Z",
+  "generatedAt": "2026-10-21T10:50:00.938Z",
   "scriptFilesEvaluated": 54,
   "scriptFailures": [
     {
@@ -9,21 +9,21 @@
   ],
   "collectionsWithChecklist": 77,
   "collectionRecords": 91,
-  "searchableIdentities": 22693,
+  "searchableIdentities": 22698,
   "bySport": {
     "NFL": 6252,
-    "Soccer": 5231,
+    "Soccer": 5232,
     "NBA": 4620,
-    "MLB": 3494,
+    "MLB": 3498,
     "WWE": 1134,
     "UFC": 947,
     "Tennis": 780,
     "F1": 235
   },
-  "verifiedExactFrontRecords": 1826,
-  "approximateUniqueExactFrontIdentities": 1825,
-  "searchableIdentitiesWithExactFront": 2101,
-  "exactFrontCoveragePct": 9.26,
+  "verifiedExactFrontRecords": 1831,
+  "approximateUniqueExactFrontIdentities": 1830,
+  "searchableIdentitiesWithExactFront": 2106,
+  "exactFrontCoveragePct": 9.28,
   "topCollections": [
     {
       "id": "topps-chrome-football-2025",
@@ -37,8 +37,8 @@
       "id": "bowman-chrome-baseball-2026",
       "name": "Bowman Chrome 2026",
       "sport": "MLB",
-      "rows": 1809,
-      "identities": 1809,
+      "rows": 1813,
+      "identities": 1813,
       "coverage": "expanded-structured"
     },
     {
@@ -250,20 +250,20 @@
       "coverage": "base-complete"
     },
     {
+      "id": "topps-now-soccer-2026",
+      "name": "Soccer Topps NOW 2026",
+      "sport": "Soccer",
+      "rows": 145,
+      "identities": 145,
+      "coverage": "expanded-structured"
+    },
+    {
       "id": "panini-intl-france-2026",
       "name": "Panini INTL France 2026",
       "sport": "Soccer",
       "rows": 144,
       "identities": 144,
       "coverage": "base-complete"
-    },
-    {
-      "id": "topps-now-soccer-2026",
-      "name": "Soccer Topps NOW 2026",
-      "sport": "Soccer",
-      "rows": 144,
-      "identities": 144,
-      "coverage": "expanded-structured"
     },
     {
       "id": "panini-prizm-monopoly-world-cup-2026",
