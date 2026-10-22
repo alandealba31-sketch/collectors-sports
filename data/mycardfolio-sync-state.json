@@ -61,6 +61,7 @@
         "ebay_2056cb1b37",
         "ebay_20623ed305",
         "ebay_21519d0152",
+        "ebay_21a68ebdfb",
         "ebay_21ad9b3131",
         "ebay_2208a74546",
         "ebay_227f4d10b2",
@@ -95,6 +96,7 @@
         "ebay_37462d8308",
         "ebay_37632dcf4a",
         "ebay_3804d38fe4",
+        "ebay_3ab9e25f15",
         "ebay_3b30deff0b",
         "ebay_3b56b36da5",
         "ebay_3bd967ab03",
@@ -164,6 +166,7 @@
         "ebay_6e51fabdb9",
         "ebay_6ea3526cb7",
         "ebay_6ef70fab6f",
+        "ebay_6fee3389c4",
         "ebay_705c712f42",
         "ebay_706087976a",
         "ebay_70666aaf55",
@@ -275,6 +278,7 @@
         "ebay_be5d1a0f61",
         "ebay_bec4572a35",
         "ebay_c120baf3ea",
+        "ebay_c17f0ea55c",
         "ebay_c24aea4a38",
         "ebay_c257f6e6cf",
         "ebay_c2933377e8",
@@ -296,6 +300,7 @@
         "ebay_d0ef6b01c7",
         "ebay_d1038cf0e9",
         "ebay_d16cf1921d",
+        "ebay_d1b6eaf598",
         "ebay_d1ef601482",
         "ebay_d20b73448f",
         "ebay_d22a16f3f4",
@@ -359,7 +364,7 @@
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
       "yearUsed": "2026",
-      "knownSets": 343
+      "knownSets": 348
     },
     "topps-holiday-baseball-2025": {
       "processedSets": [
@@ -381,12 +386,13 @@
     },
     "topps-update-baseball-2026": {
       "processedSets": [
+        "ebay_998a52ec59",
         "ebay_ef412fe747"
       ],
       "productMatched": "Topps Update Series",
       "productId": "ebay_bf954bb576",
       "yearUsed": "2026",
-      "knownSets": 1
+      "knownSets": 2
     },
     "topps-chrome-logofractor-baseball-2026": {
       "processedSets": [
@@ -499,12 +505,13 @@
         "ebay_2cb57ce0d9",
         "ebay_3d3bbd1b20",
         "ebay_5f6c93b6be",
+        "ebay_8d57b5d7be",
         "ebay_c8a672d7bd"
       ],
       "productId": "ebay_ef2199934c",
       "productMatched": "Donruss Optic Football",
       "yearUsed": "2025",
-      "knownSets": 4
+      "knownSets": 5
     },
     "topps-chrome-basketball-2025-26": {
       "processedSets": [

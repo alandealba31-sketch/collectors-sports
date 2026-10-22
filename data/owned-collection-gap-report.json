@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T10:50:01.297Z",
+  "generatedAt": "2026-10-22T10:49:43.062Z",
   "source": "data/user-collection-priority.json",
   "collections": [
     {
@@ -563,22 +563,6 @@
       "status": "needs-images"
     },
     {
-      "collectionId": "panini-donruss-optic-football-2025",
-      "name": "Panini Donruss Optic Football",
-      "season": "2025",
-      "ownedRows": 0,
-      "catalogPresent": true,
-      "checklistRows": 1064,
-      "uniqueIdentities": 1064,
-      "baseIdentities": 200,
-      "numberedIdentities": 234,
-      "autographIdentities": 292,
-      "relicIdentities": 166,
-      "exactFrontIdentities": 5,
-      "exactFrontCoveragePct": 0.47,
-      "status": "needs-images"
-    },
-    {
       "collectionId": "topps-premier-league-2025-26",
       "name": "Topps Premier League",
       "season": "2025-26",
@@ -608,6 +592,22 @@
       "relicIdentities": 0,
       "exactFrontIdentities": 2,
       "exactFrontCoveragePct": 0.65,
+      "status": "needs-images"
+    },
+    {
+      "collectionId": "panini-donruss-optic-football-2025",
+      "name": "Panini Donruss Optic Football",
+      "season": "2025",
+      "ownedRows": 0,
+      "catalogPresent": true,
+      "checklistRows": 1065,
+      "uniqueIdentities": 1065,
+      "baseIdentities": 200,
+      "numberedIdentities": 234,
+      "autographIdentities": 292,
+      "relicIdentities": 166,
+      "exactFrontIdentities": 7,
+      "exactFrontCoveragePct": 0.66,
       "status": "needs-images"
     },
     {
@@ -952,14 +952,14 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 1813,
-      "uniqueIdentities": 1813,
+      "checklistRows": 1818,
+      "uniqueIdentities": 1818,
       "baseIdentities": 709,
       "numberedIdentities": 2,
-      "autographIdentities": 565,
+      "autographIdentities": 566,
       "relicIdentities": 37,
-      "exactFrontIdentities": 715,
-      "exactFrontCoveragePct": 39.44,
+      "exactFrontIdentities": 721,
+      "exactFrontCoveragePct": 39.66,
       "status": "needs-images"
     },
     {
@@ -1160,13 +1160,13 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 1,
-      "uniqueIdentities": 1,
+      "checklistRows": 2,
+      "uniqueIdentities": 2,
       "baseIdentities": 0,
       "numberedIdentities": 0,
       "autographIdentities": 0,
       "relicIdentities": 0,
-      "exactFrontIdentities": 1,
+      "exactFrontIdentities": 2,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     },
@@ -1239,7 +1239,7 @@
     "ownedPriorityCollections": 77,
     "missingCollections": 15,
     "missingChecklists": 5,
-    "uniqueIdentities": 19365,
-    "exactFrontIdentities": 1915
+    "uniqueIdentities": 19372,
+    "exactFrontIdentities": 1924
   }
 }

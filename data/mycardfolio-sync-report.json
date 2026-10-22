@@ -1,6 +1,6 @@
 {
   "runner": "sync_mycardfolio_v2.py",
-  "startedAt": "2026-10-21T10:46:35Z",
+  "startedAt": "2026-10-22T10:45:44Z",
   "endpoint": "https://mycardfolio.com/api/mcp",
   "setsPerProductPerRun": 150,
   "requestDelaySeconds": 1.05,
@@ -2922,9 +2922,9 @@
       "rowsAccumulated": 1
     },
     "bowman-chrome-baseball-2026": {
-      "setsFetchedThisRun": 4,
-      "rowsAddedThisRun": 4,
-      "imagesAddedThisRun": 4,
+      "setsFetchedThisRun": 5,
+      "rowsAddedThisRun": 5,
+      "imagesAddedThisRun": 5,
       "candidateProducts": [
         {
           "year": "2026",
@@ -2986,10 +2986,10 @@
       "yearUsed": "2026",
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
-      "knownSets": 343,
-      "processedSetsTotal": 343,
+      "knownSets": 348,
+      "processedSetsTotal": 348,
       "remainingSets": 0,
-      "rowsAccumulated": 602
+      "rowsAccumulated": 607
     },
     "topps-finest-baseball-2026": {
       "setsFetchedThisRun": 0,
@@ -3336,9 +3336,9 @@
       "error": "strict-product-not-found"
     },
     "topps-update-baseball-2026": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
         {
           "year": "2026",
@@ -3400,10 +3400,10 @@
       "yearUsed": "2026",
       "productId": "ebay_bf954bb576",
       "productMatched": "Topps Update Series",
-      "knownSets": 1,
-      "processedSetsTotal": 1,
+      "knownSets": 2,
+      "processedSetsTotal": 2,
       "remainingSets": 0,
-      "rowsAccumulated": 1
+      "rowsAccumulated": 2
     },
     "topps-chrome-logofractor-baseball-2026": {
       "setsFetchedThisRun": 0,
@@ -3756,9 +3756,9 @@
       "rowsAccumulated": 1
     },
     "panini-donruss-optic-football-2025": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
         {
           "year": "2025",
@@ -3820,10 +3820,10 @@
       "yearUsed": "2025",
       "productId": "ebay_ef2199934c",
       "productMatched": "Donruss Optic Football",
-      "knownSets": 4,
-      "processedSetsTotal": 4,
+      "knownSets": 5,
+      "processedSetsTotal": 5,
       "remainingSets": 0,
-      "rowsAccumulated": 5
+      "rowsAccumulated": 6
     },
     "panini-obsidian-football-2025": {
       "setsFetchedThisRun": 0,
@@ -4633,9 +4633,9 @@
       "rowsAccumulated": 1
     },
     "topps-now-soccer-2026": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -6387,9 +6387,9 @@
       "error": "strict-product-not-found"
     }
   },
-  "finishedAt": "2026-10-21T10:49:58Z",
+  "finishedAt": "2026-10-22T10:49:38Z",
   "collectionsWritten": 60,
-  "rowsWritten": 1829,
-  "exactFrontsWritten": 1813,
-  "runtimeSeconds": 202.8
+  "rowsWritten": 1836,
+  "exactFrontsWritten": 1820,
+  "runtimeSeconds": 234.3
 }
