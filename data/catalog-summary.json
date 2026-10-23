@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T10:49:42.831Z",
+  "generatedAt": "2026-10-23T10:47:35.377Z",
   "scriptFilesEvaluated": 54,
   "scriptFailures": [
     {
@@ -9,21 +9,21 @@
   ],
   "collectionsWithChecklist": 77,
   "collectionRecords": 91,
-  "searchableIdentities": 22705,
+  "searchableIdentities": 22713,
   "bySport": {
-    "NFL": 6253,
-    "Soccer": 5232,
+    "NFL": 6254,
+    "Soccer": 5233,
     "NBA": 4620,
-    "MLB": 3504,
+    "MLB": 3510,
     "WWE": 1134,
     "UFC": 947,
     "Tennis": 780,
     "F1": 235
   },
-  "verifiedExactFrontRecords": 1838,
-  "approximateUniqueExactFrontIdentities": 1837,
-  "searchableIdentitiesWithExactFront": 2115,
-  "exactFrontCoveragePct": 9.32,
+  "verifiedExactFrontRecords": 1846,
+  "approximateUniqueExactFrontIdentities": 1845,
+  "searchableIdentitiesWithExactFront": 2123,
+  "exactFrontCoveragePct": 9.35,
   "topCollections": [
     {
       "id": "topps-chrome-football-2025",
@@ -37,8 +37,8 @@
       "id": "bowman-chrome-baseball-2026",
       "name": "Bowman Chrome 2026",
       "sport": "MLB",
-      "rows": 1818,
-      "identities": 1818,
+      "rows": 1823,
+      "identities": 1823,
       "coverage": "expanded-structured"
     },
     {
@@ -226,19 +226,19 @@
       "coverage": "expanded-structured"
     },
     {
-      "id": "topps-now-mlb-2026",
-      "name": "MLB Topps NOW 2026",
+      "id": "topps-chrome-college-baseball-2026",
+      "name": "Chrome College Baseball 2026",
       "sport": "MLB",
       "rows": 177,
       "identities": 177,
       "coverage": "expanded-structured"
     },
     {
-      "id": "topps-chrome-college-baseball-2026",
-      "name": "Chrome College Baseball 2026",
+      "id": "topps-now-mlb-2026",
+      "name": "MLB Topps NOW 2026",
       "sport": "MLB",
-      "rows": 176,
-      "identities": 176,
+      "rows": 177,
+      "identities": 177,
       "coverage": "expanded-structured"
     },
     {
@@ -253,8 +253,8 @@
       "id": "topps-now-soccer-2026",
       "name": "Soccer Topps NOW 2026",
       "sport": "Soccer",
-      "rows": 145,
-      "identities": 145,
+      "rows": 146,
+      "identities": 146,
       "coverage": "expanded-structured"
     },
     {
