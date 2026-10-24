@@ -1,6 +1,6 @@
 {
   "runner": "sync_mycardfolio_v2.py",
-  "startedAt": "2026-10-23T10:44:29Z",
+  "startedAt": "2026-10-24T10:43:38Z",
   "endpoint": "https://mycardfolio.com/api/mcp",
   "setsPerProductPerRun": 150,
   "requestDelaySeconds": 1.05,
@@ -2922,9 +2922,9 @@
       "rowsAccumulated": 1
     },
     "bowman-chrome-baseball-2026": {
-      "setsFetchedThisRun": 5,
-      "rowsAddedThisRun": 5,
-      "imagesAddedThisRun": 5,
+      "setsFetchedThisRun": 4,
+      "rowsAddedThisRun": 4,
+      "imagesAddedThisRun": 4,
       "candidateProducts": [
         {
           "year": "2026",
@@ -2986,10 +2986,10 @@
       "yearUsed": "2026",
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
-      "knownSets": 353,
-      "processedSetsTotal": 353,
+      "knownSets": 357,
+      "processedSetsTotal": 357,
       "remainingSets": 0,
-      "rowsAccumulated": 612
+      "rowsAccumulated": 616
     },
     "topps-finest-baseball-2026": {
       "setsFetchedThisRun": 0,
@@ -3132,9 +3132,9 @@
       "rowsAccumulated": 1
     },
     "topps-chrome-college-baseball-2026": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -3272,10 +3272,24 @@
       "rowsAccumulated": 13
     },
     "topps-holiday-baseball-2026": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 2,
+      "rowsAddedThisRun": 2,
+      "imagesAddedThisRun": 2,
       "candidateProducts": [
+        {
+          "year": "2026",
+          "label": "Holiday Baseball",
+          "score": 12,
+          "strict": true,
+          "productId": "ebay_af5c620bd5"
+        },
+        {
+          "year": "2026",
+          "label": "Topps Holiday",
+          "score": 12,
+          "strict": false,
+          "productId": "ebay_57ef5018f7"
+        },
         {
           "year": "2026",
           "label": "2026 Topps",
@@ -3317,23 +3331,15 @@
           "score": 7,
           "strict": false,
           "productId": "ebay_7bf753d622"
-        },
-        {
-          "year": "2026",
-          "label": "Holiday",
-          "score": 7,
-          "strict": false,
-          "productId": "ebay_2965099213"
-        },
-        {
-          "year": "2026",
-          "label": "Topps",
-          "score": 7,
-          "strict": false,
-          "productId": "ebay_666294998d"
         }
       ],
-      "error": "strict-product-not-found"
+      "yearUsed": "2026",
+      "productId": "ebay_af5c620bd5",
+      "productMatched": "Holiday Baseball",
+      "knownSets": 2,
+      "processedSetsTotal": 2,
+      "remainingSets": 0,
+      "rowsAccumulated": 2
     },
     "topps-update-baseball-2026": {
       "setsFetchedThisRun": 0,
@@ -3826,9 +3832,9 @@
       "rowsAccumulated": 6
     },
     "panini-obsidian-football-2025": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2025",
@@ -3896,10 +3902,17 @@
       "rowsAccumulated": 29
     },
     "topps-holiday-football-2026": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 2,
+      "rowsAddedThisRun": 2,
+      "imagesAddedThisRun": 2,
       "candidateProducts": [
+        {
+          "year": "2026",
+          "label": "Holiday Football",
+          "score": 12,
+          "strict": true,
+          "productId": "ebay_12721e4c02"
+        },
         {
           "year": "2026",
           "label": "2026 Topps",
@@ -3948,16 +3961,15 @@
           "score": 4,
           "strict": false,
           "productId": "ebay_da326ace04"
-        },
-        {
-          "year": "2026",
-          "label": "1991 Topps Football Crackle Foil",
-          "score": 4,
-          "strict": false,
-          "productId": "ebay_edff9fdb73"
         }
       ],
-      "error": "strict-product-not-found"
+      "yearUsed": "2026",
+      "productId": "ebay_12721e4c02",
+      "productMatched": "Holiday Football",
+      "knownSets": 2,
+      "processedSetsTotal": 2,
+      "remainingSets": 0,
+      "rowsAccumulated": 2
     },
     "panini-prizm-basketball-2024-25": {
       "setsFetchedThisRun": 0,
@@ -4030,10 +4042,17 @@
       "rowsAccumulated": 9
     },
     "panini-select-basketball-2024-25": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
+        {
+          "year": "2024",
+          "label": "Panini Select Basketball",
+          "score": 47,
+          "strict": true,
+          "productId": "ebay_dbcbaac121"
+        },
         {
           "year": "2024",
           "label": "Panini Select",
@@ -4082,22 +4101,17 @@
           "score": 7,
           "strict": false,
           "productId": "ing_da93e87eb0"
-        },
-        {
-          "year": "2024",
-          "label": "Select",
-          "score": 7,
-          "strict": true,
-          "productId": "ebay_4a8670f4a3"
         }
       ],
+      "purgedRowsAfterProductChange": 2,
+      "purgedImagesAfterProductChange": 2,
       "yearUsed": "2024",
-      "productId": "ebay_d6312077d4",
-      "productMatched": "Panini Select",
-      "knownSets": 2,
-      "processedSetsTotal": 2,
+      "productId": "ebay_dbcbaac121",
+      "productMatched": "Panini Select Basketball",
+      "knownSets": 1,
+      "processedSetsTotal": 1,
       "remainingSets": 0,
-      "rowsAccumulated": 2
+      "rowsAccumulated": 1
     },
     "panini-donruss-optic-basketball-2024-25": {
       "setsFetchedThisRun": 0,
@@ -4633,9 +4647,9 @@
       "rowsAccumulated": 1
     },
     "topps-now-soccer-2026": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -6085,6 +6099,13 @@
           "label": "2025/26 Topps",
           "score": 11,
           "strict": false,
+          "productId": "ebay_65de92f1dd"
+        },
+        {
+          "year": "2025",
+          "label": "2025/26 Topps",
+          "score": 11,
+          "strict": false,
           "productId": "ing_65de92f1dd"
         },
         {
@@ -6107,13 +6128,6 @@
           "score": 8,
           "strict": false,
           "productId": "ebay_7578b79958"
-        },
-        {
-          "year": "2025",
-          "label": "2025-26",
-          "score": 6,
-          "strict": false,
-          "productId": "ebay_51d4055485"
         }
       ],
       "yearUsed": "2025",
@@ -6387,9 +6401,9 @@
       "error": "strict-product-not-found"
     }
   },
-  "finishedAt": "2026-10-23T10:47:32Z",
-  "collectionsWritten": 60,
-  "rowsWritten": 1844,
-  "exactFrontsWritten": 1828,
-  "runtimeSeconds": 183.0
+  "finishedAt": "2026-10-24T10:46:52Z",
+  "collectionsWritten": 62,
+  "rowsWritten": 1851,
+  "exactFrontsWritten": 1835,
+  "runtimeSeconds": 194.3
 }

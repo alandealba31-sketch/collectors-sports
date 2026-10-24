@@ -110,6 +110,7 @@
         "ebay_42918e30e7",
         "ebay_431f9c7292",
         "ebay_43d25e4f5e",
+        "ebay_445148f6bb",
         "ebay_4540c9c325",
         "ebay_4557835e1d",
         "ebay_45c178be01",
@@ -186,6 +187,7 @@
         "ebay_77ea72665a",
         "ebay_78529b6ea4",
         "ebay_78838618a3",
+        "ebay_7902562396",
         "ebay_797deddf55",
         "ebay_798d016894",
         "ebay_7a85b76250",
@@ -312,7 +314,9 @@
         "ebay_d2cbab64e9",
         "ebay_d2f88753a8",
         "ebay_d36d3179a7",
+        "ebay_d541dc9afc",
         "ebay_d55288adda",
+        "ebay_d5b99d32ca",
         "ebay_d60a1f7c9b",
         "ebay_d784f90ae4",
         "ebay_d9282869e3",
@@ -369,7 +373,7 @@
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
       "yearUsed": "2026",
-      "knownSets": 353
+      "knownSets": 357
     },
     "topps-holiday-baseball-2025": {
       "processedSets": [
@@ -545,13 +549,12 @@
     },
     "panini-select-basketball-2024-25": {
       "processedSets": [
-        "ebay_1037ae357e",
-        "ebay_4372fe6588"
+        "ebay_066120f173"
       ],
-      "productId": "ebay_d6312077d4",
-      "productMatched": "Panini Select",
+      "productMatched": "Panini Select Basketball",
+      "productId": "ebay_dbcbaac121",
       "yearUsed": "2024",
-      "knownSets": 2
+      "knownSets": 1
     },
     "panini-donruss-optic-basketball-2024-25": {
       "processedSets": [
@@ -1316,10 +1319,24 @@
       "processedSets": []
     },
     "topps-holiday-football-2026": {
-      "processedSets": []
+      "processedSets": [
+        "ebay_92738f2f57",
+        "ebay_bfb48937aa"
+      ],
+      "productId": "ebay_12721e4c02",
+      "productMatched": "Holiday Football",
+      "yearUsed": "2026",
+      "knownSets": 2
     },
     "topps-holiday-baseball-2026": {
-      "processedSets": []
+      "processedSets": [
+        "ebay_6dfca6638b",
+        "ebay_ac33c53b89"
+      ],
+      "productId": "ebay_af5c620bd5",
+      "productMatched": "Holiday Baseball",
+      "yearUsed": "2026",
+      "knownSets": 2
     },
     "panini-real-madrid-tribute-2023-24": {
       "processedSets": []

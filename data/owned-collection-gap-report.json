@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T10:47:35.759Z",
+  "generatedAt": "2026-10-24T10:46:58.114Z",
   "source": "data/user-collection-priority.json",
   "collections": [
     {
@@ -198,38 +198,6 @@
       "collectionId": "panini-real-madrid-2025-26",
       "name": "Panini Club Real Madrid",
       "season": "2025-26",
-      "ownedRows": 0,
-      "catalogPresent": false,
-      "checklistRows": 0,
-      "uniqueIdentities": 0,
-      "baseIdentities": 0,
-      "numberedIdentities": 0,
-      "autographIdentities": 0,
-      "relicIdentities": 0,
-      "exactFrontIdentities": 0,
-      "exactFrontCoveragePct": 0,
-      "status": "missing-collection"
-    },
-    {
-      "collectionId": "topps-holiday-baseball-2026",
-      "name": "Topps Holiday Baseball",
-      "season": "2026",
-      "ownedRows": 0,
-      "catalogPresent": false,
-      "checklistRows": 0,
-      "uniqueIdentities": 0,
-      "baseIdentities": 0,
-      "numberedIdentities": 0,
-      "autographIdentities": 0,
-      "relicIdentities": 0,
-      "exactFrontIdentities": 0,
-      "exactFrontCoveragePct": 0,
-      "status": "missing-collection"
-    },
-    {
-      "collectionId": "topps-holiday-football-2026",
-      "name": "Topps Holiday Football",
-      "season": "2026",
       "ownedRows": 0,
       "catalogPresent": false,
       "checklistRows": 0,
@@ -536,14 +504,14 @@
       "season": "2024-25",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 1169,
-      "uniqueIdentities": 1169,
+      "checklistRows": 1168,
+      "uniqueIdentities": 1168,
       "baseIdentities": 0,
       "numberedIdentities": 304,
       "autographIdentities": 408,
       "relicIdentities": 187,
-      "exactFrontIdentities": 2,
-      "exactFrontCoveragePct": 0.17,
+      "exactFrontIdentities": 1,
+      "exactFrontCoveragePct": 0.09,
       "status": "needs-images"
     },
     {
@@ -952,14 +920,14 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 1823,
-      "uniqueIdentities": 1823,
+      "checklistRows": 1827,
+      "uniqueIdentities": 1827,
       "baseIdentities": 709,
       "numberedIdentities": 2,
-      "autographIdentities": 567,
+      "autographIdentities": 570,
       "relicIdentities": 37,
-      "exactFrontIdentities": 726,
-      "exactFrontCoveragePct": 39.82,
+      "exactFrontIdentities": 730,
+      "exactFrontCoveragePct": 39.96,
       "status": "needs-images"
     },
     {
@@ -1155,6 +1123,22 @@
       "status": "covered"
     },
     {
+      "collectionId": "topps-holiday-baseball-2026",
+      "name": "Topps Holiday Baseball",
+      "season": "2026",
+      "ownedRows": 0,
+      "catalogPresent": true,
+      "checklistRows": 2,
+      "uniqueIdentities": 2,
+      "baseIdentities": 0,
+      "numberedIdentities": 0,
+      "autographIdentities": 0,
+      "relicIdentities": 0,
+      "exactFrontIdentities": 2,
+      "exactFrontCoveragePct": 100,
+      "status": "covered"
+    },
+    {
       "collectionId": "topps-update-baseball-2026",
       "name": "Topps Update Series Baseball",
       "season": "2026",
@@ -1203,6 +1187,22 @@
       "status": "covered"
     },
     {
+      "collectionId": "topps-holiday-football-2026",
+      "name": "Topps Holiday Football",
+      "season": "2026",
+      "ownedRows": 0,
+      "catalogPresent": true,
+      "checklistRows": 2,
+      "uniqueIdentities": 2,
+      "baseIdentities": 0,
+      "numberedIdentities": 0,
+      "autographIdentities": 0,
+      "relicIdentities": 0,
+      "exactFrontIdentities": 2,
+      "exactFrontCoveragePct": 100,
+      "status": "covered"
+    },
+    {
       "collectionId": "topps-signature-class-basketball-2026",
       "name": "Topps Signature Class Basketball",
       "season": "2026",
@@ -1237,9 +1237,9 @@
   ],
   "totals": {
     "ownedPriorityCollections": 77,
-    "missingCollections": 15,
+    "missingCollections": 13,
     "missingChecklists": 5,
-    "uniqueIdentities": 19380,
-    "exactFrontIdentities": 1932
+    "uniqueIdentities": 19387,
+    "exactFrontIdentities": 1939
   }
 }
