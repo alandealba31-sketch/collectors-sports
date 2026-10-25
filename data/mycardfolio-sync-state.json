@@ -323,6 +323,7 @@
         "ebay_da347fc094",
         "ebay_dab915c785",
         "ebay_db50c4f046",
+        "ebay_dba57ab80d",
         "ebay_dbe1ef5bee",
         "ebay_dc79d2cddd",
         "ebay_de064b796e",
@@ -373,7 +374,7 @@
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
       "yearUsed": "2026",
-      "knownSets": 357
+      "knownSets": 358
     },
     "topps-holiday-baseball-2025": {
       "processedSets": [
@@ -1320,13 +1321,14 @@
     },
     "topps-holiday-football-2026": {
       "processedSets": [
+        "ebay_6c73746488",
         "ebay_92738f2f57",
         "ebay_bfb48937aa"
       ],
       "productId": "ebay_12721e4c02",
       "productMatched": "Holiday Football",
       "yearUsed": "2026",
-      "knownSets": 2
+      "knownSets": 3
     },
     "topps-holiday-baseball-2026": {
       "processedSets": [

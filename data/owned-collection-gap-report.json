@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T10:46:58.114Z",
+  "generatedAt": "2026-10-25T10:47:03.702Z",
   "source": "data/user-collection-priority.json",
   "collections": [
     {
@@ -920,14 +920,14 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 1827,
-      "uniqueIdentities": 1827,
+      "checklistRows": 1828,
+      "uniqueIdentities": 1828,
       "baseIdentities": 709,
       "numberedIdentities": 2,
       "autographIdentities": 570,
       "relicIdentities": 37,
-      "exactFrontIdentities": 730,
-      "exactFrontCoveragePct": 39.96,
+      "exactFrontIdentities": 732,
+      "exactFrontCoveragePct": 40.04,
       "status": "needs-images"
     },
     {
@@ -1192,13 +1192,13 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 2,
-      "uniqueIdentities": 2,
+      "checklistRows": 3,
+      "uniqueIdentities": 3,
       "baseIdentities": 0,
       "numberedIdentities": 0,
-      "autographIdentities": 0,
+      "autographIdentities": 1,
       "relicIdentities": 0,
-      "exactFrontIdentities": 2,
+      "exactFrontIdentities": 3,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     },
@@ -1239,7 +1239,7 @@
     "ownedPriorityCollections": 77,
     "missingCollections": 13,
     "missingChecklists": 5,
-    "uniqueIdentities": 19387,
-    "exactFrontIdentities": 1939
+    "uniqueIdentities": 19389,
+    "exactFrontIdentities": 1942
   }
 }
