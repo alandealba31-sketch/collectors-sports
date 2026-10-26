@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T10:47:03.301Z",
+  "generatedAt": "2026-10-26T10:56:55.856Z",
   "scriptFilesEvaluated": 54,
   "scriptFailures": [
     {
@@ -9,21 +9,21 @@
   ],
   "collectionsWithChecklist": 79,
   "collectionRecords": 93,
-  "searchableIdentities": 22722,
+  "searchableIdentities": 22741,
   "bySport": {
-    "NFL": 6257,
+    "NFL": 6261,
     "Soccer": 5233,
     "NBA": 4619,
-    "MLB": 3517,
+    "MLB": 3532,
     "WWE": 1134,
     "UFC": 947,
     "Tennis": 780,
     "F1": 235
   },
-  "verifiedExactFrontRecords": 1855,
-  "approximateUniqueExactFrontIdentities": 1854,
-  "searchableIdentitiesWithExactFront": 2133,
-  "exactFrontCoveragePct": 9.39,
+  "verifiedExactFrontRecords": 1874,
+  "approximateUniqueExactFrontIdentities": 1873,
+  "searchableIdentitiesWithExactFront": 2152,
+  "exactFrontCoveragePct": 9.46,
   "topCollections": [
     {
       "id": "topps-chrome-football-2025",
@@ -37,8 +37,8 @@
       "id": "bowman-chrome-baseball-2026",
       "name": "Bowman Chrome 2026",
       "sport": "MLB",
-      "rows": 1828,
-      "identities": 1828,
+      "rows": 1830,
+      "identities": 1830,
       "coverage": "expanded-structured"
     },
     {
@@ -229,16 +229,16 @@
       "id": "topps-chrome-college-baseball-2026",
       "name": "Chrome College Baseball 2026",
       "sport": "MLB",
-      "rows": 177,
-      "identities": 177,
+      "rows": 180,
+      "identities": 180,
       "coverage": "expanded-structured"
     },
     {
       "id": "topps-now-mlb-2026",
       "name": "MLB Topps NOW 2026",
       "sport": "MLB",
-      "rows": 177,
-      "identities": 177,
+      "rows": 178,
+      "identities": 178,
       "coverage": "expanded-structured"
     },
     {

@@ -220,6 +220,7 @@
         "ebay_8935198152",
         "ebay_8958536dc2",
         "ebay_8adc46d28a",
+        "ebay_8b3495a498",
         "ebay_8b8a34fac7",
         "ebay_8bbd9aa666",
         "ebay_8e44e1cfb8",
@@ -319,6 +320,7 @@
         "ebay_d5b99d32ca",
         "ebay_d60a1f7c9b",
         "ebay_d784f90ae4",
+        "ebay_d8e529e64e",
         "ebay_d9282869e3",
         "ebay_da347fc094",
         "ebay_dab915c785",
@@ -374,7 +376,7 @@
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
       "yearUsed": "2026",
-      "knownSets": 358
+      "knownSets": 360
     },
     "topps-holiday-baseball-2025": {
       "processedSets": [
@@ -978,12 +980,13 @@
     },
     "topps-now-mlb-2026": {
       "processedSets": [
+        "ebay_0e85d2e9c6",
         "ebay_6502916e34"
       ],
       "productId": "ebay_b08f24a4d3",
       "productMatched": "MLB Topps NOW",
       "yearUsed": "2026",
-      "knownSets": 1
+      "knownSets": 2
     },
     "topps-now-wbc-2026": {
       "processedSets": [
@@ -1321,24 +1324,33 @@
     },
     "topps-holiday-football-2026": {
       "processedSets": [
+        "ebay_36bee8de68",
+        "ebay_3fc651b1c8",
         "ebay_6c73746488",
+        "ebay_8ab60a0653",
         "ebay_92738f2f57",
+        "ebay_957b21e824",
         "ebay_bfb48937aa"
       ],
       "productId": "ebay_12721e4c02",
       "productMatched": "Holiday Football",
       "yearUsed": "2026",
-      "knownSets": 3
+      "knownSets": 7
     },
     "topps-holiday-baseball-2026": {
       "processedSets": [
+        "ebay_4fa16cdaf9",
         "ebay_6dfca6638b",
-        "ebay_ac33c53b89"
+        "ebay_8494ad5288",
+        "ebay_a27d299d3d",
+        "ebay_ac33c53b89",
+        "ebay_e40c6ac041",
+        "ebay_ea4240ac02"
       ],
       "productId": "ebay_af5c620bd5",
       "productMatched": "Holiday Baseball",
       "yearUsed": "2026",
-      "knownSets": 2
+      "knownSets": 7
     },
     "panini-real-madrid-tribute-2023-24": {
       "processedSets": []
@@ -1421,6 +1433,7 @@
         "ebay_15b0603db1",
         "ebay_1893956609",
         "ebay_194aa1dc40",
+        "ebay_1ce862cbcd",
         "ebay_20a5586e3b",
         "ebay_20d7b67ff4",
         "ebay_2222432a4a",
@@ -1464,6 +1477,7 @@
         "ebay_768545bec1",
         "ebay_76f0073737",
         "ebay_7a30dddecd",
+        "ebay_7b5ef6f2c3",
         "ebay_7bc8d5824a",
         "ebay_7c4598517f",
         "ebay_7f7245403b",
@@ -1488,6 +1502,7 @@
         "ebay_ae654f7cbb",
         "ebay_af4039aba6",
         "ebay_b234b90de9",
+        "ebay_b37fa231da",
         "ebay_b3c78487ba",
         "ebay_b7a5a6105a",
         "ebay_bf4d55dc36",
@@ -1531,7 +1546,7 @@
       "productId": "ebay_34a2a395f2",
       "productMatched": "Topps Chrome",
       "yearUsed": "2026",
-      "knownSets": 115
+      "knownSets": 118
     },
     "panini-obsidian-football-2025": {
       "processedSets": [
