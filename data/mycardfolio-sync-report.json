@@ -1,6 +1,6 @@
 {
   "runner": "sync_mycardfolio_v2.py",
-  "startedAt": "2026-10-26T10:52:52Z",
+  "startedAt": "2026-10-27T10:50:12Z",
   "endpoint": "https://mycardfolio.com/api/mcp",
   "setsPerProductPerRun": 150,
   "requestDelaySeconds": 1.05,
@@ -2986,10 +2986,10 @@
       "yearUsed": "2026",
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
-      "knownSets": 360,
-      "processedSetsTotal": 360,
+      "knownSets": 362,
+      "processedSetsTotal": 362,
       "remainingSets": 0,
-      "rowsAccumulated": 619
+      "rowsAccumulated": 621
     },
     "topps-finest-baseball-2026": {
       "setsFetchedThisRun": 0,
@@ -3132,9 +3132,9 @@
       "rowsAccumulated": 1
     },
     "topps-chrome-college-baseball-2026": {
-      "setsFetchedThisRun": 3,
-      "rowsAddedThisRun": 3,
-      "imagesAddedThisRun": 3,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -3272,9 +3272,9 @@
       "rowsAccumulated": 13
     },
     "topps-holiday-baseball-2026": {
-      "setsFetchedThisRun": 5,
-      "rowsAddedThisRun": 9,
-      "imagesAddedThisRun": 9,
+      "setsFetchedThisRun": 2,
+      "rowsAddedThisRun": 2,
+      "imagesAddedThisRun": 2,
       "candidateProducts": [
         {
           "year": "2026",
@@ -3336,10 +3336,10 @@
       "yearUsed": "2026",
       "productId": "ebay_af5c620bd5",
       "productMatched": "Holiday Baseball",
-      "knownSets": 7,
-      "processedSetsTotal": 7,
+      "knownSets": 9,
+      "processedSetsTotal": 9,
       "remainingSets": 0,
-      "rowsAccumulated": 11
+      "rowsAccumulated": 13
     },
     "topps-update-baseball-2026": {
       "setsFetchedThisRun": 0,
@@ -3902,9 +3902,9 @@
       "rowsAccumulated": 29
     },
     "topps-holiday-football-2026": {
-      "setsFetchedThisRun": 4,
-      "rowsAddedThisRun": 4,
-      "imagesAddedThisRun": 4,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -4386,9 +4386,9 @@
       "error": "strict-product-not-found"
     },
     "topps-now-mlb-2026": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -6399,9 +6399,9 @@
       "error": "strict-product-not-found"
     }
   },
-  "finishedAt": "2026-10-26T10:56:52Z",
+  "finishedAt": "2026-10-27T10:53:37Z",
   "collectionsWritten": 62,
-  "rowsWritten": 1872,
-  "exactFrontsWritten": 1856,
-  "runtimeSeconds": 240.7
+  "rowsWritten": 1876,
+  "exactFrontsWritten": 1860,
+  "runtimeSeconds": 205.1
 }

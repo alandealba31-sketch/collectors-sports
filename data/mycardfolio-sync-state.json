@@ -101,6 +101,7 @@
         "ebay_3b30deff0b",
         "ebay_3b56b36da5",
         "ebay_3bd967ab03",
+        "ebay_3c08a20cbe",
         "ebay_3e39c4cec2",
         "ebay_3e78cabbc3",
         "ebay_3ef2a8e189",
@@ -341,6 +342,7 @@
         "ebay_e78344e5fa",
         "ebay_e847a80a49",
         "ebay_e902040d2d",
+        "ebay_e91aeb4b87",
         "ebay_eabfc5f497",
         "ebay_ebf891ac16",
         "ebay_ec952e2b6f",
@@ -376,7 +378,7 @@
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
       "yearUsed": "2026",
-      "knownSets": 360
+      "knownSets": 362
     },
     "topps-holiday-baseball-2025": {
       "processedSets": [
@@ -1339,18 +1341,20 @@
     },
     "topps-holiday-baseball-2026": {
       "processedSets": [
+        "ebay_07e1e8c6bb",
         "ebay_4fa16cdaf9",
         "ebay_6dfca6638b",
         "ebay_8494ad5288",
         "ebay_a27d299d3d",
         "ebay_ac33c53b89",
+        "ebay_c307c29690",
         "ebay_e40c6ac041",
         "ebay_ea4240ac02"
       ],
       "productId": "ebay_af5c620bd5",
       "productMatched": "Holiday Baseball",
       "yearUsed": "2026",
-      "knownSets": 7
+      "knownSets": 9
     },
     "panini-real-madrid-tribute-2023-24": {
       "processedSets": []
