@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T10:53:40.295Z",
+  "generatedAt": "2026-10-28T11:00:40.135Z",
   "scriptFilesEvaluated": 54,
   "scriptFailures": [
     {
@@ -9,21 +9,21 @@
   ],
   "collectionsWithChecklist": 79,
   "collectionRecords": 93,
-  "searchableIdentities": 22745,
+  "searchableIdentities": 22757,
   "bySport": {
-    "NFL": 6261,
+    "NFL": 6263,
     "Soccer": 5233,
     "NBA": 4619,
-    "MLB": 3536,
+    "MLB": 3546,
     "WWE": 1134,
     "UFC": 947,
     "Tennis": 780,
     "F1": 235
   },
-  "verifiedExactFrontRecords": 1878,
-  "approximateUniqueExactFrontIdentities": 1877,
-  "searchableIdentitiesWithExactFront": 2156,
-  "exactFrontCoveragePct": 9.48,
+  "verifiedExactFrontRecords": 1890,
+  "approximateUniqueExactFrontIdentities": 1889,
+  "searchableIdentitiesWithExactFront": 2171,
+  "exactFrontCoveragePct": 9.54,
   "topCollections": [
     {
       "id": "topps-chrome-football-2025",
@@ -37,8 +37,8 @@
       "id": "bowman-chrome-baseball-2026",
       "name": "Bowman Chrome 2026",
       "sport": "MLB",
-      "rows": 1832,
-      "identities": 1832,
+      "rows": 1839,
+      "identities": 1839,
       "coverage": "expanded-structured"
     },
     {
@@ -117,8 +117,8 @@
       "id": "topps-resurgence-football-2025",
       "name": "Resurgence NFL 2025",
       "sport": "NFL",
-      "rows": 753,
-      "identities": 753,
+      "rows": 754,
+      "identities": 754,
       "coverage": "expanded-structured"
     },
     {

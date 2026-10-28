@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T10:53:40.651Z",
+  "generatedAt": "2026-10-28T11:00:40.485Z",
   "source": "data/user-collection-priority.json",
   "collections": [
     {
@@ -643,22 +643,6 @@
       "status": "needs-images"
     },
     {
-      "collectionId": "topps-resurgence-football-2025",
-      "name": "Topps Resurgence Football",
-      "season": "2025",
-      "ownedRows": 0,
-      "catalogPresent": true,
-      "checklistRows": 753,
-      "uniqueIdentities": 753,
-      "baseIdentities": 749,
-      "numberedIdentities": 0,
-      "autographIdentities": 272,
-      "relicIdentities": 100,
-      "exactFrontIdentities": 10,
-      "exactFrontCoveragePct": 1.33,
-      "status": "needs-images"
-    },
-    {
       "collectionId": "topps-signature-class-football-2025",
       "name": "Topps Signature Class Football",
       "season": "2025",
@@ -687,6 +671,22 @@
       "autographIdentities": 17,
       "relicIdentities": 0,
       "exactFrontIdentities": 1,
+      "exactFrontCoveragePct": 1.72,
+      "status": "needs-images"
+    },
+    {
+      "collectionId": "topps-resurgence-football-2025",
+      "name": "Topps Resurgence Football",
+      "season": "2025",
+      "ownedRows": 0,
+      "catalogPresent": true,
+      "checklistRows": 754,
+      "uniqueIdentities": 754,
+      "baseIdentities": 749,
+      "numberedIdentities": 0,
+      "autographIdentities": 273,
+      "relicIdentities": 100,
+      "exactFrontIdentities": 13,
       "exactFrontCoveragePct": 1.72,
       "status": "needs-images"
     },
@@ -920,14 +920,14 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 1832,
-      "uniqueIdentities": 1832,
+      "checklistRows": 1839,
+      "uniqueIdentities": 1839,
       "baseIdentities": 709,
       "numberedIdentities": 2,
-      "autographIdentities": 570,
+      "autographIdentities": 571,
       "relicIdentities": 37,
-      "exactFrontIdentities": 736,
-      "exactFrontCoveragePct": 40.17,
+      "exactFrontIdentities": 744,
+      "exactFrontCoveragePct": 40.46,
       "status": "needs-images"
     },
     {
@@ -1128,13 +1128,13 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 13,
-      "uniqueIdentities": 13,
+      "checklistRows": 14,
+      "uniqueIdentities": 14,
       "baseIdentities": 0,
       "numberedIdentities": 0,
       "autographIdentities": 0,
       "relicIdentities": 0,
-      "exactFrontIdentities": 13,
+      "exactFrontIdentities": 14,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     },
@@ -1144,13 +1144,13 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 2,
-      "uniqueIdentities": 2,
+      "checklistRows": 4,
+      "uniqueIdentities": 4,
       "baseIdentities": 0,
       "numberedIdentities": 0,
       "autographIdentities": 0,
       "relicIdentities": 0,
-      "exactFrontIdentities": 2,
+      "exactFrontIdentities": 4,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     },
@@ -1192,13 +1192,13 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 7,
-      "uniqueIdentities": 7,
+      "checklistRows": 8,
+      "uniqueIdentities": 8,
       "baseIdentities": 0,
       "numberedIdentities": 0,
       "autographIdentities": 1,
       "relicIdentities": 0,
-      "exactFrontIdentities": 7,
+      "exactFrontIdentities": 8,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     },
@@ -1239,7 +1239,7 @@
     "ownedPriorityCollections": 77,
     "missingCollections": 13,
     "missingChecklists": 5,
-    "uniqueIdentities": 19412,
-    "exactFrontIdentities": 1965
+    "uniqueIdentities": 19424,
+    "exactFrontIdentities": 1980
   }
 }

@@ -32,6 +32,7 @@
         "ebay_082bed4fde",
         "ebay_087564587d",
         "ebay_08eecc809d",
+        "ebay_092ed66d4b",
         "ebay_098aebbe6e",
         "ebay_09ecc0e4f4",
         "ebay_0a5aaea61f",
@@ -97,7 +98,9 @@
         "ebay_37462d8308",
         "ebay_37632dcf4a",
         "ebay_3804d38fe4",
+        "ebay_3a581c37fc",
         "ebay_3ab9e25f15",
+        "ebay_3b0edb4bb7",
         "ebay_3b30deff0b",
         "ebay_3b56b36da5",
         "ebay_3bd967ab03",
@@ -166,6 +169,7 @@
         "ebay_6bcd25f678",
         "ebay_6cdc631a91",
         "ebay_6d7a9118da",
+        "ebay_6d7d4fec72",
         "ebay_6db771cf2b",
         "ebay_6e51fabdb9",
         "ebay_6ea3526cb7",
@@ -265,6 +269,7 @@
         "ebay_afaca744c5",
         "ebay_afb9fd0678",
         "ebay_b0250e7a7c",
+        "ebay_b07bcf39a6",
         "ebay_b115c89839",
         "ebay_b20e3a63b3",
         "ebay_b2b99cfcfc",
@@ -272,6 +277,7 @@
         "ebay_b380d69055",
         "ebay_b43f814b98",
         "ebay_b52a32f62d",
+        "ebay_b6199c622a",
         "ebay_b702eebf61",
         "ebay_b7860ded89",
         "ebay_b8db817c76",
@@ -306,6 +312,7 @@
         "ebay_d00c14de37",
         "ebay_d096491b2a",
         "ebay_d0ef6b01c7",
+        "ebay_d1037ecd3c",
         "ebay_d1038cf0e9",
         "ebay_d16cf1921d",
         "ebay_d1b6eaf598",
@@ -378,7 +385,7 @@
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
       "yearUsed": "2026",
-      "knownSets": 362
+      "knownSets": 369
     },
     "topps-holiday-baseball-2025": {
       "processedSets": [
@@ -400,13 +407,15 @@
     },
     "topps-update-baseball-2026": {
       "processedSets": [
+        "ebay_0bec8b8b08",
+        "ebay_8e34765e17",
         "ebay_998a52ec59",
         "ebay_ef412fe747"
       ],
       "productMatched": "Topps Update Series",
       "productId": "ebay_bf954bb576",
       "yearUsed": "2026",
-      "knownSets": 2
+      "knownSets": 4
     },
     "topps-chrome-logofractor-baseball-2026": {
       "processedSets": [
@@ -495,6 +504,7 @@
     },
     "topps-resurgence-football-2025": {
       "processedSets": [
+        "ebay_149e2f586d",
         "ebay_3498a99dd2",
         "ebay_cb17b10717",
         "ebay_cda5822c6c",
@@ -503,7 +513,7 @@
       "productId": "ebay_2c7f8bd694",
       "productMatched": "Topps Resurgence",
       "yearUsed": "2025",
-      "knownSets": 4
+      "knownSets": 5
     },
     "topps-flagship-football-2026": {
       "processedSets": [
@@ -1328,6 +1338,7 @@
       "processedSets": [
         "ebay_36bee8de68",
         "ebay_3fc651b1c8",
+        "ebay_5efe96207f",
         "ebay_6c73746488",
         "ebay_8ab60a0653",
         "ebay_92738f2f57",
@@ -1337,7 +1348,7 @@
       "productId": "ebay_12721e4c02",
       "productMatched": "Holiday Football",
       "yearUsed": "2026",
-      "knownSets": 7
+      "knownSets": 8
     },
     "topps-holiday-baseball-2026": {
       "processedSets": [
@@ -1346,6 +1357,7 @@
         "ebay_6dfca6638b",
         "ebay_8494ad5288",
         "ebay_a27d299d3d",
+        "ebay_a67f85aadb",
         "ebay_ac33c53b89",
         "ebay_c307c29690",
         "ebay_e40c6ac041",
@@ -1354,7 +1366,7 @@
       "productId": "ebay_af5c620bd5",
       "productMatched": "Holiday Baseball",
       "yearUsed": "2026",
-      "knownSets": 9
+      "knownSets": 10
     },
     "panini-real-madrid-tribute-2023-24": {
       "processedSets": []

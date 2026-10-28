@@ -1,6 +1,6 @@
 {
   "runner": "sync_mycardfolio_v2.py",
-  "startedAt": "2026-10-27T10:50:12Z",
+  "startedAt": "2026-10-28T10:56:45Z",
   "endpoint": "https://mycardfolio.com/api/mcp",
   "setsPerProductPerRun": 150,
   "requestDelaySeconds": 1.05,
@@ -2922,9 +2922,9 @@
       "rowsAccumulated": 1
     },
     "bowman-chrome-baseball-2026": {
-      "setsFetchedThisRun": 2,
-      "rowsAddedThisRun": 2,
-      "imagesAddedThisRun": 2,
+      "setsFetchedThisRun": 7,
+      "rowsAddedThisRun": 7,
+      "imagesAddedThisRun": 7,
       "candidateProducts": [
         {
           "year": "2026",
@@ -2986,10 +2986,10 @@
       "yearUsed": "2026",
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
-      "knownSets": 362,
-      "processedSetsTotal": 362,
+      "knownSets": 369,
+      "processedSetsTotal": 369,
       "remainingSets": 0,
-      "rowsAccumulated": 621
+      "rowsAccumulated": 628
     },
     "topps-finest-baseball-2026": {
       "setsFetchedThisRun": 0,
@@ -3272,9 +3272,9 @@
       "rowsAccumulated": 13
     },
     "topps-holiday-baseball-2026": {
-      "setsFetchedThisRun": 2,
-      "rowsAddedThisRun": 2,
-      "imagesAddedThisRun": 2,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
         {
           "year": "2026",
@@ -3336,15 +3336,15 @@
       "yearUsed": "2026",
       "productId": "ebay_af5c620bd5",
       "productMatched": "Holiday Baseball",
-      "knownSets": 9,
-      "processedSetsTotal": 9,
+      "knownSets": 10,
+      "processedSetsTotal": 10,
       "remainingSets": 0,
-      "rowsAccumulated": 13
+      "rowsAccumulated": 14
     },
     "topps-update-baseball-2026": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 2,
+      "rowsAddedThisRun": 2,
+      "imagesAddedThisRun": 2,
       "candidateProducts": [
         {
           "year": "2026",
@@ -3406,10 +3406,10 @@
       "yearUsed": "2026",
       "productId": "ebay_bf954bb576",
       "productMatched": "Topps Update Series",
-      "knownSets": 2,
-      "processedSetsTotal": 2,
+      "knownSets": 4,
+      "processedSetsTotal": 4,
       "remainingSets": 0,
-      "rowsAccumulated": 2
+      "rowsAccumulated": 4
     },
     "topps-chrome-logofractor-baseball-2026": {
       "setsFetchedThisRun": 0,
@@ -3593,6 +3593,13 @@
         },
         {
           "year": "2025",
+          "label": "Signature Class Action",
+          "score": 4,
+          "strict": true,
+          "productId": "ebay_9654068c92"
+        },
+        {
+          "year": "2025",
           "label": "Signature Class After Image",
           "score": 4,
           "strict": true,
@@ -3604,13 +3611,6 @@
           "score": 4,
           "strict": true,
           "productId": "ebay_6c09c481dc"
-        },
-        {
-          "year": "2025",
-          "label": "Signature Class Chrome Autographs",
-          "score": 4,
-          "strict": true,
-          "productId": "ebay_0099db3133"
         }
       ],
       "yearUsed": "2025",
@@ -3622,9 +3622,9 @@
       "rowsAccumulated": 8
     },
     "topps-resurgence-football-2025": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
         {
           "year": "2025",
@@ -3686,10 +3686,10 @@
       "yearUsed": "2025",
       "productId": "ebay_2c7f8bd694",
       "productMatched": "Topps Resurgence",
-      "knownSets": 4,
-      "processedSetsTotal": 4,
+      "knownSets": 5,
+      "processedSetsTotal": 5,
       "remainingSets": 0,
-      "rowsAccumulated": 4
+      "rowsAccumulated": 5
     },
     "topps-flagship-football-2026": {
       "setsFetchedThisRun": 0,
@@ -3902,9 +3902,9 @@
       "rowsAccumulated": 29
     },
     "topps-holiday-football-2026": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
         {
           "year": "2026",
@@ -3966,10 +3966,10 @@
       "yearUsed": "2026",
       "productId": "ebay_12721e4c02",
       "productMatched": "Holiday Football",
-      "knownSets": 7,
-      "processedSetsTotal": 7,
+      "knownSets": 8,
+      "processedSetsTotal": 8,
       "remainingSets": 0,
-      "rowsAccumulated": 7
+      "rowsAccumulated": 8
     },
     "panini-prizm-basketball-2024-25": {
       "setsFetchedThisRun": 0,
@@ -6399,9 +6399,9 @@
       "error": "strict-product-not-found"
     }
   },
-  "finishedAt": "2026-10-27T10:53:37Z",
+  "finishedAt": "2026-10-28T11:00:37Z",
   "collectionsWritten": 62,
-  "rowsWritten": 1876,
-  "exactFrontsWritten": 1860,
-  "runtimeSeconds": 205.1
+  "rowsWritten": 1888,
+  "exactFrontsWritten": 1872,
+  "runtimeSeconds": 232.0
 }
