@@ -1,6 +1,6 @@
 {
   "runner": "sync_mycardfolio_v2.py",
-  "startedAt": "2026-10-28T10:56:45Z",
+  "startedAt": "2026-10-29T10:58:03Z",
   "endpoint": "https://mycardfolio.com/api/mcp",
   "setsPerProductPerRun": 150,
   "requestDelaySeconds": 1.05,
@@ -50,9 +50,9 @@
       "error": "strict-product-not-found"
     },
     "topps-chrome-mls-2026": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 2,
+      "rowsAddedThisRun": 2,
+      "imagesAddedThisRun": 2,
       "candidateProducts": [
         {
           "year": "2026",
@@ -114,10 +114,10 @@
       "yearUsed": "2026",
       "productId": "ebay_3553355cdc",
       "productMatched": "Chrome MLS",
-      "knownSets": 2,
-      "processedSetsTotal": 2,
+      "knownSets": 4,
+      "processedSetsTotal": 4,
       "remainingSets": 0,
-      "rowsAccumulated": 2
+      "rowsAccumulated": 4
     },
     "topps-chrome-ucc-2025-26": {
       "setsFetchedThisRun": 0,
@@ -470,9 +470,9 @@
       "rowsAccumulated": 7
     },
     "panini-select-road-to-world-cup-2025-26": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
         {
           "year": "2025",
@@ -534,10 +534,10 @@
       "yearUsed": "2025",
       "productId": "ebay_6c15412d98",
       "productMatched": "Select Road to World Cup",
-      "knownSets": 8,
-      "processedSetsTotal": 8,
+      "knownSets": 9,
+      "processedSetsTotal": 9,
       "remainingSets": 0,
-      "rowsAccumulated": 8
+      "rowsAccumulated": 9
     },
     "panini-select-la-liga-2024-25": {
       "setsFetchedThisRun": 0,
@@ -722,17 +722,17 @@
         },
         {
           "year": "2024",
+          "label": "CONMEBOL Copa America Contendientes a la Orange",
+          "score": 5,
+          "strict": true,
+          "productId": "ebay_08f4f16c72"
+        },
+        {
+          "year": "2024",
           "label": "CONMEBOL Copa America Scorers Club",
           "score": 5,
           "strict": true,
           "productId": "ebay_3468dcdcc8"
-        },
-        {
-          "year": "2024",
-          "label": "Instant CONMEBOL Copa America",
-          "score": 5,
-          "strict": true,
-          "productId": "ebay_f2a188dcf8"
         }
       ],
       "yearUsed": "2024",
@@ -1804,9 +1804,9 @@
       "error": "strict-product-not-found"
     },
     "topps-bayern-collector-tin-2025-26": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
         {
           "year": "2025",
@@ -1814,6 +1814,13 @@
           "score": 10,
           "strict": false,
           "productId": "ebay_49b764b1f3"
+        },
+        {
+          "year": "2025",
+          "label": "Bayern",
+          "score": 5,
+          "strict": true,
+          "productId": "ebay_861f51cb8f"
         },
         {
           "year": "2025",
@@ -1856,16 +1863,15 @@
           "score": -5,
           "strict": false,
           "productId": "ing_ab114ef1f4"
-        },
-        {
-          "year": "2025",
-          "label": "Champions d’Europe Une Nuit a Munich",
-          "score": -5,
-          "strict": false,
-          "productId": "ebay_c7679c8eda"
         }
       ],
-      "error": "strict-product-not-found"
+      "yearUsed": "2025",
+      "productId": "ebay_861f51cb8f",
+      "productMatched": "Bayern",
+      "knownSets": 1,
+      "processedSetsTotal": 1,
+      "remainingSets": 0,
+      "rowsAccumulated": 1
     },
     "topps-arsenal-collector-tin-2026-27": {
       "setsFetchedThisRun": 0,
@@ -2604,6 +2610,13 @@
         },
         {
           "year": "2025",
+          "label": "Adrenalyn XL LaLiga 2025-26",
+          "score": 0,
+          "strict": false,
+          "productId": "ebay_022491da4b"
+        },
+        {
+          "year": "2025",
           "label": "Barcelona 2025/26 UEFA",
           "score": 0,
           "strict": false,
@@ -2636,13 +2649,6 @@
           "score": -5,
           "strict": false,
           "productId": "ebay_1667398acf"
-        },
-        {
-          "year": "2025",
-          "label": "Chrome UEFA Club",
-          "score": -5,
-          "strict": false,
-          "productId": "ebay_298d18b9a8"
         }
       ],
       "error": "strict-product-not-found"
@@ -2689,6 +2695,13 @@
         },
         {
           "year": "2025",
+          "label": "Adrenalyn XL LaLiga 2025-26",
+          "score": 0,
+          "strict": false,
+          "productId": "ebay_022491da4b"
+        },
+        {
+          "year": "2025",
           "label": "Barcelona 2025/26 UEFA",
           "score": 0,
           "strict": false,
@@ -2700,13 +2713,6 @@
           "score": -2,
           "strict": false,
           "productId": "ebay_4f1fee66d8"
-        },
-        {
-          "year": "2025",
-          "label": "Chrome Club Competitions",
-          "score": -3,
-          "strict": false,
-          "productId": "ebay_1667398acf"
         }
       ],
       "error": "strict-product-not-found"
@@ -2922,9 +2928,9 @@
       "rowsAccumulated": 1
     },
     "bowman-chrome-baseball-2026": {
-      "setsFetchedThisRun": 7,
-      "rowsAddedThisRun": 7,
-      "imagesAddedThisRun": 7,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
         {
           "year": "2026",
@@ -2986,10 +2992,10 @@
       "yearUsed": "2026",
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
-      "knownSets": 369,
-      "processedSetsTotal": 369,
+      "knownSets": 370,
+      "processedSetsTotal": 370,
       "remainingSets": 0,
-      "rowsAccumulated": 628
+      "rowsAccumulated": 629
     },
     "topps-finest-baseball-2026": {
       "setsFetchedThisRun": 0,
@@ -3272,9 +3278,9 @@
       "rowsAccumulated": 13
     },
     "topps-holiday-baseball-2026": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 2,
+      "rowsAddedThisRun": 2,
+      "imagesAddedThisRun": 2,
       "candidateProducts": [
         {
           "year": "2026",
@@ -3336,15 +3342,15 @@
       "yearUsed": "2026",
       "productId": "ebay_af5c620bd5",
       "productMatched": "Holiday Baseball",
-      "knownSets": 10,
-      "processedSetsTotal": 10,
+      "knownSets": 12,
+      "processedSetsTotal": 12,
       "remainingSets": 0,
-      "rowsAccumulated": 14
+      "rowsAccumulated": 16
     },
     "topps-update-baseball-2026": {
-      "setsFetchedThisRun": 2,
-      "rowsAddedThisRun": 2,
-      "imagesAddedThisRun": 2,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -3412,9 +3418,9 @@
       "rowsAccumulated": 4
     },
     "topps-chrome-logofractor-baseball-2026": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
         {
           "year": "2026",
@@ -3476,10 +3482,10 @@
       "yearUsed": "2026",
       "productId": "ebay_5eb056579a",
       "productMatched": "Chrome Logofractor Edition",
-      "knownSets": 2,
-      "processedSetsTotal": 2,
+      "knownSets": 3,
+      "processedSetsTotal": 3,
       "remainingSets": 0,
-      "rowsAccumulated": 2
+      "rowsAccumulated": 3
     },
     "topps-chrome-football-2025": {
       "setsFetchedThisRun": 0,
@@ -3622,9 +3628,9 @@
       "rowsAccumulated": 8
     },
     "topps-resurgence-football-2025": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2025",
@@ -3966,10 +3972,10 @@
       "yearUsed": "2026",
       "productId": "ebay_12721e4c02",
       "productMatched": "Holiday Football",
-      "knownSets": 8,
-      "processedSetsTotal": 8,
+      "knownSets": 9,
+      "processedSetsTotal": 9,
       "remainingSets": 0,
-      "rowsAccumulated": 8
+      "rowsAccumulated": 9
     },
     "panini-prizm-basketball-2024-25": {
       "setsFetchedThisRun": 0,
@@ -4645,9 +4651,9 @@
       "rowsAccumulated": 1
     },
     "topps-now-soccer-2026": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 4,
+      "rowsAddedThisRun": 4,
+      "imagesAddedThisRun": 4,
       "candidateProducts": [
         {
           "year": "2026",
@@ -4709,10 +4715,10 @@
       "yearUsed": "2026",
       "productId": "ebay_14edd5b886",
       "productMatched": "Now",
-      "knownSets": 110,
-      "processedSetsTotal": 110,
+      "knownSets": 114,
+      "processedSetsTotal": 114,
       "remainingSets": 0,
-      "rowsAccumulated": 146
+      "rowsAccumulated": 150
     },
     "topps-archives-snapshots-baseball-2021": {
       "setsFetchedThisRun": 0,
@@ -6399,9 +6405,9 @@
       "error": "strict-product-not-found"
     }
   },
-  "finishedAt": "2026-10-28T11:00:37Z",
-  "collectionsWritten": 62,
-  "rowsWritten": 1888,
-  "exactFrontsWritten": 1872,
-  "runtimeSeconds": 232.0
+  "finishedAt": "2026-10-29T11:01:48Z",
+  "collectionsWritten": 63,
+  "rowsWritten": 1901,
+  "exactFrontsWritten": 1885,
+  "runtimeSeconds": 225.1
 }

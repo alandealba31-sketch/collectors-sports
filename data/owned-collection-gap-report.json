@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T11:00:40.485Z",
+  "generatedAt": "2026-10-29T11:01:52.186Z",
   "source": "data/user-collection-priority.json",
   "collections": [
     {
@@ -371,22 +371,6 @@
       "status": "needs-images"
     },
     {
-      "collectionId": "topps-bayern-collector-tin-2025-26",
-      "name": "Topps Bayern Munich Collector Tin",
-      "season": "2025-26",
-      "ownedRows": 0,
-      "catalogPresent": true,
-      "checklistRows": 56,
-      "uniqueIdentities": 56,
-      "baseIdentities": 0,
-      "numberedIdentities": 0,
-      "autographIdentities": 16,
-      "relicIdentities": 0,
-      "exactFrontIdentities": 0,
-      "exactFrontCoveragePct": 0,
-      "status": "needs-images"
-    },
-    {
       "collectionId": "topps-arsenal-collector-tin-2026-27",
       "name": "Topps Arsenal Collector Tin",
       "season": "2026-27",
@@ -595,22 +579,6 @@
       "status": "needs-images"
     },
     {
-      "collectionId": "topps-chrome-mls-2026",
-      "name": "Topps Chrome MLS",
-      "season": "2026",
-      "ownedRows": 17,
-      "catalogPresent": true,
-      "checklistRows": 202,
-      "uniqueIdentities": 202,
-      "baseIdentities": 200,
-      "numberedIdentities": 0,
-      "autographIdentities": 0,
-      "relicIdentities": 0,
-      "exactFrontIdentities": 2,
-      "exactFrontCoveragePct": 0.99,
-      "status": "needs-images"
-    },
-    {
       "collectionId": "panini-prizm-club-world-cup-2025",
       "name": "Panini Prizm FIFA Club World Cup",
       "season": "2025",
@@ -707,6 +675,22 @@
       "status": "needs-images"
     },
     {
+      "collectionId": "topps-bayern-collector-tin-2025-26",
+      "name": "Topps Bayern Munich Collector Tin",
+      "season": "2025-26",
+      "ownedRows": 0,
+      "catalogPresent": true,
+      "checklistRows": 57,
+      "uniqueIdentities": 57,
+      "baseIdentities": 0,
+      "numberedIdentities": 0,
+      "autographIdentities": 16,
+      "relicIdentities": 0,
+      "exactFrontIdentities": 1,
+      "exactFrontCoveragePct": 1.75,
+      "status": "needs-images"
+    },
+    {
       "collectionId": "panini-donruss-optic-basketball-2024-25",
       "name": "Panini Donruss Optic Basketball",
       "season": "2024-25",
@@ -720,6 +704,22 @@
       "relicIdentities": 1,
       "exactFrontIdentities": 20,
       "exactFrontCoveragePct": 1.83,
+      "status": "needs-images"
+    },
+    {
+      "collectionId": "topps-chrome-mls-2026",
+      "name": "Topps Chrome MLS",
+      "season": "2026",
+      "ownedRows": 17,
+      "catalogPresent": true,
+      "checklistRows": 204,
+      "uniqueIdentities": 204,
+      "baseIdentities": 200,
+      "numberedIdentities": 0,
+      "autographIdentities": 0,
+      "relicIdentities": 0,
+      "exactFrontIdentities": 4,
+      "exactFrontCoveragePct": 1.96,
       "status": "needs-images"
     },
     {
@@ -760,14 +760,14 @@
       "season": "2025-26",
       "ownedRows": 1,
       "catalogPresent": true,
-      "checklistRows": 467,
-      "uniqueIdentities": 467,
+      "checklistRows": 468,
+      "uniqueIdentities": 468,
       "baseIdentities": 0,
       "numberedIdentities": 0,
       "autographIdentities": 11,
       "relicIdentities": 10,
-      "exactFrontIdentities": 11,
-      "exactFrontCoveragePct": 2.36,
+      "exactFrontIdentities": 12,
+      "exactFrontCoveragePct": 2.56,
       "status": "needs-images"
     },
     {
@@ -920,14 +920,14 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 1839,
-      "uniqueIdentities": 1839,
+      "checklistRows": 1840,
+      "uniqueIdentities": 1840,
       "baseIdentities": 709,
       "numberedIdentities": 2,
       "autographIdentities": 571,
       "relicIdentities": 37,
-      "exactFrontIdentities": 744,
-      "exactFrontCoveragePct": 40.46,
+      "exactFrontIdentities": 745,
+      "exactFrontCoveragePct": 40.49,
       "status": "needs-images"
     },
     {
@@ -1128,13 +1128,13 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 14,
-      "uniqueIdentities": 14,
+      "checklistRows": 16,
+      "uniqueIdentities": 16,
       "baseIdentities": 0,
       "numberedIdentities": 0,
       "autographIdentities": 0,
       "relicIdentities": 0,
-      "exactFrontIdentities": 14,
+      "exactFrontIdentities": 16,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     },
@@ -1160,13 +1160,13 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 2,
-      "uniqueIdentities": 2,
+      "checklistRows": 3,
+      "uniqueIdentities": 3,
       "baseIdentities": 0,
       "numberedIdentities": 0,
       "autographIdentities": 0,
       "relicIdentities": 0,
-      "exactFrontIdentities": 2,
+      "exactFrontIdentities": 3,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     },
@@ -1192,13 +1192,13 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 8,
-      "uniqueIdentities": 8,
+      "checklistRows": 9,
+      "uniqueIdentities": 9,
       "baseIdentities": 0,
       "numberedIdentities": 0,
       "autographIdentities": 1,
       "relicIdentities": 0,
-      "exactFrontIdentities": 8,
+      "exactFrontIdentities": 9,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     },
@@ -1224,13 +1224,13 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 146,
-      "uniqueIdentities": 146,
+      "checklistRows": 150,
+      "uniqueIdentities": 150,
       "baseIdentities": 6,
       "numberedIdentities": 5,
       "autographIdentities": 2,
       "relicIdentities": 1,
-      "exactFrontIdentities": 146,
+      "exactFrontIdentities": 150,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     }
@@ -1239,7 +1239,7 @@
     "ownedPriorityCollections": 77,
     "missingCollections": 13,
     "missingChecklists": 5,
-    "uniqueIdentities": 19424,
-    "exactFrontIdentities": 1980
+    "uniqueIdentities": 19437,
+    "exactFrontIdentities": 1993
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T11:00:40.135Z",
+  "generatedAt": "2026-10-29T11:01:51.782Z",
   "scriptFilesEvaluated": 54,
   "scriptFailures": [
     {
@@ -9,21 +9,21 @@
   ],
   "collectionsWithChecklist": 79,
   "collectionRecords": 93,
-  "searchableIdentities": 22757,
+  "searchableIdentities": 22770,
   "bySport": {
-    "NFL": 6263,
-    "Soccer": 5233,
+    "NFL": 6264,
+    "Soccer": 5241,
     "NBA": 4619,
-    "MLB": 3546,
+    "MLB": 3550,
     "WWE": 1134,
     "UFC": 947,
     "Tennis": 780,
     "F1": 235
   },
-  "verifiedExactFrontRecords": 1890,
-  "approximateUniqueExactFrontIdentities": 1889,
-  "searchableIdentitiesWithExactFront": 2171,
-  "exactFrontCoveragePct": 9.54,
+  "verifiedExactFrontRecords": 1903,
+  "approximateUniqueExactFrontIdentities": 1902,
+  "searchableIdentitiesWithExactFront": 2184,
+  "exactFrontCoveragePct": 9.59,
   "topCollections": [
     {
       "id": "topps-chrome-football-2025",
@@ -37,8 +37,8 @@
       "id": "bowman-chrome-baseball-2026",
       "name": "Bowman Chrome 2026",
       "sport": "MLB",
-      "rows": 1839,
-      "identities": 1839,
+      "rows": 1840,
+      "identities": 1840,
       "coverage": "expanded-structured"
     },
     {
@@ -149,8 +149,8 @@
       "id": "panini-select-road-to-world-cup-2025-26",
       "name": "Select Road to World Cup 25/26",
       "sport": "Soccer",
-      "rows": 467,
-      "identities": 467,
+      "rows": 468,
+      "identities": 468,
       "coverage": "base-complete-expanded"
     },
     {
@@ -205,8 +205,8 @@
       "id": "topps-chrome-mls-2026",
       "name": "Chrome MLS 2026",
       "sport": "Soccer",
-      "rows": 202,
-      "identities": 202,
+      "rows": 204,
+      "identities": 204,
       "coverage": "expanded-structured"
     },
     {
@@ -253,8 +253,8 @@
       "id": "topps-now-soccer-2026",
       "name": "Soccer Topps NOW 2026",
       "sport": "Soccer",
-      "rows": 146,
-      "identities": 146,
+      "rows": 150,
+      "identities": 150,
       "coverage": "expanded-structured"
     },
     {
@@ -354,6 +354,14 @@
       "coverage": "expanded-structured"
     },
     {
+      "id": "topps-bayern-collector-tin-2025-26",
+      "name": "Bayern Tin 25/26",
+      "sport": "Soccer",
+      "rows": 57,
+      "identities": 57,
+      "coverage": "expanded-structured"
+    },
+    {
       "id": "topps-juventus-collector-tin-2025-26",
       "name": "Juventus Collector Tin 25/26",
       "sport": "Soccer",
@@ -368,14 +376,6 @@
       "rows": 57,
       "identities": 57,
       "coverage": "expanded-structured"
-    },
-    {
-      "id": "topps-bayern-collector-tin-2025-26",
-      "name": "Bayern Collector Tin 25/26",
-      "sport": "Soccer",
-      "rows": 56,
-      "identities": 56,
-      "coverage": "full-checklist"
     },
     {
       "id": "topps-man-utd-collector-tin-2025-26",

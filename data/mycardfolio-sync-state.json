@@ -259,6 +259,7 @@
         "ebay_a78f38223e",
         "ebay_a865af7d19",
         "ebay_a9766654f9",
+        "ebay_aa49c230fb",
         "ebay_aa8b2abbeb",
         "ebay_ac59e736ed",
         "ebay_acfcdb653a",
@@ -385,7 +386,7 @@
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
       "yearUsed": "2026",
-      "knownSets": 369
+      "knownSets": 370
     },
     "topps-holiday-baseball-2025": {
       "processedSets": [
@@ -419,13 +420,14 @@
     },
     "topps-chrome-logofractor-baseball-2026": {
       "processedSets": [
+        "ebay_1164b7f6ef",
         "ebay_200d8a6fdd",
         "ebay_ddd6ad4c92"
       ],
       "productMatched": "Chrome Logofractor Edition",
       "productId": "ebay_5eb056579a",
       "yearUsed": "2026",
-      "knownSets": 2
+      "knownSets": 3
     },
     "topps-archives-snapshots-baseball-2021": {
       "processedSets": [
@@ -815,12 +817,14 @@
     "topps-chrome-mls-2026": {
       "processedSets": [
         "ebay_211443725d",
+        "ebay_ad4cb99f74",
+        "ebay_c5552fe35b",
         "ebay_f8e17d3af3"
       ],
       "productMatched": "Chrome MLS",
       "productId": "ebay_3553355cdc",
       "yearUsed": "2026",
-      "knownSets": 2
+      "knownSets": 4
     },
     "panini-pitch-kings-laliga-2025-26": {
       "processedSets": [
@@ -963,7 +967,13 @@
       "processedSets": []
     },
     "topps-bayern-collector-tin-2025-26": {
-      "processedSets": []
+      "processedSets": [
+        "ebay_bad8ac8e9f"
+      ],
+      "productId": "ebay_861f51cb8f",
+      "productMatched": "Bayern",
+      "yearUsed": "2025",
+      "knownSets": 1
     },
     "topps-manchester-united-collector-tin-2025-26": {
       "processedSets": []
@@ -1141,6 +1151,7 @@
         "ebay_4f2a5c5dca",
         "ebay_500de3ab83",
         "ebay_500e66a738",
+        "ebay_5368b6bd30",
         "ebay_5486b37081",
         "ebay_54ba337202",
         "ebay_5520ab8694",
@@ -1164,13 +1175,16 @@
         "ebay_7a0d7f3c77",
         "ebay_7c2ce12fac",
         "ebay_7d3c6d1d42",
+        "ebay_7e0d595340",
         "ebay_808b25582b",
         "ebay_80e10f968d",
         "ebay_822ab60854",
         "ebay_8307227971",
         "ebay_8f93692e68",
+        "ebay_90996bc90f",
         "ebay_90d6e4a6bf",
         "ebay_911756bde4",
+        "ebay_922e61243b",
         "ebay_9659b4c507",
         "ebay_9dc7859706",
         "ebay_a0bea19a72",
@@ -1217,7 +1231,7 @@
       "productId": "ebay_14edd5b886",
       "productMatched": "Now",
       "yearUsed": "2026",
-      "knownSets": 110
+      "knownSets": 114
     },
     "panini-international-england-2026": {
       "processedSets": []
@@ -1280,6 +1294,7 @@
         "ebay_4eb9ab5006",
         "ebay_58eede370b",
         "ebay_6bc7c05d03",
+        "ebay_748bb50f9b",
         "ebay_90791a84b7",
         "ebay_a88a33f7bd",
         "ebay_aa0d1bd8f4",
@@ -1289,7 +1304,7 @@
       "productId": "ebay_6c15412d98",
       "productMatched": "Select Road to World Cup",
       "yearUsed": "2025",
-      "knownSets": 8
+      "knownSets": 9
     },
     "topps-signature-class-basketball-2025-26": {
       "processedSets": [
@@ -1338,6 +1353,7 @@
       "processedSets": [
         "ebay_36bee8de68",
         "ebay_3fc651b1c8",
+        "ebay_5e5a809bd1",
         "ebay_5efe96207f",
         "ebay_6c73746488",
         "ebay_8ab60a0653",
@@ -1348,10 +1364,11 @@
       "productId": "ebay_12721e4c02",
       "productMatched": "Holiday Football",
       "yearUsed": "2026",
-      "knownSets": 8
+      "knownSets": 9
     },
     "topps-holiday-baseball-2026": {
       "processedSets": [
+        "ebay_0774c58274",
         "ebay_07e1e8c6bb",
         "ebay_4fa16cdaf9",
         "ebay_6dfca6638b",
@@ -1361,12 +1378,13 @@
         "ebay_ac33c53b89",
         "ebay_c307c29690",
         "ebay_e40c6ac041",
-        "ebay_ea4240ac02"
+        "ebay_ea4240ac02",
+        "ebay_f8203c41dc"
       ],
       "productId": "ebay_af5c620bd5",
       "productMatched": "Holiday Baseball",
       "yearUsed": "2026",
-      "knownSets": 10
+      "knownSets": 12
     },
     "panini-real-madrid-tribute-2023-24": {
       "processedSets": []
