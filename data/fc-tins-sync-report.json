@@ -4,5 +4,5 @@
   "totalRows": 0,
   "collections": [],
   "preservedExistingCatalog": true,
-  "reason": "source layout changed; expected 147 cards, parsed 0"
+  "reason": "fetch failed: HTTPError: 429 Client Error: Too Many Requests for url: https://www.halloflists.com/products/2026-27-topps-fc-collector-tin"
 }

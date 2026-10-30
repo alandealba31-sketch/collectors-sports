@@ -1,6 +1,6 @@
 {
   "runner": "sync_mycardfolio_v2.py",
-  "startedAt": "2026-10-29T10:58:03Z",
+  "startedAt": "2026-10-30T10:56:07Z",
   "endpoint": "https://mycardfolio.com/api/mcp",
   "setsPerProductPerRun": 150,
   "requestDelaySeconds": 1.05,
@@ -50,9 +50,9 @@
       "error": "strict-product-not-found"
     },
     "topps-chrome-mls-2026": {
-      "setsFetchedThisRun": 2,
-      "rowsAddedThisRun": 2,
-      "imagesAddedThisRun": 2,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -470,9 +470,9 @@
       "rowsAccumulated": 7
     },
     "panini-select-road-to-world-cup-2025-26": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2025",
@@ -1804,9 +1804,9 @@
       "error": "strict-product-not-found"
     },
     "topps-bayern-collector-tin-2025-26": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2025",
@@ -2992,10 +2992,10 @@
       "yearUsed": "2026",
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
-      "knownSets": 370,
-      "processedSetsTotal": 370,
+      "knownSets": 371,
+      "processedSetsTotal": 371,
       "remainingSets": 0,
-      "rowsAccumulated": 629
+      "rowsAccumulated": 630
     },
     "topps-finest-baseball-2026": {
       "setsFetchedThisRun": 0,
@@ -3278,9 +3278,9 @@
       "rowsAccumulated": 13
     },
     "topps-holiday-baseball-2026": {
-      "setsFetchedThisRun": 2,
-      "rowsAddedThisRun": 2,
-      "imagesAddedThisRun": 2,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -3418,9 +3418,9 @@
       "rowsAccumulated": 4
     },
     "topps-chrome-logofractor-baseball-2026": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -3908,9 +3908,9 @@
       "rowsAccumulated": 29
     },
     "topps-holiday-football-2026": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -4651,9 +4651,9 @@
       "rowsAccumulated": 1
     },
     "topps-now-soccer-2026": {
-      "setsFetchedThisRun": 4,
-      "rowsAddedThisRun": 4,
-      "imagesAddedThisRun": 4,
+      "setsFetchedThisRun": 2,
+      "rowsAddedThisRun": 2,
+      "imagesAddedThisRun": 2,
       "candidateProducts": [
         {
           "year": "2026",
@@ -4715,10 +4715,10 @@
       "yearUsed": "2026",
       "productId": "ebay_14edd5b886",
       "productMatched": "Now",
-      "knownSets": 114,
-      "processedSetsTotal": 114,
+      "knownSets": 116,
+      "processedSetsTotal": 116,
       "remainingSets": 0,
-      "rowsAccumulated": 150
+      "rowsAccumulated": 152
     },
     "topps-archives-snapshots-baseball-2021": {
       "setsFetchedThisRun": 0,
@@ -6405,9 +6405,9 @@
       "error": "strict-product-not-found"
     }
   },
-  "finishedAt": "2026-10-29T11:01:48Z",
+  "finishedAt": "2026-10-30T10:59:38Z",
   "collectionsWritten": 63,
-  "rowsWritten": 1901,
-  "exactFrontsWritten": 1885,
-  "runtimeSeconds": 225.1
+  "rowsWritten": 1904,
+  "exactFrontsWritten": 1888,
+  "runtimeSeconds": 211.7
 }

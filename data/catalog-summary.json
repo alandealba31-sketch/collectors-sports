@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T11:01:51.782Z",
+  "generatedAt": "2026-10-30T10:59:43.263Z",
   "scriptFilesEvaluated": 54,
   "scriptFailures": [
     {
@@ -9,21 +9,21 @@
   ],
   "collectionsWithChecklist": 79,
   "collectionRecords": 93,
-  "searchableIdentities": 22770,
+  "searchableIdentities": 22758,
   "bySport": {
     "NFL": 6264,
-    "Soccer": 5241,
+    "Soccer": 5243,
     "NBA": 4619,
-    "MLB": 3550,
+    "MLB": 3536,
     "WWE": 1134,
     "UFC": 947,
     "Tennis": 780,
     "F1": 235
   },
-  "verifiedExactFrontRecords": 1903,
-  "approximateUniqueExactFrontIdentities": 1902,
-  "searchableIdentitiesWithExactFront": 2184,
-  "exactFrontCoveragePct": 9.59,
+  "verifiedExactFrontRecords": 1906,
+  "approximateUniqueExactFrontIdentities": 1905,
+  "searchableIdentitiesWithExactFront": 2187,
+  "exactFrontCoveragePct": 9.61,
   "topCollections": [
     {
       "id": "topps-chrome-football-2025",
@@ -37,8 +37,8 @@
       "id": "bowman-chrome-baseball-2026",
       "name": "Bowman Chrome 2026",
       "sport": "MLB",
-      "rows": 1840,
-      "identities": 1840,
+      "rows": 1834,
+      "identities": 1834,
       "coverage": "expanded-structured"
     },
     {
@@ -170,19 +170,19 @@
       "coverage": "expanded-structured"
     },
     {
-      "id": "topps-chrome-baseball-2026",
-      "name": "Chrome Baseball 2026",
-      "sport": "MLB",
-      "rows": 309,
-      "identities": 309,
-      "coverage": "expanded-structured"
-    },
-    {
       "id": "topps-chrome-ucc-2025-26",
       "name": "Chrome UEFA 25/26",
       "sport": "Soccer",
       "rows": 311,
       "identities": 303,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-chrome-baseball-2026",
+      "name": "Chrome Baseball 2026",
+      "sport": "MLB",
+      "rows": 301,
+      "identities": 301,
       "coverage": "expanded-structured"
     },
     {
@@ -253,8 +253,8 @@
       "id": "topps-now-soccer-2026",
       "name": "Soccer Topps NOW 2026",
       "sport": "Soccer",
-      "rows": 150,
-      "identities": 150,
+      "rows": 152,
+      "identities": 152,
       "coverage": "expanded-structured"
     },
     {
