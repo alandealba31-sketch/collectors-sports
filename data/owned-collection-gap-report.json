@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T10:59:43.563Z",
+  "generatedAt": "2026-10-31T10:50:41.304Z",
   "source": "data/user-collection-priority.json",
   "collections": [
     {
@@ -499,6 +499,22 @@
       "status": "needs-images"
     },
     {
+      "collectionId": "panini-donruss-optic-basketball-2024-25",
+      "name": "Panini Donruss Optic Basketball",
+      "season": "2024-25",
+      "ownedRows": 0,
+      "catalogPresent": true,
+      "checklistRows": 1077,
+      "uniqueIdentities": 1077,
+      "baseIdentities": 250,
+      "numberedIdentities": 196,
+      "autographIdentities": 389,
+      "relicIdentities": 0,
+      "exactFrontIdentities": 2,
+      "exactFrontCoveragePct": 0.19,
+      "status": "needs-images"
+    },
+    {
       "collectionId": "topps-flagship-football-2026",
       "name": "Topps Flagship Football",
       "season": "2026",
@@ -688,22 +704,6 @@
       "relicIdentities": 0,
       "exactFrontIdentities": 1,
       "exactFrontCoveragePct": 1.75,
-      "status": "needs-images"
-    },
-    {
-      "collectionId": "panini-donruss-optic-basketball-2024-25",
-      "name": "Panini Donruss Optic Basketball",
-      "season": "2024-25",
-      "ownedRows": 0,
-      "catalogPresent": true,
-      "checklistRows": 1092,
-      "uniqueIdentities": 1092,
-      "baseIdentities": 254,
-      "numberedIdentities": 196,
-      "autographIdentities": 389,
-      "relicIdentities": 1,
-      "exactFrontIdentities": 20,
-      "exactFrontCoveragePct": 1.83,
       "status": "needs-images"
     },
     {
@@ -1144,13 +1144,13 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 4,
-      "uniqueIdentities": 4,
+      "checklistRows": 6,
+      "uniqueIdentities": 6,
       "baseIdentities": 0,
       "numberedIdentities": 0,
       "autographIdentities": 0,
       "relicIdentities": 0,
-      "exactFrontIdentities": 4,
+      "exactFrontIdentities": 6,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     },
@@ -1239,7 +1239,7 @@
     "ownedPriorityCollections": 77,
     "missingCollections": 13,
     "missingChecklists": 5,
-    "uniqueIdentities": 19425,
-    "exactFrontIdentities": 1996
+    "uniqueIdentities": 19412,
+    "exactFrontIdentities": 1980
   }
 }

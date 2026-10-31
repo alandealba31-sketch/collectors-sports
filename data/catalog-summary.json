@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T10:59:43.263Z",
+  "generatedAt": "2026-10-31T10:50:41.055Z",
   "scriptFilesEvaluated": 54,
   "scriptFailures": [
     {
@@ -9,21 +9,21 @@
   ],
   "collectionsWithChecklist": 79,
   "collectionRecords": 93,
-  "searchableIdentities": 22758,
+  "searchableIdentities": 22745,
   "bySport": {
     "NFL": 6264,
     "Soccer": 5243,
-    "NBA": 4619,
-    "MLB": 3536,
+    "NBA": 4604,
+    "MLB": 3538,
     "WWE": 1134,
     "UFC": 947,
     "Tennis": 780,
     "F1": 235
   },
-  "verifiedExactFrontRecords": 1906,
-  "approximateUniqueExactFrontIdentities": 1905,
-  "searchableIdentitiesWithExactFront": 2187,
-  "exactFrontCoveragePct": 9.61,
+  "verifiedExactFrontRecords": 1893,
+  "approximateUniqueExactFrontIdentities": 1892,
+  "searchableIdentitiesWithExactFront": 2171,
+  "exactFrontCoveragePct": 9.54,
   "topCollections": [
     {
       "id": "topps-chrome-football-2025",
@@ -77,8 +77,8 @@
       "id": "panini-donruss-optic-basketball-2024-25",
       "name": "Optic NBA 24/25",
       "sport": "NBA",
-      "rows": 1092,
-      "identities": 1092,
+      "rows": 1077,
+      "identities": 1077,
       "coverage": "expanded-structured"
     },
     {

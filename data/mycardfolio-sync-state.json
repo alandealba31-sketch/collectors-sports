@@ -412,12 +412,13 @@
         "ebay_0bec8b8b08",
         "ebay_8e34765e17",
         "ebay_998a52ec59",
-        "ebay_ef412fe747"
+        "ebay_ef412fe747",
+        "ebay_f008079804"
       ],
       "productMatched": "Topps Update Series",
       "productId": "ebay_bf954bb576",
       "yearUsed": "2026",
-      "knownSets": 4
+      "knownSets": 5
     },
     "topps-chrome-logofractor-baseball-2026": {
       "processedSets": [
@@ -576,23 +577,12 @@
     },
     "panini-donruss-optic-basketball-2024-25": {
       "processedSets": [
-        "ing_0328be4a7e",
-        "ing_1e643d91e0",
-        "ing_2c3e67e6c5",
-        "ing_456ae14e3f",
-        "ing_4ae29c1630",
-        "ing_63fb7d0fa5",
-        "ing_65158ca263",
-        "ing_9cbdadead4",
-        "ing_b44ecd81b3",
-        "ing_bec3af3ca7",
-        "ing_c06369217b",
-        "ing_e40c19886c"
+        "ebay_15c2c56403"
       ],
-      "productId": "ing_1323b96c58",
-      "productMatched": "Panini Donruss Optic",
+      "productMatched": "Donruss Optic Basketball",
+      "productId": "ebay_905e985d80",
       "yearUsed": "2024",
-      "knownSets": 12
+      "knownSets": 1
     },
     "topps-chrome-ufc-2026": {
       "processedSets": [

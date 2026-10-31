@@ -1,6 +1,6 @@
 {
   "runner": "sync_mycardfolio_v2.py",
-  "startedAt": "2026-10-30T10:56:07Z",
+  "startedAt": "2026-10-31T10:46:54Z",
   "endpoint": "https://mycardfolio.com/api/mcp",
   "setsPerProductPerRun": 150,
   "requestDelaySeconds": 1.05,
@@ -2928,9 +2928,9 @@
       "rowsAccumulated": 1
     },
     "bowman-chrome-baseball-2026": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -3348,9 +3348,9 @@
       "rowsAccumulated": 16
     },
     "topps-update-baseball-2026": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 2,
+      "imagesAddedThisRun": 2,
       "candidateProducts": [
         {
           "year": "2026",
@@ -3412,10 +3412,10 @@
       "yearUsed": "2026",
       "productId": "ebay_bf954bb576",
       "productMatched": "Topps Update Series",
-      "knownSets": 4,
-      "processedSetsTotal": 4,
+      "knownSets": 5,
+      "processedSetsTotal": 5,
       "remainingSets": 0,
-      "rowsAccumulated": 4
+      "rowsAccumulated": 6
     },
     "topps-chrome-logofractor-baseball-2026": {
       "setsFetchedThisRun": 0,
@@ -4118,10 +4118,17 @@
       "rowsAccumulated": 1
     },
     "panini-donruss-optic-basketball-2024-25": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
+        {
+          "year": "2024",
+          "label": "Donruss Optic Basketball",
+          "score": 15,
+          "strict": true,
+          "productId": "ebay_905e985d80"
+        },
         {
           "year": "2024",
           "label": "Panini Donruss Optic",
@@ -4170,22 +4177,17 @@
           "score": 5,
           "strict": false,
           "productId": "ebay_4a9bf6746b"
-        },
-        {
-          "year": "2024",
-          "label": "Donruss",
-          "score": 5,
-          "strict": false,
-          "productId": "ing_4a9bf6746b"
         }
       ],
+      "purgedRowsAfterProductChange": 16,
+      "purgedImagesAfterProductChange": 16,
       "yearUsed": "2024",
-      "productId": "ing_1323b96c58",
-      "productMatched": "Panini Donruss Optic",
-      "knownSets": 12,
-      "processedSetsTotal": 12,
+      "productId": "ebay_905e985d80",
+      "productMatched": "Donruss Optic Basketball",
+      "knownSets": 1,
+      "processedSetsTotal": 1,
       "remainingSets": 0,
-      "rowsAccumulated": 16
+      "rowsAccumulated": 1
     },
     "topps-signature-class-basketball-2026": {
       "setsFetchedThisRun": 0,
@@ -4651,9 +4653,9 @@
       "rowsAccumulated": 1
     },
     "topps-now-soccer-2026": {
-      "setsFetchedThisRun": 2,
-      "rowsAddedThisRun": 2,
-      "imagesAddedThisRun": 2,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -6405,9 +6407,9 @@
       "error": "strict-product-not-found"
     }
   },
-  "finishedAt": "2026-10-30T10:59:38Z",
+  "finishedAt": "2026-10-31T10:50:36Z",
   "collectionsWritten": 63,
-  "rowsWritten": 1904,
-  "exactFrontsWritten": 1888,
-  "runtimeSeconds": 211.7
+  "rowsWritten": 1891,
+  "exactFrontsWritten": 1875,
+  "runtimeSeconds": 222.2
 }

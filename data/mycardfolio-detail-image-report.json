@@ -1,14 +1,14 @@
 {
-  "startedAt": "2026-10-30T10:59:39Z",
+  "startedAt": "2026-10-31T10:50:37Z",
   "maxCards": 240,
-  "exactFrontsBefore": 1888,
+  "exactFrontsBefore": 1875,
   "attempted": 0,
   "added": 0,
   "missed": 0,
   "errors": 0,
   "byCollection": {},
   "samplesAdded": [],
-  "finishedAt": "2026-10-30T10:59:39Z",
-  "exactFrontsAfter": 1888,
+  "finishedAt": "2026-10-31T10:50:37Z",
+  "exactFrontsAfter": 1875,
   "message": "No eligible known-card image gaps remain within retry policy."
 }
