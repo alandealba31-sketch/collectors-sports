@@ -1,6 +1,6 @@
 {
   "runner": "sync_mycardfolio_v2.py",
-  "startedAt": "2026-11-01T16:49:17Z",
+  "startedAt": "2026-11-02T20:23:03Z",
   "endpoint": "https://mycardfolio.com/api/mcp",
   "setsPerProductPerRun": 150,
   "requestDelaySeconds": 1.05,
@@ -2928,9 +2928,9 @@
       "rowsAccumulated": 1
     },
     "bowman-chrome-baseball-2026": {
-      "setsFetchedThisRun": 9,
-      "rowsAddedThisRun": 9,
-      "imagesAddedThisRun": 9,
+      "setsFetchedThisRun": 2,
+      "rowsAddedThisRun": 2,
+      "imagesAddedThisRun": 2,
       "candidateProducts": [
         {
           "year": "2026",
@@ -2992,10 +2992,10 @@
       "yearUsed": "2026",
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
-      "knownSets": 380,
-      "processedSetsTotal": 380,
+      "knownSets": 382,
+      "processedSetsTotal": 382,
       "remainingSets": 0,
-      "rowsAccumulated": 639
+      "rowsAccumulated": 641
     },
     "topps-finest-baseball-2026": {
       "setsFetchedThisRun": 0,
@@ -3138,9 +3138,9 @@
       "rowsAccumulated": 1
     },
     "topps-chrome-college-baseball-2026": {
-      "setsFetchedThisRun": 3,
-      "rowsAddedThisRun": 3,
-      "imagesAddedThisRun": 3,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -3278,9 +3278,9 @@
       "rowsAccumulated": 13
     },
     "topps-holiday-baseball-2026": {
-      "setsFetchedThisRun": 5,
-      "rowsAddedThisRun": 6,
-      "imagesAddedThisRun": 6,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -3418,9 +3418,9 @@
       "rowsAccumulated": 6
     },
     "topps-chrome-logofractor-baseball-2026": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -3479,8 +3479,6 @@
           "productId": "ing_7bf753d622"
         }
       ],
-      "purgedRowsAfterProductChange": 3,
-      "purgedImagesAfterProductChange": 3,
       "yearUsed": "2026",
       "productId": "ebay_a1a4205e62",
       "productMatched": "Logofractor",
@@ -3840,9 +3838,9 @@
       "rowsAccumulated": 6
     },
     "panini-obsidian-football-2025": {
-      "setsFetchedThisRun": 2,
-      "rowsAddedThisRun": 3,
-      "imagesAddedThisRun": 3,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2025",
@@ -3910,9 +3908,9 @@
       "rowsAccumulated": 32
     },
     "topps-holiday-football-2026": {
-      "setsFetchedThisRun": 5,
-      "rowsAddedThisRun": 5,
-      "imagesAddedThisRun": 5,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -4778,10 +4776,10 @@
         },
         {
           "year": "2021",
-          "label": "1986 Topps All-Star Baseball",
-          "score": 2,
+          "label": "RC",
+          "score": 4,
           "strict": false,
-          "productId": "ebay_c3a4c50ef6"
+          "productId": "ebay_862aa72e41"
         }
       ],
       "yearUsed": "2021",
@@ -6407,9 +6405,9 @@
       "error": "strict-product-not-found"
     }
   },
-  "finishedAt": "2026-11-01T16:53:37Z",
+  "finishedAt": "2026-11-02T20:26:47Z",
   "collectionsWritten": 63,
-  "rowsWritten": 1915,
-  "exactFrontsWritten": 1899,
-  "runtimeSeconds": 260.0
+  "rowsWritten": 1917,
+  "exactFrontsWritten": 1901,
+  "runtimeSeconds": 224.2
 }
