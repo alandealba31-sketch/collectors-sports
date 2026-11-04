@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T17:55:39.864Z",
+  "generatedAt": "2026-11-04T18:03:38.781Z",
   "scriptFilesEvaluated": 54,
   "scriptFailures": [
     {
@@ -9,21 +9,21 @@
   ],
   "collectionsWithChecklist": 79,
   "collectionRecords": 93,
-  "searchableIdentities": 22771,
+  "searchableIdentities": 22774,
   "bySport": {
-    "NFL": 6272,
-    "Soccer": 5243,
+    "NFL": 6273,
+    "Soccer": 5244,
     "NBA": 4604,
-    "MLB": 3556,
+    "MLB": 3557,
     "WWE": 1134,
     "UFC": 947,
     "Tennis": 780,
     "F1": 235
   },
-  "verifiedExactFrontRecords": 1919,
-  "approximateUniqueExactFrontIdentities": 1918,
-  "searchableIdentitiesWithExactFront": 2199,
-  "exactFrontCoveragePct": 9.66,
+  "verifiedExactFrontRecords": 1922,
+  "approximateUniqueExactFrontIdentities": 1921,
+  "searchableIdentitiesWithExactFront": 2202,
+  "exactFrontCoveragePct": 9.67,
   "topCollections": [
     {
       "id": "topps-chrome-football-2025",
@@ -37,8 +37,8 @@
       "id": "bowman-chrome-baseball-2026",
       "name": "Bowman Chrome 2026",
       "sport": "MLB",
-      "rows": 1845,
-      "identities": 1845,
+      "rows": 1846,
+      "identities": 1846,
       "coverage": "expanded-structured"
     },
     {
@@ -197,8 +197,8 @@
       "id": "panini-pitch-kings-laliga-2025-26",
       "name": "Pitch Kings LaLiga 25/26",
       "sport": "Soccer",
-      "rows": 228,
-      "identities": 224,
+      "rows": 229,
+      "identities": 225,
       "coverage": "expanded-structured"
     },
     {

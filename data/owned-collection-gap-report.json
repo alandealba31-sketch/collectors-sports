@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T17:55:40.210Z",
+  "generatedAt": "2026-11-04T18:03:39.098Z",
   "source": "data/user-collection-priority.json",
   "collections": [
     {
@@ -872,14 +872,14 @@
       "season": "2025-26",
       "ownedRows": 5,
       "catalogPresent": true,
-      "checklistRows": 228,
-      "uniqueIdentities": 224,
+      "checklistRows": 229,
+      "uniqueIdentities": 225,
       "baseIdentities": 100,
       "numberedIdentities": 0,
-      "autographIdentities": 3,
+      "autographIdentities": 4,
       "relicIdentities": 0,
-      "exactFrontIdentities": 16,
-      "exactFrontCoveragePct": 7.14,
+      "exactFrontIdentities": 17,
+      "exactFrontCoveragePct": 7.56,
       "status": "needs-images"
     },
     {
@@ -920,14 +920,14 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 1845,
-      "uniqueIdentities": 1845,
+      "checklistRows": 1846,
+      "uniqueIdentities": 1846,
       "baseIdentities": 709,
-      "numberedIdentities": 2,
+      "numberedIdentities": 3,
       "autographIdentities": 572,
       "relicIdentities": 37,
-      "exactFrontIdentities": 759,
-      "exactFrontCoveragePct": 41.14,
+      "exactFrontIdentities": 760,
+      "exactFrontCoveragePct": 41.17,
       "status": "needs-images"
     },
     {
@@ -1176,13 +1176,13 @@
       "season": "2025",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 32,
-      "uniqueIdentities": 32,
+      "checklistRows": 33,
+      "uniqueIdentities": 33,
       "baseIdentities": 5,
       "numberedIdentities": 0,
       "autographIdentities": 3,
       "relicIdentities": 0,
-      "exactFrontIdentities": 32,
+      "exactFrontIdentities": 33,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     },
@@ -1239,7 +1239,7 @@
     "ownedPriorityCollections": 77,
     "missingCollections": 13,
     "missingChecklists": 5,
-    "uniqueIdentities": 19438,
-    "exactFrontIdentities": 2008
+    "uniqueIdentities": 19441,
+    "exactFrontIdentities": 2011
   }
 }

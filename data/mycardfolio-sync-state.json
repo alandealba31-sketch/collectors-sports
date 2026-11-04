@@ -136,6 +136,7 @@
         "ebay_4d29bd1eb6",
         "ebay_4d83132adc",
         "ebay_4ef2bd049a",
+        "ebay_50754324e5",
         "ebay_508418917f",
         "ebay_50c96b44dd",
         "ebay_51a69dbe65",
@@ -398,7 +399,7 @@
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
       "yearUsed": "2026",
-      "knownSets": 382
+      "knownSets": 383
     },
     "topps-holiday-baseball-2025": {
       "processedSets": [
@@ -828,6 +829,7 @@
     },
     "panini-pitch-kings-laliga-2025-26": {
       "processedSets": [
+        "ebay_08cc153184",
         "ebay_11c98fdd0a",
         "ebay_290db241a1",
         "ebay_41c8668e50",
@@ -840,7 +842,7 @@
       "productId": "ebay_6319193c7f",
       "productMatched": "Pitch Kings",
       "yearUsed": "2025",
-      "knownSets": 8
+      "knownSets": 9
     },
     "panini-select-laliga-2024-25": {
       "processedSets": [
@@ -1624,12 +1626,13 @@
         "ebay_eff79d7a3d",
         "ebay_f0cf4924ca",
         "ebay_f59acbb8fe",
-        "ebay_f885f5f81f"
+        "ebay_f885f5f81f",
+        "ebay_fec18a5b65"
       ],
       "productId": "ebay_67fa4127be",
       "productMatched": "Football",
       "yearUsed": "2025",
-      "knownSets": 26
+      "knownSets": 27
     },
     "topps-signature-class-basketball-2026": {
       "processedSets": [
