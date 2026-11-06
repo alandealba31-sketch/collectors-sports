@@ -1,6 +1,6 @@
 {
   "runner": "sync_mycardfolio_v2.py",
-  "startedAt": "2026-11-05T18:02:20Z",
+  "startedAt": "2026-11-06T17:30:50Z",
   "endpoint": "https://mycardfolio.com/api/mcp",
   "setsPerProductPerRun": 150,
   "requestDelaySeconds": 1.05,
@@ -2928,9 +2928,9 @@
       "rowsAccumulated": 1
     },
     "bowman-chrome-baseball-2026": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 3,
+      "rowsAddedThisRun": 3,
+      "imagesAddedThisRun": 3,
       "candidateProducts": [
         {
           "year": "2026",
@@ -2969,6 +2969,13 @@
         },
         {
           "year": "2026",
+          "label": "Bowman Chrome Mojo",
+          "score": 14,
+          "strict": true,
+          "productId": "ebay_50b2120533"
+        },
+        {
+          "year": "2026",
           "label": "Bowman Chrome Prospect",
           "score": 14,
           "strict": true,
@@ -2980,22 +2987,15 @@
           "score": 14,
           "strict": true,
           "productId": "ebay_ca6d7e0a0b"
-        },
-        {
-          "year": "2026",
-          "label": "Bowman Chrome Rookies Mega Box",
-          "score": 14,
-          "strict": true,
-          "productId": "ebay_33f46e8905"
         }
       ],
       "yearUsed": "2026",
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
-      "knownSets": 383,
-      "processedSetsTotal": 383,
+      "knownSets": 386,
+      "processedSetsTotal": 386,
       "remainingSets": 0,
-      "rowsAccumulated": 642
+      "rowsAccumulated": 645
     },
     "topps-finest-baseball-2026": {
       "setsFetchedThisRun": 0,
@@ -3908,9 +3908,9 @@
       "rowsAccumulated": 33
     },
     "topps-holiday-football-2026": {
-      "setsFetchedThisRun": 3,
-      "rowsAddedThisRun": 3,
-      "imagesAddedThisRun": 3,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -6405,9 +6405,9 @@
       "error": "strict-product-not-found"
     }
   },
-  "finishedAt": "2026-11-05T18:05:53Z",
+  "finishedAt": "2026-11-06T17:34:29Z",
   "collectionsWritten": 63,
-  "rowsWritten": 1923,
-  "exactFrontsWritten": 1907,
-  "runtimeSeconds": 213.3
+  "rowsWritten": 1926,
+  "exactFrontsWritten": 1910,
+  "runtimeSeconds": 219.8
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T18:05:56.556Z",
+  "generatedAt": "2026-11-06T17:34:32.731Z",
   "source": "data/user-collection-priority.json",
   "collections": [
     {
@@ -920,14 +920,14 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 1846,
-      "uniqueIdentities": 1846,
+      "checklistRows": 1849,
+      "uniqueIdentities": 1849,
       "baseIdentities": 709,
       "numberedIdentities": 3,
       "autographIdentities": 572,
       "relicIdentities": 37,
-      "exactFrontIdentities": 760,
-      "exactFrontCoveragePct": 41.17,
+      "exactFrontIdentities": 763,
+      "exactFrontCoveragePct": 41.27,
       "status": "needs-images"
     },
     {
@@ -1239,7 +1239,7 @@
     "ownedPriorityCollections": 77,
     "missingCollections": 13,
     "missingChecklists": 5,
-    "uniqueIdentities": 19444,
-    "exactFrontIdentities": 2014
+    "uniqueIdentities": 19447,
+    "exactFrontIdentities": 2017
   }
 }
