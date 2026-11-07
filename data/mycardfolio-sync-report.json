@@ -1,6 +1,6 @@
 {
   "runner": "sync_mycardfolio_v2.py",
-  "startedAt": "2026-11-06T17:30:50Z",
+  "startedAt": "2026-11-07T16:27:49Z",
   "endpoint": "https://mycardfolio.com/api/mcp",
   "setsPerProductPerRun": 150,
   "requestDelaySeconds": 1.05,
@@ -2928,9 +2928,9 @@
       "rowsAccumulated": 1
     },
     "bowman-chrome-baseball-2026": {
-      "setsFetchedThisRun": 3,
-      "rowsAddedThisRun": 3,
-      "imagesAddedThisRun": 3,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -6405,9 +6405,9 @@
       "error": "strict-product-not-found"
     }
   },
-  "finishedAt": "2026-11-06T17:34:29Z",
+  "finishedAt": "2026-11-07T16:31:49Z",
   "collectionsWritten": 63,
   "rowsWritten": 1926,
   "exactFrontsWritten": 1910,
-  "runtimeSeconds": 219.8
+  "runtimeSeconds": 239.8
 }
