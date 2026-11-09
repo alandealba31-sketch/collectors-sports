@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T16:44:58.452Z",
+  "generatedAt": "2026-11-09T20:49:02.477Z",
   "scriptFilesEvaluated": 54,
   "scriptFailures": [
     {
@@ -9,21 +9,21 @@
   ],
   "collectionsWithChecklist": 79,
   "collectionRecords": 93,
-  "searchableIdentities": 22785,
+  "searchableIdentities": 22792,
   "bySport": {
-    "NFL": 6276,
+    "NFL": 6279,
     "Soccer": 5244,
     "NBA": 4604,
-    "MLB": 3565,
+    "MLB": 3569,
     "WWE": 1134,
     "UFC": 947,
     "Tennis": 780,
     "F1": 235
   },
-  "verifiedExactFrontRecords": 1933,
-  "approximateUniqueExactFrontIdentities": 1932,
-  "searchableIdentitiesWithExactFront": 2213,
-  "exactFrontCoveragePct": 9.71,
+  "verifiedExactFrontRecords": 1940,
+  "approximateUniqueExactFrontIdentities": 1939,
+  "searchableIdentitiesWithExactFront": 2220,
+  "exactFrontCoveragePct": 9.74,
   "topCollections": [
     {
       "id": "topps-chrome-football-2025",
@@ -37,8 +37,8 @@
       "id": "bowman-chrome-baseball-2026",
       "name": "Bowman Chrome 2026",
       "sport": "MLB",
-      "rows": 1851,
-      "identities": 1851,
+      "rows": 1855,
+      "identities": 1855,
       "coverage": "expanded-structured"
     },
     {

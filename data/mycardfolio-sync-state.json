@@ -40,6 +40,7 @@
         "ebay_0a8fd404b6",
         "ebay_0bdbe3847d",
         "ebay_0c295538ea",
+        "ebay_0dc0e0f9ed",
         "ebay_0ecf2c83bd",
         "ebay_0f02a9fa22",
         "ebay_104f3bcc48",
@@ -76,6 +77,7 @@
         "ebay_2654df487d",
         "ebay_276dd1d4eb",
         "ebay_27d27782cf",
+        "ebay_27ecdcd778",
         "ebay_2807840207",
         "ebay_285fda5771",
         "ebay_2914333276",
@@ -196,6 +198,7 @@
         "ebay_74b273fe0d",
         "ebay_755e8c219d",
         "ebay_75b45b4de4",
+        "ebay_761274827a",
         "ebay_76f60f6372",
         "ebay_777cac041b",
         "ebay_77ea72665a",
@@ -244,6 +247,7 @@
         "ebay_913652dade",
         "ebay_9137be0114",
         "ebay_9496f94ad8",
+        "ebay_94f00eab25",
         "ebay_9664f893f2",
         "ebay_9841483e3c",
         "ebay_99b131797b",
@@ -404,7 +408,7 @@
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
       "yearUsed": "2026",
-      "knownSets": 388
+      "knownSets": 392
     },
     "topps-holiday-baseball-2025": {
       "processedSets": [
@@ -1361,6 +1365,7 @@
     "topps-holiday-football-2026": {
       "processedSets": [
         "ebay_297398edef",
+        "ebay_323ae7b9ec",
         "ebay_36bee8de68",
         "ebay_3fc651b1c8",
         "ebay_41dc47a3e5",
@@ -1372,6 +1377,7 @@
         "ebay_92738f2f57",
         "ebay_957b21e824",
         "ebay_a8ade507e9",
+        "ebay_b4e4dbdf62",
         "ebay_b74c7c7473",
         "ebay_bac9714c1b",
         "ebay_bc30bea80e",
@@ -1381,7 +1387,7 @@
       "productId": "ebay_12721e4c02",
       "productMatched": "Holiday Football",
       "yearUsed": "2026",
-      "knownSets": 17
+      "knownSets": 19
     },
     "topps-holiday-baseball-2026": {
       "processedSets": [
@@ -1615,6 +1621,7 @@
         "ebay_2968d1dd01",
         "ebay_3f8107c868",
         "ebay_60849ce343",
+        "ebay_63e811cc0f",
         "ebay_694ca0c0b2",
         "ebay_6a25663707",
         "ebay_75b7e6fe6d",
@@ -1641,7 +1648,7 @@
       "productId": "ebay_67fa4127be",
       "productMatched": "Football",
       "yearUsed": "2025",
-      "knownSets": 27
+      "knownSets": 28
     },
     "topps-signature-class-basketball-2026": {
       "processedSets": [
