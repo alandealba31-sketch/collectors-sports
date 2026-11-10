@@ -1,6 +1,6 @@
 {
   "runner": "sync_mycardfolio_v2.py",
-  "startedAt": "2026-11-09T20:45:38Z",
+  "startedAt": "2026-11-10T17:51:45Z",
   "endpoint": "https://mycardfolio.com/api/mcp",
   "setsPerProductPerRun": 150,
   "requestDelaySeconds": 1.05,
@@ -2928,9 +2928,9 @@
       "rowsAccumulated": 1
     },
     "bowman-chrome-baseball-2026": {
-      "setsFetchedThisRun": 4,
-      "rowsAddedThisRun": 4,
-      "imagesAddedThisRun": 4,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
         {
           "year": "2026",
@@ -2992,10 +2992,10 @@
       "yearUsed": "2026",
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
-      "knownSets": 392,
-      "processedSetsTotal": 392,
+      "knownSets": 393,
+      "processedSetsTotal": 393,
       "remainingSets": 0,
-      "rowsAccumulated": 651
+      "rowsAccumulated": 652
     },
     "topps-finest-baseball-2026": {
       "setsFetchedThisRun": 0,
@@ -3838,9 +3838,9 @@
       "rowsAccumulated": 6
     },
     "panini-obsidian-football-2025": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2025",
@@ -3908,9 +3908,9 @@
       "rowsAccumulated": 34
     },
     "topps-holiday-football-2026": {
-      "setsFetchedThisRun": 2,
-      "rowsAddedThisRun": 2,
-      "imagesAddedThisRun": 2,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -4651,9 +4651,9 @@
       "rowsAccumulated": 1
     },
     "topps-now-soccer-2026": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
         {
           "year": "2026",
@@ -4715,10 +4715,10 @@
       "yearUsed": "2026",
       "productId": "ebay_14edd5b886",
       "productMatched": "Now",
-      "knownSets": 116,
-      "processedSetsTotal": 116,
+      "knownSets": 117,
+      "processedSetsTotal": 117,
       "remainingSets": 0,
-      "rowsAccumulated": 152
+      "rowsAccumulated": 153
     },
     "topps-archives-snapshots-baseball-2021": {
       "setsFetchedThisRun": 0,
@@ -4986,10 +4986,10 @@
         },
         {
           "year": "2026",
-          "label": "NBA Topps Chrome",
+          "label": "Flagship Basketball Generation Now",
           "score": 4,
-          "strict": false,
-          "productId": "ebay_b8f92e4df4"
+          "strict": true,
+          "productId": "ebay_e9abc47520"
         }
       ],
       "yearUsed": "2026",
@@ -6405,9 +6405,9 @@
       "error": "strict-product-not-found"
     }
   },
-  "finishedAt": "2026-11-09T20:49:00Z",
+  "finishedAt": "2026-11-10T17:55:48Z",
   "collectionsWritten": 63,
-  "rowsWritten": 1938,
-  "exactFrontsWritten": 1922,
-  "runtimeSeconds": 202.0
+  "rowsWritten": 1940,
+  "exactFrontsWritten": 1924,
+  "runtimeSeconds": 242.2
 }
