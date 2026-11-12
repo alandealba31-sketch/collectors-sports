@@ -1,6 +1,6 @@
 {
   "runner": "sync_mycardfolio_v2.py",
-  "startedAt": "2026-11-11T17:54:30Z",
+  "startedAt": "2026-11-12T18:20:46Z",
   "endpoint": "https://mycardfolio.com/api/mcp",
   "setsPerProductPerRun": 150,
   "requestDelaySeconds": 1.05,
@@ -2992,10 +2992,10 @@
       "yearUsed": "2026",
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
-      "knownSets": 396,
-      "processedSetsTotal": 396,
+      "knownSets": 399,
+      "processedSetsTotal": 399,
       "remainingSets": 0,
-      "rowsAccumulated": 655
+      "rowsAccumulated": 658
     },
     "topps-finest-baseball-2026": {
       "setsFetchedThisRun": 0,
@@ -3138,9 +3138,9 @@
       "rowsAccumulated": 1
     },
     "topps-chrome-college-baseball-2026": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -3278,9 +3278,9 @@
       "rowsAccumulated": 13
     },
     "topps-holiday-baseball-2026": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
         {
           "year": "2026",
@@ -3342,10 +3342,10 @@
       "yearUsed": "2026",
       "productId": "ebay_af5c620bd5",
       "productMatched": "Holiday Baseball",
-      "knownSets": 18,
-      "processedSetsTotal": 18,
+      "knownSets": 19,
+      "processedSetsTotal": 19,
       "remainingSets": 0,
-      "rowsAccumulated": 25
+      "rowsAccumulated": 26
     },
     "topps-update-baseball-2026": {
       "setsFetchedThisRun": 0,
@@ -3488,9 +3488,9 @@
       "rowsAccumulated": 1
     },
     "topps-chrome-football-2025": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2025",
@@ -3768,9 +3768,9 @@
       "rowsAccumulated": 1
     },
     "panini-donruss-optic-football-2025": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
         {
           "year": "2025",
@@ -3832,10 +3832,10 @@
       "yearUsed": "2025",
       "productId": "ebay_ef2199934c",
       "productMatched": "Donruss Optic Football",
-      "knownSets": 5,
-      "processedSetsTotal": 5,
+      "knownSets": 6,
+      "processedSetsTotal": 6,
       "remainingSets": 0,
-      "rowsAccumulated": 6
+      "rowsAccumulated": 7
     },
     "panini-obsidian-football-2025": {
       "setsFetchedThisRun": 0,
@@ -3908,9 +3908,9 @@
       "rowsAccumulated": 34
     },
     "topps-holiday-football-2026": {
-      "setsFetchedThisRun": 2,
-      "rowsAddedThisRun": 3,
-      "imagesAddedThisRun": 3,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -4715,10 +4715,10 @@
       "yearUsed": "2026",
       "productId": "ebay_14edd5b886",
       "productMatched": "Now",
-      "knownSets": 118,
-      "processedSetsTotal": 118,
+      "knownSets": 119,
+      "processedSetsTotal": 119,
       "remainingSets": 0,
-      "rowsAccumulated": 154
+      "rowsAccumulated": 155
     },
     "topps-archives-snapshots-baseball-2021": {
       "setsFetchedThisRun": 0,
@@ -6405,9 +6405,9 @@
       "error": "strict-product-not-found"
     }
   },
-  "finishedAt": "2026-11-11T17:58:05Z",
+  "finishedAt": "2026-11-12T18:25:46Z",
   "collectionsWritten": 63,
-  "rowsWritten": 1949,
-  "exactFrontsWritten": 1933,
-  "runtimeSeconds": 215.5
+  "rowsWritten": 1955,
+  "exactFrontsWritten": 1939,
+  "runtimeSeconds": 299.9
 }

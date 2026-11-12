@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T17:58:08.606Z",
+  "generatedAt": "2026-11-12T18:25:49.173Z",
   "source": "data/user-collection-priority.json",
   "collections": [
     {
@@ -563,22 +563,6 @@
       "status": "needs-images"
     },
     {
-      "collectionId": "panini-donruss-optic-football-2025",
-      "name": "Panini Donruss Optic Football",
-      "season": "2025",
-      "ownedRows": 0,
-      "catalogPresent": true,
-      "checklistRows": 1065,
-      "uniqueIdentities": 1065,
-      "baseIdentities": 200,
-      "numberedIdentities": 234,
-      "autographIdentities": 292,
-      "relicIdentities": 166,
-      "exactFrontIdentities": 7,
-      "exactFrontCoveragePct": 0.66,
-      "status": "needs-images"
-    },
-    {
       "collectionId": "topps-barcelona-forever-2025-26",
       "name": "Topps FC Barcelona Forever",
       "season": "2025-26",
@@ -592,6 +576,22 @@
       "relicIdentities": 25,
       "exactFrontIdentities": 1,
       "exactFrontCoveragePct": 0.72,
+      "status": "needs-images"
+    },
+    {
+      "collectionId": "panini-donruss-optic-football-2025",
+      "name": "Panini Donruss Optic Football",
+      "season": "2025",
+      "ownedRows": 0,
+      "catalogPresent": true,
+      "checklistRows": 1066,
+      "uniqueIdentities": 1066,
+      "baseIdentities": 200,
+      "numberedIdentities": 234,
+      "autographIdentities": 293,
+      "relicIdentities": 166,
+      "exactFrontIdentities": 8,
+      "exactFrontCoveragePct": 0.75,
       "status": "needs-images"
     },
     {
@@ -920,14 +920,14 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 1859,
-      "uniqueIdentities": 1859,
+      "checklistRows": 1862,
+      "uniqueIdentities": 1862,
       "baseIdentities": 709,
       "numberedIdentities": 3,
-      "autographIdentities": 573,
+      "autographIdentities": 574,
       "relicIdentities": 37,
-      "exactFrontIdentities": 773,
-      "exactFrontCoveragePct": 41.58,
+      "exactFrontIdentities": 776,
+      "exactFrontCoveragePct": 41.68,
       "status": "needs-images"
     },
     {
@@ -1128,13 +1128,13 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 25,
-      "uniqueIdentities": 25,
+      "checklistRows": 26,
+      "uniqueIdentities": 26,
       "baseIdentities": 0,
       "numberedIdentities": 0,
       "autographIdentities": 0,
       "relicIdentities": 0,
-      "exactFrontIdentities": 25,
+      "exactFrontIdentities": 26,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     },
@@ -1224,13 +1224,13 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 154,
-      "uniqueIdentities": 154,
+      "checklistRows": 155,
+      "uniqueIdentities": 155,
       "baseIdentities": 6,
       "numberedIdentities": 5,
       "autographIdentities": 2,
       "relicIdentities": 1,
-      "exactFrontIdentities": 154,
+      "exactFrontIdentities": 155,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     }
@@ -1239,7 +1239,7 @@
     "ownedPriorityCollections": 77,
     "missingCollections": 13,
     "missingChecklists": 5,
-    "uniqueIdentities": 19470,
-    "exactFrontIdentities": 2041
+    "uniqueIdentities": 19476,
+    "exactFrontIdentities": 2047
   }
 }

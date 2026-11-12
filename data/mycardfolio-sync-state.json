@@ -53,6 +53,7 @@
         "ebay_16db77fb30",
         "ebay_1808144b95",
         "ebay_1822f5322a",
+        "ebay_18c97793c2",
         "ebay_19666f4fda",
         "ebay_19e2ae5ef7",
         "ebay_1a6f85de4d",
@@ -248,6 +249,7 @@
         "ebay_9086194a36",
         "ebay_913652dade",
         "ebay_9137be0114",
+        "ebay_937b0985d3",
         "ebay_9496f94ad8",
         "ebay_94f00eab25",
         "ebay_9664f893f2",
@@ -404,6 +406,7 @@
         "ebay_f89017da40",
         "ebay_fa24b37367",
         "ebay_fb7061f5b6",
+        "ebay_fc2130753a",
         "ebay_fc28b6c45d",
         "ebay_fe00b02c64",
         "ebay_fe14b1a4e2",
@@ -412,7 +415,7 @@
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
       "yearUsed": "2026",
-      "knownSets": 396
+      "knownSets": 399
     },
     "topps-holiday-baseball-2025": {
       "processedSets": [
@@ -554,6 +557,7 @@
     },
     "panini-donruss-optic-football-2025": {
       "processedSets": [
+        "ebay_0457e396a2",
         "ebay_2cb57ce0d9",
         "ebay_3d3bbd1b20",
         "ebay_5f6c93b6be",
@@ -563,7 +567,7 @@
       "productId": "ebay_ef2199934c",
       "productMatched": "Donruss Optic Football",
       "yearUsed": "2025",
-      "knownSets": 5
+      "knownSets": 6
     },
     "topps-chrome-basketball-2025-26": {
       "processedSets": [
@@ -1246,12 +1250,13 @@
         "ebay_f8be2ffd0a",
         "ebay_f9a64b0118",
         "ebay_f9fd5f9013",
+        "ebay_fdb9723049",
         "ebay_feedebdd83"
       ],
       "productId": "ebay_14edd5b886",
       "productMatched": "Now",
       "yearUsed": "2026",
-      "knownSets": 118
+      "knownSets": 119
     },
     "panini-international-england-2026": {
       "processedSets": []
@@ -1417,12 +1422,13 @@
         "ebay_e40c6ac041",
         "ebay_ea4240ac02",
         "ebay_f8203c41dc",
-        "ebay_f89e015397"
+        "ebay_f89e015397",
+        "ebay_fe01444051"
       ],
       "productId": "ebay_af5c620bd5",
       "productMatched": "Holiday Baseball",
       "yearUsed": "2026",
-      "knownSets": 18
+      "knownSets": 19
     },
     "panini-real-madrid-tribute-2023-24": {
       "processedSets": []
