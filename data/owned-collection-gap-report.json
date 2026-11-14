@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T17:50:27.956Z",
+  "generatedAt": "2026-11-14T16:41:58.697Z",
   "source": "data/user-collection-priority.json",
   "collections": [
     {
@@ -317,22 +317,6 @@
       "baseIdentities": 0,
       "numberedIdentities": 0,
       "autographIdentities": 47,
-      "relicIdentities": 0,
-      "exactFrontIdentities": 0,
-      "exactFrontCoveragePct": 0,
-      "status": "needs-images"
-    },
-    {
-      "collectionId": "topps-chrome-tennis-2026",
-      "name": "Topps Chrome Tennis",
-      "season": "2026",
-      "ownedRows": 0,
-      "catalogPresent": true,
-      "checklistRows": 679,
-      "uniqueIdentities": 679,
-      "baseIdentities": 0,
-      "numberedIdentities": 0,
-      "autographIdentities": 276,
       "relicIdentities": 0,
       "exactFrontIdentities": 0,
       "exactFrontCoveragePct": 0,
@@ -883,6 +867,22 @@
       "status": "needs-images"
     },
     {
+      "collectionId": "topps-chrome-tennis-2026",
+      "name": "Topps Chrome Tennis",
+      "season": "2026",
+      "ownedRows": 0,
+      "catalogPresent": true,
+      "checklistRows": 729,
+      "uniqueIdentities": 729,
+      "baseIdentities": 1,
+      "numberedIdentities": 0,
+      "autographIdentities": 302,
+      "relicIdentities": 0,
+      "exactFrontIdentities": 61,
+      "exactFrontCoveragePct": 8.37,
+      "status": "needs-images"
+    },
+    {
       "collectionId": "topps-now-f1-2026",
       "name": "Formula 1 Topps NOW",
       "season": "2026",
@@ -920,14 +920,14 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 1865,
-      "uniqueIdentities": 1865,
+      "checklistRows": 1866,
+      "uniqueIdentities": 1866,
       "baseIdentities": 709,
       "numberedIdentities": 3,
       "autographIdentities": 575,
       "relicIdentities": 37,
-      "exactFrontIdentities": 780,
-      "exactFrontCoveragePct": 41.82,
+      "exactFrontIdentities": 781,
+      "exactFrontCoveragePct": 41.85,
       "status": "needs-images"
     },
     {
@@ -1112,13 +1112,13 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 184,
-      "uniqueIdentities": 184,
+      "checklistRows": 208,
+      "uniqueIdentities": 208,
       "baseIdentities": 21,
       "numberedIdentities": 1,
-      "autographIdentities": 7,
+      "autographIdentities": 9,
       "relicIdentities": 0,
-      "exactFrontIdentities": 184,
+      "exactFrontIdentities": 208,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     },
@@ -1144,13 +1144,13 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 6,
-      "uniqueIdentities": 6,
+      "checklistRows": 7,
+      "uniqueIdentities": 7,
       "baseIdentities": 0,
       "numberedIdentities": 0,
       "autographIdentities": 0,
       "relicIdentities": 0,
-      "exactFrontIdentities": 6,
+      "exactFrontIdentities": 7,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     },
@@ -1224,13 +1224,13 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 155,
-      "uniqueIdentities": 155,
+      "checklistRows": 157,
+      "uniqueIdentities": 157,
       "baseIdentities": 6,
       "numberedIdentities": 5,
       "autographIdentities": 2,
       "relicIdentities": 1,
-      "exactFrontIdentities": 155,
+      "exactFrontIdentities": 157,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     }
@@ -1239,7 +1239,7 @@
     "ownedPriorityCollections": 77,
     "missingCollections": 13,
     "missingChecklists": 5,
-    "uniqueIdentities": 19479,
-    "exactFrontIdentities": 2051
+    "uniqueIdentities": 19557,
+    "exactFrontIdentities": 2140
   }
 }
