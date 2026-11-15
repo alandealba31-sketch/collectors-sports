@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T16:41:58.697Z",
+  "generatedAt": "2026-11-15T17:17:38.901Z",
   "source": "data/user-collection-priority.json",
   "collections": [
     {
@@ -691,22 +691,6 @@
       "status": "needs-images"
     },
     {
-      "collectionId": "topps-chrome-mls-2026",
-      "name": "Topps Chrome MLS",
-      "season": "2026",
-      "ownedRows": 17,
-      "catalogPresent": true,
-      "checklistRows": 204,
-      "uniqueIdentities": 204,
-      "baseIdentities": 200,
-      "numberedIdentities": 0,
-      "autographIdentities": 0,
-      "relicIdentities": 0,
-      "exactFrontIdentities": 4,
-      "exactFrontCoveragePct": 1.96,
-      "status": "needs-images"
-    },
-    {
       "collectionId": "topps-man-city-collector-tin-2026-27",
       "name": "Topps Manchester City Collector Tin",
       "season": "2026-27",
@@ -736,6 +720,22 @@
       "relicIdentities": 289,
       "exactFrontIdentities": 21,
       "exactFrontCoveragePct": 2.12,
+      "status": "needs-images"
+    },
+    {
+      "collectionId": "topps-chrome-mls-2026",
+      "name": "Topps Chrome MLS",
+      "season": "2026",
+      "ownedRows": 17,
+      "catalogPresent": true,
+      "checklistRows": 205,
+      "uniqueIdentities": 205,
+      "baseIdentities": 200,
+      "numberedIdentities": 0,
+      "autographIdentities": 0,
+      "relicIdentities": 0,
+      "exactFrontIdentities": 5,
+      "exactFrontCoveragePct": 2.44,
       "status": "needs-images"
     },
     {
@@ -883,22 +883,6 @@
       "status": "needs-images"
     },
     {
-      "collectionId": "topps-now-f1-2026",
-      "name": "Formula 1 Topps NOW",
-      "season": "2026",
-      "ownedRows": 0,
-      "catalogPresent": true,
-      "checklistRows": 34,
-      "uniqueIdentities": 34,
-      "baseIdentities": 6,
-      "numberedIdentities": 26,
-      "autographIdentities": 1,
-      "relicIdentities": 0,
-      "exactFrontIdentities": 3,
-      "exactFrontCoveragePct": 8.82,
-      "status": "needs-images"
-    },
-    {
       "collectionId": "topps-now-tennis-2026",
       "name": "Tennis Topps NOW",
       "season": "2026",
@@ -915,19 +899,35 @@
       "status": "needs-images"
     },
     {
+      "collectionId": "topps-now-f1-2026",
+      "name": "Formula 1 Topps NOW",
+      "season": "2026",
+      "ownedRows": 0,
+      "catalogPresent": true,
+      "checklistRows": 38,
+      "uniqueIdentities": 38,
+      "baseIdentities": 6,
+      "numberedIdentities": 26,
+      "autographIdentities": 1,
+      "relicIdentities": 0,
+      "exactFrontIdentities": 9,
+      "exactFrontCoveragePct": 23.68,
+      "status": "needs-images"
+    },
+    {
       "collectionId": "bowman-chrome-baseball-2026",
       "name": "Bowman Chrome Baseball",
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 1866,
-      "uniqueIdentities": 1866,
+      "checklistRows": 1869,
+      "uniqueIdentities": 1869,
       "baseIdentities": 709,
       "numberedIdentities": 3,
       "autographIdentities": 575,
       "relicIdentities": 37,
-      "exactFrontIdentities": 781,
-      "exactFrontCoveragePct": 41.85,
+      "exactFrontIdentities": 785,
+      "exactFrontCoveragePct": 42,
       "status": "needs-images"
     },
     {
@@ -1032,13 +1032,13 @@
       "season": "2026-27",
       "ownedRows": 2,
       "catalogPresent": true,
-      "checklistRows": 62,
-      "uniqueIdentities": 62,
+      "checklistRows": 64,
+      "uniqueIdentities": 64,
       "baseIdentities": 1,
       "numberedIdentities": 0,
-      "autographIdentities": 6,
+      "autographIdentities": 7,
       "relicIdentities": 1,
-      "exactFrontIdentities": 62,
+      "exactFrontIdentities": 64,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     },
@@ -1112,13 +1112,13 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 208,
-      "uniqueIdentities": 208,
+      "checklistRows": 219,
+      "uniqueIdentities": 219,
       "baseIdentities": 21,
       "numberedIdentities": 1,
       "autographIdentities": 9,
       "relicIdentities": 0,
-      "exactFrontIdentities": 208,
+      "exactFrontIdentities": 219,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     },
@@ -1224,13 +1224,13 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 157,
-      "uniqueIdentities": 157,
+      "checklistRows": 160,
+      "uniqueIdentities": 160,
       "baseIdentities": 6,
       "numberedIdentities": 5,
       "autographIdentities": 2,
       "relicIdentities": 1,
-      "exactFrontIdentities": 157,
+      "exactFrontIdentities": 160,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     }
@@ -1239,7 +1239,7 @@
     "ownedPriorityCollections": 77,
     "missingCollections": 13,
     "missingChecklists": 5,
-    "uniqueIdentities": 19557,
-    "exactFrontIdentities": 2140
+    "uniqueIdentities": 19581,
+    "exactFrontIdentities": 2167
   }
 }
