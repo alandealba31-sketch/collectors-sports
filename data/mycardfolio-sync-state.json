@@ -235,6 +235,7 @@
         "ebay_84d9ff7854",
         "ebay_8558a46ffb",
         "ebay_85683bafa0",
+        "ebay_85e551d4ab",
         "ebay_85ef51512f",
         "ebay_870d7cfc5a",
         "ebay_878d8ba0cd",
@@ -422,7 +423,7 @@
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
       "yearUsed": "2026",
-      "knownSets": 406
+      "knownSets": 407
     },
     "topps-holiday-baseball-2025": {
       "processedSets": [
@@ -741,6 +742,7 @@
         "ebay_8da42c8d59",
         "ebay_9236cc1d4f",
         "ebay_a107026ee4",
+        "ebay_a16637dd33",
         "ebay_a3cca90af2",
         "ebay_a7d1c4378d",
         "ebay_b3f786976f",
@@ -755,7 +757,7 @@
       "productId": "ebay_18f196bc83",
       "productMatched": "Chrome UEFA Club Competitions",
       "yearUsed": "2025",
-      "knownSets": 38
+      "knownSets": 39
     },
     "topps-ucc-2025-26": {
       "processedSets": [
@@ -887,6 +889,7 @@
     "topps-chrome-mls-2026": {
       "processedSets": [
         "ebay_211443725d",
+        "ebay_65c853cf83",
         "ebay_ad4cb99f74",
         "ebay_b06940e300",
         "ebay_c5552fe35b",
@@ -895,7 +898,7 @@
       "productMatched": "Chrome MLS",
       "productId": "ebay_3553355cdc",
       "yearUsed": "2026",
-      "knownSets": 5
+      "knownSets": 6
     },
     "panini-pitch-kings-laliga-2025-26": {
       "processedSets": [
@@ -1204,6 +1207,8 @@
         "ebay_19b1e19705",
         "ebay_19eabd0ecc",
         "ebay_1c2435a8f4",
+        "ebay_1e553ac188",
+        "ebay_1ece95161d",
         "ebay_2060170cac",
         "ebay_2134d7fd62",
         "ebay_22ed461f64",
@@ -1223,6 +1228,7 @@
         "ebay_43eb42d7d4",
         "ebay_45f9736dd4",
         "ebay_460d60cd22",
+        "ebay_46517f6584",
         "ebay_495eff974b",
         "ebay_4a4b36a6a0",
         "ebay_4db879bd9b",
@@ -1250,6 +1256,7 @@
         "ebay_6999c44cbd",
         "ebay_6e3944932b",
         "ebay_70d0329ed2",
+        "ebay_7348908028",
         "ebay_77722cf3ed",
         "ebay_7827ea6493",
         "ebay_79ec0ad661",
@@ -1267,7 +1274,9 @@
         "ebay_90d6e4a6bf",
         "ebay_911756bde4",
         "ebay_922e61243b",
+        "ebay_96596240b3",
         "ebay_9659b4c507",
+        "ebay_96d404ebf0",
         "ebay_9dc7859706",
         "ebay_a0bea19a72",
         "ebay_a5c41b7103",
@@ -1284,6 +1293,7 @@
         "ebay_c50df287d5",
         "ebay_c6aecf7d57",
         "ebay_c8c1f28352",
+        "ebay_caa2993041",
         "ebay_ccafff0599",
         "ebay_cd8d09fdaa",
         "ebay_cdc682fd32",
@@ -1302,6 +1312,7 @@
         "ebay_ea0474235a",
         "ebay_eb62912a44",
         "ebay_eb6c473f97",
+        "ebay_ebb9402546",
         "ebay_ec56b09d29",
         "ebay_ef54958cab",
         "ebay_f10b3df200",
@@ -1317,7 +1328,7 @@
       "productId": "ebay_14edd5b886",
       "productMatched": "Now",
       "yearUsed": "2026",
-      "knownSets": 124
+      "knownSets": 132
     },
     "panini-international-england-2026": {
       "processedSets": []
@@ -1722,6 +1733,7 @@
         "ebay_27f9ff79d0",
         "ebay_2968d1dd01",
         "ebay_3f8107c868",
+        "ebay_5955341260",
         "ebay_60849ce343",
         "ebay_63e811cc0f",
         "ebay_694ca0c0b2",
@@ -1750,7 +1762,7 @@
       "productId": "ebay_67fa4127be",
       "productMatched": "Football",
       "yearUsed": "2025",
-      "knownSets": 28
+      "knownSets": 29
     },
     "topps-signature-class-basketball-2026": {
       "processedSets": [

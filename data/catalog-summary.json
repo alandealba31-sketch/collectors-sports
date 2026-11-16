@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T17:17:38.568Z",
+  "generatedAt": "2026-11-16T20:33:42.635Z",
   "scriptFilesEvaluated": 54,
   "scriptFailures": [
     {
@@ -9,21 +9,21 @@
   ],
   "collectionsWithChecklist": 79,
   "collectionRecords": 93,
-  "searchableIdentities": 22916,
+  "searchableIdentities": 22932,
   "bySport": {
-    "NFL": 6284,
-    "Soccer": 5256,
+    "NFL": 6285,
+    "Soccer": 5270,
     "NBA": 4604,
-    "MLB": 3621,
+    "MLB": 3622,
     "WWE": 1134,
     "UFC": 948,
     "Tennis": 830,
     "F1": 239
   },
-  "verifiedExactFrontRecords": 2064,
-  "approximateUniqueExactFrontIdentities": 2063,
-  "searchableIdentitiesWithExactFront": 2360,
-  "exactFrontCoveragePct": 10.3,
+  "verifiedExactFrontRecords": 2080,
+  "approximateUniqueExactFrontIdentities": 2079,
+  "searchableIdentitiesWithExactFront": 2376,
+  "exactFrontCoveragePct": 10.36,
   "topCollections": [
     {
       "id": "topps-chrome-football-2025",
@@ -37,8 +37,8 @@
       "id": "bowman-chrome-baseball-2026",
       "name": "Bowman Chrome 2026",
       "sport": "MLB",
-      "rows": 1869,
-      "identities": 1869,
+      "rows": 1870,
+      "identities": 1870,
       "coverage": "expanded-structured"
     },
     {
@@ -173,8 +173,8 @@
       "id": "topps-chrome-ucc-2025-26",
       "name": "Chrome UEFA 25/26",
       "sport": "Soccer",
-      "rows": 311,
-      "identities": 303,
+      "rows": 312,
+      "identities": 304,
       "coverage": "expanded-structured"
     },
     {
@@ -213,8 +213,8 @@
       "id": "topps-chrome-mls-2026",
       "name": "Chrome MLS 2026",
       "sport": "Soccer",
-      "rows": 205,
-      "identities": 205,
+      "rows": 206,
+      "identities": 206,
       "coverage": "expanded-structured"
     },
     {
@@ -242,20 +242,20 @@
       "coverage": "expanded-structured"
     },
     {
+      "id": "topps-now-soccer-2026",
+      "name": "Soccer Topps NOW 2026",
+      "sport": "Soccer",
+      "rows": 172,
+      "identities": 172,
+      "coverage": "expanded-structured"
+    },
+    {
       "id": "panini-intl-germany-2026",
       "name": "Panini INTL Germany 2026",
       "sport": "Soccer",
       "rows": 167,
       "identities": 167,
       "coverage": "base-complete"
-    },
-    {
-      "id": "topps-now-soccer-2026",
-      "name": "Soccer Topps NOW 2026",
-      "sport": "Soccer",
-      "rows": 160,
-      "identities": 160,
-      "coverage": "expanded-structured"
     },
     {
       "id": "panini-intl-france-2026",

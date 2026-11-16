@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T17:17:38.901Z",
+  "generatedAt": "2026-11-16T20:33:42.968Z",
   "source": "data/user-collection-priority.json",
   "collections": [
     {
@@ -723,22 +723,6 @@
       "status": "needs-images"
     },
     {
-      "collectionId": "topps-chrome-mls-2026",
-      "name": "Topps Chrome MLS",
-      "season": "2026",
-      "ownedRows": 17,
-      "catalogPresent": true,
-      "checklistRows": 205,
-      "uniqueIdentities": 205,
-      "baseIdentities": 200,
-      "numberedIdentities": 0,
-      "autographIdentities": 0,
-      "relicIdentities": 0,
-      "exactFrontIdentities": 5,
-      "exactFrontCoveragePct": 2.44,
-      "status": "needs-images"
-    },
-    {
       "collectionId": "panini-select-road-to-world-cup-2025-26",
       "name": "Panini Select Road to FIFA World Cup",
       "season": "2025-26",
@@ -768,6 +752,22 @@
       "relicIdentities": 0,
       "exactFrontIdentities": 4,
       "exactFrontCoveragePct": 2.8,
+      "status": "needs-images"
+    },
+    {
+      "collectionId": "topps-chrome-mls-2026",
+      "name": "Topps Chrome MLS",
+      "season": "2026",
+      "ownedRows": 17,
+      "catalogPresent": true,
+      "checklistRows": 206,
+      "uniqueIdentities": 206,
+      "baseIdentities": 200,
+      "numberedIdentities": 0,
+      "autographIdentities": 0,
+      "relicIdentities": 0,
+      "exactFrontIdentities": 6,
+      "exactFrontCoveragePct": 2.91,
       "status": "needs-images"
     },
     {
@@ -920,14 +920,14 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 1869,
-      "uniqueIdentities": 1869,
+      "checklistRows": 1870,
+      "uniqueIdentities": 1870,
       "baseIdentities": 709,
       "numberedIdentities": 3,
       "autographIdentities": 575,
       "relicIdentities": 37,
-      "exactFrontIdentities": 785,
-      "exactFrontCoveragePct": 42,
+      "exactFrontIdentities": 786,
+      "exactFrontCoveragePct": 42.03,
       "status": "needs-images"
     },
     {
@@ -952,14 +952,14 @@
       "season": "2025-26",
       "ownedRows": 7,
       "catalogPresent": true,
-      "checklistRows": 311,
-      "uniqueIdentities": 303,
+      "checklistRows": 312,
+      "uniqueIdentities": 304,
       "baseIdentities": 200,
       "numberedIdentities": 0,
-      "autographIdentities": 4,
+      "autographIdentities": 5,
       "relicIdentities": 0,
-      "exactFrontIdentities": 147,
-      "exactFrontCoveragePct": 48.51,
+      "exactFrontIdentities": 148,
+      "exactFrontCoveragePct": 48.68,
       "status": "needs-images"
     },
     {
@@ -1176,13 +1176,13 @@
       "season": "2025",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 34,
-      "uniqueIdentities": 34,
+      "checklistRows": 35,
+      "uniqueIdentities": 35,
       "baseIdentities": 5,
       "numberedIdentities": 0,
       "autographIdentities": 3,
       "relicIdentities": 0,
-      "exactFrontIdentities": 34,
+      "exactFrontIdentities": 35,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     },
@@ -1224,13 +1224,13 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 160,
-      "uniqueIdentities": 160,
+      "checklistRows": 172,
+      "uniqueIdentities": 172,
       "baseIdentities": 6,
       "numberedIdentities": 5,
-      "autographIdentities": 2,
+      "autographIdentities": 3,
       "relicIdentities": 1,
-      "exactFrontIdentities": 160,
+      "exactFrontIdentities": 172,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     }
@@ -1239,7 +1239,7 @@
     "ownedPriorityCollections": 77,
     "missingCollections": 13,
     "missingChecklists": 5,
-    "uniqueIdentities": 19581,
-    "exactFrontIdentities": 2167
+    "uniqueIdentities": 19597,
+    "exactFrontIdentities": 2183
   }
 }
