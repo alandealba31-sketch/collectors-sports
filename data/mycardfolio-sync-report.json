@@ -1,6 +1,6 @@
 {
   "runner": "sync_mycardfolio_v2.py",
-  "startedAt": "2026-11-17T19:11:55Z",
+  "startedAt": "2026-11-18T18:52:20Z",
   "endpoint": "https://mycardfolio.com/api/mcp",
   "setsPerProductPerRun": 150,
   "requestDelaySeconds": 1.05,
@@ -77,9 +77,9 @@
       "rowsAccumulated": 50
     },
     "topps-chrome-mls-2026": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 2,
+      "rowsAddedThisRun": 3,
+      "imagesAddedThisRun": 3,
       "candidateProducts": [
         {
           "year": "2026",
@@ -90,6 +90,13 @@
         },
         {
           "year": "2026",
+          "label": "Chrome MLS Mojo",
+          "score": 14,
+          "strict": true,
+          "productId": "ebay_d630bcb83e"
+        },
+        {
+          "year": "2026",
           "label": "Chrome MLS Patriotic Passion",
           "score": 14,
           "strict": true,
@@ -97,54 +104,47 @@
         },
         {
           "year": "2026",
+          "label": "Chrome MLS Prism",
+          "score": 14,
+          "strict": true,
+          "productId": "ebay_9fa2767461"
+        },
+        {
+          "year": "2026",
+          "label": "Chrome MLS RayWave",
+          "score": 14,
+          "strict": true,
+          "productId": "ebay_344368b749"
+        },
+        {
+          "year": "2026",
+          "label": "Chrome MLS Renaissance",
+          "score": 14,
+          "strict": true,
+          "productId": "ebay_d6f7144cab"
+        },
+        {
+          "year": "2026",
+          "label": "Chrome MLS Rhythm of the Game",
+          "score": 14,
+          "strict": true,
+          "productId": "ebay_0e43e32ed5"
+        },
+        {
+          "year": "2026",
           "label": "Chrome MLS Wonderkids",
           "score": 14,
           "strict": true,
           "productId": "ebay_7c96785977"
-        },
-        {
-          "year": "2026",
-          "label": "Topps Chrome",
-          "score": 12,
-          "strict": false,
-          "productId": "ebay_34a2a395f2"
-        },
-        {
-          "year": "2026",
-          "label": "Topps Chrome",
-          "score": 12,
-          "strict": false,
-          "productId": "ing_4cab1a5ea1"
-        },
-        {
-          "year": "2026",
-          "label": "Chrome",
-          "score": 9,
-          "strict": false,
-          "productId": "ebay_4cab1a5ea1"
-        },
-        {
-          "year": "2026",
-          "label": "MLS",
-          "score": 9,
-          "strict": false,
-          "productId": "ebay_05b21fdb24"
-        },
-        {
-          "year": "2026",
-          "label": "Topps",
-          "score": 7,
-          "strict": false,
-          "productId": "ing_666294998d"
         }
       ],
       "yearUsed": "2026",
       "productId": "ebay_3553355cdc",
       "productMatched": "Chrome MLS",
-      "knownSets": 7,
-      "processedSetsTotal": 7,
+      "knownSets": 9,
+      "processedSetsTotal": 9,
       "remainingSets": 0,
-      "rowsAccumulated": 7
+      "rowsAccumulated": 10
     },
     "topps-chrome-ucc-2025-26": {
       "setsFetchedThisRun": 0,
@@ -287,9 +287,9 @@
       "rowsAccumulated": 2
     },
     "panini-obsidian-soccer-2025-26": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2025",
@@ -321,6 +321,13 @@
         },
         {
           "year": "2025",
+          "label": "Obsidian Cosmic Storm",
+          "score": -1,
+          "strict": true,
+          "productId": "ebay_ec3bb39d63"
+        },
+        {
+          "year": "2025",
           "label": "Obsidian Cutting Edge",
           "score": -1,
           "strict": true,
@@ -339,13 +346,6 @@
           "score": -1,
           "strict": true,
           "productId": "ebay_4ebfc0aa64"
-        },
-        {
-          "year": "2025",
-          "label": "Obsidian Galaxy",
-          "score": -1,
-          "strict": true,
-          "productId": "ebay_6c7a5aa605"
         }
       ],
       "yearUsed": "2025",
@@ -427,9 +427,9 @@
       "rowsAccumulated": 14
     },
     "panini-prizm-fifa-soccer-2025-26": {
-      "setsFetchedThisRun": 2,
-      "rowsAddedThisRun": 2,
-      "imagesAddedThisRun": 2,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2025",
@@ -497,9 +497,9 @@
       "rowsAccumulated": 9
     },
     "panini-select-road-to-world-cup-2025-26": {
-      "setsFetchedThisRun": 2,
-      "rowsAddedThisRun": 2,
-      "imagesAddedThisRun": 2,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
         {
           "year": "2025",
@@ -561,15 +561,15 @@
       "yearUsed": "2025",
       "productId": "ebay_6c15412d98",
       "productMatched": "Select Road to World Cup",
-      "knownSets": 11,
-      "processedSetsTotal": 11,
+      "knownSets": 12,
+      "processedSetsTotal": 12,
       "remainingSets": 0,
-      "rowsAccumulated": 11
+      "rowsAccumulated": 12
     },
     "panini-select-la-liga-2024-25": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2024",
@@ -1505,9 +1505,9 @@
       "error": "strict-product-not-found"
     },
     "topps-real-madrid-collector-tin-2025-26": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2025",
@@ -1566,8 +1566,6 @@
           "productId": "ing_4c2d32d313"
         }
       ],
-      "purgedRowsAfterProductChange": 1,
-      "purgedImagesAfterProductChange": 1,
       "yearUsed": "2025",
       "productId": "ebay_af7b9ce458",
       "productMatched": "Real Madrid Collector Tin",
@@ -1873,6 +1871,13 @@
         },
         {
           "year": "2025",
+          "label": "FC Bayern München",
+          "score": 2,
+          "strict": true,
+          "productId": "ebay_499f4931c0"
+        },
+        {
+          "year": "2025",
           "label": "Real Madrid Collector Tin",
           "score": 2,
           "strict": false,
@@ -1891,13 +1896,6 @@
           "score": -3,
           "strict": false,
           "productId": "ebay_8e7c2ed7c9"
-        },
-        {
-          "year": "2025",
-          "label": "2025/26 TOPPS MATCH ATTAX UEFA",
-          "score": -5,
-          "strict": false,
-          "productId": "ing_86942b21cf"
         }
       ],
       "yearUsed": "2025",
@@ -2000,6 +1998,13 @@
         },
         {
           "year": "2026",
+          "label": "Chelsea Monday Night Lights",
+          "score": -3,
+          "strict": true,
+          "productId": "ebay_647679b2ac"
+        },
+        {
+          "year": "2026",
           "label": "FC Manchester City Collector Gold Vault",
           "score": -3,
           "strict": false,
@@ -2025,13 +2030,6 @@
           "score": -3,
           "strict": false,
           "productId": "ing_86395e4c26"
-        },
-        {
-          "year": "2026",
-          "label": "Topps Chrome",
-          "score": -3,
-          "strict": false,
-          "productId": "ebay_34a2a395f2"
         }
       ],
       "error": "strict-product-not-found"
@@ -2276,6 +2274,13 @@
         },
         {
           "year": "2026",
+          "label": "2026/27",
+          "score": -6,
+          "strict": false,
+          "productId": "ebay_664387c5d3"
+        },
+        {
+          "year": "2026",
           "label": "2026 FIFA World Cup",
           "score": -6,
           "strict": false,
@@ -2287,13 +2292,6 @@
           "score": -6,
           "strict": false,
           "productId": "ebay_103ad735c4"
-        },
-        {
-          "year": "2026",
-          "label": "2026 FIFA World Cup Stickers",
-          "score": -6,
-          "strict": false,
-          "productId": "ebay_b5c30d011b"
         }
       ],
       "error": "strict-product-not-found"
@@ -2823,9 +2821,9 @@
       "rowsAccumulated": 2
     },
     "topps-premier-league-2026-27": {
-      "setsFetchedThisRun": 3,
-      "rowsAddedThisRun": 4,
-      "imagesAddedThisRun": 4,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
         {
           "year": "2026",
@@ -2887,10 +2885,10 @@
       "yearUsed": "2026",
       "productId": "ebay_97821cda88",
       "productMatched": "Premier League",
-      "knownSets": 56,
-      "processedSetsTotal": 56,
+      "knownSets": 57,
+      "processedSetsTotal": 57,
       "remainingSets": 0,
-      "rowsAccumulated": 68
+      "rowsAccumulated": 69
     },
     "topps-chrome-baseball-2026": {
       "setsFetchedThisRun": 0,
@@ -2963,9 +2961,9 @@
       "rowsAccumulated": 1
     },
     "bowman-chrome-baseball-2026": {
-      "setsFetchedThisRun": 6,
-      "rowsAddedThisRun": 6,
-      "imagesAddedThisRun": 6,
+      "setsFetchedThisRun": 4,
+      "rowsAddedThisRun": 4,
+      "imagesAddedThisRun": 4,
       "candidateProducts": [
         {
           "year": "2026",
@@ -3027,10 +3025,10 @@
       "yearUsed": "2026",
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
-      "knownSets": 413,
-      "processedSetsTotal": 413,
+      "knownSets": 417,
+      "processedSetsTotal": 417,
       "remainingSets": 0,
-      "rowsAccumulated": 672
+      "rowsAccumulated": 676
     },
     "topps-finest-baseball-2026": {
       "setsFetchedThisRun": 0,
@@ -3174,8 +3172,8 @@
     },
     "topps-chrome-college-baseball-2026": {
       "setsFetchedThisRun": 10,
-      "rowsAddedThisRun": 11,
-      "imagesAddedThisRun": 11,
+      "rowsAddedThisRun": 10,
+      "imagesAddedThisRun": 10,
       "candidateProducts": [
         {
           "year": "2026",
@@ -3237,10 +3235,10 @@
       "yearUsed": "2026",
       "productId": "ebay_34a2a395f2",
       "productMatched": "Topps Chrome",
-      "knownSets": 157,
-      "processedSetsTotal": 157,
+      "knownSets": 167,
+      "processedSetsTotal": 167,
       "remainingSets": 0,
-      "rowsAccumulated": 230
+      "rowsAccumulated": 240
     },
     "topps-holiday-baseball-2025": {
       "setsFetchedThisRun": 0,
@@ -3383,9 +3381,9 @@
       "rowsAccumulated": 26
     },
     "topps-update-baseball-2026": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
         {
           "year": "2026",
@@ -3447,10 +3445,10 @@
       "yearUsed": "2026",
       "productId": "ebay_bf954bb576",
       "productMatched": "Topps Update Series",
-      "knownSets": 6,
-      "processedSetsTotal": 6,
+      "knownSets": 7,
+      "processedSetsTotal": 7,
       "remainingSets": 0,
-      "rowsAccumulated": 7
+      "rowsAccumulated": 8
     },
     "topps-chrome-logofractor-baseball-2026": {
       "setsFetchedThisRun": 0,
@@ -3523,9 +3521,9 @@
       "rowsAccumulated": 1
     },
     "topps-chrome-football-2025": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2025",
@@ -3873,9 +3871,9 @@
       "rowsAccumulated": 7
     },
     "panini-obsidian-football-2025": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2025",
@@ -3943,9 +3941,9 @@
       "rowsAccumulated": 36
     },
     "topps-holiday-football-2026": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 2,
+      "rowsAddedThisRun": 2,
+      "imagesAddedThisRun": 2,
       "candidateProducts": [
         {
           "year": "2026",
@@ -4007,10 +4005,10 @@
       "yearUsed": "2026",
       "productId": "ebay_12721e4c02",
       "productMatched": "Holiday Football",
-      "knownSets": 21,
-      "processedSetsTotal": 21,
+      "knownSets": 23,
+      "processedSetsTotal": 23,
       "remainingSets": 0,
-      "rowsAccumulated": 22
+      "rowsAccumulated": 24
     },
     "panini-prizm-basketball-2024-25": {
       "setsFetchedThisRun": 0,
@@ -4293,9 +4291,9 @@
       "rowsAccumulated": 1
     },
     "topps-chrome-ufc-2026": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 2,
+      "rowsAddedThisRun": 2,
+      "imagesAddedThisRun": 2,
       "candidateProducts": [
         {
           "year": "2026",
@@ -4317,6 +4315,13 @@
           "score": 7,
           "strict": true,
           "productId": "ebay_4cab1a5ea1"
+        },
+        {
+          "year": "2026",
+          "label": "UFC",
+          "score": 7,
+          "strict": false,
+          "productId": "ebay_4ab035fddd"
         },
         {
           "year": "2026",
@@ -4345,28 +4350,49 @@
           "score": 4,
           "strict": true,
           "productId": "ebay_f9c277c5a3"
-        },
-        {
-          "year": "2026",
-          "label": "Chrome Sapphire",
-          "score": -1,
-          "strict": true,
-          "productId": "ebay_dec8306190"
         }
       ],
       "yearUsed": "2026",
       "productId": "ebay_384e1bf93b",
       "productMatched": "Chrome UFC",
-      "knownSets": 17,
-      "processedSetsTotal": 17,
+      "knownSets": 19,
+      "processedSetsTotal": 19,
       "remainingSets": 0,
-      "rowsAccumulated": 19
+      "rowsAccumulated": 21
     },
     "topps-stadium-club-ufc-2026": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 2,
+      "rowsAddedThisRun": 2,
+      "imagesAddedThisRun": 2,
       "candidateProducts": [
+        {
+          "year": "2026",
+          "label": "Stadium Club UFC",
+          "score": 47,
+          "strict": true,
+          "productId": "ebay_06cc500e77"
+        },
+        {
+          "year": "2026",
+          "label": "Stadium Club",
+          "score": 44,
+          "strict": true,
+          "productId": "ebay_c199bb86af"
+        },
+        {
+          "year": "2026",
+          "label": "Stadium Club Chrome",
+          "score": 14,
+          "strict": true,
+          "productId": "ebay_1b2c97be92"
+        },
+        {
+          "year": "2026",
+          "label": "UFC",
+          "score": 7,
+          "strict": false,
+          "productId": "ebay_4ab035fddd"
+        },
         {
           "year": "2026",
           "label": "Chrome UFC",
@@ -4394,37 +4420,15 @@
           "score": -1,
           "strict": false,
           "productId": "ebay_f5e41d0ed4"
-        },
-        {
-          "year": "2026",
-          "label": "Knockout UFC MMA Final Face Off",
-          "score": -1,
-          "strict": false,
-          "productId": "ebay_02b97b0349"
-        },
-        {
-          "year": "2026",
-          "label": "Midnight UFC",
-          "score": -1,
-          "strict": false,
-          "productId": "ebay_a877443342"
-        },
-        {
-          "year": "2026",
-          "label": "Midnight UFC Dusk",
-          "score": -1,
-          "strict": false,
-          "productId": "ebay_fbec96e6f3"
-        },
-        {
-          "year": "2026",
-          "label": "Midnight UFC Moonrise",
-          "score": -1,
-          "strict": false,
-          "productId": "ebay_656995fd49"
         }
       ],
-      "error": "strict-product-not-found"
+      "yearUsed": "2026",
+      "productId": "ebay_06cc500e77",
+      "productMatched": "Stadium Club UFC",
+      "knownSets": 2,
+      "processedSetsTotal": 2,
+      "remainingSets": 0,
+      "rowsAccumulated": 2
     },
     "topps-now-mlb-2026": {
       "setsFetchedThisRun": 0,
@@ -4497,9 +4501,9 @@
       "rowsAccumulated": 2
     },
     "topps-now-nfl-2026": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
         {
           "year": "2026",
@@ -4561,10 +4565,10 @@
       "yearUsed": "2026",
       "productId": "ebay_87fe0a00b6",
       "productMatched": "Topps Now",
-      "knownSets": 13,
-      "processedSetsTotal": 13,
+      "knownSets": 14,
+      "processedSetsTotal": 14,
       "remainingSets": 0,
-      "rowsAccumulated": 16
+      "rowsAccumulated": 17
     },
     "topps-now-tennis-2026": {
       "setsFetchedThisRun": 0,
@@ -4650,6 +4654,13 @@
         },
         {
           "year": "2026",
+          "label": "Topps Now F1",
+          "score": 14,
+          "strict": true,
+          "productId": "ebay_b66af256dc"
+        },
+        {
+          "year": "2026",
           "label": "Now",
           "score": 9,
           "strict": true,
@@ -4667,6 +4678,13 @@
           "label": "Topps Chrome Formula 1",
           "score": 7,
           "strict": false,
+          "productId": "ebay_e84e918891"
+        },
+        {
+          "year": "2026",
+          "label": "Topps Chrome Formula 1",
+          "score": 7,
+          "strict": false,
           "productId": "ing_e84e918891"
         },
         {
@@ -4678,24 +4696,10 @@
         },
         {
           "year": "2026",
-          "label": "Chrome Formula 1",
+          "label": "Chrome F1 Formula 1",
           "score": 2,
           "strict": false,
-          "productId": "ebay_236743ae03"
-        },
-        {
-          "year": "2026",
-          "label": "Chrome Formula 1 Award Winners",
-          "score": 2,
-          "strict": false,
-          "productId": "ebay_397af85b75"
-        },
-        {
-          "year": "2026",
-          "label": "Chrome Formula 1 Helmet Collection",
-          "score": 2,
-          "strict": false,
-          "productId": "ebay_a7ba722cc3"
+          "productId": "ebay_53c407edad"
         }
       ],
       "yearUsed": "2026",
@@ -4707,9 +4711,9 @@
       "rowsAccumulated": 5
     },
     "topps-now-soccer-2026": {
-      "setsFetchedThisRun": 19,
-      "rowsAddedThisRun": 20,
-      "imagesAddedThisRun": 20,
+      "setsFetchedThisRun": 12,
+      "rowsAddedThisRun": 12,
+      "imagesAddedThisRun": 12,
       "candidateProducts": [
         {
           "year": "2026",
@@ -4771,10 +4775,10 @@
       "yearUsed": "2026",
       "productId": "ebay_14edd5b886",
       "productMatched": "Now",
-      "knownSets": 151,
-      "processedSetsTotal": 151,
+      "knownSets": 163,
+      "processedSetsTotal": 163,
       "remainingSets": 0,
-      "rowsAccumulated": 192
+      "rowsAccumulated": 204
     },
     "topps-archives-snapshots-baseball-2021": {
       "setsFetchedThisRun": 0,
@@ -4987,9 +4991,9 @@
       "rowsAccumulated": 1
     },
     "topps-now-nba-2026-27": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -5048,8 +5052,6 @@
           "productId": "ebay_1248236c3f"
         }
       ],
-      "purgedRowsAfterProductChange": 16,
-      "purgedImagesAfterProductChange": 16,
       "yearUsed": "2026",
       "productId": "ebay_7be94b85e8",
       "productMatched": "Topps Now Basketball",
@@ -5059,9 +5061,9 @@
       "rowsAccumulated": 1
     },
     "topps-now-ufc-2026": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
         {
           "year": "2026",
@@ -5076,6 +5078,13 @@
           "score": 9,
           "strict": true,
           "productId": "ebay_14edd5b886"
+        },
+        {
+          "year": "2026",
+          "label": "UFC",
+          "score": 7,
+          "strict": false,
+          "productId": "ebay_4ab035fddd"
         },
         {
           "year": "2026",
@@ -5111,28 +5120,28 @@
           "score": -1,
           "strict": false,
           "productId": "ebay_f5e41d0ed4"
-        },
-        {
-          "year": "2026",
-          "label": "Knockout UFC MMA Final Face Off",
-          "score": -1,
-          "strict": false,
-          "productId": "ebay_02b97b0349"
         }
       ],
       "yearUsed": "2026",
       "productId": "ebay_d06300b96d",
       "productMatched": "Now UFC",
-      "knownSets": 7,
-      "processedSetsTotal": 7,
+      "knownSets": 8,
+      "processedSetsTotal": 8,
       "remainingSets": 0,
-      "rowsAccumulated": 7
+      "rowsAccumulated": 8
     },
     "topps-chrome-f1-2026": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
+        {
+          "year": "2026",
+          "label": "Topps Chrome Formula 1",
+          "score": 50,
+          "strict": true,
+          "productId": "ebay_e84e918891"
+        },
         {
           "year": "2026",
           "label": "Topps Chrome Formula 1",
@@ -5156,6 +5165,20 @@
         },
         {
           "year": "2026",
+          "label": "Chrome Formula 1 F1 Cars",
+          "score": 17,
+          "strict": true,
+          "productId": "ebay_9aa4962f99"
+        },
+        {
+          "year": "2026",
+          "label": "Chrome Formula 1 F1 Legends",
+          "score": 17,
+          "strict": true,
+          "productId": "ebay_b7b4fb12cc"
+        },
+        {
+          "year": "2026",
           "label": "Chrome Formula 1 Helmet Collection",
           "score": 17,
           "strict": true,
@@ -5163,35 +5186,16 @@
         },
         {
           "year": "2026",
-          "label": "Chrome F1",
-          "score": 12,
+          "label": "Chrome Formula 1 Legends",
+          "score": 17,
           "strict": true,
-          "productId": "ebay_8fd3e3566e"
-        },
-        {
-          "year": "2026",
-          "label": "Topps Chrome",
-          "score": 12,
-          "strict": true,
-          "productId": "ebay_34a2a395f2"
-        },
-        {
-          "year": "2026",
-          "label": "Chrome",
-          "score": 7,
-          "strict": true,
-          "productId": "ebay_4cab1a5ea1"
-        },
-        {
-          "year": "2026",
-          "label": "F1",
-          "score": 7,
-          "strict": false,
-          "productId": "ebay_c4eee0ad4d"
+          "productId": "ebay_4d4f08e837"
         }
       ],
+      "purgedRowsAfterProductChange": 1,
+      "purgedImagesAfterProductChange": 1,
       "yearUsed": "2026",
-      "productId": "ing_e84e918891",
+      "productId": "ebay_e84e918891",
       "productMatched": "Topps Chrome Formula 1",
       "knownSets": 1,
       "processedSetsTotal": 1,
@@ -5269,10 +5273,17 @@
       "rowsAccumulated": 1
     },
     "topps-now-wwe-2026": {
-      "setsFetchedThisRun": 3,
-      "rowsAddedThisRun": 4,
-      "imagesAddedThisRun": 4,
+      "setsFetchedThisRun": 14,
+      "rowsAddedThisRun": 19,
+      "imagesAddedThisRun": 19,
       "candidateProducts": [
+        {
+          "year": "2026",
+          "label": "Topps NOW",
+          "score": 44,
+          "strict": true,
+          "productId": "ebay_87fe0a00b6"
+        },
         {
           "year": "2026",
           "label": "Now WWE",
@@ -5321,22 +5332,17 @@
           "score": 4,
           "strict": false,
           "productId": "ebay_f258e2bb48"
-        },
-        {
-          "year": "2026",
-          "label": "Topps Universe WWE",
-          "score": 4,
-          "strict": false,
-          "productId": "ebay_4c0cf4f5ab"
         }
       ],
+      "purgedRowsAfterProductChange": 24,
+      "purgedImagesAfterProductChange": 24,
       "yearUsed": "2026",
-      "productId": "ebay_b9c76cb234",
-      "productMatched": "Now WWE",
-      "knownSets": 13,
-      "processedSetsTotal": 13,
+      "productId": "ebay_87fe0a00b6",
+      "productMatched": "Topps NOW",
+      "knownSets": 14,
+      "processedSetsTotal": 14,
       "remainingSets": 0,
-      "rowsAccumulated": 24
+      "rowsAccumulated": 19
     },
     "topps-ucc-2025-26": {
       "setsFetchedThisRun": 0,
@@ -5410,8 +5416,8 @@
     },
     "topps-finest-ucc-2025-26": {
       "setsFetchedThisRun": 3,
-      "rowsAddedThisRun": 3,
-      "imagesAddedThisRun": 3,
+      "rowsAddedThisRun": 4,
+      "imagesAddedThisRun": 4,
       "candidateProducts": [
         {
           "year": "2025",
@@ -5473,10 +5479,10 @@
       "yearUsed": "2025",
       "productId": "ebay_16615300e8",
       "productMatched": "Finest Uefa Club Competitions",
-      "knownSets": 31,
-      "processedSetsTotal": 31,
+      "knownSets": 34,
+      "processedSetsTotal": 34,
       "remainingSets": 0,
-      "rowsAccumulated": 57
+      "rowsAccumulated": 61
     },
     "topps-chrome-premier-league-2026": {
       "setsFetchedThisRun": 0,
@@ -5909,6 +5915,13 @@
         },
         {
           "year": "2026",
+          "label": "Lamine Yamal FC Barcelona La Liga Soccer Card",
+          "score": 0,
+          "strict": false,
+          "productId": "ebay_71fe5e1620"
+        },
+        {
+          "year": "2026",
           "label": "2025-2026 Topps Chrome",
           "score": -3,
           "strict": false,
@@ -5927,13 +5940,6 @@
           "score": -3,
           "strict": false,
           "productId": "ebay_2d600b50a0"
-        },
-        {
-          "year": "2026",
-          "label": "FIFA World Cup 2026 Base Set",
-          "score": -3,
-          "strict": false,
-          "productId": "ebay_2640b36830"
         }
       ],
       "error": "strict-product-not-found"
@@ -6256,10 +6262,10 @@
         },
         {
           "year": "2026",
-          "label": "2026 FIFA World Cup",
+          "label": "2026/27",
           "score": -3,
           "strict": false,
-          "productId": "ebay_80d1d3b7cb"
+          "productId": "ebay_664387c5d3"
         }
       ],
       "yearUsed": "2026",
@@ -6275,6 +6281,13 @@
       "rowsAddedThisRun": 0,
       "imagesAddedThisRun": 0,
       "candidateProducts": [
+        {
+          "year": "2026",
+          "label": "2026/27",
+          "score": 6,
+          "strict": false,
+          "productId": "ebay_664387c5d3"
+        },
         {
           "year": "2026",
           "label": "Now",
@@ -6323,13 +6336,6 @@
           "score": -2,
           "strict": false,
           "productId": "ebay_d48a402fbe"
-        },
-        {
-          "year": "2026",
-          "label": "25/26 Select Road To World Cup Mexico",
-          "score": -5,
-          "strict": false,
-          "productId": "ebay_bc6a999c80"
         }
       ],
       "error": "strict-product-not-found"
@@ -6345,6 +6351,13 @@
           "score": 9,
           "strict": false,
           "productId": "ebay_b646c93e67"
+        },
+        {
+          "year": "2026",
+          "label": "2026/27",
+          "score": 4,
+          "strict": false,
+          "productId": "ebay_664387c5d3"
         },
         {
           "year": "2026",
@@ -6387,13 +6400,6 @@
           "score": 1,
           "strict": false,
           "productId": "ebay_af166cadb3"
-        },
-        {
-          "year": "2026",
-          "label": "Chrome UEFA Champions League Power Players",
-          "score": 1,
-          "strict": false,
-          "productId": "ebay_d7128cde70"
         }
       ],
       "error": "strict-product-not-found"
@@ -6440,6 +6446,13 @@
         },
         {
           "year": "2026",
+          "label": "2026/27",
+          "score": -3,
+          "strict": false,
+          "productId": "ebay_664387c5d3"
+        },
+        {
+          "year": "2026",
           "label": "2026 FIFA World Cup",
           "score": -3,
           "strict": false,
@@ -6451,21 +6464,14 @@
           "score": -3,
           "strict": false,
           "productId": "ebay_103ad735c4"
-        },
-        {
-          "year": "2026",
-          "label": "2026 FIFA World Cup Stickers",
-          "score": -3,
-          "strict": false,
-          "productId": "ebay_b5c30d011b"
         }
       ],
       "error": "strict-product-not-found"
     }
   },
-  "finishedAt": "2026-11-17T19:15:59Z",
-  "collectionsWritten": 65,
-  "rowsWritten": 2120,
-  "exactFrontsWritten": 2104,
-  "runtimeSeconds": 243.7
+  "finishedAt": "2026-11-18T18:57:03Z",
+  "collectionsWritten": 66,
+  "rowsWritten": 2159,
+  "exactFrontsWritten": 2143,
+  "runtimeSeconds": 282.3
 }
