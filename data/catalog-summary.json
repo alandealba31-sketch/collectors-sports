@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T19:05:08.481Z",
+  "generatedAt": "2026-11-20T18:44:26.249Z",
   "scriptFilesEvaluated": 54,
   "scriptFailures": [
     {
@@ -9,21 +9,21 @@
   ],
   "collectionsWithChecklist": 83,
   "collectionRecords": 95,
-  "searchableIdentities": 23029,
+  "searchableIdentities": 23508,
   "bySport": {
     "NFL": 6292,
-    "Soccer": 5346,
+    "Soccer": 5823,
     "NBA": 4589,
-    "MLB": 3662,
+    "MLB": 3664,
     "WWE": 1115,
     "UFC": 953,
     "Tennis": 830,
     "F1": 242
   },
-  "verifiedExactFrontRecords": 2179,
-  "approximateUniqueExactFrontIdentities": 2178,
-  "searchableIdentitiesWithExactFront": 2479,
-  "exactFrontCoveragePct": 10.76,
+  "verifiedExactFrontRecords": 2659,
+  "approximateUniqueExactFrontIdentities": 2657,
+  "searchableIdentitiesWithExactFront": 2958,
+  "exactFrontCoveragePct": 12.58,
   "topCollections": [
     {
       "id": "topps-chrome-football-2025",
@@ -37,8 +37,8 @@
       "id": "bowman-chrome-baseball-2026",
       "name": "Bowman Chrome 2026",
       "sport": "MLB",
-      "rows": 1881,
-      "identities": 1881,
+      "rows": 1883,
+      "identities": 1883,
       "coverage": "expanded-structured"
     },
     {
@@ -130,6 +130,14 @@
       "coverage": "expanded-structured"
     },
     {
+      "id": "topps-argentina-collector-tin-2026",
+      "name": "Argentina Collector Tin 2026",
+      "sport": "Soccer",
+      "rows": 725,
+      "identities": 725,
+      "coverage": "expanded-structured"
+    },
+    {
       "id": "panini-prizm-club-world-cup-2025",
       "name": "Prizm Club World Cup 2025",
       "sport": "Soccer",
@@ -149,8 +157,8 @@
       "id": "panini-select-road-to-world-cup-2025-26",
       "name": "Select Road to World Cup 25/26",
       "sport": "Soccer",
-      "rows": 473,
-      "identities": 473,
+      "rows": 474,
+      "identities": 474,
       "coverage": "base-complete-expanded"
     },
     {
@@ -186,14 +194,6 @@
       "coverage": "expanded-structured"
     },
     {
-      "id": "topps-argentina-collector-tin-2026",
-      "name": "Argentina Collector Tin 2026",
-      "sport": "Soccer",
-      "rows": 257,
-      "identities": 256,
-      "coverage": "expanded-structured"
-    },
-    {
       "id": "topps-chrome-college-baseball-2026",
       "name": "Chrome College Baseball 2026",
       "sport": "MLB",
@@ -213,16 +213,16 @@
       "id": "topps-now-soccer-2026",
       "name": "Soccer Topps NOW 2026",
       "sport": "Soccer",
-      "rows": 217,
-      "identities": 217,
+      "rows": 220,
+      "identities": 220,
       "coverage": "expanded-structured"
     },
     {
       "id": "topps-chrome-mls-2026",
       "name": "Chrome MLS 2026",
       "sport": "Soccer",
-      "rows": 210,
-      "identities": 210,
+      "rows": 211,
+      "identities": 211,
       "coverage": "expanded-structured"
     },
     {
@@ -333,16 +333,16 @@
       "id": "topps-premier-league-2026-27",
       "name": "Premier League 26/27",
       "sport": "Soccer",
-      "rows": 69,
-      "identities": 69,
+      "rows": 70,
+      "identities": 70,
       "coverage": "expanded-structured"
     },
     {
       "id": "topps-finest-ucc-2025-26",
       "name": "Finest UEFA 25/26",
       "sport": "Soccer",
-      "rows": 62,
-      "identities": 62,
+      "rows": 63,
+      "identities": 63,
       "coverage": "expanded-structured"
     },
     {
