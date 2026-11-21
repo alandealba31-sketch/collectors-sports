@@ -197,6 +197,7 @@
         "ebay_705c712f42",
         "ebay_706087976a",
         "ebay_70666aaf55",
+        "ebay_708b50b565",
         "ebay_70e38351f2",
         "ebay_716e71fc1e",
         "ebay_71bd9a92f0",
@@ -305,6 +306,7 @@
         "ebay_af26035854",
         "ebay_afaca744c5",
         "ebay_afb9fd0678",
+        "ebay_afd7abd72d",
         "ebay_b0250e7a7c",
         "ebay_b07bcf39a6",
         "ebay_b115c89839",
@@ -436,7 +438,7 @@
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
       "yearUsed": "2026",
-      "knownSets": 420
+      "knownSets": 422
     },
     "topps-holiday-baseball-2025": {
       "processedSets": [
@@ -631,12 +633,13 @@
     },
     "panini-donruss-optic-basketball-2024-25": {
       "processedSets": [
-        "ebay_15c2c56403"
+        "ebay_15c2c56403",
+        "ebay_f878b0718b"
       ],
       "productMatched": "Donruss Optic Basketball",
       "productId": "ebay_905e985d80",
       "yearUsed": "2024",
-      "knownSets": 1
+      "knownSets": 2
     },
     "topps-chrome-ufc-2026": {
       "processedSets": [
@@ -753,6 +756,7 @@
         "ebay_299027093d",
         "ebay_2ee508ce90",
         "ebay_3c407ea0f8",
+        "ebay_3de7cb56d3",
         "ebay_4559eb4e2c",
         "ebay_47ea40bb65",
         "ebay_4fa0a0c604",
@@ -784,7 +788,7 @@
       "productId": "ebay_18f196bc83",
       "productMatched": "Chrome UEFA Club Competitions",
       "yearUsed": "2025",
-      "knownSets": 41
+      "knownSets": 42
     },
     "topps-ucc-2025-26": {
       "processedSets": [
@@ -818,6 +822,7 @@
         "ebay_73797c4acb",
         "ebay_74fc8a039c",
         "ebay_7bf4f34d43",
+        "ebay_826a632836",
         "ebay_85acfa33bd",
         "ebay_9430bc8c7b",
         "ebay_a849dcb6be",
@@ -839,7 +844,7 @@
       "productMatched": "Finest Uefa Club Competitions",
       "productId": "ebay_16615300e8",
       "yearUsed": "2025",
-      "knownSets": 36
+      "knownSets": 37
     },
     "topps-premier-league-2025-26": {
       "processedSets": [
@@ -854,7 +859,9 @@
     "topps-premier-league-2026-27": {
       "processedSets": [
         "ebay_0055773353",
+        "ebay_03222872b5",
         "ebay_0787692b36",
+        "ebay_08601abd76",
         "ebay_0e6c64bd33",
         "ebay_0f52242b5a",
         "ebay_12a5e4fe1d",
@@ -884,6 +891,7 @@
         "ebay_67014d3f32",
         "ebay_69c685f0b9",
         "ebay_6cc3e79831",
+        "ebay_723b6f7348",
         "ebay_72b0c514af",
         "ebay_78c3c71b54",
         "ebay_7d3a7b3610",
@@ -891,6 +899,7 @@
         "ebay_82c2d74fe0",
         "ebay_84e8998bb0",
         "ebay_9468a29656",
+        "ebay_957980b38a",
         "ebay_98a04a8316",
         "ebay_9c857cb6ab",
         "ebay_a7c90b38a6",
@@ -899,6 +908,7 @@
         "ebay_b75e614a27",
         "ebay_bec09c39a9",
         "ebay_c007ba64db",
+        "ebay_c0c91e747e",
         "ebay_c61c606d38",
         "ebay_cb834b547b",
         "ebay_d89d226bef",
@@ -915,7 +925,7 @@
       "productMatched": "Premier League",
       "productId": "ebay_97821cda88",
       "yearUsed": "2026",
-      "knownSets": 58
+      "knownSets": 63
     },
     "topps-chrome-premier-league-2026": {
       "processedSets": [
@@ -930,6 +940,7 @@
       "processedSets": [
         "ebay_17f598a8e5",
         "ebay_211443725d",
+        "ebay_26f8d1ed76",
         "ebay_29432c1099",
         "ebay_65c853cf83",
         "ebay_8c7dca6ba3",
@@ -942,13 +953,15 @@
       "productMatched": "Chrome MLS",
       "productId": "ebay_3553355cdc",
       "yearUsed": "2026",
-      "knownSets": 10
+      "knownSets": 11
     },
     "panini-pitch-kings-laliga-2025-26": {
       "processedSets": [
+        "ebay_01da6c0599",
         "ebay_08cc153184",
         "ebay_11c98fdd0a",
         "ebay_290db241a1",
+        "ebay_3f4b0b5b2a",
         "ebay_41c8668e50",
         "ebay_5b74933225",
         "ebay_645f5212e6",
@@ -959,7 +972,7 @@
       "productId": "ebay_6319193c7f",
       "productMatched": "Pitch Kings",
       "yearUsed": "2025",
-      "knownSets": 9
+      "knownSets": 11
     },
     "panini-select-laliga-2024-25": {
       "processedSets": [
@@ -1401,6 +1414,7 @@
         "ebay_ec56b09d29",
         "ebay_ef54958cab",
         "ebay_f10b3df200",
+        "ebay_f492dcf2db",
         "ebay_f5a51b80de",
         "ebay_f5d9fe2826",
         "ebay_f5f483aaee",
@@ -1416,7 +1430,7 @@
       "productId": "ebay_14edd5b886",
       "productMatched": "Now",
       "yearUsed": "2026",
-      "knownSets": 179
+      "knownSets": 180
     },
     "panini-international-england-2026": {
       "processedSets": []
@@ -1593,6 +1607,7 @@
         "ebay_a67f85aadb",
         "ebay_ac33c53b89",
         "ebay_bf627a1189",
+        "ebay_bfb7362bbd",
         "ebay_c307c29690",
         "ebay_e40c6ac041",
         "ebay_ea4240ac02",
@@ -1603,7 +1618,7 @@
       "productId": "ebay_af5c620bd5",
       "productMatched": "Holiday Baseball",
       "yearUsed": "2026",
-      "knownSets": 19
+      "knownSets": 20
     },
     "panini-real-madrid-tribute-2023-24": {
       "processedSets": []
@@ -1765,6 +1780,7 @@
         "ebay_7b5ef6f2c3",
         "ebay_7bc8d5824a",
         "ebay_7c4598517f",
+        "ebay_7d3e8ff14b",
         "ebay_7e53940a25",
         "ebay_7f7245403b",
         "ebay_81362a36a0",
@@ -1807,6 +1823,7 @@
         "ebay_c1afa8fbf4",
         "ebay_c3f26f704b",
         "ebay_c4390a8491",
+        "ebay_c4785550f0",
         "ebay_c5458ffe3d",
         "ebay_c5724dae3b",
         "ebay_c585810157",
@@ -1862,7 +1879,7 @@
       "productId": "ebay_34a2a395f2",
       "productMatched": "Topps Chrome",
       "yearUsed": "2026",
-      "knownSets": 173
+      "knownSets": 175
     },
     "panini-obsidian-football-2025": {
       "processedSets": [
@@ -1888,6 +1905,7 @@
         "ebay_a3cb009d3c",
         "ebay_a9500abb50",
         "ebay_ae9637f04c",
+        "ebay_afda162f00",
         "ebay_c86a2e9dcd",
         "ebay_d1cf1303bf",
         "ebay_d6f9e812ff",
@@ -1901,7 +1919,7 @@
       "productId": "ebay_67fa4127be",
       "productMatched": "Football",
       "yearUsed": "2025",
-      "knownSets": 31
+      "knownSets": 32
     },
     "topps-signature-class-basketball-2026": {
       "processedSets": [
@@ -1914,149 +1932,12 @@
     },
     "topps-argentina-collector-tin-2026": {
       "processedSets": [
-        "ebay_02733fca1b",
-        "ebay_0436fd3d2b",
-        "ebay_04d7a47f0c",
-        "ebay_073b99be70",
-        "ebay_0797016b51",
-        "ebay_08dfb2cb98",
-        "ebay_0b24d4ccda",
-        "ebay_0eb3be7b02",
-        "ebay_126335f686",
-        "ebay_12915d9d8c",
-        "ebay_1631cb4eb3",
-        "ebay_1676b84198",
-        "ebay_1877394af7",
-        "ebay_1948b4ebfb",
-        "ebay_19a3d0dc96",
-        "ebay_1dbaff2ad2",
-        "ebay_1fc8af11f5",
-        "ebay_213c317ddb",
-        "ebay_22ec1abed3",
-        "ebay_236360baca",
-        "ebay_238a0a0c81",
-        "ebay_268dbe6c4a",
-        "ebay_27373a5aeb",
-        "ebay_2a8be7eaba",
-        "ebay_3596b42734",
-        "ebay_373fb72a3d",
-        "ebay_375a38423f",
-        "ebay_3841689e64",
-        "ebay_3861c96c58",
-        "ebay_38c0f2296d",
-        "ebay_3aad045b29",
-        "ebay_3e6ffdec20",
-        "ebay_4123282f89",
-        "ebay_4fc8ef2d0f",
-        "ebay_4fe70d42df",
-        "ebay_5038bb4632",
-        "ebay_50ebc72eb7",
-        "ebay_549f790940",
-        "ebay_54c0c4a217",
-        "ebay_553531f621",
-        "ebay_585216a26a",
-        "ebay_5e5c87cc5b",
-        "ebay_62241d6177",
-        "ebay_623edfd139",
-        "ebay_63ebcbbf3f",
-        "ebay_64bd0fd6fd",
-        "ebay_6605e00329",
-        "ebay_69dc675e50",
-        "ebay_6b3b052c9c",
-        "ebay_6b725c6d3b",
-        "ebay_6d4c81467d",
-        "ebay_6d684efde2",
-        "ebay_709fa138cc",
-        "ebay_71cc0583a8",
-        "ebay_7296f7d670",
-        "ebay_732099244d",
-        "ebay_766c654433",
-        "ebay_77d339dbb7",
-        "ebay_780f8bb6d2",
-        "ebay_782cd6cc1f",
-        "ebay_782f78a833",
-        "ebay_79ecddc956",
-        "ebay_81dc3903ef",
-        "ebay_822020a3d3",
-        "ebay_82f50dc711",
-        "ebay_8340a87cae",
-        "ebay_83628d7d41",
-        "ebay_86f353230f",
-        "ebay_883ec82be2",
-        "ebay_894ebabd2c",
-        "ebay_8d35da81af",
-        "ebay_8d892edd07",
-        "ebay_8f035dc084",
-        "ebay_92ab34ecf9",
-        "ebay_995aab3b9d",
-        "ebay_9b1febaadf",
-        "ebay_9b842d486c",
-        "ebay_9bab6fbc05",
-        "ebay_9c4456cb42",
-        "ebay_9ef2779242",
-        "ebay_9f16de4424",
-        "ebay_a3493f2399",
-        "ebay_a38011573f",
-        "ebay_a3c980beda",
-        "ebay_a6730fc3a2",
-        "ebay_a6dc79abf9",
-        "ebay_a8a91defd8",
-        "ebay_a95538083e",
-        "ebay_acef434801",
-        "ebay_ad1a6f4475",
-        "ebay_af122792fe",
-        "ebay_af483f82ea",
-        "ebay_af61e49e8d",
-        "ebay_afc8068a2d",
-        "ebay_afdaf9405c",
-        "ebay_b0fad8b397",
-        "ebay_b292fe8df6",
-        "ebay_b37e46e18d",
-        "ebay_b4df86ed3d",
-        "ebay_b55a2aedc0",
-        "ebay_b582e19353",
-        "ebay_b77d3cae6a",
-        "ebay_bb41b5dba9",
-        "ebay_bd2dc7484a",
-        "ebay_be1d3b063b",
-        "ebay_bfc30613d3",
-        "ebay_c0315efc50",
-        "ebay_c2d8e41c9a",
-        "ebay_c43bab7b9a",
-        "ebay_c46fe462fa",
-        "ebay_c6474b0dd8",
-        "ebay_c6a5cb9708",
-        "ebay_c76b2cc97f",
-        "ebay_c84b0ad803",
-        "ebay_ca645a1ffb",
-        "ebay_cd914ed649",
-        "ebay_ce498ff143",
-        "ebay_cf00a6ef38",
-        "ebay_d0a01e39e2",
-        "ebay_d180ce1725",
-        "ebay_d46e10f1e9",
-        "ebay_d4d2075f95",
-        "ebay_d65da25125",
-        "ebay_d896ae5190",
-        "ebay_dd76165131",
-        "ebay_dfd0bd25c7",
-        "ebay_e30d24e3ba",
-        "ebay_e9066fdc76",
-        "ebay_eef84b56be",
-        "ebay_ef311b021d",
-        "ebay_f0a05b3090",
-        "ebay_f14940a11e",
-        "ebay_f1e9a99ae5",
-        "ebay_f2ebb5e9f6",
-        "ebay_f5b608fb4d",
-        "ebay_f70715b4a6",
-        "ebay_fae6f6d77e",
-        "ebay_fb9c1acacc"
+        "ebay_7ac075c606"
       ],
-      "productMatched": "Topps",
-      "productId": "ebay_666294998d",
+      "productMatched": "Collector Tin",
+      "productId": "ebay_c95346a682",
       "yearUsed": "2026",
-      "knownSets": 138
+      "knownSets": 1
     },
     "topps-argentina-team-set-2026": {
       "processedSets": [
