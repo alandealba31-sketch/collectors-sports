@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T17:38:32.992Z",
+  "generatedAt": "2026-11-22T17:55:14.943Z",
   "scriptFilesEvaluated": 54,
   "scriptFailures": [
     {
@@ -9,36 +9,36 @@
   ],
   "collectionsWithChecklist": 83,
   "collectionRecords": 95,
-  "searchableIdentities": 22801,
+  "searchableIdentities": 22859,
   "bySport": {
-    "NFL": 6293,
-    "Soccer": 5110,
+    "NFL": 6298,
+    "Soccer": 5157,
     "NBA": 4589,
-    "MLB": 3669,
+    "MLB": 3675,
     "WWE": 1115,
     "UFC": 953,
     "Tennis": 830,
     "F1": 242
   },
-  "verifiedExactFrontRecords": 1951,
-  "approximateUniqueExactFrontIdentities": 1951,
-  "searchableIdentitiesWithExactFront": 2254,
-  "exactFrontCoveragePct": 9.89,
+  "verifiedExactFrontRecords": 2014,
+  "approximateUniqueExactFrontIdentities": 2014,
+  "searchableIdentitiesWithExactFront": 2317,
+  "exactFrontCoveragePct": 10.14,
   "topCollections": [
     {
       "id": "topps-chrome-football-2025",
       "name": "Chrome Football 2025",
       "sport": "NFL",
-      "rows": 2470,
-      "identities": 2470,
+      "rows": 2471,
+      "identities": 2471,
       "coverage": "expanded-structured"
     },
     {
       "id": "bowman-chrome-baseball-2026",
       "name": "Bowman Chrome 2026",
       "sport": "MLB",
-      "rows": 1885,
-      "identities": 1885,
+      "rows": 1886,
+      "identities": 1886,
       "coverage": "expanded-structured"
     },
     {
@@ -173,8 +173,8 @@
       "id": "topps-chrome-ucc-2025-26",
       "name": "Chrome UEFA 25/26",
       "sport": "Soccer",
-      "rows": 315,
-      "identities": 307,
+      "rows": 316,
+      "identities": 308,
       "coverage": "expanded-structured"
     },
     {
@@ -189,8 +189,8 @@
       "id": "topps-chrome-college-baseball-2026",
       "name": "Chrome College Baseball 2026",
       "sport": "MLB",
-      "rows": 248,
-      "identities": 248,
+      "rows": 253,
+      "identities": 253,
       "coverage": "expanded-structured"
     },
     {
@@ -213,8 +213,8 @@
       "id": "topps-chrome-mls-2026",
       "name": "Chrome MLS 2026",
       "sport": "Soccer",
-      "rows": 212,
-      "identities": 212,
+      "rows": 214,
+      "identities": 214,
       "coverage": "expanded-structured"
     },
     {
@@ -314,6 +314,14 @@
       "coverage": "expanded-structured"
     },
     {
+      "id": "topps-premier-league-2026-27",
+      "name": "Premier League 26/27",
+      "sport": "Soccer",
+      "rows": 77,
+      "identities": 77,
+      "coverage": "expanded-structured"
+    },
+    {
       "id": "topps-triumphant-tennis-2025",
       "name": "Triumphant Tennis 2025",
       "sport": "Tennis",
@@ -322,19 +330,27 @@
       "coverage": "expanded-structured"
     },
     {
-      "id": "topps-premier-league-2026-27",
-      "name": "Premier League 26/27",
+      "id": "topps-man-city-collector-tin-2026-27",
+      "name": "Man City Tin 26/27",
       "sport": "Soccer",
-      "rows": 75,
-      "identities": 75,
+      "rows": 71,
+      "identities": 71,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-chelsea-collector-tin-2026-27",
+      "name": "Chelsea Tin 26/27",
+      "sport": "Soccer",
+      "rows": 73,
+      "identities": 68,
       "coverage": "expanded-structured"
     },
     {
       "id": "topps-finest-ucc-2025-26",
       "name": "Finest UEFA 25/26",
       "sport": "Soccer",
-      "rows": 64,
-      "identities": 64,
+      "rows": 65,
+      "identities": 65,
       "coverage": "expanded-structured"
     },
     {
@@ -408,22 +424,6 @@
       "rows": 51,
       "identities": 51,
       "coverage": "expanded-structured"
-    },
-    {
-      "id": "topps-man-city-collector-tin-2026-27",
-      "name": "Man City Tin 26/27",
-      "sport": "Soccer",
-      "rows": 50,
-      "identities": 50,
-      "coverage": "expanded-structured"
-    },
-    {
-      "id": "topps-chelsea-collector-tin-2026-27",
-      "name": "Chelsea Collector Tin 26/27",
-      "sport": "Soccer",
-      "rows": 49,
-      "identities": 49,
-      "coverage": "full-checklist"
     }
   ]
 }

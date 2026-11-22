@@ -1,6 +1,6 @@
 {
   "runner": "sync_mycardfolio_v2.py",
-  "startedAt": "2026-11-21T17:33:46Z",
+  "startedAt": "2026-11-22T17:50:27Z",
   "endpoint": "https://mycardfolio.com/api/mcp",
   "setsPerProductPerRun": 150,
   "requestDelaySeconds": 1.05,
@@ -82,9 +82,9 @@
       "rowsAccumulated": 50
     },
     "topps-chrome-mls-2026": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 2,
+      "rowsAddedThisRun": 2,
+      "imagesAddedThisRun": 2,
       "candidateProducts": [
         {
           "year": "2026",
@@ -146,10 +146,10 @@
       "yearUsed": "2026",
       "productId": "ebay_3553355cdc",
       "productMatched": "Chrome MLS",
-      "knownSets": 11,
-      "processedSetsTotal": 11,
+      "knownSets": 13,
+      "processedSetsTotal": 13,
       "remainingSets": 0,
-      "rowsAccumulated": 12
+      "rowsAccumulated": 14
     },
     "topps-chrome-ucc-2025-26": {
       "setsFetchedThisRun": 1,
@@ -216,10 +216,10 @@
       "yearUsed": "2025",
       "productId": "ebay_18f196bc83",
       "productMatched": "Chrome UEFA Club Competitions",
-      "knownSets": 42,
-      "processedSetsTotal": 42,
+      "knownSets": 43,
+      "processedSetsTotal": 43,
       "remainingSets": 0,
-      "rowsAccumulated": 115
+      "rowsAccumulated": 116
     },
     "panini-prizm-monopoly-world-cup-2026": {
       "setsFetchedThisRun": 0,
@@ -362,9 +362,9 @@
       "rowsAccumulated": 6
     },
     "panini-pitch-kings-laliga-2025-26": {
-      "setsFetchedThisRun": 2,
-      "rowsAddedThisRun": 2,
-      "imagesAddedThisRun": 2,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2025",
@@ -396,6 +396,13 @@
         },
         {
           "year": "2025",
+          "label": "Pitch Kings Rookies II",
+          "score": 4,
+          "strict": true,
+          "productId": "ebay_1d6405faf0"
+        },
+        {
+          "year": "2025",
           "label": "Road to FIFA World Cup Pitch Kings",
           "score": 4,
           "strict": true,
@@ -414,13 +421,6 @@
           "score": -1,
           "strict": false,
           "productId": "ebay_ccd6591bbd"
-        },
-        {
-          "year": "2025",
-          "label": "Chrome MLS Sapphire Pitch Prodigies",
-          "score": -1,
-          "strict": false,
-          "productId": "ebay_973adb5afc"
         }
       ],
       "yearUsed": "2025",
@@ -432,9 +432,9 @@
       "rowsAccumulated": 16
     },
     "panini-prizm-fifa-soccer-2025-26": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
         {
           "year": "2025",
@@ -496,10 +496,10 @@
       "yearUsed": "2025",
       "productId": "ebay_baafefb144",
       "productMatched": "Prizm FIFA Soccer",
-      "knownSets": 9,
-      "processedSetsTotal": 9,
+      "knownSets": 10,
+      "processedSetsTotal": 10,
       "remainingSets": 0,
-      "rowsAccumulated": 9
+      "rowsAccumulated": 10
     },
     "panini-select-road-to-world-cup-2025-26": {
       "setsFetchedThisRun": 0,
@@ -1382,9 +1382,9 @@
       "rowsAccumulated": 1
     },
     "topps-argentina-collector-tin-2026": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -1423,28 +1423,26 @@
         },
         {
           "year": "2026",
+          "label": "FC Chelsea Collector Tin",
+          "score": 2,
+          "strict": true,
+          "productId": "ebay_bbefa7782a"
+        },
+        {
+          "year": "2026",
+          "label": "FC Manchester City Collector Tin",
+          "score": 2,
+          "strict": true,
+          "productId": "ebay_34ab4e96bc"
+        },
+        {
+          "year": "2026",
           "label": "Real Madrid Collector Tin",
           "score": 2,
           "strict": true,
           "productId": "ebay_cd872f3cfa"
-        },
-        {
-          "year": "2026",
-          "label": "2025-2026 Topps Chrome",
-          "score": -3,
-          "strict": true,
-          "productId": "ing_acea0f1d9c"
-        },
-        {
-          "year": "2026",
-          "label": "2026 Topps Chrome Premier League",
-          "score": -3,
-          "strict": true,
-          "productId": "ebay_d48a402fbe"
         }
       ],
-      "purgedRowsAfterProductChange": 725,
-      "purgedImagesAfterProductChange": 727,
       "yearUsed": "2026",
       "productId": "ebay_c95346a682",
       "productMatched": "Collector Tin",
@@ -1961,24 +1959,24 @@
         },
         {
           "year": "2026",
+          "label": "FC Chelsea Collector Tin",
+          "score": 2,
+          "strict": false,
+          "productId": "ebay_bbefa7782a"
+        },
+        {
+          "year": "2026",
+          "label": "FC Manchester City Collector Tin",
+          "score": 2,
+          "strict": false,
+          "productId": "ebay_34ab4e96bc"
+        },
+        {
+          "year": "2026",
           "label": "Real Madrid Collector Tin",
           "score": 2,
           "strict": false,
           "productId": "ebay_cd872f3cfa"
-        },
-        {
-          "year": "2026",
-          "label": "2025-2026 Topps Chrome",
-          "score": -3,
-          "strict": false,
-          "productId": "ing_acea0f1d9c"
-        },
-        {
-          "year": "2026",
-          "label": "2026 Topps Chrome Premier League",
-          "score": -3,
-          "strict": false,
-          "productId": "ebay_d48a402fbe"
         }
       ],
       "yearUsed": "2026",
@@ -1990,9 +1988,9 @@
       "rowsAccumulated": 1
     },
     "topps-chelsea-collector-tin-2026-27": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 3,
+      "rowsAddedThisRun": 24,
+      "imagesAddedThisRun": 24,
       "candidateProducts": [
         {
           "year": "2026",
@@ -2000,6 +1998,13 @@
           "score": 10,
           "strict": false,
           "productId": "ebay_c95346a682"
+        },
+        {
+          "year": "2026",
+          "label": "FC Chelsea Collector Tin",
+          "score": 7,
+          "strict": true,
+          "productId": "ebay_bbefa7782a"
         },
         {
           "year": "2026",
@@ -2031,27 +2036,26 @@
         },
         {
           "year": "2026",
+          "label": "FC Manchester City Collector Tin",
+          "score": 2,
+          "strict": false,
+          "productId": "ebay_34ab4e96bc"
+        },
+        {
+          "year": "2026",
           "label": "Real Madrid Collector Tin",
           "score": 2,
           "strict": false,
           "productId": "ebay_cd872f3cfa"
-        },
-        {
-          "year": "2026",
-          "label": "2025-2026 Topps Chrome",
-          "score": -3,
-          "strict": false,
-          "productId": "ing_acea0f1d9c"
-        },
-        {
-          "year": "2026",
-          "label": "2026 Topps Chrome Premier League",
-          "score": -3,
-          "strict": false,
-          "productId": "ebay_d48a402fbe"
         }
       ],
-      "error": "strict-product-not-found"
+      "yearUsed": "2026",
+      "productId": "ebay_bbefa7782a",
+      "productMatched": "FC Chelsea Collector Tin",
+      "knownSets": 3,
+      "processedSetsTotal": 3,
+      "remainingSets": 0,
+      "rowsAccumulated": 24
     },
     "topps-man-utd-collector-tin-2026-27": {
       "setsFetchedThisRun": 0,
@@ -2067,6 +2071,13 @@
         },
         {
           "year": "2026",
+          "label": "FC Manchester City Collector Tin",
+          "score": 5,
+          "strict": false,
+          "productId": "ebay_34ab4e96bc"
+        },
+        {
+          "year": "2026",
           "label": "Topps",
           "score": 3,
           "strict": false,
@@ -2095,33 +2106,33 @@
         },
         {
           "year": "2026",
+          "label": "FC Chelsea Collector Tin",
+          "score": 0,
+          "strict": false,
+          "productId": "ebay_bbefa7782a"
+        },
+        {
+          "year": "2026",
           "label": "FC Manchester City Collector Gold Vault",
           "score": 0,
           "strict": false,
           "productId": "ebay_f3ed48a232"
-        },
-        {
-          "year": "2026",
-          "label": "FC Manchester United",
-          "score": 0,
-          "strict": true,
-          "productId": "ebay_b7163102f7"
-        },
-        {
-          "year": "2026",
-          "label": "Real Madrid Collector Tin",
-          "score": 0,
-          "strict": false,
-          "productId": "ebay_cd872f3cfa"
         }
       ],
       "error": "strict-product-not-found"
     },
     "topps-man-city-collector-tin-2026-27": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 22,
+      "imagesAddedThisRun": 22,
       "candidateProducts": [
+        {
+          "year": "2026",
+          "label": "FC Manchester City Collector Tin",
+          "score": 10,
+          "strict": true,
+          "productId": "ebay_34ab4e96bc"
+        },
         {
           "year": "2026",
           "label": "Collector Tin",
@@ -2166,26 +2177,21 @@
         },
         {
           "year": "2026",
-          "label": "FC Manchester City - Premier League",
-          "score": 0,
-          "strict": true,
-          "productId": "ebay_5a1b0303c6"
-        },
-        {
-          "year": "2026",
-          "label": "Real Madrid Collector Tin",
+          "label": "FC Chelsea Collector Tin",
           "score": 0,
           "strict": false,
-          "productId": "ebay_cd872f3cfa"
+          "productId": "ebay_bbefa7782a"
         }
       ],
+      "purgedRowsAfterProductChange": 1,
+      "purgedImagesAfterProductChange": 1,
       "yearUsed": "2026",
-      "productId": "ebay_f3ed48a232",
-      "productMatched": "FC Manchester City Collector Gold Vault",
+      "productId": "ebay_34ab4e96bc",
+      "productMatched": "FC Manchester City Collector Tin",
       "knownSets": 1,
       "processedSetsTotal": 1,
       "remainingSets": 0,
-      "rowsAccumulated": 1
+      "rowsAccumulated": 22
     },
     "topps-inter-collector-tin-2026-27": {
       "setsFetchedThisRun": 0,
@@ -2229,24 +2235,24 @@
         },
         {
           "year": "2026",
+          "label": "FC Chelsea Collector Tin",
+          "score": 2,
+          "strict": false,
+          "productId": "ebay_bbefa7782a"
+        },
+        {
+          "year": "2026",
+          "label": "FC Manchester City Collector Tin",
+          "score": 2,
+          "strict": false,
+          "productId": "ebay_34ab4e96bc"
+        },
+        {
+          "year": "2026",
           "label": "Real Madrid Collector Tin",
           "score": 2,
           "strict": false,
           "productId": "ebay_cd872f3cfa"
-        },
-        {
-          "year": "2026",
-          "label": "2025-2026 Topps Chrome",
-          "score": -3,
-          "strict": false,
-          "productId": "ing_acea0f1d9c"
-        },
-        {
-          "year": "2026",
-          "label": "2026 Topps Chrome Premier League",
-          "score": -3,
-          "strict": false,
-          "productId": "ebay_d48a402fbe"
         }
       ],
       "error": "strict-product-not-found"
@@ -2279,6 +2285,20 @@
         },
         {
           "year": "2026",
+          "label": "FC Chelsea Collector Tin",
+          "score": 4,
+          "strict": false,
+          "productId": "ebay_bbefa7782a"
+        },
+        {
+          "year": "2026",
+          "label": "FC Manchester City Collector Tin",
+          "score": 4,
+          "strict": false,
+          "productId": "ebay_34ab4e96bc"
+        },
+        {
+          "year": "2026",
           "label": "Real Madrid Collector Tin",
           "score": 4,
           "strict": false,
@@ -2297,20 +2317,6 @@
           "score": 1,
           "strict": false,
           "productId": "ing_666294998d"
-        },
-        {
-          "year": "2026",
-          "label": "FC Manchester City Collector Gold Vault",
-          "score": -1,
-          "strict": false,
-          "productId": "ebay_f3ed48a232"
-        },
-        {
-          "year": "2026",
-          "label": "FC PSG",
-          "score": -1,
-          "strict": false,
-          "productId": "ebay_bef70cce1d"
         }
       ],
       "error": "strict-product-not-found"
@@ -2357,24 +2363,24 @@
         },
         {
           "year": "2026",
+          "label": "FC Chelsea Collector Tin",
+          "score": 2,
+          "strict": false,
+          "productId": "ebay_bbefa7782a"
+        },
+        {
+          "year": "2026",
+          "label": "FC Manchester City Collector Tin",
+          "score": 2,
+          "strict": false,
+          "productId": "ebay_34ab4e96bc"
+        },
+        {
+          "year": "2026",
           "label": "Real Madrid Collector Tin",
           "score": 2,
           "strict": false,
           "productId": "ebay_cd872f3cfa"
-        },
-        {
-          "year": "2026",
-          "label": "2025-2026 Topps Chrome",
-          "score": -3,
-          "strict": false,
-          "productId": "ing_acea0f1d9c"
-        },
-        {
-          "year": "2026",
-          "label": "2026 Topps Chrome Premier League",
-          "score": -3,
-          "strict": false,
-          "productId": "ebay_d48a402fbe"
         }
       ],
       "error": "strict-product-not-found"
@@ -2846,9 +2852,9 @@
       "rowsAccumulated": 2
     },
     "topps-premier-league-2026-27": {
-      "setsFetchedThisRun": 5,
-      "rowsAddedThisRun": 5,
-      "imagesAddedThisRun": 5,
+      "setsFetchedThisRun": 2,
+      "rowsAddedThisRun": 2,
+      "imagesAddedThisRun": 2,
       "candidateProducts": [
         {
           "year": "2026",
@@ -2910,10 +2916,10 @@
       "yearUsed": "2026",
       "productId": "ebay_97821cda88",
       "productMatched": "Premier League",
-      "knownSets": 63,
-      "processedSetsTotal": 63,
+      "knownSets": 65,
+      "processedSetsTotal": 65,
       "remainingSets": 0,
-      "rowsAccumulated": 75
+      "rowsAccumulated": 77
     },
     "topps-chrome-baseball-2026": {
       "setsFetchedThisRun": 0,
@@ -2986,9 +2992,9 @@
       "rowsAccumulated": 1
     },
     "bowman-chrome-baseball-2026": {
-      "setsFetchedThisRun": 2,
-      "rowsAddedThisRun": 2,
-      "imagesAddedThisRun": 2,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
         {
           "year": "2026",
@@ -3050,10 +3056,10 @@
       "yearUsed": "2026",
       "productId": "ebay_bf1cc1bab9",
       "productMatched": "Bowman Chrome",
-      "knownSets": 422,
-      "processedSetsTotal": 422,
+      "knownSets": 423,
+      "processedSetsTotal": 423,
       "remainingSets": 0,
-      "rowsAccumulated": 681
+      "rowsAccumulated": 682
     },
     "topps-finest-baseball-2026": {
       "setsFetchedThisRun": 0,
@@ -3196,9 +3202,9 @@
       "rowsAccumulated": 1
     },
     "topps-chrome-college-baseball-2026": {
-      "setsFetchedThisRun": 2,
-      "rowsAddedThisRun": 2,
-      "imagesAddedThisRun": 2,
+      "setsFetchedThisRun": 5,
+      "rowsAddedThisRun": 5,
+      "imagesAddedThisRun": 5,
       "candidateProducts": [
         {
           "year": "2026",
@@ -3260,10 +3266,10 @@
       "yearUsed": "2026",
       "productId": "ebay_34a2a395f2",
       "productMatched": "Topps Chrome",
-      "knownSets": 175,
-      "processedSetsTotal": 175,
+      "knownSets": 180,
+      "processedSetsTotal": 180,
       "remainingSets": 0,
-      "rowsAccumulated": 248
+      "rowsAccumulated": 253
     },
     "topps-holiday-baseball-2025": {
       "setsFetchedThisRun": 0,
@@ -3336,9 +3342,9 @@
       "rowsAccumulated": 13
     },
     "topps-holiday-baseball-2026": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -3546,9 +3552,9 @@
       "rowsAccumulated": 1
     },
     "topps-chrome-football-2025": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 1,
+      "imagesAddedThisRun": 1,
       "candidateProducts": [
         {
           "year": "2025",
@@ -3610,10 +3616,10 @@
       "yearUsed": "2025",
       "productId": "ebay_5160e77ba2",
       "productMatched": "Chrome Football",
-      "knownSets": 46,
-      "processedSetsTotal": 46,
+      "knownSets": 47,
+      "processedSetsTotal": 47,
       "remainingSets": 0,
-      "rowsAccumulated": 98
+      "rowsAccumulated": 99
     },
     "topps-signature-class-football-2025": {
       "setsFetchedThisRun": 0,
@@ -3960,15 +3966,15 @@
       "yearUsed": "2025",
       "productId": "ebay_67fa4127be",
       "productMatched": "Football",
-      "knownSets": 32,
-      "processedSetsTotal": 32,
+      "knownSets": 33,
+      "processedSetsTotal": 33,
       "remainingSets": 0,
-      "rowsAccumulated": 38
+      "rowsAccumulated": 39
     },
     "topps-holiday-football-2026": {
-      "setsFetchedThisRun": 0,
-      "rowsAddedThisRun": 0,
-      "imagesAddedThisRun": 0,
+      "setsFetchedThisRun": 1,
+      "rowsAddedThisRun": 3,
+      "imagesAddedThisRun": 3,
       "candidateProducts": [
         {
           "year": "2026",
@@ -4030,10 +4036,10 @@
       "yearUsed": "2026",
       "productId": "ebay_12721e4c02",
       "productMatched": "Holiday Football",
-      "knownSets": 23,
-      "processedSetsTotal": 23,
+      "knownSets": 24,
+      "processedSetsTotal": 24,
       "remainingSets": 0,
-      "rowsAccumulated": 24
+      "rowsAccumulated": 27
     },
     "panini-prizm-basketball-2024-25": {
       "setsFetchedThisRun": 0,
@@ -4176,9 +4182,9 @@
       "rowsAccumulated": 1
     },
     "panini-donruss-optic-basketball-2024-25": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2024",
@@ -4736,9 +4742,9 @@
       "rowsAccumulated": 9
     },
     "topps-now-soccer-2026": {
-      "setsFetchedThisRun": 1,
-      "rowsAddedThisRun": 1,
-      "imagesAddedThisRun": 1,
+      "setsFetchedThisRun": 0,
+      "rowsAddedThisRun": 0,
+      "imagesAddedThisRun": 0,
       "candidateProducts": [
         {
           "year": "2026",
@@ -5043,6 +5049,13 @@
         },
         {
           "year": "2026",
+          "label": "NBA Topps",
+          "score": 12,
+          "strict": false,
+          "productId": "ebay_78c14d6ac3"
+        },
+        {
+          "year": "2026",
           "label": "Now",
           "score": 9,
           "strict": true,
@@ -5068,13 +5081,6 @@
           "score": 7,
           "strict": false,
           "productId": "ebay_eb2e972e06"
-        },
-        {
-          "year": "2026",
-          "label": "NBA",
-          "score": 7,
-          "strict": false,
-          "productId": "ebay_1248236c3f"
         }
       ],
       "yearUsed": "2026",
@@ -5500,10 +5506,10 @@
       "yearUsed": "2025",
       "productId": "ebay_16615300e8",
       "productMatched": "Finest Uefa Club Competitions",
-      "knownSets": 37,
-      "processedSetsTotal": 37,
+      "knownSets": 38,
+      "processedSetsTotal": 38,
       "remainingSets": 0,
-      "rowsAccumulated": 64
+      "rowsAccumulated": 65
     },
     "topps-chrome-premier-league-2026": {
       "setsFetchedThisRun": 0,
@@ -6071,6 +6077,13 @@
         },
         {
           "year": "2026",
+          "label": "FC Manchester City Collector Tin",
+          "score": 0,
+          "strict": false,
+          "productId": "ebay_34ab4e96bc"
+        },
+        {
+          "year": "2026",
           "label": "FC Manchester City - Premier League",
           "score": 0,
           "strict": false,
@@ -6082,13 +6095,6 @@
           "score": 0,
           "strict": false,
           "productId": "ebay_075f7d9616"
-        },
-        {
-          "year": "2026",
-          "label": "2025-2026 Topps Chrome",
-          "score": -5,
-          "strict": false,
-          "productId": "ing_acea0f1d9c"
         }
       ],
       "error": "strict-product-not-found"
@@ -6490,9 +6496,9 @@
       "error": "strict-product-not-found"
     }
   },
-  "finishedAt": "2026-11-21T17:38:29Z",
-  "collectionsWritten": 69,
-  "rowsWritten": 1949,
-  "exactFrontsWritten": 1933,
-  "runtimeSeconds": 282.9
+  "finishedAt": "2026-11-22T17:55:10Z",
+  "collectionsWritten": 70,
+  "rowsWritten": 2012,
+  "exactFrontsWritten": 1996,
+  "runtimeSeconds": 282.6
 }
