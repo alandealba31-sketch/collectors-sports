@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T17:55:15.296Z",
+  "generatedAt": "2026-11-23T22:09:04.521Z",
   "source": "data/user-collection-priority.json",
   "collections": [
     {
@@ -659,22 +659,6 @@
       "status": "needs-images"
     },
     {
-      "collectionId": "panini-intl-mexico-2026",
-      "name": "Panini INTL Mexico",
-      "season": "2026",
-      "ownedRows": 0,
-      "catalogPresent": true,
-      "checklistRows": 107,
-      "uniqueIdentities": 106,
-      "baseIdentities": 20,
-      "numberedIdentities": 0,
-      "autographIdentities": 4,
-      "relicIdentities": 0,
-      "exactFrontIdentities": 4,
-      "exactFrontCoveragePct": 3.77,
-      "status": "needs-images"
-    },
-    {
       "collectionId": "topps-benfica-team-set-2025-26",
       "name": "Topps SL Benfica Team Set",
       "season": "2025-26",
@@ -696,14 +680,14 @@
       "season": "2025-26",
       "ownedRows": 1,
       "catalogPresent": true,
-      "checklistRows": 474,
-      "uniqueIdentities": 474,
+      "checklistRows": 476,
+      "uniqueIdentities": 475,
       "baseIdentities": 0,
       "numberedIdentities": 0,
-      "autographIdentities": 12,
+      "autographIdentities": 13,
       "relicIdentities": 10,
-      "exactFrontIdentities": 20,
-      "exactFrontCoveragePct": 4.22,
+      "exactFrontIdentities": 22,
+      "exactFrontCoveragePct": 4.63,
       "status": "needs-images"
     },
     {
@@ -752,6 +736,22 @@
       "relicIdentities": 0,
       "exactFrontIdentities": 14,
       "exactFrontCoveragePct": 6.54,
+      "status": "needs-images"
+    },
+    {
+      "collectionId": "panini-intl-mexico-2026",
+      "name": "Panini INTL Mexico",
+      "season": "2026",
+      "ownedRows": 0,
+      "catalogPresent": true,
+      "checklistRows": 112,
+      "uniqueIdentities": 108,
+      "baseIdentities": 21,
+      "numberedIdentities": 0,
+      "autographIdentities": 4,
+      "relicIdentities": 0,
+      "exactFrontIdentities": 9,
+      "exactFrontCoveragePct": 8.33,
       "status": "needs-images"
     },
     {
@@ -968,13 +968,13 @@
       "season": "2026-27",
       "ownedRows": 2,
       "catalogPresent": true,
-      "checklistRows": 77,
-      "uniqueIdentities": 77,
+      "checklistRows": 78,
+      "uniqueIdentities": 78,
       "baseIdentities": 1,
       "numberedIdentities": 1,
       "autographIdentities": 9,
       "relicIdentities": 2,
-      "exactFrontIdentities": 77,
+      "exactFrontIdentities": 78,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     },
@@ -984,13 +984,13 @@
       "season": "2025-26",
       "ownedRows": 1,
       "catalogPresent": true,
-      "checklistRows": 10,
-      "uniqueIdentities": 10,
+      "checklistRows": 11,
+      "uniqueIdentities": 11,
       "baseIdentities": 0,
       "numberedIdentities": 0,
       "autographIdentities": 3,
       "relicIdentities": 0,
-      "exactFrontIdentities": 10,
+      "exactFrontIdentities": 11,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     },
@@ -1096,13 +1096,13 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 253,
-      "uniqueIdentities": 253,
+      "checklistRows": 254,
+      "uniqueIdentities": 254,
       "baseIdentities": 21,
       "numberedIdentities": 1,
       "autographIdentities": 14,
       "relicIdentities": 0,
-      "exactFrontIdentities": 253,
+      "exactFrontIdentities": 254,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     },
@@ -1128,13 +1128,13 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 9,
-      "uniqueIdentities": 9,
+      "checklistRows": 10,
+      "uniqueIdentities": 10,
       "baseIdentities": 0,
       "numberedIdentities": 0,
       "autographIdentities": 0,
       "relicIdentities": 0,
-      "exactFrontIdentities": 9,
+      "exactFrontIdentities": 10,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     },
@@ -1224,13 +1224,13 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 221,
-      "uniqueIdentities": 221,
+      "checklistRows": 226,
+      "uniqueIdentities": 226,
       "baseIdentities": 6,
       "numberedIdentities": 5,
       "autographIdentities": 4,
       "relicIdentities": 1,
-      "exactFrontIdentities": 221,
+      "exactFrontIdentities": 226,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     }
@@ -1239,7 +1239,7 @@
     "ownedPriorityCollections": 77,
     "missingCollections": 11,
     "missingChecklists": 3,
-    "uniqueIdentities": 19546,
-    "exactFrontIdentities": 2145
+    "uniqueIdentities": 19558,
+    "exactFrontIdentities": 2161
   }
 }

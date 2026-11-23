@@ -1,6 +1,6 @@
 {
   "provider": "eBay Browse API",
-  "startedAt": "2026-11-22T17:55:14Z",
+  "startedAt": "2026-11-23T22:09:03Z",
   "collections": {},
   "credentialsConfigured": false,
   "skipped": "EBAY_CLIENT_ID / EBAY_CLIENT_SECRET are not configured"

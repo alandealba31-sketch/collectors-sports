@@ -463,6 +463,7 @@
       "processedSets": [
         "ebay_0bec8b8b08",
         "ebay_8e34765e17",
+        "ebay_8e36814dac",
         "ebay_952832edde",
         "ebay_998a52ec59",
         "ebay_9e0d575584",
@@ -473,7 +474,7 @@
       "productMatched": "Topps Update Series",
       "productId": "ebay_bf954bb576",
       "yearUsed": "2026",
-      "knownSets": 8
+      "knownSets": 9
     },
     "topps-chrome-logofractor-baseball-2026": {
       "processedSets": [
@@ -896,6 +897,7 @@
         "ebay_67014d3f32",
         "ebay_69c685f0b9",
         "ebay_6cc3e79831",
+        "ebay_715f3420f9",
         "ebay_723b6f7348",
         "ebay_72b0c514af",
         "ebay_77ac475503",
@@ -931,7 +933,7 @@
       "productMatched": "Premier League",
       "productId": "ebay_97821cda88",
       "yearUsed": "2026",
-      "knownSets": 65
+      "knownSets": 66
     },
     "topps-chrome-premier-league-2026": {
       "processedSets": [
@@ -1264,6 +1266,7 @@
       "processedSets": [
         "ebay_00485206eb",
         "ebay_065c24a7d9",
+        "ebay_0708933c34",
         "ebay_08082be024",
         "ebay_083fdf25d7",
         "ebay_08f876a4d6",
@@ -1345,6 +1348,7 @@
         "ebay_6f5e9feb49",
         "ebay_70d0329ed2",
         "ebay_7348908028",
+        "ebay_74a86cc69d",
         "ebay_74f45e0103",
         "ebay_76dce3f087",
         "ebay_7741ec1457",
@@ -1365,6 +1369,8 @@
         "ebay_86f9316594",
         "ebay_871e2cba0b",
         "ebay_88a60cc692",
+        "ebay_8b61943246",
+        "ebay_8bcbb76778",
         "ebay_8f93692e68",
         "ebay_90996bc90f",
         "ebay_90d6e4a6bf",
@@ -1416,6 +1422,7 @@
         "ebay_dc0ec394b4",
         "ebay_dce0d82b3a",
         "ebay_dd6f245714",
+        "ebay_de4a082023",
         "ebay_dedc787d43",
         "ebay_e3595ecd78",
         "ebay_e397cc0ded",
@@ -1446,7 +1453,7 @@
       "productId": "ebay_14edd5b886",
       "productMatched": "Now",
       "yearUsed": "2026",
-      "knownSets": 180
+      "knownSets": 185
     },
     "panini-international-england-2026": {
       "processedSets": []
@@ -1513,6 +1520,7 @@
     "panini-select-road-to-world-cup-2025-26": {
       "processedSets": [
         "ebay_0a83205938",
+        "ebay_2065051164",
         "ebay_2a6e8cbbb2",
         "ebay_4eb9ab5006",
         "ebay_58eede370b",
@@ -1524,6 +1532,7 @@
         "ebay_aef254e263",
         "ebay_b33e12be2c",
         "ebay_b68939b953",
+        "ebay_c847b27b2b",
         "ebay_d074bac1e1",
         "ebay_e9919053c2",
         "ebay_f8f7939432"
@@ -1531,7 +1540,7 @@
       "productId": "ebay_6c15412d98",
       "productMatched": "Select Road to World Cup",
       "yearUsed": "2025",
-      "knownSets": 15
+      "knownSets": 17
     },
     "topps-signature-class-basketball-2025-26": {
       "processedSets": [
@@ -1654,14 +1663,17 @@
     },
     "panini-intl-mexico-2026": {
       "processedSets": [
+        "ebay_34f55d4657",
+        "ebay_5075189b08",
         "ebay_843f7b9f19",
         "ebay_b7d66fc713",
-        "ebay_c1641d5a14"
+        "ebay_c1641d5a14",
+        "ebay_e816e2760e"
       ],
       "productMatched": "Intl Mexico",
       "productId": "ebay_8d2ef94ba0",
       "yearUsed": "2026",
-      "knownSets": 3
+      "knownSets": 6
     },
     "panini-intl-france-2026": {
       "processedSets": []
@@ -1694,6 +1706,7 @@
         "ebay_3e221c3d39",
         "ebay_6328da3bcf",
         "ebay_69f1a54e0b",
+        "ebay_a8c4a8c7b7",
         "ebay_a8ed1295ed",
         "ebay_ab175beb8e",
         "ebay_ac56e7bc73",
@@ -1702,7 +1715,7 @@
       "productId": "ebay_baafefb144",
       "productMatched": "Prizm FIFA Soccer",
       "yearUsed": "2025",
-      "knownSets": 10
+      "knownSets": 11
     },
     "panini-prizm-conmebol-copa-america-2024": {
       "processedSets": [
@@ -1791,6 +1804,7 @@
         "ebay_6de6152912",
         "ebay_6e29c83fde",
         "ebay_6e41ff7be6",
+        "ebay_6e5690bdf4",
         "ebay_70088add94",
         "ebay_71c11c339b",
         "ebay_7623e6b12f",
@@ -1902,7 +1916,7 @@
       "productId": "ebay_34a2a395f2",
       "productMatched": "Topps Chrome",
       "yearUsed": "2026",
-      "knownSets": 180
+      "knownSets": 181
     },
     "panini-obsidian-football-2025": {
       "processedSets": [

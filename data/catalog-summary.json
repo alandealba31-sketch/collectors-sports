@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T17:55:14.943Z",
+  "generatedAt": "2026-11-23T22:09:04.130Z",
   "scriptFilesEvaluated": 54,
   "scriptFailures": [
     {
@@ -9,21 +9,21 @@
   ],
   "collectionsWithChecklist": 83,
   "collectionRecords": 95,
-  "searchableIdentities": 22859,
+  "searchableIdentities": 22871,
   "bySport": {
     "NFL": 6298,
-    "Soccer": 5157,
+    "Soccer": 5167,
     "NBA": 4589,
-    "MLB": 3675,
+    "MLB": 3677,
     "WWE": 1115,
     "UFC": 953,
     "Tennis": 830,
     "F1": 242
   },
-  "verifiedExactFrontRecords": 2014,
-  "approximateUniqueExactFrontIdentities": 2014,
-  "searchableIdentitiesWithExactFront": 2317,
-  "exactFrontCoveragePct": 10.14,
+  "verifiedExactFrontRecords": 2030,
+  "approximateUniqueExactFrontIdentities": 2030,
+  "searchableIdentitiesWithExactFront": 2333,
+  "exactFrontCoveragePct": 10.2,
   "topCollections": [
     {
       "id": "topps-chrome-football-2025",
@@ -149,8 +149,8 @@
       "id": "panini-select-road-to-world-cup-2025-26",
       "name": "Select Road to World Cup 25/26",
       "sport": "Soccer",
-      "rows": 474,
-      "identities": 474,
+      "rows": 476,
+      "identities": 475,
       "coverage": "base-complete-expanded"
     },
     {
@@ -189,8 +189,8 @@
       "id": "topps-chrome-college-baseball-2026",
       "name": "Chrome College Baseball 2026",
       "sport": "MLB",
-      "rows": 253,
-      "identities": 253,
+      "rows": 254,
+      "identities": 254,
       "coverage": "expanded-structured"
     },
     {
@@ -205,8 +205,8 @@
       "id": "topps-now-soccer-2026",
       "name": "Soccer Topps NOW 2026",
       "sport": "Soccer",
-      "rows": 221,
-      "identities": 221,
+      "rows": 226,
+      "identities": 226,
       "coverage": "expanded-structured"
     },
     {
@@ -309,16 +309,16 @@
       "id": "panini-intl-mexico-2026",
       "name": "Panini INTL Mexico 2026",
       "sport": "Soccer",
-      "rows": 107,
-      "identities": 106,
+      "rows": 112,
+      "identities": 108,
       "coverage": "expanded-structured"
     },
     {
       "id": "topps-premier-league-2026-27",
       "name": "Premier League 26/27",
       "sport": "Soccer",
-      "rows": 77,
-      "identities": 77,
+      "rows": 78,
+      "identities": 78,
       "coverage": "expanded-structured"
     },
     {
