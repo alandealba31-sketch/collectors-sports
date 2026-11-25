@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T20:44:57.259Z",
+  "generatedAt": "2026-11-25T20:02:18.298Z",
   "source": "data/user-collection-priority.json",
   "collections": [
     {
@@ -387,22 +387,6 @@
       "status": "needs-images"
     },
     {
-      "collectionId": "panini-select-la-liga-2024-25",
-      "name": "Panini Select LaLiga",
-      "season": "2024-25",
-      "ownedRows": 1,
-      "catalogPresent": true,
-      "checklistRows": 491,
-      "uniqueIdentities": 491,
-      "baseIdentities": 0,
-      "numberedIdentities": 0,
-      "autographIdentities": 10,
-      "relicIdentities": 40,
-      "exactFrontIdentities": 1,
-      "exactFrontCoveragePct": 0.2,
-      "status": "needs-images"
-    },
-    {
       "collectionId": "topps-flagship-football-2026",
       "name": "Topps Flagship Football",
       "season": "2026",
@@ -432,6 +416,22 @@
       "relicIdentities": 0,
       "exactFrontIdentities": 3,
       "exactFrontCoveragePct": 0.28,
+      "status": "needs-images"
+    },
+    {
+      "collectionId": "panini-select-la-liga-2024-25",
+      "name": "Panini Select LaLiga",
+      "season": "2024-25",
+      "ownedRows": 1,
+      "catalogPresent": true,
+      "checklistRows": 492,
+      "uniqueIdentities": 492,
+      "baseIdentities": 0,
+      "numberedIdentities": 0,
+      "autographIdentities": 10,
+      "relicIdentities": 40,
+      "exactFrontIdentities": 2,
+      "exactFrontCoveragePct": 0.41,
       "status": "needs-images"
     },
     {
@@ -856,14 +856,14 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 1887,
-      "uniqueIdentities": 1887,
+      "checklistRows": 1889,
+      "uniqueIdentities": 1889,
       "baseIdentities": 709,
       "numberedIdentities": 3,
-      "autographIdentities": 577,
+      "autographIdentities": 578,
       "relicIdentities": 37,
-      "exactFrontIdentities": 803,
-      "exactFrontCoveragePct": 42.55,
+      "exactFrontIdentities": 805,
+      "exactFrontCoveragePct": 42.62,
       "status": "needs-images"
     },
     {
@@ -888,14 +888,14 @@
       "season": "2025-26",
       "ownedRows": 7,
       "catalogPresent": true,
-      "checklistRows": 316,
-      "uniqueIdentities": 308,
+      "checklistRows": 318,
+      "uniqueIdentities": 310,
       "baseIdentities": 200,
       "numberedIdentities": 0,
       "autographIdentities": 6,
       "relicIdentities": 0,
-      "exactFrontIdentities": 152,
-      "exactFrontCoveragePct": 49.35,
+      "exactFrontIdentities": 154,
+      "exactFrontCoveragePct": 49.68,
       "status": "needs-images"
     },
     {
@@ -1096,13 +1096,13 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 256,
-      "uniqueIdentities": 256,
+      "checklistRows": 257,
+      "uniqueIdentities": 257,
       "baseIdentities": 21,
       "numberedIdentities": 1,
       "autographIdentities": 14,
       "relicIdentities": 0,
-      "exactFrontIdentities": 256,
+      "exactFrontIdentities": 257,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     },
@@ -1160,13 +1160,13 @@
       "season": "2025",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 40,
-      "uniqueIdentities": 40,
+      "checklistRows": 41,
+      "uniqueIdentities": 41,
       "baseIdentities": 5,
       "numberedIdentities": 0,
       "autographIdentities": 5,
       "relicIdentities": 0,
-      "exactFrontIdentities": 40,
+      "exactFrontIdentities": 41,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     },
@@ -1224,13 +1224,13 @@
       "season": "2026",
       "ownedRows": 0,
       "catalogPresent": true,
-      "checklistRows": 227,
-      "uniqueIdentities": 227,
+      "checklistRows": 231,
+      "uniqueIdentities": 231,
       "baseIdentities": 6,
       "numberedIdentities": 5,
       "autographIdentities": 4,
       "relicIdentities": 1,
-      "exactFrontIdentities": 227,
+      "exactFrontIdentities": 231,
       "exactFrontCoveragePct": 100,
       "status": "covered"
     }
@@ -1239,7 +1239,7 @@
     "ownedPriorityCollections": 77,
     "missingCollections": 11,
     "missingChecklists": 3,
-    "uniqueIdentities": 19578,
-    "exactFrontIdentities": 2181
+    "uniqueIdentities": 19589,
+    "exactFrontIdentities": 2192
   }
 }

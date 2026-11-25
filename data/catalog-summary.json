@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T20:44:56.942Z",
+  "generatedAt": "2026-11-25T20:02:18.031Z",
   "scriptFilesEvaluated": 54,
   "scriptFailures": [
     {
@@ -9,21 +9,21 @@
   ],
   "collectionsWithChecklist": 83,
   "collectionRecords": 95,
-  "searchableIdentities": 22892,
+  "searchableIdentities": 22903,
   "bySport": {
-    "NFL": 6299,
-    "Soccer": 5184,
+    "NFL": 6300,
+    "Soccer": 5191,
     "NBA": 4589,
-    "MLB": 3680,
+    "MLB": 3683,
     "WWE": 1115,
     "UFC": 953,
     "Tennis": 830,
     "F1": 242
   },
-  "verifiedExactFrontRecords": 2051,
-  "approximateUniqueExactFrontIdentities": 2051,
-  "searchableIdentitiesWithExactFront": 2354,
-  "exactFrontCoveragePct": 10.28,
+  "verifiedExactFrontRecords": 2062,
+  "approximateUniqueExactFrontIdentities": 2062,
+  "searchableIdentitiesWithExactFront": 2365,
+  "exactFrontCoveragePct": 10.33,
   "topCollections": [
     {
       "id": "topps-chrome-football-2025",
@@ -37,8 +37,8 @@
       "id": "bowman-chrome-baseball-2026",
       "name": "Bowman Chrome 2026",
       "sport": "MLB",
-      "rows": 1887,
-      "identities": 1887,
+      "rows": 1889,
+      "identities": 1889,
       "coverage": "expanded-structured"
     },
     {
@@ -141,8 +141,8 @@
       "id": "panini-select-la-liga-2024-25",
       "name": "Select LaLiga 24/25",
       "sport": "Soccer",
-      "rows": 491,
-      "identities": 491,
+      "rows": 492,
+      "identities": 492,
       "coverage": "expanded-structured"
     },
     {
@@ -173,8 +173,8 @@
       "id": "topps-chrome-ucc-2025-26",
       "name": "Chrome UEFA 25/26",
       "sport": "Soccer",
-      "rows": 316,
-      "identities": 308,
+      "rows": 318,
+      "identities": 310,
       "coverage": "expanded-structured"
     },
     {
@@ -189,8 +189,16 @@
       "id": "topps-chrome-college-baseball-2026",
       "name": "Chrome College Baseball 2026",
       "sport": "MLB",
-      "rows": 256,
-      "identities": 256,
+      "rows": 257,
+      "identities": 257,
+      "coverage": "expanded-structured"
+    },
+    {
+      "id": "topps-now-soccer-2026",
+      "name": "Soccer Topps NOW 2026",
+      "sport": "Soccer",
+      "rows": 231,
+      "identities": 231,
       "coverage": "expanded-structured"
     },
     {
@@ -198,14 +206,6 @@
       "name": "Pitch Kings LaLiga 25/26",
       "sport": "Soccer",
       "rows": 231,
-      "identities": 227,
-      "coverage": "expanded-structured"
-    },
-    {
-      "id": "topps-now-soccer-2026",
-      "name": "Soccer Topps NOW 2026",
-      "sport": "Soccer",
-      "rows": 227,
       "identities": 227,
       "coverage": "expanded-structured"
     },
