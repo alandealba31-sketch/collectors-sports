@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T20:02:18.031Z",
+  "generatedAt": "2026-11-26T19:43:02.467Z",
   "scriptFilesEvaluated": 54,
   "scriptFailures": [
     {
@@ -9,21 +9,21 @@
   ],
   "collectionsWithChecklist": 83,
   "collectionRecords": 95,
-  "searchableIdentities": 22903,
+  "searchableIdentities": 22907,
   "bySport": {
     "NFL": 6300,
-    "Soccer": 5191,
+    "Soccer": 5193,
     "NBA": 4589,
-    "MLB": 3683,
+    "MLB": 3684,
     "WWE": 1115,
     "UFC": 953,
-    "Tennis": 830,
+    "Tennis": 831,
     "F1": 242
   },
-  "verifiedExactFrontRecords": 2062,
-  "approximateUniqueExactFrontIdentities": 2062,
-  "searchableIdentitiesWithExactFront": 2365,
-  "exactFrontCoveragePct": 10.33,
+  "verifiedExactFrontRecords": 2066,
+  "approximateUniqueExactFrontIdentities": 2066,
+  "searchableIdentitiesWithExactFront": 2370,
+  "exactFrontCoveragePct": 10.35,
   "topCollections": [
     {
       "id": "topps-chrome-football-2025",
@@ -125,8 +125,8 @@
       "id": "topps-chrome-tennis-2026",
       "name": "Chrome Tennis 2026",
       "sport": "Tennis",
-      "rows": 729,
-      "identities": 729,
+      "rows": 730,
+      "identities": 730,
       "coverage": "expanded-structured"
     },
     {
@@ -149,8 +149,8 @@
       "id": "panini-select-road-to-world-cup-2025-26",
       "name": "Select Road to World Cup 25/26",
       "sport": "Soccer",
-      "rows": 477,
-      "identities": 476,
+      "rows": 478,
+      "identities": 477,
       "coverage": "base-complete-expanded"
     },
     {
@@ -189,8 +189,8 @@
       "id": "topps-chrome-college-baseball-2026",
       "name": "Chrome College Baseball 2026",
       "sport": "MLB",
-      "rows": 257,
-      "identities": 257,
+      "rows": 258,
+      "identities": 258,
       "coverage": "expanded-structured"
     },
     {
@@ -205,8 +205,8 @@
       "id": "panini-pitch-kings-laliga-2025-26",
       "name": "Pitch Kings LaLiga 25/26",
       "sport": "Soccer",
-      "rows": 231,
-      "identities": 227,
+      "rows": 232,
+      "identities": 228,
       "coverage": "expanded-structured"
     },
     {
