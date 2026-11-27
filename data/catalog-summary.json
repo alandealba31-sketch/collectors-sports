@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T19:43:02.467Z",
+  "generatedAt": "2026-11-27T19:36:08.380Z",
   "scriptFilesEvaluated": 54,
   "scriptFailures": [
     {
@@ -9,21 +9,21 @@
   ],
   "collectionsWithChecklist": 83,
   "collectionRecords": 95,
-  "searchableIdentities": 22907,
+  "searchableIdentities": 22916,
   "bySport": {
-    "NFL": 6300,
-    "Soccer": 5193,
+    "NFL": 6301,
+    "Soccer": 5194,
     "NBA": 4589,
-    "MLB": 3684,
+    "MLB": 3690,
     "WWE": 1115,
     "UFC": 953,
-    "Tennis": 831,
+    "Tennis": 832,
     "F1": 242
   },
-  "verifiedExactFrontRecords": 2066,
-  "approximateUniqueExactFrontIdentities": 2066,
-  "searchableIdentitiesWithExactFront": 2370,
-  "exactFrontCoveragePct": 10.35,
+  "verifiedExactFrontRecords": 2075,
+  "approximateUniqueExactFrontIdentities": 2075,
+  "searchableIdentitiesWithExactFront": 2382,
+  "exactFrontCoveragePct": 10.39,
   "topCollections": [
     {
       "id": "topps-chrome-football-2025",
@@ -37,8 +37,8 @@
       "id": "bowman-chrome-baseball-2026",
       "name": "Bowman Chrome 2026",
       "sport": "MLB",
-      "rows": 1889,
-      "identities": 1889,
+      "rows": 1893,
+      "identities": 1893,
       "coverage": "expanded-structured"
     },
     {
@@ -125,8 +125,8 @@
       "id": "topps-chrome-tennis-2026",
       "name": "Chrome Tennis 2026",
       "sport": "Tennis",
-      "rows": 730,
-      "identities": 730,
+      "rows": 731,
+      "identities": 731,
       "coverage": "expanded-structured"
     },
     {
@@ -189,16 +189,16 @@
       "id": "topps-chrome-college-baseball-2026",
       "name": "Chrome College Baseball 2026",
       "sport": "MLB",
-      "rows": 258,
-      "identities": 258,
+      "rows": 260,
+      "identities": 260,
       "coverage": "expanded-structured"
     },
     {
       "id": "topps-now-soccer-2026",
       "name": "Soccer Topps NOW 2026",
       "sport": "Soccer",
-      "rows": 231,
-      "identities": 231,
+      "rows": 232,
+      "identities": 232,
       "coverage": "expanded-structured"
     },
     {
